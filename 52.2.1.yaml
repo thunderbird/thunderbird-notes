@@ -1,0 +1,18 @@
+release:
+  version: 52.2.1
+  text:
+
+notes:
+  - text: >
+        Better support for Charter/Spectrum IMAP: Thunderbird will now detect Charter's IMAP service and send an additional IMAP select command to the server.
+        Check the various preferences ending in "force_select" to see whether auto-detection has discovered this case.
+    tag: new
+
+  - text: "Folder pane toolbar and folder view selector (replacement for folder view arrows)"
+    tag: changed
+
+  - text: "Embedded images not shown in email received from Hotmail/Outlook webmailer."
+    tag: fixed
+
+  - text: "Crash due to incompatibility with McAfee Anti-SPAM add-on. _Workaround_: Start in safe mode and disable McAfee Anti-Spam Extension."
+    tag: unresolved
