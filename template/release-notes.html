@@ -4,6 +4,7 @@
 <!doctype html>
 <html class="windows x86 no-js" lang="{{ LANG|replace('en-US', 'en') }}" dir="{{ DIR }}">
   <head>
+    <meta charset="UTF-8">
     <title>{{ _('Thunderbird — {channel} Notes ({version})')|f(channel=channel_name, version=release.version) }}</title>
     <link href="https://stage.thunderbird.net/media/css/responsive-bundle.css" rel="stylesheet" type="text/css" />
     <link href="https://stage.thunderbird.net/media/css/releasenotes.css" rel="stylesheet" type="text/css" />
@@ -13,6 +14,8 @@
     {% set channel_name = channel_name|default('') %}
   </head>
   <body {% if self.body_id() %}id="{% block body_id %}notes{% endblock %}" {% endif %}class="html-{{ DIR }} {% block body_class %}thunderbird-notes sky{% endblock %}" {% block body_attrs %}{% endblock %}>
+  <div id="outer-wrapper">
+  <div id="wrapper">
     <main role="main">
       <article id="main-content">
 
@@ -151,6 +154,8 @@
 
       </article>
     </main>
+  </div>
+  </div>
   </body>
 </html>
 {% block js %}{% endblock  %}
