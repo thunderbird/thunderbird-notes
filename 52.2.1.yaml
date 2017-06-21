@@ -1,6 +1,7 @@
 release:
   version: 52.2.1
   text:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
 
 notes:
   - text: >
