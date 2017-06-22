@@ -1,14 +1,33 @@
 # -*- coding: utf-8 -*-
 
+import argparse
 import jinja2
 import markdown
 import os
+import sys
 import yaml
 
-notesfile = "52.2.1.yaml"
+parser = argparse.ArgumentParser(
+    description="""
+    Enter the file name of the .yml file you want to preview.
+    Example: `python preview.py 52.2.1.yml`
+    """, formatter_class=argparse.RawTextHelpFormatter)
 
-with open(notesfile, 'r') as f:
+parser.add_argument("notesfile", help="name of the release notes .yml file to preview")
+
+if len(sys.argv)==1:
+    parser.print_help()
+    sys.exit(1)
+
+args = parser.parse_args()
+
+with open(args.notesfile, "r") as f:
     doc = yaml.load(f)
+
+with open("settings.yml", "r") as f:
+    s = yaml.load(f)
+    doc["feedback"] = s["feedback"]
+    doc["bugzilla"] = s["bugzilla"]
 
 def get_bug_search_url():
     return doc["release"]["bug_search_url"]
