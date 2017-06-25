@@ -1,0 +1,40 @@
+release:
+  version: 52.0.1
+  text: |
+    **System Requirements:
+    • Window: Windows XP, Windows Server 2003 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**
+    Details [here](https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
+  system_requirements:
+  import_system_requirements: 52.0.yml
+
+notes:
+  - note: Clicking on a link in an email may not open this link in the external browser.
+    tag: fixed
+
+  - note: >
+      Large number of blank pages being printed under certain circumstances. **To fix this problem**,
+      remove all printer specific preferences in the configuration editor.
+    tag: unresolved
+
+  - note: >
+      Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder
+      which is not synchronized for offline use. **Workaround**: Set preference browser.cache.memory.max_entry_size
+      to the value of -1 (unlimited) and create integer preference browser.cache.memory.capacity
+      with the value of 200000 (200 MB, 25 MB per message).
+    tag: unresolved
+
+  - note: >
+      Crash due to incompatibility with McAfee Anti-SPAM add-on.
+      **Workaround**: Start in safe mode and disable McAfee Anti-Spam Extension.
+    tag: unresolved
+
+  - note: Background images not working and other issues related to embedded images when composing email.
+    tag: unresolved
+
+  - note: Crash when compacting IMAP folder.
+    tag: unresolved

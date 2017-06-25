@@ -1,0 +1,53 @@
+release:
+  version: 52.2.0
+  text: |
+    **System Requirements:  
+    • Window: Windows XP, Windows Server 2003 or later  
+    • Mac: Mac OS X 10.9 or later  
+    • Linux: GTK+ 3.4 or higher**  
+    Details [here](https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
+  system_requirements:
+  import_system_requirements: 52.0.yml
+
+notes:
+  - note: Embedded images not shown in email received from Hotmail/Outlook webmailer.
+    tag: fixed
+
+  - note: Detection of non-ASCII font names in font selector.
+    tag: fixed
+
+  - note: Attachment not forwarded correctly under certain circumstances.
+    tag: fixed
+
+  - note: Multiple requests for master password when GMail OAuth2 is enabled.
+    tag: fixed
+
+  - note: Large number of blank pages being printed under certain circumstances when invalid preferences were present.
+    tag: fixed
+
+  - note: Messages sent via the Simple MAPI interface are forced to HTML.
+    tag: fixed
+
+  - note: "Calendar: Invitations can't be printed."
+    tag: fixed
+
+  - note: Mailing list (group) not accessible from macOS or Outlook address book.
+    tag: fixed
+
+  - note: Clicking on links with references/anchors where target doesn't exist in the message not opening in external browser.
+    tag: fixed
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.2).
+    tag: fixed
+
+  - note: Links in news messages including "remove all expired articles" not working.
+    tag: unresolved
+
+  - note: >
+      On Windows, "Send to > Mail recipient" does not work.
+      Workaround: Install the [Microsoft Visual Studio 2015 redistributable runtime library](https://www.microsoft.com/en-us/download/details.aspx?id=53587)
+      or the [Universal C Runtime for Windows Server](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows).
+    tag: unresolved

@@ -1,0 +1,42 @@
+release:
+  version: 52.1.1
+  text: |
+    **System Requirements:  
+    • Window: Windows XP, Windows Server 2003 or later  
+    • Mac: Mac OS X 10.9 or later  
+    • Linux: GTK+ 3.4 or higher**  
+    Details [here](https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
+  system_requirements:
+  import_system_requirements: 52.0.yml
+
+notes:
+  - note: >
+      Large attachments may not be shown or saved correctly if the message is
+      stored in an IMAP folder which is not synchronized for offline use.
+    tag: fixed
+
+  - note: Unable to load full message via POP if message was downloaded partially (or only headers) before.
+    tag: fixed
+
+  - note: Some attachments can't be opened or saved if the message body is empty.
+    tag: fixed
+
+  - note: Crash when compacting IMAP folder.
+    tag: fixed
+
+  - note: >
+      Large number of blank pages being printed under certain circumstances.
+      **To fix this problem**, remove all printer specific preferences in the
+       configuration editor.
+    tag: unresolved
+
+  - note: >
+      Crash due to incompatibility with McAfee Anti-SPAM add-on.
+      **Workaround:** Start in safe mode and disable McAfee Anti-Spam Extension.
+    tag: unresolved
+
+  - note: Messages sent via the Simple MAPI interface are forced to HTML. Will be fixed in next release.
+    tag: unresolved
