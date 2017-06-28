@@ -6,15 +6,14 @@ beta_dir = os.path.join(os.path.dirname(__file__), 'beta')
 
 class ReleaseNotes(object):
     def __init__(self):
+        self.settings = {}
+        with open(os.path.join(os.path.dirname(__file__), "settings.yml"), "r") as f:
+            self.settings = yaml.load(f)
+
         # Copy notes into the same dict. Release version notes overwrite beta version notes if any version numbers
         # are shared.
         self.notes = self.load_dir(beta_dir)
         self.notes.update(self.load_dir(release_dir))
-
-        self.releases = {'52.0': {'major':'52.0', 'minor':['52.0.1', '52.1.0', '52.1.1', '52.2.0', '52.2.1']}}
-        self.settings = {}
-        with open(os.path.join(os.path.dirname(__file__), "settings.yml"), "r") as f:
-            self.settings = yaml.load(f)
 
 
     def organize(self, notelist):
@@ -26,6 +25,7 @@ class ReleaseNotes(object):
             n["known_issues"] = []
             n["new_features"] = []
             n["version"] = k
+            n["release"]["version"] = n["version"]
             # Import system requirements from major version
             if not n["release"].get("system_requirements"):
                 import_version = n["release"].get("import_system_requirements")
