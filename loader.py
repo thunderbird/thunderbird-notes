@@ -10,10 +10,9 @@ class ReleaseNotes(object):
         with open(os.path.join(os.path.dirname(__file__), "settings.yml"), "r") as f:
             self.settings = yaml.load(f)
 
-        # Copy notes into the same dict. Release version notes overwrite beta version notes if any version numbers
-        # are shared.
-        self.notes = self.load_dir(beta_dir)
-        self.notes.update(self.load_dir(release_dir))
+        # Copy notes into the same dict for imports. Release version notes overwrite beta version notes if any
+        # version numbers are shared.
+        self.notes = self.load_dirs([beta_dir, release_dir])
 
 
     def organize(self, notelist):
@@ -43,14 +42,15 @@ class ReleaseNotes(object):
         return organized_notelist
 
 
-    def load_dir(self, path):
+    def load_dirs(self, paths):
         notes = {}
-        notefiles = os.listdir(path)
-        for notefile in notefiles:
-            if notefile.endswith(".yml"):
-                with open(os.path.join(path, notefile), "r") as f:
-                    doc = yaml.load(f)
-                    notes[os.path.splitext(notefile)[0]] = doc
+        for path in paths:
+            notefiles = os.listdir(path)
+            for notefile in notefiles:
+                if notefile.endswith(".yml"):
+                    with open(os.path.join(path, notefile), "r") as f:
+                        doc = yaml.load(f)
+                        notes[os.path.splitext(notefile)[0]] = doc
         sorted_notes = self.organize(notes)
         return sorted_notes
 
