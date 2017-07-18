@@ -4,67 +4,67 @@ release:
     • Window: Windows XP, Windows Server 2003 or later  
     • Mac: Mac OS X 10.9 or later  
     • Linux: GTK+ 3.4 or higher**  
-    Details [here](https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/).
+    Details [here](/en-US/thunderbird/52.0/system-requirements/).
 
-    **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
-  system_requirements: >
-    Windows  
-    Operating Systems
+  system_requirements: |
+    ## Windows
 
-    * Windows XP SP3
-    * Windows Server 2003 SP1
-    * Windows Server 2003 R2
-    * Windows Server 2008
-    * Windows Server 2008 R2
-    * Windows Vista
-    * Windows 7
-    * Windows 8
-    * Windows 10
+    ### Operating Systems
+    - Windows XP SP3
+    - Windows Server 2003 SP1
+    - Windows Server 2003 R2
+    - Windows Server 2008
+    - Windows Server 2008 R2
+    - Windows Vista
+    - Windows 7
+    - Windows 8
+    - Windows 10
 
-    Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.
+    *Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*
 
-    Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.
-    Windows Recommended Hardware
+    **Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**
+      
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM
+    - 200 MB hard drive space
 
-    * Pentium 4 or newer processor that supports SSE2
-    * 1GB RAM
-    * 200 MB hard drive space
+    ---
 
-    Mac
-    Operating Systems
+    ## Mac
+      
+    ### Operating Systems
+      
+    - Mac OS X 10.9
+    - Mac OS X 10.10
+    - Mac OS X 10.11
+    - Mac OS X 10.12
+      
+    ###  Recommended Hardware
+      
+    - Macintosh computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
 
-    * Mac OS X 10.9
-    * Mac OS X 10.10
-    * Mac OS X 10.11
-    * Mac OS X 10.12
+    ---
+      
+    ## GNU/Linux     
+    ### Software Requirements
 
-    Recommended Hardware
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*
 
-    * Macintosh computer with an Intel x86 processor
-    * 512 MB RAM
-    * 200 MB hard drive space
-
-    GNU/Linux
-    Software Requirements
-
-    Please note that Linux distributors may provide packages for your distribution which have different requirements.
-    Software Requirements
-
-    Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.
-
-    * Thunderbird will not run at all without the following libraries or packages:
-    ** GTK+ 3.4 or higher
-    ** GLib 2.22 or higher
-    ** Pango 1.14 or higher
-    ** X.Org 1.0 or higher (1.7 or higher is recommended)
-    ** libstdc++ 4.6.1 or higher
-    ** PulseAudio  
-    * For optimal functionality, we recommend the following libraries or packages:
-    ** NetworkManager 0.7 or higher
-    ** DBus 1.0 or higher
-    ** GNOME 2.16 or higher
-  import_system_requirements:
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 3.4 or higher
+        - GLib 2.22 or higher
+        - Pango 1.14 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.6.1 or higher
+        - PulseAudio
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
 
 notes:
   - note: Folder pane toolbar and folder view selector (replacement for folder view arrows).
