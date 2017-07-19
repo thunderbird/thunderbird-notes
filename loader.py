@@ -16,6 +16,7 @@ class ReleaseNotes(object):
 
 
     def organize(self, notelist):
+        """Organize the data from the .yml format into the variables that the template context expects."""
         organized_notelist = {}
         for k, n in notelist.iteritems():
             def get_bug_search_url():
@@ -43,6 +44,7 @@ class ReleaseNotes(object):
 
 
     def load_dirs(self, paths):
+        """Load release notes from a list of paths."""
         notes = {}
         for path in paths:
             notefiles = os.listdir(path)
