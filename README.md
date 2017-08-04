@@ -5,9 +5,10 @@ Notes are in a [YAML format](https://learnxinyminutes.com/docs/yaml/), with rele
 
 To aid in editing these notes, you can preview changes to any of the .yml files with preview.py:
 
-`pip install -r requirements.txt`
-`python preview.py 52.0`
-
+```
+pip install -r requirements.txt
+python preview.py 52.0
+```
 Once you start `preview.py` for a particular version, it will load that file and produce a `preview.html` file that you can load locally.
 Any time you modify one of the release notes files, `preview.html` will be automatically refreshed with the changes, so you can just refresh
 it in your browser to see your changes.
@@ -64,7 +65,7 @@ notes:
 * `notes`: Is a list containing every note in the file. **Order is preserved on the final HTML output.**
 * `note`: This is a string containing the note.
 * `tag`: This is the tag defining the image that will appear next to the note. Options are:
-    * new ![new](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+    * new 
     * changed
     * fixed
     * unresolved: This will appear in a separate "Known Issues" list.
