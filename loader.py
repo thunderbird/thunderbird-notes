@@ -19,9 +19,6 @@ class ReleaseNotes(object):
         """Organize the data from the .yml format into the variables that the template context expects."""
         organized_notelist = {}
         for k, n in notelist.iteritems():
-            def get_bug_search_url():
-                return n["release"]["bug_search_url"]
-            n["release"]["get_bug_search_url"] = get_bug_search_url
             n["known_issues"] = []
             n["new_features"] = []
             n["version"] = k
