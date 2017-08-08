@@ -2,7 +2,7 @@ release:
   release_date: 2017-07-15
   text: "**These release notes apply to Thunderbird version 55 beta 2 released July 15th, 2017.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
-  import_system_requirements: "52.0"
+  import_system_requirements: "53.0beta"
 
 notes:
   - note: |

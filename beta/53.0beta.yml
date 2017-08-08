@@ -1,0 +1,84 @@
+release:
+  text: "**These release notes apply to Thunderbird version 53 beta 2 released April 19th, 2017.**"
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2053.0&product=Thunderbird&resolution=FIXED
+  system_requirements: |
+    ## Windows
+
+    ### Operating Systems
+    - Windows 7
+    - Windows 8
+    - Windows 10
+    - Windows Server 2008 R2
+
+    *Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*
+
+    **Note that as of Thunderbird 53, Thunderbird only supports Windows 7, 8, 10, and Windows Server 2008 R2.**
+      
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM
+    - 200 MB hard drive space
+
+    ---
+
+    ## Mac
+      
+    ### Operating Systems
+      
+    - Mac OS X 10.9
+    - Mac OS X 10.10
+    - Mac OS X 10.11
+    - Mac OS X 10.12
+      
+    ###  Recommended Hardware
+      
+    - Macintosh computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+
+    ---
+      
+    ## GNU/Linux     
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 3.4 or higher
+        - GLib 2.22 or higher
+        - Pango 1.14 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.6.1 or higher
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
+
+notes:
+  - note: A default startup directory in the address book window can now be configured.
+    tag: new
+
+  - note: Background images not working and other issues related to embedded images when composing email.
+    tag: fixed
+
+  - note: >
+        Datetime formatting is not working properly on the Linux 32bit platform. This results in party broken
+        calendar views and incorrect event times - for users on this platform it is strictly recommended to
+        backup the user profile before updating and **disable Lightning after updating for the remaining lifetime
+        of this version** to avoid damages to calendar data.
+    tag: unresolved
+
+  - note: >
+        Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is
+        not synchronized for offline use. **Workaround**: Set preference browser.cache.memory.max_entry_size to the 
+        value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of 
+        200000 (200 MB, 25 MB per message).
+    tag: unresolved
+
+  - note: >
+        Crash due to incompatibility with McAfee Anti-SPAM add-on. **Workaround**: 
+        Start in safe mode and disable McAfee Anti-Spam Extension.
+    tag: unresolved
+
+  - note: Crash when compacting IMAP folder.
+    tag: unresolved
