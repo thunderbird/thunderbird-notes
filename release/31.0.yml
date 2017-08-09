@@ -1,5 +1,58 @@
 release:
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?bug_status=CLOSED&bug_status=VERIFIED&bug_status=RESOLVED&field0-0-0=target_milestone&field0-0-1=target_milestone&field0-0-2=target_milestone&field0-0-3=target_milestone&field0-0-4=target_milestone&field0-0-5=target_milestone&field0-0-6=target_milestone&field0-0-7=cf_status_thunderbird_31&field0-0-8=cf_status_thunderbird_31&field1-0-0=cf_status_thunderbird_esr24&field2-0-0=cf_status_thunderbird_esr24&query_format=advanced&resolution=FIXED&type0-0-0=substring&type0-0-1=substring&type0-0-2=substring&type0-0-3=substring&type0-0-4=substring&type0-0-5=substring&type0-0-6=substring&type0-0-7=substring&type0-0-8=substring&type1-0-0=notsubstring&type2-0-0=notsubstring&value0-0-0=Thunderbird%2025&value0-0-1=Thunderbird%2026&value0-0-2=Thunderbird%2027&value0-0-3=Thunderbird%2028&value0-0-4=Thunderbird%2029&value0-0-5=Thunderbird%2030&value0-0-6=Thunderbird%2031&value0-0-7=fixed&value0-0-8=verified&value1-0-0=fixed&value2-0-0=verified&order=bug_id%20DESC&limit=0&list_id=11707017
+  system_requirements: |
+    ## Windows
+
+    ### Operating Systems
+    - Windows XP SP2
+    - Windows Server 2003
+    - Windows Vista
+    - Windows 7
+    - Windows 8
+
+    *Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*
+  
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM
+    - 200 MB hard drive space
+
+    ---
+
+    ## Mac
+      
+    ### Operating Systems
+      
+    - Mac OS X 10.6
+    - Mac OS X 10.7
+    - Mac OS X 10.8
+    - Mac OS X 10.9
+      
+    ###  Recommended Hardware
+      
+    - Macintosh computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+
+    ---
+      
+    ## GNU/Linux     
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 2.18 or higher
+        - GLib 2.22 or higher
+        - Pango 1.14 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.3 or higher
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - HAL 0.5.8 or higher
+        - GNOME 2.16 or higher
+
 notes:
 - note: Printing and print previewing from the message composition windows (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=318955">bug
     318955</a>, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=251953">bug
