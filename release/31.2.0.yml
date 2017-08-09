@@ -1,0 +1,24 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2031.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '31.0'
+notes:
+- note: Security fixes can be found <a href="http://www.mozilla.org/security/known-vulnerabilities/thunderbird.html#thunderbird31.2.0">here</a>
+  tag: fixed
+- note: Importing an RSA private key fails if p < q (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1049435">bug
+    1049435</a>)
+  tag: fixed
+- note: Invalid certificate issue with mozilla::pkix (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1042889">bug
+    1042889</a>)
+  tag: fixed
+- note: Fixed a case where having a contact and card in an address book with the same
+    name could send to the mailing list (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1008718">Bug
+    1008718</a>)
+  tag: fixed
+- note: Users of jp mac builds may have issues with no mail folders being displayed
+    in the main window. Running Thunderbird in 32-bit mode temporarily will workaround
+    this issue.
+  tag: unresolved
+- note: Installing extensions within Thunderbird requires download and installing
+    as a file (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1081190">bug
+    1081190</a>)
+  tag: unresolved

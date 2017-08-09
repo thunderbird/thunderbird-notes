@@ -1,0 +1,20 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&list_id=12579406&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=41%2B&v2=fixed
+  import_system_requirements: "38.0.1"
+notes:
+- note: Saved files tab now implements Search field and Clear button.
+  tag: new
+- note: Chat entries are no longer sometimes lost in global database at shutdown.
+  tag: fixed
+- note: Checking for new messages correctly works after hibernation again
+  tag: fixed
+- note: Emails with long References headers are now decoded correctly
+  tag: fixed
+- note: When using the maildir storage format, the INBOX folder is no longer deleted
+  tag: fixed
+- note: Thunderbird no longer crashes when executing filter rules when using maildir
+  tag: fixed
+- note: Importing to the address book from CSV now works with international characters
+  tag: fixed
+- note: (Right-)Clicking on a newsgroup now allows directly composing a message again
+  tag: fixed

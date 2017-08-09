@@ -1,0 +1,12 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&list_id=12851518&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=44%2B&v2=fixed
+  import_system_requirements: "38.0.1"
+notes:
+- note: For Windows systems on roaming profiles, could not display messages after
+    Thunderbird update (related to Lightning updates)
+  tag: fixed
+- note: Filters ran on a different folder than selected
+  tag: fixed
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird38.6">security
+    fixes</a>.
+  tag: fixed

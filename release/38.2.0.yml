@@ -1,0 +1,14 @@
+release:
+  text: >
+    Thunderbird 38.2.0 contains underlying code that is based off of <a href="https://www.mozilla.org/en-US/firefox/38.2.0/releasenotes/">Firefox 38.2.0 esr.</a>
+    See also the release notes for the <a href="https://www.mozilla.org/en-US/thunderbird/38.0.1/releasenotes/">update from Thunderbird 31 to 38</a>
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=40%2B&v2=fixed&list_id=12473958
+  import_system_requirements: "38.0.1"
+notes:
+- note: Hardware acceleration is now disabled by default to avoid crashing Thunderbird
+  tag: changed
+- note: A few bugs have been fixed to avoid crashing Thunderbird
+  tag: fixed
+- note: The "maildir" storage type can no longer be set through the UI due to various
+    issues. Power users can still set the storage type using the config editor.
+  tag: unresolved

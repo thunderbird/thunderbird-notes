@@ -1,0 +1,13 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&list_id=12755007&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=43%2B&v2=fixed
+  import_system_requirements: "38.0.1"
+notes:
+- note: In the address book manager, make the contacts sidebar remember the last selected
+    address book (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1142705">1142705</a>)
+  tag: fixed
+- note: 'Various <a href="https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird38.5">security
+    fixes</a> '
+  tag: fixed
+- note: Prepare to use SHA-256 signing certificate for Windows builds, to meet new
+    signing requirement (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1079858">1079858</a>)
+  tag: fixed

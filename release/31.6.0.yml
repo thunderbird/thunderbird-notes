@@ -1,0 +1,6 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f10=cf_tracking_firefox_esr31&j_top=OR&f1=OP&o7=equals&v6=36%2B&o3=equals&f8=CP&v11=fixed&o11=equals&v3=fixed&v10=37%2B&o6=equals&o2=equals&f9=OP&v7=fixed&f4=CP&o10=equals&query_format=advanced&f3=cf_status_firefox_esr31&f2=cf_tracking_firefox_esr31&f11=cf_status_firefox_esr31&f5=OP&f6=cf_tracking_thunderbird_esr31&v2=36%2B&f7=cf_status_thunderbird_esr31&list_id=12139148
+  import_system_requirements: '31.0'
+notes:
+- note: Security fixes can be found <a href="http://www.mozilla.org/security/known-vulnerabilities/thunderbird.html#thunderbird31.6.0">here</a>
+  tag: fixed

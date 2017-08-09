@@ -1,0 +1,56 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?bug_status=CLOSED&bug_status=VERIFIED&bug_status=RESOLVED&field0-0-0=target_milestone&field0-0-1=target_milestone&field0-0-2=target_milestone&field0-0-3=target_milestone&field0-0-4=target_milestone&field0-0-5=target_milestone&field0-0-6=target_milestone&field0-0-7=cf_status_thunderbird_31&field0-0-8=cf_status_thunderbird_31&field1-0-0=cf_status_thunderbird_esr24&field2-0-0=cf_status_thunderbird_esr24&query_format=advanced&resolution=FIXED&type0-0-0=substring&type0-0-1=substring&type0-0-2=substring&type0-0-3=substring&type0-0-4=substring&type0-0-5=substring&type0-0-6=substring&type0-0-7=substring&type0-0-8=substring&type1-0-0=notsubstring&type2-0-0=notsubstring&value0-0-0=Thunderbird%2025&value0-0-1=Thunderbird%2026&value0-0-2=Thunderbird%2027&value0-0-3=Thunderbird%2028&value0-0-4=Thunderbird%2029&value0-0-5=Thunderbird%2030&value0-0-6=Thunderbird%2031&value0-0-7=fixed&value0-0-8=verified&value1-0-0=fixed&value2-0-0=verified&order=bug_id%20DESC&limit=0&list_id=11707017
+notes:
+- note: Printing and print previewing from the message composition windows (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=318955">bug
+    318955</a>, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=251953">bug
+    251953</a>)
+  tag: new
+- note: Improved display behaviour for RSS feeds (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=745301">bug
+    745301</a>)
+  tag: new
+- note: Improved address book searching and autocompletion (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=529584">bug
+    529584</a>, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=558931">bug
+    558931</a>)
+  tag: new
+- note: Improved display behaviour for attached and embedded images (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=877520">bug
+    877520</a>, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=534083">bug
+    534083</a>)
+  tag: new
+- note: Firefox-style search and replace from within the message composition windowl
+    (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=530629">bug 530629</a>)
+  tag: new
+- note: OS X Notification Center support for web notifications (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=852648">bug
+    852648</a>)
+  tag: new
+- note: Improved attachment reminder behaviour and reliability (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=521158">bug
+    521158</a>, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=944643">bug
+    944643</a>)
+  tag: new
+- note: Improved OS X dock icon behaviour (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=601263">bug
+    601263</a>)
+  tag: new
+- note: Theme support for Windows 8 (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=984978">bug
+    984978</a>)
+  tag: new
+- note: Re-enabled hardware graphics acceleration support (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=950133">950133</a>)
+  tag: changed
+- note: Removed the "Revocation Lists" button from the "Certificates" section of the
+    advanced preferences(see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=892255">892255</a>)
+  tag: changed
+- note: Hooked up web console, style editor and profiler (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=897476">897476</a>)
+  tag: developer
+- note: Sorting of Favourite folders (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=533775">533775</a>)
+  tag: fixed
+- note: Styling issues for the quick filter bar (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=964364">964364</a>,
+    <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=964066">964066</a>)
+  tag: fixed
+- note: Styling issues for the composition interface on OS X (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=963731">963731</a>)
+  tag: fixed
+- note: Users of jp mac builds may have issues with no mail folders being displayed
+    in the main window. Running Thunderbird in 32-bit mode temporarily will workaround
+    this issue.
+  tag: unresolved
+- note: Installing extensions within Thunderbird requires download and installing
+    as a file (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1081190">bug
+    1081190</a>)
+  tag: unresolved

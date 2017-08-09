@@ -1,0 +1,27 @@
+release:
+  text: >
+    See also the release notes for the <a href="https://www.mozilla.org/en-US/firefox/38.1.0/releasenotes/">Firefox 38.1.0 esr.</a>Thunderbird 38.1.0
+    contains underlying code that is based off of <a href="https://www.mozilla.com/en-US/thunderbird/38.0.1/releasenotes/">update from Thunderbird 31 to 38</a>.
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=39%2B&v2=fixed
+  import_system_requirements: "38.0.1"
+notes:
+- note: OAuth2 authentication for GMail does not work when specified server is imap.gmail.com
+    or smtp.gmail.com.  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1176773">bug
+    1176773</a>)
+  tag: fixed
+- note: Doesn't display GB2312 encoded texts correctly for Chinese Characters  (<a
+    href="https://bugzilla.mozilla.org/show_bug.cgi?id=1174580">bug 1174580</a>)
+  tag: fixed
+- note: Cannot send email through exchange server (NTLM)  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1174159">bug
+    1174159</a>)
+  tag: fixed
+- note: 'Cross-posts won''t send because Newsgroups: groups are separated with comma+space,
+    not just comma  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1151448">bug
+    1151448</a>)'
+  tag: fixed
+- note: Copy/Paste into plain text editor deletes newlines from quoted text  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1143570">bug
+    1143570</a>)
+  tag: fixed
+- note: Import from Outlook and Eudora disabled, code currently not working  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1175055">bug
+    1175055</a>)
+  tag: unresolved
