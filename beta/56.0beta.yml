@@ -1,0 +1,42 @@
+release:
+  text: "**These release notes apply to Thunderbird version 56 beta 1 released August 7th, 2017.**"
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2056.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '53.0beta'
+notes:
+- note: An option under "Tools > Options, Advanced, General" now allows to select
+    whether date/time display will follow the application locale (adjusted by operating
+    system's format settings for that locale) or the locale selected in the operating
+    system's regional settings. In other words, an US English Thunderbird can use,
+    for example, German formats.
+  tag: new
+- note: Various improvements in the Thunderbird themes on all platforms, especially
+    for Windows 10.
+  tag: changed
+- note: Thunderbird now uses the latest Mozilla technology based on Rust for encoding
+    messages
+  tag: changed
+- note: When messages are composed in paragraph format, "body text" and split mail
+    quotes are converted to paragraphs when pressing the enter key
+  tag: changed
+- note: 'IMAP: When after sending a message storing that sent message fails, the message
+    can now be stored in a local folder'
+  tag: changed
+- note: Blank lines removed from plain text replies under some circumstances
+  tag: fixed
+- note: No authorisation prompt displayed when inserting image into email body although
+    image URL requires authentication
+  tag: fixed
+- note: Selected text from another message sometimes included in a reply
+  tag: fixed
+- note: Inline images not scaled to fit when printing
+  tag: fixed
+- note: Message disposition flag (replied / forwarded) lost when reply or forwarded
+    message was stored as draft and draft was sent later
+  tag: fixed
+- note: Deleting message from the POP3 server not working when maildir storage was
+    used
+  tag: fixed
+- note: 'Contacts sidebar: Selection and context menu behavior'
+  tag: fixed
+- note: Unwanted inline images shown in rogue SPAM messages
+  tag: fixed
