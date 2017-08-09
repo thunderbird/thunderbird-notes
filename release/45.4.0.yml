@@ -1,0 +1,17 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?list_id=13241865&o1=equals&o2=equals&v1=fixed&v2=49%2B&f1=cf_status_thunderbird_esr45&query_format=advanced&f2=cf_tracking_thunderbird_esr45
+  import_system_requirements: '45.0'
+notes:
+- note: Display name was truncated if no separating space before email address.
+  tag: fixed
+- note: 'Recipient addresses were shown in red despite being inserted from the address
+    book in some circumstances. '
+  tag: fixed
+- note: Additional spaces were inserted when drafts were edited.
+  tag: fixed
+- note: Mail saved as template copied In-Reply-To and References from original email.
+  tag: fixed
+- note: Threading broken when editing message draft, due to loss of Message-ID
+  tag: fixed
+- note: '"Apply columns to..." did not honor special folders'
+  tag: fixed

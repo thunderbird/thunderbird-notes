@@ -1,0 +1,22 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?list_id=13317158&o1=equals&o2=equals&v1=fixed&v2=50%2B&f1=cf_status_thunderbird_esr45&query_format=advanced&f2=cf_tracking_thunderbird_esr45
+  import_system_requirements: '45.0'
+notes:
+- note: 'IMPORTANT: Changed recipient address entry: Arrow-keys now copy the pop-up
+    value to the input field. Mouse-hovered pop-up value can no longer be confirmed
+    with tab or enter key. This restores the behavior of Thunderbird 24.'
+  tag: changed
+- note: Support changes to character limit in Twitter
+  tag: changed
+- note: Reply with selected text containing quote resulted in wrong quoting level
+    indication
+  tag: fixed
+- note: Email invitation might not be displayed when description contains non-ASCII
+    characters
+  tag: fixed
+- note: Attempting to sort messages on the Date field whilst a quick filter is applied
+    got stuck on sort descending
+  tag: fixed
+- note: Mail address display at header pane displayed incorrectly if the address contains
+    UTF-8 according to RFC 6532
+  tag: fixed

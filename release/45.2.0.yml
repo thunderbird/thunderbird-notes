@@ -1,0 +1,17 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f1=cf_status_thunderbird_esr45&list_id=13087082&o1=equals&o2=equals&query_format=advanced&f2=cf_tracking_thunderbird_esr45&v1=fixed&v2=47%2B
+  import_system_requirements: '45.0'
+notes:
+- note: Various <a href="https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird45.2">security
+    fixes</a>
+  tag: ''
+- note: Links were not always detected properly in the message body (terminated early
+    on "|", some long links not detected at all)
+  tag: fixed
+- note: Invitations to events could not be printed.
+  tag: fixed
+- note: Falsely reported not enough disk space during compacting
+  tag: fixed
+- note: Dragging and dropping of contacts from the contact list onto an addressbook
+    while All Addressbooks is selected moved only one contact
+  tag: fixed

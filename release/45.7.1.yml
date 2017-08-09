@@ -1,0 +1,8 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2045.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '45.0'
+notes:
+- note: Crash when viewing certain IMAP messages (introduced in 45.7.0)
+  tag: fixed
+- note: Message preview pane non-functional after IMAP folder was renamed or moved
+  tag: unresolved

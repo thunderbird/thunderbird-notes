@@ -1,0 +1,14 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f1=cf_status_thunderbird_esr45&list_id=13087082&o1=equals&o2=equals&query_format=advanced&f2=cf_tracking_thunderbird_esr45&v1=fixed&v2=48%2B
+  import_system_requirements: '45.0'
+notes:
+- note: Disposition-Notification-To could not be used in mail.compose.other.header
+  tag: fixed
+- note: '"edit as new message" on a received message pre-filled the sender as the
+    composing identity.'
+  tag: fixed
+- note: Certain messages caused corruption of the drafts summary database.
+  tag: fixed
+- note: Various <a href="https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird45.3">security
+    fixes</a>
+  tag: fixed

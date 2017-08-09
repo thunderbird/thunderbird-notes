@@ -1,0 +1,26 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?list_id=12991744&o1=equals&v1=46%2B&f1=cf_tracking_thunderbird_esr45&query_format=advanced
+  import_system_requirements: '45.0'
+notes:
+- note: "Drag & Drop a contact name from Thunderbird address book (list view) to address\
+    \ box in a new message \u201Ccompose\u201D window failed."
+  tag: fixed
+- note: UI elements became larger when moused over on retina displays/monitor on Mac
+    OS X
+  tag: fixed
+- note: Automatic correspondents column upgrade disabled
+  tag: fixed
+- note: DIGEST-MD5 authentication in JS-XMPP failed for some users (now disabled).
+  tag: fixed
+- note: Font indicator in compose falsely claimed certain fonts were not installed.
+  tag: fixed
+- note: Printing failed in composition window.
+  tag: fixed
+- note: Various <a href="https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird45.1">security
+    fixes</a>
+  tag: fixed
+- note: Various improvements in handling of message compose in paragraph mode.
+  tag: fixed
+- note: 'Email with signature and safe HTML elements is sent as HTML, despite "Delivery
+    Format: Auto-detect" option'
+  tag: unresolved
