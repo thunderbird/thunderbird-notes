@@ -24,11 +24,9 @@ for ul in s.findAll('ul', {'class': 'section-items'}):
             tag = ''
 
         try:
-            text = child.find('p').text
+            text = ''.join(str(item) for item in child.find('p').contents)
         except AttributeError:
             text = ''
-        if 'Various security fixes' in text:
-            text = child.find('p').find(text=True) + str(child.find('p').find('a'))
 
         notes.append({'note': text, 'tag': tag})
 
@@ -38,7 +36,7 @@ version = title[title.find("(")+1:title.find(")")]
 bug_search_url = s.find('header', {'class': 'notes-head'}).findChildren('p')[0].findChildren('a')[2]
 bug_search_url = str(bug_search_url['href'])
 
-release = {'bug_search_url': bug_search_url}
+release = {'bug_search_url': bug_search_url, 'import_system_requirements': '31.0'}
 notesfile = [{'release': release}, {'notes': notes}]
 
 notes = ''
