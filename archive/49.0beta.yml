@@ -1,0 +1,53 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o5=equals&list_id=13198476&v11=fixed&o1=notequals&o2=notequals&v5=Thunderbird%2049.0&j4=OR&v1=Thunderbird%2045.0&v2=Thunderbird%2046.0&f10=CP&f1=target_milestone&o3=notequals&v6=fixed&o7=equals&f8=target_milestone&v3=Thunderbird%2047.0&o11=notequals&resolution=FIXED&o6=equals&v7=fixed&f4=OP&query_format=advanced&f3=target_milestone&f2=target_milestone&f11=cf_status_thunderbird_47&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=target_milestone&v8=Thunderbird%2048.0&f6=cf_status_thunderbird_48&f7=cf_status_thunderbird_49&o8=equals
+  import_system_requirements: '45.0'
+notes:
+- note: Folder pane toolbar and folder view selector (replacement for folder view
+    arrows)
+  tag: new
+- note: Import settings from Becky! Internet Mail
+  tag: new
+- note: In compose, allow separate options for initial mode (Paragraph or Body Text)
+    and behavior of Enter key.
+  tag: new
+- note: Mac OX X 10.6, 10.7, and 10.8 are no longer supported.
+  tag: changed
+- note: Permanently remove Eudora import.
+  tag: changed
+- note: Removed compose window recycling.
+  tag: changed
+- note: When attachment unavailable, compose shows endless "Attaching..." message
+    instead of error
+  tag: fixed
+- note: Display name was truncated if no separating space before email address.
+  tag: fixed
+- note: 'Recipient addresses were shown in red despite being inserted from the address
+    book in some circumstances. '
+  tag: fixed
+- note: Custom headers (like Disposition-Notification-To) were not set correctly.
+  tag: fixed
+- note: '"Edit as New Message" on a received message pre-filled the Sender as the
+    author rather than the current user.'
+  tag: fixed
+- note: Additional spaces were inserted when drafts were edited.
+  tag: fixed
+- note: Mail saved as template copied In-Reply-To and References from original email.
+  tag: fixed
+- note: Mail address display at header pane displayed incorrectly if the address contains
+    UTF-8 according to RFC 6532
+  tag: fixed
+- note: '"View as plain text" displayed converted HTML part even when plain text part
+    exists.'
+  tag: fixed
+- note: Threading broken when editing message draft, due to loss of Message-ID
+  tag: fixed
+- note: Table properties stopped showing with double-click of table cell in compose.
+  tag: fixed
+- note: Attachment reminder not showing in various cases.
+  tag: fixed
+- note: Plain text composition had wrapping issues.
+  tag: fixed
+- note: Menu items for "Edit draft" functionality were missing
+  tag: fixed
+- note: Embedded image with source URL with ? led to incorrect image reference
+  tag: fixed

@@ -1,0 +1,52 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2052.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '52.0'
+notes:
+- note: Optionally remove corresponding data files when removing an account from Thunderbird
+  tag: new
+- note: Possibility to copy message filter
+  tag: new
+- note: 'Calendar: Event can now be created and edited in a tab'
+  tag: new
+- note: 'Calendar: Processing of received invitation counter proposals'
+  tag: new
+- note: 'Chat: Support Twitter Direct Messages'
+  tag: new
+- note: 'Chat: Liking and favoriting in Twitter'
+  tag: new
+- note: <strong>IMPORTANT:</strong> The way images are included in a compose window
+    has changed. Images are now included as <a href="https://en.wikipedia.org/wiki/Data_URI_scheme">data
+    URIs</a> and not as references to parts of other messages or operating system
+    files. This allows better interoperability with office packages such as MS Office
+    or LibreOffice. Images linked from locations on the internet will <strong>no longer</strong>
+    be downloaded and attached to the message automatically. This can be changed for
+    each image individually via the Image Properties dialog or globally by setting
+    the preference mail.compose.attach_http_images.
+  tag: changed
+- note: On Linux PulseAudio is now required to play sound
+  tag: changed
+- note: Messages in IMAP folders read on external device are now filtered by default
+  tag: changed
+- note: 'Chat: Removed Yahoo! Messenger support (since <a href="https://web.archive.org/web/20160730080614/https://help.yahoo.com/kb/yahoo-messenger-for-web/SLN26860.html">Yahoo
+    removed support</a>)'
+  tag: changed
+- note: Crash when viewing certain IMAP messages and various crashes on Mac
+  tag: fixed
+- note: Message preview pane non-functional after IMAP folder was renamed or moved
+  tag: fixed
+- note: 'Editing in paragraph format: Pressing Shift+Enter sometimes doesn''t move
+    the cursor to the next line'
+  tag: fixed
+- note: Paste as quotation doesn't always work
+  tag: fixed
+- note: Long lines in plain text replies not properly wrapped
+  tag: fixed
+- note: Undesired white-space before signature in paragraph mode
+  tag: fixed
+- note: IMAP message part caching
+  tag: fixed
+- note: Links with escaped non-ASCII (international) characters can't be clicked
+  tag: fixed
+- note: 'Calendar: Events specified in timezone "local time" generate alerts in UTC
+    time'
+  tag: fixed

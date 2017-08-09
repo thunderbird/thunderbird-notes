@@ -1,0 +1,23 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o5=notequals&f1=OP&o3=equals&v6=fixed&v3=fixed&resolution=FIXED&o2=equals&o6=notequals&f4=CP&v5=fixed&query_format=advanced&j1=OR&f3=cf_status_thunderbird_47&f2=target_milestone&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=cf_status_thunderbird_esr45&f6=cf_status_thunderbird_45&v2=47.0&list_id=13067295
+  import_system_requirements: '45.0'
+notes:
+- note: 'Delivery Format not preserved for saved drafts (Auto-Detect|Plaintext|HTML|Both) '
+  tag: fixed
+- note: Erroneous spaces were inserted when copying CJK text
+  tag: fixed
+- note: '"Apply columns to..." did not honor special folders'
+  tag: fixed
+- note: Invitations to events could not be printed.
+  tag: fixed
+- note: Draft folder database (and possibly others) was deleted when certain messages
+    were viewed, resulting in loss of locally stored message metadata
+  tag: fixed
+- note: Falsely reported not enough disk space during compacting
+  tag: fixed
+- note: Links were not always detected properly in the message body (terminated early
+    on "|", some long links not detected at all)
+  tag: fixed
+- note: Dragging and dropping of contacts from the contact list onto an addressbook
+    while All Addressbooks is selected moved only one contact
+  tag: fixed

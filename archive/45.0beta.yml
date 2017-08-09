@@ -1,0 +1,37 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f19=OP&v15=fixed&f22=CP&f1=OP&o3=substring&f0=OP&v3=fixed&f18=OP&columnlist=component%2Cbug_severity%2Cshort_desc&f15=cf_status_thunderbird_44&resolution=FIXED&j14=OR&f13=OP&o2=substring&o15=notsubstring&query_format=advanced&f12=CP&j1=OR&f3=cf_status_thunderbird_45&f2=target_milestone&f11=CP&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f14=OP&f17=CP&v2=Thunderbird%2045&f21=CP&f16=CP
+  import_system_requirements: '45.0'
+notes:
+- note: Add dropdown in compose to allow specific setting of font size.
+  tag: new
+- note: Return/Enter in composer will now insert a new paragraph by default (shift-Enter
+    will insert a line break)
+  tag: new
+- note: Implement option to always use HTML formatting to prevent unexpected format
+    loss when converting messages to plain text.
+  tag: new
+- note: Mail.ru supports OAuth authentication.
+  tag: new
+- note: Allow printing of individual contacts from context menu
+  tag: new
+- note: Allow copying of name and email address from the message header of an email
+  tag: new
+- note: AB quick search and contacts side bar will search nicknames
+  tag: new
+- note: Allow editing of From when composing a message.
+  tag: new
+- note: 'Fixed: When sending e-mail which was composed using Chinese, Japanese or
+    Korean characters, unwanted extra spaces were inserted within the text.'
+  tag: fixed
+- note: 'Fixed: Grouped By view sort direction change was broken, plus enabled custom
+    column grouping.'
+  tag: fixed
+- note: 'Fixed: New emails into a mailbox did not adhere to sort order by received.'
+  tag: fixed
+- note: 'Fixed: Box.com attachments failed to upload.'
+  tag: fixed
+- note: 'Fixed: Drag and drop of multiple attachments failed to OS file folder.'
+  tag: fixed
+- note: Linux builds for version 45.0b1 use GTK3, but are not offered for update because
+    GTK2 will be used in future Thunderbird 45 versions. Fixed in 45.0b2.
+  tag: unresolved

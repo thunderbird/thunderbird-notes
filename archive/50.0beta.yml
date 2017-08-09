@@ -1,0 +1,33 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2050.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '45.0'
+notes:
+- note: Dictionary setting is restored when editing a draft. Content-Language header
+    (RFC 3282) transmitted with message
+  tag: new
+- note: 'Chat: XMPP: Support SASL SCRAM authentication mechanism'
+  tag: new
+- note: When replying to a mailing list, reply will be sent to address in From header
+    ignoring Reply-to header
+  tag: changed
+- note: Formatting toolbar is now left in place when delivery format is switched to
+    plain text only
+  tag: changed
+- note: '<strong>IMPORTANT:</strong> Changed recipient address entry: Arrow-keys now
+    copy the pop-up value to the input field. Mouse-hovered pop-up value can no longer
+    be confirmed with tab or enter key. This restores the behavior of Thunderbird
+    24.'
+  tag: changed
+- note: Reply to own e-mail does not reply with the correct identity
+  tag: fixed
+- note: Reply with selected text containing quote resulted in wrong quoting level
+    indication
+  tag: fixed
+- note: Links in add-on details did not work in Thunderbird 49 beta.
+  tag: fixed
+- note: Troubleshooting Information was incomplete in Thunderbird 49 beta.
+  tag: fixed
+- note: 'Chat: XMPP Resource collisions'
+  tag: fixed
+- note: 'Calendar: improved stability when parsing events and tasks.'
+  tag: fixed
