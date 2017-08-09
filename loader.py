@@ -1,8 +1,11 @@
 import os
 import yaml
 
-release_dir = os.path.join(os.path.dirname(__file__), 'release')
-beta_dir = os.path.join(os.path.dirname(__file__), 'beta')
+notes_dirs = [
+    os.path.join(os.path.dirname(__file__), 'release'),
+    os.path.join(os.path.dirname(__file__), 'beta'),
+    os.path.join(os.path.dirname(__file__), 'archive'),
+]
 
 class ReleaseNotes(object):
     def __init__(self):
@@ -12,7 +15,7 @@ class ReleaseNotes(object):
 
         # Copy notes into the same dict for imports. Release version notes overwrite beta version notes if any
         # version numbers are shared.
-        self.notes = self.load_dirs([beta_dir, release_dir])
+        self.notes = self.load_dirs(notes_dirs)
 
 
     def organize(self, notelist):

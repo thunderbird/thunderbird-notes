@@ -9,6 +9,7 @@ import sys
 import time
 import yaml
 
+from loader import notes_dirs
 from loader import ReleaseNotes
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -100,8 +101,8 @@ class Handler(FileSystemEventHandler):
 
 handler = Handler(args.notesfile)
 observer = Observer()
-observer.schedule(handler, path='beta', recursive=False)
-observer.schedule(handler, path='release', recursive=False)
+for notedir in notes_dirs:
+    observer.schedule(handler, path=notedir, recursive=False)
 observer.start()
 print "Updating preview.html every time data is modified, press Ctrl-C to end."
 try:
