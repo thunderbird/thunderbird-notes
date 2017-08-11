@@ -35,13 +35,14 @@ version = title[title.find("(")+1:title.find(")")]
 
 bug_search_url = s.find('header', {'class': 'notes-head'}).findChildren('p')[0].findChildren('a')[2]
 bug_search_url = str(bug_search_url['href'])
+sysreq = version[:2] + '.0'
 
-release = {'bug_search_url': bug_search_url, 'import_system_requirements': '31.0'}
+release = {'bug_search_url': bug_search_url, 'import_system_requirements': sysreq}
 notesfile = [{'release': release}, {'notes': notes}]
 
 notes = ''
 for n in notesfile:
     notes += yaml.safe_dump(n, default_flow_style=False)
 
-with open(u"release/"+version+u".yml", "wb") as f:
+with open(u"archive/"+version+u".yml", "wb") as f:
     f.write(notes.encode('utf8'))
