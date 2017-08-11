@@ -1,0 +1,16 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f19=OP&v15=fixed&f22=CP&f1=OP&o3=substring&f0=OP&v3=fixed&f18=OP&columnlist=component%2Cbug_severity%2Cshort_desc&f15=cf_status_thunderbird_43&j14=OR&resolution=FIXED&f13=OP&o2=substring&o15=notsubstring&f12=CP&query_format=advanced&j1=OR&f3=cf_status_thunderbird_44&f2=target_milestone&f11=CP&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f14=OP&f17=CP&j20=OR&f21=CP&v2=Thunderbird%2044&f16=CP&list_id=12834449
+  import_system_requirements: '38.0.1'
+notes:
+- note: Use OpenStreetmap for maps (even allow the user to choose from list of map
+    services)
+  tag: new
+- note: 'Windows XP SP2 will no longer install Thunderbird (workaround: Install Thunderbird
+    43.0beta and update)'
+  tag: changed
+- note: Use a SHA-256 signing certificate for Windows builds, to meet new signing
+    requirements
+  tag: changed
+- note: In the address book manager, make the contacts sidebar remember the last selected
+    address book (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1142705">1142705</a>)
+  tag: fixed

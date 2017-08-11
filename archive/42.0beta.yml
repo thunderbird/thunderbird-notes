@@ -1,0 +1,10 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2042.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '38.0.1'
+notes:
+- note: Login credentials in the password manager are now editable
+  tag: feature
+- note: Thunderbird on Mac no longer hangs when loading content from the Web
+  tag: fixed
+- note: Message copies from a maildir folder to an mbox folder now work.
+  tag: fixed

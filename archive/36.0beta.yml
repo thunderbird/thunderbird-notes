@@ -1,0 +1,12 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=ALL%20cf_status_thunderbird_36%3Afixed%20-cf_status_thunderbird_35%3Afixed%20-cf_status_thunderbird_34%3Afixed%20-cf_status_thunderbird_esr31%3Afixed&list_id=12011809
+  import_system_requirements: '31.0'
+notes:
+- note: Various older charsets have been removed
+  tag: changed
+- note: Thunderbird will no longer use SHA-1 to sign messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018259">bug
+    1018259</a>)
+  tag: changed
+- note: CONDSTORE support has been disabled due to causing various issues (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=912216">bug
+    912216</a>)
+  tag: fixed

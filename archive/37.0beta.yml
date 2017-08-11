@@ -1,0 +1,20 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2037.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '31.0'
+notes:
+- note: Filter sent messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=11039
+    ">bug 11039</a>)
+  tag: new
+- note: Disable CONDSTORE support for IMAP to prevent discrepancies in IMAP message
+    status (deleted, unread) on some servers (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=912216">bug
+    912216</a>)
+  tag: changed
+- note: 'Removed rarely used character sets: T.61-8bit, non-encoding Mac encoders,
+    VISCII, x-viet-tcvn5712, x-viet-vps x-johab, ARMSCII8 , map us-ascii to windows-1252,
+    ISO-8859-6-I and -E and ISO-8859-8-E, (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1068505">bug
+    1068505 and others.</a>)'
+  tag: changed
+- note: Error message while sending messages if Sent Items folder is not enabled for
+    offline use (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1119529">bug
+    1119529</a>)
+  tag: unresolved

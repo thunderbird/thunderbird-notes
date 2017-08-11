@@ -1,0 +1,107 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&columnlist=component%2Cbug_severity%2Cshort_desc&f0=OP&f1=OP&f10=cf_status_thunderbird_38&f11=CP&f12=CP&f13=OP&f14=OP&f15=cf_status_thunderbird_esr31&f16=CP&f17=CP&f18=OP&f19=OP&f2=target_milestone&f20=cf_status_thunderbird_31&f21=CP&f22=CP&f3=target_milestone&f4=target_milestone&f5=target_milestone&f6=target_milestone&f7=target_milestone&f8=target_milestone&f9=cf_status_thunderbird_38&j1=OR&j14=OR&j19=OR&list_id=12149549&o10=substring&o15=notsubstring&o2=substring&o20=notsubstring&o3=substring&o4=substring&o5=substring&o6=substring&o7=substring&o8=substring&o9=substring&query_format=advanced&resolution=FIXED&v10=verified&v15=fixed&v2=Thunderbird%2032&v20=verified&v3=Thunderbird%2033&v4=Thunderbird%2034&v5=Thunderbird%2035&v6=Thunderbird%2036&v7=Thunderbird%2037&v8=Thunderbird%2038&v9=fixed&order=component&limit=0
+  import_system_requirements: '38.0.1'
+notes:
+- note: GMail supports OAuth2 authentication, removing the need to manually select
+    "allow less secure applications" in Google options for the account.  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=849540">bug
+    849540</a>)
+  tag: new
+- note: Filter sent messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=11039
+    ">bug 11039</a>)
+  tag: new
+- note: Filter messages when archived  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=479823
+    ">bug 479823</a>)
+  tag: new
+- note: Enable search in multiple/all address books (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=170270
+    ">bug 170270</a>)
+  tag: new
+- note: Add a Learn more link to the support page in feeds subscribe dialog (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1053782">bug
+    1053782</a>)
+  tag: new
+- note: Allow file-per-message (maildir) local message storage (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=845952
+    ">bug 845952</a>)
+  tag: new
+- note: Show expanded columns in folder pane  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=464973
+    ">bug 464973</a>)
+  tag: new
+- note: 'The editor for twitter should show inputtable character
+
+    count (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=736002">bug 736002</a>)'
+  tag: new
+- note: Support Internationalized domain name URLs for RSS feeds (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018589">Bug
+    1018589</a>)
+  tag: new
+- note: Add reading position marker line to conversations (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=760762">bug
+    760762</a>)
+  tag: new
+- note: Default to using SSL for XMPP and IRC. This might cause issues for self-signed
+    certificates  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1122567">bug
+    1122567, </a><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1122666">bug
+    1122666</a>)
+  tag: changed
+- note: Make OpenSearch queries open in the user's default browser (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1120777">bug
+    1120777</a>)
+  tag: changed
+- note: Disable CONDSTORE support for IMAP to prevent discrepancies in IMAP message
+    status (deleted, unread) on some servers (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=912216">bug
+    912216</a>)
+  tag: changed
+- note: 'Removed rarely used character sets: T.61-8bit, non-encoding Mac encoders,
+    VISCII, x-viet-tcvn5712, x-viet-vps x-johab, ARMSCII8 , map us-ascii to windows-1252,
+    ISO-8859-6-I and -E and ISO-8859-8-E, (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1068505">bug
+    1068505 and others.</a>)'
+  tag: changed
+- note: Thunderbird will no longer use SHA-1 to sign messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018259">bug
+    1018259</a>)
+  tag: changed
+- note: Fixes for connecting to non-standard IRC networks  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870556">bug
+    870556</a> and others)
+  tag: fixed
+- note: Significantly improve XMPP support  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1085022">bug
+    1085022</a> and others)
+  tag: fixed
+- note: Various improvements when using IRC on moznet  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1083768">bug
+    1083768</a> and others)
+  tag: fixed
+- note: Automatically rejoin multi-user conversations on reconnect for XMPP  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1014472">bug
+    1014472</a>)
+  tag: fixed
+- note: Severe UI stutter or freezes getting new mail for very large folders (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870556">bug
+    870556</a>)
+  tag: fixed
+- note: Wrong folder may be deleted when requesting junk delete (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018960">bug
+    1018960</a>)
+  tag: fixed
+- note: Status bar not accessible (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=934875">bug
+    934875</a>)
+  tag: fixed
+- note: 'Addressing autocomplete widget: Typed text in red despite results/matches
+    found if suggestions change by last input  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1042561">bug
+    1042561</a>)'
+  tag: fixed
+- note: Force display of Sender header if S/MIME sender is the signer (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=332639">bug
+    332639</a>)
+  tag: fixed
+- note: Email address with leading/trailing whitespace displayed wrongly with added
+    quotes when composing ["foo"@bar.com] (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=286760">bug
+    286760</a>)
+  tag: fixed
+- note: Web site from RSS feed was not rendered correctly (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=662907">bug
+    662907</a>)
+  tag: fixed
+- note: Adding unknown email addresses to Mailing list, then deleting ghost duplicate
+    entries from contacts pane, caused dataloss in mailing list (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=628035">bug
+    628035</a>)
+  tag: fixed
+- note: Attachment "Save As" files are displayed in Tools/Saved Files (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914517
+    ">bug 914517</a>)
+  tag: fixed
+- note: Replied/forwarded icons disappear after folder repair, detach/delete (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=840418
+    ">bug 840418</a>)
+  tag: fixed
+- note: Automatically reclaim IRC nicks during a reconnect  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1087566">bug
+    1087566</a>)
+  tag: fixed
+- note: Automatic addon compatibility update checks were not completed, so existing
+    addon compatibilities may not be accurate.
+  tag: unresolved

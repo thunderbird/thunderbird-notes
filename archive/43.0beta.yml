@@ -1,0 +1,12 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?f19=OP&v15=fixed&f22=CP&f1=OP&o3=substring&list_id=12779898&f0=OP&v3=fixed&f18=OP&columnlist=component%2Cbug_severity%2Cshort_desc&f15=cf_status_thunderbird_42&j14=OR&resolution=FIXED&f13=OP&o2=substring&o15=notsubstring&f12=CP&query_format=advanced&j1=OR&f3=cf_status_thunderbird_43&f2=target_milestone&f11=CP&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f14=OP&f17=CP&j20=OR&f21=CP&v2=Thunderbird%2043&f16=CP
+  import_system_requirements: '38.0.1'
+notes:
+- note: Fix broken Grouped By view sort direction change, enable custom column grouping
+  tag: fixed
+- note: Fixed issue where, upon compact, in rare cases message disappeared due to
+    duplicate message keys.
+  tag: fixed
+- note: Prepare to use SHA-256 signing certificate for Windows builds, to meet new
+    signing requirement (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1079858">1079858</a>)
+  tag: fixed

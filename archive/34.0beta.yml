@@ -1,0 +1,14 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=ALL%20cf_status_thunderbird_34%3Afixed%20-cf_status_thunderbird_33%3Afixed%20-cf_status_thunderbird_32%3Afixed&list_id=11572999
+  import_system_requirements: '31.0'
+notes:
+- note: Fixes an issue where IRC participants were not removed from the display on
+    leaving a channel.
+  tag: fixed
+- note: Fixes an issue where using LDAP autocomplete could end up with blank entries
+    in the compose addressing list (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1045753">Bug
+    1045753</a>)
+  tag: fixed
+- note: Fixes a regression where Thunderbird wasn't respecting the skip integration
+    option on the default client dialog.
+  tag: fixed

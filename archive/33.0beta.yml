@@ -1,0 +1,13 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2033.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '31.0'
+notes:
+- note: Support Internationalized domain name URLs for RSS feeds (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018589">Bug
+    1018589</a>)
+  tag: new
+- note: Add UI for disabling and clearing Visited Link/Browsing History (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1020339">Bug
+    1020339</a>)
+  tag: new
+- note: <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;target_milestone=Thunderbird%2033.0&amp;product=Thunderbird&amp;resolution=FIXED">Various
+    fixes and performance improvements</a>
+  tag: fixed

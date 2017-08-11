@@ -1,0 +1,25 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2041.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '38.0.1'
+notes:
+- note: Visual appearance improved on Windows 10
+  tag: new
+- note: Checking for new messages correctly works after hibernation again
+  tag: fixed
+- note: Emails with long References headers are now decoded correctly
+  tag: fixed
+- note: When using the maildir storage format, the INBOX folder is no longer deleted
+  tag: fixed
+- note: Thunderbird no longer crashes when executing filter rules when using maildir
+  tag: fixed
+- note: Importing to the address book from CSV now works with international characters
+  tag: fixed
+- note: (Right-)Clicking on a newsgroup now allows directly composing a message again
+  tag: fixed
+- note: Proxy is taken into account for pop3s protocol
+  tag: fixed
+- note: Spellchecker no longer jumps between languages
+  tag: fixed
+- note: In contrast to Thunderbird 38, hardware acceleration is still enabled by default.
+    If you are experiencing crashes, please disable it in the preferences.
+  tag: unresolved
