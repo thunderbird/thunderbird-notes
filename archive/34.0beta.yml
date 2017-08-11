@@ -1,4 +1,5 @@
 release:
+  release_date: 2014-11-15
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=ALL%20cf_status_thunderbird_34%3Afixed%20-cf_status_thunderbird_33%3Afixed%20-cf_status_thunderbird_32%3Afixed&list_id=11572999
   import_system_requirements: '31.0'
 notes:
