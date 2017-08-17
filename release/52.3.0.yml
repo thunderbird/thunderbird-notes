@@ -1,0 +1,55 @@
+release:
+  release_date: 2017-08-16
+  text: |
+    **System Requirements:  
+    • Window: Windows XP, Windows Server 2003 or later  
+    • Mac: Mac OS X 10.9 or later  
+    • Linux: GTK+ 3.4 or higher**  
+    Details [here](https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/).
+           
+    **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
+  system_requirements:
+  import_system_requirements: "52.0"
+
+notes:
+  - bug: 1367156
+    tag: fixed
+    note: |
+      Unwanted inline images shown in rogue SPAM messages
+  - bug: 1293770
+    tag: fixed
+    note: |
+      Deleting message from the POP3 server not working when maildir storage was used
+  - bug: 1379912
+    tag: fixed
+    note: |
+      Message disposition flag (replied / forwarded) lost when reply or forwarded message was stored as draft and draft was sent later
+  - bug: 549106
+    tag: fixed
+    note: |
+      Inline images not scaled to fit when printing
+  - bug: 507541
+    tag: fixed
+    note: |
+      Selected text from another message sometimes included in a reply
+  - bug: 1367191
+    tag: fixed
+    note: |
+      No authorisation prompt displayed when inserting image into email body although image URL requires authentication
+  - bug: 1386585
+    tag: fixed
+    note: |
+      Large attachments taking a long time to open under some circumstances
+  - bug: 1356902
+    tag: unresolved
+    note: |
+      On Windows, "Send to > Mail recipient" does not work. Workaround: Install the [Microsoft Visual Studio 2015 redistributable runtime library][1] or the [Universal C Runtime for Windows Server][2].
+      
+      
+        [1]: https://www.microsoft.com/en-us/download/details.aspx?id=53587
+        [2]: https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
+  - bug: 1176399
+    tag: unresolved
+    note: |
+      Multiple requests for master password when GMail OAuth2 is enabled
