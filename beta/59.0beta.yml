@@ -1,0 +1,57 @@
+release:
+  release_date: 2018-02-12
+  text: "**These release notes apply to Thunderbird version 59 beta 1 released February 12th, 2018.**"
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2059.0&product=Thunderbird&resolution=FIXED
+  import_system_requirements: '53.0beta'
+notes:
+- note: Further improvements to reordering attachments (introduced in Thunderbird
+    58 beta), including reordering by drag & drop
+  tag: new
+  bug: 229224
+- note: Edit Template command. This also solves various problems when saving as template
+    (duplicates created, message ID lost).
+  tag: new
+  bug: 1389062
+- note: 'Calendar: Option to select the target calendar when pasting an event or task'
+  tag: new
+  bug: 719351
+- note: Add-on options can no longer be configured from the Add-on Manager page. A
+    new menu item "Add-on Options" is now available on the Tools menu.
+  tag: changed
+  bug: 1419145
+- note: 'When customizing the From: address, Thunderbird will now use this address
+    for the SMTP "MAIL FROM" command. Previously the address configured in the identity
+    was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the
+    previous behavior.'
+  tag: changed
+  bug: 1294027
+- note: Various updates to the Thunderbird theme. Thunderbird now uses <a href="https://design.firefox.com/icons/viewer/">Photon
+    Icons</a>.
+  tag: changed
+  bug: 1427509
+- note: 'Calendar: Reminders on read-only calendars can now be dismissed, while reminders
+    for missed events will now only be displayed for writable calendars if option
+    "Show missed reminders for writable calendars" is selected'
+  tag: changed
+  bug: 356002
+- note: 'Various problems related to handling the IMAP trash folder: Under certain
+    circumstances the selection of the trash folder didn''t persist, for example when
+    the name contained non-ASCII characters, or in localized versions of Thunderbird.
+    At times unwanted additional trash folders were created. Selection of a trash
+    folder didn''t give immediate visual feedback.'
+  tag: fixed
+  bug: 1335982
+- note: Searching message bodies of messages in local folders, including filter and
+    quick filter operations, did not find content in message attachments
+  tag: fixed
+  bug: 1434020
+- note: Shared IMAP folders not shown in subscribe dialog under some circumstances
+  tag: fixed
+  bug: 1419735
+- note: 'Calendar: Wrong time formatting for some time zones'
+  tag: fixed
+  bug: 1396639
+- note: The IMAP and News subscribe dialogue now presents a flat list of folders instead
+    of a folder tree. This will be restored to its original form in the next release.
+  tag: unresolved
+  bug: 1425962
