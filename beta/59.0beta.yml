@@ -1,6 +1,6 @@
 release:
-  release_date: 2018-02-12
-  text: "**These release notes apply to Thunderbird version 59 beta 1 released February 12th, 2018.**"
+  release_date: 2018-03-01
+  text: "**These release notes apply to Thunderbird version 59 beta 2 released March 1st, 2018. **"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2059.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 notes:
@@ -48,6 +48,9 @@ notes:
 - note: Shared IMAP folders not shown in subscribe dialog under some circumstances
   tag: fixed
   bug: 1419735
+- note: Improvements encoding/decoding message headers
+  tag: fixed
+  bug: 1437282
 - note: 'Calendar: Wrong time formatting for some time zones'
   tag: fixed
   bug: 1396639
