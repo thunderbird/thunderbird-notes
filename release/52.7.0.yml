@@ -1,0 +1,23 @@
+release:
+  release_date: 2018-03-23
+  text: |
+    **System Requirements:  
+    • Window: Windows XP, Windows Server 2003 or later  
+    • Mac: Mac OS X 10.9 or later  
+    • Linux: GTK+ 3.4 or higher**  
+    Details [here](https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/).
+           
+    **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=57%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced
+  import_system_requirements: '52.0'
+notes:
+- note: Searching message bodies of messages in local folders, including filter and
+    quick filter operations, did not find content in message attachments
+  tag: fixed
+  bug: 1434020
+- note: Better error handling for Yahoo accounts
+  tag: fixed
+  bug: 1408610
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.7">security
+    fixes</a>
+  tag: fixed
