@@ -46,7 +46,7 @@ notes:
     2002 and earlier'
   tag: changed
   bug: 463402
-- note: The new menu item \"Add-on Options\" introduced in Thunderbird 59 beta is now also working on Mac.
+- note: 'The new menu item "Add-on Options" introduced in Thunderbird 59 beta is now also working on Mac.'
   tag: fixed
   bug: 1419145
 - note: The IMAP and News subscribe dialogue now presents a flat list of folders instead
