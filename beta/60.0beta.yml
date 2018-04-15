@@ -1,6 +1,6 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 1 released March 26th, 2018. **"
+  text: "**These release notes apply to Thunderbird version 60 beta 2 released April 6th, 2018.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 
@@ -29,6 +29,10 @@ notes:
     directly instead of showing a popup'
   tag: new
   bug: 463402
+- note: "**IMPORTANT:** Add-ons not marked as compatible with Thunderbird 60 by their 
+    authors will be disabled (this can be reverted via preference extensions.strictCompatibility)"
+  tag: changed
+  bug: 1451097
 - note: Thunderbird will now prompt to compact IMAP folders even if the account is
     online
   tag: changed
@@ -42,6 +46,9 @@ notes:
     2002 and earlier'
   tag: changed
   bug: 463402
+- note: The new menu item \"Add-on Options\" introduced in Thunderbird 59 beta is now also working on Mac.
+  tag: fixed
+  bug: 1419145
 - note: The IMAP and News subscribe dialogue now presents a flat list of folders instead
     of a folder tree. This will be restored to its original form in the next release.
   tag: unresolved
