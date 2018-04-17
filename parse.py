@@ -24,7 +24,7 @@ for ul in s.findAll('ul', {'class': 'section-items'}):
             tag = ''
 
         try:
-            text = ''.join(str(item) for item in child.find('p').contents)
+            text = ''.join(unicode(item) for item in child.find('p').contents)
         except AttributeError:
             text = ''
 
