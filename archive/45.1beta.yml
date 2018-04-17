@@ -1,4 +1,5 @@
 release:
+  release_date: 2016-04-29
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?list_id=12991744&o1=equals&v1=46%2B&f1=cf_tracking_thunderbird_esr45&query_format=advanced
   import_system_requirements: '45.0'
 notes:
