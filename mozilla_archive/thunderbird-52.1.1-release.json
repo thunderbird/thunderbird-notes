@@ -1,0 +1,119 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?list_id=13560552&o1=equals&v1=53%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced",
+  "channel": "Release",
+  "created": "2017-05-09T21:51:09.086849+00:00",
+  "is_public": true,
+  "modified": "2017-05-15T20:06:23.688181+00:00",
+  "notes": [
+    {
+      "bug": 1355350,
+      "created": "2017-05-09T21:53:45.662257+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.1.1-release",
+        "title": "Thunderbird 52.1.1 Release",
+        "version": "52.1.1"
+      },
+      "id": 787087,
+      "is_public": true,
+      "modified": "2017-06-12T19:20:00.318259+00:00",
+      "note": "Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1361020,
+      "created": "2017-05-09T21:53:50.061116+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.1.1-release",
+        "title": "Thunderbird 52.1.1 Release",
+        "version": "52.1.1"
+      },
+      "id": 787088,
+      "is_public": true,
+      "modified": "2017-06-12T19:20:45.135103+00:00",
+      "note": "Unable to load full message via POP if message was downloaded partially (or only headers) before",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1361422,
+      "created": "2017-05-09T21:53:52.673747+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.1.1-release",
+        "title": "Thunderbird 52.1.1 Release",
+        "version": "52.1.1"
+      },
+      "id": 787089,
+      "is_public": true,
+      "modified": "2017-06-12T19:21:06.203881+00:00",
+      "note": "Some attachments can't be opened or saved if the message body is empty",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1158578,
+      "created": "2017-05-09T21:53:55.033504+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.1.1-release",
+        "title": "Thunderbird 52.1.1 Release",
+        "version": "52.1.1"
+      },
+      "id": 787090,
+      "is_public": true,
+      "modified": "2017-06-12T19:21:29.288713+00:00",
+      "note": "Crash when compacting IMAP folder",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1353625,
+      "created": "2017-04-11T19:13:13.903735+00:00",
+      "id": 787030,
+      "is_public": true,
+      "modified": "2017-06-12T19:19:15.553421+00:00",
+      "note": "Large number of blank pages being printed under certain circumstances. **To fix this problem,** remove all printer specific preferences in the configuration editor.",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1281610,
+      "created": "2017-04-11T19:15:44.518791+00:00",
+      "id": 787032,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:38.844733+00:00",
+      "note": "Crash due to incompatibility with McAfee Anti-SPAM add-on. **Workaround:** Start in safe mode and disable McAfee Anti-Spam Extension",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1366196,
+      "created": "2017-05-20T07:10:51.070266+00:00",
+      "id": 787104,
+      "is_public": true,
+      "modified": "2017-06-12T19:21:59.290046+00:00",
+      "note": "Messages sent via the Simple MAPI interface are forced to HTML. Will be fixed in next release.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-05-15",
+  "slug": "thunderbird-52.1.1-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Server 2003 R2\r\n - Windows Server 2008\r\n - Windows Server 2008 R2\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n    - PulseAudio\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**System Requirements:**<br>\r\n\u2022 **Window: Windows XP, Windows Server 2003 or later**<br>\r\n\u2022 **Mac: Mac OS X 10.9 or later**<br>\r\n\u2022 **Linux: GTK+ 3.4 or higher**<br>\r\nDetails [here][1].\r\n\r\n**Please refer to [Release Notes for version 52.0][2] to see the list of improvements and fixed issues.**\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/thunderbird/52.0/system-requirements/\r\n  [2]: https://www.mozilla.com/en-US/thunderbird/52.0/releasenotes/",
+  "title": "Thunderbird 52.1.1 Release",
+  "version": "52.1.1"
+}

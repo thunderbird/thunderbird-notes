@@ -1,0 +1,243 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2018-02-10T19:26:38.255801+00:00",
+  "is_public": true,
+  "modified": "2018-03-02T10:21:32.536941+00:00",
+  "notes": [
+    {
+      "bug": 229224,
+      "created": "2018-02-10T19:42:23.905857+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787445,
+      "is_public": true,
+      "modified": "2018-03-23T19:58:18.687424+00:00",
+      "note": "Further improvements to reordering attachments (introduced in Thunderbird 58 beta), including reordering by drag & drop",
+      "sort_num": 200,
+      "tag": "New"
+    },
+    {
+      "bug": 1389062,
+      "created": "2018-02-10T19:45:59.771653+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787446,
+      "is_public": true,
+      "modified": "2018-04-16T09:44:12.226752+00:00",
+      "note": "Edit Template command. This also solves various problems when saving as template (duplicates created, message ID lost).",
+      "sort_num": 150,
+      "tag": "New"
+    },
+    {
+      "bug": 719351,
+      "created": "2018-02-11T13:39:57.124849+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787451,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:27.238607+00:00",
+      "note": "Calendar: Option to select the target calendar when pasting an event or task",
+      "sort_num": 50,
+      "tag": "New"
+    },
+    {
+      "bug": 1419145,
+      "created": "2018-02-10T19:56:30.626820+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787449,
+      "is_public": true,
+      "modified": "2018-04-16T09:44:39.688132+00:00",
+      "note": "Add-on options can no longer be configured from the Add-on Manager page. A new menu item \"Add-on Options\" is now available on the Tools menu.",
+      "sort_num": 300,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1294027,
+      "created": "2018-02-10T19:49:29.907267+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787447,
+      "is_public": true,
+      "modified": "2018-04-16T09:44:26.661436+00:00",
+      "note": "When customizing the From: address, Thunderbird will now use this address for the SMTP \"MAIL FROM\" command. Previously the address configured in the identity was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the previous behavior.",
+      "sort_num": 200,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1427509,
+      "created": "2018-02-10T19:53:52.737496+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787448,
+      "is_public": true,
+      "modified": "2018-03-23T19:58:13.490223+00:00",
+      "note": "Various updates to the Thunderbird theme. Thunderbird now uses [Photon Icons][1].\r\n\r\n\r\n  [1]: https://design.firefox.com/icons/viewer/",
+      "sort_num": 150,
+      "tag": "Changed"
+    },
+    {
+      "bug": 356002,
+      "created": "2018-02-11T13:41:50.092790+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787452,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:43.747457+00:00",
+      "note": "Calendar: Reminders on read-only calendars can now be dismissed, while reminders for missed events will now only be displayed for writable calendars if option \"Show missed reminders for writable calendars\" is selected",
+      "sort_num": 50,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1335982,
+      "created": "2018-02-10T19:33:20.115476+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787442,
+      "is_public": true,
+      "modified": "2018-04-16T09:43:29.459884+00:00",
+      "note": "Various problems related to handling the IMAP trash folder: Under certain circumstances the selection of the trash folder didn't persist, for example when the name contained non-ASCII characters, or in localized versions of Thunderbird. At times unwanted additional trash folders were created. Selection of a trash folder didn't give immediate visual feedback.",
+      "sort_num": 200,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1434020,
+      "created": "2018-02-10T19:38:54.602146+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787443,
+      "is_public": true,
+      "modified": "2018-03-23T19:58:22.103369+00:00",
+      "note": "Searching message bodies of messages in local folders, including filter and quick filter operations, did not find content in message attachments",
+      "sort_num": 150,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1419735,
+      "created": "2018-02-10T19:41:00.862848+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787444,
+      "is_public": true,
+      "modified": "2018-04-16T09:43:54.352112+00:00",
+      "note": "Shared IMAP folders not shown in subscribe dialog under some circumstances",
+      "sort_num": 100,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1437282,
+      "created": "2018-03-02T10:23:32.251887+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787459,
+      "is_public": true,
+      "modified": "2018-04-16T09:46:04.742910+00:00",
+      "note": "Improvements encoding/decoding message headers",
+      "sort_num": 80,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1396639,
+      "created": "2018-02-11T13:45:24.157166+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787453,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:55.564110+00:00",
+      "note": "Calendar: Wrong time formatting for some time zones",
+      "sort_num": 50,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1425962,
+      "created": "2018-02-10T20:02:43.351129+00:00",
+      "id": 787450,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:13.899887+00:00",
+      "note": "The IMAP and News subscribe dialogue now presents a flat list of folders instead of a folder tree. This will be restored to its original form in the next release.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2018-02-12",
+  "slug": "thunderbird-59.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n - Windows Server 2008 R2\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 56 only supports Windows 7, 8 and 10 and Windows Server 2008 R2.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**These release notes apply to Thunderbird version 59 beta 2 released March 1st, 2018. **",
+  "title": "Thunderbird 59.0beta Beta",
+  "version": "59.0beta"
+}

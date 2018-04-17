@@ -1,0 +1,753 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://mzl.la/2nSk0Ft",
+  "channel": "Release",
+  "created": "2017-03-10T07:28:07.559204+00:00",
+  "is_public": true,
+  "modified": "2017-04-07T13:33:01.495224+00:00",
+  "notes": [
+    {
+      "bug": 700796,
+      "created": "2016-09-02T17:30:59.985835+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786787,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:24.982646+00:00",
+      "note": "Folder pane toolbar and folder view selector (replacement for folder view arrows)",
+      "sort_num": 10,
+      "tag": "New"
+    },
+    {
+      "bug": 274452,
+      "created": "2017-01-24T14:34:42.367842+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786938,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:01.198413+00:00",
+      "note": "Optionally remove corresponding data files when removing an account from Thunderbird",
+      "sort_num": 9,
+      "tag": "New"
+    },
+    {
+      "bug": 684455,
+      "created": "2016-09-02T18:02:29.131916+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786800,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:22.492233+00:00",
+      "note": "Import settings from Becky! Internet Mail",
+      "sort_num": 7,
+      "tag": "New"
+    },
+    {
+      "bug": 214548,
+      "created": "2017-01-24T14:33:15.741534+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786937,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:02.516403+00:00",
+      "note": "Possibility to copy message filter",
+      "sort_num": 6,
+      "tag": "New"
+    },
+    {
+      "bug": 1169184,
+      "created": "2016-10-09T08:37:45.405007+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786835,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:19.808266+00:00",
+      "note": "Dictionary setting is restored when editing a draft. Content-Language header (RFC 3282) transmitted with message",
+      "sort_num": 5,
+      "tag": "New"
+    },
+    {
+      "bug": 1277972,
+      "created": "2017-01-24T14:49:17.799427+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786943,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:53.493578+00:00",
+      "note": "Calendar: Event can now be created and edited in a tab",
+      "sort_num": 4,
+      "tag": "New"
+    },
+    {
+      "bug": 1225784,
+      "created": "2017-01-24T21:21:31.039940+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786946,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:47.504019+00:00",
+      "note": "Calendar: Processing of received invitation counter proposals",
+      "sort_num": 3,
+      "tag": "New"
+    },
+    {
+      "bug": 955642,
+      "created": "2017-01-24T14:30:39.597162+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786935,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:04.954355+00:00",
+      "note": "Chat: Support Twitter Direct Messages",
+      "sort_num": 2,
+      "tag": "New"
+    },
+    {
+      "bug": 1314435,
+      "created": "2017-01-24T18:06:54.286258+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786945,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:48.671088+00:00",
+      "note": "Chat: Liking and favoriting in Twitter",
+      "sort_num": 1,
+      "tag": "New"
+    },
+    {
+      "bug": 1267649,
+      "created": "2016-10-10T18:51:40.109531+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786841,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:16.005199+00:00",
+      "note": "Chat: XMPP: Support SASL SCRAM authentication mechanism",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 964070,
+      "created": "2017-01-12T17:21:41.290309+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786903,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:14.854412+00:00",
+      "note": "Chat: Support Jabber/XMPP Message Carbons (XEP-280)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1322155,
+      "created": "2017-01-24T15:08:52.106022+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786944,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:50.491330+00:00",
+      "note": "**IMPORTANT:** The way images are included in a compose window has changed. Images are now included as [data URIs][1] and not as references to parts of other messages or operating system files. This allows better interoperability with office packages such as MS Office or LibreOffice. Images linked from locations on the internet will **no longer** be downloaded and attached to the message automatically. This can be changed for each image individually via the Image Properties dialog or globally by setting the preference mail.compose.attach_http_images.\r\n\r\n[1]: https://en.wikipedia.org/wiki/Data_URI_scheme",
+      "sort_num": 15,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1268325,
+      "created": "2017-03-13T07:28:59.351290+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0-release",
+        "title": "Thunderbird 52.0 Release",
+        "version": "52.0"
+      },
+      "id": 787008,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:40.917820+00:00",
+      "note": "Correspondents column now default for all new folders, can be switched off with preference mail.threadpane.use_correspondents",
+      "sort_num": 13,
+      "tag": "Changed"
+    },
+    {
+      "bug": 77304,
+      "created": "2017-03-13T09:52:53.247612+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 787009,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:39.511918+00:00",
+      "note": "When replying to a mailing list, reply will be sent to address in From header ignoring Reply-to header",
+      "sort_num": 12,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1247056,
+      "created": "2017-03-22T12:17:45.447449+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0-release",
+        "title": "Thunderbird 52.0 Release",
+        "version": "52.0"
+      },
+      "id": 787013,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:37.361031+00:00",
+      "note": "On Linux PulseAudio is now required to play sound",
+      "sort_num": 11,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1106815,
+      "created": "2017-08-24T09:13:27.595362+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0-release",
+        "title": "Thunderbird 52.0 Release",
+        "version": "52.0"
+      },
+      "id": 787240,
+      "is_public": true,
+      "modified": "2017-08-24T09:13:46.918027+00:00",
+      "note": "Notifications on Mac: Some manual adjustments might be necessary in the Mac Notification Center (System Preferences - Notifications - Thunderbird) after an upgrade to Thunderbird 52.",
+      "sort_num": 11,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1288914,
+      "created": "2016-10-09T08:51:54.397094+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786839,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:18.220803+00:00",
+      "note": "Formatting toolbar is now left in place when delivery format is switched to plain text only",
+      "sort_num": 10,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1320832,
+      "created": "2017-01-24T14:37:21.422172+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786939,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:59.867100+00:00",
+      "note": "Messages in IMAP folders read on external device are now filtered by default",
+      "sort_num": 6,
+      "tag": "Changed"
+    },
+    {
+      "bug": 789679,
+      "created": "2017-01-12T17:53:06.407772+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786911,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:06.855705+00:00",
+      "note": "Folders backed by mbox storage larger than 4GB are supported without warning (unless preference mailnews.allowMboxOver4GB is set to false)",
+      "sort_num": 4,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1021843,
+      "created": "2017-01-12T17:34:47.125928+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786908,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:09.633757+00:00",
+      "note": "IMAP caching now uses Mozilla's latest caching technology",
+      "sort_num": 2,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1293048,
+      "created": "2017-04-18T16:44:02.256775+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0-release",
+        "title": "Thunderbird 52.0 Release",
+        "version": "52.0"
+      },
+      "id": 787049,
+      "is_public": true,
+      "modified": "2017-04-18T16:47:45.335136+00:00",
+      "note": "The keyboard shortcut to insert hyperlinks into a compose window was changed from CTRL+L to CTRL+K to align with Office applications",
+      "sort_num": 1,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1316000,
+      "created": "2017-01-24T14:31:51.354632+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786936,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:03.689091+00:00",
+      "note": "Chat: Removed Yahoo! Messenger support (since [Yahoo removed support][1])\r\n\r\n\r\n  [1]: https://web.archive.org/web/20160730080614/https://help.yahoo.com/kb/yahoo-messenger-for-web/SLN26860.html",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1328814,
+      "created": "2017-01-12T17:22:59.423854+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786904,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:13.559463+00:00",
+      "note": "Message preview pane non-functional after IMAP folder was renamed or moved",
+      "sort_num": 20,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1263357,
+      "created": "2017-01-24T14:41:25.094704+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786941,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:57.099051+00:00",
+      "note": "Editing in paragraph format: Pressing Shift+Enter sometimes doesn't move the cursor to the next line",
+      "sort_num": 18,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1265800,
+      "created": "2017-01-12T17:40:57.783486+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786910,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:08.453064+00:00",
+      "note": "Various corrections when composing messages in paragraph format",
+      "sort_num": 16,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 795418,
+      "created": "2017-02-15T21:02:49.464166+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786981,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:43.762913+00:00",
+      "note": "Paste as quotation doesn't always work",
+      "sort_num": 14,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1288911,
+      "created": "2017-01-24T14:46:23.331851+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786942,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:55.686788+00:00",
+      "note": "Long lines in plain text replies not properly wrapped",
+      "sort_num": 12,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1336531,
+      "created": "2017-02-15T21:04:53.561702+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786982,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:42.543734+00:00",
+      "note": "Undesired white-space before signature in paragraph mode",
+      "sort_num": 10,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 453196,
+      "created": "2016-09-02T17:53:54.467327+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786796,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:23.522200+00:00",
+      "note": "When attachment unavailable, compose shows endless \"Attaching...\" message instead of error",
+      "sort_num": 9,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1323377,
+      "created": "2017-01-12T17:28:44.591143+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786905,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:12.346679+00:00",
+      "note": "Text encoding of reply sometimes incorrect (uses encoding of last viewed message)",
+      "sort_num": 8,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1026989,
+      "created": "2017-01-12T17:30:52.782024+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786906,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:10.759716+00:00",
+      "note": "Text encoding of message display, reply or forwarded message sometimes incorrect (uses encoding of attachment)",
+      "sort_num": 7,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1202165,
+      "created": "2016-06-13T19:25:12.984191+00:00",
+      "id": 786727,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:26.300810+00:00",
+      "note": " Delivery Format not preserved for saved drafts (Auto-Detect|Plaintext|HTML|Both) ",
+      "sort_num": 6,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 903390,
+      "created": "2016-10-09T08:32:09.784492+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786833,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:21.199057+00:00",
+      "note": "Reply to own e-mail does not reply with the correct identity",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 629738,
+      "created": "2017-01-24T14:38:48.056051+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786940,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:58.560828+00:00",
+      "note": "IMAP message part caching",
+      "sort_num": 4,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 770022,
+      "created": "2017-02-15T21:01:39.658721+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786980,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:45.010571+00:00",
+      "note": "Links with escaped non-ASCII (international) characters can't be clicked",
+      "sort_num": 3,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1300493,
+      "created": "2017-01-24T21:41:46.164400+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0beta-beta",
+        "title": "Thunderbird 52.0beta Beta",
+        "version": "52.0beta"
+      },
+      "id": 786947,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:46.313102+00:00",
+      "note": "Calendar: Events specified in timezone \"local time\" generate alerts in UTC time",
+      "sort_num": 2,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 955307,
+      "created": "2016-10-10T18:50:49.438094+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786840,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:17.083800+00:00",
+      "note": "Chat: XMPP Resource collisions",
+      "sort_num": 1,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2017-04-07T12:52:18.274347+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0-release",
+        "title": "Thunderbird 52.0 Release",
+        "version": "52.0"
+      },
+      "id": 787028,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:35.751493+00:00",
+      "note": "Various [security fixes][1]\r\n\r\n\r\n  [1]: https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird52",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1354991,
+      "created": "2017-04-11T19:12:15.672902+00:00",
+      "id": 787029,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:29.109533+00:00",
+      "note": "Clicking on a link in an email may not open this link in the external browser. Fix provided in 52.0.1 (upcoming)",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1353625,
+      "created": "2017-04-11T19:13:13.903735+00:00",
+      "id": 787030,
+      "is_public": true,
+      "modified": "2017-06-12T19:19:15.553421+00:00",
+      "note": "Large number of blank pages being printed under certain circumstances. **To fix this problem,** remove all printer specific preferences in the configuration editor.",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1355350,
+      "created": "2017-04-11T19:14:26.454345+00:00",
+      "id": 787031,
+      "is_public": true,
+      "modified": "2017-05-09T21:53:46.106420+00:00",
+      "note": "Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use. **Workaround:** Set preference browser.cache.memory.max_entry_size to the value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of 200000 (200 MB, 25 MB per message).",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1281610,
+      "created": "2017-04-11T19:15:44.518791+00:00",
+      "id": 787032,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:38.844733+00:00",
+      "note": "Crash due to incompatibility with McAfee Anti-SPAM add-on. **Workaround:** Start in safe mode and disable McAfee Anti-Spam Extension",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1356600,
+      "created": "2017-04-14T22:41:25.441434+00:00",
+      "id": 787045,
+      "is_public": true,
+      "modified": "2017-04-29T18:14:48.592199+00:00",
+      "note": "Background images not working and other issues related to embedded images when composing email",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1158578,
+      "created": "2017-04-26T19:41:50.762090+00:00",
+      "id": 787061,
+      "is_public": true,
+      "modified": "2017-05-09T21:53:55.416433+00:00",
+      "note": "Crash when compacting IMAP folder",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-04-04",
+  "slug": "thunderbird-52.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Server 2003 R2\r\n - Windows Server 2008\r\n - Windows Server 2008 R2\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n    - PulseAudio\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**System Requirements:**<br>\r\n\u2022 **Window: Windows XP, Windows Server 2003 or later**<br>\r\n\u2022 **Mac: Mac OS X 10.9 or later**<br>\r\n\u2022 **Linux: GTK+ 3.4 or higher**<br>\r\nDetails [here][1].\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/thunderbird/52.0/system-requirements/",
+  "title": "Thunderbird 52.0 Release",
+  "version": "52.0"
+}

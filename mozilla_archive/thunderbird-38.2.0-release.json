@@ -1,0 +1,47 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=40%2B&v2=fixed&list_id=12473958",
+  "channel": "Release",
+  "created": "2015-08-14T18:42:09+00:00",
+  "is_public": true,
+  "modified": "2015-09-19T16:03:40+00:00",
+  "notes": [
+    {
+      "bug": 1131879,
+      "created": "2015-08-14T18:46:44+00:00",
+      "id": 786240,
+      "is_public": true,
+      "modified": "2015-08-14T18:46:45+00:00",
+      "note": "Hardware acceleration is now disabled by default to avoid crashing Thunderbird",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": null,
+      "created": "2015-08-14T18:53:50+00:00",
+      "id": 786242,
+      "is_public": true,
+      "modified": "2015-08-14T18:53:51+00:00",
+      "note": "A few bugs have been fixed to avoid crashing Thunderbird",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1193958,
+      "created": "2015-08-14T18:50:54+00:00",
+      "id": 786241,
+      "is_public": true,
+      "modified": "2015-08-14T18:54:12+00:00",
+      "note": "The \"maildir\" storage type can no longer be set through the UI due to various issues. Power users can still set the storage type using the config editor.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2015-08-14",
+  "slug": "thunderbird-38.2.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP2\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "<p>Thunderbird 38.2.0 contains underlying code that is based off of <a href=\"https://www.mozilla.org/en-US/firefox/38.2.0/releasenotes/\">Firefox 38.2.0 esr.</a> See also the release notes for the <a href=\"https://www.mozilla.org/en-US/thunderbird/38.0.1/releasenotes/\">update from Thunderbird 31 to 38</a></p>",
+  "title": "Thunderbird 38.2.0 Release",
+  "version": "38.2.0"
+}

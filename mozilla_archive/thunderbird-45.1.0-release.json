@@ -1,0 +1,107 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?list_id=12991744&o1=equals&v1=46%2B&f1=cf_tracking_thunderbird_esr45&query_format=advanced",
+  "channel": "Release",
+  "created": "2016-04-29T17:54:07.100776+00:00",
+  "is_public": true,
+  "modified": "2016-05-13T19:57:40.655983+00:00",
+  "notes": [
+    {
+      "bug": 1267804,
+      "created": "2016-05-05T20:25:50.713978+00:00",
+      "id": 786674,
+      "is_public": true,
+      "modified": "2016-05-05T20:25:50.937136+00:00",
+      "note": "Drag & Drop a contact name from Thunderbird address book (list view) to address box in a new message \u201ccompose\u201d window failed.",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1266354,
+      "created": "2016-05-05T20:36:16.275073+00:00",
+      "id": 786675,
+      "is_public": true,
+      "modified": "2016-05-05T20:36:16.562178+00:00",
+      "note": "UI elements became larger when moused over on retina displays/monitor on Mac OS X",
+      "sort_num": 1,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1257363,
+      "created": "2016-04-29T17:56:42.258732+00:00",
+      "id": 786624,
+      "is_public": true,
+      "modified": "2016-05-05T20:21:18.499317+00:00",
+      "note": "Various improvements in handling of message compose in paragraph mode.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1265126,
+      "created": "2016-04-29T17:58:28.885601+00:00",
+      "id": 786625,
+      "is_public": true,
+      "modified": "2016-05-05T20:21:18.499317+00:00",
+      "note": "Printing failed in composition window.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1265326,
+      "created": "2016-04-29T18:01:25.529782+00:00",
+      "id": 786626,
+      "is_public": true,
+      "modified": "2016-05-05T20:21:18.499317+00:00",
+      "note": "Font indicator in compose falsely claimed certain fonts were not installed.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1268081,
+      "created": "2016-04-29T18:04:28.600776+00:00",
+      "id": 786627,
+      "is_public": true,
+      "modified": "2016-05-05T20:21:18.499317+00:00",
+      "note": "DIGEST-MD5 authentication in JS-XMPP failed for some users (now disabled).",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1268325,
+      "created": "2016-05-05T20:23:57.499737+00:00",
+      "id": 786673,
+      "is_public": true,
+      "modified": "2016-05-05T20:23:57.762652+00:00",
+      "note": "Automatic correspondents column upgrade disabled",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2016-05-13T19:57:30.581286+00:00",
+      "id": 786677,
+      "is_public": true,
+      "modified": "2016-05-13T19:57:30.874775+00:00",
+      "note": "Various [security fixes][1] \r\n\r\n[1]: https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird45.1",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1268014,
+      "created": "2016-05-05T21:14:44.899525+00:00",
+      "id": 786676,
+      "is_public": true,
+      "modified": "2016-05-05T21:14:45.211621+00:00",
+      "note": " Email with signature and safe HTML elements is sent as HTML, despite \"Delivery Format: Auto-detect\" option",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2016-05-10",
+  "slug": "thunderbird-45.1.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 45.1.0 Release",
+  "version": "45.1.0"
+}

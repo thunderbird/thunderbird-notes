@@ -1,0 +1,289 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2018-03-23T19:57:20.214333+00:00",
+  "is_public": true,
+  "modified": "2018-04-16T06:54:25.624140+00:00",
+  "notes": [
+    {
+      "bug": 1100103,
+      "created": "2018-03-23T20:24:35.841479+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787509,
+      "is_public": true,
+      "modified": "2018-04-16T09:53:41.922093+00:00",
+      "note": "When writing a message, a delete button now allows the removal of a recipient. This delete button is displayed when hovering the To/Cc/Bcc selector.",
+      "sort_num": 500,
+      "tag": "New"
+    },
+    {
+      "bug": 1428631,
+      "created": "2018-03-23T20:18:32.760494+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787507,
+      "is_public": true,
+      "modified": "2018-04-16T09:53:13.711915+00:00",
+      "note": "Further improvements to attachments handling during compose, Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when composing a new message. Right-click on the header to enable this option.",
+      "sort_num": 200,
+      "tag": "New"
+    },
+    {
+      "bug": 856087,
+      "created": "2018-03-23T20:10:04.666885+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787504,
+      "is_public": true,
+      "modified": "2018-04-16T09:52:23.511951+00:00",
+      "note": "Thunderbird now allows the conversion of folders from mbox to maildir format and vice versa. This is an **experimental** feature that needs to be enabled by setting the preference mail.store_conversion_enabled.",
+      "sort_num": 100,
+      "tag": "New"
+    },
+    {
+      "bug": 1450670,
+      "created": "2018-04-05T23:01:46.575340+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787530,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:58.955722+00:00",
+      "note": "WebExtension themes are now enabled in Thunderbird",
+      "sort_num": 95,
+      "tag": "New"
+    },
+    {
+      "bug": 393084,
+      "created": "2018-03-23T20:25:45.358335+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787510,
+      "is_public": true,
+      "modified": "2018-04-16T10:02:35.365677+00:00",
+      "note": "Calendar: Allow copying, cutting or deleting of a selected occurrence or the entire series for recurring events",
+      "sort_num": 90,
+      "tag": "New"
+    },
+    {
+      "bug": 321434,
+      "created": "2018-03-23T20:26:27.847864+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787511,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:08.925720+00:00",
+      "note": "Calendar: Provide an option to display locations for events in calendar day and week views",
+      "sort_num": 80,
+      "tag": "New"
+    },
+    {
+      "bug": 463402,
+      "created": "2018-03-23T20:27:13.679154+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787512,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:31.646200+00:00",
+      "note": "Calendar: Provide the ability for sending/not sending meeting notifications directly instead of showing a popup",
+      "sort_num": 70,
+      "tag": "New"
+    },
+    {
+      "bug": 1451097,
+      "created": "2018-04-05T22:39:52.919336+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787528,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:44.900952+00:00",
+      "note": "**IMPORTANT:** Add-ons not marked as compatible with Thunderbird 60 by their authors will be disabled (this can be reverted via preference extensions.strictCompatibility)",
+      "sort_num": 1000,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1157256,
+      "created": "2018-03-23T20:11:07.115824+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787505,
+      "is_public": true,
+      "modified": "2018-04-16T09:52:33.060140+00:00",
+      "note": "Thunderbird will now prompt to compact IMAP folders even if the account is online",
+      "sort_num": 900,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1436290,
+      "created": "2018-03-23T20:13:00.457349+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787506,
+      "is_public": true,
+      "modified": "2018-04-16T09:52:59.567197+00:00",
+      "note": "During address entry, the matching part of the address is now shown in bold. Preference mail.autoComplete.commentColumn allows to display the address book where the address is stored.",
+      "sort_num": 100,
+      "tag": "Changed"
+    },
+    {
+      "bug": 463402,
+      "created": "2018-03-23T20:27:59.474378+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787513,
+      "is_public": true,
+      "modified": "2018-04-16T09:55:43.314847+00:00",
+      "note": "Calendar: Removal of capability to send email invitations compatible to Outlook 2002 and earlier",
+      "sort_num": 90,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1430480,
+      "created": "2018-04-16T07:04:09.991730+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787539,
+      "is_public": true,
+      "modified": "2018-04-16T09:55:23.218036+00:00",
+      "note": "Messages moved between IMAP accounts were missing parts (embedded content or attachments) under some circumstances",
+      "sort_num": 100,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 96968,
+      "created": "2018-04-16T07:02:11.663853+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787538,
+      "is_public": true,
+      "modified": "2018-04-16T09:55:10.803632+00:00",
+      "note": "Text in the address book card view wasn't selectable",
+      "sort_num": 50,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1419145,
+      "created": "2018-04-05T22:58:49.040425+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787529,
+      "is_public": true,
+      "modified": "2018-04-05T22:58:49.040226+00:00",
+      "note": "The new menu item \"Add-on Options\" introduced in Thunderbird 59 beta is now also working on Mac",
+      "sort_num": 10,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1425962,
+      "created": "2018-02-10T20:02:43.351129+00:00",
+      "id": 787450,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:13.899887+00:00",
+      "note": "The IMAP and News subscribe dialogue now presents a flat list of folders instead of a folder tree. This will be restored to its original form in the next release.",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1439021,
+      "created": "2018-03-23T20:22:31.104849+00:00",
+      "id": 787508,
+      "is_public": true,
+      "modified": "2018-04-16T09:53:30.503609+00:00",
+      "note": "Source view not working for JS source files via Developer tools. Workaround: Set preference view_source.editor.external and view_source.editor.path to view the source in the editor of your choice.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2018-03-26",
+  "slug": "thunderbird-60.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n - Windows Server 2008 R2\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 56 only supports Windows 7, 8 and 10 and Windows Server 2008 R2.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**These release notes apply to Thunderbird version 60 beta 3 released April 16th, 2018. **",
+  "title": "Thunderbird 60.0beta Beta",
+  "version": "60.0beta"
+}

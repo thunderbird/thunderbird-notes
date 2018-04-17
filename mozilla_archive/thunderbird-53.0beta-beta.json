@@ -1,0 +1,93 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2017-03-22T21:08:51.347078+00:00",
+  "is_public": true,
+  "modified": "2017-05-19T15:04:49.991756+00:00",
+  "notes": [
+    {
+      "bug": 1308776,
+      "created": "2017-03-22T21:17:22.837559+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-53.0beta-beta",
+        "title": "Thunderbird 53.0beta Beta",
+        "version": "53.0beta"
+      },
+      "id": 787017,
+      "is_public": true,
+      "modified": "2018-04-16T09:18:47.878743+00:00",
+      "note": "A default startup directory in the address book window can now be configured",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1356600,
+      "created": "2017-04-26T19:30:19.003775+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-53.0beta-beta",
+        "title": "Thunderbird 53.0beta Beta",
+        "version": "53.0beta"
+      },
+      "id": 787059,
+      "is_public": true,
+      "modified": "2017-05-09T21:52:00.714507+00:00",
+      "note": "Background images not working and other issues related to embedded images when composing email ",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2017-03-22T21:19:57.795921+00:00",
+      "id": 787018,
+      "is_public": true,
+      "modified": "2017-05-19T14:01:51.101819+00:00",
+      "note": "Datetime formatting is not working properly on the Linux 32bit platform. This results in party broken calendar views and incorrect event times - for users on this platform it is strictly recommended to backup the user profile before updating and **disable Lightning after updating for the remaining lifetime of this version** to avoid damages to calendar data.",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1355350,
+      "created": "2017-04-11T19:14:26.454345+00:00",
+      "id": 787031,
+      "is_public": true,
+      "modified": "2017-05-09T21:53:46.106420+00:00",
+      "note": "Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use. **Workaround:** Set preference browser.cache.memory.max_entry_size to the value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of 200000 (200 MB, 25 MB per message).",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1281610,
+      "created": "2017-04-11T19:15:44.518791+00:00",
+      "id": 787032,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:38.844733+00:00",
+      "note": "Crash due to incompatibility with McAfee Anti-SPAM add-on. **Workaround:** Start in safe mode and disable McAfee Anti-Spam Extension",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1158578,
+      "created": "2017-04-26T19:41:50.762090+00:00",
+      "id": 787061,
+      "is_public": true,
+      "modified": "2017-05-09T21:53:55.416433+00:00",
+      "note": "Crash when compacting IMAP folder",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-04-10",
+  "slug": "thunderbird-53.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n - Windows Server 2008 R2\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 53 only supports Windows 7, 8 and 10 and Windows Server 2008 R2.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**These release notes apply to Thunderbird version 53 beta 2 released April 19th, 2017.**",
+  "title": "Thunderbird 53.0beta Beta",
+  "version": "53.0beta"
+}

@@ -1,0 +1,203 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?bug_status=CLOSED&bug_status=VERIFIED&bug_status=RESOLVED&field0-0-0=target_milestone&field0-0-1=target_milestone&field0-0-2=target_milestone&field0-0-3=target_milestone&field0-0-4=target_milestone&field0-0-5=target_milestone&field0-0-6=target_milestone&field0-0-7=cf_status_thunderbird_31&field0-0-8=cf_status_thunderbird_31&field1-0-0=cf_status_thunderbird_esr24&field2-0-0=cf_status_thunderbird_esr24&query_format=advanced&resolution=FIXED&type0-0-0=substring&type0-0-1=substring&type0-0-2=substring&type0-0-3=substring&type0-0-4=substring&type0-0-5=substring&type0-0-6=substring&type0-0-7=substring&type0-0-8=substring&type1-0-0=notsubstring&type2-0-0=notsubstring&value0-0-0=Thunderbird%2025&value0-0-1=Thunderbird%2026&value0-0-2=Thunderbird%2027&value0-0-3=Thunderbird%2028&value0-0-4=Thunderbird%2029&value0-0-5=Thunderbird%2030&value0-0-6=Thunderbird%2031&value0-0-7=fixed&value0-0-8=verified&value1-0-0=fixed&value2-0-0=verified&order=bug_id%20DESC&limit=0&list_id=11707017",
+  "channel": "Release",
+  "created": "2014-11-13T07:09:15+00:00",
+  "is_public": true,
+  "modified": "2014-12-10T14:10:42+00:00",
+  "notes": [
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:16+00:00",
+      "id": 785796,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:16+00:00",
+      "note": "Theme support for Windows 8 (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=984978\">bug 984978</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:17+00:00",
+      "id": 785797,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:17+00:00",
+      "note": "Improved OS X dock icon behaviour (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=601263\">bug 601263</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:18+00:00",
+      "id": 785798,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:18+00:00",
+      "note": "Improved attachment reminder behaviour and reliability (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=521158\">bug 521158</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=944643\">bug 944643</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:18+00:00",
+      "id": 785799,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:18+00:00",
+      "note": "OS X Notification Center support for web notifications (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=852648\">bug 852648</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:19+00:00",
+      "id": 785800,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:19+00:00",
+      "note": "Firefox-style search and replace from within the message composition windowl (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=530629\">bug 530629</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:20+00:00",
+      "id": 785801,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:20+00:00",
+      "note": "Improved display behaviour for attached and embedded images (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=877520\">bug 877520</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=534083\">bug 534083</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:21+00:00",
+      "id": 785802,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:21+00:00",
+      "note": "Improved address book searching and autocompletion (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=529584\">bug 529584</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=558931\">bug 558931</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:21+00:00",
+      "id": 785803,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:21+00:00",
+      "note": "Improved display behaviour for RSS feeds (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=745301\">bug 745301</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:22+00:00",
+      "id": 785804,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:22+00:00",
+      "note": "Printing and print previewing from the message composition windows (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=318955\">bug 318955</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=251953\">bug 251953</a>)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:23+00:00",
+      "id": 785805,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:23+00:00",
+      "note": "Removed the \"Revocation Lists\" button from the \"Certificates\" section of the advanced preferences(see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=892255\">892255</a>)",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:24+00:00",
+      "id": 785806,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:24+00:00",
+      "note": "Re-enabled hardware graphics acceleration support (see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=950133\">950133</a>)",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:24+00:00",
+      "id": 785807,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:24+00:00",
+      "note": "Hooked up web console, style editor and profiler (see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=897476\">897476</a>)",
+      "sort_num": 0,
+      "tag": "Developer"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:25+00:00",
+      "id": 785808,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:25+00:00",
+      "note": "Styling issues for the composition interface on OS X (see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=963731\">963731</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:26+00:00",
+      "id": 785809,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:26+00:00",
+      "note": "Styling issues for the quick filter bar (see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=964364\">964364</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=964066\">964066</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:27+00:00",
+      "id": 785810,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:27+00:00",
+      "note": "Sorting of Favourite folders (see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=533775\">533775</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1081190,
+      "created": "2014-12-12T10:23:17+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-31.4.0-release",
+        "title": "Thunderbird 31.4.0 Release",
+        "version": "31.4.0"
+      },
+      "id": 785864,
+      "is_public": true,
+      "modified": "2015-01-13T15:13:15+00:00",
+      "note": "Installing extensions within Thunderbird requires download and installing as a file (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1081190\">bug 1081190</a>)",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": null,
+      "created": "2014-12-12T10:28:07+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-31.4.0-release",
+        "title": "Thunderbird 31.4.0 Release",
+        "version": "31.4.0"
+      },
+      "id": 785865,
+      "is_public": true,
+      "modified": "2015-01-13T15:14:09+00:00",
+      "note": "Users of jp mac builds may have issues with no mail folders being displayed in the main window. Running Thunderbird in 32-bit mode temporarily will workaround this issue.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2014-07-22",
+  "slug": "thunderbird-31.0-release",
+  "system_requirements": "<h2>Windows</h2>\r\n<h6>Operating Systems</h6>\r\n<ul>\r\n    <li>Windows XP SP2</li>\r\n    <li>Windows Server 2003</li>\r\n    <li>Windows Vista</li>\r\n    <li>Windows 7</li>\r\n    <li>Windows 8</li>\r\n</ul>\r\n<p><em><small>Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.</smal\\\r\nl></em></p>\r\n<h6>Recommended Hardware</h6>\r\n<ul>\r\n    <li>Pentium 4 or newer processor that supports SSE2</li>\r\n    <li>1GB RAM</li>\r\n    <li>200 MB hard drive space</li>\r\n</ul>\r\n<h2>Mac</h2>\r\n<h6>Operating Systems</h6>\r\n<ul>\r\n    <li>Mac OS X 10.6</li>\r\n    <li>Mac OS X 10.7</li>\r\n    <li>Mac OS X 10.8</li>\r\n    <li>Mac OS X 10.9</li>\r\n</ul>\r\n<h6>Recommended Hardware</h6>\r\n<ul>\r\n<li>Macintosh computer with an Intel x86 processor</li>\r\n<li>512 MB RAM</li>\r\n<li>200 MB hard drive space</li>\r\n</ul>\r\n<h2>Linux</h2>\r\n<h6>Software Requirements</h6>\r\n  Please note that Linux distributors may provide packages for your distribution which have different requirements.\r\n  <ul>\r\n    <li>Thunderbird will not run at all without the following libraries or packages:\r\n    <ul>\r\n        <li>GTK+ 2.18 or higher</li>\r\n        <li>GLib 2.22 or higher</li>\r\n        <li>Pango 1.14 or higher</li>\r\n        <li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>\r\n        <li>libstdc++ 4.3 or higher</li>\r\n    </ul>\r\n    </li>\r\n</ul>\r\n<ul>\r\n    <li>For optimal functionality, we recommend the following libraries or packages:</li>\r\n    <ul>\r\n        <li>NetworkManager 0.7 or higher</li>\r\n        <li>DBus 1.0 or higher</li>\r\n        <li>HAL 0.5.8 or higher</li>\r\n        <li>GNOME 2.16 or higher</li>\r\n    </ul>\r\n</ul>\r\n",
+  "text": "",
+  "title": "Thunderbird 31.0 Release",
+  "version": "31.0"
+}

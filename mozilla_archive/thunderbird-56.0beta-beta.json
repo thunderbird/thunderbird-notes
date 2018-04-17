@@ -1,0 +1,377 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2017-08-07T20:33:59.956039+00:00",
+  "is_public": true,
+  "modified": "2017-10-18T06:47:19.654716+00:00",
+  "notes": [
+    {
+      "bug": 1384007,
+      "created": "2017-08-07T20:34:40.009185+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787207,
+      "is_public": true,
+      "modified": "2018-04-16T09:28:40.071332+00:00",
+      "note": "An option under \"Tools > Options, Advanced, General\" now allows to select whether date/time display will follow the application locale (adjusted by operating system's format settings for that locale) or the locale selected in the operating system's regional settings. In other words, an US English Thunderbird can use, for example, German formats.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1392371,
+      "created": "2017-10-06T13:22:41.218345+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.4.0-release",
+        "title": "Thunderbird 52.4.0 Release",
+        "version": "52.4.0"
+      },
+      "id": 787287,
+      "is_public": true,
+      "modified": "2017-11-23T16:18:09.177236+00:00",
+      "note": "In Thunderbird 52 a new behavior was introduced for replies to mailing list posts: \"When replying to a mailing list, reply will be sent to address in From header ignoring Reply-to header\". A new preference mail.override_list_reply_to allows to restore the previous behavior.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 28211,
+      "created": "2017-08-07T20:49:58.972021+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787210,
+      "is_public": true,
+      "modified": "2018-04-16T09:27:50.136967+00:00",
+      "note": "IMAP: When after sending a message storing that sent message fails, the message can now be stored in a local folder",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1354002,
+      "created": "2017-08-07T20:59:31.610091+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787213,
+      "is_public": true,
+      "modified": "2018-04-16T09:27:22.962165+00:00",
+      "note": "When messages are composed in paragraph format, \"body text\" and split mail quotes are converted to paragraphs when pressing the enter key",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1363281,
+      "created": "2017-08-07T21:04:01.448439+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787215,
+      "is_public": true,
+      "modified": "2018-04-16T09:26:32.337804+00:00",
+      "note": "Thunderbird now uses the latest Mozilla technology based on Rust for encoding messages",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1378320,
+      "created": "2017-08-07T21:04:40.050558+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787216,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:43.164845+00:00",
+      "note": "Various improvements in the Thunderbird themes on all platforms, especially for Windows 10.",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1395620,
+      "created": "2017-10-06T13:21:27.786806+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.4.0-release",
+        "title": "Thunderbird 52.4.0 Release",
+        "version": "52.4.0"
+      },
+      "id": 787286,
+      "is_public": true,
+      "modified": "2017-11-23T16:18:10.461911+00:00",
+      "note": "Under certain circumstances (image attachment and non-image attachment), attached images were shown truncated in messages stored in IMAP folders not synchronised for offline use.",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1391128,
+      "created": "2017-08-21T07:07:27.525022+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787239,
+      "is_public": true,
+      "modified": "2017-11-23T16:18:12.709528+00:00",
+      "note": "IMAP UIDs > 0x7FFFFFFF not handled properly",
+      "sort_num": 1,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1367156,
+      "created": "2017-08-07T20:42:27.117623+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787208,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:51.505343+00:00",
+      "note": "Unwanted inline images shown in rogue SPAM messages",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1322032,
+      "created": "2017-08-07T20:45:06.942072+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787209,
+      "is_public": true,
+      "modified": "2018-04-16T09:28:21.365652+00:00",
+      "note": "Contacts sidebar: Selection and context menu behavior",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1293770,
+      "created": "2017-08-07T20:53:38.099224+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787211,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:48.386239+00:00",
+      "note": "Deleting message from the POP3 server not working when maildir storage was used",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1379912,
+      "created": "2017-08-07T20:55:15.159473+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787212,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:47.067189+00:00",
+      "note": "Message disposition flag (replied / forwarded) lost when reply or forwarded message was stored as draft and draft was sent later",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 549106,
+      "created": "2017-08-07T21:02:35.058778+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787214,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:45.010697+00:00",
+      "note": "Inline images not scaled to fit when printing",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 507541,
+      "created": "2017-08-07T21:06:57.295619+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787217,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:42.363121+00:00",
+      "note": "Selected text from another message sometimes included in a reply",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1367191,
+      "created": "2017-08-07T21:08:40.221274+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787218,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:41.066579+00:00",
+      "note": "No authorisation prompt displayed when inserting image into email body although image URL requires authentication",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1387268,
+      "created": "2017-08-07T21:10:03.231359+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787219,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:39.711846+00:00",
+      "note": "Blank lines removed from plain text replies under some circumstances",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1386585,
+      "created": "2017-08-10T18:49:41.426928+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787226,
+      "is_public": true,
+      "modified": "2017-11-10T15:02:38.835311+00:00",
+      "note": "Large attachments taking a long time to open under some circumstances",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1387581,
+      "created": "2017-10-17T21:53:07.951769+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787295,
+      "is_public": true,
+      "modified": "2017-12-21T19:00:46.627801+00:00",
+      "note": "In search folders spanning multiple base folders clicking on a message sometimes marked another message as read",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1401026,
+      "created": "2017-10-17T21:53:41.021847+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787296,
+      "is_public": true,
+      "modified": "2017-12-21T19:00:45.550015+00:00",
+      "note": "IMAP alerts have been corrected and now show the correct server name in case of connection problems",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1400359,
+      "created": "2017-10-17T21:54:20.302073+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787297,
+      "is_public": true,
+      "modified": "2017-12-21T19:00:44.016863+00:00",
+      "note": "POP alerts have been corrected and now indicate connection problems in case the configured POP server cannot be found",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-08-08",
+  "slug": "thunderbird-56.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n - Windows Server 2008 R2\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 56 only supports Windows 7, 8 and 10 and Windows Server 2008 R2.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**These release notes apply to Thunderbird version 56 beta 4 released October 17th, 2017.**",
+  "title": "Thunderbird 56.0beta Beta",
+  "version": "56.0beta"
+}

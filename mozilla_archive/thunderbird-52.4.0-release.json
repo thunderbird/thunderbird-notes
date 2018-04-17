@@ -1,0 +1,81 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=56%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced",
+  "channel": "Release",
+  "created": "2017-10-06T13:17:09.684506+00:00",
+  "is_public": true,
+  "modified": "2017-11-23T20:48:27.068138+00:00",
+  "notes": [
+    {
+      "bug": 1392371,
+      "created": "2017-10-06T13:22:41.218345+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.4.0-release",
+        "title": "Thunderbird 52.4.0 Release",
+        "version": "52.4.0"
+      },
+      "id": 787287,
+      "is_public": true,
+      "modified": "2017-11-23T16:18:09.177236+00:00",
+      "note": "In Thunderbird 52 a new behavior was introduced for replies to mailing list posts: \"When replying to a mailing list, reply will be sent to address in From header ignoring Reply-to header\". A new preference mail.override_list_reply_to allows to restore the previous behavior.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1395620,
+      "created": "2017-10-06T13:21:27.786806+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.4.0-release",
+        "title": "Thunderbird 52.4.0 Release",
+        "version": "52.4.0"
+      },
+      "id": 787286,
+      "is_public": true,
+      "modified": "2017-11-23T16:18:10.461911+00:00",
+      "note": "Under certain circumstances (image attachment and non-image attachment), attached images were shown truncated in messages stored in IMAP folders not synchronised for offline use.",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1391128,
+      "created": "2017-08-21T07:07:27.525022+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787239,
+      "is_public": true,
+      "modified": "2017-11-23T16:18:12.709528+00:00",
+      "note": "IMAP UIDs > 0x7FFFFFFF not handled properly",
+      "sort_num": 1,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2017-10-06T20:57:43.538488+00:00",
+      "id": 787288,
+      "is_public": true,
+      "modified": "2017-11-23T16:18:41.249568+00:00",
+      "note": "Various [security fixes][1]\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.4",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-10-06",
+  "slug": "thunderbird-52.4.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Server 2003 R2\r\n - Windows Server 2008\r\n - Windows Server 2008 R2\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n    - PulseAudio\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**System Requirements:**<br>\r\n\u2022 **Window: Windows XP, Windows Server 2003 or later**<br>\r\n\u2022 **Mac: Mac OS X 10.9 or later**<br>\r\n\u2022 **Linux: GTK+ 3.4 or higher**<br>\r\nDetails [here][1].\r\n\r\n**Please refer to [Release Notes for version 52.0][2] to see the list of improvements and fixed issues.**\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/thunderbird/52.0/system-requirements/\r\n  [2]: https://www.mozilla.com/en-US/thunderbird/52.0/releasenotes/",
+  "title": "Thunderbird 52.4.0 Release",
+  "version": "52.4.0"
+}

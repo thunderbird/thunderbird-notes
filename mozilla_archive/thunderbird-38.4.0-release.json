@@ -1,0 +1,37 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=42%2B&v2=fixed",
+  "channel": "Release",
+  "created": "2015-11-23T19:44:04+00:00",
+  "is_public": true,
+  "modified": "2015-12-04T06:44:31+00:00",
+  "notes": [
+    {
+      "bug": 1152651,
+      "created": "2015-11-23T19:47:48+00:00",
+      "id": 786367,
+      "is_public": true,
+      "modified": "2015-12-31T00:26:38.909575+00:00",
+      "note": "Fixed issue where messages moves of multiple messages from a maildir folder to an mbox folder failed.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2015-11-23T19:51:53+00:00",
+      "id": 786368,
+      "is_public": true,
+      "modified": "2015-12-23T14:10:40.213201+00:00",
+      "note": "Various [security fixes][1] \r\n\r\n[1]: https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird38.5",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2015-11-24",
+  "slug": "thunderbird-38.4.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP2\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 38.4.0 Release",
+  "version": "38.4.0"
+}

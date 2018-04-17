@@ -1,0 +1,947 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Release",
+  "created": "2018-04-16T09:16:17.080138+00:00",
+  "is_public": false,
+  "modified": "2018-04-16T09:16:17.079886+00:00",
+  "notes": [
+    {
+      "bug": 1100103,
+      "created": "2018-03-23T20:24:35.841479+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787509,
+      "is_public": true,
+      "modified": "2018-04-16T09:53:41.922093+00:00",
+      "note": "When writing a message, a delete button now allows the removal of a recipient. This delete button is displayed when hovering the To/Cc/Bcc selector.",
+      "sort_num": 500,
+      "tag": "New"
+    },
+    {
+      "bug": 1428631,
+      "created": "2018-03-23T20:18:32.760494+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787507,
+      "is_public": true,
+      "modified": "2018-04-16T09:53:13.711915+00:00",
+      "note": "Further improvements to attachments handling during compose, Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when composing a new message. Right-click on the header to enable this option.",
+      "sort_num": 200,
+      "tag": "New"
+    },
+    {
+      "bug": 1389062,
+      "created": "2018-02-10T19:45:59.771653+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787446,
+      "is_public": true,
+      "modified": "2018-04-16T09:44:12.226752+00:00",
+      "note": "Edit Template command. This also solves various problems when saving as template (duplicates created, message ID lost).",
+      "sort_num": 150,
+      "tag": "New"
+    },
+    {
+      "bug": 856087,
+      "created": "2018-03-23T20:10:04.666885+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787504,
+      "is_public": true,
+      "modified": "2018-04-16T09:52:23.511951+00:00",
+      "note": "Thunderbird now allows the conversion of folders from mbox to maildir format and vice versa. This is an **experimental** feature that needs to be enabled by setting the preference mail.store_conversion_enabled.",
+      "sort_num": 100,
+      "tag": "New"
+    },
+    {
+      "bug": 1450670,
+      "created": "2018-04-05T23:01:46.575340+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787530,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:58.955722+00:00",
+      "note": "WebExtension themes are now enabled in Thunderbird",
+      "sort_num": 95,
+      "tag": "New"
+    },
+    {
+      "bug": 393084,
+      "created": "2018-03-23T20:25:45.358335+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787510,
+      "is_public": true,
+      "modified": "2018-04-16T10:02:35.365677+00:00",
+      "note": "Calendar: Allow copying, cutting or deleting of a selected occurrence or the entire series for recurring events",
+      "sort_num": 90,
+      "tag": "New"
+    },
+    {
+      "bug": 321434,
+      "created": "2018-03-23T20:26:27.847864+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787511,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:08.925720+00:00",
+      "note": "Calendar: Provide an option to display locations for events in calendar day and week views",
+      "sort_num": 80,
+      "tag": "New"
+    },
+    {
+      "bug": 463402,
+      "created": "2018-03-23T20:27:13.679154+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787512,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:31.646200+00:00",
+      "note": "Calendar: Provide the ability for sending/not sending meeting notifications directly instead of showing a popup",
+      "sort_num": 70,
+      "tag": "New"
+    },
+    {
+      "bug": 663695,
+      "created": "2017-11-24T16:21:47.305076+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787364,
+      "is_public": true,
+      "modified": "2018-04-16T09:38:50.060005+00:00",
+      "note": "When composing a message, attachments can now be reordered",
+      "sort_num": 50,
+      "tag": "New"
+    },
+    {
+      "bug": 719351,
+      "created": "2018-02-11T13:39:57.124849+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787451,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:27.238607+00:00",
+      "note": "Calendar: Option to select the target calendar when pasting an event or task",
+      "sort_num": 50,
+      "tag": "New"
+    },
+    {
+      "bug": 1299610,
+      "created": "2018-01-07T12:53:37.907054+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787397,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:44.151274+00:00",
+      "note": "Calendar: Allow email scheduling for CalDAV servers supporting server-side scheduling",
+      "sort_num": 40,
+      "tag": "New"
+    },
+    {
+      "bug": 1399370,
+      "created": "2017-11-10T15:11:05.183151+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787335,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:51.419417+00:00",
+      "note": "Allow changing the Spellcheck Language from status bar display",
+      "sort_num": 20,
+      "tag": "New"
+    },
+    {
+      "bug": 1389083,
+      "created": "2017-11-10T15:09:24.721268+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787334,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:41.031242+00:00",
+      "note": "\"New Message from Template\" command",
+      "sort_num": 10,
+      "tag": "New"
+    },
+    {
+      "bug": 1409839,
+      "created": "2017-11-24T16:20:09.176930+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787362,
+      "is_public": true,
+      "modified": "2018-04-16T09:38:28.678081+00:00",
+      "note": "Thunderbird Chat now contains multiple built-in message themes",
+      "sort_num": 10,
+      "tag": "New"
+    },
+    {
+      "bug": 1308776,
+      "created": "2017-03-22T21:17:22.837559+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-53.0beta-beta",
+        "title": "Thunderbird 53.0beta Beta",
+        "version": "53.0beta"
+      },
+      "id": 787017,
+      "is_public": true,
+      "modified": "2018-04-16T09:18:47.878743+00:00",
+      "note": "A default startup directory in the address book window can now be configured",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1312813,
+      "created": "2017-05-19T14:12:15.476929+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-54.0beta-beta",
+        "title": "Thunderbird 54.0beta Beta",
+        "version": "54.0beta"
+      },
+      "id": 787097,
+      "is_public": true,
+      "modified": "2018-04-16T09:20:56.691697+00:00",
+      "note": "Individual feed update interval",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1384007,
+      "created": "2017-08-07T20:34:40.009185+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787207,
+      "is_public": true,
+      "modified": "2018-04-16T09:28:40.071332+00:00",
+      "note": "An option under \"Tools > Options, Advanced, General\" now allows to select whether date/time display will follow the application locale (adjusted by operating system's format settings for that locale) or the locale selected in the operating system's regional settings. In other words, an US English Thunderbird can use, for example, German formats.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1444101,
+      "created": "2018-04-16T10:10:22.634590+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": false,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0-release",
+        "title": "Thunderbird 60.0 Release",
+        "version": "60.0"
+      },
+      "id": 787540,
+      "is_public": true,
+      "modified": "2018-04-16T10:10:22.634388+00:00",
+      "note": "Coming in beta 4: Enable FIDO U2F for Thunderbird",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1451097,
+      "created": "2018-04-05T22:39:52.919336+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787528,
+      "is_public": true,
+      "modified": "2018-04-16T09:54:44.900952+00:00",
+      "note": "**IMPORTANT:** Add-ons not marked as compatible with Thunderbird 60 by their authors will be disabled (this can be reverted via preference extensions.strictCompatibility)",
+      "sort_num": 1000,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1157256,
+      "created": "2018-03-23T20:11:07.115824+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787505,
+      "is_public": true,
+      "modified": "2018-04-16T09:52:33.060140+00:00",
+      "note": "Thunderbird will now prompt to compact IMAP folders even if the account is online",
+      "sort_num": 900,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1419145,
+      "created": "2018-02-10T19:56:30.626820+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787449,
+      "is_public": true,
+      "modified": "2018-04-16T09:44:39.688132+00:00",
+      "note": "Add-on options can no longer be configured from the Add-on Manager page. A new menu item \"Add-on Options\" is now available on the Tools menu.",
+      "sort_num": 300,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1294027,
+      "created": "2018-02-10T19:49:29.907267+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787447,
+      "is_public": true,
+      "modified": "2018-04-16T09:44:26.661436+00:00",
+      "note": "When customizing the From: address, Thunderbird will now use this address for the SMTP \"MAIL FROM\" command. Previously the address configured in the identity was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the previous behavior.",
+      "sort_num": 200,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1436290,
+      "created": "2018-03-23T20:13:00.457349+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787506,
+      "is_public": true,
+      "modified": "2018-04-16T09:52:59.567197+00:00",
+      "note": "During address entry, the matching part of the address is now shown in bold. Preference mail.autoComplete.commentColumn allows to display the address book where the address is stored.",
+      "sort_num": 100,
+      "tag": "Changed"
+    },
+    {
+      "bug": 463402,
+      "created": "2018-03-23T20:27:59.474378+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787513,
+      "is_public": true,
+      "modified": "2018-04-16T09:55:43.314847+00:00",
+      "note": "Calendar: Removal of capability to send email invitations compatible to Outlook 2002 and earlier",
+      "sort_num": 90,
+      "tag": "Changed"
+    },
+    {
+      "bug": 731688,
+      "created": "2017-11-10T15:15:48.024631+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787336,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:02.305965+00:00",
+      "note": "\"Edit As New Message\" will now use the account's default compose format, either HTML or plain text ignoring the format of the message. Plain text messages will be converted to HTML and vice versa. Then using the modifier, the format choice will be reverted.",
+      "sort_num": 70,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1392052,
+      "created": "2017-11-10T15:18:24.569279+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787337,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:18.025397+00:00",
+      "note": "The plain text to HTML conversion has been improved where such a conversion is necessary for \"Edit As New Message\" or when the shift modifier is used for \"Edit Draft\" or \"New Message from Template\".",
+      "sort_num": 60,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1389771,
+      "created": "2017-11-10T15:23:22.174785+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787338,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:31.841028+00:00",
+      "note": "The \"Edit Draft\" command now also honors the use of the shift key to convert HTML to plain text or vice versa when editing a draft",
+      "sort_num": 50,
+      "tag": "Changed"
+    },
+    {
+      "bug": 356002,
+      "created": "2018-02-11T13:41:50.092790+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787452,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:43.747457+00:00",
+      "note": "Calendar: Reminders on read-only calendars can now be dismissed, while reminders for missed events will now only be displayed for writable calendars if option \"Show missed reminders for writable calendars\" is selected",
+      "sort_num": 50,
+      "tag": "Changed"
+    },
+    {
+      "bug": 209629,
+      "created": "2017-11-10T15:26:06.811903+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787339,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:42.827339+00:00",
+      "note": "When attaching a message via drag and drop, the subject of the message is now used as attachment name instead of \"Attached Message\"",
+      "sort_num": 40,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1349259,
+      "created": "2017-11-10T15:27:42.070520+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787340,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:55.437527+00:00",
+      "note": "On first start, Thunderbird now shows the account setup dialog, no longer the account provisioner dialog",
+      "sort_num": 30,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1387877,
+      "created": "2017-11-10T15:29:46.465558+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787341,
+      "is_public": true,
+      "modified": "2018-04-16T09:36:09.718945+00:00",
+      "note": "Thunderbird follows Firefox' Photon design with rectangular tabs and many other theme improvements",
+      "sort_num": 20,
+      "tag": "Changed"
+    },
+    {
+      "bug": 791645,
+      "created": "2017-05-19T14:10:34.451148+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-54.0beta-beta",
+        "title": "Thunderbird 54.0beta Beta",
+        "version": "54.0beta"
+      },
+      "id": 787096,
+      "is_public": true,
+      "modified": "2018-04-16T09:20:33.566422+00:00",
+      "note": "Thunderbird now uses Mozilla's latest proxy technology (add-on FoxyProxy now supported)",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 28211,
+      "created": "2017-08-07T20:49:58.972021+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787210,
+      "is_public": true,
+      "modified": "2018-04-16T09:27:50.136967+00:00",
+      "note": "IMAP: When after sending a message storing that sent message fails, the message can now be stored in a local folder",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1354002,
+      "created": "2017-08-07T20:59:31.610091+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787213,
+      "is_public": true,
+      "modified": "2018-04-16T09:27:22.962165+00:00",
+      "note": "When messages are composed in paragraph format, \"body text\" and split mail quotes are converted to paragraphs when pressing the enter key",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1363281,
+      "created": "2017-08-07T21:04:01.448439+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787215,
+      "is_public": true,
+      "modified": "2018-04-16T09:26:32.337804+00:00",
+      "note": "Thunderbird now uses the latest Mozilla technology based on Rust for encoding messages",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1409901,
+      "created": "2017-11-24T16:20:51.128462+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787363,
+      "is_public": true,
+      "modified": "2018-04-16T09:38:39.275414+00:00",
+      "note": "Thunderbird Chat: Nicknames inside of messages are colored to match the participants list",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 892889,
+      "created": "2018-04-16T10:15:37.711243+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": false,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0-release",
+        "title": "Thunderbird 60.0 Release",
+        "version": "60.0"
+      },
+      "id": 787542,
+      "is_public": true,
+      "modified": "2018-04-16T10:15:37.711057+00:00",
+      "note": "Coming in beta 4 or 5: Better AB photo handling",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1428631,
+      "created": "2018-04-16T10:17:22.305489+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": false,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0-release",
+        "title": "Thunderbird 60.0 Release",
+        "version": "60.0"
+      },
+      "id": 787543,
+      "is_public": true,
+      "modified": "2018-04-16T10:17:22.305277+00:00",
+      "note": "Coming in beta 4, 5 or 6: Stop attachment pane being minimized when attachments are present",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1335982,
+      "created": "2018-02-10T19:33:20.115476+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787442,
+      "is_public": true,
+      "modified": "2018-04-16T09:43:29.459884+00:00",
+      "note": "Various problems related to handling the IMAP trash folder: Under certain circumstances the selection of the trash folder didn't persist, for example when the name contained non-ASCII characters, or in localized versions of Thunderbird. At times unwanted additional trash folders were created. Selection of a trash folder didn't give immediate visual feedback.",
+      "sort_num": 200,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1419735,
+      "created": "2018-02-10T19:41:00.862848+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787444,
+      "is_public": true,
+      "modified": "2018-04-16T09:43:54.352112+00:00",
+      "note": "Shared IMAP folders not shown in subscribe dialog under some circumstances",
+      "sort_num": 100,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1430480,
+      "created": "2018-04-16T07:04:09.991730+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787539,
+      "is_public": true,
+      "modified": "2018-04-16T09:55:23.218036+00:00",
+      "note": "Messages moved between IMAP accounts were missing parts (embedded content or attachments) under some circumstances",
+      "sort_num": 100,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1437282,
+      "created": "2018-03-02T10:23:32.251887+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787459,
+      "is_public": true,
+      "modified": "2018-04-16T09:46:04.742910+00:00",
+      "note": "Improvements encoding/decoding message headers",
+      "sort_num": 80,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1396639,
+      "created": "2018-02-11T13:45:24.157166+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-59.0beta-beta",
+        "title": "Thunderbird 59.0beta Beta",
+        "version": "59.0beta"
+      },
+      "id": 787453,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:55.564110+00:00",
+      "note": "Calendar: Wrong time formatting for some time zones",
+      "sort_num": 50,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 96968,
+      "created": "2018-04-16T07:02:11.663853+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0beta-beta",
+        "title": "Thunderbird 60.0beta Beta",
+        "version": "60.0beta"
+      },
+      "id": 787538,
+      "is_public": true,
+      "modified": "2018-04-16T09:55:10.803632+00:00",
+      "note": "Text in the address book card view wasn't selectable",
+      "sort_num": 50,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 394216,
+      "created": "2017-11-10T15:07:31.101790+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787333,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:31.605803+00:00",
+      "note": "When many Thunderbird clients or other email clients accessed the same IMAP draft folder, messages were sometimes sent with the wrong identity. This has been corrected and the user will be notified if none of their identities matches the draft. ",
+      "sort_num": 20,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 312593,
+      "created": "2017-11-10T15:05:13.945479+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787332,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:18.246516+00:00",
+      "note": "Passwords can now contain non-ASCII characters, like international characters, for example \u00e1\u00e4\u00df, and symbols, for example \u20ac\u00a7",
+      "sort_num": 10,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1176748,
+      "created": "2017-11-24T16:23:16.940298+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787366,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:14.379918+00:00",
+      "note": "Outlook import",
+      "sort_num": 10,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1320191,
+      "created": "2017-12-12T12:04:35.009494+00:00",
+      "id": 787386,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:30.562315+00:00",
+      "note": "Localised versions of Thunderbird didn't show a localised name for Hotmail's \"Deleted\" folder ",
+      "sort_num": 4,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 390753,
+      "created": "2018-01-07T12:56:50.209575+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787399,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:56.084366+00:00",
+      "note": "Calendar: Can't copy information from event dialog for received invitations\r\n",
+      "sort_num": 2,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1322032,
+      "created": "2017-08-07T20:45:06.942072+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-56.0beta-beta",
+        "title": "Thunderbird 56.0beta Beta",
+        "version": "56.0beta"
+      },
+      "id": 787209,
+      "is_public": true,
+      "modified": "2018-04-16T09:28:21.365652+00:00",
+      "note": "Contacts sidebar: Selection and context menu behavior",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1453643,
+      "created": "2018-04-16T10:12:54.245574+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": false,
+        "product": "Thunderbird",
+        "slug": "thunderbird-60.0-release",
+        "title": "Thunderbird 60.0 Release",
+        "version": "60.0"
+      },
+      "id": 787541,
+      "is_public": true,
+      "modified": "2018-04-16T10:12:54.245383+00:00",
+      "note": "Coming in beta 4: Better error handling for Gmail authentication to avoid re-downloading of folders",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1425962,
+      "created": "2018-02-10T20:02:43.351129+00:00",
+      "id": 787450,
+      "is_public": true,
+      "modified": "2018-04-16T09:45:13.899887+00:00",
+      "note": "The IMAP and News subscribe dialogue now presents a flat list of folders instead of a folder tree. This will be restored to its original form in the next release.",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1439021,
+      "created": "2018-03-23T20:22:31.104849+00:00",
+      "id": 787508,
+      "is_public": true,
+      "modified": "2018-04-16T09:53:30.503609+00:00",
+      "note": "Source view not working for JS source files via Developer tools. Workaround: Set preference view_source.editor.external and view_source.editor.path to view the source in the editor of your choice.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2018-05-15",
+  "slug": "thunderbird-60.0-release",
+  "system_requirements": "",
+  "text": "Draft release notes for Thunderbird 60 ESR collecting all release notes of versions 53 beta to 60 beta which have not been uplifted to TB 52 ESR",
+  "title": "Thunderbird 60.0 Release",
+  "version": "60.0"
+}

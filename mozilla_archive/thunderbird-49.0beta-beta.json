@@ -1,0 +1,387 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?o5=equals&list_id=13198476&v11=fixed&o1=notequals&o2=notequals&v5=Thunderbird%2049.0&j4=OR&v1=Thunderbird%2045.0&v2=Thunderbird%2046.0&f10=CP&f1=target_milestone&o3=notequals&v6=fixed&o7=equals&f8=target_milestone&v3=Thunderbird%2047.0&o11=notequals&resolution=FIXED&o6=equals&v7=fixed&f4=OP&query_format=advanced&f3=target_milestone&f2=target_milestone&f11=cf_status_thunderbird_47&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=target_milestone&v8=Thunderbird%2048.0&f6=cf_status_thunderbird_48&f7=cf_status_thunderbird_49&o8=equals",
+  "channel": "Beta",
+  "created": "2016-08-05T15:19:11.958393+00:00",
+  "is_public": true,
+  "modified": "2016-09-05T04:08:56.048716+00:00",
+  "notes": [
+    {
+      "bug": 700796,
+      "created": "2016-09-02T17:30:59.985835+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786787,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:24.982646+00:00",
+      "note": "Folder pane toolbar and folder view selector (replacement for folder view arrows)",
+      "sort_num": 10,
+      "tag": "New"
+    },
+    {
+      "bug": 684455,
+      "created": "2016-09-02T18:02:29.131916+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786800,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:22.492233+00:00",
+      "note": "Import settings from Becky! Internet Mail",
+      "sort_num": 7,
+      "tag": "New"
+    },
+    {
+      "bug": 1273841,
+      "created": "2016-09-02T18:05:02.051027+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786801,
+      "is_public": true,
+      "modified": "2016-09-02T18:05:02.050829+00:00",
+      "note": "In compose, allow separate options for initial mode (Paragraph or Body Text) and behavior of Enter key.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1243498,
+      "created": "2016-09-02T17:52:30.224583+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786795,
+      "is_public": true,
+      "modified": "2016-09-02T17:52:30.224400+00:00",
+      "note": "Permanently remove Eudora import.",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1276381,
+      "created": "2016-09-02T20:53:43.622084+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786810,
+      "is_public": true,
+      "modified": "2016-09-02T20:53:43.621601+00:00",
+      "note": "Removed compose window recycling.",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": null,
+      "created": "2016-09-05T04:08:51.356670+00:00",
+      "id": 786811,
+      "is_public": true,
+      "modified": "2016-09-05T04:10:02.622827+00:00",
+      "note": "Mac OX X 10.6, 10.7, and 10.8 are no longer supported.",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 453196,
+      "created": "2016-09-02T17:53:54.467327+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786796,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:23.522200+00:00",
+      "note": "When attachment unavailable, compose shows endless \"Attaching...\" message instead of error",
+      "sort_num": 9,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1106412,
+      "created": "2016-09-02T17:35:46.408725+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786788,
+      "is_public": true,
+      "modified": "2016-09-02T17:56:30.997145+00:00",
+      "note": "Menu items for \"Edit draft\" functionality were missing",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 233705,
+      "created": "2016-09-02T17:40:39.364475+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786792,
+      "is_public": true,
+      "modified": "2016-09-02T17:40:39.364270+00:00",
+      "note": "Plain text composition had wrapping issues.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 833909,
+      "created": "2016-09-02T17:51:30.147194+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Firefox",
+        "slug": "firefox-49.0beta-beta",
+        "title": "Firefox 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786794,
+      "is_public": true,
+      "modified": "2016-09-02T17:51:30.146909+00:00",
+      "note": "Attachment reminder not showing in various cases.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1143744,
+      "created": "2016-09-02T17:56:04.952468+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786797,
+      "is_public": true,
+      "modified": "2016-09-02T17:56:04.952262+00:00",
+      "note": "Table properties stopped showing with double-click of table cell in compose.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1279869,
+      "created": "2016-09-02T17:58:59.433660+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786798,
+      "is_public": true,
+      "modified": "2016-09-30T20:57:40.715242+00:00",
+      "note": "Threading broken when editing message draft, due to loss of Message-ID",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 253830,
+      "created": "2016-09-02T18:01:10.927446+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786799,
+      "is_public": true,
+      "modified": "2016-09-02T18:01:10.927215+00:00",
+      "note": "\"View as plain text\" displayed converted HTML part even when plain text part exists.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1023285,
+      "created": "2016-09-02T18:08:37.073925+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786802,
+      "is_public": true,
+      "modified": "2016-11-19T10:51:58.606481+00:00",
+      "note": "Mail address display at header pane displayed incorrectly if the address contains UTF-8 according to RFC 6532",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 726281,
+      "created": "2016-09-02T18:10:49.139091+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786803,
+      "is_public": true,
+      "modified": "2016-09-30T21:00:23.642182+00:00",
+      "note": "Mail saved as template copied In-Reply-To and References from original email.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1287126,
+      "created": "2016-09-02T18:12:36.017854+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786804,
+      "is_public": true,
+      "modified": "2016-09-30T20:54:26.179967+00:00",
+      "note": "Additional spaces were inserted when drafts were edited.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1254666,
+      "created": "2016-09-02T18:14:54.805366+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786805,
+      "is_public": true,
+      "modified": "2016-09-02T18:14:54.805187+00:00",
+      "note": "\"Edit as New Message\" on a received message pre-filled the Sender as the author rather than the current user.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1250376,
+      "created": "2016-09-02T18:19:09.468316+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786806,
+      "is_public": true,
+      "modified": "2016-09-02T18:19:09.468071+00:00",
+      "note": "Custom headers (like Disposition-Notification-To) were not set correctly.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1290839,
+      "created": "2016-09-02T18:20:12.796840+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786807,
+      "is_public": true,
+      "modified": "2016-10-02T14:26:52.480270+00:00",
+      "note": "Recipient addresses were shown in red despite being inserted from the address book in some circumstances. ",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1289939,
+      "created": "2016-09-02T18:21:49.552195+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786808,
+      "is_public": true,
+      "modified": "2016-09-30T20:51:03.810703+00:00",
+      "note": "Display name was truncated if no separating space before email address.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1276419,
+      "created": "2016-09-02T18:23:24.050397+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786809,
+      "is_public": true,
+      "modified": "2016-09-02T18:23:24.049901+00:00",
+      "note": "Embedded image with source URL with ? led to incorrect image reference",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2016-09-02",
+  "slug": "thunderbird-49.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 49.0beta Beta",
+  "version": "49.0beta"
+}

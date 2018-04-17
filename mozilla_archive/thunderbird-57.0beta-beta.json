@@ -1,0 +1,233 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2017-11-10T15:00:55.211599+00:00",
+  "is_public": true,
+  "modified": "2017-11-20T19:27:58.573583+00:00",
+  "notes": [
+    {
+      "bug": 1399370,
+      "created": "2017-11-10T15:11:05.183151+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787335,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:51.419417+00:00",
+      "note": "Allow changing the Spellcheck Language from status bar display",
+      "sort_num": 20,
+      "tag": "New"
+    },
+    {
+      "bug": 1389083,
+      "created": "2017-11-10T15:09:24.721268+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787334,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:41.031242+00:00",
+      "note": "\"New Message from Template\" command",
+      "sort_num": 10,
+      "tag": "New"
+    },
+    {
+      "bug": 731688,
+      "created": "2017-11-10T15:15:48.024631+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787336,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:02.305965+00:00",
+      "note": "\"Edit As New Message\" will now use the account's default compose format, either HTML or plain text ignoring the format of the message. Plain text messages will be converted to HTML and vice versa. Then using the modifier, the format choice will be reverted.",
+      "sort_num": 70,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1392052,
+      "created": "2017-11-10T15:18:24.569279+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787337,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:18.025397+00:00",
+      "note": "The plain text to HTML conversion has been improved where such a conversion is necessary for \"Edit As New Message\" or when the shift modifier is used for \"Edit Draft\" or \"New Message from Template\".",
+      "sort_num": 60,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1389771,
+      "created": "2017-11-10T15:23:22.174785+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787338,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:31.841028+00:00",
+      "note": "The \"Edit Draft\" command now also honors the use of the shift key to convert HTML to plain text or vice versa when editing a draft",
+      "sort_num": 50,
+      "tag": "Changed"
+    },
+    {
+      "bug": 209629,
+      "created": "2017-11-10T15:26:06.811903+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787339,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:42.827339+00:00",
+      "note": "When attaching a message via drag and drop, the subject of the message is now used as attachment name instead of \"Attached Message\"",
+      "sort_num": 40,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1349259,
+      "created": "2017-11-10T15:27:42.070520+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787340,
+      "is_public": true,
+      "modified": "2018-04-16T09:35:55.437527+00:00",
+      "note": "On first start, Thunderbird now shows the account setup dialog, no longer the account provisioner dialog",
+      "sort_num": 30,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1387877,
+      "created": "2017-11-10T15:29:46.465558+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787341,
+      "is_public": true,
+      "modified": "2018-04-16T09:36:09.718945+00:00",
+      "note": "Thunderbird follows Firefox' Photon design with rectangular tabs and many other theme improvements",
+      "sort_num": 20,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1352859,
+      "created": "2017-11-10T15:34:24.194744+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787346,
+      "is_public": true,
+      "modified": "2017-11-24T16:18:55.645820+00:00",
+      "note": "In Thunderbird 54 beta a better support for Charter users was introduced. As a side effect, messages moved to a different IMAP folder were immediately removed from the source folder, even when the delete model \"Just mark it as deleted\" was in effect. This has now been restored to its pre-version 54 state, so moved IMAP messages are only crossed out in the source folder when this delete model is used.",
+      "sort_num": 10,
+      "tag": "Changed"
+    },
+    {
+      "bug": 394216,
+      "created": "2017-11-10T15:07:31.101790+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787333,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:31.605803+00:00",
+      "note": "When many Thunderbird clients or other email clients accessed the same IMAP draft folder, messages were sometimes sent with the wrong identity. This has been corrected and the user will be notified if none of their identities matches the draft. ",
+      "sort_num": 20,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 312593,
+      "created": "2017-11-10T15:05:13.945479+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787332,
+      "is_public": true,
+      "modified": "2018-04-16T09:34:18.246516+00:00",
+      "note": "Passwords can now contain non-ASCII characters, like international characters, for example \u00e1\u00e4\u00df, and symbols, for example \u20ac\u00a7",
+      "sort_num": 10,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1417209,
+      "created": "2017-11-20T19:29:53.106394+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-57.0beta-beta",
+        "title": "Thunderbird 57.0beta Beta",
+        "version": "57.0beta"
+      },
+      "id": 787360,
+      "is_public": true,
+      "modified": "2017-11-24T16:18:53.649855+00:00",
+      "note": "Certain add-ons would cause Thunderbird not to start",
+      "sort_num": 5,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-11-10",
+  "slug": "thunderbird-57.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n - Windows Server 2008 R2\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 56 only supports Windows 7, 8 and 10 and Windows Server 2008 R2.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**These release notes apply to Thunderbird version 57 beta 2 released November 20th, 2017.**",
+  "title": "Thunderbird 57.0beta Beta",
+  "version": "57.0beta"
+}

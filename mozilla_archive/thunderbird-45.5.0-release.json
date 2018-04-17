@@ -1,0 +1,101 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?list_id=13317158&o1=equals&o2=equals&v1=fixed&v2=50%2B&f1=cf_status_thunderbird_esr45&query_format=advanced&f2=cf_tracking_thunderbird_esr45",
+  "channel": "Release",
+  "created": "2016-11-18T18:48:50.349889+00:00",
+  "is_public": true,
+  "modified": "2017-01-24T14:11:34.290172+00:00",
+  "notes": [
+    {
+      "bug": 1192739,
+      "created": "2016-10-09T08:42:50.008819+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786836,
+      "is_public": true,
+      "modified": "2017-01-12T17:19:12.039057+00:00",
+      "note": "**IMPORTANT:** Changed recipient address entry: Arrow-keys now copy the pop-up value to the input field. Mouse-hovered pop-up value can no longer be confirmed with tab or enter key. This restores the behavior of Thunderbird 24.",
+      "sort_num": 1,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1275284,
+      "created": "2016-11-18T19:18:30.483286+00:00",
+      "id": 786870,
+      "is_public": true,
+      "modified": "2016-11-19T08:52:02.055994+00:00",
+      "note": "Support changes to character limit in Twitter",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 669073,
+      "created": "2016-10-09T08:35:42.177976+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786834,
+      "is_public": true,
+      "modified": "2017-01-12T17:19:15.679806+00:00",
+      "note": "Reply with selected text containing quote resulted in wrong quoting level indication",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1023285,
+      "created": "2016-09-02T18:08:37.073925+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786802,
+      "is_public": true,
+      "modified": "2016-11-19T10:51:58.606481+00:00",
+      "note": "Mail address display at header pane displayed incorrectly if the address contains UTF-8 according to RFC 6532",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1266698,
+      "created": "2016-11-18T19:04:37.896803+00:00",
+      "id": 786868,
+      "is_public": true,
+      "modified": "2016-11-18T19:05:24.093458+00:00",
+      "note": " Attempting to sort messages on the Date field whilst a quick filter is applied got stuck on sort descending",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1301186,
+      "created": "2016-11-18T19:25:57.911444+00:00",
+      "id": 786872,
+      "is_public": true,
+      "modified": "2016-11-19T08:51:16.317818+00:00",
+      "note": "Email invitation might not be displayed when description contains non-ASCII characters",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2016-11-18",
+  "slug": "thunderbird-45.5.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 2.18 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.3 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - HAL 0.5.8 or higher\r\n    - GNOME 2.16 or higher\r\n",
+  "text": "",
+  "title": "Thunderbird 45.5.0 Release",
+  "version": "45.5.0"
+}

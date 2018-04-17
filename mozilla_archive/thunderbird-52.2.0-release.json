@@ -1,0 +1,217 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735",
+  "channel": "Release",
+  "created": "2017-06-12T18:47:22.883830+00:00",
+  "is_public": true,
+  "modified": "2017-06-15T11:13:44.697016+00:00",
+  "notes": [
+    {
+      "bug": 1347598,
+      "created": "2017-04-26T19:45:58.871454+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-54.0beta-beta",
+        "title": "Thunderbird 54.0beta Beta",
+        "version": "54.0beta"
+      },
+      "id": 787062,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:44.322391+00:00",
+      "note": "Embedded images not shown in email received from Hotmail/Outlook webmailer",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1358049,
+      "created": "2017-05-19T14:19:29.547845+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-54.0beta-beta",
+        "title": "Thunderbird 54.0beta Beta",
+        "version": "54.0beta"
+      },
+      "id": 787098,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:14.521659+00:00",
+      "note": "Detection of non-ASCII font names in font selector",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 570914,
+      "created": "2017-05-19T14:21:07.530212+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-54.0beta-beta",
+        "title": "Thunderbird 54.0beta Beta",
+        "version": "54.0beta"
+      },
+      "id": 787099,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:11.960134+00:00",
+      "note": "Attachment not forwarded correctly under certain circumstances",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1176399,
+      "created": "2017-05-19T14:38:04.485090+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-54.0beta-beta",
+        "title": "Thunderbird 54.0beta Beta",
+        "version": "54.0beta"
+      },
+      "id": 787102,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:03.666752+00:00",
+      "note": "Multiple requests for master password when GMail OAuth2 is enabled",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1353625,
+      "created": "2017-06-12T18:49:18.340443+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.2.0-release",
+        "title": "Thunderbird 52.2.0 Release",
+        "version": "52.2.0"
+      },
+      "id": 787134,
+      "is_public": true,
+      "modified": "2017-06-21T21:46:47.462032+00:00",
+      "note": "Large number of blank pages being printed under certain circumstances when invalid preferences were present",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1366196,
+      "created": "2017-06-12T18:49:55.237403+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.2.0-release",
+        "title": "Thunderbird 52.2.0 Release",
+        "version": "52.2.0"
+      },
+      "id": 787136,
+      "is_public": true,
+      "modified": "2017-07-14T20:11:50.792423+00:00",
+      "note": "Messages sent via the Simple MAPI interface are forced to HTML",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1365980,
+      "created": "2017-06-12T19:29:53.039088+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.2.0-release",
+        "title": "Thunderbird 52.2.0 Release",
+        "version": "52.2.0"
+      },
+      "id": 787145,
+      "is_public": true,
+      "modified": "2017-07-14T20:11:47.771643+00:00",
+      "note": "Calendar: Invitations can't be printed",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1356881,
+      "created": "2017-06-12T19:37:24.269617+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.2.0-release",
+        "title": "Thunderbird 52.2.0 Release",
+        "version": "52.2.0"
+      },
+      "id": 787149,
+      "is_public": true,
+      "modified": "2017-06-21T21:44:51.540544+00:00",
+      "note": "Mailing list (group) not accessible from macOS or Outlook address book",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1366273,
+      "created": "2017-06-12T19:51:50.919077+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.2.0-release",
+        "title": "Thunderbird 52.2.0 Release",
+        "version": "52.2.0"
+      },
+      "id": 787150,
+      "is_public": true,
+      "modified": "2017-06-21T21:44:42.032864+00:00",
+      "note": "Clicking on links with references/anchors where target doesn't exist in the message not opening in external browser",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2017-06-14T18:10:59.169894+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.2.0-release",
+        "title": "Thunderbird 52.2.0 Release",
+        "version": "52.2.0"
+      },
+      "id": 787155,
+      "is_public": true,
+      "modified": "2017-06-21T21:43:57.125329+00:00",
+      "note": "Various [security fixes][1]\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.2",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1364723,
+      "created": "2017-06-12T19:53:27.157803+00:00",
+      "id": 787151,
+      "is_public": true,
+      "modified": "2017-06-21T21:44:23.495591+00:00",
+      "note": "Links in news messages including \"remove all expired articles\" not working",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1356902,
+      "created": "2017-06-13T08:40:01.450076+00:00",
+      "id": 787152,
+      "is_public": true,
+      "modified": "2017-10-06T13:18:05.954311+00:00",
+      "note": "On Windows, \"Send to > Mail recipient\" does not work. Workaround: Install the [Microsoft Visual Studio 2015 redistributable runtime library][1] or the [Universal C Runtime for Windows Server][2].\r\n\r\n\r\n  [1]: https://www.microsoft.com/en-us/download/details.aspx?id=53587\r\n  [2]: https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-06-14",
+  "slug": "thunderbird-52.2.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Server 2003 R2\r\n - Windows Server 2008\r\n - Windows Server 2008 R2\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n    - PulseAudio\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**System Requirements:**<br>\r\n\u2022 **Window: Windows XP, Windows Server 2003 or later**<br>\r\n\u2022 **Mac: Mac OS X 10.9 or later**<br>\r\n\u2022 **Linux: GTK+ 3.4 or higher**<br>\r\nDetails [here][1].\r\n\r\n**Please refer to [Release Notes for version 52.0][2] to see the list of improvements and fixed issues.**\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/thunderbird/52.0/system-requirements/\r\n  [2]: https://www.mozilla.com/en-US/thunderbird/52.0/releasenotes/",
+  "title": "Thunderbird 52.2.0 Release",
+  "version": "52.2.0"
+}

@@ -1,0 +1,117 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?list_id=13241865&o1=equals&o2=equals&v1=fixed&v2=49%2B&f1=cf_status_thunderbird_esr45&query_format=advanced&f2=cf_tracking_thunderbird_esr45",
+  "channel": "Release",
+  "created": "2016-09-30T20:45:43.452980+00:00",
+  "is_public": true,
+  "modified": "2016-10-02T14:28:28.590290+00:00",
+  "notes": [
+    {
+      "bug": 562266,
+      "created": "2016-06-13T19:26:49.207809+00:00",
+      "id": 786728,
+      "is_public": true,
+      "modified": "2016-09-30T20:49:24.393169+00:00",
+      "note": "\"Apply columns to...\" did not honor special folders",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1279869,
+      "created": "2016-09-02T17:58:59.433660+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786798,
+      "is_public": true,
+      "modified": "2016-09-30T20:57:40.715242+00:00",
+      "note": "Threading broken when editing message draft, due to loss of Message-ID",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 726281,
+      "created": "2016-09-02T18:10:49.139091+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786803,
+      "is_public": true,
+      "modified": "2016-09-30T21:00:23.642182+00:00",
+      "note": "Mail saved as template copied In-Reply-To and References from original email.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1287126,
+      "created": "2016-09-02T18:12:36.017854+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786804,
+      "is_public": true,
+      "modified": "2016-09-30T20:54:26.179967+00:00",
+      "note": "Additional spaces were inserted when drafts were edited.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1290839,
+      "created": "2016-09-02T18:20:12.796840+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786807,
+      "is_public": true,
+      "modified": "2016-10-02T14:26:52.480270+00:00",
+      "note": "Recipient addresses were shown in red despite being inserted from the address book in some circumstances. ",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1289939,
+      "created": "2016-09-02T18:21:49.552195+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-49.0beta-beta",
+        "title": "Thunderbird 49.0beta Beta",
+        "version": "49.0beta"
+      },
+      "id": 786808,
+      "is_public": true,
+      "modified": "2016-09-30T20:51:03.810703+00:00",
+      "note": "Display name was truncated if no separating space before email address.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2016-10-03",
+  "slug": "thunderbird-45.4.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 45.4.0 Release",
+  "version": "45.4.0"
+}

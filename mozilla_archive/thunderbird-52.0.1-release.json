@@ -1,0 +1,85 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://mzl.la/2nSk0Ft",
+  "channel": "Release",
+  "created": "2017-04-12T16:34:59.838330+00:00",
+  "is_public": true,
+  "modified": "2017-04-29T20:26:56.764691+00:00",
+  "notes": [
+    {
+      "bug": 1354991,
+      "created": "2017-04-12T16:38:28.723262+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.0.1-release",
+        "title": "Thunderbird 52.0.1 Release",
+        "version": "52.0.1"
+      },
+      "id": 787034,
+      "is_public": true,
+      "modified": "2017-04-29T18:14:37.080417+00:00",
+      "note": "Clicking on a link in an email may not open this link in the external browser.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1353625,
+      "created": "2017-04-11T19:13:13.903735+00:00",
+      "id": 787030,
+      "is_public": true,
+      "modified": "2017-06-12T19:19:15.553421+00:00",
+      "note": "Large number of blank pages being printed under certain circumstances. **To fix this problem,** remove all printer specific preferences in the configuration editor.",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1355350,
+      "created": "2017-04-11T19:14:26.454345+00:00",
+      "id": 787031,
+      "is_public": true,
+      "modified": "2017-05-09T21:53:46.106420+00:00",
+      "note": "Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use. **Workaround:** Set preference browser.cache.memory.max_entry_size to the value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of 200000 (200 MB, 25 MB per message).",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1281610,
+      "created": "2017-04-11T19:15:44.518791+00:00",
+      "id": 787032,
+      "is_public": true,
+      "modified": "2017-07-14T20:12:38.844733+00:00",
+      "note": "Crash due to incompatibility with McAfee Anti-SPAM add-on. **Workaround:** Start in safe mode and disable McAfee Anti-Spam Extension",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1356600,
+      "created": "2017-04-14T22:41:25.441434+00:00",
+      "id": 787045,
+      "is_public": true,
+      "modified": "2017-04-29T18:14:48.592199+00:00",
+      "note": "Background images not working and other issues related to embedded images when composing email",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": 1158578,
+      "created": "2017-04-26T19:41:50.762090+00:00",
+      "id": 787061,
+      "is_public": true,
+      "modified": "2017-05-09T21:53:55.416433+00:00",
+      "note": "Crash when compacting IMAP folder",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-04-14",
+  "slug": "thunderbird-52.0.1-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Server 2003 R2\r\n - Windows Server 2008\r\n - Windows Server 2008 R2\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n    - PulseAudio\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**System Requirements:**<br>\r\n\u2022 **Window: Windows XP, Windows Server 2003 or later**<br>\r\n\u2022 **Mac: Mac OS X 10.9 or later**<br>\r\n\u2022 **Linux: GTK+ 3.4 or higher**<br>\r\nDetails [here][1].\r\n\r\n**Please refer to [Release Notes for version 52.0][2] to see the list of improvements and fixed issues.**\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/thunderbird/52.0/system-requirements/\r\n  [2]: https://www.mozilla.com/en-US/thunderbird/52.0/releasenotes/",
+  "title": "Thunderbird 52.0.1 Release",
+  "version": "52.0.1"
+}

@@ -1,0 +1,157 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?f19=OP&v15=fixed&f22=CP&f1=OP&o3=substring&f0=OP&v3=fixed&f18=OP&columnlist=component%2Cbug_severity%2Cshort_desc&f15=cf_status_thunderbird_44&resolution=FIXED&j14=OR&f13=OP&o2=substring&o15=notsubstring&query_format=advanced&f12=CP&j1=OR&f3=cf_status_thunderbird_45&f2=target_milestone&f11=CP&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f14=OP&f17=CP&v2=Thunderbird%2045&f21=CP&f16=CP",
+  "channel": "Beta",
+  "created": "2016-02-03T21:52:37.604327+00:00",
+  "is_public": true,
+  "modified": "2016-02-16T22:42:31.101071+00:00",
+  "notes": [
+    {
+      "bug": 87987,
+      "created": "2016-02-03T22:05:24.091988+00:00",
+      "id": 786462,
+      "is_public": true,
+      "modified": "2016-04-06T16:59:37.925798+00:00",
+      "note": "Allow editing of From when composing a message.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 118624,
+      "created": "2016-02-03T22:11:25.484369+00:00",
+      "id": 786463,
+      "is_public": true,
+      "modified": "2016-02-03T22:11:25.708360+00:00",
+      "note": "AB quick search and contacts side bar will search nicknames",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 232021,
+      "created": "2016-02-03T22:20:06.922194+00:00",
+      "id": 786464,
+      "is_public": true,
+      "modified": "2016-04-06T21:34:33.564737+00:00",
+      "note": "Allow copying of name and email address from the message header of an email",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 364133,
+      "created": "2016-02-03T22:28:29.809339+00:00",
+      "id": 786466,
+      "is_public": true,
+      "modified": "2016-02-03T22:28:30.058622+00:00",
+      "note": "Allow printing of individual contacts from context menu",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1231642,
+      "created": "2016-02-03T22:37:16.852655+00:00",
+      "id": 786471,
+      "is_public": true,
+      "modified": "2016-04-06T16:57:36.982610+00:00",
+      "note": "Mail.ru supports OAuth authentication.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 136502,
+      "created": "2016-02-13T08:49:53.111069+00:00",
+      "id": 786492,
+      "is_public": true,
+      "modified": "2016-04-06T20:35:16.975065+00:00",
+      "note": "Implement option to always use HTML formatting to prevent unexpected format loss when converting messages to plain text.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 330891,
+      "created": "2016-02-13T08:55:45.174827+00:00",
+      "id": 786493,
+      "is_public": true,
+      "modified": "2016-04-06T16:56:50.259817+00:00",
+      "note": "Return/Enter in composer will now insert a new paragraph by default (shift-Enter will insert a line break)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 769604,
+      "created": "2016-02-13T09:03:57.746043+00:00",
+      "id": 786494,
+      "is_public": true,
+      "modified": "2016-04-06T16:56:01.264622+00:00",
+      "note": "Add dropdown in compose to allow specific setting of font size.",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 653342,
+      "created": "2016-02-16T22:35:51.591978+00:00",
+      "id": 786500,
+      "is_public": true,
+      "modified": "2016-04-06T17:57:15.100230+00:00",
+      "note": "Fixed: When sending e-mail which was composed using Chinese, Japanese or Korean characters, unwanted extra spaces were inserted within the text.",
+      "sort_num": 2,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 270292,
+      "created": "2016-02-03T22:23:38.714569+00:00",
+      "id": 786465,
+      "is_public": true,
+      "modified": "2016-04-06T17:00:14.299553+00:00",
+      "note": "Fixed: Drag and drop of multiple attachments failed to OS file folder.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1045845,
+      "created": "2016-02-03T22:32:49.033973+00:00",
+      "id": 786468,
+      "is_public": true,
+      "modified": "2016-04-06T17:01:43.857279+00:00",
+      "note": "Fixed: Box.com attachments failed to upload.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1183490,
+      "created": "2016-02-03T22:34:38.403878+00:00",
+      "id": 786469,
+      "is_public": true,
+      "modified": "2016-04-06T17:02:09.581833+00:00",
+      "note": "Fixed: New emails into a mailbox did not adhere to sort order by received.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1192838,
+      "created": "2016-02-03T22:36:24.403151+00:00",
+      "id": 786470,
+      "is_public": true,
+      "modified": "2016-04-06T17:00:49.307819+00:00",
+      "note": "Fixed: Grouped By view sort direction change was broken, plus enabled custom column grouping.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2016-02-09T22:32:31.415672+00:00",
+      "id": 786480,
+      "is_public": true,
+      "modified": "2016-02-16T22:39:15.234916+00:00",
+      "note": "Linux builds for version 45.0b1 use GTK3, but are not offered for update because GTK2 will be used in future Thunderbird 45 versions. Fixed in 45.0b2.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2016-02-10",
+  "slug": "thunderbird-45.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 45.0beta Beta",
+  "version": "45.0beta"
+}

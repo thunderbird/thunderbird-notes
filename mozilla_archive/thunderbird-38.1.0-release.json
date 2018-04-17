@@ -1,0 +1,117 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?f1=cf_tracking_thunderbird_esr38&o1=equals&o2=equals&query_format=advanced&f2=cf_status_thunderbird_esr38&v1=39%2B&v2=fixed",
+  "channel": "Release",
+  "created": "2015-07-09T16:26:43+00:00",
+  "is_public": true,
+  "modified": "2015-07-09T17:16:38+00:00",
+  "notes": [
+    {
+      "bug": 1143570,
+      "created": "2015-07-09T16:29:58+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-38.1.0-release",
+        "title": "Thunderbird 38.1.0 Release",
+        "version": "38.1.0"
+      },
+      "id": 786184,
+      "is_public": true,
+      "modified": "2015-07-09T16:29:58+00:00",
+      "note": "Copy/Paste into plain text editor deletes newlines from quoted text  (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1143570\">bug 1143570</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1151448,
+      "created": "2015-07-09T16:31:23+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-38.1.0-release",
+        "title": "Thunderbird 38.1.0 Release",
+        "version": "38.1.0"
+      },
+      "id": 786185,
+      "is_public": true,
+      "modified": "2015-07-09T16:31:23+00:00",
+      "note": "Cross-posts won't send because Newsgroups: groups are separated with comma+space, not just comma  (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1151448\">bug 1151448</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1174159,
+      "created": "2015-07-09T16:34:40+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-38.1.0-release",
+        "title": "Thunderbird 38.1.0 Release",
+        "version": "38.1.0"
+      },
+      "id": 786187,
+      "is_public": true,
+      "modified": "2015-07-09T16:34:40+00:00",
+      "note": "Cannot send email through exchange server (NTLM)  (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1174159\">bug 1174159</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1174580,
+      "created": "2015-07-09T16:36:00+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-38.1.0-release",
+        "title": "Thunderbird 38.1.0 Release",
+        "version": "38.1.0"
+      },
+      "id": 786188,
+      "is_public": true,
+      "modified": "2015-07-09T16:36:00+00:00",
+      "note": "Doesn't display GB2312 encoded texts correctly for Chinese Characters  (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1174580\">bug 1174580</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1176773,
+      "created": "2015-07-09T16:40:19+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-38.1.0-release",
+        "title": "Thunderbird 38.1.0 Release",
+        "version": "38.1.0"
+      },
+      "id": 786190,
+      "is_public": true,
+      "modified": "2015-07-09T16:49:22+00:00",
+      "note": "OAuth2 authentication for GMail does not work when specified server is imap.gmail.com or smtp.gmail.com.  (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1176773\">bug 1176773</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1175055,
+      "created": "2015-07-09T16:38:04+00:00",
+      "id": 786189,
+      "is_public": true,
+      "modified": "2015-07-09T16:38:04+00:00",
+      "note": "Import from Outlook and Eudora disabled, code currently not working  (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1175055\">bug 1175055</a>)",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2015-07-09",
+  "slug": "thunderbird-38.1.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP2\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "<p>Thunderbird 38.1.0 contains underlying code that is based off of <a href=\"https://www.mozilla.org/en-US/firefox/38.1.0/releasenotes/\">Firefox 38.1.0 esr.</a> See also the release notes for the <a href=\"https://www.mozilla.com/en-US/thunderbird/38.0.1/releasenotes/\">update from Thunderbird 31 to 38</a></p>",
+  "title": "Thunderbird 38.1.0 Release",
+  "version": "38.1.0"
+}

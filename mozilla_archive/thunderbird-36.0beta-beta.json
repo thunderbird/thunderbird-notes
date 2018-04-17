@@ -1,0 +1,47 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?quicksearch=ALL%20cf_status_thunderbird_36%3Afixed%20-cf_status_thunderbird_35%3Afixed%20-cf_status_thunderbird_34%3Afixed%20-cf_status_thunderbird_esr31%3Afixed&list_id=12011809",
+  "channel": "Beta",
+  "created": "2015-02-16T20:28:32+00:00",
+  "is_public": true,
+  "modified": "2015-02-16T20:42:20+00:00",
+  "notes": [
+    {
+      "bug": 1018259,
+      "created": "2015-02-16T20:29:16+00:00",
+      "id": 785929,
+      "is_public": true,
+      "modified": "2015-06-03T00:25:41+00:00",
+      "note": "Thunderbird will no longer use SHA-1 to sign messages (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1018259\">bug 1018259</a>)",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": null,
+      "created": "2015-02-16T20:29:34+00:00",
+      "id": 785930,
+      "is_public": true,
+      "modified": "2015-04-01T04:16:07+00:00",
+      "note": "Various older charsets have been removed",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 912216,
+      "created": "2015-02-16T20:29:58+00:00",
+      "id": 785931,
+      "is_public": true,
+      "modified": "2015-02-19T15:46:43+00:00",
+      "note": "CONDSTORE support has been disabled due to causing various issues (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=912216\">bug 912216</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2015-02-16",
+  "slug": "thunderbird-36.0beta-beta",
+  "system_requirements": "<h2>Windows</h2>\r\n  <h6>Operating Systems</h6>\r\n  <ul>\r\n    <li>Windows XP SP2</li>\r\n    <li>Windows Server 2003</li>\r\n    <li>Windows Vista</li>\r\n    <li>Windows 7</li>\r\n    <li>Windows 8</li>\r\n  </ul>\r\n  <p><em><small>Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.</small></em></p>\r\n  <h6>Recommended Hardware</h6>\r\n  <ul>\r\n    <li>Pentium 4 or newer processor that supports SSE2</li>\r\n    <li>1GB RAM</li>\r\n    <li>200 MB hard drive space</li>\r\n  </ul>\r\n  <h2>Mac</h2>\r\n  <h6>Operating Systems</h6>\r\n  <ul>\r\n    <li>Mac OS X 10.6</li>\r\n    <li>Mac OS X 10.7</li>\r\n    <li>Mac OS X 10.8</li>\r\n    <li>Mac OS X 10.9</li>\r\n  </ul>\r\n  <h6>Recommended Hardware</h6>\r\n  <ul>\r\n    <li>Macintosh computer with an Intel x86 processor</li>\r\n    <li>512 MB RAM</li>\r\n    <li>200 MB hard drive space</li>\r\n  </ul>\r\n  <h2>Linux</h2>\r\n  <h6>Software Requirements</h6>\r\n  Please note that Linux distributors may provide packages for your distribution which have different requirements.\r\n  <ul>\r\n    <li>Thunderbird will not run at all without the following libraries or packages:\r\n    <ul>\r\n      <li>GTK+ 2.18 or higher</li>\r\n      <li>GLib 2.22 or higher</li>\r\n      <li>Pango 1.14 or higher</li>\r\n      <li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>\r\n      <li>libstdc++ 4.3 or higher</li>\r\n    </ul>\r\n    </li>\r\n  </ul>\r\n  <ul>\r\n  <li>For optimal functionality, we recommend the following libraries or packages:</li>\r\n  <ul>\r\n    <li>NetworkManager 0.7 or higher</li>\r\n    <li>DBus 1.0 or higher</li>\r\n    <li>HAL 0.5.8 or higher</li>\r\n    <li>GNOME 2.16 or higher</li>\r\n  </ul>\r\n</ul>    ",
+  "text": "",
+  "title": "Thunderbird 36.0beta Beta",
+  "version": "36.0beta"
+}

@@ -1,0 +1,133 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2015-09-09T14:15:38+00:00",
+  "is_public": true,
+  "modified": "2015-09-10T15:47:30+00:00",
+  "notes": [
+    {
+      "bug": 1172240,
+      "created": "2015-09-09T14:35:47+00:00",
+      "id": 786256,
+      "is_public": true,
+      "modified": "2015-09-29T21:46:28+00:00",
+      "note": "Visual appearance improved on Windows 10",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 1168945,
+      "created": "2015-09-09T14:38:04+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-41.0beta-beta",
+        "title": "Thunderbird 41.0beta Beta",
+        "version": "41.0beta"
+      },
+      "id": 786257,
+      "is_public": true,
+      "modified": "2015-09-29T21:48:04+00:00",
+      "note": "Spellchecker no longer jumps between languages",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1159448,
+      "created": "2015-09-09T14:39:47+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-41.0beta-beta",
+        "title": "Thunderbird 41.0beta Beta",
+        "version": "41.0beta"
+      },
+      "id": 786258,
+      "is_public": true,
+      "modified": "2015-09-29T21:48:33+00:00",
+      "note": "Proxy is taken into account for pop3s protocol",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1180360,
+      "created": "2015-09-17T18:00:21+00:00",
+      "id": 786278,
+      "is_public": true,
+      "modified": "2015-09-29T21:43:48+00:00",
+      "note": "(Right-)Clicking on a newsgroup now allows directly composing a message again",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1188306,
+      "created": "2015-09-17T18:03:15+00:00",
+      "id": 786279,
+      "is_public": true,
+      "modified": "2015-09-29T21:43:48+00:00",
+      "note": "Importing to the address book from CSV now works with international characters",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 797710,
+      "created": "2015-09-17T18:09:29+00:00",
+      "id": 786283,
+      "is_public": true,
+      "modified": "2015-09-29T21:43:48+00:00",
+      "note": "Thunderbird no longer crashes when executing filter rules when using maildir",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1175242,
+      "created": "2015-09-17T18:13:25+00:00",
+      "id": 786285,
+      "is_public": true,
+      "modified": "2015-09-29T21:43:48+00:00",
+      "note": "When using the maildir storage format, the INBOX folder is no longer deleted",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1197686,
+      "created": "2015-09-17T18:17:15+00:00",
+      "id": 786286,
+      "is_public": true,
+      "modified": "2015-09-29T21:43:48+00:00",
+      "note": "Emails with long References headers are now decoded correctly",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1196662,
+      "created": "2015-09-17T18:19:35+00:00",
+      "id": 786287,
+      "is_public": true,
+      "modified": "2015-09-29T21:43:48+00:00",
+      "note": "Checking for new messages correctly works after hibernation again",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1131879,
+      "created": "2015-09-10T15:47:17+00:00",
+      "id": 786259,
+      "is_public": true,
+      "modified": "2015-09-29T21:44:54+00:00",
+      "note": "In contrast to Thunderbird 38, hardware acceleration is still enabled by default. If you are experiencing crashes, please disable it in the preferences.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2015-09-10",
+  "slug": "thunderbird-41.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP2\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 41.0beta Beta",
+  "version": "41.0beta"
+}

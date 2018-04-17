@@ -1,0 +1,67 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?list_id=12991744&o1=equals&v1=46%2B&f1=cf_tracking_thunderbird_esr45&query_format=advanced",
+  "channel": "Beta",
+  "created": "2016-05-20T17:47:14.399644+00:00",
+  "is_public": true,
+  "modified": "2016-05-27T16:54:20.403861+00:00",
+  "notes": [
+    {
+      "bug": 1272505,
+      "created": "2016-05-20T17:53:51.143635+00:00",
+      "id": 786681,
+      "is_public": true,
+      "modified": "2016-05-27T16:56:45.954262+00:00",
+      "note": "When entering members into a mailing list, the enter key dismissed the panel instead of just moving onto the next line",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1271108,
+      "created": "2016-05-20T17:56:16.142511+00:00",
+      "id": 786682,
+      "is_public": true,
+      "modified": "2016-05-27T16:56:27.562610+00:00",
+      "note": "Views from global searches did not respect \"mail.threadpane.use_correspondents\"",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1270651,
+      "created": "2016-05-20T17:57:45.929462+00:00",
+      "id": 786683,
+      "is_public": true,
+      "modified": "2016-05-27T16:56:16.109325+00:00",
+      "note": "Contacts could not be deleted when they were found through a search",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1270149,
+      "created": "2016-05-20T17:59:43.380049+00:00",
+      "id": 786684,
+      "is_public": true,
+      "modified": "2016-05-27T16:56:00.217100+00:00",
+      "note": "Options applied to a template were lost when the template was used. ",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1268014,
+      "created": "2016-05-20T18:00:48.984183+00:00",
+      "id": 786685,
+      "is_public": true,
+      "modified": "2016-05-27T16:55:27.944930+00:00",
+      "note": "Email without HTML elements was sent as HTML, despite \"Delivery Format: Auto-detect\" option",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2016-05-20",
+  "slug": "thunderbird-45.2beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 45.2beta Beta",
+  "version": "45.2beta"
+}

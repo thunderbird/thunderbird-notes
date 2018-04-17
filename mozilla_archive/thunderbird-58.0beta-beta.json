@@ -1,0 +1,225 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2017-11-24T16:18:10.891681+00:00",
+  "is_public": true,
+  "modified": "2018-01-07T12:57:29.612094+00:00",
+  "notes": [
+    {
+      "bug": 663695,
+      "created": "2017-11-24T16:21:47.305076+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787364,
+      "is_public": true,
+      "modified": "2018-04-16T09:38:50.060005+00:00",
+      "note": "When composing a message, attachments can now be reordered",
+      "sort_num": 50,
+      "tag": "New"
+    },
+    {
+      "bug": 1299610,
+      "created": "2018-01-07T12:53:37.907054+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787397,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:44.151274+00:00",
+      "note": "Calendar: Allow email scheduling for CalDAV servers supporting server-side scheduling",
+      "sort_num": 40,
+      "tag": "New"
+    },
+    {
+      "bug": 1409839,
+      "created": "2017-11-24T16:20:09.176930+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787362,
+      "is_public": true,
+      "modified": "2018-04-16T09:38:28.678081+00:00",
+      "note": "Thunderbird Chat now contains multiple built-in message themes",
+      "sort_num": 10,
+      "tag": "New"
+    },
+    {
+      "bug": 1409901,
+      "created": "2017-11-24T16:20:51.128462+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787363,
+      "is_public": true,
+      "modified": "2018-04-16T09:38:39.275414+00:00",
+      "note": "Thunderbird Chat: Nicknames inside of messages are colored to match the participants list",
+      "sort_num": 0,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1259534,
+      "created": "2018-01-07T12:48:48.366030+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787396,
+      "is_public": true,
+      "modified": "2018-03-23T09:35:21.924181+00:00",
+      "note": "Searching message bodies of messages in local folders, including filter and quick filter operations, not working reliably: Content not found in base64-encode message parts, non-ASCII text not found and false positives found.",
+      "sort_num": 100,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1345266,
+      "created": "2018-01-07T12:45:37.647521+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787395,
+      "is_public": true,
+      "modified": "2018-03-23T09:35:23.950020+00:00",
+      "note": "Defective messages (without at least one expected header) not shown in IMAP folders but shown on mobile devices",
+      "sort_num": 20,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1408610,
+      "created": "2017-11-24T16:22:44.662885+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787365,
+      "is_public": true,
+      "modified": "2018-03-23T09:42:55.805805+00:00",
+      "note": "Better error handling for Yahoo accounts",
+      "sort_num": 15,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1176748,
+      "created": "2017-11-24T16:23:16.940298+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787366,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:14.379918+00:00",
+      "note": "Outlook import",
+      "sort_num": 10,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1415723,
+      "created": "2017-11-24T16:24:37.841610+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787367,
+      "is_public": true,
+      "modified": "2018-02-10T19:27:30.345659+00:00",
+      "note": "Performance problem when repairing, rebuilding or compacting folders or accessing large folders",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1320191,
+      "created": "2017-12-12T12:04:35.009494+00:00",
+      "id": 787386,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:30.562315+00:00",
+      "note": "Localised versions of Thunderbird didn't show a localised name for Hotmail's \"Deleted\" folder ",
+      "sort_num": 4,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1409560,
+      "created": "2018-01-07T12:54:48.029695+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787398,
+      "is_public": true,
+      "modified": "2018-03-23T09:35:14.967800+00:00",
+      "note": "Calendar: Unintended task deletion if numlock is enabled",
+      "sort_num": 3,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 390753,
+      "created": "2018-01-07T12:56:50.209575+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787399,
+      "is_public": true,
+      "modified": "2018-04-16T09:39:56.084366+00:00",
+      "note": "Calendar: Can't copy information from event dialog for received invitations\r\n",
+      "sort_num": 2,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-11-27",
+  "slug": "thunderbird-58.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n - Windows Server 2008 R2\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 56 only supports Windows 7, 8 and 10 and Windows Server 2008 R2.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**These release notes apply to Thunderbird version 58 beta 3 released January 7th, 2018. **",
+  "title": "Thunderbird 58.0beta Beta",
+  "version": "58.0beta"
+}

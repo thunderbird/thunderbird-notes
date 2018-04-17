@@ -1,0 +1,93 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Release",
+  "created": "2014-11-13T07:09:07+00:00",
+  "is_public": true,
+  "modified": "2014-11-14T16:28:21+00:00",
+  "notes": [
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:08+00:00",
+      "id": 785788,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:08+00:00",
+      "note": "Security fixes can be found <a href=\"http://www.mozilla.org/security/known-vulnerabilities/thunderbird.html#thunderbird31.1.0\">here</a>",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:09+00:00",
+      "id": 785789,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:09+00:00",
+      "note": "Improved performance of autocomplete for large address books (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=984875\">Bug 984875</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:10+00:00",
+      "id": 785790,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:10+00:00",
+      "note": "Fixed an issue with IMAP being slow when looking for folders on certain server types (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=799821\">Bug 799821</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=859269\">Bug 859269</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2014-11-13T07:09:10+00:00",
+      "id": 785791,
+      "is_public": true,
+      "modified": "2014-11-13T07:09:10+00:00",
+      "note": "Fixed various theme issues relating to titlebars and toolbars (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1007225\">Bug 1007225</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1026608\">Bug 1026608</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1041211\">Bug 1041211</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1046563\">Bug 1046563</a>, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1054260\">Bug 1054260</a>)",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1081190,
+      "created": "2014-12-12T10:23:17+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-31.4.0-release",
+        "title": "Thunderbird 31.4.0 Release",
+        "version": "31.4.0"
+      },
+      "id": 785864,
+      "is_public": true,
+      "modified": "2015-01-13T15:13:15+00:00",
+      "note": "Installing extensions within Thunderbird requires download and installing as a file (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1081190\">bug 1081190</a>)",
+      "sort_num": 0,
+      "tag": "Known"
+    },
+    {
+      "bug": null,
+      "created": "2014-12-12T10:28:07+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-31.4.0-release",
+        "title": "Thunderbird 31.4.0 Release",
+        "version": "31.4.0"
+      },
+      "id": 785865,
+      "is_public": true,
+      "modified": "2015-01-13T15:14:09+00:00",
+      "note": "Users of jp mac builds may have issues with no mail folders being displayed in the main window. Running Thunderbird in 32-bit mode temporarily will workaround this issue.",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2014-09-02",
+  "slug": "thunderbird-31.1.0-release",
+  "system_requirements": "<h2>Windows</h2>\r\n<h6>Operating Systems</h6>\r\n<ul>\r\n    <li>Windows XP SP2</li>\r\n    <li>Windows Server 2003</li>\r\n    <li>Windows Vista</li>\r\n    <li>Windows 7</li>\r\n    <li>Windows 8</li>\r\n</ul>\r\n<p><em><small>Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.</smal\\\r\nl></em></p>\r\n<h6>Recommended Hardware</h6>\r\n<ul>\r\n    <li>Pentium 4 or newer processor that supports SSE2</li>\r\n    <li>1GB RAM</li>\r\n    <li>200 MB hard drive space</li>\r\n</ul>\r\n<h2>Mac</h2>\r\n<h6>Operating Systems</h6>\r\n<ul>\r\n    <li>Mac OS X 10.6</li>\r\n    <li>Mac OS X 10.7</li>\r\n    <li>Mac OS X 10.8</li>\r\n    <li>Mac OS X 10.9</li>\r\n</ul>\r\n<h6>Recommended Hardware</h6>\r\n<ul>\r\n<li>Macintosh computer with an Intel x86 processor</li>\r\n<li>512 MB RAM</li>\r\n<li>200 MB hard drive space</li>\r\n</ul>\r\n<h2>Linux</h2>\r\n<h6>Software Requirements</h6>\r\n  Please note that Linux distributors may provide packages for your distribution which have different requirements.\r\n  <ul>\r\n    <li>Thunderbird will not run at all without the following libraries or packages:\r\n    <ul>\r\n        <li>GTK+ 2.18 or higher</li>\r\n        <li>GLib 2.22 or higher</li>\r\n        <li>Pango 1.14 or higher</li>\r\n        <li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>\r\n        <li>libstdc++ 4.3 or higher</li>\r\n    </ul>\r\n    </li>\r\n</ul>\r\n<ul>\r\n    <li>For optimal functionality, we recommend the following libraries or packages:</li>\r\n    <ul>\r\n        <li>NetworkManager 0.7 or higher</li>\r\n        <li>DBus 1.0 or higher</li>\r\n        <li>HAL 0.5.8 or higher</li>\r\n        <li>GNOME 2.16 or higher</li>\r\n    </ul>\r\n</ul>\r\n",
+  "text": "",
+  "title": "Thunderbird 31.1.0 Release",
+  "version": "31.1.0"
+}

@@ -1,0 +1,35 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2017-07-14T20:10:44.390743+00:00",
+  "is_public": true,
+  "modified": "2017-08-08T07:07:38.535204+00:00",
+  "notes": [
+    {
+      "bug": null,
+      "created": "2017-07-14T20:12:30.903688+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-55.0beta-beta",
+        "title": "Thunderbird 55.0beta Beta",
+        "version": "55.0beta"
+      },
+      "id": 787173,
+      "is_public": true,
+      "modified": "2017-08-07T20:35:19.251545+00:00",
+      "note": "In general, date/time display will follow the application locale. That means that for example the English-US version will display English-US date/time formats and the German version will display German date/time formats.\r\n\r\nDate/time display **can be adjusted in the operating system settings** as long as the language used in by the OS matches the language of the application.\r\n\r\nFor example an English-US version will respect settings for any English locale, like English-United Kingdom, English-Australia or English-India. A French version will respect settings for any French locale, like France or Canada.\r\n\r\nFurther improvements are scheduled for version 56 beta.",
+      "sort_num": 0,
+      "tag": "Changed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-07-15",
+  "slug": "thunderbird-55.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n - Windows Server 2008 R2\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 55 only supports Windows 7, 8 and 10 and Windows Server 2008 R2.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**These release notes apply to Thunderbird version 55 beta 2 released July 15th, 2017.**",
+  "title": "Thunderbird 55.0beta Beta",
+  "version": "55.0beta"
+}

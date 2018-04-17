@@ -1,0 +1,215 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2016-10-09T08:30:29.770660+00:00",
+  "is_public": true,
+  "modified": "2017-01-24T09:37:37.575876+00:00",
+  "notes": [
+    {
+      "bug": 1169184,
+      "created": "2016-10-09T08:37:45.405007+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786835,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:19.808266+00:00",
+      "note": "Dictionary setting is restored when editing a draft. Content-Language header (RFC 3282) transmitted with message",
+      "sort_num": 5,
+      "tag": "New"
+    },
+    {
+      "bug": 1267649,
+      "created": "2016-10-10T18:51:40.109531+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786841,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:16.005199+00:00",
+      "note": "Chat: XMPP: Support SASL SCRAM authentication mechanism",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 77304,
+      "created": "2017-03-13T09:52:53.247612+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 787009,
+      "is_public": true,
+      "modified": "2017-04-12T16:38:39.511918+00:00",
+      "note": "When replying to a mailing list, reply will be sent to address in From header ignoring Reply-to header",
+      "sort_num": 12,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1288914,
+      "created": "2016-10-09T08:51:54.397094+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786839,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:18.220803+00:00",
+      "note": "Formatting toolbar is now left in place when delivery format is switched to plain text only",
+      "sort_num": 10,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1192739,
+      "created": "2016-10-09T08:42:50.008819+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786836,
+      "is_public": true,
+      "modified": "2017-01-12T17:19:12.039057+00:00",
+      "note": "**IMPORTANT:** Changed recipient address entry: Arrow-keys now copy the pop-up value to the input field. Mouse-hovered pop-up value can no longer be confirmed with tab or enter key. This restores the behavior of Thunderbird 24.",
+      "sort_num": 1,
+      "tag": "Changed"
+    },
+    {
+      "bug": 903390,
+      "created": "2016-10-09T08:32:09.784492+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786833,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:21.199057+00:00",
+      "note": "Reply to own e-mail does not reply with the correct identity",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 669073,
+      "created": "2016-10-09T08:35:42.177976+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786834,
+      "is_public": true,
+      "modified": "2017-01-12T17:19:15.679806+00:00",
+      "note": "Reply with selected text containing quote resulted in wrong quoting level indication",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1281785,
+      "created": "2016-10-09T08:48:16.166469+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786837,
+      "is_public": true,
+      "modified": "2017-01-12T17:19:10.542854+00:00",
+      "note": "Troubleshooting Information was incomplete in Thunderbird 49 beta.",
+      "sort_num": 1,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1300107,
+      "created": "2016-10-09T08:50:27.600601+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786838,
+      "is_public": true,
+      "modified": "2017-01-12T17:19:09.508041+00:00",
+      "note": "Links in add-on details did not work in Thunderbird 49 beta.",
+      "sort_num": 1,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 955307,
+      "created": "2016-10-10T18:50:49.438094+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786840,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:17.083800+00:00",
+      "note": "Chat: XMPP Resource collisions",
+      "sort_num": 1,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1282130,
+      "created": "2016-10-10T18:53:23.356671+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-50.0beta-beta",
+        "title": "Thunderbird 50.0beta Beta",
+        "version": "50.0beta"
+      },
+      "id": 786842,
+      "is_public": true,
+      "modified": "2017-01-12T17:18:30.247157+00:00",
+      "note": "Calendar: improved stability when parsing events and tasks.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2016-10-09",
+  "slug": "thunderbird-50.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 2.18 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.3 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - HAL 0.5.8 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "",
+  "title": "Thunderbird 50.0beta Beta",
+  "version": "50.0beta"
+}

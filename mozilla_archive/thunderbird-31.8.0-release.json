@@ -1,0 +1,27 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?j_top=OR&list_id=12407367&v11=fixed&v10=39%2B&o2=equals&v2=38%2B&f10=cf_tracking_firefox_esr31&f1=OP&o3=equals&v6=38%2B&o7=equals&f8=CP&v3=fixed&o11=equals&resolution=FIXED&o6=equals&v7=fixed&f9=OP&f4=CP&query_format=advanced&o10=equals&f3=cf_status_firefox_esr31&f2=cf_tracking_firefox_esr31&f11=cf_status_firefox_esr31&f5=OP&f6=cf_tracking_thunderbird_esr31&f7=cf_status_thunderbird_esr31",
+  "channel": "Release",
+  "created": "2015-07-20T22:26:21+00:00",
+  "is_public": true,
+  "modified": "2015-07-20T22:50:43+00:00",
+  "notes": [
+    {
+      "bug": null,
+      "created": "2015-07-20T22:34:57+00:00",
+      "id": 786192,
+      "is_public": true,
+      "modified": "2015-07-20T22:34:58+00:00",
+      "note": "Security fixes can be found [here][1]\r\n\r\n[1]: https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird31.8",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2015-07-17",
+  "slug": "thunderbird-31.8.0-release",
+  "system_requirements": "<h2>Windows</h2>\r\n<h6>Operating Systems</h6>\r\n<ul>\r\n    <li>Windows XP SP2</li>\r\n    <li>Windows Server 2003</li>\r\n    <li>Windows Vista</li>\r\n    <li>Windows 7</li>\r\n    <li>Windows 8</li>\r\n</ul>\r\n<p><em><small>Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.</smal\\\r\nl></em></p>\r\n<h6>Recommended Hardware</h6>\r\n<ul>\r\n    <li>Pentium 4 or newer processor that supports SSE2</li>\r\n    <li>1GB RAM</li>\r\n    <li>200 MB hard drive space</li>\r\n</ul>\r\n<h2>Mac</h2>\r\n<h6>Operating Systems</h6>\r\n<ul>\r\n    <li>Mac OS X 10.6</li>\r\n    <li>Mac OS X 10.7</li>\r\n    <li>Mac OS X 10.8</li>\r\n    <li>Mac OS X 10.9</li>\r\n    <li>Mac OS X 10.10</li>\r\n</ul>\r\n<h6>Recommended Hardware</h6>\r\n<ul>\r\n<li>Macintosh computer with an Intel x86 processor</li>\r\n<li>512 MB RAM</li>\r\n<li>200 MB hard drive space</li>\r\n</ul>\r\n<h2>GNU/Linux</h2>\r\n<h6>Software Requirements</h6>\r\n  Please note that Linux distributors may provide packages for your distribution which have different requirements.\r\n  <ul>\r\n    <li>Thunderbird will not run at all without the following libraries or packages:\r\n    <ul>\r\n        <li>GTK+ 2.18 or higher</li>\r\n        <li>GLib 2.22 or higher</li>\r\n        <li>Pango 1.14 or higher</li>\r\n        <li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>\r\n        <li>libstdc++ 4.3 or higher</li>\r\n    </ul>\r\n    </li>\r\n</ul>\r\n<ul>\r\n    <li>For optimal functionality, we recommend the following libraries or packages:</li>\r\n    <ul>\r\n        <li>NetworkManager 0.7 or higher</li>\r\n        <li>DBus 1.0 or higher</li>\r\n        <li>HAL 0.5.8 or higher</li>\r\n        <li>GNOME 2.16 or higher</li>\r\n    </ul>\r\n</ul>\r\n",
+  "text": "This is the last release of the 31.x series, and it is only available by [manual download][1]. Users are encouraged to update to Thunderbird 38 or later.\r\n\r\n\r\n  [1]: http://download.cdn.mozilla.net/pub/mozilla.org/thunderbird/releases/31.8.0/",
+  "title": "Thunderbird 31.8.0 Release",
+  "version": "31.8.0"
+}

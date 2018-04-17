@@ -1,0 +1,225 @@
+{
+  "bug_list": "",
+  "bug_search_url": "",
+  "channel": "Beta",
+  "created": "2017-01-12T17:17:35.825215+00:00",
+  "is_public": true,
+  "modified": "2017-01-24T09:36:22.100856+00:00",
+  "notes": [
+    {
+      "bug": 1277972,
+      "created": "2017-01-12T20:19:50.711065+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786912,
+      "is_public": true,
+      "modified": "2017-01-24T14:49:18.135540+00:00",
+      "note": "Calendar: Event can now be created and edited in a tab. (Preview feature: Set preference calendar.item.editInTab to enable)",
+      "sort_num": 4,
+      "tag": "New"
+    },
+    {
+      "bug": 964070,
+      "created": "2017-01-12T17:21:41.290309+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786903,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:14.854412+00:00",
+      "note": "Chat: Support Jabber/XMPP Message Carbons (XEP-280)",
+      "sort_num": 0,
+      "tag": "New"
+    },
+    {
+      "bug": 789679,
+      "created": "2017-01-12T17:53:06.407772+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786911,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:06.855705+00:00",
+      "note": "Folders backed by mbox storage larger than 4GB are supported without warning (unless preference mailnews.allowMboxOver4GB is set to false)",
+      "sort_num": 4,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1021843,
+      "created": "2017-01-12T17:34:47.125928+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786908,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:09.633757+00:00",
+      "note": "IMAP caching now uses Mozilla's latest caching technology",
+      "sort_num": 2,
+      "tag": "Changed"
+    },
+    {
+      "bug": 1328814,
+      "created": "2017-01-12T17:22:59.423854+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786904,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:13.559463+00:00",
+      "note": "Message preview pane non-functional after IMAP folder was renamed or moved",
+      "sort_num": 20,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1265800,
+      "created": "2017-01-12T17:40:57.783486+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786910,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:08.453064+00:00",
+      "note": "Various corrections when composing messages in paragraph format",
+      "sort_num": 16,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1323377,
+      "created": "2017-01-12T17:28:44.591143+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786905,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:12.346679+00:00",
+      "note": "Text encoding of reply sometimes incorrect (uses encoding of last viewed message)",
+      "sort_num": 8,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1026989,
+      "created": "2017-01-12T17:30:52.782024+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786906,
+      "is_public": true,
+      "modified": "2017-04-12T16:39:10.759716+00:00",
+      "note": "Text encoding of message display, reply or forwarded message sometimes incorrect (uses encoding of attachment)",
+      "sort_num": 7,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1319299,
+      "created": "2017-01-12T17:33:03.656616+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786907,
+      "is_public": true,
+      "modified": "2017-02-07T17:30:42.750540+00:00",
+      "note": "\"Move To\" button on \"Search Messages\" panel not working",
+      "sort_num": 6,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1318964,
+      "created": "2017-01-12T17:38:15.021417+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786909,
+      "is_public": true,
+      "modified": "2017-02-07T17:30:40.130566+00:00",
+      "note": "Message sent to \"undisclosed recipients\" shows no recipient (non-functional since Thunderbird version 38)",
+      "sort_num": 5,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1298390,
+      "created": "2017-01-12T21:03:03.243132+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-51.0beta-beta",
+        "title": "Thunderbird 51.0beta Beta",
+        "version": "51.0beta"
+      },
+      "id": 786913,
+      "is_public": true,
+      "modified": "2017-01-24T09:14:32.615104+00:00",
+      "note": "Calendar: Events are not always printed in the correct timezone (in month and week grid)",
+      "sort_num": 3,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1320048,
+      "created": "2017-01-18T17:55:15.980240+00:00",
+      "id": 786922,
+      "is_public": true,
+      "modified": "2017-01-24T09:14:30.850880+00:00",
+      "note": "Due to an Apple touch bar bug, Thunderbird on recent MacBook Pro may crash when open for long periods or crash after resuming from sleep. Apple reports to have a fix for this in the currently unreleased OS X 10.12.3",
+      "sort_num": 0,
+      "tag": "Known"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2017-01-18",
+  "slug": "thunderbird-51.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 2.18 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.3 or higher\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - HAL 0.5.8 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "",
+  "title": "Thunderbird 51.0beta Beta",
+  "version": "51.0beta"
+}

@@ -1,0 +1,89 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=57%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced",
+  "channel": "Release",
+  "created": "2018-01-25T18:26:21.767711+00:00",
+  "is_public": true,
+  "modified": "2018-01-25T21:34:16.297195+00:00",
+  "notes": [
+    {
+      "bug": 1259534,
+      "created": "2018-01-07T12:48:48.366030+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787396,
+      "is_public": true,
+      "modified": "2018-03-23T09:35:21.924181+00:00",
+      "note": "Searching message bodies of messages in local folders, including filter and quick filter operations, not working reliably: Content not found in base64-encode message parts, non-ASCII text not found and false positives found.",
+      "sort_num": 100,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1345266,
+      "created": "2018-01-07T12:45:37.647521+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787395,
+      "is_public": true,
+      "modified": "2018-03-23T09:35:23.950020+00:00",
+      "note": "Defective messages (without at least one expected header) not shown in IMAP folders but shown on mobile devices",
+      "sort_num": 20,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1409560,
+      "created": "2018-01-07T12:54:48.029695+00:00",
+      "fixed_in_release": {
+        "channel": "Beta",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-58.0beta-beta",
+        "title": "Thunderbird 58.0beta Beta",
+        "version": "58.0beta"
+      },
+      "id": 787398,
+      "is_public": true,
+      "modified": "2018-03-23T09:35:14.967800+00:00",
+      "note": "Calendar: Unintended task deletion if numlock is enabled",
+      "sort_num": 3,
+      "tag": "Fixed"
+    },
+    {
+      "bug": null,
+      "created": "2018-01-25T18:26:57.628028+00:00",
+      "fixed_in_release": {
+        "channel": "Release",
+        "is_public": true,
+        "product": "Thunderbird",
+        "slug": "thunderbird-52.6.0-release",
+        "title": "Thunderbird 52.6.0 Release",
+        "version": "52.6.0"
+      },
+      "id": 787429,
+      "is_public": true,
+      "modified": "2018-03-23T09:35:26.388408+00:00",
+      "note": "Various [security fixes][1]\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.6",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2018-01-25",
+  "slug": "thunderbird-52.6.0-release",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP3\r\n - Windows Server 2003 SP1\r\n - Windows Server 2003 R2\r\n - Windows Server 2008\r\n - Windows Server 2008 R2\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n**Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n- Mac OS X 10.11\r\n- Mac OS X 10.12\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n### Software Requirements\r\n\r\n*Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*\r\n\r\n- Thunderbird will not run at all without the following libraries or packages:\r\n    - GTK+ 3.4 or higher\r\n    - GLib 2.22 or higher\r\n    - Pango 1.14 or higher\r\n    - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n    - libstdc++ 4.6.1 or higher\r\n    - PulseAudio\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n    - NetworkManager 0.7 or higher\r\n    - DBus 1.0 or higher\r\n    - GNOME 2.16 or higher\r\n    ",
+  "text": "**System Requirements:**<br>\r\n\u2022 **Window: Windows XP, Windows Server 2003 or later**<br>\r\n\u2022 **Mac: Mac OS X 10.9 or later**<br>\r\n\u2022 **Linux: GTK+ 3.4 or higher**<br>\r\nDetails [here][1].\r\n\r\n**Please refer to [Release Notes for version 52.0][2] to see the list of improvements and fixed issues.**\r\n\r\n\r\n  [1]: https://www.mozilla.org/en-US/thunderbird/52.0/system-requirements/\r\n  [2]: https://www.mozilla.com/en-US/thunderbird/52.0/releasenotes/",
+  "title": "Thunderbird 52.6.0 Release",
+  "version": "52.6.0"
+}

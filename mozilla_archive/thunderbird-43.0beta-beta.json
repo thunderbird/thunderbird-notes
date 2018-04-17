@@ -1,0 +1,47 @@
+{
+  "bug_list": "",
+  "bug_search_url": "https://bugzilla.mozilla.org/buglist.cgi?f19=OP&v15=fixed&f22=CP&f1=OP&o3=substring&list_id=12779898&f0=OP&v3=fixed&f18=OP&columnlist=component%2Cbug_severity%2Cshort_desc&f15=cf_status_thunderbird_42&j14=OR&resolution=FIXED&f13=OP&o2=substring&o15=notsubstring&f12=CP&query_format=advanced&j1=OR&f3=cf_status_thunderbird_43&f2=target_milestone&f11=CP&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f14=OP&f17=CP&j20=OR&f21=CP&v2=Thunderbird%2043&f16=CP",
+  "channel": "Beta",
+  "created": "2015-11-23T19:44:04+00:00",
+  "is_public": true,
+  "modified": "2016-01-08T01:36:33.149589+00:00",
+  "notes": [
+    {
+      "bug": 1079858,
+      "created": "2015-12-18T15:53:18.239400+00:00",
+      "id": 2,
+      "is_public": true,
+      "modified": "2015-12-31T00:25:53.572796+00:00",
+      "note": " Prepare to use SHA-256 signing certificate for Windows builds, to meet new signing requirement ([1079858][1])\r\n\r\n\r\n  [1]: https://bugzilla.mozilla.org/show_bug.cgi?id=1079858",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1202105,
+      "created": "2015-12-31T00:30:37.628292+00:00",
+      "id": 786414,
+      "is_public": true,
+      "modified": "2015-12-31T00:30:49.026393+00:00",
+      "note": "Fixed issue where, upon compact, in rare cases message disappeared due to duplicate message keys.",
+      "sort_num": 0,
+      "tag": "Fixed"
+    },
+    {
+      "bug": 1192838,
+      "created": "2015-12-31T00:35:21.824718+00:00",
+      "id": 786415,
+      "is_public": true,
+      "modified": "2015-12-31T00:35:22.133567+00:00",
+      "note": "Fix broken Grouped By view sort direction change, enable custom column grouping",
+      "sort_num": 0,
+      "tag": "Fixed"
+    }
+  ],
+  "product": "Thunderbird",
+  "release_date": "2015-12-31",
+  "slug": "thunderbird-43.0beta-beta",
+  "system_requirements": "## Windows\r\n\r\n### Operating Systems\r\n - Windows XP SP2\r\n - Windows Server 2003 SP1\r\n - Windows Vista\r\n - Windows 7\r\n - Windows 8\r\n - Windows 10\r\n\r\n*Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*\r\n\r\n  \r\n### Windows Recommended Hardware\r\n   - Pentium 4 or newer processor that supports SSE2\r\n   - 1GB RAM\r\n   - 200 MB hard drive space\r\n\r\n---\r\n\r\n## Mac\r\n  \r\n### Operating Systems\r\n  \r\n- Mac OS X 10.6\r\n- Mac OS X 10.7\r\n- Mac OS X 10.8\r\n- Mac OS X 10.9\r\n- Mac OS X 10.10\r\n  \r\n###  Recommended Hardware\r\n  \r\n -  Macintosh computer with an Intel x86 processor\r\n -  512 MB RAM\r\n -  200 MB hard drive space\r\n\r\n---\r\n  \r\n## GNU/Linux\r\n### Software Requirements\r\n  \r\n  *Please note that Linux distributors may provide packages for your distribution which have different requirements.*\r\n  \r\n- Thunderbird will not run at all without the following libraries or packages:\r\n - GTK+ 2.18 or higher\r\n - GLib 2.22 or higher\r\n - Pango 1.14 or higher\r\n - X.Org 1.0 or higher (1.7 or higher is recommended)\r\n - libstdc++ 4.3 or higher\r\n - For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n\r\n- For optimal functionality, we recommend the following libraries or packages:\r\n - NetworkManager 0.7 or higher\r\n - DBus 1.0 or higher\r\n - HAL 0.5.8 or higher\r\n - GNOME 2.16 or higher\r\n  \r\n    ",
+  "text": "",
+  "title": "Thunderbird 43.0beta Beta",
+  "version": "43.0beta"
+}
