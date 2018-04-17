@@ -1,0 +1,20 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?list_id=12991744&o1=equals&v1=46%2B&f1=cf_tracking_thunderbird_esr45&query_format=advanced
+  import_system_requirements: '45.0'
+notes:
+- note: Various improvements in handling of message compose in paragraph mode.
+  tag: fixed
+- note: Printing failed in composition window.
+  tag: fixed
+- note: Font indicator in compose falsely claimed certain fonts were not installed.
+  tag: fixed
+- note: DIGEST-MD5 authentication in JS-XMPP failed for some users (now disabled).
+  tag: fixed
+- note: Correspondents column upgrade too aggressive, causing loss of thread pane
+    column setup (may be fixed/disabled in version 45.1 non-beta release)
+  tag: unresolved
+- note: Drag and drop of contact name from address book to compose window broken.
+  tag: unresolved
+- note: UI elements become larger when moused over on retina displays/monitor on Mac
+    OS X or windows moved between lowdpi/hidp.
+  tag: unresolved

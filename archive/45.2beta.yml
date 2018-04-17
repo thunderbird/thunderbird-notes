@@ -1,0 +1,16 @@
+release:
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?list_id=12991744&o1=equals&v1=46%2B&f1=cf_tracking_thunderbird_esr45&query_format=advanced
+  import_system_requirements: '45.0'
+notes:
+- note: When entering members into a mailing list, the enter key dismissed the panel
+    instead of just moving onto the next line
+  tag: fixed
+- note: Views from global searches did not respect "mail.threadpane.use_correspondents"
+  tag: fixed
+- note: Contacts could not be deleted when they were found through a search
+  tag: fixed
+- note: 'Options applied to a template were lost when the template was used. '
+  tag: fixed
+- note: 'Email without HTML elements was sent as HTML, despite "Delivery Format: Auto-detect"
+    option'
+  tag: fixed
