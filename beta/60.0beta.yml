@@ -65,8 +65,8 @@ notes:
     of a folder tree. This will be restored to its original form in the next release.
   tag: unresolved
   bug: 1425962
-- note: 'Source view not working for JS source files via Developer tools. Workaround:
-    Set preference view_source.editor.external and view_source.editor.path to view
-    the source in the editor of your choice.'
+- note: "Source view not working for JS, XML, CSS, etc. source files via 'Developer Tools > Error Console'.
+    Workaround: Set preference view_source.editor.external and view_source.editor.path to view
+    the source in the editor of your choice. Alternatively, use 'Developer Tools > Developer Toolbox, Console'."
   tag: unresolved
   bug: 1439021
