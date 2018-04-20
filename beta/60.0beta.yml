@@ -1,6 +1,6 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 3 released April 16th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 60 beta 4 released April 23rd, 2018.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 
@@ -22,6 +22,9 @@ notes:
 - note: WebExtension themes are now enabled in Thunderbird.
   tag: new
   bug: 1450670
+- note: 'FIDO U2F support'
+  tag: new
+  bug: 1444101
 - note: 'Calendar: Allow copying, cutting or deleting of a selected occurrence or
     the entire series for recurring events.'
   tag: new
@@ -55,6 +58,9 @@ notes:
     attachments) under some circumstances.
   tag: fixed
   bug: 1430480
+- note: 'Better error handling for Gmail authentication to avoid re-downloading of folders'
+  tag: fixed
+  bug: 1453643
 - note: Text in the address book card view wasn't selectable.
   tag: fixed
   bug: 96968
