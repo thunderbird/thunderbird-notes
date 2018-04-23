@@ -12,6 +12,8 @@ notes:
 - note: Further improvements to attachments handling during compose, Alt+M now allows
     to show the attachment pane. The attachment pane can also be shown initially when
     composing a new message. Right-click on the header to enable this option.
+    It is now also impossible to completely collapse a non-empty attachment pane.
+    That protects against attachments accidentally being sent.
   tag: new
   bug: 1428631
 - note: Thunderbird now allows the conversion of folders from mbox to maildir format
@@ -45,6 +47,10 @@ notes:
     online
   tag: changed
   bug: 1157256
+- note: 'Better address book photo handling: Photos can be added by drag and drop and
+    a copy of all photos will be stored in the Thunderbird profile'
+  tag: changed
+  bug: 892889
 - note: During address entry, the matching part of the address is now shown in bold.
     Preference mail.autoComplete.commentColumn allows to display the address book
     where the address is stored.
