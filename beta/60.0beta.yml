@@ -1,6 +1,6 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 5 released April 30rd, 2018.**"
+  text: "**These release notes apply to Thunderbird version 60 beta 5 released April 30th, 2018.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 
@@ -21,6 +21,9 @@ notes:
     setting the preference mail.store_conversion_enabled.
   tag: new
   bug: 856087
+- note: Light and Dark themes
+  tag: new
+  bug: 1456219
 - note: WebExtension themes are now enabled in Thunderbird.
   tag: new
   bug: 1450670
