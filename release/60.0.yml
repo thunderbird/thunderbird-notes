@@ -1,5 +1,5 @@
 release:
-  release_date: 2018-05-15
+  release_date: 2018-XX-XX
   text: Draft release notes for Thunderbird 60 ESR collecting all release notes of versions 53 beta to 60 beta which have not been uplifted to TB 52 ESR.
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
