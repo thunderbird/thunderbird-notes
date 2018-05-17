@@ -10,15 +10,15 @@ release:
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=57%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced
   import_system_requirements: '52.0'
 notes:
-- note: Renaming IMAP folders with subfolders should now consistently succeed.
+- note: Renaming IMAP folders with subfolders would frequently fail.
   tag: fixed
   bug: 1428104
-- note: Improved folder database cache logic and debug output.
-  tag: fixed
-  bug: 1396655
 - note: Receiving message via IMAP might crash.
   tag: fixed
   bug: 1284302
+- note: Improved folder database cache logic and debug output.
+  tag: changed
+  bug: 1396655
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.8">security
     fixes</a>
   tag: fixed
