@@ -23,3 +23,7 @@ notes:
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.8">security
     fixes</a>
   tag: fixed
+- note: 'If you using are using S/MIME encryption or PGP encryption (through the Enigmail add-on), 
+    please <a href="https://blog.mozilla.org/thunderbird/2018/05/efail-and-thunderbird/">read
+    and follow the instructions on our blog</a>.'
+  tag: unresolved
