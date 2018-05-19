@@ -8,7 +8,7 @@ release:
     Details [here](https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/).
            
     **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
-  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=57%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=58%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced
   import_system_requirements: '52.0'
 notes:
 - note: 'Searching message bodies of messages in local folders, including filter and
