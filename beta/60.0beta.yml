@@ -1,6 +1,6 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 6 released May 4th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 60 beta 7 released June 9th, 2018.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 
@@ -9,11 +9,12 @@ notes:
     This delete button is displayed when hovering the To/Cc/Bcc selector.
   tag: new
   bug: 1100103
-- note: Further improvements to attachments handling during compose, Alt+M now allows
-    to show the attachment pane. The attachment pane can also be shown initially when
+- note: 'Further improvements to attachments handling during compose:
+    "Attach" button moved to the right to be above the attachment pane.
+    Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when
     composing a new message. Right-click on the header to enable this option.
     It is now also impossible to completely collapse a non-empty attachment pane.
-    That protects against attachments accidentally being sent.
+    That protects against attachments accidentally being sent.'
   tag: new
   bug: 1428631
 - note: Thunderbird now allows the conversion of folders from mbox to maildir format
@@ -54,6 +55,9 @@ notes:
     a copy of all photos will be stored in the Thunderbird profile'
   tag: changed
   bug: 892889
+  note: Native notifications on Linux are now re-enabled
+  tag: changed
+  bug: 1358837
 - note: During address entry, the matching part of the address is now shown in bold.
     Preference mail.autoComplete.commentColumn allows to display the address book
     where the address is stored.
@@ -76,6 +80,12 @@ notes:
 - note: UTF-7 support (not working since Thunderbird version 56)
   tag: fixed
   bug: 1402813
+- note: Partial fix of the EFAIL vulnarability by removing some HTML crafted to carry out an attack
+  tag: fixed
+  bug: 1419417
+- note: Thunderbird used a stale cached password after user edited a saved password
+  tag: fixed
+  bug: 516464
 - note: 'The new menu item "Add-on Options" introduced in Thunderbird 59 beta is now also working on Mac'
   tag: fixed
   bug: 1419145
