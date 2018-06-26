@@ -1,6 +1,6 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 9 released June 27th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 60 beta 9 released June 26th, 2018.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 
@@ -108,3 +108,6 @@ notes:
 - note: 'Calendar: Google account credentials not retained by Lightning'
   tag: fixed
   bug: 1468069
+- note: 'Provider for Google Calendar not available'
+  tag: unresolved
+  bug: 1471326
