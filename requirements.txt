@@ -1,4 +1,4 @@
-pyyaml
-jinja2
-markdown
-watchdog
+pyyaml==3.12
+jinja2==2.10
+markdown==2.6.11
+watchdog==0.8.3
