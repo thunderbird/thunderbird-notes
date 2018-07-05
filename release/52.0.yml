@@ -1,9 +1,9 @@
 release:
   text: |
-    **System Requirements:  
-    • Window: Windows XP, Windows Server 2003 or later  
-    • Mac: Mac OS X 10.9 or later  
-    • Linux: GTK+ 3.4 or higher**  
+    **System Requirements:
+    • Window: Windows XP, Windows Server 2003 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**
     Details [here](/en-US/thunderbird/52.0/system-requirements/).
 
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=54%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced&list_id=13634735
@@ -24,7 +24,7 @@ release:
     *Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.*
 
     **Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.**
-      
+
     ### Windows Recommended Hardware
     - Pentium 4 or newer processor that supports SSE2
     - 1GB RAM
@@ -33,23 +33,24 @@ release:
     ---
 
     ## Mac
-      
+
     ### Operating Systems
-      
+
     - Mac OS X 10.9
     - Mac OS X 10.10
     - Mac OS X 10.11
     - Mac OS X 10.12
-      
+    - Mac OS X 10.13
+
     ###  Recommended Hardware
-      
+
     - Macintosh computer with an Intel x86 processor
     - 512 MB RAM
     - 200 MB hard drive space
 
     ---
-      
-    ## GNU/Linux     
+
+    ## GNU/Linux
     ### Software Requirements
 
     *Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*
@@ -104,12 +105,12 @@ notes:
       **IMPORTANT**: The way images are included in a compose window has changed. Images are now included as data URIs
       and not as references to parts of other messages or operating system files. This allows better interoperability
       with office packages such as MS Office or LibreOffice. Images linked from locations on the internet will **no longer**
-      be downloaded and attached to the message automatically. This can be changed for each image individually via the 
+      be downloaded and attached to the message automatically. This can be changed for each image individually via the
       Image Properties dialog or globally by setting the preference mail.compose.attach_http_images.
     tag: changed
 
   - note: >
-     Correspondents column now default for all new folders, can be switched off with preference 
+     Correspondents column now default for all new folders, can be switched off with preference
      mail.threadpane.use_correspondents.
     tag: changed
 
@@ -128,12 +129,12 @@ notes:
   - note: IMAP caching now uses Mozilla's latest caching technology.
     tag: changed
 
-  - note: > 
-      The keyboard shortcut to insert hyperlinks into a compose window was changed from CTRL+L to CTRL+K to 
+  - note: >
+      The keyboard shortcut to insert hyperlinks into a compose window was changed from CTRL+L to CTRL+K to
       align with Office applications.
     tag: changed
 
-  - note: > 
+  - note: >
       Chat: Removed Yahoo! Messenger support (since [Yahoo removed support](https://web.archive.org/web/20160730080614/https://help.yahoo.com/kb/yahoo-messenger-for-web/SLN26860.html)).
     tag: changed
 
