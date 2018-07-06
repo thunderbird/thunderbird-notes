@@ -88,10 +88,6 @@ notes:
     60 by their authors will be disabled (this can be reverted via preference extensions.strictCompatibility)"
   tag: changed
   bug: 1451097
-- note: Thunderbird will now prompt to compact IMAP folders even if the account is
-    online
-  tag: changed
-  bug: 1157256
 - note: 'IMAP: When after sending a message storing that sent message fails, the message
     can now be stored in a local folder'
   tag: changed
