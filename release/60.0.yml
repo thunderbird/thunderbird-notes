@@ -7,22 +7,28 @@ notes:
     This delete button is displayed when hovering the To/Cc/Bcc selector.
   tag: new
   bug: 1100103
-- note: Further improvements to attachments handling during compose, Alt+M now allows
-    to show the attachment pane. The attachment pane can also be shown initially when
+- note: 'Further improvements to attachments handling during compose:
+    "Attach" button moved to the right to be above the attachment pane.
+    Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when
     composing a new message. Right-click on the header to enable this option.
     It is now also impossible to completely collapse a non-empty attachment pane.
-    That protects against attachments accidentally being sent.
+    That protects against attachments accidentally being sent.'
   tag: new
   bug: 1428631
 - note: Edit Template command. This also solves various problems when saving as template
     (duplicates created, message ID lost).
   tag: new
   bug: 1389062
-- note: Thunderbird now allows the conversion of folders from mbox to maildir format
-    and vice versa. This is an <strong>experimental</strong> feature that needs to
-    be enabled by setting the preference mail.store_conversion_enabled.
+- note: 'Thunderbird now allows the conversion of folders from mbox to maildir format
+    and vice versa. This is an **experimental** feature that needs to be enabled by
+    setting the preference mail.store_conversion_enabled.
+    Note that this functionality does not not work if the option
+    "Allow Windows Search/Spotlight to search messages" is selected.'
   tag: new
   bug: 856087
+- note: Light and Dark themes
+  tag: new
+  bug: 1456219
 - note: WebExtension themes are now enabled in Thunderbird
   tag: new
   bug: 1450670
@@ -156,6 +162,9 @@ notes:
     a copy of all photos will be stored in the Thunderbird profile'
   tag: changed
   bug: 892889
+- note: Native notifications on Linux are now re-enabled
+  tag: changed
+  bug: 1358837
 - note: 'Various problems related to handling the IMAP trash folder: Under certain
     circumstances the selection of the trash folder didn''t persist, for example when
     the name contained non-ASCII characters, or in localized versions of Thunderbird.
@@ -205,12 +214,6 @@ notes:
 - note: 'Better error handling for Gmail authentication to avoid re-downloading of folders'
   tag: fixed
   bug: 1453643
-- note: The IMAP and News subscribe dialogue now presents a flat list of folders instead
-    of a folder tree. This will be restored to its original form in the next release.
-  tag: unresolved
-  bug: 1425962
-- note: "Source view not working for JS, XML, CSS, etc. source files via 'Developer Tools > Error Console'.
-    Workaround: Set preference view_source.editor.external and view_source.editor.path to view
-    the source in the editor of your choice. Alternatively, use 'Developer Tools > Developer Toolbox, Console'."
-  tag: unresolved
-  bug: 1439021
+- note: Thunderbird used a stale cached password after user edited a saved password
+  tag: fixed
+  bug: 516464

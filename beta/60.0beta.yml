@@ -69,9 +69,11 @@ notes:
     That protects against attachments accidentally being sent.'
   tag: new
   bug: 1428631
-- note: Thunderbird now allows the conversion of folders from mbox to maildir format
+- note: 'Thunderbird now allows the conversion of folders from mbox to maildir format
     and vice versa. This is an **experimental** feature that needs to be enabled by
     setting the preference mail.store_conversion_enabled.
+    Note that this functionality does not not work if the option
+    "Allow Windows Search/Spotlight to search messages" is selected.'
   tag: new
   bug: 856087
 - note: Light and Dark themes
@@ -107,7 +109,7 @@ notes:
     a copy of all photos will be stored in the Thunderbird profile'
   tag: changed
   bug: 892889
-  note: Native notifications on Linux are now re-enabled
+- note: Native notifications on Linux are now re-enabled
   tag: changed
   bug: 1358837
 - note: During address entry, the matching part of the address is now shown in bold.
