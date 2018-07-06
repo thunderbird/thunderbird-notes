@@ -110,15 +110,15 @@ notes:
     choice will be reverted.'
   tag: changed
   bug: 731688
+- note: The "Edit Draft" command now also honors the use of the shift key to convert
+    HTML to plain text or vice versa when editing a draft
+  tag: changed
+  bug: 1389771
 - note: The plain text to HTML conversion has been improved where such a conversion
     is necessary for "Edit As New Message" or when the shift modifier is used for
     "Edit Draft" or "New Message from Template".
   tag: changed
   bug: 1392052
-- note: The "Edit Draft" command now also honors the use of the shift key to convert
-    HTML to plain text or vice versa when editing a draft
-  tag: changed
-  bug: 1389771
 - note: During address entry, the matching part of the address is now shown in bold.
     Preference mail.autoComplete.commentColumn allows to display the address book
     where the address is stored.
