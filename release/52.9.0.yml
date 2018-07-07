@@ -24,3 +24,6 @@ notes:
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.9">security
     fixes</a>
   tag: fixed
+- note: Deleting or detaching attachments will corrupt messages under certain circumstances
+  tag: unresolved
+  bug: 1473893
