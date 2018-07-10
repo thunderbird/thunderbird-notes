@@ -1,6 +1,6 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 9 released June 26th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 60 beta 10 released July 10th, 2018.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   system_requirements: |
     ## Windows
@@ -156,9 +156,13 @@ notes:
 - note: "Source view not working for JS, XML, CSS, etc. source files via 'Developer Tools > Error Console'.
     Other options: 1) Set preference view_source.editor.external and view_source.editor.path to view
     the source in the editor of your choice. 2) Use 'Developer Tools > Developer Toolbox, Console'.
-    (Not working in earlier versions of Thunderbird 60 beta.)"
+    (not working in earlier versions of Thunderbird 60 beta)"
   tag: fixed
   bug: 1439021
+- note: Deleting or detaching attachments corrupted messages under certain circumstances
+    (not working in earlier versions of Thunderbird 60 beta)
+  tag: fixed
+  bug: 1473893
 - note: 'Calendar: Google account credentials not retained by Lightning'
   tag: fixed
   bug: 1468069
