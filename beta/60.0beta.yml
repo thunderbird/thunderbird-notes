@@ -169,3 +169,7 @@ notes:
 - note: 'Provider for Google Calendar not available'
   tag: unresolved
   bug: 1471326
+- note: 'CalDav access to some servers not working.
+    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  tag: unresolved
+  bug: 1468912

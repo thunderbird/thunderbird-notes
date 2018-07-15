@@ -196,9 +196,11 @@ notes:
     for example áäß, and symbols, for example €§"
   tag: fixed
   bug: 312593
-- note: Outlook import
+- note: 'Outlook import. Note: Mail, address book and settings need to be imported individually as
+    "Import Everything" currently does not work.'
   tag: fixed
   bug: 1176748
+  bug2: 1474870
 - note: 'Localised versions of Thunderbird didn''t show a localised name for Hotmail''s
     "Deleted" folder '
   tag: fixed
