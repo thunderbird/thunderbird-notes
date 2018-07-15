@@ -101,8 +101,8 @@ notes:
     authors will be disabled (this can be reverted via preference extensions.strictCompatibility)"
   tag: changed
   bug: 1451097
-- note: Thunderbird will now prompt to compact IMAP folders even if the account is
-    online
+- note: 'Thunderbird will now prompt to compact IMAP folders even if the account is
+    online. Note: Under certain circumstances an incorrect estimate of the expected gain is shown.'
   tag: changed
   bug: 1157256
 - note: 'Better address book photo handling: Photos can be added by drag and drop and

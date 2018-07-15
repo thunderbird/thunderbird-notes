@@ -220,3 +220,7 @@ notes:
 - note: "Calendar: Can't copy information from event dialog for received invitations"
   tag: fixed
   bug: 390753
+- note: 'CalDav access to some servers not working.
+    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  tag: unresolved
+  bug: 1468912

@@ -10,8 +10,8 @@ release:
     **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
   import_system_requirements: '52.0'
 notes:
-- note: Thunderbird will now prompt to compact IMAP folders even if the account is
-    online
+- note: 'Thunderbird will now prompt to compact IMAP folders even if the account is
+    online. Note: Under certain circumstances an incorrect estimate of the expected gain is shown.'
   tag: changed
 - note: 'Complete fix of the EFAIL vulnerability: 1) Removing some HTML crafted to carry out an attack.
     2) Optionally: Not decrypting subordinate message parts that otherwise might reveal decrypted content to the attacker.
