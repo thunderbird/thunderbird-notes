@@ -14,12 +14,14 @@ notes:
   tag: new
   bug: 1100103
 - note: 'Many improvements to attachments handling during compose:
-    Attachments can now be reordered.
+    Attachments can now be reordered using a dialog, keyboard shortcuts, or drag and drop.
     The "Attach" button moved to the right to be above the attachment pane.
-    Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when
+    The access key of the attachment pane (e.g. Alt+M, may vary depending on localization, Ctrl+M on Mac)
+    now also works to show or hide the pane.
+    The attachment pane can also be shown initially when
     composing a new message. Right-click on the header to enable this option.
-    It is now also impossible to completely collapse a non-empty attachment pane.
-    That protects against attachments accidentally being sent.'
+    Hiding a non-empty attachment pane will now show a placeholder paperclip to indicate
+    the presence of attachments and avoid sending them accidentally.'
   tag: new
   bug: 1428631
   bug2: 663695
@@ -52,6 +54,9 @@ notes:
     for example, German formats.
   tag: new
   bug: 1384007
+- note: 'OAuth2 authentication for Yahoo and AOL'
+  tag: new
+  bug: 1310384
 - note: 'FIDO U2F support'
   tag: new
   bug: 1444101
