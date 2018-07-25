@@ -154,8 +154,8 @@ notes:
     supported)
   tag: changed
   bug: 791645
-- note: Thunderbird now uses the latest Mozilla technology based on Rust for encoding
-    messages
+- note: Thunderbird now uses the latest Rust-based Mozilla technology,
+    including Quantum's CSS engine (based on Servo) and encoding_rs, for displaying and encoding messages
   tag: changed
   bug: 1363281
 - note: 'Calendar: Removal of capability to send email invitations compatible to Outlook
