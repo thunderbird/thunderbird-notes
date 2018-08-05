@@ -1,12 +1,19 @@
 release:
+  release_date: 2018-08-06
   text: |
+    ** Thunderbird version 60 is currently only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as upgrade from Thunderbird version 52
+    or earlier. If you have Lightning, Mozilla's Calendar add-on, installed it will automatically
+    be updated to match the new version of Thunderbird.** Refer to this
+    [troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
     **System Requirements:
     • Window: Windows 7, Windows Server 2008 R2 or later
     • Mac: Mac OS X 10.9 or later
     • Linux: GTK+ 3.4 or higher**.
     Details [here](/en-US/thunderbird/60.0/system-requirements/).
 
-  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '60.0beta'
 notes:
 - note: When writing a message, a delete button now allows the removal of a recipient.
