@@ -1,11 +1,12 @@
 release:
   release_date: 2018-08-06
   text: |
-    ** Thunderbird version 60 is currently only offered as direct download from
+    ** Thunderbird version 60.0 is only offered as direct download from
     [thunderbird.net](https://www.thunderbird.net) and not as upgrade from Thunderbird version 52
-    or earlier. If you have installed Lightning, Mozilla's Calendar add-on, it will automatically
+    or earlier. A future version 60.1 will provide updates from earlier versions.
+    If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
     be updated to match the new version of Thunderbird.** Refer to this
-    [troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
     in case of problems.
 
     **System Requirements:
