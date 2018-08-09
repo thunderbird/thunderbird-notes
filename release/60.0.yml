@@ -15,6 +15,7 @@ release:
     • Linux: GTK+ 3.4 or higher**.
     Details [here](/en-US/thunderbird/60.0/system-requirements/).
 
+  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?columnlist=product%2Ccomponent%2Cbug_severity%2Cshort_desc&f1=OP&f10=target_milestone&f11=target_milestone&f12=target_milestone&f13=target_milestone&f14=target_milestone&f15=target_milestone&f16=target_milestone&f17=target_milestone&f18=cf_status_thunderbird_esr60&f19=cf_status_thunderbird_60&f2=target_milestone&f21=CP&f23=CP&f3=product&f4=component&f5=CP&f6=OP&f7=cf_status_thunderbird_esr52&f8=cf_status_thunderbird_esr52&f9=OP&j9=OR&j_top=OR&o10=substring&o11=substring&o12=substring&o13=substring&o14=substring&o15=substring&o16=substring&o17=substring&o18=anywordssubstr&o19=anywordssubstr&o2=anywordssubstr&o3=substring&o4=notequals&o7=notsubstring&o8=notsubstring&query_format=advanced&resolution=FIXED&v10=Thunderbird%2053&v11=Thunderbird%2054&v12=Thunderbird%2055&v13=Thunderbird%2056&v14=Thunderbird%2057&v15=Thunderbird%2058&v16=Thunderbird%2059&v17=Thunderbird%2060&v18=verified%20fixed&v19=verified%20fixed&v2=5.5%205.6%205.7%205.8%205.9%206.0%206.1%206.2&v3=calendar&v4=Provider%3A%20GData&v7=verified&v8=fixed&order=product%2Ccomponent&limit=0
   import_system_requirements: '60.0beta'
 notes:
 - note: When writing a message, a delete button now allows the removal of a recipient.
