@@ -167,6 +167,13 @@ notes:
     including Quantum's CSS engine (based on Servo) and encoding_rs, for displaying and encoding messages
   tag: changed
   bug: 1363281
+- note: 'All certificates issued by Symantec roots before 2016-06-01 are distrusted for
+    use in TLS secured traffic in Thunderbird 60 and above. This applies to all
+    brands Symantec operated: Thawte, RapidSSL, GeoTrust, Verisign, and
+    Symantec. For usage in S/MIME the certificates remain valid.
+    Details [here](https://wiki.mozilla.org/CA/Additional_Trust_Changes#Symantec).'
+  tag: changed
+  bug: 1437826
 - note: 'Calendar: Removal of capability to send email invitations compatible to Outlook
     2002 and earlier'
   tag: changed
