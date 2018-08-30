@@ -1,6 +1,6 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 10 released July 10th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 60 beta 11 released September 3rd, 2018.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
   system_requirements: |
     ## Windows
@@ -57,6 +57,36 @@ release:
         - GNOME 2.16 or higher
 
 notes:
+- note: 'New changes and fixes in Thunderbird 60.0 beta 11'
+  tag: Beta 11
+- note: 'OAuth2 authentication for Yahoo and AOL (already shipped in Thunderbird 60.0 ESR)'
+  tag: new
+  bug: 1310384
+- note: 'Calendar: Default values for the first day of the week and working days
+    are now derived from the selected datetime formatting locale
+    (restart after changing locale in the OS required)'
+  tag: changed
+  bug: 1481790
+- note: 'Calendar: Switch to a Photon-style icon set for all platforms'
+  tag: changed
+  bug: 1446748
+- note: 'Multiple requests for master password when Google Mail or Calendar OAuth2 is enabled'
+  tag: fixed
+  bug: 1176399
+  bug2: 682474
+- note: "Security info dialog in compose window does not show certificate status"
+  tag: fixed
+  bug: 1293378
+- note: 'Calendar: First day of the week cannot be set'
+  tag: fixed
+  bug: 1473294
+- note: 'Calendar: Several fixes related to cutting/deleting of events and email scheduling'
+  tag: fixed
+- note: 'Scrollbar of the address entry auto-complete popup does not work'
+  tag: unresolved
+  bug: 1486178
+- note: 'Below everything what was released in Thunderbird 60.0 beta 10 in July 2018'
+  tag: Beta 10
 - note: When writing a message, a delete button now allows the removal of a recipient.
     This delete button is displayed when hovering the To/Cc/Bcc selector.
   tag: new
