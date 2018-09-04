@@ -1,7 +1,12 @@
 release:
   release_date: 2018-03-26
-  text: "**These release notes apply to Thunderbird version 60 beta 11 released September 3rd, 2018.**"
-  bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED
+  text: "**These release notes apply to Thunderbird version 60 beta 11 released September 4th, 2018.**
+    Thunderbird 60.0 beta 11 is shipping changes destined for TB 60.1 ESR.
+    For technical reasons it is not called Thunderbird 60.1 beta 1.
+    **If you have installed Lightning, Thunderbird's Calendar add-on, it may not automatically
+    be updated from a previous version of Thunderbird 60 beta.** Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    (last section \"..., Lightning is not updated\") in case of problems."
   system_requirements: |
     ## Windows
 
