@@ -87,8 +87,12 @@ notes:
   bug: 1473294
 - note: 'Calendar: Several fixes related to cutting/deleting of events and email scheduling'
   tag: fixed
+- note: 'Scrolling the address entry auto-complete popup with the mouse wheel does not work
+   (already shipped in Thunderbird 60.0 ESR)'
+  tag: fixed
+  bug: 1457085
 - note: 'Scrollbar of the address entry auto-complete popup does not work'
-  tag: unresolved
+  tag: fixed
   bug: 1486178
 - note: 'Below everything what was released in Thunderbird 60.0 beta 10 in July 2018'
   tag: Beta 10
