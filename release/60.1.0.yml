@@ -1,46 +1,46 @@
 release:
-release_date: 2018-09-14
-text: |
-** Thunderbird version 60.1 provides an automatic update from Thunderbird version 52.
-If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
-be updated to match the new version of Thunderbird.** Refer to this
-[Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
-in case of problems.
+  release_date: 2018-09-14
+  text: |
+    ** Thunderbird version 60.1 provides an automatic update from Thunderbird version 52.
+    If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird.** Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
 
-**System Requirements:
-• Window: Windows 7, Windows Server 2008 R2 or later
-• Mac: Mac OS X 10.9 or later
-• Linux: GTK+ 3.4 or higher**.
-Details [here](/en-US/thunderbird/60.0/system-requirements/).
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/60.0/system-requirements/).
 
-**Please refer to [Release Notes for version 60.0](https://thunderbird.net/en-US/thunderbird/60.0/releasenotes/) to see the list of improvements and fixed issues.**
+    **Please refer to [Release Notes for version 60.0](https://thunderbird.net/en-US/thunderbird/60.0/releasenotes/) to see the list of improvements and fixed issues.**
 
-import_system_requirements: '60.0beta'
+  import_system_requirements: '60.0beta'
 notes:
 - note: 'Calendar: Default values for the first day of the week and working days
-are now derived from the selected datetime formatting locale
-(restart after changing locale in the OS required)'
-tag: changed
-bug: 1481790
+    are now derived from the selected datetime formatting locale
+    (restart after changing locale in the OS required)'
+  tag: changed
+  bug: 1481790
 - note: 'Calendar: Switch to a Photon-style icon set for all platforms'
-tag: changed
-bug: 1446748
+  tag: changed
+  bug: 1446748
 - note: 'Multiple requests for master password when Google Mail or Calendar OAuth2 is enabled'
-tag: fixed
-bug: 1176399
-bug2: 682474
+  tag: fixed
+  bug: 1176399
+  bug2: 682474
 - note: 'Scrollbar of the address entry auto-complete popup does not work'
-tag: fixed
-bug: 1486178
+  tag: fixed
+  bug: 1486178
 - note: "Security info dialog in compose window does not show certificate status"
-tag: fixed
-bug: 1293378
+  tag: fixed
+  bug: 1293378
 - note: "Links in the Add-on Manager's search results and theme browsing tabs open in external browser"
-tag: fixed
-bug: 1482342
-bug2: 1481088 
+  tag: fixed
+  bug: 1482342
+  bug2: 1481088
 - note: 'Calendar: First day of the week cannot be set'
-tag: fixed
-bug: 1473294
+  tag: fixed
+  bug: 1473294
 - note: 'Calendar: Several fixes related to cutting/deleting of events and email scheduling'
-tag: fixed
+  tag: fixed
