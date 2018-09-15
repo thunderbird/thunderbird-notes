@@ -1,9 +1,10 @@
 release:
-  release_date: 2018-09-14
+  release_date: 2018-09-18
   text: |
-    ** Thunderbird version 60.1 provides an automatic update from Thunderbird version 52.
+    ** Thunderbird version 60.2 provides an automatic update from Thunderbird version 52.**
+    Note that Thunderbird version 60.1 was skipped.
     If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
-    be updated to match the new version of Thunderbird.** Refer to this
+    be updated to match the new version of Thunderbird. Refer to this
     [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
     in case of problems.
 
@@ -39,6 +40,10 @@ notes:
   tag: fixed
   bug: 1482342
   bug2: 1481088
+- note: 'Localized versions of Thunderbird didn''t show a localized name for the "Drafts" and "Sent" folders
+    for certain IMAP providers (particularly in France)'
+  tag: fixed
+  bug: 543227
 - note: 'Calendar: First day of the week cannot be set'
   tag: fixed
   bug: 1473294

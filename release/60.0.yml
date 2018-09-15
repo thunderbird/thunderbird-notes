@@ -222,8 +222,8 @@ notes:
   tag: fixed
   bug: 1176748
   bug2: 1474870
-- note: 'Localised versions of Thunderbird didn''t show a localised name for Hotmail''s
-    "Deleted" folder '
+- note: 'Localized versions of Thunderbird didn''t show a localized name for Hotmail''s
+    "Deleted" folder'
   tag: fixed
   bug: 1320191
 - note: 'Contacts sidebar: Selection and context menu behavior'
