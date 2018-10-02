@@ -1,8 +1,8 @@
 release:
-  release_date: 2018-09-18
+  release_date: 2018-10-02
   text: |
-    ** Thunderbird version 60.2 provides an automatic update from Thunderbird version 52.**
-    Note that Thunderbird version 60.1 was skipped.
+    ** Thunderbird version 60.2.1 provides an automatic update from Thunderbird version 52.**
+    Note that Thunderbird version 60.1.0 and 60.2.0 were skipped.
     If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
     be updated to match the new version of Thunderbird. Refer to this
     [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
@@ -44,8 +44,17 @@ notes:
     for certain IMAP providers (particularly in France)'
   tag: fixed
   bug: 543227
+- note: 'Replying to a message with an empty subject inserted Re: twice (not working in Thunderbird 60.0)'
+  tag: fixed
+  bug: 1476788
+- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (not working in Thunderbird 60.0)'
+  tag: fixed
+  bug: 1418629
 - note: 'Calendar: First day of the week cannot be set'
   tag: fixed
   bug: 1473294
 - note: 'Calendar: Several fixes related to cutting/deleting of events and email scheduling'
   tag: fixed
+- note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
+  tag: unresolved
+  bug: 1445778
