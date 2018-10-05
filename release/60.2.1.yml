@@ -55,7 +55,10 @@ notes:
   bug: 1473294
 - note: 'Calendar: Several fixes related to cutting/deleting of events and email scheduling'
   tag: fixed
-- note: 'Thunderbird will hang if HTML signature refernces non-existent image (solution forthcoming)'
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.2.1">security
+    fixes</a>
+  tag: fixed
+- note: 'Thunderbird will hang if HTML signature references non-existent image (solution forthcoming)'
   tag: unresolved
   bug: 1495698
 - note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
