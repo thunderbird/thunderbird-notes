@@ -15,9 +15,8 @@ notes:
   tag: new
   bug: 1491562
 - note: "**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
-    minor adjustments. As of Thunderbird version 63 beta non-restartless legacy add-ons using XUL overlays
-    are only supported if add-on authors have adapted them. To our knowledge no non-restartless add-on
-    apart from Thunderbird's own Lightning/Calendar will currently work since none has been adapted yet.**"
+    minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on
+    authors have adapted them, and Lightning/Calendar is the only one we know that has been adapted.**"
   tag: changed
   bug: 1481790
 - note: "Add-on overlays now loaded with Thunderbird's own overlay loader"
