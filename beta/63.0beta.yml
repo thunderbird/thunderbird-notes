@@ -14,11 +14,10 @@ notes:
     needs to be set to false)'
   tag: new
   bug: 1491562
-- note: "**ADD-ON SUPPORT: As of Thunderbird version 63 beta non-restartless legacy add-on using XUL overlays
-    are only supported if add-on authors have not adapted them. To our knowledge none of the effected add-ons
-    except Thunderbird's own Lightning/Calendar add-on have been adapted so that no non-restartless add-on
-    apart from Lighning will currently work. Restartless add-ons should continue to work if their authors
-    have made the necessary minor adjustments.**"
+- note: "**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
+    minor adjustments. As of Thunderbird version 63 beta non-restartless legacy add-ons using XUL overlays
+    are only supported if add-on authors have adapted them. To our knowledge no non-restartless add-on
+    apart from Thunderbird's own Lightning/Calendar will currently work since none has been adapted yet.**"
   tag: changed
   bug: 1481790
 - note: "Add-on overlays now loaded with Thunderbird's own overlay loader"
