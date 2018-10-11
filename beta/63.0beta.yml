@@ -1,0 +1,57 @@
+release:
+  release_date: 2018-10-11
+  text: "**These release notes apply to Thunderbird version 63 beta 1 released October 11th, 2018.**
+    Note that Thunderbird version 61 beta and 62 beta were skipped."
+
+  import_system_requirements: '60.0beta'
+
+notes:
+- note: 'Mark all folders of an account as read'
+  tag: new
+  bug: 317301
+- note: 'Experimental feature: Language packs can now be selected in the Advanced Options. Preference
+    intl.multilingual.enabled needs to be set (and possily also extensions.langpacks.signatures.required
+    needs to be set to false)'
+  tag: new
+  bug: 1491562
+- note: "**ADD-ON SUPPORT: As of Thunderbird version 63 beta non-restartless legacy add-on using XUL overlays
+    are only supported if add-on authors have not adapted them. To our knowledge none of the effected add-ons
+    except Thunderbird's own Lightning/Calendar add-on have been adapted so that no non-restartless add-on
+    apart from Lighning will currently work. Restartless add-ons should continue to work if their authors
+    have made the necessary minor adjustments.**"
+  tag: changed
+  bug: 1481790
+- note: "Add-on overlays now loaded with Thunderbird's own overlay loader"
+  tag: changed
+  bug: 1448808
+- note: 'Improved phishing attempt detection for messages with certain forms'
+  tag: changed
+  bug: 1249562
+- note: 'The stand-alone options window has been removed, all options are now shown in a tab'
+  tag: changed
+  bug: 1465061
+- note: 'Filters not working for headers that appear more than once'
+  tag: fixed
+  bug: 678322
+- note: 'mbox to maildir conversion not working if Windows search integration is enabled'
+  tag: fixed
+  bug: 1472524
+- note: 'Below items what were released in Thunderbird 60.2.1 but were not included in TB 60 beta 11'
+  tag: 60.2.1 ESR
+- note: "Links in the Add-on Manager's search results and theme browsing tabs open in external browser"
+  tag: fixed
+  bug: 1482342
+  bug2: 1481088
+- note: 'Localized versions of Thunderbird didn''t show a localized name for the "Drafts" and "Sent" folders
+    for certain IMAP providers (particularly in France)'
+  tag: fixed
+  bug: 543227
+- note: 'Replying to a message with an empty subject inserted Re: twice'
+  tag: fixed
+  bug: 1476788
+- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (is working in Thunderbird 60 ESR)'
+  tag: unresolved
+  bug: 1418629
+- note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
+  tag: unresolved
+  bug: 1445778
