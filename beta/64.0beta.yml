@@ -1,0 +1,70 @@
+release:
+  release_date: 2018-10-27
+  text: "**These release notes apply to Thunderbird version 64 beta 1 released October 27th, 2018.**"
+
+  import_system_requirements: '60.0beta'
+
+notes:
+- note: "**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
+    minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on
+    authors have adapted them, and Lightning/Calendar is the only one we know that has been adapted.**"
+  tag: changed
+- note: "Changed UI when installing add-ons. Restart required for legacy extensions."
+  tag: changed
+  bug: 1496632
+  bug2: 1498967
+- note: 'Print preview not working in Thunderbird version 63 beta'
+  tag: fixed
+  bug: 1495898
+- note: 'Various Theme fixes where incorrect colors, backgrounds, etc. were displayed.
+    Folders with new messages not shown in bold on Mac.'
+  tag: fixed
+  bug: 1498908
+- note: 'Add-on Options menu not working on Mac'
+  tag: fixed
+  bug: 1482334
+- note: 'Shift+PageUp/PageDown in Write window'
+  tag: fixed
+  bug: 1482425
+- note: 'Saving content of Write windows didn''t overwrite existing file'
+  tag: fixed
+  bug: 1498483
+- note: 'Issues related to "Edit Template" command'
+  tag: fixed
+  bug: 1498866
+- note: 'Gloda attachment filtering'
+  tag: fixed
+  bug: 1499860
+- note: 'S/MIME encryption/signing not working in Thunderbird version 63 beta'
+  tag: fixed
+  bug: 1500003
+- note: 'Body search/filtering didn''t reliably ignore content of tags'
+  tag: fixed
+  bug: 1230815
+- note: 'Mails won''t get removed from Trash folder using Maildir.
+    Note: Other deletion issues related to Maildir still persist.'
+  tag: fixed
+  bug: 1317117
+- note: 'If the "Date" header of a message was invalid, Jan 1970 or Dec 1969 was displayed.
+    Now using date from "Received" header instead.'
+  tag: fixed
+  bug: 32216
+- note: 'Mailing list address auto-complete enter/return handling'
+  tag: fixed
+  bug: 1499410
+- note: 'When sending of a message failed due a security issue, only "unknown error" was displayed.
+    Now more details are given.'
+  tag: fixed
+  bug: 1497488
+- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe'
+  tag: unresolved
+  bug: 1418629
+- note: 'Editing a plaint text draft may display the entire message as quote (in blue)'
+  tag: unresolved
+  bug: 1501259
+- note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
+  tag: unresolved
+  bug: 1445778
+- note: 'Chat: Participants not sorted'
+  tag: unresolved
+  bug: 1480057

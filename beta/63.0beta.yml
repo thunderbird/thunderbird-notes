@@ -18,7 +18,6 @@ notes:
     minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on
     authors have adapted them, and Lightning/Calendar is the only one we know that has been adapted.**"
   tag: changed
-  bug: 1481790
 - note: "Add-on overlays now loaded with Thunderbird's own overlay loader"
   tag: changed
   bug: 1448808
