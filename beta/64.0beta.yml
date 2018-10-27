@@ -13,6 +13,9 @@ notes:
   tag: changed
   bug: 1496632
   bug2: 1498967
+- note: "Calendar: UI improvements for event dialog"
+  tag: changed
+  bug: 1496086
 - note: 'Print preview not working in Thunderbird version 63 beta'
   tag: fixed
   bug: 1495898
@@ -56,6 +59,9 @@ notes:
     Now more details are given.'
   tag: fixed
   bug: 1497488
+- note: '"Select All" in mail view not working in Thunderbird version 63 beta'
+  tag: fixed
+  bug: 1498588
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe'
   tag: unresolved
   bug: 1418629
