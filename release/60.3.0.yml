@@ -1,0 +1,49 @@
+release:
+  release_date: 2018-10-31
+  text: |
+    ** Thunderbird version 60.3.0 provides an automatic update from Thunderbird version 52.**
+    If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/60.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 60.0](https://thunderbird.net/en-US/thunderbird/60.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '60.0beta'
+notes:
+- note: 'Various Theme fixes where incorrect colors, backgrounds, etc. were displayed'
+  tag: fixed
+  bug: 1498908
+- note: 'Add-on Options menu not working on Mac'
+  tag: fixed
+  bug: 1482334
+- note: 'Shift+PageUp/PageDown in Write window'
+  tag: fixed
+  bug: 1482425
+- note: 'Saving content of Write windows didn''t overwrite existing file'
+  tag: fixed
+  bug: 1498483
+- note: 'Issues related to "Edit Template" command'
+  tag: fixed
+  bug: 1498866
+- note: 'Gloda attachment filtering'
+  tag: fixed
+  bug: 1499860
+- note: 'Mailing list address auto-complete enter/return handling'
+  tag: fixed
+  bug: 1499410
+- note: 'Thunderbird hung if HTML signature references non-existent image'
+  tag: fixed
+  bug: 1495698
+- note: 'Filters not working for headers that appear more than once'
+  tag: fixed
+  bug: 678322
+- note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
+  tag: unresolved
+  bug: 1445778
