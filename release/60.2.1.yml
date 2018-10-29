@@ -61,6 +61,10 @@ notes:
 - note: 'Thunderbird will hang if HTML signature references non-existent image (solution forthcoming)'
   tag: unresolved
   bug: 1495698
+- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
+    or Link Properties dialog'
+  tag: unresolved
+  bug: 1501663
 - note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
   tag: unresolved
   bug: 1445778

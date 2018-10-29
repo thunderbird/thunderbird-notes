@@ -27,6 +27,9 @@ notes:
 - note: 'The stand-alone options window has been removed, all options are now shown in a tab'
   tag: changed
   bug: 1465061
+- note: 'Thunderbird hung if HTML signature references non-existent image'
+  tag: fixed
+  bug: 1495698
 - note: 'Filters not working for headers that appear more than once'
   tag: fixed
   bug: 678322
@@ -46,6 +49,10 @@ notes:
 - note: 'Replying to a message with an empty subject inserted Re: twice'
   tag: fixed
   bug: 1476788
+- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
+    or Link Properties dialog'
+  tag: unresolved
+  bug: 1501663
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (is working in Thunderbird 60 ESR)'
   tag: unresolved
   bug: 1418629

@@ -62,6 +62,10 @@ notes:
 - note: '"Select All" in mail view not working in Thunderbird version 63 beta'
   tag: fixed
   bug: 1498588
+- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
+    or Link Properties dialog'
+  tag: unresolved
+  bug: 1501663
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe'
   tag: unresolved
   bug: 1418629

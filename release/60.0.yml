@@ -244,6 +244,10 @@ notes:
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60">security
     fixes</a>
   tag: fixed
+- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
+    or Link Properties dialog'
+  tag: unresolved
+  bug: 1501663
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
   tag: unresolved
