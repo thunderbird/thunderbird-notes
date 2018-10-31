@@ -65,6 +65,10 @@ notes:
     or Link Properties dialog'
   tag: unresolved
   bug: 1501663
+- note: 'CalDav access to some servers not working.
+    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  tag: unresolved
+  bug: 1468912
 - note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
   tag: unresolved
   bug: 1445778
