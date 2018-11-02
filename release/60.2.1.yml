@@ -61,6 +61,11 @@ notes:
 - note: 'Thunderbird will hang if HTML signature references non-existent image (solution forthcoming)'
   tag: unresolved
   bug: 1495698
+- note: 'According to RFC 5721, passwords containing non-ASCII characters are
+    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
+    office365.com'
+  tag: unresolved
+  bug: 1500772
 - note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
     or Link Properties dialog'
   tag: unresolved
