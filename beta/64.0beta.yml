@@ -1,6 +1,6 @@
 release:
   release_date: 2018-10-26
-  text: "**These release notes apply to Thunderbird version 64 beta 1 released October 26th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 64 beta 2 released November 9th, 2018.**"
 
   import_system_requirements: '60.0beta'
 
@@ -62,6 +62,21 @@ notes:
 - note: '"Select All" in mail view not working in Thunderbird version 63 beta'
   tag: fixed
   bug: 1498588
+- note: 'Fixed in Thunderbird 64 beta 2'
+  tag: Beta 2
+- note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
+    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
+    office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
+    a Latin1 encoding again to work around this issue.'
+  tag: fixed
+  bug: 1500772
+- note: 'Cookie removal (not working since Thunderbird version 52). Note: Graphical feedback in the
+    removal dialog is still not correct. This will be fixed in the next beta version.'
+  tag: fixed
+  bug: 1503654
+- note: '"Download rest of message" not working if global inbox was used'
+  tag: fixed
+  bug: 1503395
 - note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
     or Link Properties dialog'
   tag: unresolved
