@@ -1,0 +1,45 @@
+release:
+  release_date: 2018-11-16
+  text: |
+    If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/60.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 60.0](https://thunderbird.net/en-US/thunderbird/60.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '60.0beta'
+
+notes:
+- note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
+    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
+    office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
+    a Latin1 encoding again to work around this issue.'
+  tag: fixed
+  bug: 1500772
+- note: 'Double-clicking on a word in the Write window sometimes launched the Advanced Property Editor
+    or Link Properties dialog'
+  tag: fixed
+  bug: 1501663
+- note: 'Cookie removal (not working since Thunderbird version 52)'
+  tag: fixed
+  bug: 1503654
+- note: '"Download rest of message" not working if global inbox was used'
+  tag: fixed
+  bug: 1503395
+- note: 'Encoding problems for Polish users when a file is sent via a folder using "Sent to > Mail recipient"'
+  tag: unresolved
+  bug: 1505315
+- note: 'CalDav access to some servers not working.
+    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  tag: unresolved
+  bug: 1468912
+- note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
+  tag: unresolved
+  bug: 1445778
