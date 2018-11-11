@@ -20,7 +20,7 @@ notes:
 - note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
     encoded using UTF-8 which can lead to problems with non-compliant providers, for example
     office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
-    a Latin1 encoding again to work around this issue.'
+    a Latin-1 encoding again to work around this issue.'
   tag: fixed
   bug: 1500772
 - note: 'Double-clicking on a word in the Write window sometimes launched the Advanced Property Editor
@@ -33,8 +33,9 @@ notes:
 - note: '"Download rest of message" not working if global inbox was used'
   tag: fixed
   bug: 1503395
-- note: 'Encoding problems for Polish users when a file is sent via a folder using "Sent to > Mail recipient"'
-  tag: unresolved
+- note: 'Encoding problems for users (especially in Poland) when a file was sent via a folder using
+    "Sent to > Mail recipient" due to a problem in the Thunderbird MAPI interface'
+  tag: fixed
   bug: 1505315
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
