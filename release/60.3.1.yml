@@ -17,12 +17,6 @@ release:
   import_system_requirements: '60.0beta'
 
 notes:
-- note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
-    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
-    office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
-    a Latin-1 encoding again to work around this issue.'
-  tag: fixed
-  bug: 1500772
 - note: 'Double-clicking on a word in the Write window sometimes launched the Advanced Property Editor
     or Link Properties dialog'
   tag: fixed
@@ -37,6 +31,15 @@ notes:
     "Sent to > Mail recipient" due to a problem in the Thunderbird MAPI interface'
   tag: fixed
   bug: 1505315
+- note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
+    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
+    office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
+    a Latin-1 encoding again to work around this issue.'
+  tag: fixed
+  bug: 1500772
+- note: 'Shutdown crash/hang after entering an empty IMAP password'
+  tag: fixed
+  bug: 1257058
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
   tag: unresolved
