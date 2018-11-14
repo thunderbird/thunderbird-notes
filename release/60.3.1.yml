@@ -1,5 +1,5 @@
 release:
-  release_date: 2018-11-16
+  release_date: 2018-11-15
   text: |
     If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
     be updated to match the new version of Thunderbird. Refer to this
@@ -40,6 +40,10 @@ notes:
 - note: 'Shutdown crash/hang after entering an empty IMAP password'
   tag: fixed
   bug: 1257058
+- note: 'Under some circumstances Thunderbird on Mac will send attachments using the
+    so-called AppleDouble format which can lead to problems with mail servers and recipients'
+  tag: unresolved
+  bug: 1506800
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
   tag: unresolved
