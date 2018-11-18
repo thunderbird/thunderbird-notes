@@ -1,6 +1,6 @@
 release:
   release_date: 2018-10-26
-  text: "**These release notes apply to Thunderbird version 64 beta 2 released November 9th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 64 beta 3 released November 23rd, 2018.**"
 
   import_system_requirements: '60.0beta'
 
@@ -67,30 +67,44 @@ notes:
 - note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
     encoded using UTF-8 which can lead to problems with non-compliant providers, for example
     office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
-    a Latin1 encoding again to work around this issue.'
+    a Latin-1 encoding again to work around this issue.'
   tag: fixed
   bug: 1500772
-- note: 'Cookie removal (not working since Thunderbird version 52). Note: Graphical feedback in the
-    removal dialog is still not correct. This will be fixed in the next beta version.'
-  tag: fixed
-  bug: 1503654
 - note: '"Download rest of message" not working if global inbox was used'
   tag: fixed
   bug: 1503395
 - note: 'Shutdown crash/hang after entering an empty IMAP password'
   tag: fixed
   bug: 1257058
+- note: 'Fixed in Thunderbird 64 beta 3'
+  tag: Beta 3
+- note: 'Cookie removal (not working since Thunderbird version 52)'
+  tag: fixed
+  bug: 1503654
+- note: 'Encoding problems for users (especially in Poland) when a file was sent via a folder using
+    "Sent to > Mail recipient" due to a problem in the Thunderbird MAPI interface'
+  tag: fixed
+  bug: 1505315
+- note: 'Under some circumstances Thunderbird on Mac would send attachments using the
+    so-called AppleDouble format which could lead to problems with mail servers and recipients'
+  tag: fixed
+  bug: 1506800
+- note: 'Encoding problems when exporting address books or messages using the system charset.
+    Message are now always exported using the UTF-8 encoding.'
+  tag: fixed
+  bug: 1506422
 - note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
-    or Link Properties dialog'
+    or Link Properties dialog (working in Thunderbird ESR, will be fixed in version 65 beta)'
   tag: unresolved
   bug: 1501663
-- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe'
+- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working in Thunderbird ESR)'
   tag: unresolved
   bug: 1418629
-- note: 'Editing a plaint text draft may display the entire message as quote (in blue)'
+- note: 'Editing a plaint text draft may display the entire message as quote (in blue)
+    (working in Thunderbird ESR, will be fixed in version 65 beta)'
   tag: unresolved
   bug: 1501259
-- note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
+- note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
   bug: 1445778
 - note: 'Chat: Participants not sorted'
