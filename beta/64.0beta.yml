@@ -1,6 +1,6 @@
 release:
   release_date: 2018-10-26
-  text: "**These release notes apply to Thunderbird version 64 beta 3 released November 23rd, 2018.**"
+  text: "**These release notes apply to Thunderbird version 64 beta 3 released November 20th, 2018.**"
 
   import_system_requirements: '60.0beta'
 
@@ -90,7 +90,7 @@ notes:
   tag: fixed
   bug: 1506800
 - note: 'Encoding problems when exporting address books or messages using the system charset.
-    Message are now always exported using the UTF-8 encoding.'
+    Messages are now always exported using the UTF-8 encoding.'
   tag: fixed
   bug: 1506422
 - note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
