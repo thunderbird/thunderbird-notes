@@ -36,6 +36,15 @@ notes:
     from asking you to install software on your computer" when installing add-ons'
   tag: fixed
   bug: 1230815
+- note: 'Incorrect display of correspondents column since own email address was not always detected'
+  tag: fixed
+  bug: 1271353
+- note: 'Spurious &#xA; (encoded newline) inserted into drafts and sent email'
+  tag: fixed
+  bug: 1509102
+- note: 'New email not inserted in correct sort order in threaded unified view or search folder'
+  tag: unresolved
+  bug: 1470049
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
   tag: unresolved
