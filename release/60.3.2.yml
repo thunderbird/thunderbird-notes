@@ -39,7 +39,7 @@ notes:
 - note: 'Incorrect display of correspondents column since own email address was not always detected'
   tag: fixed
   bug: 1271353
-- note: 'Spurious &#xA; (encoded newline) inserted into drafts and sent email'
+- note: 'Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email'
   tag: fixed
   bug: 1509102
 - note: 'New email not inserted in correct sort order in threaded unified view or search folder'
