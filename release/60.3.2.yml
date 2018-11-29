@@ -43,7 +43,7 @@ notes:
   tag: fixed
   bug: 1509102
 - note: 'New email not inserted in correct sort order in threaded unified view or search folder'
-  tag: unresolved
+  tag: fixed
   bug: 1470049
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
