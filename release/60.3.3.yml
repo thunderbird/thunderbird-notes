@@ -1,0 +1,39 @@
+release:
+  release_date: 2018-12-04
+  text: |
+    If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/60.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 60.0](https://thunderbird.net/en-US/thunderbird/60.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '60.0beta'
+
+notes:
+- note: 'Thunderbird will upgrade security databases (key3.db, cert8.db to key4.db, cert9.db).
+    The old databases were deleted even if the databases were protected by
+    a master password and the master password was not available during the upgrade.
+    This is now no longer the case.'
+  tag: mitigated
+  bug: 1510212
+- note: 'Plain text markup with * for bold, / for italics, _ of underline and | for code did not
+    work when the enclosed text contained non-ASCII characters'
+  tag: fixed
+  bug: 1505911
+- note: 'While composing a message, a link not removed when link location was removed in the link properties panel'
+  tag: fixed
+  bug: 1510183
+- note: 'CalDav access to some servers not working.
+    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  tag: unresolved
+  bug: 1468912
+- note: 'Chat: Twitter not working due to API changes at Twitter.com'
+  tag: unresolved
+  bug: 1445778
