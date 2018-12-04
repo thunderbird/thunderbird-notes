@@ -1,5 +1,5 @@
 release:
-  release_date: 2018-12-04
+  release_date: 2018-12-05
   text: |
     If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
     be updated to match the new version of Thunderbird. Refer to this
@@ -17,13 +17,18 @@ release:
   import_system_requirements: '60.0beta'
 
 notes:
-- note: 'Thunderbird will upgrade security databases (key3.db, cert8.db to key4.db, cert9.db).
-    The old databases were deleted even if the databases were protected by
-    a master password and the master password was not available during the upgrade.
-    This is now no longer the case.'
+- note: 'Thunderbird 60 will migrate security databases (key3.db, cert8.db to key4.db, cert9.db).
+    Thunderbird 60.3.2 and earlier contained a fault that potentially deleted saved passwords
+    and private certificate keys for users using a master password.
+    Version 60.3.3 will prevent the loss of data; affected users
+    who have already upgraded to version 60.3.2 or earlier can restore the deleted key3.db
+    file from backup to complete the migration.'
   tag: mitigated
   bug: 1510212
-- note: 'Plain text markup with * for bold, / for italics, _ of underline and | for code did not
+- note: 'Address book search and auto-complete slowness introduced in Thunderbird 60.3.2'
+  tag: fixed
+  bug: 1511885
+- note: 'Plain text markup with * for bold, / for italics, _ for underline and | for code did not
     work when the enclosed text contained non-ASCII characters'
   tag: fixed
   bug: 1505911
