@@ -35,6 +35,10 @@ notes:
 - note: 'While composing a message, a link not removed when link location was removed in the link properties panel'
   tag: fixed
   bug: 1510183
+- note: 'Decoding problems for messages with less common charsets (cp932, cp936). This will be
+    fixed in version 60.4.0.'
+  tag: unresolved
+  bug: 1511950
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
   tag: unresolved
