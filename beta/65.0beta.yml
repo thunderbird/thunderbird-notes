@@ -1,0 +1,84 @@
+release:
+  release_date: 2018-10-26
+  text: "**These release notes apply to Thunderbird version 65 beta 1 released December 18th, 2018.**"
+
+  import_system_requirements: '60.0beta'
+
+notes:
+- note: 'FileLink for WeTransfer'
+  tag: new
+  bug: 1504508
+- note: 'WebExtensions FileLink API to facilitate FileLink add-ons for WeTransfer and Dropbox
+    (forthcoming)'
+  tag: new
+  bug: 1511950
+- note: 'Various theme improvements including a dark message list/thread pane'
+  tag: new
+  bug: 1504187
+- note: 'When multiple language packs are installed, the UI language can now be selected in the Advanced Options.
+    Preference
+    intl.multilingual.enabled needs to be set (and possily also extensions.langpacks.signatures.required
+    needs to be set to false)'
+  tag: new
+  bug: 1509977
+- note: '**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
+    minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on
+    authors have adapted them. ** Apart from Lightning/Calendar there are a few that have been
+    adapted, like "ThunderHTMLedit", "Compact Header" and "Signature Switch".
+    Instaling legacy add-ons now requires a restart. Legacy add-ons can now specify
+    an options page again.'
+  tag: changed
+- note: 'Reply to self will now search all identities (default of preference
+    mailnews.reply_to_self_check_all_ident changed to true)'
+  bug: 1511723
+  tag: changed
+- note: 'Composition text and background colors no longer sent by default. New option in
+    "Tools > Options, Composition".'
+  bug: 690644
+  tag: changed
+- note: 'Address book search and auto-complete slowness introduced in Thunderbird 64 beta'
+  tag: fixed
+  bug: 1511885
+- note: 'Plain text markup with * for bold, / for italics, _ for underline and | for code did not
+    work when the enclosed text contained non-ASCII characters'
+  tag: fixed
+  bug: 1505911
+- note: 'While composing a message, a link not removed when link location was removed in the link properties panel'
+  tag: fixed
+  bug: 1510183
+- note: 'Decoding problems for messages with less common charsets (cp932, cp936)'
+  tag: fixed
+  bug: 1511950
+- note: 'Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email'
+  tag: fixed
+  bug: 1509102
+- note: 'Double-clicking on a word in the Write window sometimes launched the Advanced Property Editor
+    or Link Properties dialog'
+  tag: fixed
+  bug: 1501663
+- note: 'Editing a plaint text draft displayed the entire message as quote (in blue)'
+  tag: fixed
+  bug: 1501259
+- note: 'New messages in the drafts folder (and other special or virtual folders) will
+    no longer be included in the new messages notification'
+  tag: fixed
+  bug: 809513
+- note: 'Edit > Undo didn''t undo moving or deleting of messages'
+  tag: fixed
+  bug: 1508210
+- note: 'Improvements of SMTP 5.7.1 message'
+  tag: fixed
+  bug: 1195026
+- note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
+    addressed via drive letters are now addressed via UNC'
+  tag: unresolved
+  bug: 1512812
+- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working in Thunderbird ESR)'
+  tag: unresolved
+  bug: 1418629
+- note: 'Chat: Twitter not working due to API changes at Twitter.com'
+  tag: unresolved
+  bug: 1445778
+- note: 'Chat: Participants not sorted'
+  tag: unresolved
+  bug: 1480057
