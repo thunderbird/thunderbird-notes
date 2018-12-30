@@ -17,7 +17,8 @@ release:
   import_system_requirements: '60.0beta'
 
 notes:
-- note: 'WebExtensions FileLink API to facilitate FileLink add-ons for WeTransfer and Dropbox (forthcoming)'
+- note: 'WebExtensions FileLink API to facilitate FileLink add-ons.
+    WeTransfer will be included in Thunderbird 60.5.0 and Dropbox is forthcoming.'
   tag: new
   bug: 1511950
 - note: 'Decoding problems for messages with less common charsets (cp932, cp936)'
