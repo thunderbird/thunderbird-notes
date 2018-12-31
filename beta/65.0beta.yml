@@ -9,7 +9,7 @@ notes:
   tag: new
   bug: 1504508
 - note: 'WebExtensions FileLink API to facilitate FileLink add-ons.
-    WeTransfer is already included and Dropbox is forthcoming.'
+    WeTransfer is already included and Dropbox is available as [add-on](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/).'
   tag: new
   bug: 1511950
 - note: 'Various theme improvements including a dark message list/thread pane'

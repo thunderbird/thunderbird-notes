@@ -18,7 +18,9 @@ release:
 
 notes:
 - note: 'WebExtensions FileLink API to facilitate FileLink add-ons.
-    WeTransfer will be included in Thunderbird 60.5.0 and Dropbox is forthcoming.'
+    For the future version Thunderbird 60.5.0:
+    WeTransfer will be included in Thunderbird 60.5.0 and the [Dropbox add-on](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/)
+    will be compatible with Thunderbird 60.5.0.'
   tag: new
   bug: 1511950
 - note: 'Decoding problems for messages with less common charsets (cp932, cp936)'
