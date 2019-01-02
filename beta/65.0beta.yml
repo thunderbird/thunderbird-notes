@@ -28,6 +28,13 @@ notes:
     Instaling legacy add-ons now requires a restart. Legacy add-ons can now specify
     an options page again.'
   tag: changed
+- note: '** DICTIONARY SUPPORT: Only WebExtension dictionaries are supported now.**
+    Please download new dictionaries from addons.mozilla.org since
+    addons.thunderbird.net still provides "legacy" dictionaries compatible
+    with Thunderbird 60 ESR. This may change as soon as Thunderbird 60 ESR
+    can also handle WebExtension dictionaries (planned for version 60.5).'
+  tag: changed
+  bug: 1516273
 - note: 'Reply to self will now search all identities (default of preference
     mailnews.reply_to_self_check_all_ident changed to true)'
   bug: 1511723
