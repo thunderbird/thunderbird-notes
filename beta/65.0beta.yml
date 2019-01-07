@@ -76,8 +76,8 @@ notes:
 - note: 'Improvements of SMTP 5.7.1 message'
   tag: fixed
   bug: 1195026
-- note: 'New and Fixed in Thunderbird 65 beta 2'
-  tag: Beta 2
+- note: '<b>New and Fixed in Thunderbird 65 beta 2</b>'
+  tag: <span style='font-weight:bold; font-size:16px;'>Beta 2</span>
 - note: 'Thunderbird now allows the addition of OpenSearch search engines from a local XML file
     using a minimal user inferface: [+] button to select a file an add, [-] to remove.
     Note: The set of search engines will be improved the next version, Google and DuckDuckGo will
