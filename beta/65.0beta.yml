@@ -1,6 +1,6 @@
 release:
   release_date: 2018-12-30
-  text: "**These release notes apply to Thunderbird version 65 beta 1 released December 30th, 2018.**"
+  text: "**These release notes apply to Thunderbird version 65 beta 2 released January 11th, 2019.**"
 
   import_system_requirements: '60.0beta'
 
@@ -76,10 +76,24 @@ notes:
 - note: 'Improvements of SMTP 5.7.1 message'
   tag: fixed
   bug: 1195026
-- note: 'Account creation sometimes shows an error: "Programming bug. Assertion failed, see log".
-    Workaround: Click "Advanced config" button.'
-  tag: unresolved
+- note: 'New and Fixed in Thunderbird 65 beta 2'
+  tag: Beta 2
+- note: 'Thunderbird now allows the addition of OpenSearch search engines from a local XML file
+    using a minimal user inferface: [+] button to select a file an add, [-] to remove.
+    Note: The set of search engines will be improved the next version, Google and DuckDuckGo will
+    be available by default.'
+  tag: new
+  bug: 1427317
+- note: 'During account creation, Thunderbird will now detect servers using the Microsoft Exchange protocol.
+    It will offer the installation of a 3rd party add-on (Owl) which supports that protocol.'
+  tag: new
+  bug: 1500105
+- note: 'Account creation sometimes shows an error: "Programming bug. Assertion failed, see log"'
+  tag: fixed
   bug: 1516134
+- note: 'Chat: Participants not sorted (not working since Thunderbird 63 beta)'
+  tag: fixed
+  bug: 1480057
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
@@ -94,6 +108,3 @@ notes:
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
   bug: 1445778
-- note: 'Chat: Participants not sorted'
-  tag: unresolved
-  bug: 1480057
