@@ -1,6 +1,6 @@
 release:
   release_date: 2018-12-30
-  text: "**These release notes apply to Thunderbird version 65 beta 2 released January 10th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 65 beta 3 released January 21st, 2019.**"
 
   import_system_requirements: '60.0beta'
 
@@ -79,9 +79,7 @@ notes:
 - note: '<b>New and Fixed in Thunderbird 65 beta 2</b>'
   tag: <span style='font-weight:bold; font-size:16px;'>Beta 2</span>
 - note: 'Thunderbird now allows the addition of OpenSearch search engines from a local XML file
-    using a minimal user inferface: [+] button to select a file an add, [-] to remove.
-    Note: The set of search engines will be improved the next version, Google and DuckDuckGo will
-    be available by default.'
+    using a minimal user inferface: [+] button to select a file an add, [-] to remove.'
   tag: new
   bug: 1427317
 - note: 'During account creation, Thunderbird will now detect servers using the Microsoft Exchange protocol.
@@ -94,6 +92,14 @@ notes:
 - note: 'Chat: Participants not sorted (not working since Thunderbird 63 beta)'
   tag: fixed
   bug: 1480057
+- note: '<b>New and Fixed in Thunderbird 65 beta 3</b>'
+  tag: <span style='font-weight:bold; font-size:16px;'>Beta 3</span>
+- note: 'More search engines: Google and DuckDuckGo available by default'
+  tag: new
+  bug: 1427133
+- note: 'Crash when using "Send to > Mail recipient" on Windows under some circumstances (MAPI interface)'
+  tag: fixed
+  bug: 393302
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
