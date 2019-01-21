@@ -27,6 +27,10 @@ notes:
 - note: 'More search engines: Google and DuckDuckGo available by default in some locales'
   tag: new
   bug: 1427133
+- note: 'During account creation, Thunderbird will now detect servers using the Microsoft Exchange protocol.
+    It will offer the installation of a 3rd party add-on (Owl) which supports that protocol.'
+  tag: new
+  bug: 1500105
 - note: 'Thunderbird now compatible with other WebExtension-based FileLink add-ons like
       the [Dropbox add-on](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/)'
   tag: fixed
