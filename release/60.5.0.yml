@@ -1,0 +1,48 @@
+release:
+  release_date: 2019-01-29
+  text: |
+    If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/60.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 60.0](https://thunderbird.net/en-US/thunderbird/60.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '60.0beta'
+
+notes:
+- note: 'FileLink provider WeTransfer to upload large attachments'
+  tag: new
+  bug: 1511950
+- note: 'Thunderbird now allows the addition of OpenSearch search engines from a local XML file
+    using a minimal user inferface: [+] button to select a file an add, [-] to remove.'
+  tag: new
+  bug: 1427317
+- note: 'More search engines: Google and DuckDuckGo available by default in some locales'
+  tag: new
+  bug: 1427133
+- note: 'Thunderbird now compatible with other WebExtension-based FileLink add-ons like
+      the [Dropbox add-on](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/)'
+  tag: fixed
+  bug: 1511943
+- note: 'Crash when using custom sound for new email notification'
+  tag: fixed
+  bug: 1495799
+  bug2: 1482659
+- note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
+    addressed via drive letters are now addressed via UNC'
+  tag: unresolved
+  bug: 1512812
+- note: 'CalDav access to some servers not working.
+    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  tag: unresolved
+  bug: 1468912
+- note: 'Chat: Twitter not working due to API changes at Twitter.com'
+  tag: unresolved
+  bug: 1445778
