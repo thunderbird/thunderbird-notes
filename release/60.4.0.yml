@@ -30,6 +30,9 @@ notes:
     no longer be included in the new messages notification'
   tag: fixed
   bug: 809513
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.4">security
+    fixes</a>
+  tag: fixed
 - note: 'Crash when using custom sound for new email notification. Workaround: Use system sound.'
   tag: unresolved
   bug: 1495799

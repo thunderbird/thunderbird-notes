@@ -39,6 +39,9 @@ notes:
   tag: fixed
   bug: 1495799
   bug2: 1482659
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.5">security
+    fixes</a>
+  tag: fixed
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
