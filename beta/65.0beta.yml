@@ -1,6 +1,6 @@
 release:
   release_date: 2018-12-30
-  text: "**These release notes apply to Thunderbird version 65 beta 3 released January 21st, 2019.**"
+  text: "**These release notes apply to Thunderbird version 65 beta 4 released January 29th, 2019.**"
 
   import_system_requirements: '60.0beta'
 
@@ -100,6 +100,21 @@ notes:
 - note: 'Crash when using "Send to > Mail recipient" on Windows under some circumstances (MAPI interface)'
   tag: fixed
   bug: 393302
+- note: '<b>New and Fixed in Thunderbird 65 beta 4</b>'
+  tag: <span style='font-weight:bold; font-size:16px;'>Beta 4</span>
+- note: 'Full Unicode support for MAPI interfaces: New support for MAPISendMailW, UTF-8 support for MAPISendMail'
+  tag: fixed
+  bug: 1048658
+  bug2: 1521007
+- note: 'Chat: Participants not sorted (follow-up)'
+  tag: fixed
+  bug: 1521097
+- note: 'Calendar print preview not working'
+  tag: fixed
+  bug: 1517155
+- note: 'CalDav access to some servers not working'
+  tag: fixed
+  bug: 1468912
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
