@@ -42,6 +42,9 @@ notes:
 - note: 'WebExtension-based dictionaries from addons.mozilla.org not working in Thunderbird'
   tag: fixed
   bug: 1460748
+- note: 'Calendar: Printing of calendars not working'
+  tag: fixed
+  bug: 1517155
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.5">security
     fixes</a>
   tag: fixed
