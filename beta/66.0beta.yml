@@ -1,6 +1,6 @@
 release:
   release_date: 2019-02-12
-  text: "**These release notes apply to Thunderbird version 66 beta 1 released February 12th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 66 beta 2 released February 21st, 2019.**"
 
   import_system_requirements: '60.0beta'
 
@@ -27,6 +27,18 @@ notes:
   bug: 583677
   tag: fixed
 - note: 'Various theme fixes and improvements'
+  tag: fixed
+- note: '<b>Fixed in Thunderbird 66 beta 2</b>'
+  tag: <span style='font-weight:bold; font-size:16px;'>Beta 2</span>
+- note: 'On Windows, changed options not saved (issue introduced in beta 1)'
+  bug: 1528615
+  tag: fixed
+- note: 'Problem with S/MIME certificate verfication when receiving email from Outlook (issue introduced
+    in beta 1)'
+  bug: 1528615
+  tag: fixed
+- note: 'Partly reverted MAPI changes from Thunderbird 65 beta 4 to mitigate malfunction'
+  bug: 1527450
   tag: fixed
 - note: 'On Windows, dragging message to the desktop or a folder is not working. This will be fixed
     in the next version.'
