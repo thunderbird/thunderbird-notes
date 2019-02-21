@@ -33,7 +33,7 @@ notes:
 - note: 'On Windows, changed options not saved (issue introduced in beta 1)'
   bug: 1528615
   tag: fixed
-- note: 'Problem with S/MIME certificate verfication when receiving email from Outlook (issue introduced
+- note: 'Problem with S/MIME certificate verification when receiving email from Outlook (issue introduced
     in beta 1)'
   bug: 1528615
   tag: fixed
