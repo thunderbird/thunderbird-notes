@@ -27,6 +27,18 @@ notes:
     in version 60.5.1)'
   bug: 1528615
   tag: fixed
+- note: 'Changes to the MAPI interface have caused problems when sending a file from the Windows desktop or a folder
+    via "Sent to > Mail recipient" or via an external application like an office package, for example LibreOffice.
+    To solve this problem, reinstall Thunderbird 60.5.2 from one of these locations:<br>
+    [https://www.thunderbird.net/en-US/thunderbird/all/](https://www.thunderbird.net/en-US/thunderbird/all/)<br>
+    [http://ftp.mozilla.org/pub/thunderbird/releases/60.5.2/win32/](http://ftp.mozilla.org/pub/thunderbird/releases/60.5.2/win32/)<br>
+    [http://ftp.mozilla.org/pub/thunderbird/releases/60.5.2/win64/](http://ftp.mozilla.org/pub/thunderbird/releases/60.5.2/win64/) (unsupported 64bit version).<br>
+    Files with non-ASCII characters in their name also cause a malfunction. Two alternative workarounds exist:<br>
+    <ul>
+    <li>On Windows 10, set the system code page to UTF-8 (beta feature, see Region Settings, system locale)</li>
+    <li>Reset this registry entry<br>HKLM\SOFTWARE\Clients\Mail\Mozilla Thunderbird - SupportUTF8 to 0</li></ul>'
+  tag: unresolved
+  bug: 393302
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
