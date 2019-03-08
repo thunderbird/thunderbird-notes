@@ -20,7 +20,7 @@ notes:
 - note: 'Problem when using "Send to > Mail recipient" on Windows introduced in version 60.5.2.<br>
     If files with non-ASCII characters in their name still cause a malfunction, use one of the following two alternative solutions:<br>
     <ul>
-    <li>Reset this registry entry<br>HKLM\SOFTWARE\Clients\Mail\Mozilla Thunderbird - SupportUTF8 to 0. On also reset HKLM\SOFTWARE\Wow6432Node\Clients\Mail\Mozilla Thunderbird - SupportUTF8 if present.</li>
+    <li>Reset this registry entry<br>HKLM\SOFTWARE\Clients\Mail\Mozilla Thunderbird - SupportUTF8 to 0. Also reset HKLM\SOFTWARE\Wow6432Node\Clients\Mail\Mozilla Thunderbird - SupportUTF8 if present.</li>
     <li>On Windows 10, set the system code page to UTF-8 (beta feature, see Region Settings, system locale)</li>
     </ul>'
   tag: fixed
