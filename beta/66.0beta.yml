@@ -43,7 +43,7 @@ notes:
 - note: '<b>Fixed in Thunderbird 66 beta 3</b>'
   tag: <span style='font-weight:bold; font-size:16px;'>Beta 3</span>
 - note: 'Custom tag colors outside the prior fixed 10x7 matrix of HTML colors not working.
-    Now any chosen colow will work.'
+    Now any chosen color will work.'
   bug: 1497041
   tag: fixed
 - note: 'Fixed Windows installer with respect to MAPI DLLs and re-enabled MAPISendMailW which
