@@ -46,6 +46,9 @@ notes:
     Now any chosen color will work.'
   bug: 1497041
   tag: fixed
+- note: 'On Windows, dragging message to the desktop or a folder is not working'
+  tag: fixed
+  bug: 1526971
 - note: 'Fixed Windows installer with respect to MAPI DLLs and re-enabled MAPISendMailW which
     was disabled in beta 2.<br>
     If files with non-ASCII characters in their name still cause a malfunction, use one of the following two alternative solutions:<br>
@@ -59,10 +62,6 @@ notes:
 - note: 'Chat: Fixed XMPP authentication when using SASL'
   bug: 1527480
   tag: fixed
-- note: 'On Windows, dragging message to the desktop or a folder is not working. This will be fixed
-    in the next version Thunderbird 67 beta.'
-  tag: unresolved
-  bug: 1526971
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
