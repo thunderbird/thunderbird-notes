@@ -23,9 +23,11 @@ class ReleaseNotes(object):
         organized_notelist = {}
         for k, n in notelist.iteritems():
             n["known_issues"] = []
-            n["new_features"] = []
             n["version"] = k
             n["release"]["version"] = n["version"]
+            # Always need at least one unnamed group.
+            if "groups" not in n["release"]:
+                n["release"]["groups"] = [None]
             # Import system requirements from major version
             if not n["release"].get("system_requirements"):
                 import_version = n["release"].get("import_system_requirements")
@@ -33,12 +35,10 @@ class ReleaseNotes(object):
                     n["release"]["system_requirements"] = notelist[import_version]["release"]["system_requirements"]
                 else:
                     n["release"]["system_requirements"] = ""
-            # Split notes into Known Issues and New Features sections.
+            # Push unresolved tags to separate "Known Issues" list.
             for note in n["notes"]:
                 if note["tag"] == "unresolved":
                     n["known_issues"].append(note)
-                else:
-                    n["new_features"].append(note)
             organized_notelist[k] = n
         return organized_notelist
 

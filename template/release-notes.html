@@ -47,19 +47,26 @@
       {% endblock %}
 
         <div class="main-column">
-          {% if new_features %}
+          {% if notes %}
           <section class="notes-section" id="new-features">
             <h3>{{ _('What’s New') }}</h3>
-            <ul class="section-items tagged">
-              {% for note in new_features %}
-              <li {% if not note.tag %}class="untagged"{% endif %} id="note-{{ note.id }}">
-                {% if note.tag %}
-                  <b class="tag tag-{{ note.tag.lower() }}">{{ note.tag }}</b>
+            {% for group in range(release.groups|length) %}
+              {% if release.groups[group] %}
+                <h4>{{ release.groups[group] }}</h4>
+              {% endif %}
+              <ul class="section-items tagged">
+                {% for note in notes %}
+                {% if note.get('group', 1)-1 == group and note.tag != 'unresolved' %}
+                  <li {% if not note.tag %}class="untagged"{% endif %} id="note-{{ note.id }}">
+                    {% if note.tag %}
+                      <b class="tag tag-{{ note.tag.lower() }}">{{ note.tag }}</b>
+                    {% endif %}
+                      {{ note.note|markdown|safe }}
+                  </li>
                 {% endif %}
-                  {{ note.note|markdown|safe }}
-              </li>
-              {% endfor %}
-            </ul>
+                {% endfor %}
+              </ul>
+            {% endfor %}
           </section>
           {% endif %}
           {% if known_issues %}
