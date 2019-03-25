@@ -22,6 +22,7 @@ class ReleaseNotes(object):
         """Organize the data from the .yml format into the variables that the template context expects."""
         organized_notelist = {}
         for k, n in notelist.iteritems():
+            n["new_features"] = []
             n["known_issues"] = []
             n["version"] = k
             n["release"]["version"] = n["version"]
@@ -39,6 +40,8 @@ class ReleaseNotes(object):
             for note in n["notes"]:
                 if note["tag"] == "unresolved":
                     n["known_issues"].append(note)
+                else:
+                    n["new_features"].append(note)
             organized_notelist[k] = n
         return organized_notelist
 
