@@ -1,8 +1,12 @@
 release:
   release_date: 2018-10-26
   text: "**These release notes apply to Thunderbird version 64 beta 4 released December 2nd, 2018.**"
-
   import_system_requirements: '60.0beta'
+  groups:
+    -
+    - "Beta 2"
+    - "Beta 3"
+    - "Beta 4"
 
 notes:
 - note: "**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
@@ -62,67 +66,80 @@ notes:
 - note: '"Select All" in mail view not working in Thunderbird version 63 beta'
   tag: fixed
   bug: 1498588
-- note: 'Fixed in Thunderbird 64 beta 2'
-  tag: Beta 2
+# Beta 2 below.
 - note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
     encoded using UTF-8 which can lead to problems with non-compliant providers, for example
     office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
     a Latin-1 encoding again to work around this issue.'
   tag: fixed
   bug: 1500772
+  group: 2
 - note: '"Download rest of message" not working if global inbox was used'
   tag: fixed
   bug: 1503395
+  group: 2
 - note: 'Shutdown crash/hang after entering an empty IMAP password'
   tag: fixed
   bug: 1257058
-- note: 'Fixed in Thunderbird 64 beta 3'
-  tag: Beta 3
+  group: 2
+# Beta 3 below.
 - note: 'Cookie removal (not working since Thunderbird version 52)'
   tag: fixed
   bug: 1503654
+  group: 3
 - note: 'Encoding problems for users (especially in Poland) when a file was sent via a folder using
     "Sent to > Mail recipient" due to a problem in the Thunderbird MAPI interface'
   tag: fixed
   bug: 1505315
+  group: 3
 - note: 'Under some circumstances Thunderbird on Mac would send attachments using the
     so-called AppleDouble format which could lead to problems with mail servers and recipients'
   tag: fixed
   bug: 1506800
+  group: 3
 - note: 'Encoding problems when exporting address books or messages using the system charset.
     Messages are now always exported using the UTF-8 encoding.'
   tag: fixed
   bug: 1506422
-- note: 'Fixed in Thunderbird 64 beta 4'
-  tag: Beta 4
+  group: 3
+# Beta 4 below.
 - note: 'Inappropriate warning "Thunderbird prevented the site (addons.thunderbird.net)
     from asking you to install software on your computer" when installing add-ons'
   tag: fixed
   bug: 1230815
+  group: 4
 - note: 'Incorrect display of correspondents column since own email address was not always detected'
   tag: fixed
   bug: 1271353
+  group: 4
 - note: 'New email not inserted in correct sort order in threaded unified view or search folder'
   tag: fixed
   bug: 1470049
+  group: 4
 - note: 'Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email
     (working in Thunderbird ESR, will be fixed in version 65 beta)'
   tag: unresolved
   bug: 1509102
+  group: 4
 - note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
     or Link Properties dialog (working in Thunderbird ESR, will be fixed in version 65 beta)'
   tag: unresolved
   bug: 1501663
+  group: 4
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working in Thunderbird ESR)'
   tag: unresolved
   bug: 1418629
+  group: 4
 - note: 'Editing a plaint text draft may display the entire message as quote (in blue)
     (working in Thunderbird ESR, will be fixed in version 65 beta)'
   tag: unresolved
   bug: 1501259
+  group: 4
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
   bug: 1445778
+  group: 4
 - note: 'Chat: Participants not sorted'
   tag: unresolved
   bug: 1480057
+  group: 4

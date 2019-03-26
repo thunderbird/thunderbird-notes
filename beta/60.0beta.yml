@@ -60,10 +60,11 @@ release:
         - NetworkManager 0.7 or higher
         - DBus 1.0 or higher
         - GNOME 2.16 or higher
+  groups:
+    - "Fixed in Beta 11"
+    - "Fixed in Beta 10"
 
 notes:
-- note: 'New changes and fixes in Thunderbird 60.0 beta 11'
-  tag: Beta 11
 - note: 'OAuth2 authentication for Yahoo and AOL (already shipped in Thunderbird 60.0 ESR)'
   tag: new
   bug: 1310384
@@ -94,12 +95,12 @@ notes:
   bug: 1473294
 - note: 'Calendar: Several fixes related to cutting/deleting of events and email scheduling'
   tag: fixed
-- note: 'Below everything what was released in Thunderbird 60.0 beta 10 in July 2018'
-  tag: Beta 10
+# Beta 10 below here.
 - note: When writing a message, a delete button now allows the removal of a recipient.
     This delete button is displayed when hovering the To/Cc/Bcc selector.
   tag: new
   bug: 1100103
+  group: 2
 - note: 'Further improvements to attachments handling during compose:
     "Attach" button moved to the right to be above the attachment pane.
     Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when
@@ -108,6 +109,7 @@ notes:
     That protects against attachments accidentally being sent.'
   tag: new
   bug: 1428631
+  group: 2
 - note: 'Thunderbird now allows the conversion of folders from mbox to maildir format
     and vice versa. This is an **experimental** feature that needs to be enabled by
     setting the preference mail.store_conversion_enabled.
@@ -115,100 +117,127 @@ notes:
     "Allow Windows Search/Spotlight to search messages" is selected.'
   tag: new
   bug: 856087
+  group: 2
 - note: Light and Dark themes
   tag: new
   bug: 1456219
+  group: 2
 - note: WebExtension themes are now enabled in Thunderbird
   tag: new
   bug: 1450670
+  group: 2
 - note: 'FIDO U2F support'
   tag: new
   bug: 1444101
+  group: 2
 - note: 'Calendar: Allow copying, cutting or deleting of a selected occurrence or
     the entire series for recurring events'
   tag: new
   bug: 393084
+  group: 2
 - note: 'Calendar: Provide an option to display locations for events in calendar day
     and week views'
   tag: new
   bug: 321434
+  group: 2
 - note: 'Calendar: Provide the ability for sending/not sending meeting notifications
     directly instead of showing a popup'
   tag: new
   bug: 463402
+  group: 2
 - note: "**IMPORTANT:** Add-ons not marked as compatible with Thunderbird 60 by their
     authors will be disabled (this can be reverted via preference extensions.strictCompatibility)"
   tag: changed
   bug: 1451097
+  group: 2
 - note: 'Thunderbird will now prompt to compact IMAP folders even if the account is
     online. Note: Under certain circumstances an incorrect estimate of the expected gain is shown.'
   tag: changed
   bug: 1157256
+  group: 2
 - note: 'Better address book photo handling: Photos can be added by drag and drop and
     a copy of all photos will be stored in the Thunderbird profile'
   tag: changed
   bug: 892889
+  group: 2
 - note: Native notifications on Linux are now re-enabled
   tag: changed
   bug: 1358837
+  group: 2
 - note: During address entry, the matching part of the address is now shown in bold.
     Preference mail.autoComplete.commentColumn allows to display the address book
     where the address is stored.
   tag: changed
   bug: 1436290
+  group: 2
 - note: 'Calendar: Removal of capability to send email invitations compatible to Outlook
     2002 and earlier'
   tag: changed
   bug: 463402
+  group: 2
 - note: 'Various problems when forwarding messages inline: Some introduced in Thunderbird 60 beta 7,
     some dating back to 2005 when using "simple" HTML view.'
   tag: fixed
   bug: 394322
+  group: 2
 - note: The IMAP and News subscribe dialog did not present a folder tree
     (not working since Thunderbird version 59)
   tag: fixed
   bug: 1425962
+  group: 2
 - note: Messages moved between IMAP accounts were missing parts (embedded content or
     attachments) under some circumstances
   tag: fixed
   bug: 1430480
+  group: 2
 - note: 'Better error handling for Gmail authentication to avoid re-downloading of folders'
   tag: fixed
   bug: 1453643
+  group: 2
 - note: Text in the address book card view wasn't selectable
   tag: fixed
   bug: 96968
+  group: 2
 - note: UTF-7 support (not working since Thunderbird version 56)
   tag: fixed
   bug: 1402813
+  group: 2
 - note: 'Complete fix of the EFAIL vulnerability: 1) Removing some HTML crafted to carry out an attack.
     2) Not decrypting subordinate message parts that otherwise might reveal decrypted content to the attacker.
     Preference mailnews.p7m_subparts_external controls this.'
   tag: fixed
   bug: 1419417
+  group: 2
 - note: Thunderbird used a stale cached password after user edited a saved password
   tag: fixed
   bug: 516464
+  group: 2
 - note: 'The new menu item "Add-on Options" introduced in Thunderbird 59 beta is now also working on Mac'
   tag: fixed
   bug: 1419145
+  group: 2
 - note: "Source view not working for JS, XML, CSS, etc. source files via 'Developer Tools > Error Console'.
     Other options: 1) Set preference view_source.editor.external and view_source.editor.path to view
     the source in the editor of your choice. 2) Use 'Developer Tools > Developer Toolbox, Console'.
     (not working in earlier versions of Thunderbird 60 beta)"
   tag: fixed
   bug: 1439021
+  group: 2
 - note: Deleting or detaching attachments corrupted messages under certain circumstances
     (not working in earlier versions of Thunderbird 60 beta)
   tag: fixed
   bug: 1473893
+  group: 2
 - note: 'Calendar: Google account credentials not retained by Lightning'
   tag: fixed
   bug: 1468069
+  group: 2
 - note: 'Provider for Google Calendar not available'
   tag: unresolved
   bug: 1471326
+  group: 2
 - note: 'CalDav access to some servers not working.
     Workaround: Set preference network.cookie.same-site.enabled to false.'
   tag: unresolved
   bug: 1468912
+  group: 2

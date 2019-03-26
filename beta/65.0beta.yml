@@ -1,8 +1,12 @@
 release:
   release_date: 2018-12-30
   text: "**These release notes apply to Thunderbird version 65 beta 4 released January 29th, 2019.**"
-
   import_system_requirements: '60.0beta'
+  groups:
+    -
+    - "Beta 2"
+    - "Beta 3"
+    - "Beta 4"
 
 notes:
 - note: 'FileLink for WeTransfer'
@@ -76,56 +80,67 @@ notes:
 - note: 'Improvements of SMTP 5.7.1 message'
   tag: fixed
   bug: 1195026
-- note: '<b>New and Fixed in Thunderbird 65 beta 2</b>'
-  tag: <span style='font-weight:bold; font-size:16px;'>Beta 2</span>
+# Beta 2 below.
 - note: 'Thunderbird now allows the addition of OpenSearch search engines from a local XML file
     using a minimal user inferface: [+] button to select a file an add, [-] to remove.'
   tag: new
   bug: 1427317
+  group: 2
 - note: 'During account creation, Thunderbird will now detect servers using the Microsoft Exchange protocol.
     It will offer the installation of a 3rd party add-on (Owl) which supports that protocol.'
   tag: new
   bug: 1500105
+  group: 2
 - note: 'Account creation sometimes shows an error: "Programming bug. Assertion failed, see log"'
   tag: fixed
   bug: 1516134
+  group: 2
 - note: 'Chat: Participants not sorted (not working since Thunderbird 63 beta)'
   tag: fixed
   bug: 1480057
-- note: '<b>New and Fixed in Thunderbird 65 beta 3</b>'
-  tag: <span style='font-weight:bold; font-size:16px;'>Beta 3</span>
+  group: 2
+# Beta 3 below.
 - note: 'More search engines: Google and DuckDuckGo available by default'
   tag: new
   bug: 1427133
+  group: 3
 - note: 'Crash when using "Send to > Mail recipient" on Windows under some circumstances (MAPI interface)'
   tag: fixed
   bug: 393302
-- note: '<b>New and Fixed in Thunderbird 65 beta 4</b>'
-  tag: <span style='font-weight:bold; font-size:16px;'>Beta 4</span>
+  group: 3
+# Beta 4 below.
 - note: 'Full Unicode support for MAPI interfaces: New support for MAPISendMailW, UTF-8 support for MAPISendMail'
   tag: fixed
   bug: 1048658
   bug2: 1521007
+  group: 4
 - note: 'Chat: Participants not sorted (follow-up)'
   tag: fixed
   bug: 1521097
+  group: 4
 - note: 'Calendar print preview not working'
   tag: fixed
   bug: 1517155
+  group: 4
 - note: 'CalDav access to some servers not working'
   tag: fixed
   bug: 1468912
+  group: 4
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
   bug: 1512812
+  group: 4
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working in Thunderbird ESR)'
   tag: unresolved
   bug: 1418629
+  group: 4
 - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
     the Mozilla FTP server. A US-English version can be downloaded [here](https://queue.taskcluster.net/v1/task/XEFE1Xk_TTCLs5TedrG1Kw/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).'
   tag: unresolved
   bug: 1516816
+  group: 4
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
   bug: 1445778
+  group: 4
