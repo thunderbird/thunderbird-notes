@@ -16,6 +16,16 @@ notes:
   bug: 1493158
   bug2: 1527547
   tag: changed
+- note: 'Malfunction when deleting a message opened in a tab or stand-alone window'
+  tag: unresolved
+  bug: 1518823
+- note: 'Thunderbird 67 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
+  tag: unresolved
+  bug: 1542025
+- note: 'Thunderbird 67 beta may display a message "You''ve launched an older version of Firefox" and will not
+  allow opening a specific profile. Workaround: start with option --allow-downgrade.'
+  tag: unresolved
+  bug: 1535116
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
