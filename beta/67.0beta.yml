@@ -1,7 +1,10 @@
 release:
   release_date: 2019-04-02
-  text: "**These release notes apply to Thunderbird version 67 beta 1 released April 2nd, 2019.**"
+  text: "**These release notes apply to Thunderbird version 67 beta 2 released April 26th, 2019.**"
   import_system_requirements: '60.0beta'
+  groups:
+    -
+    - "Changed and Fixed in Beta 2"
 
 notes:
 - note: '**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
@@ -16,6 +19,23 @@ notes:
   bug: 1493158
   bug2: 1527547
   tag: changed
+  # Beta 2 below.
+- note: 'Attachment pane of Write window no longer focussed when attaching files using a keyboard shortcut'
+  tag: changed
+  bug: 1519328
+  group: 2
+- note: 'Navigation of attachments in Write window'
+  tag: fixed
+  bug: 1526811
+  bug2: 1542317
+  group: 2
+- note: 'Insufficient contrast between forground and background colors for some tagged messages'
+  tag: fixed
+  bug: 1534360
+  group: 2
+- note: 'Customising From address breaks saving draft and sending message'
+  tag: unresolved
+  bug: 1542667
 - note: 'Malfunction when deleting a message opened in a tab or stand-alone window'
   tag: unresolved
   bug: 1518823
