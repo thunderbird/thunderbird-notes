@@ -7,7 +7,6 @@ import markdown
 import os
 import sys
 import time
-import yaml
 
 from loader import notes_dirs
 from loader import ReleaseNotes
@@ -22,7 +21,7 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument("notesfile", help="version number of the release notes to preview")
 
-if len(sys.argv)==1:
+if len(sys.argv) == 1:
     parser.print_help()
     sys.exit(1)
 
@@ -60,8 +59,8 @@ class Handler(FileSystemEventHandler):
         translator = Translation()
 
         self.jinja_env = jinja2.Environment(
-            extensions = ["jinja2.ext.i18n"],
-            loader = jinja2.FileSystemLoader(os.path.abspath('./template')),
+            extensions=["jinja2.ext.i18n"],
+            loader=jinja2.FileSystemLoader(os.path.abspath('./template')),
         )
         self.jinja_env.globals.update(url=url)
         self.jinja_env.filters['markdown'] = safe_markdown
@@ -73,7 +72,6 @@ class Handler(FileSystemEventHandler):
         self.updatetime = datetime.datetime.fromtimestamp(0)
         self.updatepreview()
 
-
     def updatepreview(self):
         notes = ReleaseNotes()
         note = notes.notes.get(self.version)
@@ -84,7 +82,6 @@ class Handler(FileSystemEventHandler):
             o = self.template.render(**note)
             f.write(o.encode('utf8'))
 
-
     def throttle_updates(self, timestamp):
         # Multiple FileModified events can fire, so only update
         # once per second.
@@ -93,7 +90,6 @@ class Handler(FileSystemEventHandler):
             self.updatepreview()
             print "{0}: Updated preview.html\n".format(timestamp.strftime("%H:%M:%S"))
             self.updatetime = datetime.datetime.now()
-
 
     def on_modified(self, event):
         self.throttle_updates(datetime.datetime.now())

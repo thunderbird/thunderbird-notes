@@ -7,6 +7,7 @@ notes_dirs = [
     os.path.join(os.path.dirname(__file__), 'archive'),
 ]
 
+
 class ReleaseNotes(object):
     def __init__(self):
         self.settings = {}
@@ -16,7 +17,6 @@ class ReleaseNotes(object):
         # Copy notes into the same dict for imports. Release version notes overwrite beta version notes if any
         # version numbers are shared.
         self.notes = self.load_dirs(notes_dirs)
-
 
     def organize(self, notelist):
         """Organize the data from the .yml format into the variables that the template context expects."""
@@ -44,7 +44,6 @@ class ReleaseNotes(object):
                     n["new_features"].append(note)
             organized_notelist[k] = n
         return organized_notelist
-
 
     def load_dirs(self, paths):
         """Load release notes from a list of paths."""

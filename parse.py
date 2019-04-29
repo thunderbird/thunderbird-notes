@@ -31,7 +31,7 @@ for ul in s.findAll('ul', {'class': 'section-items'}):
         notes.append({'note': text, 'tag': tag})
 
 title = s.title.string
-version = title[title.find("(")+1:title.find(")")]
+version = title[title.find("(") + 1:title.find(")")]
 
 bug_search_url = s.find('header', {'class': 'notes-head'}).findChildren('p')[0].findChildren('a')[2]
 bug_search_url = str(bug_search_url['href'])
@@ -44,5 +44,5 @@ notes = ''
 for n in notesfile:
     notes += yaml.safe_dump(n, default_flow_style=False)
 
-with open(u"archive/"+version+u".yml", "wb") as f:
+with open(u"archive/" + version + u".yml", "wb") as f:
     f.write(notes.encode('utf8'))
