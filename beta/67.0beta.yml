@@ -1,10 +1,11 @@
 release:
   release_date: 2019-04-02
-  text: "**These release notes apply to Thunderbird version 67 beta 2 released April 26th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 67 beta 3 released May 10th, 2019.**"
   import_system_requirements: '60.0beta'
   groups:
     -
     - "Changed and Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
 - note: '**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
@@ -33,6 +34,14 @@ notes:
   tag: fixed
   bug: 1534360
   group: 2
+- note: 'IMAP offline folder selection not working'
+  tag: fixed
+  bug: 1546604
+  group: 3
+- note: 'Installation problems on 32-bit Windows'
+  tag: fixed
+  bug: 1547631
+  group: 3
 - note: 'Customising From address breaks saving draft and sending message'
   tag: unresolved
   bug: 1542667
