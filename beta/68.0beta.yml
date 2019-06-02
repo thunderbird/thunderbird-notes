@@ -54,9 +54,6 @@ notes:
   tag: unresolved
   bug: 1556203
   bug2: 1555136
-- note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
-  tag: unresolved
-  bug: 1553427
 - note: 'Customising From address breaks saving draft and sending message'
   tag: unresolved
   bug: 1542667
