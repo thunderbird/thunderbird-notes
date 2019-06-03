@@ -25,16 +25,16 @@ notes:
   tag: new
   bug: 1535969
 - note: '**ADD-ON SUPPORT: Restartless add-ons and non-restartless legacy add-ons using XUL overlays
-    are only supported if add-on authors have adapted them.**'
+    are only supported if add-on authors have adapted them**'
   tag: changed
   bug: 1552634
 - note: 'Application menu aka "Hamburger menu"'
   tag: changed
   bug: 1546309
-- note: 'Box.com file link provider was removed and is not available as add-on at [ATN](https://addons.thunderbird.net/thunderbird/addon/filelink-provider-for-box/)'
+- note: 'Box.com file link provider was removed and is now available as add-on at [ATN](https://addons.thunderbird.net/thunderbird/addon/filelink-provider-for-box/)'
   tag: changed
   bug: 1531595
-- note: 'UI improments for external attachments'
+- note: 'UI improvements for external attachments'
   tag: changed
   bug: 1345167
 - note: 'Improvements to scam warnings'
