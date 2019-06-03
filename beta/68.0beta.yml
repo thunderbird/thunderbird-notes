@@ -17,7 +17,8 @@ notes:
 - note: 'File link attachments can now be linked to again instead of uploading them again'
   tag: new
   bug: 1542991
-- note: 'Enterprise Policies'
+- note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise environments,
+    using Windows Group Policy or a cross-platform JSON file'
   tag: new
   bug: 1552457
 - note: 'TCP keepalive for IMAP protocol'
@@ -39,7 +40,8 @@ notes:
 - note: 'Improvements to scam warnings'
   tag: changed
   bug: 1476428
-- note: 'Various UI improments (and potential glitches, please report a bug!)'
+- note: 'Various UI improvements. Many changes affecting UI, and so problems are expected.
+    Please file bug reports at [bugzilla.mozilla.org](https://bugzilla.mozilla.org/).'
   tag: changed
 - note: 'Malfunction when deleting a message opened in a tab or stand-alone window'
   tag: fixed
