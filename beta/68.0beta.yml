@@ -14,7 +14,7 @@ notes:
 - note: 'Support for the "CLIENTID" SMTP/IMAP command'
   tag: new
   bug: 1532388
-- note: 'File link attachments can now be linked to again instead of uploading them again'
+- note: 'File link attachments can now be attached to subsequent messages without uploading them again'
   tag: new
   bug: 1542991
 - note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise environments,
@@ -40,7 +40,7 @@ notes:
 - note: 'Improvements to scam warnings'
   tag: changed
   bug: 1476428
-- note: 'Various UI improvements. Many changes affecting UI, and so problems are expected.
+- note: 'Various UI improvements. Many changes affecting UI, and so problems are not unexpected.
     Please file bug reports at [bugzilla.mozilla.org](https://bugzilla.mozilla.org/).'
   tag: changed
 - note: 'Malfunction when deleting a message opened in a tab or stand-alone window'
@@ -52,7 +52,7 @@ notes:
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe'
   tag: fixed
   bug: 1418629
-- note: 'Right-click menu and spelling not working in chat. Nofications not working in chat under some circumstances.'
+- note: 'Right-click menu and spelling not working in chat. Notifications not working in chat under some circumstances.'
   tag: unresolved
   bug: 1556203
   bug2: 1555136
