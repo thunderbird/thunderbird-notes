@@ -1,6 +1,6 @@
 release:
-  release_date: 2019-06-17
-  text: "**These release notes apply to Thunderbird version 68 beta 1 released June 17th, 2019.**"
+  release_date: 2019-06-14
+  text: "**These release notes apply to Thunderbird version 68 beta 1 released June 14th, 2019.**"
   import_system_requirements: '60.0beta'
 
 notes:
