@@ -75,6 +75,9 @@ notes:
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
   bug: 1516816
+- note: '**Themes Not Working**: Lightweight themes installed from addons.thunderbird.net do not work. **Workaround**: Manually install from 
+    [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/themes/) by dragging the link or .xpi file into the Add-ons Manager.'
+  tag: unresolved
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
   bug: 1445778
