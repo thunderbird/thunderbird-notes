@@ -24,10 +24,18 @@ notes:
 - note: 'TCP keepalive for IMAP protocol'
   tag: new
   bug: 1535969
-- note: '**ADD-ON SUPPORT: Restartless add-ons and non-restartless legacy add-ons using XUL overlays
+- note: '**Add-on support: Restartless add-ons and non-restartless legacy add-ons using XUL overlays
     are only supported if add-on authors have adapted them**'
   tag: changed
   bug: 1552634
+- note: '**Theme support**: Thunderbird no longer supports so-called lightweight themes. Therefore
+    none of the themes offered at addons.thunderbird.net currently work.
+    Lightweight themes will be converted to WebExtension themes, but
+    this conversion has NOT happened yet. It has happened at addons.mozilla.org.
+    Workaround: Manually install from
+    [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/themes/) by dragging the link
+    or .xpi file into the Add-ons Manager.'
+  tag: changed
 - note: 'Application menu aka "Hamburger menu"'
   tag: changed
   bug: 1546309
@@ -75,9 +83,6 @@ notes:
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
   bug: 1516816
-- note: '**Themes Not Working**: Lightweight themes installed from addons.thunderbird.net do not work. **Workaround**: Manually install from 
-    [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/themes/) by dragging the link or .xpi file into the Add-ons Manager.'
-  tag: unresolved
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
   bug: 1445778
