@@ -1,7 +1,10 @@
 release:
   release_date: 2019-06-14
-  text: "**These release notes apply to Thunderbird version 68 beta 1 released June 14th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 68 beta 2 released June 24th, 2019.**"
   import_system_requirements: '60.0beta'
+  groups:
+    -
+    - "Changed and Fixed in Beta 2"
 
 notes:
 - note: 'Run filters periodically. Improved filter logging.'
@@ -60,10 +63,26 @@ notes:
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe'
   tag: fixed
   bug: 1418629
-- note: 'Chat: Context (right-click) menu and spelling not working. Ctrl+D and Ctrl+U not working.'
-  tag: unresolved
+  # Beta 2 below.
+- note: Various theme improvements.
+  tag: changed
+  bug: 1559833
+  bug2: 1559176
+  group: 2
+- note: 'SMTP password wasn''t removed when account was deleted or server or user name were changed'
+  tag: fixed
+  bug: 1315662
+  group: 2
+- note: 'Chat: Context (right-click) menu and spelling. In each conversation an individual spellcheck language
+  can be selected now.'
+  tag: fixed
   bug: 1556203
-  bug2: 1559097
+  bug2: 1559789
+  group: 2
+- note: 'Chat: Ctrl+D and Ctrl+U not working to switch between conversations. Status selector not working.'
+  tag: unresolved
+  bug: 1559097
+  bug2: 1559641
 - note: 'Customising From address breaks saving draft and sending message'
   tag: unresolved
   bug: 1542667
