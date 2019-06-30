@@ -1,10 +1,11 @@
 release:
   release_date: 2019-06-14
-  text: "**These release notes apply to Thunderbird version 68 beta 2 released June 24th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 68 beta 3 released July 1st, 2019.**"
   import_system_requirements: '60.0beta'
   groups:
     -
     - "Changed and Fixed in Beta 2"
+    - "New, Changed and Fixed in Beta 3"
 
 notes:
 - note: 'Run filters periodically. Improved filter logging.'
@@ -79,13 +80,29 @@ notes:
   bug: 1556203
   bug2: 1559789
   group: 2
-- note: 'Chat: Ctrl+D and Ctrl+U not working to switch between conversations. Status selector not working.'
+  # Beta 3 below.
+- note: 'OAuth2 authentication for Yandex'
+  tag: new
+  bug: 1559972
+  group: 3
+- note: 'Auto-compact threshold increased from 20 MB to 200 MB'
+  tag: changed
+  bug: 1462666
+  group: 3
+- note: 'Customising From address broke saving draft and sending message'
+  tag: fixed
+  bug: 1542667
+  group: 3
+- note: 'Chat: Status selector not working'
+  tag: fixed
+  bug: 1559641
+  group: 3
+- note: 'Chat: Ctrl+D and Ctrl+U not working to switch between conversations'
   tag: unresolved
   bug: 1559097
-  bug2: 1559641
-- note: 'Customising From address breaks saving draft and sending message'
+- note: 'Calendar: Lightning not updating to corresponding beta 3 version. Various minor calendar malfunctions.'
   tag: unresolved
-  bug: 1542667
+  bug: 1562352
 - note: 'Thunderbird 68 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
   tag: unresolved
   bug: 1542025
