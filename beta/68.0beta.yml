@@ -1,11 +1,12 @@
 release:
   release_date: 2019-06-14
-  text: "**These release notes apply to Thunderbird version 68 beta 3 released July 1st, 2019.**"
+  text: "**These release notes apply to Thunderbird version 68 beta 4 released July 8th, 2019.**"
   import_system_requirements: '60.0beta'
   groups:
     -
     - "Changed and Fixed in Beta 2"
     - "New, Changed and Fixed in Beta 3"
+    - "Changed and Fixed in Beta 4"
 
 notes:
 - note: 'Run filters periodically. Improved filter logging.'
@@ -97,25 +98,46 @@ notes:
   tag: fixed
   bug: 1559641
   group: 3
+  # Beta 4 below.
+- note: 'Thunderbird 68 beta may display a message "You have launched an older version of Thunderbird" and will not
+  allow opening a specific profile. Workaround: start with option --allow-downgrade.'
+  tag: changed
+  bug: 1535116
+  group: 4
+- note: 'Find toolbar not fully working'
+  tag: fixed
+  bug: 1562677
+  group: 4
+- note: 'Display of external or detached attachments not correct in message preview'
+  tag: fixed
+  bug: 1562200
+  group: 4
+- note: 'Tab and shift-tab not fully working on the main window'
+  tag: fixed
+  bug: 1561288
+  bug2: 1558393
+  group: 4
 - note: 'Chat: Ctrl+D and Ctrl+U not working to switch between conversations'
-  tag: unresolved
+  tag: fixed
   bug: 1559097
-- note: 'Calendar: Lightning not updating to corresponding beta 3 version. Various minor calendar malfunctions.'
+  group: 4
+- note: 'Calendar: Many fixes in Lightning, but note the next item'
+  tag: fixed
+  group: 4
+- note: 'Calendar: Lightning not updating to corresponding beta 4 version. Workaround: Set preference
+  <code>extensions.lastAppVersion</code> to a value of 67.0 to force a refresh. Check version number in the
+  Add-on Manager afterwards.'
   tag: unresolved
-  bug: 1562352
+  bug: 1562573
 - note: 'Thunderbird 68 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
   tag: unresolved
   bug: 1542025
-- note: 'Thunderbird 68 beta may display a message "You''ve launched an older version of Firefox" and will not
-  allow opening a specific profile. Workaround: start with option --allow-downgrade.'
-  tag: unresolved
-  bug: 1535116
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
   bug: 1512812
 - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
-    the Mozilla FTP server. A US-English version can be downloaded [here](https://queue.taskcluster.net/v1/task/E_NefM2qTT-2b9_lRIMeXA/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).
+    the Mozilla FTP server. A US-English version can be downloaded [here](https://queue.taskcluster.net/v1/task/BwwaMEyrRVm-vIh0Pa9Cdg/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
   bug: 1516816
