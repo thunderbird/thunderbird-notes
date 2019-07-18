@@ -1,12 +1,13 @@
 release:
   release_date: 2019-06-14
-  text: "**These release notes apply to Thunderbird version 68 beta 4 released July 8th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 68 beta 5 released July 19th, 2019.**"
   import_system_requirements: '60.0beta'
   groups:
     -
     - "Changed and Fixed in Beta 2"
     - "New, Changed and Fixed in Beta 3"
     - "Changed and Fixed in Beta 4"
+    - "Fixed in Beta 5"
 
 notes:
 - note: 'Run filters periodically. Improved filter logging.'
@@ -16,9 +17,6 @@ notes:
 - note: '"Off the record" (OTR) chat, see the [Wiki](https://wiki.mozilla.org/Thunderbird:OTR)'
   tag: new
   bug: 1518172
-- note: 'Support for the "CLIENTID" SMTP/IMAP command'
-  tag: new
-  bug: 1532388
 - note: 'File link attachments can now be linked to again instead of uploading them again'
   tag: new
   bug: 1542991
@@ -121,9 +119,29 @@ notes:
   tag: fixed
   bug: 1559097
   group: 4
-- note: 'Calendar: Many fixes in Lightning, but note the next item'
+- note: 'Calendar: Many fixes in Lightning, but note the first unresolved item'
   tag: fixed
   group: 4
+  # Beta 5 below.
+- note: 'Ignore (Sub)Thread not working'
+  tag: fixed
+  bug: 1565840
+  group: 5
+- note: 'Some search engines not working'
+  tag: fixed
+  bug: 1566200
+  group: 5
+- note: 'Global indexer causing high CPU loads under some circumstances'
+  tag: fixed
+  bug: 1362483
+  group: 5
+- note: 'Many fixes of UX/UI glitches'
+  tag: fixed
+  group: 5
+- note: 'Calendar: Mailing lists not expanding when added as invitees. Note the first unresolved item.'
+  tag: fixed
+  bug: 1530213
+  group: 5
 - note: 'Calendar: Lightning not updating to corresponding beta 4 version. Workaround: Set preference
   <code>extensions.lastAppVersion</code> to a value of 67.0 to force a refresh. Check version number in the
   Add-on Manager afterwards.'
