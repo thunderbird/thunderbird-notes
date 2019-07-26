@@ -7,22 +7,22 @@ release:
 
 notes:
 - note: '**Add-on support: Restartless add-ons and non-restartless legacy add-ons using XUL overlays
-    are only supported if add-on authors have adapted them**'
+    are only supported if add-on authors have adapted them.**'
   tag: changed
   bug: 1552634
 - note: 'While Thunderbird is in safe mode, the help menu now correctly offers an item to restart in normal mode instead of safe mode.'
   tag: fixed
   bug: 724963
 - note: 'Calendar: Lightning not updating to corresponding beta 4 version. Workaround: Set preference
-  <code>extensions.lastAppVersion</code> to a value of 67.0 to force a refresh. Check version number in the
+  <code>extensions.lastAppVersion</code> to a value of 68.0 to force a refresh. Check version number in the
   Add-on Manager afterwards.'
   tag: unresolved
   bug: 1562573
-- note: 'Thunderbird 68 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
+- note: 'Thunderbird 69 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
   tag: unresolved
   bug: 1542025
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
-    addressed via drive letters are now addressed via UNC'
+    addressed via drive letters are now addressed via UNC.'
   tag: unresolved
   bug: 1512812
 - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
@@ -30,6 +30,6 @@ notes:
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
   bug: 1516816
-- note: 'Chat: Twitter not working due to API changes at Twitter.com'
+- note: 'Chat: Twitter not working due to API changes at Twitter.com.'
   tag: unresolved
   bug: 1445778
