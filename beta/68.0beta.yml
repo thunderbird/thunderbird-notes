@@ -142,7 +142,7 @@ notes:
   tag: fixed
   bug: 1530213
   group: 5
-- note: 'Calendar: Lightning not updating to corresponding beta 4 version. Workaround: Set preference
+- note: 'Calendar: Lightning not updating to corresponding beta 5 version. Workaround: Set preference
   <code>extensions.lastAppVersion</code> to a value of 67.0 to force a refresh. Check version number in the
   Add-on Manager afterwards.'
   tag: unresolved
@@ -150,6 +150,9 @@ notes:
 - note: 'Thunderbird 68 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
   tag: unresolved
   bug: 1542025
+- note: 'The spellchecker may mark words preceding a single quote as misspelled'
+  tag: unresolved
+  bug: 1565919
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
