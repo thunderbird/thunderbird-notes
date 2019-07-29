@@ -17,6 +17,9 @@ notes:
 - note: 'The spellchecker may mark words preceding a single quote as misspelled'
   tag: unresolved
   bug: 1565919
+- note: 'Chat not working since text input area has near zero height'
+  tag: unresolved
+  bug: 1564443
 # restore the following item for further betas.
 # - note: 'Calendar: Lightning not updating to corresponding beta NN version. Workaround: Set preference
   # <code>extensions.lastAppVersion</code> to a value of 68.0 to force a refresh. Check version number in the
