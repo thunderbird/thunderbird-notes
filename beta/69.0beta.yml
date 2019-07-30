@@ -17,7 +17,7 @@ notes:
 - note: 'The spellchecker may mark words preceding a single quote as misspelled'
   tag: unresolved
   bug: 1565919
-- note: 'Chat not working since text input area has near zero height'
+- note: 'Chat text input area has near zero height. Workaround: Resize it by moving the slider up.'
   tag: unresolved
   bug: 1564443
 # restore the following item for further betas.
