@@ -30,9 +30,9 @@ notes:
 - note: 'Some visual glitches: Wrong colors, backgrounds, tooltips, etc.'
   tag: fixed
   bug: 1569399
-  bug2: 1569670 
-  bug3: 1567770 
-  bug3: 1534114 
+  bug2: 1569670
+  bug3: 1567770
+  bug4: 1534114
   group: 2
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
