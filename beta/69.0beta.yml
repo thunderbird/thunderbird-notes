@@ -1,14 +1,39 @@
 release:
   release_date: 2019-07-26
-  text: "**These release notes apply to Thunderbird version 69 beta 1 released July 26th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 69 beta 2 released August 5th, 2019.**"
   import_system_requirements: '60.0beta'
   groups:
     -
+    - "Fixed in Beta 2"
 
 notes:
 - note: 'While Thunderbird was in safe mode, the help menu did not offer an item to restart with add-ons enabled'
   tag: fixed
   bug: 724963
+  # Beta 2 below.
+- note: 'Chat text input area had near zero height (in beta 1)'
+  tag: fixed
+  bug: 1564443
+  group: 2
+- note: 'Links on Help menu not working (in beta 1)'
+  tag: fixed
+  bug: 1570586
+  group: 2
+- note: 'New email notification not properly formatted in come cases'
+  tag: fixed
+  bug: 1569129
+  group: 2
+- note: 'F6 focus in address book not correct'
+  tag: fixed
+  bug: 1546650
+  group: 2
+- note: 'Some visual glitches: Wrong colors, backgrounds, tooltips, etc.'
+  tag: fixed
+  bug: 1569399
+  bug2: 1569670 
+  bug3: 1567770 
+  bug3: 1534114 
+  group: 2
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
   bug: 1535265
@@ -17,9 +42,6 @@ notes:
 - note: 'The spellchecker may mark words preceding a single quote as misspelled'
   tag: unresolved
   bug: 1565919
-- note: 'Chat text input area has near zero height. Workaround: Resize it by moving the slider up.'
-  tag: unresolved
-  bug: 1564443
 # restore the following item for further betas.
 # - note: 'Calendar: Lightning not updating to corresponding beta NN version. Workaround: Set preference
   # <code>extensions.lastAppVersion</code> to a value of 68.0 to force a refresh. Check version number in the
@@ -30,7 +52,8 @@ notes:
   tag: unresolved
   bug: 1542025
 - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
-    the Mozilla FTP server. A US-English version can be downloaded [here](https://queue.taskcluster.net/v1/task/STfPH0cVRB2neWGZ-S_qIA/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).
+    the Mozilla FTP server. A US-English version can be downloaded
+    [here](http://ftp.mozilla.org/pub/thunderbird/candidates/69.0b2-candidates/build1/en-US/gdata-provider.en-US.xpi).
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
   bug: 1516816
