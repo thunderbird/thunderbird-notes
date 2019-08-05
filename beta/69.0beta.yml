@@ -19,7 +19,7 @@ notes:
   tag: fixed
   bug: 1570586
   group: 2
-- note: 'New email notification not properly formatted in come cases'
+- note: 'New email notification not properly formatted in some cases'
   tag: fixed
   bug: 1569129
   group: 2
@@ -53,7 +53,7 @@ notes:
   bug: 1542025
 - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
     the Mozilla FTP server. A US-English version can be downloaded
-    [here](http://ftp.mozilla.org/pub/thunderbird/candidates/69.0b2-candidates/build1/en-US/gdata-provider.en-US.xpi).
+    [here](http://ftp.mozilla.org/pub/thunderbird/releases/69.0b2/en-US/gdata-provider.en-US.xpi).
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
   bug: 1516816
