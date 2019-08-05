@@ -73,6 +73,10 @@ notes:
   tag: fixed
   bug: 1315662
   group: 2
+- note: 'Calendar: Multiple connections with different users to the same CalDAV server not allowed'
+  tag: fixed
+  bug: 1544596
+  group: 2
 - note: 'Chat: Context (right-click) menu and spelling. In each conversation an individual spellcheck language
   can be selected now.'
   tag: fixed
