@@ -73,7 +73,7 @@ notes:
   tag: fixed
   bug: 1315662
   group: 2
-- note: 'Calendar: Multiple connections with different users to the same CalDAV server not allowed'
+- note: 'Calendar: Multiple connections with different users to the same CalDAV server not working'
   tag: fixed
   bug: 1544596
   group: 2
