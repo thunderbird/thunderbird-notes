@@ -37,6 +37,8 @@ notes:
   tag: new
   bug: 1491562
   bug: 1509977
+- note: 'On Windows a 64bit installer and MSI package are now available'
+  tag: new
 - note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise environments,
     using Windows Group Policy or a cross-platform JSON file'
   tag: new
