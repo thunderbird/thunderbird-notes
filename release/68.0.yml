@@ -15,8 +15,57 @@ release:
     • Linux: GTK+ 3.4 or higher**.
     Details [here](/en-US/thunderbird/68.0/system-requirements/).
 
-  bug_search_url:
-  import_system_requirements: '60.0beta'
+#  bug_search_url:
+  system_requirements: |
+    ## Windows
+
+    ### Operating Systems
+    - Windows 7
+    - Windows 8
+    - Windows 10
+    - Windows Server 2008 R2
+
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM
+    - 200 MB hard drive space
+
+    ---
+
+    ## Mac
+
+    ### Operating Systems
+
+    - Mac OS X 10.9
+    - Mac OS X 10.10
+    - Mac OS X 10.11
+    - Mac OS X 10.12
+    - Mac OS X 10.13
+    - Mac OS X 10.14
+
+    ###  Recommended Hardware
+
+    - Macintosh computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 3.4 or higher
+        - GLib 2.22 or higher
+        - Pango 1.14 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.6.1 or higher
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
 notes:
 - note: 'File link attachments can now be linked to again instead of uploading them again'
   tag: new
