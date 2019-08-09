@@ -4,7 +4,7 @@ release:
     ** Thunderbird version 68.0 is only offered as direct download from
     [thunderbird.net](https://www.thunderbird.net) and not as upgrade from Thunderbird version 60
     or earlier. A future version 68.1 will provide updates from earlier versions.
-    If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
+    If you have installed Lightning, the Thunderbird Calendar add-on, it will automatically
     be updated to match the new version of Thunderbird.** Refer to this
     [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
     in case of problems.
@@ -46,15 +46,22 @@ notes:
 - note: 'TCP keepalive for IMAP protocol'
   tag: new
   bug: 1535969
-- note: '"Off the record" (OTR) chat, see the [Wiki](https://wiki.mozilla.org/Thunderbird:OTR)'
-  tag: new
-  bug: 1518172
-- note: 'Chat: In each conversation an individual spellcheck language can be selected now'
-  tag: new
-  bug: 1559789
 - note: 'Full Unicode support for MAPI interfaces: New support for MAPISendMailW'
   tag: new
   bug: 1048658
+- note: 'To protect your profile data against a downgrade,
+    Thunderbird 68 may display a message "You have launched an older version of Thunderbird" and will not
+    allow opening a specific profile. Workaround: start with option --allow-downgrade. See
+    [this support article](https://support.mozilla.org/kb/unable-launch-older-version-profile)
+    for details.'
+  tag: new
+  bug: 1535116
+- note: 'Calendar: Time zone data can now include past and future changes.
+    All known time zone changes from 2018 to 2022 are included.'
+  tag: new
+- note: 'Chat: In each conversation an individual spellcheck language can be selected now'
+  tag: new
+  bug: 1559789
 - note: '**Add-on support: Add-ons are only supported if add-on authors have adapted them**'
   tag: changed
 - note: '** Dictionary support: Only WebExtension dictionaries are supported now.**
@@ -63,7 +70,7 @@ notes:
 - note: 'The stand-alone options window has been removed, all options are now shown in a tab'
   tag: changed
   bug: 1465061
-- note: "Changed UI when installing add-ons. Restart required for legacy extensions."
+- note: "Changed UI when installing add-ons"
   tag: changed
   bug: 1496632
   bug2: 1498967
@@ -79,9 +86,9 @@ notes:
   tag: changed
 - note: 'FileLink: 
     WeTransfer is already included.
-    [Dropbox](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/),
+    [Dropbox](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/) and
     [Box.com](https://addons.thunderbird.net/en-GB/thunderbird/addon/filelink-provider-for-box/)
-    and many more are available as add-ons.'
+    using the new WebExtensions FileLink API are available as add-ons, amongst others.'
   tag: changed
   bug: 1511950
   bug2: 1531595
@@ -115,10 +122,6 @@ notes:
 - note: 'Auto-compact threshold increased from 20 MB to 200 MB'
   tag: changed
   bug: 1462666
-- note: 'Thunderbird 68 may display a message "You have launched an older version of Thunderbird" and will not
-  allow opening a specific profile. Workaround: start with option --allow-downgrade.'
-  tag: changed
-  bug: 1535116
 - note: "Calendar: UI improvements for event dialog"
   tag: changed
   bug: 1496086
@@ -145,9 +148,9 @@ notes:
 - note: 'Improvements of SMTP 5.7.1 message'
   tag: fixed
   bug: 1195026
-- note: 'Chat: Fixed XMPP authentication when using SASL'
-  bug: 1527480
-  tag: fixed
 - note: 'Calendar: Multiple connections with different users to the same CalDAV server not working'
   tag: fixed
   bug: 1544596
+- note: 'Chat: Fixed XMPP authentication when using SASL'
+  bug: 1527480
+  tag: fixed
