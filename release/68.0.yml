@@ -4,7 +4,7 @@ release:
     ** Thunderbird version 68.0 is only offered as direct download from
     [thunderbird.net](https://www.thunderbird.net) and not as upgrade from Thunderbird version 60
     or earlier. A future version 68.1 will provide updates from earlier versions.
-    If you have installed Lightning, the Thunderbird Calendar add-on, it will automatically
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
     be updated to match the new version of Thunderbird.** Refer to this
     [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
     in case of problems.
@@ -86,7 +86,8 @@ notes:
   tag: new
   bug: 1491562
   bug: 1509977
-- note: 'On Windows a 64bit installer and MSI package are now available'
+- note: 'On Windows a 64bit installer and MSI package are now available, see the
+    [Thunderbird for Organisations](https://www.thunderbird.net/en-US/organizations/) page for details'
   tag: new
 - note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise environments,
     using Windows Group Policy or a cross-platform JSON file'
@@ -115,6 +116,9 @@ notes:
   tag: changed
 - note: '** Dictionary support: Only WebExtension dictionaries are supported now.**
     Both addons.mozilla.org and addons.thunderbird.net now provide WebExtension dictionaries.'
+  tag: changed
+- note: '** Theme support: Only WebExtension themes are supported now.**
+    Both addons.mozilla.org and addons.thunderbird.net now provide WebExtension themes.'
   tag: changed
 - note: 'The stand-alone options window has been removed, all options are now shown in a tab'
   tag: changed
@@ -174,6 +178,8 @@ notes:
 - note: "Calendar: UI improvements for event dialog"
   tag: changed
   bug: 1496086
+- note: 'Calendar: Thunderbird''s calendar add-on Lightning now uses the same version numbering scheme'
+  tag: changed
 - note: 'Global indexer causing high CPU loads under some circumstances'
   tag: fixed
   bug: 1362483
