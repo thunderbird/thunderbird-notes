@@ -1,10 +1,11 @@
 release:
   release_date: 2019-07-26
-  text: "**These release notes apply to Thunderbird version 69 beta 2 released August 5th, 2019.**"
-  import_system_requirements: '60.0beta'
+  text: "**These release notes apply to Thunderbird version 69 beta 3 released August 16th, 2019.**"
+  import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
 - note: 'While Thunderbird was in safe mode, the help menu did not offer an item to restart with add-ons enabled'
@@ -34,14 +35,39 @@ notes:
   bug3: 1567770
   bug4: 1534114
   group: 2
+  # Beta 3 below.
+- note: 'Column choice and sort order in "Search Messages" dialog lost after relaunch'
+  tag: fixed
+  bug: 297251
+  group: 3
+- note: 'Theme installation not working via the Add-on Manager (in beta 1 and 2)'
+  tag: fixed
+  bug: 1572827
+  group: 3
+- note: 'The spellchecker marked words preceding a single quote as misspelled (in beta 2)'
+  tag: fixed
+  bug: 1565919
+  group: 3
+- note: 'More visual glitches: Attachment pane height, link color for detached/external attachments,
+    dark theme, compose window toolbar, error console window title'
+  tag: fixed
+  bug: 1571663
+  bug2: 1572106
+  bug3: 1571634
+  bug4: 1527551
+  bug5: 1524255
+  bug6: 1567783
+  group: 3
+- note: 'Links containing a #reference don''t open correctly in the external browser.
+    External browser may open in a background window.'
+  tag: unresolved
+  bug: 1573051
+  bug2: 1572970
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
   bug: 1535265
   bug2: 1553427
   bug3: 1556261
-- note: 'The spellchecker may mark words preceding a single quote as misspelled'
-  tag: unresolved
-  bug: 1565919
 # restore the following item for further betas.
 # - note: 'Calendar: Lightning not updating to corresponding beta NN version. Workaround: Set preference
   # <code>extensions.lastAppVersion</code> to a value of 68.0 to force a refresh. Check version number in the
