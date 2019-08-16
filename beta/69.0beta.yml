@@ -63,6 +63,9 @@ notes:
   tag: unresolved
   bug: 1573051
   bug2: 1572970
+- note: 'Opening the properties of a folder may hang on Mac'
+  tag: unresolved
+  bug: 1574322
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
   bug: 1535265
