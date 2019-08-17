@@ -109,6 +109,7 @@ notes:
 - note: 'Calendar: Time zone data can now include past and future changes.
     All known time zone changes from 2018 to 2022 are included.'
   tag: new
+  bug: 1494160
 - note: 'Chat: In each conversation an individual spellcheck language can be selected now'
   tag: new
   bug: 1559789
@@ -180,6 +181,10 @@ notes:
   bug: 1496086
 - note: 'Calendar: Thunderbird''s calendar add-on Lightning now uses the same version numbering scheme'
   tag: changed
+  bug: 1520365
+- note: 'Column choice and sort order in "Search Messages" dialog lost after relaunch'
+  tag: fixed
+  bug: 297251
 - note: 'Global indexer causing high CPU loads under some circumstances'
   tag: fixed
   bug: 1362483
