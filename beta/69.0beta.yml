@@ -1,11 +1,12 @@
 release:
   release_date: 2019-07-26
-  text: "**These release notes apply to Thunderbird version 69 beta 3 released August 16th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 69 beta 4 released August 24th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
+    - "New and Fixed in Beta 4"
 
 notes:
 - note: 'While Thunderbird was in safe mode, the help menu did not offer an item to restart with add-ons enabled'
@@ -58,6 +59,25 @@ notes:
   bug5: 1524255
   bug6: 1567783
   group: 3
+  # Beta 4 below.
+- note: 'Support Exchange as an alternative account type for ISPDB'
+  tag: new
+  bug: 1571772
+  group: 4
+- note: 'LDAP address auto-complete and server preference not working'
+  tag: fixed
+  bug: 1574590
+  group: 4
+- note: 'Even more visual glitches: Scrollbar in chat account settings,
+    missing context menu in contacts sidebar, missing chat participant tooltip,
+    icon sizes in toolbars, selection of tagged messages using dark theme'
+  tag: fixed
+  bug: 1529295
+  bug2: 1574724
+  bug3: 1570679
+  bug4: 1574859
+  bug5: 1575487
+  group: 4
 - note: 'Links containing a #reference don''t open correctly in the external browser.
     External browser may open in a background window.'
   tag: unresolved
