@@ -1,5 +1,5 @@
 release:
-  release_date: 2019-08-15
+  release_date: 2019-08-27
   text: |
     ** Thunderbird version 68.0 is only offered as direct download from
     [thunderbird.net](https://www.thunderbird.net) and not as upgrade from Thunderbird version 60
@@ -191,6 +191,9 @@ notes:
 - note: 'Tags set on IMAP folders sometimes not visible to other users'
   bug: 583677
   tag: fixed
+- note: '"Contribute" button in add-on details not working'
+  tag: fixed
+  bug: 1500895
 - note: 'SMTP password wasn''t removed when account was deleted or server or user name were changed'
   tag: fixed
   bug: 1315662
