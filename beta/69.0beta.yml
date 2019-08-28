@@ -1,6 +1,6 @@
 release:
   release_date: 2019-07-26
-  text: "**These release notes apply to Thunderbird version 69 beta 4 released August 24th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 69 beta 4 released August 28th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
@@ -70,19 +70,22 @@ notes:
   group: 4
 - note: 'Even more visual glitches: Scrollbar in chat account settings,
     missing context menu in contacts sidebar, missing chat participant tooltip,
-    icon sizes in toolbars, selection of tagged messages using dark theme'
+    icon sizes in toolbars, selection of tagged messages using dark theme,
+    message pane toggle in application menu'
   tag: fixed
   bug: 1529295
   bug2: 1574724
   bug3: 1570679
   bug4: 1574859
   bug5: 1575487
+  bug6: 1576397
   group: 4
 - note: 'Links containing a #reference don''t open correctly in the external browser.
     External browser may open in a background window.'
-  tag: unresolved
+  tag: fixed
   bug: 1573051
   bug2: 1572970
+  group: 4
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
   bug: 1574322
