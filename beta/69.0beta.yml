@@ -60,7 +60,9 @@ notes:
   bug6: 1567783
   group: 3
   # Beta 4 below.
-- note: 'Support Exchange as an alternative account type for ISPDB'
+- note: 'Offer to configure Exchange accounts for Office365.
+    A third-party add-on is required for this account type.
+    IMAP still exists as alternative.'
   tag: new
   bug: 1571772
   group: 4
