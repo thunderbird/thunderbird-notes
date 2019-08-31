@@ -159,6 +159,10 @@ notes:
     menu option "Open Containing Folder"'
   tag: changed
   bug: 1345167
+- note: 'Textual attachments (plain text, HTML, XML, etc.) are no longer displayed inline.
+    Toggle preference mail.inline_attachments.text to display them inline again.'
+  tag: changed
+  bug: 1509709
 - note: 'Improved phishing attempt detection for messages with certain forms'
   tag: changed
   bug: 1249562
