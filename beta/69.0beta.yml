@@ -88,6 +88,9 @@ notes:
   bug: 1573051
   bug2: 1572970
   group: 4
+- note: 'Clicking mailto links in browser doesn''t open Thunderbird Write window'
+  tag: unresolved
+  bug: 1577706
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
   bug: 1574322
