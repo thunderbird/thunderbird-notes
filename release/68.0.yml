@@ -221,3 +221,13 @@ notes:
 - note: 'Chat: Fixed XMPP authentication when using SASL'
   bug: 1527480
   tag: fixed
+- note: 'Edit tag not working (will be fixed in version 68.1)'
+  tag: unresolved
+  bug: 1578148
+- note: 'Moving messages from "Search Messages" result dialog not working (will be fixed in version 68.1)'
+  tag: unresolved
+  bug: 1577987
+- note: 'Issues with list of content types/actions for incoming attachments (will be fixed in version 68.1)'
+  tag: unresolved
+  bug: 1576950
+  bug2: 1576825
