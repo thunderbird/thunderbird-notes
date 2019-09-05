@@ -1,0 +1,66 @@
+release:
+  release_date: 2019-09-09
+  text: "**These release notes apply to Thunderbird version 70 beta 1 released September 9th, 2019.**"
+  import_system_requirements: '68.0'
+  groups:
+    -
+
+notes:
+- note: 'Edit tag not working'
+  tag: fixed
+  bug: 1578148
+- note: 'Write window: "Insert > Characters and Symbols" now working'
+  tag: fixed
+  bug: 1578300
+- note: 'Moving/dragging messages from "Search Messages" result dialog not working'
+  tag: fixed
+  bug: 1577987
+  bug2: 1577970
+- note: 'Command line -compose "attachment=" not working'
+  tag: fixed
+  bug: 1577117
+- note: 'Custom views not working'
+  tag: fixed
+  bug: 1578029
+- note: 'Issues with list of content types/actions for incoming attachments'
+  tag: fixed
+  bug: 1576950
+  bug2: 1576825
+  bug3: 1578591
+- note: 'Visual glitches: Quick Filter Bar tag buttons too tall,
+    missing scroll bar on Connection Setting subdialog,
+    LDAP server selection after "New", "Edit" and "Delete"'
+  tag: fixed
+  bug: 1577582
+  bug2: 1577259
+  bug3: 1576365
+- note: '"Learn More" links in Error Console not working'
+  tag: fixed
+  bug: 1427590
+- note: 'Calendar: Parts of CalDAV dialog not working'
+  tag: fixed
+  bug: 1577989
+- note: 'Calendar: Free/busy information in attendees dialog not loaded'
+  tag: fixed
+  bug: 1578196
+- note: 'Clicking mailto links in browser doesn''t open Thunderbird Write window (will be fixed in beta 2)'
+  tag: unresolved
+  bug: 1577706
+- note: 'Opening the properties of a folder may hang on Mac'
+  tag: unresolved
+  bug: 1574322
+# restore the following item for further betas.
+# - note: 'Calendar: Lightning not updating to corresponding beta NN version. Workaround: Set preference
+  # <code>extensions.lastAppVersion</code> to a value of 68.0 to force a refresh. Check version number in the
+  # Add-on Manager afterwards.'
+  # tag: unresolved
+  # bug: 1562573
+- note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
+    the Mozilla FTP server. A US-English version can be downloaded
+    [here](http://ftp.mozilla.org/pub/thunderbird/releases/70.0b1/en-US/gdata-provider.en-US.xpi).
+    The XPI file needs to be installed manually in Thunderbird.'
+  tag: unresolved
+  bug: 1516816
+- note: 'Chat: Twitter not working due to API changes at Twitter.com.'
+  tag: unresolved
+  bug: 1445778
