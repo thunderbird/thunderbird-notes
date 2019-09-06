@@ -6,6 +6,35 @@ release:
     -
 
 notes:
+- note: 'Allow selecting messages via selection boxes instead of classic selection.
+    "Select Messages" column needs to be selected via the thread pane''s column picker.'
+  tag: new
+  bug: 1017904
+- note: 'Message Display MailExtensions API with documentation
+    [here](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplay.html)'
+  tag: new
+  bug: 1575708
+- note: 'Thunderbird Options/Preferences tab redesigned and with new user interface'
+  tag: changed
+  bug: 1498332
+- note: 'Account creation dialog redesigned and with new user interface'
+  tag: changed
+  bug: 1551133
+- note: 'Dialog for folder compation (purging of deleted messages)'
+  tag: changed
+  bug: 716412
+- note: 'Thread pane column pickers stays open for selecting multiple columns until user clicks outside or hits escape'
+  tag: changed
+  bug: 545906
+- note: 'Add-ons manager with new user interface and notifications.
+    Note that manual installation of add-ons via drag-and-drop currently doesn''t work.'
+  tag: changed
+  bug: 1565180
+  bug: 1566347
+- note: 'Gmail doesn''t allow a non-standard trash folder.
+    Note: If message deletion on Gmail doesn''t work, manually select the Trash folder in the account settings.'
+  tag: fixed
+  bug: 1578148
 - note: 'Edit tag not working'
   tag: fixed
   bug: 1578148
