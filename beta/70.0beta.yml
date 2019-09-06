@@ -20,7 +20,7 @@ notes:
 - note: 'Account creation dialog redesigned and with new user interface'
   tag: changed
   bug: 1551133
-- note: 'Dialog for folder compation (purging of deleted messages)'
+- note: 'Dialog for folder compaction (purging of deleted messages)'
   tag: changed
   bug: 716412
 - note: 'Thread pane column pickers stays open for selecting multiple columns until user clicks outside or hits escape'
@@ -32,7 +32,8 @@ notes:
   bug: 1565180
   bug: 1566347
 - note: 'Gmail doesn''t allow a non-standard trash folder.
-    Note: If message deletion on Gmail doesn''t work, manually select the Trash folder in the account settings.'
+    Note: If message deletion on Gmail doesn''t work,
+    make sure the Trash folder is inside the [Gmail] folder and is selected in the account settings.'
   tag: fixed
   bug: 1578148
 - note: 'Edit tag not working'
@@ -63,9 +64,6 @@ notes:
   bug: 1577582
   bug2: 1577259
   bug3: 1576365
-- note: '"Learn More" links in Error Console not working'
-  tag: fixed
-  bug: 1427590
 - note: 'Calendar: Parts of CalDAV dialog not working'
   tag: fixed
   bug: 1577989
