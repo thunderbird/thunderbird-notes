@@ -58,6 +58,10 @@ notes:
 - note: 'Calendar: Parts of CalDAV dialog not working'
   tag: fixed
   bug: 1577989
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.1">security
+    fixes</a>
+  tag: fixed
 - note: 'Calendar: Free/busy information in attendees dialog not displayed/scrolled correctly'
   tag: unresolved
   bug: 1578196
