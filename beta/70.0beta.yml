@@ -1,9 +1,10 @@
 release:
   release_date: 2019-09-09
-  text: "**These release notes apply to Thunderbird version 70 beta 1 released September 11th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 70 beta 2 released September 22nd, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
+    - "Fixed in Beta 2"
 
 notes:
 - note: 'Allow selecting messages via selection boxes instead of classic selection.
@@ -76,21 +77,57 @@ notes:
 - note: 'Calendar: Free/busy information in attendees dialog not loaded'
   tag: fixed
   bug: 1578196
+# Beta 2 below.
+- note: 'Issues with attachments in IMAP messages'
+  tag: fixed
+  bug: 1579341
+  group: 2
+- note: 'Various theme fixes, especially dark theme improvements for Calendar'
+  tag: fixed
+  bug: 1579411
+  bug2: 1577310
+  bug2: 1577591
+  group: 2
+- note: 'Contrast between tag label and background not optimal'
+  tag: fixed
+  bug: 1579364
+  group: 2
+- note: 'Accepting auto-complete results via click didn''t move to the next line'
+  tag: fixed
+  bug: 1580950
+  group: 2
+- note: 'Account Central pane always loaded at start-up'
+  tag: fixed
+  bug: 1579575
+  group: 2
+- note: 'Setting a contact photo in the addressbook not working'
+  tag: fixed
+  bug: 1581253
+  group: 2
+- note: 'Manual installation of add-ons via drag & drop onto the Add-ons Manager not working'
+  tag: fixed
+  bug: 1566347
+  group: 2
+- note: '"Config Editor" button not removed if blocked by policy'
+  tag: fixed
+  bug: 1579019
+  group: 2
+# restore the following item for further betas.
+- note: 'Calendar: Lightning not updating to corresponding 70.0b2 version. Workaround: Set preference
+    <code>extensions.lastAppVersion</code> to a value of 69.0 to force a refresh. Check version number in the
+    Add-on Manager afterwards.'
+  tag: unresolved
+  bug: 1562573
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
   bug: 1574322
-# restore the following item for further betas.
-# - note: 'Calendar: Lightning not updating to corresponding beta NN version. Workaround: Set preference
-  # <code>extensions.lastAppVersion</code> to a value of 68.0 to force a refresh. Check version number in the
-  # Add-on Manager afterwards.'
+# gData not hosted by Thunderbird any more
+# - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
+  # the Mozilla FTP server. A US-English version can be downloaded
+  # [here](http://ftp.mozilla.org/pub/thunderbird/releases/70.0b1/en-US/gdata-provider.en-US.xpi).
+  # The XPI file needs to be installed manually in Thunderbird.'
   # tag: unresolved
-  # bug: 1562573
-- note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
-    the Mozilla FTP server. A US-English version can be downloaded
-    [here](http://ftp.mozilla.org/pub/thunderbird/releases/70.0b1/en-US/gdata-provider.en-US.xpi).
-    The XPI file needs to be installed manually in Thunderbird.'
-  tag: unresolved
-  bug: 1516816
+  # bug: 1516816
 - note: 'Chat: Twitter not working due to API changes at Twitter.com.'
   tag: unresolved
   bug: 1445778
