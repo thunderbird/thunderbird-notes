@@ -1,0 +1,66 @@
+release:
+  release_date: 2019-09-29
+  text: |
+    ** Thunderbird version 68.1.1 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as upgrade from Thunderbird version 60
+    or earlier. A future version 68.2 will provide updates from earlier versions.
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird.** Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+notes:
+- note: 'Issues with attachments in IMAP messages'
+  tag: fixed
+  bug: 1579341
+- note: 'Gmail accounts ignored a non-standard trash folder selection.
+    Note: If non-standard trash folder was selected previously in the account settings,
+    this setting will now take effect which may be unexpected.'
+  tag: fixed
+  bug: 1578148
+- note: 'Entering/pasting lists of recipients into the addressing widget or
+    mailing list not working reliably, especially when lists contained multiple commas
+    or semicolons'
+  tag: fixed
+  bug: 1575046
+  bug: 1336785
+  bug: 1059988
+- note: 'Edit mailing list not working'
+  tag: fixed
+  bug: 1575046 
+- note: 'Various theme fixes, especially dark theme improvements for Calendar'
+  tag: fixed
+  bug: 1579411
+  bug2: 1577310
+  bug3: 1577591
+  bug4: 1582564
+  bug5: 1582830
+- note: 'Contrast between tag label and background not optimal'
+  tag: fixed
+  bug: 1579364
+- note: 'Account Central pane always loaded at start-up'
+  tag: fixed
+  bug: 1579575
+- note: '"Config Editor" button not removed if blocked by policy'
+  tag: fixed
+  bug: 1579019
+- note: 'Calendar: Free/busy information in attendees dialog not scrolled correctly.
+    Note: Scroll arrows still not behaving correctly.'
+  tag: fixed
+  bug: 1579030
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.1.1">security
+    fixes</a>
+  tag: fixed
+- note: 'Calendar: Problems with WCAP provider'
+  tag: unresolved
+  bug: 1582746
