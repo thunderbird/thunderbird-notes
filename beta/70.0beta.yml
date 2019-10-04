@@ -1,10 +1,11 @@
 release:
   release_date: 2019-09-09
-  text: "**These release notes apply to Thunderbird version 70 beta 2 released September 22nd, 2019.**"
+  text: "**These release notes apply to Thunderbird version 70 beta 3 released October 4th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
 - note: 'Allow selecting messages via selection boxes instead of classic selection.
@@ -112,8 +113,52 @@ notes:
   tag: fixed
   bug: 1579019
   group: 2
+# Beta 3 below.
+- note: 'Visual glitches: Missing context menu in filter, downloads and password manager dialogs,
+    unwanted scrollbars and cut-off text in Account Manager,
+    incorrect colors in Calendar MiniMonth and agenda scrollbars, theme issues on Windows 7'
+  tag: fixed
+  bug: 1584720
+  bug2: 1584697
+  bug3: 1582830
+  bug4: 1585300
+  bug4: 1584487
+  group: 3
+- note: 'Some attachments couldn''t be opened in messages originating from MS Outlook 2016'
+  tag: fixed
+  bug: 1584383
+  group: 3
+- note: 'Address book import form CSV'
+  tag: fixed
+  bug: 1584026
+  group: 3
+- note: 'Performance problem in message body search'
+  tag: fixed
+  bug: 1584558
+  group: 3
+- note: 'Ctrl+Enter to send a message would open an attachment if the attachment pane had focus'
+  tag: fixed
+  bug: 1578450
+  group: 3
+- note: 'Template selection for "Reply with Template"'
+  tag: fixed
+  bug: 1584122
+  group: 3
+- note: 'Calendar: Issues with "Today Pane" start-up'
+  tag: fixed
+  bug: 1582746
+  group: 3
+- note: 'Calendar: Glitches with custom repeat and reminder number input'
+  tag: fixed
+  bug: 1583340
+  bug: 1583098
+  group: 3
+- note: 'Calendar: Problems with WCAP provider'
+  tag: fixed
+  bug: 1582746
+  group: 3
 # restore the following item for further betas.
-- note: 'Calendar: Lightning not updating to corresponding 70.0b2 version. Workaround: Set preference
+- note: 'Calendar: Lightning not updating to corresponding 70.0b3 version. Workaround: Set preference
     <code>extensions.lastAppVersion</code> to a value of 69.0 to force a refresh. Check version number in the
     Add-on Manager afterwards.'
   tag: unresolved
