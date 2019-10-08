@@ -1,6 +1,15 @@
-pyyaml==3.12
+pyyaml==3.12 \
+    --hash=sha256:16b20e970597e051997d90dc2cddc713a2876c47e3d92d59ee198700c5427736
+MarkupSafe==0.23 \
+    --hash=sha256:a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b56ea8cdc7b871c3
+argh==0.24.1 \
+    --hash=sha256:4980eb11339c9954885b8e44a1e39a4a1c114b738a7d8942c08494f4902f82a9
 Jinja2==2.10.1 \
     --hash=sha256:065c4f02ebe7f7cf559e49ee5a95fb800a9e4528727aec6f24402a5374c65013 \
     --hash=sha256:14dd6caf1527abb21f08f86c784eac40853ba93edb79552aa1e4b8aef1b61c7b
-markdown==2.6.11
-watchdog==0.8.3
+markdown==2.6.11 \
+    --hash=sha256:9ba587db9daee7ec761cfc656272be6aabe2ed300fece21208e4aab2e457bc8f
+watchdog==0.8.3 \
+    --hash=sha256:7e65882adb7746039b6f3876ee174952f8eaaa34491ba34333ddf1fe35de4162
+pathtools==0.1.1 \
+    --hash=sha256:e75273d89ae70c37ec939745117df34908873a845618117e9ddfae59e147901a
