@@ -1,0 +1,52 @@
+release:
+  release_date: 2019-10-11
+  text: |
+    ** Thunderbird version 68.1.2 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as upgrade from Thunderbird version 60
+    or earlier. A future version 68.2 will provide updates from earlier versions.
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird.** Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+notes:
+- note: 'Visual glitches: Missing context menu in filter, downloads, password manager and Config Editor search boxes,
+    unwanted scrollbars and cut-off text in Account Manager,
+    incorrect colors in Calendar agenda scrollbars, theme issues on Windows 7'
+  tag: fixed
+  bug: 1584720
+  bug2: 1584697
+  bug3: 1582830
+  bug4: 1585300
+  bug5: 1584487
+- note: 'Some attachments couldn''t be opened in messages originating from MS Outlook 2016'
+  tag: fixed
+  bug: 1584383
+- note: 'Address book import form CSV'
+  tag: fixed
+  bug: 1584026
+- note: 'Performance problem in message body search'
+  tag: fixed
+  bug: 1584558
+- note: 'Ctrl+Enter to send a message would open an attachment if the attachment pane had focus'
+  tag: fixed
+  bug: 1578450
+- note: 'Calendar: Issues with "Today Pane" start-up'
+  tag: fixed
+  bug: 1582746
+- note: 'Calendar: Glitches with custom repeat and reminder number input'
+  tag: fixed
+  bug: 1583340
+  bug: 1583098
+- note: 'Calendar: Problems with WCAP provider'
+  tag: fixed
+  bug: 1582746
