@@ -1,11 +1,12 @@
 release:
   release_date: 2019-09-09
-  text: "**These release notes apply to Thunderbird version 70 beta 3 released October 4th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 70 beta 4 released October 18th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
+    - "Fixed in Beta 4"
 
 notes:
 - note: 'Allow selecting messages via selection boxes instead of classic selection.
@@ -157,8 +158,22 @@ notes:
   tag: fixed
   bug: 1582746
   group: 3
+# Beta 4 below.
+- note: 'Better visual feedback for unread messages when using the dark theme'
+  tag: fixed
+  bug: 1588000
+  group: 4
+- note: 'Various issues when editing mailing lists'
+  tag: fixed
+  bug: 1584211
+  bug2: 1587587
+  group: 4
+- note: 'Integration with macOS addressbook and notifications not working after introduction of notarization'
+  tag: fixed
+  bug: 1586617
+  group: 4
 # restore the following item for further betas.
-- note: 'Calendar: Lightning not updating to corresponding 70.0b3 version. Workaround: Set preference
+- note: 'Calendar: Lightning not updating to corresponding 70.0b4 version. Workaround: Set preference
     <code>extensions.lastAppVersion</code> to a value of 69.0 to force a refresh. Check version number in the
     Add-on Manager afterwards.'
   tag: unresolved
