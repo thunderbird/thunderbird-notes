@@ -17,7 +17,7 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: '[Message Display WebExtensionAPI](https://thunderbird-webextensions.readthedocs.io/en/68/messageDisplay.html)'
+- note: '[Message Display WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/68/messageDisplay.html)'
   tag: new
   bug: 1575708
 - note: 'Message Search WebExtension API'
