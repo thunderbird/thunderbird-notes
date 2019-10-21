@@ -20,7 +20,7 @@ notes:
 - note: '[Message Display WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/68/messageDisplay.html)'
   tag: new
   bug: 1575708
-- note: 'Message Search WebExtension API'
+- note: '[Message Search WebExtension API]( https://thunderbird-webextensions.readthedocs.io/en/68/messages.html#query-queryinfo)'
   tag: new
   bug: 1531317
 - note: 'Better visual feedback for unread messages when using the dark theme'
@@ -33,13 +33,16 @@ notes:
 - note: 'Integration with macOS addressbook and notifications not working after introduction of notarization'
   tag: fixed
   bug: 1586617
+- note: 'Application windows not maintaining their size after restart'
+  tag: fixed
+  bug: 1580420
 - note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
     Note: If your profile is still not recognised, selected it by visiting about:profiles
     in the Troubleshooting Information.'
   tag: fixed
   bug: 1587067
-- note: 'When using a language pack, names of standard folders weren''t localized'
-  tag: fixed
+- note: 'When using a language pack, names of standard folders aren''t localized (will be fixed in TB 68.2.1)'
+  tag: unresolved
   bug: 1575512
 - note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or
     switch off option "Query OSCP responder servers" in the certificate settings in advanced options.'
