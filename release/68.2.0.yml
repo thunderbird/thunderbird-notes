@@ -1,5 +1,5 @@
 release:
-  release_date: 2019-10-24
+  release_date: 2019-10-22
   text: |
     ** Thunderbird version 68.2.0 provides an automatic update from Thunderbird version 60.**
     If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
