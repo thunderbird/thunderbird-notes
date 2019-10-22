@@ -1,0 +1,47 @@
+release:
+  release_date: 2019-10-26
+  text: "**These release notes apply to Thunderbird version 71 beta 1 released October 26th, 2019.**"
+  import_system_requirements: '68.0'
+  groups:
+    -
+
+notes:
+- note: 'Improved "Recent" folder list for "Move to" and "Copy to" in message context menu'
+  tag: changed
+  bug: 949135
+- note: 'Address books are now stored as SQLite databases. Existing address books in
+    MAB format (using a Mork database) will be converted.'
+  tag: changed
+  bug: 1572324
+  bug2: 1576525
+  bug3: 1581765
+- note: 'Application windows not maintaining their size after restart'
+  tag: fixed
+  bug: 1580420
+- note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
+    Note: If your profile is still not recognised, selected it by visiting about:profiles
+    in the Troubleshooting Information.'
+  tag: fixed
+  bug: 1587067
+- note: 'When using a language pack, names of standard folders aren''t localized'
+  tag: fixed
+  bug: 1575512
+# restore the following item for further betas.
+# - note: 'Calendar: Lightning not updating to corresponding 70.0b4 version. Workaround: Set preference
+  # <code>extensions.lastAppVersion</code> to a value of 69.0 to force a refresh. Check version number in the
+  # Add-on Manager afterwards.'
+  # tag: unresolved
+  # bug: 1562573
+- note: 'Opening the properties of a folder may hang on Mac'
+  tag: unresolved
+  bug: 1574322
+# gData not hosted by Thunderbird any more
+# - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
+  # the Mozilla FTP server. A US-English version can be downloaded
+  # [here](http://ftp.mozilla.org/pub/thunderbird/releases/70.0b1/en-US/gdata-provider.en-US.xpi).
+  # The XPI file needs to be installed manually in Thunderbird.'
+  # tag: unresolved
+  # bug: 1516816
+- note: 'Chat: Twitter not working due to API changes at Twitter.com.'
+  tag: unresolved
+  bug: 1445778
