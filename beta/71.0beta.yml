@@ -6,6 +6,9 @@ release:
     -
 
 notes:
+- note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
+  tag: new
+  bug: 1531597
 - note: 'Improved "Recent" folder list for "Move to" and "Copy to" in message context menu'
   tag: changed
   bug: 949135
@@ -15,9 +18,19 @@ notes:
   bug: 1572324
   bug2: 1576525
   bug3: 1581765
+- note: 'Choosing a language for the user interface (multilingual UI) is now enabled
+    (but ATN doesn''t supply language packs for beta versions)'
+  tag: changed
+  bug: 1590206
+- note: 'Calendar storage access is now asynchronous to improve performance'
+  tag: changed
+  bug: 501689
 - note: 'Application windows not maintaining their size after restart'
   tag: fixed
   bug: 1580420
+- note: 'Selected or unread messages not shown in the correct color in the thread pane (message list) under some circumstances'
+  tag: fixed
+  bug: 1585765
 - note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
     Note: If your profile is still not recognised, selected it by visiting about:profiles
     in the Troubleshooting Information.'
