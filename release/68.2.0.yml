@@ -41,6 +41,10 @@ notes:
     in the Troubleshooting Information.'
   tag: fixed
   bug: 1587067
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.2">security
+    fixes</a>
+  tag: fixed
 - note: 'When using a language pack, names of standard folders aren''t localized (will be fixed in TB 68.2.1)'
   tag: unresolved
   bug: 1575512
