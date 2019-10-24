@@ -1,6 +1,6 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 1 released October 26th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 1 released October 24th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
@@ -48,6 +48,10 @@ notes:
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
   bug: 1574322
+- note: 'When creating a chat account, some details, like the password, may get lost.
+    Workaround: Add those details again later in the account settings.'
+  tag: unresolved
+  bug: 1591148
 # gData not hosted by Thunderbird any more
 # - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
   # the Mozilla FTP server. A US-English version can be downloaded
