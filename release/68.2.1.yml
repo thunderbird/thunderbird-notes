@@ -46,6 +46,12 @@ notes:
 - note: 'Chat: Extended context menu on Instant messaging status dialog (Show Accounts)'
   tag: fixed
   bug: 1591506
+- note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
+    updated during the upgrade process. They will however be updated during the add-on update
+    check. It is of course possible to reinstall combatible add-on via the Add-ons Manager
+    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+  tag: unresolved
+  bug: 1574183
 - note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or
     switch off option "Query OSCP responder servers" in the certificate settings in advanced options.'
   tag: unresolved
