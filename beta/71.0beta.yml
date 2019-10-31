@@ -1,9 +1,10 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 1 released October 24th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 2 released October 31st, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
+    - "Fixed in Beta 2"
 
 notes:
 - note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
@@ -39,19 +40,57 @@ notes:
 - note: 'When using a language pack, names of standard folders aren''t localized'
   tag: fixed
   bug: 1575512
+# Beta 2 below.
+- note: 'Problem with Google authentication (OAuth2)'
+  tag: fixed
+  bug: 1592407
+  group: 2
+- note: 'Incorrect background color for summary view in dark theme with dark system theme'
+  tag: fixed
+  bug: 1591531
+  group: 2
+- note: 'Mail account setup dialog resizing unexpectedly'
+  tag: fixed
+  bug: 1590503
+  group: 2
+- note: 'Various visual glitches: Conditions in filter editor not high enough,
+    folder location widget not showing folder name,
+    global POP inbox not showing folder name, problem with menubar customization'
+  tag: fixed
+  bug: 1590666
+  bug2: 1590113
+  bug3: 1590851
+  group: 2
+- note: 'Chat: Nickname not highlighted and textual smilies not replaced with emoticons'
+  tag: fixed
+  bug: 1591399
+  group: 2
+- note: 'Chat: When creating a chat account, some properties, like the password, not saved properly'
+  tag: fixed
+  bug: 1591148
+  group: 2
+- note: 'Chat: Extended context menu on Instant messaging status dialog (Show Accounts)'
+  tag: fixed
+  bug: 1591506
+  group: 2
+- note: 'Calendar: Various glitches: Drag and drop of events,
+    multiple identical notifications, toggles in Today Pane,
+    agenda items not styled properly'
+  tag: fixed
+  bug: 1590505
+  bug2: 1588694
+  bug3: 1590506
+  bug4: 1591553
+  group: 2
 # restore the following item for further betas.
-# - note: 'Calendar: Lightning not updating to corresponding 70.0b4 version. Workaround: Set preference
-  # <code>extensions.lastAppVersion</code> to a value of 69.0 to force a refresh. Check version number in the
-  # Add-on Manager afterwards.'
-  # tag: unresolved
-  # bug: 1562573
+- note: 'Calendar: Lightning not updating to corresponding 71.0b2 version. Workaround: Set preference
+    <code>extensions.lastAppVersion</code> to a value of 70.0 to force a refresh. Check version number in the
+    Add-on Manager afterwards.'
+  tag: unresolved
+  bug: 1562573
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
   bug: 1574322
-- note: 'When creating a chat account, some details, like the password, may get lost.
-    Workaround: Add those details again later in the account settings.'
-  tag: unresolved
-  bug: 1591148
 # gData not hosted by Thunderbird any more
 # - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
   # the Mozilla FTP server. A US-English version can be downloaded
