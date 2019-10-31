@@ -1,0 +1,53 @@
+release:
+  release_date: 2019-10-31
+  text: |
+    ** Thunderbird version 68.2.1 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+notes:
+- note: 'A language for the user interface can now be chosen in the advanced settings (multilingual UI)'
+  tag: new
+  bug: 1590206
+- note: 'Problem with Google authentication (OAuth2)'
+  tag: fixed
+  bug: 1592407
+- note: 'Selected or unread messages not shown in the correct color in the thread pane (message list)
+    under some circumstances'
+  tag: fixed
+  bug: 1585765
+- note: 'When using a language pack, names of standard folders weren''t localized'
+  tag: fixed
+  bug: 1575512
+- note: 'Address book default startup directory in preferences panel not persisted'
+  tag: fixed
+  bug: 1591364
+- note: 'Various visual glitches: Conditions in filter editor not high enough,
+    folder location widget not showing folder name,
+    problem with menubar customization, add-on home page links accumulating,
+    theme issues on Windows 7'
+  tag: fixed
+  bug: 1590666
+  bug2: 1590113
+  bug3: 1590851
+  bug4: 1591693
+  bug5: 1560476
+- note: 'Chat: Extended context menu on Instant messaging status dialog (Show Accounts)'
+  tag: fixed
+  bug: 1591506
+- note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or
+    switch off option "Query OSCP responder servers" in the certificate settings in advanced options.'
+  tag: unresolved
+  bug: 1576364
+
