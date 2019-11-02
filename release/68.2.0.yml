@@ -41,11 +41,6 @@ notes:
     in the Troubleshooting Information.'
   tag: fixed
   bug: 1587067
-- note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
-    Note: If your profile is still not recognised, selected it by visiting about:profiles
-    in the Troubleshooting Information.'
-  tag: fixed
-  bug: 1587067
 - note: Various
     <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.2">security
     fixes</a>
