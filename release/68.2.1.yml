@@ -43,6 +43,11 @@ notes:
   bug3: 1590851
   bug4: 1591693
   bug5: 1560476
+- note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
+    Note: If your profile is still not recognised, selected it by visiting about:profiles
+    in the Troubleshooting Information.'
+  tag: fixed
+  bug: 1587067
 - note: 'Chat: Extended context menu on Instant messaging status dialog (Show Accounts)'
   tag: fixed
   bug: 1591506
