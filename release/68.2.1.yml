@@ -52,7 +52,7 @@ notes:
   tag: fixed
   bug: 1591506
 - note: 'Then upgrading a 64bit version of Thunderbird version 60 to version 68,
-    a new profile file will be created.
+    a new profile will be created.
     Workaround: Select the correct profile by visiting about:profiles in the Troubleshooting Information.'
   tag: unresolved
   bug: 1593540
