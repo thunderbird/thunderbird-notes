@@ -44,7 +44,7 @@ notes:
   bug4: 1591693
   bug5: 1560476
 - note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
-    Note: If your profile is still not recognised, selected it by visiting about:profiles
+    Note: If your profile is still not recognised, select it by visiting about:profiles
     in the Troubleshooting Information.'
   tag: fixed
   bug: 1587067
@@ -53,7 +53,7 @@ notes:
   bug: 1591506
 - note: 'Then upgrading a 64bit version of Thunderbird version 60 to version 68,
     a new profile file will be created.
-    Workaround: selected the correct profile by visiting about:profiles in the Troubleshooting Information.'
+    Workaround: Select the correct profile by visiting about:profiles in the Troubleshooting Information.'
   tag: unresolved
   bug: 1593540
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
