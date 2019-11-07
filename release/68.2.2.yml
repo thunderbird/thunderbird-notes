@@ -1,0 +1,38 @@
+release:
+  release_date: 2019-11-07
+  text: |
+    ** Thunderbird version 68.2.2 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Thunderbird version 68.2.2 is a follow-up to version 68.2.1 to fix an upgrade problem.**
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+notes:
+- note: 'Then upgrading a 64bit version of Thunderbird version 60 to version 68,
+    the existing profile wasn''t recognized and a new profile was created.<br>
+    Note: If your profile is still not recognized, select it by visiting about:profiles
+    in the Troubleshooting Information.'
+  tag: fixed
+  bug: 1593540
+- note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
+    updated during the upgrade process. They will however be updated during the add-on update
+    check. It is of course possible to reinstall combatible add-on via the Add-ons Manager
+    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+  tag: unresolved
+  bug: 1574183
+- note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or
+    switch off option "Query OSCP responder servers" in the certificate settings in advanced options.'
+  tag: unresolved
+  bug: 1576364
+
