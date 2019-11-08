@@ -26,7 +26,7 @@ notes:
 - note: 'Dialog for folder compaction (purging of deleted messages)'
   tag: changed
   bug: 716412
-- note: 'Thread pane column pickers stays open for selecting multiple columns until user clicks outside or hits escape'
+- note: 'Thread pane column picker stays open for selecting multiple columns until user clicks outside or hits escape'
   tag: changed
   bug: 545906
 - note: 'Add-ons manager with new user interface and notifications.
