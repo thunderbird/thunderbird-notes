@@ -1,10 +1,11 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 2 released October 31st, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 3 released November 10th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
+    - "Changed and Fixed in Beta 3"
 
 notes:
 - note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
@@ -82,8 +83,35 @@ notes:
   bug3: 1590506
   bug4: 1591553
   group: 2
+# Beta 3 below.
+- note: 'Address book column picker stays open for selecting multiple columns until user clicks outside or hits escape'
+  tag: changed
+  bug: 1592393
+  group: 3
+- note: 'Icons of attachments in the attachment pane of the Write window not always correct'
+  tag: fixed
+  bug: 1593280
+  group: 3
+- note: 'Contact age calculation in address book not correct'
+  tag: fixed
+  bug: 1592536
+  group: 3
+- note: 'Toolbar buttons of add-ons in the menubar not shown after startup'
+  tag: fixed
+  bug: 1584160
+  group: 3
+- note: 'LDAP lookup not working when SSL was enabled. LDAP search not working when
+    "All Address Books" was selected.'
+  tag: fixed
+  bug: 1576364
+  bug2: 1593347
+  group: 3
+- note: 'Chat: Unable to send messages using XMPP'
+  tag: fixed
+  bug: 1592505
+  group: 3
 # restore the following item for further betas.
-- note: 'Calendar: Lightning not updating to corresponding 71.0b2 version. Workaround: Set preference
+- note: 'Calendar: Lightning not updating to corresponding 71.0b3 version. Workaround: Set preference
     <code>extensions.lastAppVersion</code> to a value of 70.0 to force a refresh. Check version number in the
     Add-on Manager afterwards.'
   tag: unresolved
