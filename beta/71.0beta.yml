@@ -1,11 +1,11 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 3 released November 10th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 3 released November 15th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
-    - "Changed and Fixed in Beta 3"
+    - "New, Changed and Fixed in Beta 3"
 
 notes:
 - note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
@@ -84,6 +84,14 @@ notes:
   bug4: 1591553
   group: 2
 # Beta 3 below.
+- note: 'Navigation buttons are now available in content tabs, for example those opened via an add-on search'
+  tag: new
+  bug: 787683
+  group: 3
+- note: 'During email account setup the "Configure manually" button is now available immediately'
+  tag: changed
+  bug: 1590636
+  group: 3
 - note: 'Address book column picker stays open for selecting multiple columns until user clicks outside or hits escape'
   tag: changed
   bug: 1592393
@@ -109,6 +117,10 @@ notes:
 - note: 'Chat: Unable to send messages using XMPP'
   tag: fixed
   bug: 1592505
+  group: 3
+- note: 'Chat: Account reordering via drag-and-drop not working on Instant messaging status dialog (Show Accounts)'
+  tag: fixed
+  bug: 1591505
   group: 3
 # restore the following item for further betas.
 - note: 'Calendar: Lightning not updating to corresponding 71.0b3 version. Workaround: Set preference
