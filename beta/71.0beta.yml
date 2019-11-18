@@ -1,6 +1,6 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 3 released November 15th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 3 released November 18th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
@@ -95,6 +95,10 @@ notes:
 - note: 'Address book column picker stays open for selecting multiple columns until user clicks outside or hits escape'
   tag: changed
   bug: 1592393
+  group: 3
+- note: '"New email" icon in Windows systray changed from in-tray with arrow to envelope'
+  tag: changed
+  bug: 1594200
   group: 3
 - note: 'Icons of attachments in the attachment pane of the Write window not always correct'
   tag: fixed
