@@ -1,11 +1,12 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 3 released November 18th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 4 released November XXth, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
     - "New, Changed and Fixed in Beta 3"
+    - "Fixed in Beta 4"
 
 notes:
 - note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
@@ -126,8 +127,24 @@ notes:
   tag: fixed
   bug: 1591505
   group: 3
+- note: 'Address book: poor response time when entering an address for auto-completion'
+  tag: fixed
+  bug: 1597163
+  group: 4
+- note: 'Address book: dragging contacts from one address book to another may fail'
+  tag: fixed
+  bug: 1595059
+  group: 4
+- note: 'Calendar: start-up failed if the application menu is not on the calendar toolbars'
+  tag: fixed
+  bug: 1588516
+  group: 4
+- note: 'Dark theme: hard to differentiate unread messages from tagged messages'
+  tag: fixed
+  bug: 1596702
+  group: 4
 # restore the following item for further betas.
-- note: 'Calendar: Lightning not updating to corresponding 71.0b3 version. Workaround: Set preference
+- note: 'Calendar: Lightning not updating to corresponding 71.0b4 version. Workaround: Set preference
     <code>extensions.lastAppVersion</code> to a value of 70.0 to force a refresh. Check version number in the
     Add-on Manager afterwards.'
   tag: unresolved
