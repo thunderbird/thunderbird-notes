@@ -6,7 +6,7 @@ release:
     -
     - "Fixed in Beta 2"
     - "New, Changed and Fixed in Beta 3"
-    - "Fixed in Beta 4"
+    - "Changed and Fixed in Beta 4"
 
 notes:
 - note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
@@ -127,21 +127,30 @@ notes:
   tag: fixed
   bug: 1591505
   group: 3
-- note: 'Address book: poor response time when entering an address for auto-completion'
+# Beta 4 below.
+- note: 'In dark theme no longer shows unread messages in blue to distinguish from tagged messages'
+  tag: changed
+  bug: 1596702
+  group: 4
+- note: 'Poor response time when entering an address for auto-completion'
   tag: fixed
   bug: 1597163
   group: 4
-- note: 'Address book: dragging contacts from one address book to another may fail'
+- note: 'Dragging contacts from one address book to another sometimes failed'
   tag: fixed
   bug: 1595059
   group: 4
-- note: 'Calendar: start-up failed if the application menu is not on the calendar toolbars'
+- note: 'Scam link confirmation panel not working'
+  tag: fixed
+  bug: 1596413
+  group: 4
+- note: 'In Write window, the Link Properties dialog wasn''t showing named anchors in context menu'
+  tag: fixed
+  bug: 1593629
+  group: 4
+- note: 'Calendar: Start-up failed if the application menu is not on the calendar toolbars'
   tag: fixed
   bug: 1588516
-  group: 4
-- note: 'Dark theme: hard to differentiate unread messages from tagged messages'
-  tag: fixed
-  bug: 1596702
   group: 4
 # restore the following item for further betas.
 - note: 'Calendar: Lightning not updating to corresponding 71.0b4 version. Workaround: Set preference
