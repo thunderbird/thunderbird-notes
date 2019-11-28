@@ -128,7 +128,7 @@ notes:
   bug: 1591505
   group: 3
 # Beta 4 below.
-- note: 'In dark theme no longer shows unread messages in blue to distinguish from tagged messages'
+- note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged messages'
   tag: changed
   bug: 1596702
   group: 4
