@@ -1,6 +1,6 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 4 released November XXth, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 4 released November 29th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
