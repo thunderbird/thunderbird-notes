@@ -20,7 +20,7 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: 'Then upgrading a 64bit version of Thunderbird version 60 to version 68,
+- note: 'When upgrading a 64bit version of Thunderbird version 60 to version 68,
     the existing profile wasn''t recognized and a new profile was created.<br>
     Note: If your profile is still not recognized, select it by visiting about:profiles
     in the Troubleshooting Information.'

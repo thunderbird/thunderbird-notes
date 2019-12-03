@@ -1,0 +1,56 @@
+release:
+  release_date: 2019-12-03
+  text: |
+    ** Thunderbird version 68.3 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+notes:
+- note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
+  tag: new
+  bug: 1531597
+- note: 'Navigation buttons are now available in content tabs, for example those opened via an add-on search'
+  tag: new
+  bug: 787683
+- note: '"New email" icon in Windows systray changed from in-tray with arrow to envelope'
+  tag: changed
+  bug: 1594200
+- note: 'Icons of attachments in the attachment pane of the Write window not always correct'
+  tag: fixed
+  bug: 1593280
+- note: 'Toolbar buttons of add-ons in the menubar not shown after startup'
+  tag: fixed
+  bug: 1584160
+- note: 'LDAP lookup not working when SSL was enabled. LDAP search not working when
+    "All Address Books" was selected.'
+  tag: fixed
+  bug: 1576364
+- note: 'Scam link confirmation panel not working'
+  tag: fixed
+  bug: 1596413
+- note: 'In Write window, the Link Properties dialog wasn''t showing named anchors in context menu'
+  tag: fixed
+  bug: 1593629
+- note: 'Calendar: Start-up failed if the application menu is not on the calendar toolbars'
+  tag: fixed
+  bug: 1588516
+- note: 'Chat: Account reordering via drag-and-drop not working on Instant messaging status dialog (Show Accounts)'
+  tag: fixed
+  bug: 1591505
+- note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
+    updated during the upgrade process. They will however be updated during the add-on update
+    check. It is of course possible to reinstall combatible add-on via the Add-ons Manager
+    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+  tag: unresolved
+  bug: 1574183
