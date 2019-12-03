@@ -1,7 +1,7 @@
 release:
   release_date: 2019-12-03
   text: |
-    ** Thunderbird version 68.3 provides an automatic update from Thunderbird version 60.**
+    ** Thunderbird version 68.3.0 provides an automatic update from Thunderbird version 60.**
     If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
     be updated to match the new version of Thunderbird. Refer to this
     [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
