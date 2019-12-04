@@ -12,12 +12,6 @@ notes:
 - note: 'Themes can be previewed in the Add-On Manager'
   tag: new
   bug: 1598903
-- note: 'OpenPGP keyring protected using an automatic password that is itself protected with the master password'
-  tag: new
-  bug: 1599233
-- note: 'OpenPGP keys can be imported from an email attachment'
-  tag: new
-  bug: 1600147
 - note: 'Icons displaying encrypted and signed emails look vertically stretched'
   tag: fixed
   bug: 1598611
@@ -49,6 +43,3 @@ notes:
 - note: 'WebExtension toolbar button badges not displayed'
   tag: unresolved
   bug: 1599275
-- note: 'Chat: Twitter not working due to API changes at Twitter.com.'
-  tag: unresolved
-  bug: 1445778
