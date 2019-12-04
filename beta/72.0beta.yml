@@ -12,16 +12,13 @@ notes:
 - note: 'Themes can be previewed in the Add-On Manager'
   tag: new
   bug: 1598903
-- note: 'Icons displaying encrypted and signed emails look vertically stretched'
+- note: 'Icons displaying encrypted and signed emails looked vertically stretched'
   tag: fixed
   bug: 1598611
-- note: 'WebExtension toolbar icons are displayed too small'
+- note: 'WebExtension toolbar icons were displayed too small'
   tag: fixed
   bug: 1598955
-- note: 'Chat: Auto-reconnect to IRC servers not working in some cases'
-  tag: fixed
-  bug: 1594323
-- note: 'Folder tree and address book tree lack vibrancy in Mac OS X'
+- note: 'Folder tree and address book tree lacked vibrancy in Mac OS X'
   tag: fixed
   bug: 1595408
 # restore the following item for further betas.
