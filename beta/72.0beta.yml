@@ -1,9 +1,10 @@
 release:
-  release_date: 2019-12-04
-  text: "**These release notes apply to Thunderbird version 72 beta 1 released December 4th, 2019.**"
+  release_date: 2019-12-13
+  text: "**These release notes apply to Thunderbird version 72 beta 2 released December 13th, 2019.**"
   import_system_requirements: '68.0'
   groups:
     -
+    - "Fixed in Beta 2"
 
 notes:
 - note: '[Raw message source available to WebExtensions](https://thunderbird-webextensions.readthedocs.io/en/latest/messages.html#getraw-messageid)'
@@ -21,22 +22,30 @@ notes:
 - note: 'Folder tree and address book tree lacked vibrancy in Mac OS X'
   tag: fixed
   bug: 1595408
-# restore the following item for further betas.
-# - note: 'Calendar: Lightning not updating to corresponding 71.0b4 version. Workaround: Set preference
-#     <code>extensions.lastAppVersion</code> to a value of 70.0 to force a refresh. Check version number in the
-#     Add-on Manager afterwards.'
-#   tag: unresolved
-#   bug: 1562573
+- note: 'Searching LDAP address book crashed'
+  tag: fixed
+  bug: 1601389
+  group: 2
+- note: 'Calendar: last day of long-running events was not shown'
+  tag: fixed
+  bug: 1572964
+  group: 2
+- note: 'Calendar: event attendee dialog was not displayed correctly'
+  tag: fixed
+  bug: 1596938
+  group: 2
+- note: 'Calendar: tasks due today were not listed in bold'
+  tag: fixed
+  bug: 1598885
+  group: 2
+- note: 'Calendar: Lightning not updating to corresponding 72.0b2 version. Workaround: Set preference
+    <code>extensions.lastAppVersion</code> to a value of 71.0 to force a refresh. Check version number in the
+    Add-on Manager afterwards.'
+  tag: unresolved
+  bug: 1562573
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
   bug: 1574322
-# gData not hosted by Thunderbird any more
-# - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
-  # the Mozilla FTP server. A US-English version can be downloaded
-  # [here](http://ftp.mozilla.org/pub/thunderbird/releases/70.0b1/en-US/gdata-provider.en-US.xpi).
-  # The XPI file needs to be installed manually in Thunderbird.'
-  # tag: unresolved
-  # bug: 1516816
 - note: 'WebExtension toolbar button badges not displayed'
   tag: unresolved
   bug: 1599275
