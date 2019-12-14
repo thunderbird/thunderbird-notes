@@ -22,19 +22,24 @@ notes:
 - note: 'Folder tree and address book tree lacked vibrancy in Mac OS X'
   tag: fixed
   bug: 1595408
-- note: 'Searching LDAP address book crashed'
+- note: 'Searching LDAP address book crashed in some circumstances'
   tag: fixed
   bug: 1601389
   group: 2
-- note: 'Calendar: last day of long-running events was not shown'
+- note: 'Message navigation with backward and forward buttons did not work in some circumstances'
+  tag: fixed
+  bug: 533504
+  bug2: 1600500
+  group: 2
+- note: 'Calendar: Last day of long-running events was not shown'
   tag: fixed
   bug: 1572964
   group: 2
-- note: 'Calendar: event attendee dialog was not displayed correctly'
+- note: 'Calendar: Event attendee dialog was not displayed correctly'
   tag: fixed
   bug: 1596938
   group: 2
-- note: 'Calendar: tasks due today were not listed in bold'
+- note: 'Calendar: Tasks due today were not listed in bold'
   tag: fixed
   bug: 1598885
   group: 2
