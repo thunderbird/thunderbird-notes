@@ -54,7 +54,7 @@ notes:
   tag: fixed
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
     updated during the upgrade process. They will however be updated during the add-on update
-    check. It is of course possible to reinstall combatible add-on via the Add-ons Manager
+    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
     or via [addons.thunderbird.net](https://addons.thunderbird.net).'
   tag: unresolved
   bug: 1574183
