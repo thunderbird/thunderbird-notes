@@ -24,9 +24,6 @@ notes:
   tag: fixed
   bug: 533504
   bug2: 1600500
-- note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged messages'
-  tag: changed
-  bug: 1596702
 - note: 'WebExtension toolbar icons were displayed too small'
   tag: fixed
   bug: 1598955
@@ -36,6 +33,9 @@ notes:
 - note: 'Calendar: Last day of long-running events was not shown'
   tag: fixed
   bug: 1572964
+- note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged messages'
+  tag: changed
+  bug: 1596702
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
     updated during the upgrade process. They will however be updated during the add-on update
     check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
