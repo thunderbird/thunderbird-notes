@@ -1,5 +1,5 @@
 release:
-  release_date: 2019-12-18
+  release_date: 2019-12-16
   text: |
     ** Thunderbird version 68.3.1 provides an automatic update from Thunderbird version 60.**
     If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
@@ -20,6 +20,10 @@ notes:
 - note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged messages'
   tag: changed
   bug: 1596702
+- note: 'Account setup is now using client side DNS MX lookup instead of relying on a server.'
+  tag: changed
+  bug: 1349337
+  bug2: 1573564
 - note: 'Searching LDAP address book crashed in some circumstances'
   tag: fixed
   bug: 1601389
