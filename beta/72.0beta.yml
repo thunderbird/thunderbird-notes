@@ -1,10 +1,11 @@
 release:
-  release_date: 2019-12-13
-  text: "**These release notes apply to Thunderbird version 72 beta 2 released December 13th, 2019.**"
+  release_date: 2019-12-04
+  text: "**These release notes apply to Thunderbird version 72 beta 3 released January 3rd, 2020.**"
   import_system_requirements: '68.0'
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
 - note: '[Raw message source available to WebExtensions](https://thunderbird-webextensions.readthedocs.io/en/latest/messages.html#getraw-messageid)'
@@ -43,7 +44,19 @@ notes:
   tag: fixed
   bug: 1598885
   group: 2
-- note: 'Calendar: Lightning not updating to corresponding 72.0b2 version. Workaround: Set preference
+- note: 'Message display pane showed garbled content if the layout changed'
+  tag: fixed
+  bug: 265393
+  group: 3
+- note: 'Account auto-configuration offered Exchange ahead of IMAP/SMTP if both were available'
+  tag: fixed
+  bug: 1592258
+  group: 3
+- note: 'Account auto-configuration not rechecked after a password change'
+  tag: fixed
+  bug: 1600954
+  group: 3
+- note: 'Calendar: Lightning not updating to corresponding 72.0b3 version. Workaround: Set preference
     <code>extensions.lastAppVersion</code> to a value of 71.0 to force a refresh. Check version number in the
     Add-on Manager afterwards.'
   tag: unresolved
