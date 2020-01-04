@@ -5,7 +5,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
-    - "Fixed in Beta 3"
+    - "Changed and Fixed in Beta 3"
 
 notes:
 - note: '[Raw message source available to WebExtensions](https://thunderbird-webextensions.readthedocs.io/en/latest/messages.html#getraw-messageid)'
@@ -44,17 +44,36 @@ notes:
   tag: fixed
   bug: 1598885
   group: 2
-- note: 'Message display pane showed garbled content if the layout changed'
+- note: 'Various improvements when setting up an account for a Microsoft Exchange server:
+    Now offers IMAP/SMTP if availabe, better detection for Office 365 accounts; re-run configuration after password change.'
+  tag: changed
+  bug: 1592258
+  bug2: 1598861
+  bug3: 1600954
+  group: 3
+- note: 'After changing view layout, the message display pane showed garbled content under some circumstances'
   tag: fixed
   bug: 265393
   group: 3
-- note: 'Account auto-configuration offered Exchange ahead of IMAP/SMTP if both were available'
+- note: 'Certificate Manager not working'
   tag: fixed
-  bug: 1592258
+  bug: 1603537
   group: 3
-- note: 'Account auto-configuration not rechecked after a password change'
+- note: 'Various theme changes to achieve "pixel perfection": Unread icon, "no results" icon,
+    paragraph format and font selector, background of folder summary tooltip'
   tag: fixed
-  bug: 1600954
+  bug: 1605612
+  bug2: 1605613
+  bug3: 1606249
+  bug4: 1602941
+  group: 3
+- note: 'Chat: For XMPP accounts, no user icons were shown for users with avatar'
+  tag: fixed
+  bug: 1592422
+  group: 3
+- note: 'Chat: Contact and conversation context menus not working'
+  tag: fixed
+  bug: 1601573
   group: 3
 - note: 'Calendar: Lightning not updating to corresponding 72.0b3 version. Workaround: Set preference
     <code>extensions.lastAppVersion</code> to a value of 71.0 to force a refresh. Check version number in the
