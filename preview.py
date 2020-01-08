@@ -42,6 +42,14 @@ def url(*args, **kwargs):
     return ''
 
 
+def donate_url(*args, **kwargs):
+    return ''
+
+
+def svg(name, *args, **kwargs):
+    return '<img src="https://stage.thunderbird.net/media/svg/{0}.svg">'.format(name)
+
+
 def f(s, *args, **kwargs):
     return s.format(*args, **kwargs)
 
@@ -63,6 +71,8 @@ class Handler(FileSystemEventHandler):
             loader=jinja2.FileSystemLoader(os.path.abspath('./template')),
         )
         self.jinja_env.globals.update(url=url)
+        self.jinja_env.globals.update(svg=svg)
+        self.jinja_env.globals.update(donate_url=donate_url)
         self.jinja_env.filters['markdown'] = safe_markdown
         self.jinja_env.filters['f'] = f
         self.jinja_env.filters['l10n_format_date'] = l10n_format_date
