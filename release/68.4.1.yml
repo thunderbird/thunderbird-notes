@@ -1,0 +1,38 @@
+release:
+  release_date: 2020-01-13
+  text: |
+    ** Thunderbird version 68.4.1 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+notes:
+- note: 'Account auto-configuration not rechecked after a password change'
+  tag: fixed
+  bug: 1600954
+- note: 'Account auto-configuration offered Exchange ahead of IMAP/SMTP if both were available'
+  tag: fixed
+  bug: 1592258
+- note: 'Message display pane showed garbled content if the layout changed'
+  tag: fixed
+  bug: 265393
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.4">security
+    fixes</a>
+  tag: fixed
+- note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
+    updated during the upgrade process. They will however be updated during the add-on update
+    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
+    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+  tag: unresolved
+  bug: 1574183
