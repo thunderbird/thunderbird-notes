@@ -2,6 +2,7 @@ release:
   release_date: 2020-01-09
   text: |
     ** Thunderbird version 68.4.1 provides an automatic update from Thunderbird version 60.**
+    Note that Thunderbird version 68.4.0 was skipped.
     If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
     be updated to match the new version of Thunderbird. Refer to this
     [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
@@ -30,6 +31,19 @@ notes:
     <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.4">security
     fixes</a>
   tag: fixed
+- note: 'Various theme changes to achieve "pixel perfection": Unread icon, "no results" icon,
+    paragraph format and font selector, background of folder summary tooltip'
+  tag: fixed
+  bug: 1605612
+  bug2: 1605613
+  bug3: 1606249
+  bug4: 1602941
+- note: 'Tags were lost on messages in shared IMAP folders under some circumstances'
+  tag: fixed
+  bug: 1596371
+- note: 'Calendar: Event attendee dialog was not displayed correctly'
+  tag: fixed
+  bug: 1604797
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
     updated during the upgrade process. They will however be updated during the add-on update
     check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
