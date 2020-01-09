@@ -45,7 +45,7 @@ notes:
   bug: 1598885
   group: 2
 - note: 'Various improvements when setting up an account for a Microsoft Exchange server:
-    Now offers IMAP/SMTP if availabe, better detection for Office 365 accounts; re-run configuration after password change.'
+    Now offers IMAP/SMTP if available, better detection for Office 365 accounts; re-run configuration after password change.'
   tag: changed
   bug: 1592258
   bug2: 1598861

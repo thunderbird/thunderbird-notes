@@ -17,13 +17,13 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: 'Account auto-configuration not rechecked after a password change'
-  tag: fixed
-  bug: 1600954
-- note: 'Account auto-configuration offered Exchange ahead of IMAP/SMTP if both were available'
-  tag: fixed
+- note: 'Various improvements when setting up an account for a Microsoft Exchange server:
+    Now offers IMAP/SMTP if available, better detection for Office 365 accounts; re-run configuration after password change.'
+  tag: changed
   bug: 1592258
-- note: 'Message display pane showed garbled content if the layout changed'
+  bug2: 1598861
+  bug3: 1600954
+- note: 'After changing view layout, the message display pane showed garbled content under some circumstances'
   tag: fixed
   bug: 265393
 - note: Various
