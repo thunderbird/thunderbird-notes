@@ -24,13 +24,15 @@ notes:
   bug: 1592258
   bug2: 1598861
   bug3: 1600954
+- note: 'Attachments with one or more spaces in their names couldn''t be opened under some circumstances'
+  tag: fixed
+  bug: 1601905
 - note: 'After changing view layout, the message display pane showed garbled content under some circumstances'
   tag: fixed
   bug: 265393
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.4">security
-    fixes</a>
+- note: 'Tags were lost on messages in shared IMAP folders under some circumstances'
   tag: fixed
+  bug: 1596371
 - note: 'Various theme changes to achieve "pixel perfection": Unread icon, "no results" icon,
     paragraph format and font selector, background of folder summary tooltip'
   tag: fixed
@@ -38,12 +40,13 @@ notes:
   bug2: 1605613
   bug3: 1606249
   bug4: 1602941
-- note: 'Tags were lost on messages in shared IMAP folders under some circumstances'
-  tag: fixed
-  bug: 1596371
 - note: 'Calendar: Event attendee dialog was not displayed correctly'
   tag: fixed
   bug: 1604797
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.4.1">security
+    fixes</a>
+  tag: fixed
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
     updated during the upgrade process. They will however be updated during the add-on update
     check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
