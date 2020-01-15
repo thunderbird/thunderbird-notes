@@ -1,0 +1,64 @@
+release:
+  release_date: 2020-01-17
+  text: "**These release notes apply to Thunderbird version 73 beta 1 released January 17th, 2020.**"
+  import_system_requirements: '68.0'
+  groups:
+    -
+
+notes:
+- note: 'Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields for multiple comma-separated addresses instead of one line per address'
+  tag: new
+  bug: 440377
+- note: 'Chat: IRC echo-message capability'
+  tag: new
+  bug: 1601102
+- note: 'WebExtension messages.update function extended to mark messages as junk or not junk.'
+  tag: new
+  bug: 1598332
+- note: 'Option to send messages without the Content-Language header'
+  tag: new
+  bug: 1370217
+- note: 'Offline replication of LDAP address books now uses an SQLite database instead of a Mork database'
+  tag: changed
+  bug: 1606285
+- note: 'Support for creating Mork-based address books removed'
+  tag: changed
+  bug: 1606284
+- note: 'Calendar: Web Calendar Access Protocol (WCAP) support removed'
+  tag: changed
+  bug: 1579020
+- note: 'Tags were lost on messages in shared IMAP folders under some circumstances'
+  tag: fixed
+  bug: 1596371
+- note: 'Automatic address book conversion from Mork to SQLite failed in some circumstances'
+  tag: fixed
+  bug: 1591811
+- note: 'Setting the "Junk" keyword on a message did not clear the "NonJunk" keyword, and vice-versa'
+  tag: fixed
+  bug: 1602628
+- note: 'Calendar: When filtering tasks both by group and by task name, only the task name filter was applied'
+  tag: fixed
+  bug: 1602652
+- note: 'Various theme changes to achieve "pixel perfection": Signing and encryption icons in the composer status bar'
+  tag: fixed
+  bug: 1603497
+- note: 'WebExtension messages.update API failed to change message tags in IMAP folders'
+  tag: fixed
+  bug: 1605915
+
+# restore the following item for further betas.
+# - note: 'Calendar: Lightning not updating to corresponding 73.0b2 version. Workaround: Set preference
+#     <code>extensions.lastAppVersion</code> to a value of 72.0 to force a refresh. Check version number in the
+#     Add-on Manager afterwards.'
+#   tag: unresolved
+#   bug: 1562573
+- note: 'Opening the properties of a folder may hang on Mac'
+  tag: unresolved
+  bug: 1574322
+- note: 'WebExtension toolbar button badges not displayed'
+  tag: unresolved
+  bug: 1599275
+- note: 'Offline replication of LDAP databases may fail to replace an earlier copy. Workaround: remove or rename
+      any existing database (probably named <code>ldap.sqlite</code>) from your profile before starting replication'
+  tag: unresolved
+  bug: 1608304
