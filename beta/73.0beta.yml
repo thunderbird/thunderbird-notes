@@ -6,18 +6,15 @@ release:
     -
 
 notes:
-- note: 'Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields for multiple comma-separated addresses instead of one line per address'
+- note: 'Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields for multiple addresses instead of one line per address'
   tag: new
   bug: 440377
-- note: 'Chat: IRC echo-message capability'
-  tag: new
-  bug: 1601102
 - note: 'WebExtension messages.update function extended to mark messages as junk or not junk.'
   tag: new
   bug: 1598332
-- note: 'Option to send messages without the Content-Language header'
+- note: 'Chat: IRC echo-message capability'
   tag: new
-  bug: 1370217
+  bug: 1601102
 - note: 'Offline replication of LDAP address books now uses an SQLite database instead of a Mork database'
   tag: changed
   bug: 1606285
@@ -27,6 +24,9 @@ notes:
 - note: 'Calendar: Web Calendar Access Protocol (WCAP) support removed'
   tag: changed
   bug: 1579020
+- note: 'Attachments with one or more spaces in their names couldn''t be opened under some circumstances'
+  tag: fixed
+  bug: 1601905
 - note: 'Tags were lost on messages in shared IMAP folders under some circumstances'
   tag: fixed
   bug: 1596371
@@ -36,15 +36,15 @@ notes:
 - note: 'Setting the "Junk" keyword on a message did not clear the "NonJunk" keyword, and vice-versa'
   tag: fixed
   bug: 1602628
-- note: 'Calendar: When filtering tasks both by group and by task name, only the task name filter was applied'
-  tag: fixed
-  bug: 1602652
-- note: 'Various theme changes to achieve "pixel perfection": Signing and encryption icons in the composer status bar'
+- note: 'Signing and encryption icons in the composer status bar'
   tag: fixed
   bug: 1603497
 - note: 'WebExtension messages.update API failed to change message tags in IMAP folders'
   tag: fixed
   bug: 1605915
+- note: 'Calendar: When filtering tasks both by group and by task name, only the task name filter was applied'
+  tag: fixed
+  bug: 1602652
 
 # restore the following item for further betas.
 # - note: 'Calendar: Lightning not updating to corresponding 73.0b2 version. Workaround: Set preference
