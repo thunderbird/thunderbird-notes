@@ -1,0 +1,45 @@
+release:
+  release_date: 2020-01-24
+  text: |
+    ** Thunderbird version 68.4.2 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+notes:
+- note: 'Calendar: Task and Event tree colours adjusted for the dark theme'
+  tag: changed
+  bug: 1608344
+- note: 'Retrieval of S/MIME certificates from LDAP failed'
+  tag: fixed
+  bug: 1604773
+- note: 'Address-parsing crash on some IMAP servers when mail.imap.use_envelope_cmd is set'
+  tag: fixed
+  bug: 1609690
+- note: 'Incorrect forwarding of HTML messages caused SMTP servers to respond with a timeout'
+  tag: fixed
+  bug: 1222046
+- note: 'Calendar: Various parts of the calendar UI stopped working when a second Thunderbird window opened'
+  tag: fixed
+  bug: 1608407
+
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.4.2">security
+    fixes</a>
+  tag: fixed
+- note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
+    updated during the upgrade process. They will however be updated during the add-on update
+    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
+    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+  tag: unresolved
+  bug: 1574183

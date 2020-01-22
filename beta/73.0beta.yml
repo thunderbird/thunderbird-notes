@@ -24,6 +24,9 @@ notes:
 - note: 'Calendar: Web Calendar Access Protocol (WCAP) support removed'
   tag: changed
   bug: 1579020
+- note: 'Calendar: Task and Event tree colours adjusted for the dark theme'
+  tag: changed
+  bug: 1608344
 - note: 'Attachments with one or more spaces in their names couldn''t be opened under some circumstances'
   tag: fixed
   bug: 1601905
@@ -42,9 +45,18 @@ notes:
 - note: 'WebExtension messages.update API failed to change message tags in IMAP folders'
   tag: fixed
   bug: 1605915
+- note: 'Retrieval of S/MIME certificates from LDAP failed'
+  tag: fixed
+  bug: 1604773
+- note: 'Incorrect forwarding of HTML messages caused SMTP servers to respond with a timeout'
+  tag: fixed
+  bug: 1222046
 - note: 'Calendar: When filtering tasks both by group and by task name, only the task name filter was applied'
   tag: fixed
   bug: 1602652
+- note: 'Calendar: Various parts of the calendar UI stopped working when a second Thunderbird window opened'
+  tag: fixed
+  bug: 1608407
 
 # restore the following item for further betas.
 # - note: 'Calendar: Lightning not updating to corresponding 73.0b2 version. Workaround: Set preference
