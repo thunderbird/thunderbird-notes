@@ -23,7 +23,7 @@ notes:
 - note: 'Retrieval of S/MIME certificates from LDAP failed'
   tag: fixed
   bug: 1604773
-- note: 'Address-parsing crash on some IMAP servers when mail.imap.use_envelope_cmd is set'
+- note: 'Address-parsing crash on some IMAP servers when preference mail.imap.use_envelope_cmd was set'
   tag: fixed
   bug: 1609690
 - note: 'Incorrect forwarding of HTML messages caused SMTP servers to respond with a timeout'
