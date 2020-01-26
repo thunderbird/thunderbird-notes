@@ -21,6 +21,9 @@ notes:
 - note: 'Support for creating Mork-based address books removed'
   tag: changed
   bug: 1606284
+- note: 'TLS 1.0 and 1.1 disabled'
+  tag: changed
+  bug: 1606733
 - note: 'Calendar: Web Calendar Access Protocol (WCAP) support removed'
   tag: changed
   bug: 1579020
