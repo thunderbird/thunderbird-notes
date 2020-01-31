@@ -70,7 +70,7 @@ notes:
   tag: new
   bug: 1538409
   group: 2
- note: 'Focus jumping with recipient pills in addressing widget'
+- note: 'Focus jumping with recipient pills in addressing widget'
   tag: fixed
   bug: 1603166
   group: 2
