@@ -102,11 +102,6 @@ notes:
   tag: fixed
   bug: 1611882
   group: 2
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.3">security
-    fixes</a>
-  tag: fixed
-  group: 2
 # restore the following item for further betas.
 - note: 'Calendar: Lightning not updating to corresponding 73.0b2 version. Workaround: Set preference
     <code>extensions.lastAppVersion</code> to a value of 72.0 to force a refresh. Check version number in the
