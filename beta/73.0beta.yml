@@ -4,7 +4,7 @@ release:
   import_system_requirements: '68.0'
   groups:
     -
-    - "Fixed in Beta 2"
+    - "New and Fixed in Beta 2"
 
 notes:
 - note: 'Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields for multiple addresses instead of one line per address'
@@ -62,45 +62,41 @@ notes:
   tag: fixed
   bug: 1608407
 # beta 2 follows
-- note: 'Support for CLIENTID SMTP/IMAP capabilities'
+- note: 'Support for Client Identity IMAP/SMTP Service Extension'
   tag: new
   bug: 1532388
   group: 2
-- note: 'Implement oAuth authentication for POP accounts'
+- note: 'Support for OAuth 2.0 authentication for POP3 accounts'
   tag: new
   bug: 1538409
   group: 2
-- note: 'Fixed msgHeader crash on threaded view'
-  tag: fixed
-  bug: 615111
-  group: 2
-- note: 'Calendar: Cannot remove color for default categories'
-  tag: fixed
-  bug: 1584853
-  group: 2
-- note: 'Fixed focus jumping with recipient pills in compose'
+ note: 'Focus jumping with recipient pills in addressing widget'
   tag: fixed
   bug: 1603166
   group: 2
-- note: 'Don''t show the To: field if the Newsgroup or Follow-up fields are in use'
+- note: 'To: field shown if the Newsgroup or Follow-up fields were in use'
   tag: fixed
   bug: 1607526
   group: 2
-- note: 'Fixed startup crash when mail.imap.use_envelope_cmd is set true'
+- note: 'Address-parsing crash on some IMAP servers when preference mail.imap.use_envelope_cmd was set'
   tag: fixed
   bug: 1609690
   group: 2
-- note: 'Calendar: Today pane does not retain width between sessions'
-  tag: fixed
-  bug: 1610207
-  group: 2
-- note: 'Insert Characters and Symbols dialog displays XML parsing error'
+- note: 'In the Write window "Insert > Characters and Symbols" dialog not working'
   tag: fixed
   bug: 1610746
   group: 2
-- note: 'Composer message header fields are not dark in system dark theme'
+- note: 'In the Write window message header fields were not dark in system dark theme'
   tag: fixed
   bug: 1610927
+  group: 2
+- note: 'Calendar: Could remove color for default categories'
+  tag: fixed
+  bug: 1584853
+  group: 2
+- note: 'Calendar: Today pane did not retain width between sessions'
+  tag: fixed
+  bug: 1610207
   group: 2
 - note: 'Chat: OTR fingerprint verify dialog displays XML parsing error'
   tag: fixed
@@ -112,11 +108,11 @@ notes:
   tag: fixed
   group: 2
 # restore the following item for further betas.
-# - note: 'Calendar: Lightning not updating to corresponding 73.0b2 version. Workaround: Set preference
-#     <code>extensions.lastAppVersion</code> to a value of 72.0 to force a refresh. Check version number in the
-#     Add-on Manager afterwards.'
-#   tag: unresolved
-#   bug: 1562573
+- note: 'Calendar: Lightning not updating to corresponding 73.0b2 version. Workaround: Set preference
+    <code>extensions.lastAppVersion</code> to a value of 72.0 to force a refresh. Check version number in the
+    Add-on Manager afterwards.'
+  tag: unresolved
+  bug: 1562573
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
   bug: 1574322
