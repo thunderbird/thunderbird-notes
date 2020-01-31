@@ -90,7 +90,7 @@ notes:
   tag: fixed
   bug: 1610927
   group: 2
-- note: 'Calendar: Could remove color for default categories'
+- note: 'Calendar: Could not remove color for default categories'
   tag: fixed
   bug: 1584853
   group: 2
