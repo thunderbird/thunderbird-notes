@@ -1,9 +1,10 @@
 release:
-  release_date: 2020-01-17
-  text: "**These release notes apply to Thunderbird version 73 beta 1 released January 17th, 2020.**"
+  release_date: 2020-02-04
+  text: "**These release notes apply to Thunderbird version 73 beta 2 released February 4th, 2020.**"
   import_system_requirements: '68.0'
   groups:
     -
+    - "Fixed in Beta 2"
 
 notes:
 - note: 'Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields for multiple addresses instead of one line per address'
@@ -60,7 +61,56 @@ notes:
 - note: 'Calendar: Various parts of the calendar UI stopped working when a second Thunderbird window opened'
   tag: fixed
   bug: 1608407
-
+# beta 2 follows
+- note: 'Support for CLIENTID SMTP/IMAP capabilities'
+  tag: new
+  bug: 1532388
+  group: 2
+- note: 'Implement oAuth authentication for POP accounts'
+  tag: new
+  bug: 1538409
+  group: 2
+- note: 'Fixed msgHeader crash on threaded view'
+  tag: fixed
+  bug: 615111
+  group: 2
+- note: 'Calendar: Cannot remove color for default categories'
+  tag: fixed
+  bug: 1584853
+  group: 2
+- note: 'Fixed focus jumping with recipient pills in compose'
+  tag: fixed
+  bug: 1603166
+  group: 2
+- note: 'Don''t show the To: field if the Newsgroup or Follow-up fields are in use'
+  tag: fixed
+  bug: 1607526
+  group: 2
+- note: 'Fixed startup crash when mail.imap.use_envelope_cmd is set true'
+  tag: fixed
+  bug: 1609690
+  group: 2
+- note: 'Calendar: Today pane does not retain width between sessions'
+  tag: fixed
+  bug: 1610207
+  group: 2
+- note: 'Insert Characters and Symbols dialog displays XML parsing error'
+  tag: fixed
+  bug: 1610746
+  group: 2
+- note: 'Composer message header fields are not dark in system dark theme'
+  tag: fixed
+  bug: 1610927
+  group: 2
+- note: 'Chat: OTR fingerprint verify dialog displays XML parsing error'
+  tag: fixed
+  bug: 1611882
+  group: 2
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.3">security
+    fixes</a>
+  tag: fixed
+  group: 2
 # restore the following item for further betas.
 # - note: 'Calendar: Lightning not updating to corresponding 73.0b2 version. Workaround: Set preference
 #     <code>extensions.lastAppVersion</code> to a value of 72.0 to force a refresh. Check version number in the
