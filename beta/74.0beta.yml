@@ -1,0 +1,49 @@
+release:
+  release_date: 2020-02-13
+  text: "**These release notes apply to Thunderbird version 74 beta 1 released February 13, 2020.**"
+  import_system_requirements: '68.0'
+  groups:
+    -
+
+
+notes:
+- note: 'Use offline store when copying messages from IMAP to local folders'
+  tag: fixed
+  bug: 505456
+- note: 'Improve UI of search results tab'
+  tag: changed
+  bug: 1022228
+- note: 'SMTP timeout when forwarding message via filter'
+  tag: fixed
+  bug: 1222046
+- note: 'Chat: Add tooltips for Matrix participants'
+  tag: new
+  bug: 1378823
+- note: 'Restore partial updates'
+  tag: fixed
+  bug: 1410512
+- note: 'Mailextensions: Allow commands.update() to disable a command'
+  tag: changed
+  bug: 1475043
+- note: 'Do not collapse thread when opening news message in a new window'
+  tag: fixed
+  bug: 1526765
+- note: 'Mailextensions: API to block sending a message from compose window'
+  tag: new
+  bug: 1532528
+- note: 'Calendar: Last day of multiple-day event not displayed'
+  tag: fixed
+  bug: 1572964
+- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird 60'
+  tag: fixed
+  bug: 1574183
+- note: 'Mailextensions: API to interact with message in compose window'
+  tag: new
+  bug: 1590121
+- note: 'Chat: Avatars no longer displayed in tooltips'
+  tag: fixed
+  bug: 1592422
+- note: 'Display username and host in password dialog titlebar'
+  tag: changed
+  bug: 1594178
+
