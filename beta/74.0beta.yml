@@ -1,49 +1,86 @@
 release:
   release_date: 2020-02-13
-  text: "**These release notes apply to Thunderbird version 74 beta 1 released February 13, 2020.**"
+  text: |
+    **These notes apply to Thunderbird version 74 beta 1 released February 13, 2020.**
+
+    **Thunderbird 74 integrates Calendar into Thunderbird.**
+
+    If you have installed Lightning, Thunderbird's calendar add-on, it will be automatically
+    removed. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **Thunderbird 74 removes the "legacy" API used by some extensions.**
   import_system_requirements: '68.0'
   groups:
     -
 
-
 notes:
-- note: 'Use offline store when copying messages from IMAP to local folders'
-  tag: fixed
-  bug: 505456
-- note: 'Improve UI of search results tab'
-  tag: changed
-  bug: 1022228
-- note: 'SMTP timeout when forwarding message via filter'
-  tag: fixed
-  bug: 1222046
 - note: 'Chat: Add tooltips for Matrix participants'
   tag: new
   bug: 1378823
-- note: 'Restore partial updates'
-  tag: fixed
-  bug: 1410512
-- note: 'Mailextensions: Allow commands.update() to disable a command'
-  tag: changed
-  bug: 1475043
-- note: 'Do not collapse thread when opening news message in a new window'
-  tag: fixed
-  bug: 1526765
 - note: 'Mailextensions: API to block sending a message from compose window'
   tag: new
   bug: 1532528
-- note: 'Calendar: Last day of multiple-day event not displayed'
-  tag: fixed
-  bug: 1572964
-- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird 60'
-  tag: fixed
-  bug: 1574183
 - note: 'Mailextensions: API to interact with message in compose window'
   tag: new
   bug: 1590121
+- note: 'Calendar: Integrate into Thunderbird and remove old extension'
+  tag: changed
+  bug: 1608610
+- note: 'Improve UI of search results tab'
+  tag: changed
+  bug: 1022228
+- note: 'Move account manager to a tab'
+  tag: changed
+  bug: 1610445
+- note: 'Mailextensions: Allow commands.update() to disable a command'
+  tag: changed
+  bug: 1475043
+- note: 'Mailextensions: Allow browser.query.messages to query by tag'
+  tag: changed
+  bug: 1600547
+- note: 'Mailextensions: Change folder enumeration to return tree structure rather than list'
+  tag: changed
+  bug: 1606584
+- note: 'Mailextensions: Expose message "Junk" status to addons'
+  tag: changed
+  bug: 1610457
+- note: 'Mailextensions: Disable "legacy" addons'
+  tag: changed
+  bug: 1614237
+- note: 'Use offline store when copying messages from IMAP to local folders'
+  tag: fixed
+  bug: 505456
+- note: 'SMTP timeout when forwarding message via filter'
+  tag: fixed
+  bug: 1222046
+- note: 'Restore building partial updates'
+  tag: fixed
+  bug: 1410512
+- note: 'Do not collapse thread when opening news message in a new window'
+  tag: fixed
+  bug: 1526765
+- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird 60'
+  tag: fixed
+  bug: 1574183
+- note: 'Opening the properties of a folder may hang on Mac'
+  tag: fixed
+  bug: 1574322
+- note: 'Unlock master password at startup time'
+  tag: fixed
+  bug: 1610390
+- note: 'Offline replication of LDAP databases may fail to replace an earlier copy'
+  tag: fixed
+  bug: 1608304
+- note: 'Calendar: Last day of multiple-day event not displayed'
+  tag: fixed
+  bug: 1572964
 - note: 'Chat: Avatars no longer displayed in tooltips'
   tag: fixed
   bug: 1592422
-- note: 'Display username and host in password dialog titlebar'
-  tag: changed
-  bug: 1594178
+# restore the following item for further betas.
+- note: 'WebExtension toolbar button badges not displayed'
+  tag: unresolved
+  bug: 1599275
 
