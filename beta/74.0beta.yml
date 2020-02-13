@@ -3,14 +3,13 @@ release:
   text: |
     **These notes apply to Thunderbird version 74 beta 1 released February 13, 2020.**
 
-    **Thunderbird 74 integrates Calendar into Thunderbird.**
+    **Thunderbird 74 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
 
-    If you have installed Lightning, Thunderbird's calendar add-on, it will be automatically
-    removed. Refer to this
+    If you have installed Lightning, it will be automatically removed. Refer to this
     [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
     in case of problems.
 
-    **Thunderbird 74 removes the "legacy" API used by some extensions.**
+    **Thunderbird 74 no longer supports "legacy" extensions.**
   import_system_requirements: '68.0'
   groups:
     -
@@ -31,7 +30,7 @@ notes:
     are no longer supported.**'
   tag: changed
   bug: 1614237
-- note: 'Calendar: The Lightning Calendar add-on is now integrated into Thunderbird'
+- note: 'Calendar: The Lightning calendar add-on is now integrated into Thunderbird'
   tag: changed
   bug: 1608610
 - note: 'Account Manager moved to a tab'
