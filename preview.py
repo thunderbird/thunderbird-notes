@@ -86,7 +86,7 @@ class Handler(FileSystemEventHandler):
         notes = ReleaseNotes()
         note = notes.notes.get(self.version)
         if not note:
-            print "Error: Can't find notes for version '{0}'.".format(self.version)
+            print("Error: Can't find notes for version '{0}'.".format(self.version))
             sys.exit(1)
         with open("preview.html", "wb") as f:
             o = self.template.render(**note)
@@ -98,7 +98,7 @@ class Handler(FileSystemEventHandler):
         delta = timestamp - self.updatetime
         if delta.seconds > 0:
             self.updatepreview()
-            print "{0}: Updated preview.html\n".format(timestamp.strftime("%H:%M:%S"))
+            print("{0}: Updated preview.html\n".format(timestamp.strftime("%H:%M:%S")))
             self.updatetime = datetime.datetime.now()
 
     def on_modified(self, event):
@@ -110,7 +110,7 @@ observer = Observer()
 for notedir in notes_dirs:
     observer.schedule(handler, path=notedir, recursive=False)
 observer.start()
-print "Updating preview.html every time data is modified, press Ctrl-C to end."
+print("Updating preview.html every time data is modified, press Ctrl-C to end.")
 try:
     while True:
         time.sleep(1)

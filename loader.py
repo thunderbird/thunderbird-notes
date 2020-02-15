@@ -21,7 +21,7 @@ class ReleaseNotes(object):
     def organize(self, notelist):
         """Organize the data from the .yml format into the variables that the template context expects."""
         organized_notelist = {}
-        for k, n in notelist.iteritems():
+        for k, n in notelist.items():
             n["new_features"] = []
             n["known_issues"] = []
             n["version"] = k
