@@ -1,7 +1,7 @@
 release:
-  release_date: 2020-02-13
+  release_date: 2020-02-17
   text: |
-    **These notes apply to Thunderbird version 74 beta 1 released February 13, 2020.**
+    **These notes apply to Thunderbird version 74 beta 1 released February 17, 2020.**
 
     **Thunderbird 74 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
 
@@ -81,7 +81,13 @@ notes:
 - note: 'Chat: Avatars not displayed in tooltips'
   tag: fixed
   bug: 1592422
+- note: '**For 74.0 beta 1, building Thunderbird requires --enable-calendar.**
+        The option will be removed in a future release.'
+  tag: unresolved
+  bug: 1612190
 - note: 'WebExtension toolbar button badges not displayed'
   tag: unresolved
   bug: 1599275
-
+- note: 'Chat: macOS users may not be able to connect to a server'
+  tag: unresolved
+  bug: 1615714
