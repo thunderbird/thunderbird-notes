@@ -13,7 +13,7 @@ release:
   import_system_requirements: '68.0'
   groups:
     -
-    - "Changed and Fixed in Beta 2"
+    - "Fixed in Beta 2"
 
 notes:
 - note: 'MailExtensions: API to block sending a message from compose window'
@@ -83,22 +83,21 @@ notes:
   tag: fixed
   bug: 1592422
 
-
 # beta 2 follows
-- note: 'Account manager UI refreshed'
-  tag: changed
-  bug: 1613758
-  group: 2
-- note: 'Long subject lines may not wrap when displayed'
+- note: 'Long subject lines did not wrap in message header'
   tag: fixed
   bug: 1616764
   group: 2
-- note: '**Starting with 74.0 beta 2, building Thunderbird with --enable-calendar is deprecated,
-        and should be removed from your mozconfig file.**'
+- note: 'Account Manager in tab not consistent with Options/Preferences in tab'
+  tag: fixed
+  bug: 1613758
+  group: 2
+- note: 'Calendar: Starting with 74.0 beta 2, building Thunderbird with --enable-calendar is deprecated,
+    and should be removed from your mozconfig file'
   tag: fixed
   bug: 1612190
   group: 2
-- note: 'Chat: macOS users may not be able to connect to a server'
+- note: 'Chat: macOS users were not be able to connect to a server'
   tag: fixed
   bug: 1615714
   group: 2
