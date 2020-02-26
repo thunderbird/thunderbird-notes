@@ -1,7 +1,7 @@
 release:
   release_date: 2020-02-17
   text: |
-    **These notes apply to Thunderbird version 74 beta 2 released February 26, 2020.**
+    **These notes apply to Thunderbird version 74 beta 2 released February 28, 2020.**
 
     **Thunderbird 74 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
 
@@ -13,7 +13,7 @@ release:
   import_system_requirements: '68.0'
   groups:
     -
-    - "Fixed in Beta 2"
+    - "Changed and Fixed in Beta 2"
 
 notes:
 - note: 'MailExtensions: API to block sending a message from compose window'
@@ -22,9 +22,6 @@ notes:
 - note: 'MailExtensions: API to interact with message in compose window'
   tag: new
   bug: 1590121
-- note: 'Chat: Matrix participants now show tooltips'
-  tag: new
-  bug: 1378823
 - note: '**Add-on support: As of version 74.0 beta, Thunderbird only supports
     MailExtensions and MailExtension Experiments.
     Restartless add-ons and non-restartless legacy add-ons using XUL overlays
@@ -84,6 +81,18 @@ notes:
   bug: 1592422
 
 # beta 2 follows
+- note: 'Display a popup when automatically generating a new profile'
+  tag: changed
+  bug: 1518632
+  group: 2
+- note: 'MailExtensions: Action APIs now provide tab and click information'
+  tag: changed
+  bug: 1617514
+  group: 2
+- note: 'MailExtensions: Allow composeAction to open popups from onBeforeSend'
+  tag: changed
+  bug: 1617742
+  group: 2
 - note: 'Long subject lines did not wrap in message header'
   tag: fixed
   bug: 1616764
