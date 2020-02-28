@@ -122,3 +122,6 @@ notes:
 - note: 'WebExtension toolbar button badges not displayed'
   tag: unresolved
   bug: 1599275
+- note: 'Address autocompletion may not work for some users'
+  tag: unresolved
+  bug: 1615468
