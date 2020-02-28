@@ -81,9 +81,9 @@ notes:
   bug: 1592422
 
 # beta 2 follows
-- note: 'Display a popup when automatically generating a new profile'
+- note: 'Thunderbird will now display a popup window when starting up on a new profile'
   tag: changed
-  bug: 1518632
+  bug: 1590036
   group: 2
 - note: 'MailExtensions: Action APIs now provide tab and click information'
   tag: changed
@@ -100,6 +100,15 @@ notes:
 - note: 'Account Manager in tab not consistent with Options/Preferences in tab'
   tag: fixed
   bug: 1613758
+  group: 2
+- note: '"Get New Messages for All Accounts" not working for OAuth2-authenticated IMAP accounts'
+  tag: fixed
+  bug: 1593611
+  group: 2
+- note: 'Searching in message bodies led to false negatives under some circumstances in
+    quoted-printable encoded HTML bodies'
+  tag: fixed
+  bug: 1614796
   group: 2
 - note: 'Calendar: Starting with 74.0 beta 2, building Thunderbird with --enable-calendar is deprecated,
     and should be removed from your mozconfig file'
