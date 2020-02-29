@@ -122,6 +122,6 @@ notes:
 - note: 'WebExtension toolbar button badges not displayed'
   tag: unresolved
   bug: 1599275
-- note: 'Address autocompletion may not work for some users'
+- note: 'Address auto-completion not working on Mac if the Mac address book is enabled (File > Use Mac OS X Address Book)'
   tag: unresolved
   bug: 1615468
