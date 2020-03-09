@@ -18,10 +18,10 @@ release:
   import_system_requirements: '68.0'
 
 notes:
-- note: 'Thunderbird will now display a popup window when starting up on a new profile'
+- note: 'Thunderbird now displays a popup window when starting up on a new profile'
   tag: new
   bug: 1590036
-- note: 'Provide partial updates for smaller downloads'
+- note: 'Thunderbird now provides partial updates resulting in smaller downloads'
   tag: changed
   bug: 1410512
 - note: 'Searching in message bodies led to false negatives under some circumstances in
