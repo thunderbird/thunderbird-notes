@@ -1,0 +1,33 @@
+release:
+  release_date: 2020-03-11
+  text: |
+    ** Thunderbird version 68.6.0 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+
+notes:
+- note: 'Thunderbird will now display a popup window when starting up on a new profile'
+  tag: new
+  bug: 1590036
+- note: 'Provide partial updates for smaller downloads'
+  tag: changed
+  bug: 1410512
+- note: 'Searching in message bodies led to false negatives under some circumstances in
+    quoted-printable encoded HTML bodies'
+  tag: fixed
+  bug: 1614796
+- note: '"Get New Messages for All Accounts" not working for OAuth2-authenticated IMAP accounts'
+  tag: fixed
+  bug: 1593611
