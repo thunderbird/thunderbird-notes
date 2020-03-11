@@ -1,0 +1,58 @@
+release:
+  release_date: 2020-03-17
+  text: |
+    **These notes apply to Thunderbird version 75 beta 1 released March 17, 2020.**
+
+    **Thunderbird 75 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
+
+    If you have installed Lightning, it will be automatically removed. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **As of Thunderbird 74, "legacy" extensions are no longer supported.**
+  import_system_requirements: '68.0'
+
+notes:
+- note: 'MailExtensions: API event for new message notifications'
+  bug: 1599380
+  tag: new
+- note: 'MailExtensions: Allow access to message body with browser.compose'
+  bug: 1613534
+  tag: changed
+- note: 'Moved To, CC, Bcc to pill context menu'
+  bug: 1609647
+  tag: changed
+- note: 'Images not rotated when composing a message'
+  bug: 1340927
+  tag: fixed
+- note: 'Extra recipients panel not keyboard accessible'
+  bug: 1612717
+  tag: fixed
+- note: 'Allow keyboard selection of recipient pills incrementally'
+  bug: 1615917
+  tag: fixed
+- note: 'Address pills created from an LDAP address book appeared in orange'
+  bug: 1609928
+  tag: fixed
+- note: 'Searching across multiple address books may not return complete results'
+  bug: 1617797
+  tag: fixed
+- note: 'Removing contacts from "All address books" view may fail'
+  bug: 1619157
+  tag: fixed
+- note: 'Verify button may not be enabled when subscribing to a feed'
+  bug: 1604873
+  tag: fixed
+- note: 'Moving feeds between accounts may fail'
+  bug: 1617268
+  tag: fixed
+- note: 'MailExtensions: browser.menus.overrideContext not working'
+  bug: 1608626
+  tag: fixed
+- note: 'Calendar: Hide UI elements when calendars are disabled'
+  bug: 1617786
+  tag: changed
+- note: 'Calendar: Menus appeared in message windows'
+  bug: 1620123
+  tag: fixed
+
