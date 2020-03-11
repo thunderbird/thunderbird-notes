@@ -31,3 +31,7 @@ notes:
 - note: '"Get New Messages for All Accounts" not working for OAuth2-authenticated IMAP accounts'
   tag: fixed
   bug: 1593611
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.6">security
+    fixes</a>
+  tag: fixed
