@@ -19,11 +19,11 @@ notes:
 - note: 'MailExtensions: API event for new message notifications'
   bug: 1599380
   tag: new
-- note: 'MailExtensions: Allow access to message body with browser.compose'
-  bug: 1613534
-  tag: changed
 - note: 'Moved To, CC, Bcc to pill context menu'
   bug: 1609647
+  tag: changed
+- note: 'MailExtensions: Allow access to message body with browser.compose'
+  bug: 1613534
   tag: changed
 - note: 'Calendar: Hide UI elements when calendars are disabled'
   bug: 1617786
@@ -31,7 +31,7 @@ notes:
 - note: 'Images not rotated when composing a message'
   bug: 1340927
   tag: fixed
-- note: 'Extra recipients panel not keyboard accessible'
+- note: 'Extra recipients panel not keyboard-accessible'
   bug: 1612717
   tag: fixed
 - note: 'Address pills created from an LDAP address book appeared in orange'
@@ -40,7 +40,7 @@ notes:
 - note: 'Searching across multiple address books sometimes returned incomplete results'
   bug: 1617797
   tag: fixed
-- note: 'Removing contacts from "All address books" view sometimes failed'
+- note: 'Removing contacts from "All Address Books" view sometimes failed'
   bug: 1619157
   tag: fixed
 - note: '"Verify" button was not always enabled when subscribing to a new feed'
