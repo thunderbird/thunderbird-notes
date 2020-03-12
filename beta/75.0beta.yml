@@ -13,7 +13,7 @@ release:
   import_system_requirements: '68.0'
 
 notes:
-- note: 'Allow incremental selection of recipient pills via keyboard'
+- note: 'Allow incremental selection of recipient pills with Ctrl+A'
   bug: 1615917
   tag: new
 - note: 'MailExtensions: API event for new message notifications'
