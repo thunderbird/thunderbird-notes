@@ -13,15 +13,14 @@ release:
   import_system_requirements: '68.0'
 
 notes:
-- note: 'Allow incremental selection of recipient pills with Ctrl+A'
+- note: 'Improvements of recipient pills: Allow incremental selection of recipient pills with Ctrl+A.
+    Added "Move to To/Cc/Bcc" to recipient pill context menu.'
   bug: 1615917
+  bug2: 1609647
   tag: new
 - note: 'MailExtensions: API event for new message notifications'
   bug: 1599380
   tag: new
-- note: 'Moved To, CC, Bcc to pill context menu'
-  bug: 1609647
-  tag: changed
 - note: 'MailExtensions: Allow access to message body with browser.compose'
   bug: 1613534
   tag: changed
