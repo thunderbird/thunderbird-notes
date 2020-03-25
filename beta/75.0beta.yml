@@ -79,3 +79,7 @@ notes:
   bug: 1622607
   tag: fixed
   group: 2
+
+- note: 'Printing does not work'
+  tag: unresolved
+  bug: 1620314
