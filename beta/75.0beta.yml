@@ -1,7 +1,7 @@
 release:
   release_date: 2020-03-13
   text: |
-    **These notes apply to Thunderbird version 75 beta 1 released March 13, 2020.**
+    **These notes apply to Thunderbird version 75 beta 2 released March 27, 2020.**
 
     **Thunderbird 75 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
 
@@ -11,6 +11,9 @@ release:
 
     **As of Thunderbird 74, "legacy" extensions are no longer supported.**
   import_system_requirements: '68.0'
+  groups:
+  -
+  - "Fixed in Beta 2"
 
 notes:
 - note: 'Improvements of recipient pills: Allow incremental selection of recipient pills with Ctrl+A.
@@ -55,3 +58,24 @@ notes:
   bug: 1620123
   tag: fixed
 
+# Beta 2 follows
+- note: 'Attachments with embedded NULL bytes did not always decode correctly'
+  bug: 1623896
+  tag: fixed
+  group: 2
+- note: 'Accessibility: Status bar was not detected by screenreaders'
+  bug: 1621287
+  tag: fixed
+  group: 2
+- note: 'MailExtensions: Did not prompt when requesting new permissions'
+  bug: 1620861
+  tag: fixed
+  group: 2
+- note: 'MailExtensions: Mailing lists did not expand before triggering onBeforeSend'
+  bug: 1619057
+  tag: fixed
+  group: 2
+- note: 'Chat: Account wizard did not properly save all options'
+  bug: 1622607
+  tag: fixed
+  group: 2
