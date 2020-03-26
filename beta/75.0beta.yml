@@ -87,3 +87,11 @@ notes:
 - note: 'Printing does not work'
   tag: unresolved
   bug: 1620314
+- note: 'Message composer not using correct fonts'
+  tag: unresolved
+  bug: 1622231
+  bug2: 1625218
+- note: 'Unable to export address book'
+  tag: unresolved
+  bug: 1624207
+
