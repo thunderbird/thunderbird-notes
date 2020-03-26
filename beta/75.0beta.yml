@@ -75,6 +75,10 @@ notes:
   bug: 1623896
   tag: fixed
   group: 2
+- note: "Calendar: Cancelled events didn't show with a line-through"
+  bug: 1621210
+  tag: fixed
+  group: 2
 - note: 'Chat: Account wizard did not properly save all options'
   bug: 1622607
   tag: fixed
