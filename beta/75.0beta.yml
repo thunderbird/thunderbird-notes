@@ -59,10 +59,6 @@ notes:
   tag: fixed
 
 # Beta 2 follows
-- note: 'Attachments with embedded NULL bytes did not always decode correctly'
-  bug: 1623896
-  tag: fixed
-  group: 2
 - note: 'Accessibility: Status bar was not detected by screenreaders'
   bug: 1621287
   tag: fixed
@@ -73,6 +69,10 @@ notes:
   group: 2
 - note: 'MailExtensions: Mailing lists did not expand before triggering onBeforeSend'
   bug: 1619057
+  tag: fixed
+  group: 2
+- note: 'Calendar: Invitations with embedded null bytes did not always decode correctly'
+  bug: 1623896
   tag: fixed
   group: 2
 - note: 'Chat: Account wizard did not properly save all options'
