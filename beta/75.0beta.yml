@@ -1,7 +1,7 @@
 release:
   release_date: 2020-03-13
   text: |
-    **These notes apply to Thunderbird version 75 beta 2 released March 26, 2020.**
+    **These notes apply to Thunderbird version 75 beta 3 released March 31, 2020.**
 
     **Thunderbird 75 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
 
@@ -14,6 +14,7 @@ release:
   groups:
   -
   - "Fixed in Beta 2"
+  - "Changed and Fixed in Beta 3"
 
 notes:
 - note: 'Improvements of recipient pills: Allow incremental selection of recipient pills with Ctrl+A.
@@ -84,9 +85,28 @@ notes:
   tag: fixed
   group: 2
 
-- note: 'Printing does not work'
-  tag: unresolved
+# Beta 3 follows
+- note: 'Hardware acceleration was disabled by default'
+  tag: changed
+  bug: 1623265
+  group: 3
+- note: 'Printing did not work. **This is a temporary fix that disables the print
+      progress dialog.**'
+  tag: fixed
   bug: 1620314
+  group: 3
+- note: 'Autodiscover: Standard protocols were not given priority over Exchange'
+  tag: fixed
+  bug: 1611405
+  group: 3
+- note: 'Language packs were not available for download'
+  tag: fixed
+  bug: 1625337
+  group: 3
+
+- note: 'Print progress dialog is disabled.'
+  tag: unresolved
+  bug: 1625299
 - note: 'Message composer not using correct fonts'
   tag: unresolved
   bug: 1622231
