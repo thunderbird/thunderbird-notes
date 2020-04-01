@@ -1,7 +1,7 @@
 release:
   release_date: 2020-03-13
   text: |
-    **These notes apply to Thunderbird version 75 beta 3 released March 31, 2020.**
+    **These notes apply to Thunderbird version 75 beta 3 released April 1, 2020.**
 
     **Thunderbird 75 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
 
@@ -111,6 +111,10 @@ notes:
   tag: unresolved
   bug: 1622231
   bug2: 1625218
+- note: 'Message composer colors are unreadable when using dark mode on macOS
+and Linux. *Workaround: Set the OS to use a Light theme.*'
+  tag: unresolved
+  bug: 1625837
 - note: 'Unable to export address book'
   tag: unresolved
   bug: 1624207
