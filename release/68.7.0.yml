@@ -1,0 +1,57 @@
+release:
+  release_date: 2020-04-09
+  text: |
+    ** Thunderbird version 68.7.0 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+
+notes:
+- note: 'MailExtensions: Raw message source available to MailExtensions'
+  tag: new
+  bug: 1525274
+- note: 'MailExtensions: messages.update function extended to mark messages as junk or not junk'
+  tag: changed
+  bug: 1598332
+- note: 'MailExtensions: browser.compose.begin functions expanded mailing lists'
+  tag: changed
+  bug: 1612480
+- note: 'Various improvements to account setup when connecting to an Exchange server'
+  tag: fixed
+  bug: 1598861
+  bug2: 1611405
+- note: 'Thread collapsed when opening news message in a new window'
+  tag: fixed
+  bug: 1526765
+- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird 60'
+  tag: fixed
+  bug: 1574183
+- note: 'Updating addons did not prompt when requesting new permissions'
+  tag: fixed
+  bug: 1620861
+- note: 'Extra recipients panel not keyboard-accessible'
+  tag: fixed
+  bug: 1612717
+- note: 'Accessibility: Status bar was not detected by screenreaders'
+  tag: fixed
+  bug: 1621287
+- note: 'MailExtensions: messages.query by folder name did not require accountsRead permission'
+  tag: fixed
+  bug: 1625793
+- note: 'Calendar: Invitations with embedded null bytes did not always decode correctly'
+  tag: fixed
+  bug: 1623896
+- note: 'Calendar: Cancelled events didn''t show with a line-through'
+  tag: fixed
+  bug: 1621210
