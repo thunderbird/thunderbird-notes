@@ -55,3 +55,7 @@ notes:
 - note: 'Calendar: Cancelled events didn''t show with a line-through'
   tag: fixed
   bug: 1621210
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.7">security
+    fixes</a>
+  tag: fixed
