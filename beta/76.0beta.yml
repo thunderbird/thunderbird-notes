@@ -1,0 +1,94 @@
+release:
+  release_date: 2020-04-09
+  text: |
+    **These notes apply to Thunderbird version 76 beta 1 released April 9, 2020.**
+
+    **Thunderbird 76 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
+
+    If you have installed Lightning, it will be automatically removed. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **As of Thunderbird 74, "legacy" extensions are no longer supported.**
+  import_system_requirements: '68.0'
+
+notes:
+- note: 'Add Account Hub for centralized account setup'
+  tag: new
+  bug: 1589005
+- note: 'Minimize to tray support added for Windows'
+  tag: new
+  bug: 208923
+  bug2: 1626161
+- note: 'Add config option to anonymize message date header'
+  tag: new
+  bug: 1603359
+- note: 'MailExtensions: Add API for managing identities'
+  tag: new
+  bug: 1531593
+  bug2: 1617448
+- note: 'Addons page UI refreshed'
+  tag: changed
+  bug: 1600923
+- note: 'MailExtensions: Allow experiments to use address book cache'
+  tag: changed
+  bug: 1617379
+- note: 'Calendar: Lightning version removed from Thunderbird user agent'
+  tag: changed
+  bug: 1624241
+- note: 'Email addresses sometimes displayed incorrectly in message composer'
+  tag: fixed
+  bug: 1526456
+- note: 'Address book improvements: exporting, editing contacts, contact photos'
+  tag: fixed
+  bug: 1622642
+  bug2: 1619155
+  bug3: 1624207
+  bug4: 1626167
+  bug5: 1624207
+- note: 'Dark theme fixes: message composer, address book, calendar'
+  tag: fixed
+  bug: 1622860
+  bug2: 1622695
+  bug3: 1623938
+  bug4: 1624214
+  bug5: 1625300
+  bug6: 1625987
+  bug7: 1622695
+- note: 'Various accessibility fixes: message composer, account setup, attachment pane'
+  tag: fixed
+  bug: 1589859
+  bug2: 1620718
+  bug3: 1613284
+  bug4: 1620310
+- note: 'Mailbox format conversion fixes'
+  tag: fixed
+  bug: 1515254
+  bug2: 1611897
+- note: 'Mailbox quotas not displayed correctly'
+  tag: fixed
+  bug: 841906
+- note: 'Chat: Add OTR Fingerprint menu was incorrectly shown for IRC channels'
+  tag: fixed
+  bug: 1621266
+- note: 'Chat: Renaming contacts in context menu did not work'
+  tag: fixed
+  bug: 1622000
+- note: 'Calendar: Task and event dialogs were sometimes too small for their content'
+  tag: fixed
+  bug: 1623817
+- note: 'Calendar: Rotated day and week views not displayed correctly'
+  tag: fixed
+  bug: 1608765
+
+
+- note: 'Print progress dialog is disabled.'
+  tag: unresolved
+  bug: 1625299
+- note: 'Message composer not using correct fonts'
+  tag: unresolved
+  bug: 1622231
+  bug2: 1625218
+
+
+
