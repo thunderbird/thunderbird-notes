@@ -3,12 +3,6 @@ release:
   text: |
     **These notes apply to Thunderbird version 76 beta 1 released April 9, 2020.**
 
-    **Thunderbird 76 integrates Lightning, Thunderbird's calendar add-on, into Thunderbird.**
-
-    If you have installed Lightning, it will be automatically removed. Refer to this
-    [Calendar troubleshooting article](https://support.mozilla.org/kb/calendar-updates-issues-thunderbird)
-    in case of problems.
-
     **As of Thunderbird 74, "legacy" extensions are no longer supported.**
   import_system_requirements: '68.0'
 
@@ -27,6 +21,9 @@ notes:
   tag: new
   bug: 1531593
   bug2: 1617448
+- note: 'Ask for OS account password before displaying saved passwords'
+  tag: changed
+  bug: 1622293
 - note: 'Addons page UI refreshed'
   tag: changed
   bug: 1600923
