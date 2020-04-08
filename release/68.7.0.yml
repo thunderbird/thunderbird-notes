@@ -1,5 +1,5 @@
 release:
-  release_date: 2020-04-09
+  release_date: 2020-04-08
   text: |
     ** Thunderbird version 68.7.0 provides an automatic update from Thunderbird version 60.**
     If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
@@ -24,7 +24,7 @@ notes:
 - note: 'MailExtensions: messages.update function extended to mark messages as junk or not junk'
   tag: changed
   bug: 1598332
-- note: 'MailExtensions: browser.compose.begin functions expanded mailing lists'
+- note: 'MailExtensions: browser.compose.begin functions no longer expand mailing lists'
   tag: changed
   bug: 1612480
 - note: 'Various improvements to account setup when connecting to an Exchange server'
