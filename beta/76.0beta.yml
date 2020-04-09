@@ -1,10 +1,13 @@
 release:
   release_date: 2020-04-09
   text: |
-    **These notes apply to Thunderbird version 76 beta 1 released April 9, 2020.**
+    **These notes apply to Thunderbird version 76 beta 2 released April 22, 2020.**
 
     **As of Thunderbird 74, "legacy" extensions are no longer supported.**
   import_system_requirements: '68.0'
+  groups:
+  -
+  - "Fixed in Beta 2"
 
 notes:
 - note: 'New Account Hub for centralized account setup'
@@ -77,6 +80,20 @@ notes:
 - note: 'Calendar: Rotated day and week views not displayed correctly'
   tag: fixed
   bug: 1608765
+
+# Beta 2 follows
+- note: 'Preferences: Width of attachment handlers columns was too short'
+  tag: fixed
+  group: 2
+  bug: 1628448
+- note: 'Accessibility: Screen readers were reporting from the status bar too much'
+  tag: fixed
+  group: 2
+  bug: 1628891
+- note: 'Chat: Multiple OTR system messages were collapsed, resulting in missed notifications'
+  tag: fixed
+  group: 2
+  bug: 1549938
 
 
 - note: 'Print progress dialog is disabled.'
