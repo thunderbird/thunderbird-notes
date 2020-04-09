@@ -7,21 +7,21 @@ release:
   import_system_requirements: '68.0'
 
 notes:
-- note: 'Add Account Hub for centralized account setup'
+- note: 'New Account Hub for centralized account setup'
   tag: new
   bug: 1589005
 - note: 'Minimize to tray support added for Windows'
   tag: new
   bug: 208923
   bug2: 1626161
-- note: 'Add config option to anonymize message date header'
+- note: 'New config option to anonymize message date header'
   tag: new
   bug: 1603359
 - note: 'MailExtensions: Add API for managing identities'
   tag: new
   bug: 1531593
   bug2: 1617448
-- note: 'Ask for OS account password before displaying saved passwords'
+- note: 'Thunderbird will now ask for OS account password before displaying saved passwords'
   tag: changed
   bug: 1622293
 - note: 'Addons page UI refreshed'
@@ -30,7 +30,7 @@ notes:
 - note: 'MailExtensions: Allow experiments to use address book cache'
   tag: changed
   bug: 1617379
-- note: 'Calendar: Lightning version removed from Thunderbird user agent'
+- note: 'Calendar: Lightning version removed from Thunderbird user agent string'
   tag: changed
   bug: 1624241
 - note: 'Email addresses sometimes displayed incorrectly in message composer'
