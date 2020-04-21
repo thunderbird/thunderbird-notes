@@ -82,11 +82,11 @@ notes:
   bug: 1608765
 
 # Beta 2 follows
-- note: 'Preferences: Width of attachment handlers columns was too short'
+- note: 'Preferences: "Files & Attachments" column headers did not align with content'
   tag: fixed
   group: 2
   bug: 1628448
-- note: 'Accessibility: Screen readers were reporting from the status bar too much'
+- note: 'Accessibility: Screen readers were reporting too many activities from the status bar'
   tag: fixed
   group: 2
   bug: 1628891
