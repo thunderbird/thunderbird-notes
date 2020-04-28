@@ -1,13 +1,14 @@
 release:
   release_date: 2020-04-09
   text: |
-    **These notes apply to Thunderbird version 76 beta 2 released April 22, 2020.**
+    **These notes apply to Thunderbird version 76 beta 3 released April 29, 2020.**
 
     **As of Thunderbird 74, "legacy" extensions are no longer supported.**
   import_system_requirements: '68.0'
   groups:
   -
   - "Fixed in Beta 2"
+  - "Changed and Fixed in Beta 3"
 
 notes:
 - note: 'New Account Hub for centralized account setup'
@@ -95,6 +96,24 @@ notes:
   group: 2
   bug: 1549938
 
+
+# Beta 3 follows
+- note: 'Removed "Run in Private Windows" section from Addons page'
+  tag: changed
+  group: 3
+  bug: 1630055
+- note: 'Messages were sometimes sent with a badly formed address when filled from the addressbook'
+  tag: fixed
+  group: 3
+  bug: 1629842
+- note: 'MailExtensions: Setting IMAP messages as read with browser.messages.updated failed to persist'
+  tag: fixed
+  group: 3
+  bug: 1631184
+- note: 'MailExtensions: Multiple extensions using compose.onBeforeSend could send an email prematurely'
+  tag: fixed
+  group: 3
+  bug: 1631011
 
 - note: 'Print progress dialog is disabled.'
   tag: unresolved
