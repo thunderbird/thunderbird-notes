@@ -60,9 +60,9 @@ release:
     - Thunderbird will not run at all without the following libraries or packages:
         - GTK+ 3.4 or higher
         - GLib 2.22 or higher
-        - Pango 1.14 or higher
+        - Pango 1.22 or higher
         - X.Org 1.0 or higher (1.7 or higher is recommended)
-        - libstdc++ 4.6.1 or higher
+        - libstdc++ 4.7 or higher
     - For optimal functionality, we recommend the following libraries or packages:
         - NetworkManager 0.7 or higher
         - DBus 1.0 or higher
