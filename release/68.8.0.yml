@@ -1,0 +1,43 @@
+release:
+  release_date: 2020-05-05
+  text: |
+    ** Thunderbird version 68.8.0 provides an automatic update from Thunderbird version 60.**
+    If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+    be updated to match the new version of Thunderbird. Refer to this
+    [Calendar troubleshooting article](https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird)
+    in case of problems.
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+    **Please refer to [Release Notes for version 68.0](https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/) to see the list of improvements and fixed issues.**
+
+  import_system_requirements: '68.0'
+
+notes:
+- note: 'Account Manager: text fields were too small in some cases'
+  tag: fixed
+  bug: 1616387
+- note: 'Account Manager: Authentication method did not update when selecting an SMTP server'
+  tag: fixed
+  bug: 1631437
+- note: 'Accessibility: Screen readers were reporting too many activities from the
+    status bar'
+  tag: fixed
+  bug: 1628891
+- note: 'Messages were sometimes sent with a badly formed address when filled from
+    the addressbook'
+  tag: fixed
+  bug: 1629842
+- note: 'MailExtensions: Setting IMAP messages as read with browser.messages.updated
+    failed to persist'
+  tag: fixed
+  bug: 1631184
+
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.8">security
+    fixes</a>
+  tag: fixed
