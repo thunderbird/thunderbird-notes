@@ -24,14 +24,17 @@ notes:
 - note: 'Account Manager: Authentication method did not update when selecting an SMTP server'
   tag: fixed
   bug: 1631437
-- note: 'Accessibility: Screen readers were reporting too many activities from the
-    status bar'
+- note: 'Links with embedded credentials did not open on Windows'
   tag: fixed
-  bug: 1628891
+  bug: 1609451
 - note: 'Messages were sometimes sent with a badly formed address when filled from
     the addressbook'
   tag: fixed
   bug: 1629842
+- note: 'Accessibility: Screen readers were reporting too many activities from the
+    status bar'
+  tag: fixed
+  bug: 1628891
 - note: 'MailExtensions: Setting IMAP messages as read with browser.messages.updated
     failed to persist'
   tag: fixed
