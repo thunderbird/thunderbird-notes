@@ -12,10 +12,10 @@ notes:
 - note: 'DisableSystemAddonUpdate policy added'
   tag: new
   bug: 1628156
-- note: 'Added Global search to menu'
+- note: 'Global Search menu item in app menu'
   tag: new
   bug: 1356792
-- note: 'Added "Delete" action column to message list'
+- note: '"Delete" action column in thread pane (message list)'
   tag: new
   bug: 1626841
 - note: 'Calendar: Added ICS import support to -file command line option'
@@ -32,10 +32,6 @@ notes:
   bug4: 1629518
   bug5: 1630985
   bug6: 1631779
-- note: 'Customized toolbar improvements'
-  tag: changed
-  bug: 1628395
-  bug2: 1628911
 - note: 'MailExtensions: Return a tab object with getComposeDetails'
   tag: changed
   bug: 1629023
@@ -49,7 +45,7 @@ notes:
   bug3: 1633287
   bug4: 1633562
   bug5: 1629295
-- note: 'Calendar: Event print-outs were blank'
+- note: 'Calendar: Event printouts were blank'
   tag: fixed
   bug: 1626391
 - note: 'MailExtensions: browser.runtime.openOptionsPage did not display page'
@@ -68,7 +64,7 @@ notes:
 - note: 'Building OpenPGP support fails with gcc compiler'
   tag: unresolved
   bug: 1634887
-- note: 'Print progress dialog is disabled.'
+- note: 'Print progress dialog is disabled'
   tag: unresolved
   bug: 1625299
 - note: 'Message composer not using correct fonts'

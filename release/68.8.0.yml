@@ -28,7 +28,7 @@ notes:
   tag: fixed
   bug: 1609451
 - note: 'Messages were sometimes sent with a badly formed address when filled from
-    the addressbook'
+    the address book'
   tag: fixed
   bug: 1629842
 - note: 'Accessibility: Screen readers were reporting too many activities from the
