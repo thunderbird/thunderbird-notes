@@ -36,6 +36,9 @@ notes:
   tag: changed
   bug: 1628395
   bug2: 1628911
+- note: 'MailExtensions: Return a tab object with getComposeDetails'
+  tag: changed
+  bug: 1629023
 - note: 'Password display font had characters that were difficult to read'
   tag: fixed
   bug: 242418
@@ -49,9 +52,6 @@ notes:
 - note: 'Calendar: Event print-outs were blank'
   tag: fixed
   bug: 1626391
-- note: 'MailExtensions: Return a tab object with getComposeDetails'
-  tag: changed
-  bug: 1629023
 - note: 'MailExtensions: browser.runtime.openOptionsPage did not display page'
   tag: fixed
   bug: 1526802
