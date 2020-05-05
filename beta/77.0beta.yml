@@ -1,0 +1,80 @@
+release:
+  release_date: 2020-05-07
+  text: |
+    **These notes apply to Thunderbird version 77 beta 1 released May 7, 2020.**
+  import_system_requirements: '68.0'
+
+
+notes:
+- note: 'Native support for OpenPGP encryption'
+  tag: new
+  bug: 1628424
+- note: 'DisableSystemAddonUpdate policy added'
+  tag: new
+  bug: 1628156
+- note: 'Added Global search to menu'
+  tag: new
+  bug: 1356792
+- note: 'Added "Delete" action column to message list'
+  tag: new
+  bug: 1626841
+- note: 'Calendar: Added ICS import support to -file command line option'
+  tag: new
+  bug: 1583595
+- note: 'MailExtensions: Added composeScripts API'
+  tag: new
+  bug: 1630786
+- note: 'Various theme and dark mode improvements'
+  tag: changed
+  bug: 1629084
+  bug2: 1627748
+  bug3: 1629515
+  bug4: 1629518
+  bug5: 1630985
+  bug6: 1631779
+- note: 'Customized toolbar improvements'
+  tag: changed
+  bug: 1628395
+  bug2: 1628911
+- note: 'Password display font had characters that were difficult to read'
+  tag: fixed
+  bug: 242418
+- note: 'Improvements to recipient address pills'
+  tag: fixed
+  bug: 1627451
+  bug2: 1630765
+  bug3: 1633287
+  bug4: 1633562
+  bug5: 1629295
+- note: 'Calendar: Event print-outs were blank'
+  tag: fixed
+  bug: 1626391
+- note: 'MailExtensions: Return a tab object with getComposeDetails'
+  tag: changed
+  bug: 1629023
+- note: 'MailExtensions: browser.runtime.openOptionsPage did not display page'
+  tag: fixed
+  bug: 1526802
+- note: 'MailExtensions: Calendar and task tabs did not trigger browser.tabs events'
+  tag: fixed
+  bug: 1627556
+
+
+
+- note: 'Older Linux distributions may not have working OpenPGP support when using
+    the official builds'
+  tag: unresolved
+  bug: 1634209
+- note: 'Building OpenPGP support fails with gcc compiler'
+  tag: unresolved
+  bug: 1634887
+- note: 'Print progress dialog is disabled.'
+  tag: unresolved
+  bug: 1625299
+- note: 'Message composer not using correct fonts'
+  tag: unresolved
+  bug: 1622231
+  bug2: 1625218
+
+
+
