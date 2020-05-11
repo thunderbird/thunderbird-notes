@@ -1,11 +1,11 @@
 release:
-  release_date: 2020-05-07
+  release_date: 2020-05-11
   text: |
-    **These notes apply to Thunderbird version 77 beta 1 released May 7, 2020.**
-
-    **<span style="color:#a30909">Due to bug 1635734, automatic updates are disabled on macOS.</span>**
+    **These notes apply to Thunderbird version 77 beta 2 released May 11, 2020.**
   import_system_requirements: '68.0'
-
+  groups:
+  -
+  - "New and Fixed in Beta 2"
 
 notes:
 - note: 'Native support for OpenPGP encryption'
@@ -57,10 +57,20 @@ notes:
   tag: fixed
   bug: 1627556
 
-
-- note: 'Chat on macOS does not connect to servers'
-  tag: unresolved
+# Beta 2
+- note: 'Lock icon added next to OTR encrypted chat messages.'
+  tag: new
+  bug: 1519799
+  group: 2
+- note: 'Chat on macOS did not connect to servers'
+  tag: fixed
   bug: 1635734
+  group: 2
+- note: 'Global search(Gloda) view was broken.'
+  tag: fixed
+  bug: 1636500
+  group: 2
+
 - note: 'Older Linux distributions may not have working OpenPGP support when using
     the official builds'
   tag: unresolved
@@ -75,6 +85,3 @@ notes:
   tag: unresolved
   bug: 1622231
   bug2: 1625218
-
-
-
