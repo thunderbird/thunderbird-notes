@@ -58,7 +58,7 @@ notes:
   bug: 1627556
 
 # Beta 2
-- note: 'Lock icon added next to OTR encrypted chat messages.'
+- note: 'Lock icon added next to OTR encrypted chat messages'
   tag: new
   bug: 1519799
   group: 2
@@ -66,7 +66,7 @@ notes:
   tag: fixed
   bug: 1635734
   group: 2
-- note: 'Global search(Gloda) view was broken.'
+- note: 'Global search(Gloda) view was broken'
   tag: fixed
   bug: 1636500
   group: 2
