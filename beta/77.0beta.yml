@@ -76,7 +76,7 @@ notes:
 - note: 'Added several enhancements and fixes for OpenPGP support'
   tag: new
   group: 3
-- note: 'WebSocket was unable to be used in Thunderbird'
+- note: 'WebSockets could not be used'
   tag: fixed
   bug: 1627649
   group: 3
@@ -96,3 +96,10 @@ notes:
   tag: unresolved
   bug: 1622231
   bug2: 1625218
+- note: 'Addons cannot be removed'
+  tag: unresolved
+  bug: 1629459
+- note: 'Anomalies when inserting an image into the compose window'
+  tag: unresolved
+  bug: 1636971
+
