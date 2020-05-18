@@ -1,11 +1,12 @@
 release:
   release_date: 2020-05-11
   text: |
-    **These notes apply to Thunderbird version 77 beta 2 released May 11, 2020.**
+    **These notes apply to Thunderbird version 77 beta 3 released May 18, 2020.**
   import_system_requirements: '68.0'
   groups:
   -
   - "New and Fixed in Beta 2"
+  - "New and Fixed in Beta 3"
 
 notes:
 - note: 'Native support for OpenPGP encryption'
@@ -70,6 +71,19 @@ notes:
   tag: fixed
   bug: 1636500
   group: 2
+
+# Beta 3
+- note: 'Added several enhancements and fixes for OpenPGP support'
+  tag: new
+  group: 3
+- note: 'WebSocket was unable to be used in Thunderbird'
+  tag: fixed
+  bug: 1627649
+  group: 3
+- note: 'Custom headers added for searching or filtering could not be removed'
+  tag: fixed
+  bug: 1631577
+  group: 3
 
 - note: 'Older Linux distributions may not have working OpenPGP support when using
     the official builds'
