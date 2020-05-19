@@ -2,6 +2,11 @@ release:
   release_date: 2020-05-11
   text: |
     **These notes apply to Thunderbird version 77 beta 3 released May 18, 2020.**
+
+    **<span style="color:#ed00b5">New in Thunderbird 77.0beta:</span> Experimental
+    support for OpenPGP encryption. New functionality is being added with every beta!
+    Want to help? Join the conversation on Matrix:
+    _[#openpgp:mozilla.org](https://chat.mozilla.org/#/room/#openpgp:mozilla.org)_.**
   import_system_requirements: '68.0'
   groups:
   -
