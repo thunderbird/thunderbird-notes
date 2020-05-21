@@ -1,0 +1,23 @@
+release:
+  release_date: 2020-05-22
+  text: |
+    **These notes apply to Thunderbird version 68.8.1 released May 22, 2020.**
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+  import_system_requirements: '68.0'
+
+notes:
+- note: 'IMAP stability improvements'
+  tag: fixed
+  bug: 1586494
+- note: 'HTML tags in IRC topic changes were rendered incorrectly'
+  tag: fixed
+  bug: 1607097
+- note: 'MailExtensions: Websockets could not be used'
+  tag: fixed
+  bug: 1627649
