@@ -1,0 +1,20 @@
+release:
+  release_date: 2020-06-03
+  text: |
+    **These notes apply to Thunderbird version 68.9.0 released June 03, 2020.**
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+  import_system_requirements: '68.0'
+
+notes:
+- note: 'Read flag was not preserved on messages copied to/from IMAP folders'
+  tag: fixed
+  bug: 1633205
+- note: 'Custom headers added for searching or filtering could not be removed'
+  tag: fixed
+  bug: 1631577
