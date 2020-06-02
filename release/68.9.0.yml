@@ -12,9 +12,17 @@ release:
   import_system_requirements: '68.0'
 
 notes:
-- note: 'Read flag was not preserved on messages copied to/from IMAP folders'
-  tag: fixed
-  bug: 1633205
 - note: 'Custom headers added for searching or filtering could not be removed'
   tag: fixed
   bug: 1631577
+- note: 'Calendar: Today Pane updated prior to loading all data'
+  tag: fixed
+  bug: 1635613
+- note: 'Stability improvements'
+  tag: fixed
+  bug: 1625677
+  bug2: 1629204
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.9">security
+    fixes</a>
+  tag: fixed
