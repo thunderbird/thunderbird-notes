@@ -108,3 +108,20 @@ notes:
   tag: fixed
   bug: 1614972
 
+
+- note: 'Some Linux distributions may not have working OpenPGP support when using
+    the official builds'
+  tag: unresolved
+  bug: 1634209
+- note: 'Print progress dialog is disabled'
+  tag: unresolved
+  bug: 1625299
+- note: 'Unable to print from message compose window'
+  tag: unresolved
+  bug: 1633126
+- note: 'Addons cannot be removed'
+  tag: unresolved
+  bug: 1629459
+- note: 'Anomalies when inserting an image into the compose window'
+  tag: unresolved
+  bug: 1636971
