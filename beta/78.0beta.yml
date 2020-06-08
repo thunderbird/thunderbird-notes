@@ -55,21 +55,21 @@ release:
         - GNOME 2.16 or higher
 
 notes:
-- note: 'Colour customization of Folder Pane icons'
+- note: 'Color customization of Folder Pane icons'
   tag: new
   bug: 1637668
-- note: 'OpenPGP support improvements'
-  tag: new
-  bug: 1639683
-  bug2: 1641374
-  bug3: 1638398
-  bug4: 1638537
 - note: 'Additional Enterprise policies'
   tag: new
   bug: 1622703
 - note: 'Calendar: Add event preview to ICS import dialog'
   tag: new
   bug: 1631902
+- note: 'OpenPGP support improvements'
+  tag: changed
+  bug: 1639683
+  bug2: 1641374
+  bug3: 1638398
+  bug4: 1638537
 - note: 'Various Address Book improvements'
   tag: changed
   bug: 1633294
@@ -85,34 +85,40 @@ notes:
 - note: 'Account settings UI improvements'
   tag: changed
   bug: 1628497
-- note: 'Calendar: Timezone data updated to 2020a'
-  tag: changed
-  bug: 1633245
 - note: 'MailExtensions: Handle message attachments in browser.compose functions'
   tag: changed
   bug: 1613535
-- note: 'Various Message composer fixes'
+- note: 'Calendar: Location URLs are now clickable'
+  tag: changed
+  bug: 1614972
+- note: 'Various fixes for recipient address entry'
   tag: fixed
   bug: 1636393
-  bug2: 1622231
-  bug3: 1602477
-  bug4: 1640722
+  bug2: 1602477
+  bug3: 1640722
+- note: 'Fixed width font not working in Write window'
+  tag: fixed
+  bug: 1622231
 - note: 'Accessibility improvements'
   tag: fixed
   bug: 1637230
   bug2: 1637536
-- note: 'Attachment pane layout broke when toggled or resized'
+- note: 'Attachment pane in message preview layout broke when toggled or resized'
   tag: fixed
   bug: 1636558
-- note: 'Calendar: Location URLs were not clickable'
+- note: 'Access key Alt+M for the attachment pane of the Write window not working correctly'
   tag: fixed
-  bug: 1614972
+  bug: 1625263
 
 
-- note: 'Some Linux distributions may not have working OpenPGP support when using
+
+- note: 'Older Linux distributions may not have working OpenPGP support when using
     the official builds'
   tag: unresolved
   bug: 1634209
+- note: 'Paragraph format indicator not working'
+  tag: unresolved
+  bug: 1625218
 - note: 'Print progress dialog is disabled'
   tag: unresolved
   bug: 1625299
