@@ -1,0 +1,110 @@
+release:
+  release_date: 2020-06-11
+  text: "**These release notes apply to Thunderbird version 78 beta 1 released June 11, 2020.**"
+  system_requirements: |
+    ## Windows
+
+    ### Operating Systems
+    - Windows 7
+    - Windows 8
+    - Windows 10
+
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 200 MB hard drive space
+
+    ---
+
+    ## Mac
+
+    ### Operating Systems
+
+    - Mac OS X 10.9
+    - Mac OS X 10.10
+    - Mac OS X 10.11
+    - Mac OS X 10.12
+    - Mac OS X 10.13
+    - Mac OS X 10.14
+    - Mac OS X 10.15
+
+    ###  Recommended Hardware
+
+    - Macintosh computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 3.14 or higher
+        - GLib 2.22 or higher
+        - Pango 1.22 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.8.1 or higher
+        - glibc 2.17 or higher
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
+
+notes:
+- note: 'Colour customization of Folder Pane icons'
+  tag: new
+  bug: 1637668
+- note: 'OpenPGP support improvements'
+  tag: new
+  bug: 1639683
+  bug2: 1641374
+  bug3: 1638398
+  bug4: 1638537
+- note: 'Additional Enterprise policies'
+  tag: new
+  bug: 1622703
+- note: 'Calendar: Add event preview to ICS import dialog'
+  tag: new
+  bug: 1631902
+- note: 'Various Address Book improvements'
+  tag: changed
+  bug: 1633294
+  bug2: 1630184
+- note: 'Dark mode improvements'
+  tag: changed
+  bug: 1619725
+  bug2: 1640390
+- note: 'Use scalable icons throughout Thunderbird'
+  tag: changed
+  bug: 1636238
+  bug2: 1638863
+- note: 'Account settings UI improvements'
+  tag: changed
+  bug: 1628497
+- note: 'Calendar: Timezone data updated to 2020a'
+  tag: changed
+  bug: 1633245
+- note: 'MailExtensions: Handle message attachments in browser.compose functions'
+  tag: changed
+  bug: 1613535
+- note: 'Various Message composer fixes'
+  tag: fixed
+  bug: 1636393
+  bug2: 1622231
+  bug3: 1602477
+  bug4: 1640722
+- note: 'Accessibility improvements'
+  tag: fixed
+  bug: 1637230
+  bug2: 1637536
+- note: 'Attachment pane layout broke when toggled or resized'
+  tag: fixed
+  bug: 1636558
+- note: 'Calendar: Location URLs were not clickable'
+  tag: fixed
+  bug: 1614972
+
