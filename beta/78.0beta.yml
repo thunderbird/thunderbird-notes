@@ -109,6 +109,9 @@ notes:
 - note: 'Access key Alt+M for the attachment pane of the Write window not working correctly'
   tag: fixed
   bug: 1625263
+- note: 'Addons could be removed'
+  tag: fixed
+  bug: 1629459
 
 
 
@@ -125,9 +128,6 @@ notes:
 - note: 'Unable to print from message compose window'
   tag: unresolved
   bug: 1633126
-- note: 'Addons cannot be removed'
-  tag: unresolved
-  bug: 1629459
 - note: 'Anomalies when inserting an image into the compose window'
   tag: unresolved
   bug: 1636971
