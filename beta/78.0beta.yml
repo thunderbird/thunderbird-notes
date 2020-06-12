@@ -109,7 +109,7 @@ notes:
 - note: 'Access key Alt+M for the attachment pane of the Write window not working correctly'
   tag: fixed
   bug: 1625263
-- note: 'Addons could be removed'
+- note: 'Addons could not be removed'
   tag: fixed
   bug: 1629459
 
