@@ -53,6 +53,9 @@ release:
         - NetworkManager 0.7 or higher
         - DBus 1.0 or higher
         - GNOME 2.16 or higher
+  groups:
+  -
+  - "New, Changed and Fixed in Beta 2"
 
 notes:
 - note: 'Color customization of Folder Pane icons'
@@ -113,7 +116,69 @@ notes:
   tag: fixed
   bug: 1629459
 
+# Beta 2
 
+- note: 'MailExtensions: browser.identity API enabled'
+  tag: new
+  bug: 1644000
+  group: 2
+- note: 'MailExtensions: Event fired when the user changes compose identity'
+  tag: new
+  bug: 1642189
+  group: 2
+
+- note: 'Improvements to the location bar of a tab displaying web pages'
+  tag: changed
+  bug: 1644689
+  group: 2
+- note: 'Several improvements to vCard parsing'
+  tag: changed
+  bug: 1639496
+  bug2: 1643262
+  group: 2
+- note: 'Various look and feel improvements'
+  bug: 1645700
+  bug2: 1645687
+  bug3: 1644730
+  bug4: 1643159
+  bug5: 1514863
+  bug6: 1645094
+  bug7: 1644798
+  tag: changed
+  group: 2
+
+- note: 'Print-progress dialog was disabled'
+  tag: fixed
+  bug: 1625299
+  group: 2
+- note: '"Clear Recent History" window did nothing'
+  tag: fixed
+  bug: 1639415
+  group: 2
+- note: '"Initially Show Attachment Pane" option was not working'
+  tag: fixed
+  bug: 1634946
+  group: 2
+- note: 'Links in the Account Central content tab opened in Thunderbird as well as the browser'
+  tag: fixed
+  bug: 1645271
+  group: 2
+- note: 'Order of columns in the thread pane was not persisted correctly'
+  tag: fixed
+  bug: 1612055
+  group: 2
+- note: 'URLs in the message header display were not reachable via keyboard'
+  tag: fixed
+  bug: 1589863
+  group: 2
+- note: 'Calendar: URLs in the event reminder dialog were not clickable'
+  tag: fixed
+  bug: 1644990
+  group: 2
+- note: 'MailExtensions: Extension popup windows opened in a copy of the main window'
+  tag: fixed
+  bug: 1644083
+  group: 2
 
 - note: 'Older Linux distributions may not have working OpenPGP support when using
     the official builds'
@@ -122,9 +187,6 @@ notes:
 - note: 'Paragraph format indicator not working'
   tag: unresolved
   bug: 1625218
-- note: 'Print progress dialog is disabled'
-  tag: unresolved
-  bug: 1625299
 - note: 'Unable to print from message compose window'
   tag: unresolved
   bug: 1633126
