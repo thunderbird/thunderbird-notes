@@ -1,6 +1,6 @@
 release:
-  release_date: 2020-06-11
-  text: "**These release notes apply to Thunderbird version 78 beta 1 released June 11, 2020.**"
+  release_date: 2020-06-16
+  text: "**These release notes apply to Thunderbird version 78 beta 2 released June 16, 2020.**"
   system_requirements: |
     ## Windows
 
