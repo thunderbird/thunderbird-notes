@@ -1,6 +1,6 @@
 release:
   release_date: 2020-06-16
-  text: "**These release notes apply to Thunderbird version 78 beta 2 released June 16, 2020.**"
+  text: "**These release notes apply to Thunderbird version 78 beta 3 released June 23, 2020.**"
   system_requirements: |
     ## Windows
 
@@ -56,6 +56,7 @@ release:
   groups:
   -
   - "New, Changed and Fixed in Beta 2"
+  - "New and Fixed in Beta 3"
 
 notes:
 - note: 'Color customization of Folder Pane icons'
@@ -155,7 +156,7 @@ notes:
   tag: fixed
   bug: 1639415
   group: 2
-- note: '"Initially Show Attachment Pane" option was not working'
+- note: '"Initially Show Attachment Pane" option was not working for Write window'
   tag: fixed
   bug: 1634946
   group: 2
@@ -180,16 +181,24 @@ notes:
   bug: 1644083
   group: 2
 
-- note: 'Older Linux distributions may not have working OpenPGP support when using
-    the official builds'
-  tag: unresolved
+# Beta 3
+- note: 'Add preference to disable OpenPGP functionality'
+  tag: new
+  bug: 1645914
+- note: 'MailExtensions: UI components for browser pages added'
+  tag: new
+  bug: 1645945
+- note: 'OpenPGP support did not work on some Linux distributions when using the official builds'
+  tag: fixed
   bug: 1634209
-- note: 'Paragraph format indicator not working'
-  tag: unresolved
-  bug: 1625218
-- note: 'Unable to print from message compose window'
-  tag: unresolved
-  bug: 1633126
-- note: 'Anomalies when inserting an image into the compose window'
-  tag: unresolved
+- note: 'Thunderbird 78 did not run on Red Hat Linux 7'
+  tag: fixed
+  bug: 1646993
+  bug2: 1643258
+- note: 'Anomalies appeared when inserting an image into the compose window'
+  tag: fixed
   bug: 1636971
+- note: 'Chat: Magic copy did not preserve HTML tags'
+  tag: fixed
+  bug: 1611442
+
