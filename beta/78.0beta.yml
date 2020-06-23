@@ -185,20 +185,25 @@ notes:
 - note: 'Add preference to disable OpenPGP functionality'
   tag: new
   bug: 1645914
+  group: 3
 - note: 'MailExtensions: UI components for browser pages added'
   tag: new
   bug: 1645945
+  group: 3
 - note: 'OpenPGP support did not work on some Linux distributions when using the official builds'
   tag: fixed
   bug: 1634209
+  group: 3
 - note: 'Thunderbird 78 did not run on Red Hat Linux 7'
   tag: fixed
   bug: 1646993
+  group: 3
   bug2: 1643258
 - note: 'Anomalies appeared when inserting an image into the compose window'
   tag: fixed
   bug: 1636971
+  group: 3
 - note: 'Chat: Magic copy did not preserve HTML tags'
   tag: fixed
   bug: 1611442
-
+  group: 3
