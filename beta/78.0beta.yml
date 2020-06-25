@@ -182,7 +182,7 @@ notes:
   group: 2
 
 # Beta 3
-- note: 'Add preference to disable OpenPGP functionality'
+- note: 'Preference to disable OpenPGP functionality'
   tag: new
   bug: 1645914
   group: 3
@@ -203,7 +203,7 @@ notes:
   tag: fixed
   bug: 1636971
   group: 3
-- note: 'Chat: Magic copy did not preserve HTML tags'
+- note: 'Chat: Copying from chat conversations not working'
   tag: fixed
   bug: 1611442
   group: 3
