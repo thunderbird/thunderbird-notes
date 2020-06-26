@@ -1,6 +1,6 @@
 release:
   release_date: 2020-06-16
-  text: "**These release notes apply to Thunderbird version 78 beta 3 released June 23, 2020.**"
+  text: "**These release notes apply to Thunderbird version 78 beta 4 released June 29, 2020.**"
   system_requirements: |
     ## Windows
 
@@ -57,6 +57,7 @@ release:
   -
   - "New, Changed and Fixed in Beta 2"
   - "New and Fixed in Beta 3"
+  - "Changed and Fixed in Beta 4"
 
 notes:
 - note: 'Color customization of Folder Pane icons'
@@ -207,3 +208,34 @@ notes:
   tag: fixed
   bug: 1611442
   group: 3
+
+
+# Beta 4
+- note: 'OpenPGP improvements'
+  bug: 1642795
+  bug2: 1647671
+  bug3: 1646367
+  tag: changed
+  group: 4
+- note: 'Various look and feel improvements'
+  bug: 1647479
+  bug2: 1647471
+  bug3: 1648170
+  tag: changed
+  group: 4
+- note: 'Addresses added to mailing list are not sorted'
+  bug: 1639750
+  tag: fixed
+  group: 4
+- note: 'Chat: Private messages not displayed when server supports "echo-message"'
+  bug: 1646049
+  tag: fixed
+  group: 4
+- note: 'MailExtensions: Tab was not defined in browser.menus.onClicked callback on out-of-window messages'
+  bug: 1644487
+  tag: fixed
+  group: 4
+- note: 'MailExtensions: Select elements in action popups closed the window unexpectedly'
+  bug: 1627197
+  tag: fixed
+  group: 4
