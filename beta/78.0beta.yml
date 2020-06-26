@@ -223,11 +223,15 @@ notes:
   bug3: 1648170
   tag: changed
   group: 4
-- note: 'Addresses added to mailing list are not sorted'
+- note: 'Addresses added to address book were not inserted into sorted order'
   bug: 1639750
   tag: fixed
   group: 4
-- note: 'Chat: Private messages not displayed when server supports "echo-message"'
+- note: 'Address book migration not working under certain circumstances'
+  bug: 1647249
+  tag: fixed
+  group: 4
+- note: 'Chat: Own messages not displayed in private chats when server supports "echo-message"'
   bug: 1646049
   tag: fixed
   group: 4
