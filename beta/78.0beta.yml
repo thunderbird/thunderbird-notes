@@ -55,9 +55,9 @@ release:
         - GNOME 2.16 or higher
   groups:
   -
-  - "New, Changed and Fixed in Beta 2"
+  - "New, Changed, and Fixed in Beta 2"
   - "New and Fixed in Beta 3"
-  - "Changed and Fixed in Beta 4"
+  - "New, Changed, and Fixed in Beta 4"
 
 notes:
 - note: 'Color customization of Folder Pane icons'
@@ -211,10 +211,17 @@ notes:
 
 
 # Beta 4
+- note: 'Chat: Direct message support for Matrix'
+  bug: 1348064
+  tag: new
+  group: 4
 - note: 'OpenPGP improvements'
   bug: 1642795
   bug2: 1647671
   bug3: 1646367
+  bug4: 1648957
+  bug5: 1648978
+  bug6: 1638645
   tag: changed
   group: 4
 - note: 'Various look and feel improvements'
@@ -243,3 +250,9 @@ notes:
   bug: 1627197
   tag: fixed
   group: 4
+
+
+# Unresolved
+- note: 'Preferences search not available'
+  bug: 1573678
+  tag: unresolved
