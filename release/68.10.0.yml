@@ -1,0 +1,21 @@
+release:
+  release_date: 2020-07-01
+  text: |
+    **These notes apply to Thunderbird version 68.10.0 released July 1, 2020.**
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+  import_system_requirements: '68.0'
+
+
+- note: 'Chat: Topics displayed some characters improperly'
+  tag: fixed
+  bug: 1644024
+- note: 'Calendar: Filtering tasks did not work when "Incomplete Tasks" was selected'
+  tag: fixed
+  bug: 1593711
+
