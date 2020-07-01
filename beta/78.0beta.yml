@@ -118,8 +118,8 @@ notes:
   tag: fixed
   bug: 1629459
 
-# Beta 2
 
+# Beta 2
 - note: 'MailExtensions: browser.identity API enabled'
   tag: new
   bug: 1644000
@@ -181,6 +181,7 @@ notes:
   tag: fixed
   bug: 1644083
   group: 2
+
 
 # Beta 3
 - note: 'Preference to disable OpenPGP functionality'
