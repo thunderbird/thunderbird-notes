@@ -12,6 +12,7 @@ release:
   import_system_requirements: '68.0'
 
 
+notes:
 - note: 'Chat: Topics displayed some characters improperly'
   tag: fixed
   bug: 1644024
