@@ -19,4 +19,6 @@ notes:
 - note: 'Calendar: Filtering tasks did not work when "Incomplete Tasks" was selected'
   tag: fixed
   bug: 1593711
-
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.10">security fixes</a>
+  tag: fixed
