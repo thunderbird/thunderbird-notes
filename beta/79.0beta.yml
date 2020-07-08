@@ -1,7 +1,7 @@
 release:
   release_date: 2020-07-10
   text: |
-    **These notes apply to Thunderbird version 79 beta 3 released July 10, 2020.**
+    **These notes apply to Thunderbird version 79 beta 1 released July 10, 2020.**
 
     **<span style="color:#ed00b5">New in Thunderbird 79.0beta:</span> Experimental
     support for OpenPGP encryption. New functionality is being added with every beta!
