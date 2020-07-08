@@ -1,0 +1,51 @@
+release:
+  release_date: 2020-07-10
+  text: |
+    **These notes apply to Thunderbird version 79 beta 3 released July 10, 2020.**
+
+    **<span style="color:#ed00b5">New in Thunderbird 79.0beta:</span> Experimental
+    support for OpenPGP encryption. New functionality is being added with every beta!
+    Want to help? Join the conversation on Matrix:
+    _[#openpgp:mozilla.org](https://chat.mozilla.org/#/room/#openpgp:mozilla.org)_.**
+  import_system_requirements: '78.0beta'
+
+notes:
+
+- note: 'Date and relevance setting remembered in facet search results'
+  tag: new
+  bug: 663859  
+- note: 'The preferences tab now has a search field'
+  tag: new
+  bug: 1573678 
+- note: 'Language packs and dictionaries added to about:support'
+  tag: new
+  bug: 1648165 
+- note: 'Themeing improvements to the address book window and dialogs'
+  tag: fixed
+  bug: 1649577 
+  bug: 1650789 
+
+- note: 'FileLink both created a link and attached a file to the message if the file was from a network share'
+  tag: fixed
+  bug: 793118  
+- note: 'IMAP fetch chunk size was always 65536 bytes'
+  tag: fixed
+  bug: 1580480 
+- note: 'Incremental search in contacts side bar failed to return some results'
+  tag: fixed
+  bug: 1644026 
+- note: 'When deleting a contact from search results in contacts sidebar, the entire result set disappeared'
+  tag: fixed
+  bug: 1644084 
+- note: 'Crash on failure of LDAP address book replication'
+  tag: fixed
+  bug: 1645512 
+- note: 'Adaptive Junk Mail settings could not be disabled'
+  tag: fixed
+  bug: 1646529 
+- note: '"Unresponsive script" error on start-up for profiles with many folders'
+  tag: fixed
+  bug: 1647251 
+- note: 'OAuth authorization window was missing the URL bar'
+  tag: fixed
+  bug: 1649423 
