@@ -75,6 +75,8 @@ notes:
   bug: 440377
   bug2: 1609647
   bug3: 1615917
+  bug4: 1603166
+  bug5: 1602477
 - note: Color customization of Folder Pane icons
   tag: new
   bug: 1637668
@@ -108,6 +110,9 @@ notes:
 - note: 'Calendar: Add event preview to ICS import dialog'
   tag: new
   bug: 1631902
+- note: 'Chat: OTR messaging support'
+  tag: new
+  bug: 1518166
 - note: 'Chat: IRC echo-message capability'
   tag: new
   bug: 1601102
@@ -147,6 +152,7 @@ notes:
   tag: changed
   bug: 1551133
   bug2: 1590636
+  bug3: 1590636
 - note: Dialog for folder compaction (purging of deleted messages)
   tag: changed
   bug: 716412
@@ -200,9 +206,28 @@ notes:
   bug6: 1631779
   bug7: 1619725
   bug8: 1640390
+  bug9: 1591531
 - note: Improvements to the location bar of a tab displaying web pages
   tag: changed
   bug: 1644689
+- note: Addons page UI refreshed
+  tag: changed
+  bug: 1600923
+- note: Use scalable icons throughout Thunderbird
+  tag: changed
+  bug: 1636238
+  bug2: 1638863
+- note: Various look and feel improvements
+  tag: changed
+  bug: 1514863
+  bug2: 1643159
+  bug3: 1644730
+  bug4: 1644798
+  bug5: 1645094
+  bug6: 1645687
+  bug7: 1645700
+  bug8: 1647471
+  bug9: 1647479
 - note: 'Calendar: The Lightning calendar add-on is now integrated into Thunderbird'
   tag: changed
   bug: 1608610
@@ -221,6 +246,31 @@ notes:
 - note: 'MailExtensions: Handle message attachments in browser.compose functions'
   tag: changed
   bug: 1613535
+- note: 'MailExtensions: Allow commands.update() to disable a command'
+  tag: changed
+  bug: 1475043
+- note: 'MailExtensions: Allow browser.query.messages to query by tag'
+  tag: changed
+  bug: 1600547
+- note: 'MailExtensions: Changed folder enumeration to return tree structure rather
+    than list'
+  tag: changed
+  bug: 1606584
+- note: 'MailExtensions: Exposed message "Junk" status to addons'
+  tag: changed
+  bug: 1610457
+- note: 'MailExtensions: Action APIs now provide tab and click information'
+  tag: changed
+  bug: 1617514
+- note: 'MailExtensions: Allow composeAction to open popups from onBeforeSend'
+  tag: changed
+  bug: 1617742
+- note: 'MailExtensions: Allow experiments to use address book cache'
+  tag: changed
+  bug: 1617379
+- note: 'MailExtensions: Return a tab object with getComposeDetails'
+  tag: changed
+  bug: 1629023
 
 - note: Password display font had characters that were difficult to read
   tag: fixed
@@ -249,17 +299,64 @@ notes:
   bug2: 1613284
   bug3: 1620310
   bug4: 1620718
+  bug5: 1637230
+  bug6: 1637536
+  bug7: 1589863
 - note: Mailbox format conversion fixes
   tag: fixed
   bug: 1515254
   bug2: 1611897
-- note: 'Chat: Various OTR messaging improvements'
+- note: Manual installation of add-ons via drag & drop onto the Add-ons Manager not
+    working
   tag: fixed
-  bug: 1611882
-  bug2: 1621266
-  bug3: 1549938
-  bug4: 1519799
+  bug: 1566347
+- note: 'Address book improvements: exporting, editing contacts, contact photos'
+  tag: fixed
+  bug: 1619155
+  bug2: 1622642
+  bug3: 1624207
+  bug4: 1624207
+  bug5: 1626167
+  bug6: 1630184
+  bug7: 1633294
+- note: 'Chat: Renaming contacts in context menu did not work'
+  tag: fixed
+  bug: 1622000
+- note: 'Calendar: Task and event dialogs were sometimes too small for their content'
+  tag: fixed
+  bug: 1623817
+- note: 'Calendar: Rotated day and week views not displayed correctly'
+  tag: fixed
+  bug: 1608765
+- note: 'Calendar: URLs in the event reminder dialog were not clickable'
+  tag: fixed
+  bug: 1644990
 - note: 'MailExtensions: Multiple extensions using compose.onBeforeSend could send
     an email prematurely'
   tag: fixed
   bug: 1631011
+- note: 'MailExtensions: browser.runtime.openOptionsPage did not display page'
+  tag: fixed
+  bug: 1526802
+- note: 'MailExtensions: Calendar and task tabs did not trigger browser.tabs events'
+  tag: fixed
+  bug: 1627556
+- note: 'MailExtensions: Extension popup windows opened in a copy of the main window'
+  tag: fixed
+  bug: 1644083
+- note: 'MailExtensions: Tab was not defined in browser.menus.onClicked callback on
+    out-of-window messages'
+  tag: fixed
+  bug: 1644487
+- note: 'MailExtensions: Select elements in action popups closed the window unexpectedly'
+  tag: fixed
+  bug: 1627197
+
+
+# Unresolved
+- note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
+  tag: unresolved
+  bug: 1556261
+- note: 'Preferences search not available'
+  bug: 1573678
+  tag: unresolved
