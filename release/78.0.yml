@@ -1,0 +1,265 @@
+release:
+  release_date: 2020-07-XX
+  text: |
+    ** Thunderbird version 78.0 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+    Thunderbird version 68 or earlier.**
+    A future release will provide updates from earlier versions.
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+
+
+  system_requirements: |
+    ## Windows
+
+    ### Operating Systems
+    - Windows 7
+    - Windows 8
+    - Windows 10
+
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 200 MB hard drive space
+
+    ---
+
+    ## Mac
+
+    ### Operating Systems
+    - macOS 10.9
+    - macOS 10.10
+    - macOS 10.11
+    - macOS 10.12
+    - macOS 10.13
+    - macOS 10.14
+    - macOS 10.15
+
+    ###  Recommended Hardware
+    - Macintosh computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 3.14 or higher
+        - GLib 2.22 or higher
+        - Pango 1.22 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.8.1 or higher
+        - glibc 2.17 or higher
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
+
+notes:
+- note: New Account Hub for centralized account setup
+  tag: new
+  bug: 1589005
+- note: Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields
+    (pills) for multiple addresses instead of one line per address
+  tag: new
+  bug: 440377
+  bug2: 1609647
+  bug3: 1615917
+- note: Color customization of Folder Pane icons
+  tag: new
+  bug: 1637668
+- note: Allow selecting messages via selection boxes instead of classic selection.
+    "Select Messages" column needs to be selected via the thread pane's column picker.
+  tag: new
+  bug: 1017904
+- note: Themes can be previewed in the Add-On Manager
+  tag: new
+  bug: 1598903
+- note: Minimize to tray support added for Windows
+  tag: new
+  bug: 208923
+  bug2: 1626161
+- note: New config option to anonymize message date header
+  tag: new
+  bug: 1603359
+- note: Global Search menu item in app menu
+  tag: new
+  bug: 1356792
+- note: '"Delete" action column in thread pane (message list)'
+  tag: new
+  bug: 1626841
+- note: 'Additional Enterprise policies *FIXME: SUMO article or other documentation?*'
+  tag: new
+  bug: 1622703
+  bug2: 1628156
+- note: 'Calendar: Added ICS import support to -file command line option'
+  tag: new
+  bug: 1583595
+- note: 'Calendar: Add event preview to ICS import dialog'
+  tag: new
+  bug: 1631902
+- note: 'Chat: IRC echo-message capability'
+  tag: new
+  bug: 1601102
+- note: 'MailExtensions: API to block sending a message from compose window'
+  tag: new
+  bug: 1532528
+- note: 'MailExtensions: API to interact with message in compose window'
+  tag: new
+  bug: 1590121
+- note: 'MailExtensions: API event for new message notifications'
+  tag: new
+  bug: 1599380
+- note: 'MailExtensions: Add API for managing identities'
+  tag: new
+  bug: 1531593
+  bug2: 1617448
+  bug3: 1642189
+- note: 'MailExtensions: Added composeScripts API'
+  tag: new
+  bug: 1630786
+- note: 'MailExtensions: browser.identity API enabled'
+  tag: new
+  bug: 1644000
+- note: 'MailExtensions: UI components for browser pages added'
+  tag: new
+  bug: 1645945
+
+- note: '**Add-on support: As of version 78.0, Thunderbird only supports MailExtensions
+    and MailExtension Experiments. Restartless add-ons and non-restartless legacy
+    add-ons using XUL overlays are no longer supported.**'
+  tag: changed
+  bug: 1614237
+- note: Thunderbird Options/Preferences tab redesigned and with new user interface
+  tag: changed
+  bug: 1498332
+- note: Account creation dialog redesigned and with new user interface
+  tag: changed
+  bug: 1551133
+  bug2: 1590636
+- note: Dialog for folder compaction (purging of deleted messages)
+  tag: changed
+  bug: 716412
+- note: Thread pane column picker stays open for selecting multiple columns until
+    user clicks outside or hits escape
+  tag: changed
+  bug: 545906
+- note: Add-ons manager with new user interface and notifications. Note that manual
+    installation of add-ons via drag-and-drop currently doesn't work.
+  tag: changed
+  bug: 1566347
+- note: Improved "Recent" folder list for "Move to" and "Copy to" in message context
+    menu
+  tag: changed
+  bug: 949135
+- note: Account Manager moved to a tab
+  tag: changed
+  bug: 1610445
+  bug2: 1628497
+- note: Improved UI of global search results tab
+  tag: changed
+  bug: 1022228
+- note: Address books are now stored as SQLite databases. Existing address books in
+    MAB format (using a Mork database) will be converted.
+  tag: changed
+  bug: 1572324
+  bug2: 1576525
+  bug3: 1581765
+  bug4: 1606285
+  bug5: 1606284
+- note: Several improvements to vCard parsing
+  tag: changed
+  bug: 1639496
+  bug2: 1643262
+- note: TLS 1.0 and 1.1 disabled
+  tag: changed
+  bug: 1606733
+- note: Hardware acceleration was disabled by default
+  tag: changed
+  bug: 1623265
+- note: Thunderbird will now ask for OS account password before displaying saved passwords
+  tag: changed
+  bug: 1622293
+- note: Various theme and dark mode improvements
+  tag: changed
+  bug: 1627748
+  bug2: 1629084
+  bug3: 1629515
+  bug4: 1629518
+  bug5: 1630985
+  bug6: 1631779
+  bug7: 1619725
+  bug8: 1640390
+- note: Improvements to the location bar of a tab displaying web pages
+  tag: changed
+  bug: 1644689
+- note: 'Calendar: The Lightning calendar add-on is now integrated into Thunderbird'
+  tag: changed
+  bug: 1608610
+- note: 'Calendar: Lightning version removed from Thunderbird user agent string'
+  tag: changed
+  bug: 1624241
+- note: 'Calendar: Web Calendar Access Protocol (WCAP) support removed'
+  tag: changed
+  bug: 1579020
+- note: 'Calendar: Storage access is now asynchronous to improve performance'
+  tag: changed
+  bug: 501689
+- note: 'Calendar: Location URLs are now clickable'
+  tag: changed
+  bug: 1614972
+- note: 'MailExtensions: Handle message attachments in browser.compose functions'
+  tag: changed
+  bug: 1613535
+
+- note: Password display font had characters that were difficult to read
+  tag: fixed
+  bug: 242418
+- note: When copying messages from an IMAP folder to a local folder, offline store
+    wasn't used
+  tag: fixed
+  bug: 505456
+- note: While Thunderbird was in safe mode, the help menu did not offer an item to
+    restart with add-ons enabled
+  tag: fixed
+  bug: 724963
+- note: Mailbox quotas not displayed correctly
+  tag: fixed
+  bug: 841906
+- note: Images not rotated when composing a message
+  tag: fixed
+  bug: 1340927
+- note: Email addresses sometimes displayed incorrectly in message composer
+  tag: fixed
+  bug: 1526456
+- note: 'Various accessibility fixes: message composer, account setup, attachment
+    pane'
+  tag: fixed
+  bug: 1589859
+  bug2: 1613284
+  bug3: 1620310
+  bug4: 1620718
+- note: Mailbox format conversion fixes
+  tag: fixed
+  bug: 1515254
+  bug2: 1611897
+- note: 'Chat: Various OTR messaging improvements'
+  tag: fixed
+  bug: 1611882
+  bug2: 1621266
+  bug3: 1549938
+  bug4: 1519799
+- note: 'MailExtensions: Multiple extensions using compose.onBeforeSend could send
+    an email prematurely'
+  tag: fixed
+  bug: 1631011
