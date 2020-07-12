@@ -156,10 +156,6 @@ notes:
 - note: Dialog for folder compaction (purging of deleted messages)
   tag: changed
   bug: 716412
-- note: Thread pane column picker stays open for selecting multiple columns until
-    user clicks outside or hits escape
-  tag: changed
-  bug: 545906
 - note: Add-ons manager with new user interface and notifications. Note that manual
     installation of add-ons via drag-and-drop currently doesn't work.
   tag: changed
@@ -190,7 +186,7 @@ notes:
 - note: TLS 1.0 and 1.1 disabled
   tag: changed
   bug: 1606733
-- note: Hardware acceleration was disabled by default
+- note: Hardware acceleration is now enabled by default
   tag: changed
   bug: 1623265
 - note: Thunderbird will now ask for OS account password before displaying saved passwords
@@ -306,10 +302,6 @@ notes:
   tag: fixed
   bug: 1515254
   bug2: 1611897
-- note: Manual installation of add-ons via drag & drop onto the Add-ons Manager not
-    working
-  tag: fixed
-  bug: 1566347
 - note: 'Address book improvements: exporting, editing contacts, contact photos'
   tag: fixed
   bug: 1619155
