@@ -6,13 +6,13 @@ release:
     Thunderbird version 68 or earlier.**
     A future release will provide updates from earlier versions.
 
+
+
     **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.9 or later
     - Linux: GTK+ 3.14 or higher
-
-
 
   system_requirements: |
     ## Windows
@@ -69,8 +69,8 @@ notes:
 - note: New Account Hub for centralized account setup
   tag: new
   bug: 1589005
-- note: Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields
-    (pills) for multiple addresses instead of one line per address
+- note: 'Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields
+    (pills) for multiple addresses instead of one line per address. *More improvements to come.*'
   tag: new
   bug: 440377
   bug2: 1609647
@@ -84,6 +84,10 @@ notes:
     "Select Messages" column needs to be selected via the thread pane's column picker.
   tag: new
   bug: 1017904
+- note: '"Delete" action column in thread pane (message list). "Select Messages" column
+    needs to be selected via the thread pane''s column picker.'
+  tag: new
+  bug: 1626841
 - note: Themes can be previewed in the Add-On Manager
   tag: new
   bug: 1598903
@@ -97,10 +101,7 @@ notes:
 - note: Global Search menu item in app menu
   tag: new
   bug: 1356792
-- note: '"Delete" action column in thread pane (message list)'
-  tag: new
-  bug: 1626841
-- note: 'Additional Enterprise policies *FIXME: SUMO article or other documentation?*'
+- note: 'Additional Enterprise policies'
   tag: new
   bug: 1622703
   bug2: 1628156
@@ -116,35 +117,16 @@ notes:
 - note: 'Chat: IRC echo-message capability'
   tag: new
   bug: 1601102
-- note: 'MailExtensions: API to block sending a message from compose window'
-  tag: new
-  bug: 1532528
-- note: 'MailExtensions: API to interact with message in compose window'
-  tag: new
-  bug: 1590121
-- note: 'MailExtensions: API event for new message notifications'
-  tag: new
-  bug: 1599380
-- note: 'MailExtensions: Add API for managing identities'
-  tag: new
-  bug: 1531593
-  bug2: 1617448
-  bug3: 1642189
-- note: 'MailExtensions: Added composeScripts API'
-  tag: new
-  bug: 1630786
-- note: 'MailExtensions: browser.identity API enabled'
-  tag: new
-  bug: 1644000
-- note: 'MailExtensions: UI components for browser pages added'
-  tag: new
-  bug: 1645945
 
 - note: '**Add-on support: As of version 78.0, Thunderbird only supports MailExtensions
     and MailExtension Experiments. Restartless add-ons and non-restartless legacy
     add-ons using XUL overlays are no longer supported.**'
   tag: changed
   bug: 1614237
+- note: 'Linux minimum runtime requirements have changed: GTK 3.14, GLIBC 2.17, libstdc++ 4.8.1
+    [Details](/en-US/thunderbird/78.0/system-requirements/)'
+  tag: changed
+  bug: 1634204
 - note: Thunderbird Options/Preferences tab redesigned and with new user interface
   tag: changed
   bug: 1498332
@@ -153,45 +135,46 @@ notes:
   bug: 1551133
   bug2: 1590636
   bug3: 1590636
-- note: Dialog for folder compaction (purging of deleted messages)
-  tag: changed
-  bug: 716412
-- note: Add-ons manager with new user interface and notifications. Note that manual
-    installation of add-ons via drag-and-drop currently doesn't work.
-  tag: changed
-  bug: 1566347
-- note: Improved "Recent" folder list for "Move to" and "Copy to" in message context
-    menu
-  tag: changed
-  bug: 949135
 - note: Account Manager moved to a tab
   tag: changed
   bug: 1610445
   bug2: 1628497
+- note: Add-ons manager with new user interface and notifications
+  tag: changed
+  bug: 1566347
+  bug2: 1621841
+  bug3: 1621213
+  bug4: 1600923
+- note: Improved "Recent" folder list for "Move to" and "Copy to" in message context
+    menu
+  tag: changed
+  bug: 949135
 - note: Improved UI of global search results tab
   tag: changed
   bug: 1022228
-- note: Address books are now stored as SQLite databases. Existing address books in
-    MAB format (using a Mork database) will be converted.
+- note: Improvements to the location bar of a tab displaying web pages
+  tag: changed
+  bug: 1644689
+- note: 'Use scalable icons throughout Thunderbird to improve support for HiDPI monitors
+    and dark mode'
+  tag: changed
+  bug: 1636238
+  bug2: 1638863
+- note: Thunderbird will now ask for OS account password before displaying saved passwords
+  tag: changed
+  bug: 1622293
+- note: Address books are now stored as SQLite databases to prepare for future
+    addressbook improvements. Existing address books in MAB format (using a Mork database)
+    will be converted.
   tag: changed
   bug: 1572324
   bug2: 1576525
   bug3: 1581765
   bug4: 1606285
   bug5: 1606284
-- note: Several improvements to vCard parsing
+- note: New parser and formatter for vCard. vCard versions 3.0 and 4.0 are now supported.
   tag: changed
-  bug: 1639496
-  bug2: 1643262
-- note: TLS 1.0 and 1.1 disabled
-  tag: changed
-  bug: 1606733
-- note: Hardware acceleration is now enabled by default
-  tag: changed
-  bug: 1623265
-- note: Thunderbird will now ask for OS account password before displaying saved passwords
-  tag: changed
-  bug: 1622293
+  bug: 1639430
 - note: Various theme and dark mode improvements
   tag: changed
   bug: 1627748
@@ -203,16 +186,6 @@ notes:
   bug7: 1619725
   bug8: 1640390
   bug9: 1591531
-- note: Improvements to the location bar of a tab displaying web pages
-  tag: changed
-  bug: 1644689
-- note: Addons page UI refreshed
-  tag: changed
-  bug: 1600923
-- note: Use scalable icons throughout Thunderbird
-  tag: changed
-  bug: 1636238
-  bug2: 1638863
 - note: Various look and feel improvements
   tag: changed
   bug: 1514863
@@ -224,6 +197,15 @@ notes:
   bug7: 1645700
   bug8: 1647471
   bug9: 1647479
+- note: Improved dialog for folder compaction (purging of deleted messages)
+  tag: changed
+  bug: 716412
+- note: Graphics hardware acceleration is now enabled by default
+  tag: changed
+  bug: 1623265
+- note: TLS 1.0 and 1.1 disabled
+  tag: changed
+  bug: 1606733
 - note: 'Calendar: The Lightning calendar add-on is now integrated into Thunderbird'
   tag: changed
   bug: 1608610
@@ -239,34 +221,16 @@ notes:
 - note: 'Calendar: Location URLs are now clickable'
   tag: changed
   bug: 1614972
-- note: 'MailExtensions: Handle message attachments in browser.compose functions'
+- note: 'Addon Developers: Updates to and expansion of MailExtensions APIs.
+    [Details](https://developer.thunderbird.net/add-ons/updating/tb78)'
   tag: changed
-  bug: 1613535
-- note: 'MailExtensions: Allow commands.update() to disable a command'
-  tag: changed
-  bug: 1475043
-- note: 'MailExtensions: Allow browser.query.messages to query by tag'
-  tag: changed
-  bug: 1600547
-- note: 'MailExtensions: Changed folder enumeration to return tree structure rather
-    than list'
-  tag: changed
-  bug: 1606584
-- note: 'MailExtensions: Exposed message "Junk" status to addons'
-  tag: changed
-  bug: 1610457
-- note: 'MailExtensions: Action APIs now provide tab and click information'
-  tag: changed
-  bug: 1617514
-- note: 'MailExtensions: Allow composeAction to open popups from onBeforeSend'
-  tag: changed
-  bug: 1617742
-- note: 'MailExtensions: Allow experiments to use address book cache'
-  tag: changed
-  bug: 1617379
-- note: 'MailExtensions: Return a tab object with getComposeDetails'
-  tag: changed
-  bug: 1629023
+  bug: 1532528
+  bug2: 1532528
+  bug3: 1599380
+  bug4: 1531593
+  bug5: 1630786
+  bug6: 1644000
+  bug7: 1645945
 
 - note: Password display font had characters that were difficult to read
   tag: fixed
@@ -288,7 +252,7 @@ notes:
 - note: Email addresses sometimes displayed incorrectly in message composer
   tag: fixed
   bug: 1526456
-- note: 'Various accessibility fixes: message composer, account setup, attachment
+- note: 'Many accessibility fixes and improvements: message composer, account setup, attachment
     pane'
   tag: fixed
   bug: 1589859
@@ -317,32 +281,12 @@ notes:
 - note: 'Calendar: Task and event dialogs were sometimes too small for their content'
   tag: fixed
   bug: 1623817
-- note: 'Calendar: Rotated day and week views not displayed correctly'
-  tag: fixed
-  bug: 1608765
 - note: 'Calendar: URLs in the event reminder dialog were not clickable'
   tag: fixed
   bug: 1644990
-- note: 'MailExtensions: Multiple extensions using compose.onBeforeSend could send
-    an email prematurely'
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.0">security fixes</a>
   tag: fixed
-  bug: 1631011
-- note: 'MailExtensions: browser.runtime.openOptionsPage did not display page'
-  tag: fixed
-  bug: 1526802
-- note: 'MailExtensions: Calendar and task tabs did not trigger browser.tabs events'
-  tag: fixed
-  bug: 1627556
-- note: 'MailExtensions: Extension popup windows opened in a copy of the main window'
-  tag: fixed
-  bug: 1644083
-- note: 'MailExtensions: Tab was not defined in browser.menus.onClicked callback on
-    out-of-window messages'
-  tag: fixed
-  bug: 1644487
-- note: 'MailExtensions: Select elements in action popups closed the window unexpectedly'
-  tag: fixed
-  bug: 1627197
 
 
 # Unresolved
@@ -351,4 +295,7 @@ notes:
   bug: 1556261
 - note: 'Preferences search not available'
   bug: 1573678
+  tag: unresolved
+- note: 'Drag and drop of address book contacts not working in some situations'
+  bug: 1649804
   tag: unresolved
