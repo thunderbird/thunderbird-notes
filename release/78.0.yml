@@ -6,7 +6,14 @@ release:
     Thunderbird version 68 or earlier.**
     A future release will provide updates from earlier versions.
 
+    Add-on support: As of version 78.0, Thunderbird only supports MailExtensions.
+    Your favorite add-ons may not have been updated for compatibility.
 
+    At this time, users of the Enigmail Add-on should **not** update to Thunderbird 78.
+
+    OpenPGP functionality for Thunderbird 78 is still work in progress, and is disabled
+    by default in the initial 78.0 release. See [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing)
+    for how to enable and help with testing.
 
     **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
 
