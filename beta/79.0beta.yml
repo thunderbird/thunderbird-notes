@@ -1,13 +1,17 @@
 release:
   release_date: 2020-07-16
   text: |
-    **These notes apply to Thunderbird version 79 beta 1 released July 16, 2020.**
+    **These notes apply to Thunderbird version 79 beta 2 released July 21, 2020.**
 
     **<span style="color:#ed00b5">New in Thunderbird 79.0beta:</span> Experimental
     support for OpenPGP encryption. New functionality is being added with every beta!
     Want to help? Join the conversation on Matrix:
     _[#openpgp:mozilla.org](https://chat.mozilla.org/#/room/#openpgp:mozilla.org)_.**
   import_system_requirements: '78.0beta'
+
+  groups:
+  -
+  - "New and Fixed in Beta 2"
 
 notes:
 
@@ -49,6 +53,55 @@ notes:
 - note: 'OAuth authorization window was missing the URL bar'
   tag: fixed
   bug: 1649423
+
+
+# Beta 2
+- note: 'OpenPGP: Key revocation, extending key expiration, and secret key backup'
+  tag: new
+  bug: 1651712
+  group: 2
+- note: 'Drag & Drop multiple attachments to macOS Finder created duplicate files'
+  tag: fixed
+  bug: 1494588
+  group: 2
+- note: 'About Thunderbird dialog keyboard shortcuts did not work'
+  tag: fixed
+  bug: 1638563
+  group: 2
+- note: 'CC''d recipients not displayed in header pane for incoming emails'
+  tag: fixed
+  bug: 1652410
+  group: 2
+- note: 'Message filter and Folder Pane dialogs did not use the correct theme'
+  tag: fixed
+  bug: 1650791
+  bug2: 1652015
+  group: 2
+- note: 'Changing Junk mail settings with keyboard toggled wrong setting'
+  tag: fixed
+  bug: 1607613
+  group: 2
+- note: 'OpenPGP: Messages with long Armor Header lines did not display'
+  tag: fixed
+  bug: 1653651
+  group: 2
+- note: 'OpenPGP: Messages containing non-UTF8 text were not supported'
+  tag: fixed
+  bug: 1651896
+  group: 2
+- note: 'Address book migration updates and fixes'
+  tag: fixed
+  bug: 1652940
+  group: 2
+- note: 'Address book: Last Modified Date was not updated'
+  tag: fixed
+  bug: 1634863
+  group: 2
+- note: 'Chat: Chat participants list did not display operator flags'
+  tag: fixed
+  bug: 1648585
+  group: 2
+
 
 - note: 'Chat displays no messages'
   tag: unresolved

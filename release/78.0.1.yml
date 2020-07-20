@@ -1,0 +1,69 @@
+release:
+  release_date: 2020-07-21
+  text: |
+    ** Thunderbird version 78.0 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+    Thunderbird version 68 or earlier.**
+    A future release will provide updates from earlier versions.
+
+    Add-on support: As of version 78.0, Thunderbird only supports MailExtensions.
+    Your favorite add-ons may not have been updated for compatibility.
+
+    At this time, users of the Enigmail Add-on should **not** update to Thunderbird 78.
+
+    OpenPGP functionality for Thunderbird 78 is still work in progress, and is disabled
+    by default in the 78.0.1 release. See [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing)
+    for how to enable and help with testing.
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: 'OpenPGP: Key revocation, extending key expiration, and secret key backup'
+  tag: new
+  bug: 1651712
+- note: 'Drag & Drop multiple attachments to macOS Finder created duplicate files'
+  tag: fixed
+  bug: 1494588
+- note: 'Faceted search date and relevance settings not saved'
+  tag: fixed
+  bug: 663859
+- note: 'FileLink attachments included as a link and file when added from a network drive via drag & drop'
+  tag: fixed
+  bug: 793118
+- note: 'About Thunderbird dialog keyboard shortcuts did not work'
+  tag: fixed
+  bug: 1638563
+- note: 'CC''d recipients not displayed in header pane for incoming emails'
+  tag: fixed
+  bug: 1652410
+- note: 'Incremental search in contacts sidebar did not always display local results when an LDAP server was also in use'
+  tag: fixed
+  bug: 1644026
+- note: 'Contacts sidebar search results cleared after removing a contact'
+  tag: fixed
+  bug: 1644084
+- note: 'OpenPGP: Messages with long Armor Header lines did not display'
+  tag: fixed
+  bug: 1653651
+- note: 'OpenPGP: Messages containing non-UTF8 text were not supported'
+  tag: fixed
+  bug: 1651896
+- note: 'Various UI and theming fixes'
+  tag: fixed
+  bug: 1649577
+  bug2: 1650240
+  bug3: 1650789
+  bug4: 1650791
+  bug5: 1652199
+  bug6: 1652015
+  bug7: 1651472
+  bug8: 1653628
+- note: 'Chat: Chat participants list did not display operator flags'
+  tag: fixed
+  bug: 1648585
