@@ -68,7 +68,7 @@ notes:
   tag: fixed
   bug: 1638563
   group: 2
-- note: 'CC''d recipients not displayed in header pane for incoming emails'
+- note: 'CC''d recipients sometimes displayed collapsed in header pane'
   tag: fixed
   bug: 1652410
   group: 2
@@ -85,7 +85,7 @@ notes:
   tag: fixed
   bug: 1653651
   group: 2
-- note: 'OpenPGP: Messages containing non-UTF8 text were not supported'
+- note: 'OpenPGP: Messages containing non-UTF-8 text were not supported'
   tag: fixed
   bug: 1651896
   group: 2
@@ -97,7 +97,7 @@ notes:
   tag: fixed
   bug: 1634863
   group: 2
-- note: 'Chat: Chat participants list did not display operator flags'
+- note: 'Chat: Participants list did not display operator flags'
   tag: fixed
   bug: 1648585
   group: 2
