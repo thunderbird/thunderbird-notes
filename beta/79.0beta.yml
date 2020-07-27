@@ -1,7 +1,7 @@
 release:
   release_date: 2020-07-16
   text: |
-    **These notes apply to Thunderbird version 79 beta 2 released July 21, 2020.**
+    **These notes apply to Thunderbird version 79 beta 3 released July 27, 2020.**
 
     **<span style="color:#ed00b5">New in Thunderbird 79.0beta:</span> Experimental
     support for OpenPGP encryption. New functionality is being added with every beta!
@@ -104,7 +104,7 @@ notes:
   group: 2
 
 # Beta 3
-- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, handle OpenPGP External keys, online searching for OpenPGP keys, and more"'
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, handle OpenPGP External keys, online searching for OpenPGP keys, and more'
   tag: new
   bug: 22687
   bug2: 1652537
