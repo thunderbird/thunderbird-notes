@@ -104,7 +104,7 @@ notes:
   group: 2
 
 # Beta 3
-- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, handle OpenPGP External keys, online searching for OpenPGP keys, and more'
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, online searching for OpenPGP keys, and more'
   tag: new
   bug: 22687
   bug2: 1652537
