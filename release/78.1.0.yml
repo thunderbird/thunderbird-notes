@@ -1,0 +1,72 @@
+release:
+  release_date: 2020-07-30
+  text: |
+    ** Thunderbird version 78.1.0 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+    Thunderbird version 68 or earlier.**
+    A future release will provide updates from earlier versions. Automatic updates
+    are available for users already running version 78.0 or higher.
+
+    Add-on support: As of version 78.0, Thunderbird only supports MailExtensions.
+    Your favorite add-ons may not have been updated for compatibility.
+
+    At this time, users of the Enigmail Add-on should **not** update to Thunderbird 78.
+
+    OpenPGP in Thunderbird 78.1.0 has reached feature complete state, but it's still
+    disabled by default, to allow more time for testing, correctness, and localization.
+    See [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing)
+    for how to enable and help with testing.
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
+    online searching for OpenPGP keys, and more'
+  tag: new
+  bug: 22687
+  bug2: 1652537
+  bug3: 1655113
+- note: 'The preferences tab now has a search field'
+  tag: new
+  bug: 1573678
+- note: 'Dark background in message reader is now disabled'
+  tag: changed
+  bug: 1639249
+- note: 'Thunderbird startup was slow when using folder color customizations with many
+    folders. **Previously configured colors will not be migrated.**'
+  tag: fixed
+  bug: 1652279
+- note: 'Mail quota usage in status bar did not support terabyte folder sizes'
+  tag: fixed
+  bug: 1636665
+- note: 'Changing Junk mail settings with keyboard toggled wrong setting'
+  tag: fixed
+  bug: 1607613
+- note: 'Advanced IMAP server preferences not saved in Account Manager'
+  tag: fixed
+  bug: 1653588
+- note: 'Address book migration updates and fixes'
+  tag: fixed
+  bug: 1652940
+- note: 'Address book: Last Modified Date was not updated'
+  tag: fixed
+  bug: 1634863
+- note: 'Dark mode improvements'
+  tag: fixed
+  bug: 1653750
+  bug2: 1653751
+
+# unresolved
+- note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
+  tag: unresolved
+  bug: 1556261
+- note: 'Fixed width font not working in compose window'
+  tag: unresolved
+  bug: 1655279
+
