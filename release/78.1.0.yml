@@ -61,6 +61,9 @@ notes:
   tag: fixed
   bug: 1653750
   bug2: 1653751
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.1">security fixes</a>
+  tag: fixed
 
 # unresolved
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
