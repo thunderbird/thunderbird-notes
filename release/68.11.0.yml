@@ -1,0 +1,21 @@
+release:
+  release_date: 2020-07-28
+  text: |
+    **These notes apply to Thunderbird version 68.11.0 released July 28, 2020.**
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+  import_system_requirements: '68.0'
+
+
+notes:
+- note: 'FileLink attachments included as a link and file when added from a network drive via drag & drop'
+  tag: fixed
+  bug: 793118
+# - note: Various
+# <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.11">security fixes</a>
+# tag: fixed
