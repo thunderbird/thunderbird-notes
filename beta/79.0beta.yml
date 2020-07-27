@@ -12,6 +12,7 @@ release:
   groups:
   -
   - "New and Fixed in Beta 2"
+  - "New, Changed, and Fixed in Beta 3"
 
 notes:
 
@@ -102,7 +103,40 @@ notes:
   bug: 1648585
   group: 2
 
+# Beta 3
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, handle OpenPGP External keys, online searching for OpenPGP keys, and more"'
+  tag: new
+  bug: 22687
+  bug2: 1652537
+  bug3: 1655113
+  group: 3
+- note: 'Dark background in message reader is now disabled'
+  tag: changed
+  bug: 1639249
+  group: 3
+- note: 'Attachment corruption could occur when downloading large attachments from an IMAP server that supports chunking'
+  tag: fixed
+  bug: 1654995
+  group: 3
+- note: 'Thunderbird startup was slow when using folder color customizations with many folders. **Previously configured colors will not be migrated.**'
+  tag: fixed
+  bug: 1652279
+  group: 3
+- note: 'Mail quota usage in status bar did not support terabyte folder sizes'
+  bug: 1636665
+  tag: fixed
+  group: 3
+- note: 'Dark mode improvements'
+  tag: fixed
+  bug: 1653751
+  bug2: 1653750
+  group: 3
+
+
 
 - note: 'Chat displays no messages'
   tag: unresolved
   bug: 1646611
+- note: 'Fixed width font not working in compose window'
+  tag: unresolved
+  bug: 1655279
