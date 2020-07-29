@@ -16,6 +16,6 @@ notes:
 - note: 'FileLink attachments included as a link and file when added from a network drive via drag & drop'
   tag: fixed
   bug: 793118
-# - note: Various
-# <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.11">security fixes</a>
-# tag: fixed
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.11">security fixes</a>
+  tag: fixed
