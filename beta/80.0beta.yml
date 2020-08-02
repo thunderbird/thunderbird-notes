@@ -1,0 +1,69 @@
+release:
+  release_date: 2020-08-03
+  text: |
+    **These notes apply to Thunderbird version 80 beta 1 released August 3, 2020.**
+
+    OpenPGP in Thunderbird 80.0b1 has reached feature complete state, but it's still
+    disabled by default, to allow more time for testing, correctness, and localization.
+    See [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing)
+    for how to enable and help with testing.
+    Want to help? Join the conversation on Matrix:
+    _[#openpgp:mozilla.org](https://chat.mozilla.org/#/room/#openpgp:mozilla.org)_.
+  import_system_requirements: '78.0beta'
+
+
+notes:
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
+      online searching for OpenPGP keys, and more'
+  tag: new
+  bug: 22687
+  bug2: 1652537
+  bug3: 1655113
+
+- note: '"Master Password" renamed to "Primary Password"'
+  tag: changed
+  bug: 1649522
+- note: 'Twitter search removed'
+  tag: changed
+  bug: 1653792
+- note: 'Building OpenPGP shared library linked to system libraries now supported'
+  tag: changed
+  bug: 1634963
+- note: 'MailExtension errors now shown in Developer Tools console by default'
+  tag: changed
+  bug: 1650149
+
+
+
+- note: 'IMAP server capabilities were not rechecked after upgrading to SSL/TLS connection'
+  tag: fixed
+  bug: 1611624
+- note: 'Advanced IMAP server preferences not saved in Account Manager'
+  tag: fixed
+  bug: 1653588
+- note: 'Message preview was sometimes blank after upgrading from Thunderbird 68'
+  tag: fixed
+  bug: 1653168
+- note: 'Address Book UI improvements'
+  tag: fixed
+  bug: 1632331
+  bug2: 1659522
+- note: 'Drag and drop of address book contacts did not work in some situations'
+  bug: 1649804
+  tag: fixed
+- note: 'Email addresses whitelisted for remote content not displayed in preferences'
+  bug: 1652575
+  tag: fixed
+
+
+
+# Unresolved
+- note: 'Chat displays no messages'
+  tag: unresolved
+  bug: 1646611
+- note: 'Fixed width font not working in compose window'
+  tag: unresolved
+  bug: 1655279
+- note: 'MailExtensions: Content scripts in mail editor do not work'
+  tag: unresolved
+  bug: 1652686
