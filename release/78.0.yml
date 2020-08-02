@@ -130,6 +130,10 @@ notes:
     add-ons using XUL overlays are no longer supported.**'
   tag: changed
   bug: 1614237
+- note: '**As of version 78.0, "sideloaded" extensions are no longer supported.
+  Enterprise administrators can deploy extensions using policies.'
+  tag: changed
+  bug: 1656652
 - note: 'Linux minimum runtime requirements have changed: GTK 3.14, GLIBC 2.17, libstdc++ 4.8.1
     [Details](/en-US/thunderbird/78.0/system-requirements/)'
   tag: changed
