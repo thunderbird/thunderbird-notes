@@ -1,0 +1,67 @@
+release:
+  release_date: 2020-08-06
+  text: |
+    ** Thunderbird version 78.1.1 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+    Thunderbird version 68 or earlier.**
+    A future release will provide updates from earlier versions. Automatic updates
+    are available for users already running version 78.0 or higher.
+
+    Add-on support: As of version 78.0, Thunderbird only supports MailExtensions.
+    Your favorite add-ons may not have been updated for compatibility.
+
+    At this time, users of the Enigmail Add-on should **not** update to Thunderbird 78.
+
+    OpenPGP in Thunderbird 78.1.0 has reached feature complete state, but it's still
+    disabled by default, to allow more time for testing, correctness, and localization.
+    See [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing)
+    for how to enable and help with testing.
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: 'Building OpenPGP shared library linked to system libraries now supported'
+  tag: changed
+  bug: 1634963
+- note: 'MailExtension errors now shown in Developer Tools console by default'
+  tag: changed
+  bug: 1650149
+- note: 'MailExtensions: Dynamic registration of calendar providers now supported'
+  tag: changed
+  bug: 1652885
+
+
+- note: 'OpenPGP improvements'
+  tag: fixed
+  bug: 1655210
+- note: 'Message preview was sometimes blank after upgrading from Thunderbird 68'
+  tag: fixed
+  bug: 1653168
+- note: 'Email addresses whitelisted for remote content not displayed in preferences'
+  bug: 1652575
+  tag: fixed
+- note: 'Importing data from Seamonkey did not work'
+  tag: fixed
+  bug: 272292
+- note: 'Renaming a mail list did not update the side bar'
+  tag: fixed
+  bug: 1632331
+- note: 'MailExtensions: messenger.* namespace was undefined'
+  tag: fixed
+  bug: 1641573
+
+
+
+# unresolved
+- note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
+  tag: unresolved
+  bug: 1556261
+- note: 'Fixed width font not working in compose window'
+  tag: unresolved
+  bug: 1655279
