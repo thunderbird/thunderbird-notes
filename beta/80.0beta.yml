@@ -91,30 +91,33 @@ notes:
   tag: fixed
   bug: 1654548
   group: 2
-- note: 'Select all in message source did not work until focused with a mouse click'
+- note: '"Select All" (Ctrl+A) in message source did not work until focused with a mouse click'
   tag: fixed
   bug: 1657619
+  group: 2
+- note: 'Ctrl+scroll wheel not zooming in message reader'
+  tag: fixed
+  bug: 1655244
   group: 2
 - note: 'Chat did not display messages'
   tag: fixed
   bug: 1646611
   group: 2
-- note: 'HTML Email signatures loaded from a file were not saved'
+- note: 'Setting/changing a signature from a file lost when closing account settings'
   tag: fixed
   bug: 1657050
   group: 2
-- note: 'Message Filter dialog improvements'
+- note: 'Message filter dialog fixes: Missing scrollbar, drop-down list not wide enough'
   tag: fixed
   bug: 1633306
   bug2: 1656648
   group: 2
-- note: 'Various UX and Theme improvements'
+- note: 'Various UX and theme improvements'
   tag: fixed
   bug: 1655568
   bug2: 1655573
   bug3: 1655289
   bug4: 656113
-  bug5: 1655244
   group: 2
 
 
