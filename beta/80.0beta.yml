@@ -1,7 +1,7 @@
 release:
   release_date: 2020-08-03
   text: |
-    **These notes apply to Thunderbird version 80 beta 1 released August 3, 2020.**
+    **These notes apply to Thunderbird version 80 beta 2 released August 10, 2020.**
 
     OpenPGP in Thunderbird 80.0b1 has reached feature complete state, but it's still
     disabled by default, to allow more time for testing, correctness, and localization.
@@ -11,6 +11,9 @@ release:
     _[#openpgp:mozilla.org](https://chat.mozilla.org/#/room/#openpgp:mozilla.org)_.
   import_system_requirements: '78.0beta'
 
+  groups:
+  -
+  - "Changed and Fixed in Beta 2"
 
 notes:
 - note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
@@ -56,14 +59,73 @@ notes:
   tag: fixed
 
 
+# Beta 2 follows
+- note: 'Building OpenPGP shared library linked to system libraries now supported'
+  tag: changed
+  bug: 1634963
+  group: 2
+- note: 'MailExtensions: Dynamic registration of calendar providers now supported'
+  tag: changed
+  bug: 1652885
+  group: 2
+
+- note: 'OpenPGP bug fixes and improvements'
+  tag: fixed
+  bug: 1633251
+  bug2: 1653763
+  bug3: 1656023
+  bug4: 1656391
+  bug5: 1657245
+  bug6: 1657464
+  group: 2
+- note: 'Address book migration failed when there was a dot in the file name'
+  tag: fixed
+  bug: 1655686
+  group: 2
+- note: 'Address book: "Always prefer display name over message header" was always checked
+    when editing a contact'
+  tag: fixed
+  bug: 1655884
+  group: 2
+- note: 'Printing did not always work'
+  tag: fixed
+  bug: 1654548
+  group: 2
+- note: 'Select all in message source did not work until focused with a mouse click'
+  tag: fixed
+  bug: 1657619
+  group: 2
+- note: 'Chat did not display messages'
+  tag: fixed
+  bug: 1646611
+  group: 2
+- note: 'HTML Email signatures loaded from a file were not saved'
+  tag: fixed
+  bug: 1657050
+  group: 2
+- note: 'Message Filter dialog improvements'
+  tag: fixed
+  bug: 1633306
+  bug2: 1656648
+  group: 2
+- note: 'Various UX and Theme improvements'
+  tag: fixed
+  bug: 1655568
+  bug2: 1655573
+  bug3: 1655289
+  bug4: 656113
+  bug5: 1655244
+  group: 2
+
+
 
 # Unresolved
-- note: 'Chat displays no messages'
+- note: 'Thunderbird may become unresponsive when sorting large IMAP folders'
   tag: unresolved
-  bug: 1646611
+  bug: 1657565
 - note: 'Fixed width font not working in compose window'
   tag: unresolved
-  bug: 1655279
+  bug: 1658156
 - note: 'MailExtensions: Content scripts in mail editor do not work'
   tag: unresolved
   bug: 1652686
