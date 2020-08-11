@@ -1,7 +1,7 @@
 release:
   release_date: 2020-08-03
   text: |
-    **These notes apply to Thunderbird version 80 beta 2 released August 10, 2020.**
+    **These notes apply to Thunderbird version 80 beta 3 released August 11, 2020.**
 
     OpenPGP in Thunderbird 80.0b1 has reached feature complete state, but it's still
     disabled by default, to allow more time for testing, correctness, and localization.
@@ -120,6 +120,31 @@ notes:
   bug4: 656113
   group: 2
 
+
+# Beta 3
+- note: 'OpenPGP Key generation now disabled when there is no default mail account configured'
+  tag: changed
+  bug: 1657497
+  group: 3
+- note: 'MailExtensions: Some APIs now use defineLazyPreferenceGetter in order
+      to benefit from caching'
+  tag: changed
+  bug: 1658116
+  group: 3
+
+- note: 'OpenPGP Key Manager search function did not work'
+  tag: fixed
+  bug: 1657894
+  group: 3
+- note: 'OpenPGP Key Properties dialog was sometimes too small'
+  tag: fixed
+  bug: 1643343
+  group: 3
+- note: 'Address book performance optimizations'
+  tag: fixed
+  bug: 1658062
+  bug2: 1658128
+  group: 3
 
 
 # Unresolved
