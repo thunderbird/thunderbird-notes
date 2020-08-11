@@ -14,6 +14,7 @@ release:
   groups:
   -
   - "Changed and Fixed in Beta 2"
+  - "Changed and Fixed in Beta 3"
 
 notes:
 - note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
