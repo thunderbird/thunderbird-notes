@@ -1,7 +1,7 @@
 release:
   release_date: 2020-08-03
   text: |
-    **These notes apply to Thunderbird version 80 beta 3 released August 11, 2020.**
+    **These notes apply to Thunderbird version 80 beta 4 released August 17, 2020.**
 
     OpenPGP in Thunderbird 80.0b1 has reached feature complete state, but it's still
     disabled by default, to allow more time for testing, correctness, and localization.
@@ -15,6 +15,7 @@ release:
   -
   - "Changed and Fixed in Beta 2"
   - "Changed and Fixed in Beta 3"
+  - "Fixed in Beta 4"
 
 notes:
 - note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
@@ -148,13 +149,32 @@ notes:
   group: 3
 
 
+# Beta 4
+- note: 'OpenPGP: Encrypted email would not send if address contained uppercase characters'
+  tag: fixed
+  bug: 1657390
+  group: 4
+- note: 'OpenPGP: "Key ID" column could not be resized in Key Manage'
+  tag: fixed
+  bug: 1658512
+  group: 4
+- note: 'Message Composer: Order of attachments could not be modified using drag & drop'
+  tag: fixed
+  bug: 1658114
+  group: 4
+- note: ' Address Book: Migration did not preserve names of address nooks used in ffilters'
+  tag: fixed
+  bug: 1659971
+  group: 4
+
+
 # Unresolved
 - note: 'Thunderbird may become unresponsive when sorting large IMAP folders'
   tag: unresolved
   bug: 1657565
 - note: 'Fixed width font not working in compose window'
   tag: unresolved
-  bug: 1658156
+  bug: 1658999
 - note: 'MailExtensions: Content scripts in mail editor do not work'
   tag: unresolved
   bug: 1652686
