@@ -163,7 +163,7 @@ notes:
   tag: fixed
   bug: 1658114
   group: 4
-- note: ' Address Book: Migration did not preserve names of address nooks used in ffilters'
+- note: 'Address Book: Migration did not preserve names of address books used in filters'
   tag: fixed
   bug: 1659971
   group: 4
