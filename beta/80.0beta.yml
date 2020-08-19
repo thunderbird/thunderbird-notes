@@ -1,7 +1,7 @@
 release:
   release_date: 2020-08-03
   text: |
-    **These notes apply to Thunderbird version 80 beta 4 released August 17, 2020.**
+    **These notes apply to Thunderbird version 80 beta 5 released August 20, 2020.**
 
     OpenPGP in Thunderbird 80.0b1 has reached feature complete state, but it's still
     disabled by default, to allow more time for testing, correctness, and localization.
@@ -16,6 +16,7 @@ release:
   - "Changed and Fixed in Beta 2"
   - "Changed and Fixed in Beta 3"
   - "Fixed in Beta 4"
+  - "Changed and Fixed in Beta 5"
 
 notes:
 - note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
@@ -168,13 +169,34 @@ notes:
   group: 4
 
 
+# Beta 5
+- note: 'OpenPGP: Encrypted messages are now signed automatically'
+  tag: changed
+  bug: 1659487
+  group: 5
+- note: 'Calendar: Event summary dialog is now themeable'
+  tag: changed
+  bug: 1659079
+  group: 5
+
+- note: 'OpenPGP: Keys containing invalid UTF-8 strings could not be imported'
+  tag: fixed
+  bug: 1658730
+  group: 5
+- note: 'Dialog to add a new mail account from "Account Settings" did not open'
+  tag: fixed
+  bug: 1659241
+  group: 5
+- note: 'Composing messages with a "fixed width" font did not work'
+  tag: fixed
+  bug: 1658999
+  group: 5
+
+
 # Unresolved
 - note: 'Thunderbird may become unresponsive when sorting large IMAP folders'
   tag: unresolved
   bug: 1657565
-- note: 'Fixed width font not working in compose window'
-  tag: unresolved
-  bug: 1658999
 - note: 'MailExtensions: Content scripts in mail editor do not work'
   tag: unresolved
   bug: 1652686
