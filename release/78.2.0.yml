@@ -1,0 +1,127 @@
+release:
+  release_date: 2020-08-25
+  text: |
+    ** Thunderbird version 78.2.0 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+    Thunderbird version 68 or earlier.**
+    A future release will provide updates from earlier versions. Automatic updates
+    are available for users already running version 78.0 or higher.
+
+    Add-on support: As of version 78.0, Thunderbird only supports MailExtensions.
+    Your favorite add-ons may not have been updated for compatibility.
+
+    At this time, users of the Enigmail Add-on should **not** update to Thunderbird 78.
+
+    OpenPGP in Thunderbird 78.2.0 has reached feature complete state, but it's still
+    disabled by default, to allow more time for testing, correctness, and localization.
+    See [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing)
+    for how to enable and help with testing.
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: 'OpenPGP Key generation now disabled when there is no default mail account configured'
+  tag: changed
+  bug: 1657497
+- note: 'OpenPGP: Encrypted messages are now signed automatically'
+  tag: changed
+  bug: 1659487
+- note: 'Twitter search removed'
+  tag: changed
+  bug: 1653792
+- note: 'Calendar: Event summary dialog is now themeable'
+  tag: changed
+  bug: 1659079
+- note: 'MailExtensions: Some APIs now use defineLazyPreferenceGetter in order to
+    benefit from caching'
+  tag: changed
+  bug: 1658116
+
+- note: 'OpenPGP Key Manager search function did not work'
+  tag: fixed
+  bug: 1657894
+- note: 'OpenPGP Key Properties dialog was sometimes too small'
+  tag: fixed
+  bug: 1643343
+- note: 'OpenPGP: Encrypted email would not send if address contained uppercase characters'
+  tag: fixed
+  bug: 1657390
+- note: 'OpenPGP: "Key ID" column could not be resized in Key Manage'
+  tag: fixed
+  bug: 1658512
+- note: 'OpenPGP: Keys containing invalid UTF-8 strings could not be imported'
+  tag: fixed
+  bug: 1658730
+- note: 'Many more OpenPGP bug fixes and improvements'
+  tag: fixed
+  bug: 1633251
+  bug2: 1653763
+  bug3: 1656023
+  bug4: 1656391
+  bug5: 1657245
+  bug6: 1657464
+- note: 'IMAP fetch chunk size was always 65536 bytes'
+  tag: fixed
+  bug: 1580480
+- note: 'Attachment corruption could occur when downloading large attachments from
+    an IMAP server that supports chunking'
+  tag: fixed
+  bug: 1654995
+- note: 'IMAP server capabilities were not rechecked after upgrading to SSL/TLS connection'
+  tag: fixed
+  bug: 1611624
+- note: 'Message Composer: Order of attachments could not be modified using drag &
+    drop'
+  tag: fixed
+  bug: 1658114
+- note: 'Composing messages with a "fixed width" font did not work'
+  tag: fixed
+  bug: 1658999
+  bug2: 1655279
+- note: 'Drag and drop of address book contacts did not work in some situations'
+  tag: fixed
+  bug: 1649804
+- note: 'Address book migration failed when there was a dot in the file name'
+  tag: fixed
+  bug: 1655686
+- note: 'Address book: "Always prefer display name over message header" was always
+    checked when editing a contact'
+  tag: fixed
+  bug: 1655884
+- note: 'Address book performance optimizations'
+  tag: fixed
+  bug: 1658062
+  bug2: 1658128
+- note: 'Dialog to add a new mail account from "Account Settings" did not open'
+  tag: fixed
+  bug: 1659241
+- note: '"Select All" (Ctrl+A) in message source did not work until focused with a
+    mouse click'
+  tag: fixed
+  bug: 1657619
+- note: 'Ctrl+scroll wheel not zooming in message reader'
+  tag: fixed
+  bug: 1655244
+- note: 'Setting/changing a signature from a file lost when closing account settings'
+  tag: fixed
+  bug: 1657050
+- note: 'Adaptive Junk Mail settings could not be disabled'
+  tag: fixed
+  bug: 1646529
+- note: 'Message filter dialog fixes: Missing scrollbar, drop-down list not wide enough'
+  tag: fixed
+  bug: 1633306
+  bug2: 1656648
+- note: 'Various UX and theme improvements'
+  tag: fixed
+  bug: 656113
+  bug2: 1655289
+  bug3: 1655568
+  bug4: 1655573
+
