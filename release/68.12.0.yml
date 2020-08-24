@@ -1,0 +1,18 @@
+release:
+  release_date: 2020-08-25
+  text: |
+    **These notes apply to Thunderbird version 68.12.0 released August 25, 2020.**
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+  import_system_requirements: '68.0'
+
+
+notes:
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.12">security fixes</a>
+  tag: fixed
