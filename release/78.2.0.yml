@@ -59,7 +59,7 @@ notes:
   tag: fixed
   bug: 1658730
 - note: 'OpenPGP: Enable automatic signing for encrypted messages in additional scenarios'
-  tag: changed
+  tag: fixed
   bug: 1659487
 - note: 'Many more OpenPGP bug fixes and improvements'
   tag: fixed
