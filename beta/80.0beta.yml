@@ -9,7 +9,7 @@ release:
     for how to enable and help with testing.
     Want to help? Join the conversation on Matrix:
     _[#openpgp:mozilla.org](https://chat.mozilla.org/#/room/#openpgp:mozilla.org)_.
-  import_system_requirements: '78.0beta'
+  import_system_requirements: '79.0beta'
 
   groups:
   -
