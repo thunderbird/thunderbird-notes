@@ -7,7 +7,7 @@ release:
     • Window: Windows 7, Windows Server 2008 R2 or later
     • Mac: Mac OS X 10.9 or later
     • Linux: GTK+ 3.4 or higher**.
-    Details [here](/thunderbird/68.0/system-requirements/).
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
 
   import_system_requirements: '68.0'
 
