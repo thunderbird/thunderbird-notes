@@ -29,9 +29,9 @@ notes:
 - note: 'OpenPGP Key generation now disabled when there is no default mail account configured'
   tag: changed
   bug: 1657497
-- note: 'OpenPGP: Encrypted messages are now signed automatically'
+- note: 'OpenPGP: Encrypt saved drafts when OpenPGP is enabled'
   tag: changed
-  bug: 1659487
+  bug: 1650551
 - note: 'Twitter search removed'
   tag: changed
   bug: 1653792
@@ -58,6 +58,9 @@ notes:
 - note: 'OpenPGP: Keys containing invalid UTF-8 strings could not be imported'
   tag: fixed
   bug: 1658730
+- note: 'OpenPGP: Enable automatic signing for encrypted messages in additional scenarios'
+  tag: changed
+  bug: 1659487
 - note: 'Many more OpenPGP bug fixes and improvements'
   tag: fixed
   bug: 1633251
