@@ -12,11 +12,11 @@ release:
 
     At this time, users of the Enigmail Add-on should **not** update to Thunderbird 78.
 
-    OpenPGP in Thunderbird 78.2.0 has reached feature complete state, but enabling
-    by default has been delayed to allow more time for testing and localization. See
-    [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing) for how
-    to enable and help with testing. It is expected that version 78.2.1
-    will enable OpenPGP by default.
+    Originally it was announced to enable OpenPGP by default in version 78.2.0.
+    It has been decided to slightly postpone this for final changes and testing by
+    volunteers. See [the wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP#Testing)
+    for how to enable and help with testing. It is expected that version 78.2.1
+    will enable the feature by default.
 
     **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
 
