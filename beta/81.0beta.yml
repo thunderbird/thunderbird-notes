@@ -1,0 +1,61 @@
+release:
+  release_date: 2020-08-27
+  text: |
+    **These notes apply to Thunderbird version 80 beta 5 released August 20, 2020.**
+
+  import_system_requirements: '78.0beta'
+
+notes:
+- note: 'PDF.js viewer now included in Thunderbird'
+  tag: new
+  bug: 810815
+
+- note: 'Address book: Synchronization of CardDAV address books now supported'
+  tag: changed
+  bug: 1660127
+- note: 'Calendar: Opening an existing event now opens summary dialog'
+  tag: changed
+  bug: 1575195
+- note: 'Chat: Image based emoticons replaced with Unicode'
+  tag: changed
+  bug: 1658648
+- note: 'Chat: Non-functional Twitter support removed'
+  tag: changed
+  bug: 1445778
+- note: 'MailExtensions: messageDisplay APIs extended to support multiple selected messages'
+  tag: changed
+  bug: 1617461
+
+
+- note: 'Message list not in focus at startup'
+  tag: fixed
+  bug: 1629522
+- note: 'Email filters reported failure when moving a message to original folder'
+  tag: fixed
+  bug: 1653690
+- note: 'Sending messages sometimes failed when recipients were in LDAP address book'
+  tag: fixed
+  bug: 1371309
+- note: 'Address book: Creating mailing list from contacts sidebar failed'
+  tag: fixed
+  bug: 1659162
+- note: 'Address book: Search box icon duplicated after toolbar customization'
+  tag: fixed
+  bug: 1650486
+- note: 'vCard 2.1 attachments not handled properly'
+  tag: fixed
+  bug: 1659323
+  bug2: 1660134
+- note: 'Non-functional help menu items removed'
+  tag: fixed
+  bug: 1659318
+- note: 'Calendar: Event reminder details were unreadable'
+  tag: fixed
+  bug: 1658923
+
+- note: 'MailExtensions: browser.folders.delete failed on IMAP folders'
+  tag: fixed
+  bug: 1651308
+- note: 'MailExtensions: Content scripts in message composer did not work'
+  tag: fixed
+  bug: 1652686
