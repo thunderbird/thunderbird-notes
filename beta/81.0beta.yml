@@ -64,3 +64,8 @@ notes:
 - note: 'MailExtensions: Content scripts in message composer did not work'
   tag: fixed
   bug: 1652686
+
+# Unresolved
+- note: 'Selecting a news article to read may cause Thunderbird to <a href="https://bugzil.la/1657493">crash</a>'
+  tag: unresolved
+  bug: 1657493
