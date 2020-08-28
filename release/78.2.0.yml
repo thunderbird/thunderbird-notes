@@ -72,10 +72,6 @@ notes:
 - note: 'IMAP fetch chunk size was always 65536 bytes'
   tag: fixed
   bug: 1580480
-- note: 'Attachment corruption could occur when downloading large attachments from
-    an IMAP server that supports chunking'
-  tag: fixed
-  bug: 1654995
 - note: 'IMAP server capabilities were not rechecked after upgrading to SSL/TLS connection'
   tag: fixed
   bug: 1611624
