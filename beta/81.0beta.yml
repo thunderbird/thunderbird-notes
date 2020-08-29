@@ -1,7 +1,7 @@
 release:
   release_date: 2020-08-26
   text: |
-    **These notes apply to Thunderbird version 81 beta 1 released August 26, 2020.**
+    **These notes apply to Thunderbird version 81 beta 2 released August 31, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/81.0beta/system-requirements/)
 
@@ -9,6 +9,10 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
   import_system_requirements: '79.0beta'
+
+  groups:
+  -
+  - "Changed and Fixed in Beta 2"
 
 notes:
 - note: 'PDF.js viewer now included in Thunderbird'
@@ -64,6 +68,41 @@ notes:
 - note: 'MailExtensions: Content scripts in message composer did not work'
   tag: fixed
   bug: 1652686
+
+
+# Beta 2
+- note: 'OpenPGP enabled by default'
+  tag: changed
+  bug: 1659536
+  group: 2
+- note: 'OpenPGP: Disabled the use of MD5/SM2/SM3 algorithms'
+  tag: changed
+  bug: 1641720
+  group: 2
+
+- note: 'OpenPGP: Users with sub-identities were unable to encrypt or sign messages
+  when switching identities'
+  tag: fixed
+  bug: 1661160
+  group: 2
+- note: 'Message filters: Filters shown as enabled in configuration dialog were not always enabled'
+  tag: fixed
+  bug: 1660917
+  group: 2
+- note: 'OpenPGP message security window did not support dark mode'
+  tag: fixed
+  bug: 1661203
+  group: 2
+- note: 'Thread summaries were unreadable on macOS using dark mode'
+  tag: fixed
+  bug: 1660403
+  group: 2
+- note: 'MailExtensions: Adding custom headers with mail.compose.other.header did not work'
+  tag: fixed
+  bug: 1658890
+  group: 2
+
+
 
 # Unresolved
 - note: 'Selecting a news article to read may cause Thunderbird to <a href="https://bugzil.la/1657493">crash</a>'
