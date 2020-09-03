@@ -12,7 +12,7 @@ class ReleaseNotes(object):
     def __init__(self):
         self.settings = {}
         with open(os.path.join(os.path.dirname(__file__), "settings.yml"), "r") as f:
-            self.settings = yaml.load(f)
+            self.settings = yaml.safe_load(f)
 
         # Copy notes into the same dict for imports. Release version notes overwrite beta version notes if any
         # version numbers are shared.
@@ -53,7 +53,7 @@ class ReleaseNotes(object):
             for notefile in notefiles:
                 if notefile.endswith(".yml"):
                     with open(os.path.join(path, notefile), "r") as f:
-                        doc = yaml.load(f)
+                        doc = yaml.safe_load(f)
                         notes[os.path.splitext(notefile)[0]] = doc
         sorted_notes = self.organize(notes)
         return sorted_notes
