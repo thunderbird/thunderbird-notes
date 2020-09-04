@@ -1,7 +1,7 @@
 release:
   release_date: 2020-08-26
   text: |
-    **These notes apply to Thunderbird version 81 beta 2 released August 29, 2020.**
+    **These notes apply to Thunderbird version 81 beta 3 released September 8, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/81.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
   groups:
   -
   - "Changed and Fixed in Beta 2"
+  - "New. Changed, and Fixed in Beta 3"
 
 notes:
 - note: 'PDF.js viewer now included in Thunderbird'
@@ -102,9 +103,52 @@ notes:
   bug: 1658890
   group: 2
 
-
+# Beta 3
+- note: 'Drag and Drop reordering of recipient pills now supported'
+  tag: new
+  bug: 1601749
+  group: 3
+- note: 'Calendar: Remote calendar auto-detection now supported'
+  tag: new
+  bug: 306495
+  group: 3
+- note: 'OpenPGP: Some signature states reported as "mismatch" now report "unknown"'
+  tag: changed
+  bug: 1662881
+  group: 3
+- note: 'Privacy policy now displayed in a tab when updated'
+  tag: changed
+  bug: 1651298
+  group: 3
+- note: 'Installation of "legacy" MailExtensions now disabled'
+  tag: changed
+  bug: 1661216
+  group: 3
+- note: 'OpenPGP: Improvements to key importing when failures occur'
+  tag: fixed
+  bug: 1663037
+  group: 3
+- note: 'OpenPGP: Decryption did not work with certain HTTP proxy configurations'
+  tag: fixed
+  bug: 1661913
+  group: 3
+- note: 'News reader crashed when downloading new articles. See unresolved issues.'
+  tag: fixed
+  bug: 1657493
+  group: 3
+- note: 'Windows 10 high-contrast theme fixes'
+  tag: fixed
+  bug: 1661229
+  group: 3
+- note: 'More theme fixes and improvements'
+  tag: fixed
+  bug: 1662536
+  bug2: 1662585
+  bug3: 1662831
+  bug4: 1659380
+  group: 3
 
 # Unresolved
-- note: 'Selecting a news article to read may cause Thunderbird to <a href="https://bugzil.la/1657493">crash</a>'
+- note: 'New news articles are not downloaded'
   tag: unresolved
-  bug: 1657493
+  bug: 16619155
