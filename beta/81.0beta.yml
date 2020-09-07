@@ -132,9 +132,17 @@ notes:
   tag: fixed
   bug: 1661913
   group: 3
+- note: 'OpenPGP: "Discover keys online" option did not work when searching for an email address'
+  tag: fixed
+  bug: 1663157
+  group: 3
 - note: 'News reader crashed when downloading new articles. See unresolved issues.'
   tag: fixed
   bug: 1657493
+  group: 3
+- note: 'Button to restore default folder icon color was not keyboard accessible'
+  tag: fixed
+  bug: 1663075
   group: 3
 - note: 'Windows 10 high-contrast theme fixes'
   tag: fixed
