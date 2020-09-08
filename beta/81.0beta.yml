@@ -136,6 +136,10 @@ notes:
   tag: fixed
   bug: 1663157
   group: 3
+- note: 'OpenPGP: Creating a new key pair did not automatically select it for use'
+  tag: fixed
+  bug: 1663422
+  group: 3
 - note: 'News reader crashed when downloading new articles. See unresolved issues.'
   tag: fixed
   bug: 1657493
