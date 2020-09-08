@@ -1,0 +1,79 @@
+release:
+  release_date: 2020-09-10
+  text: |
+    ** Thunderbird version 78.2.2 is only offered as direct download from
+    [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+    Thunderbird version 68 or earlier.**
+    A future release will provide updates from earlier versions. Automatic updates
+    are available for users already running version 78.0 or higher.
+
+    Add-on support: As of version 78.0, Thunderbird only supports MailExtensions.
+    Your favorite add-ons may not have been updated for compatibility.
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: Drag and Drop reordering of recipient pills now supported
+  tag: new
+  bug: 1601749
+
+- note: 'OpenPGP: Some signature states reported as "mismatch" now report "unknown"'
+  tag: changed
+  bug: 1662881
+- note: Privacy policy now displayed in a tab when updated
+  tag: changed
+  bug: 1651298
+- note: 'Chat: Non-functional Twitter support removed'
+  tag: changed
+  bug: 1445778
+
+- note: 'OpenPGP: Improvements to key importing when failures occur'
+  tag: fixed
+  bug: 1663037
+- note: 'OpenPGP: Decryption did not work with certain HTTP proxy configurations'
+  tag: fixed
+  bug: 1661913
+- note: 'OpenPGP: "Discover keys online" option did not work when searching for an
+  email address'
+  tag: fixed
+  bug: 1663157
+
+- note: Email filters reported failure when moving a message to original folder
+  tag: fixed
+  bug: 1653690
+- note: 'Message filters: Filters shown as enabled in configuration dialog were not
+  always enabled'
+  tag: fixed
+  bug: 1660917
+- note: vCard 2.1 attachments not handled properly
+  tag: fixed
+  bug: 1659323
+  bug2: 1660134
+- note: Sending messages sometimes failed when recipients were in LDAP address book
+  tag: fixed
+  bug: 1371309
+- note: Non-functional help menu items removed
+  tag: fixed
+  bug: 1659318
+- note: 'Calendar: Event reminder details were unreadable'
+  tag: fixed
+  bug: 1658923
+- note: Windows 10 high-contrast theme fixes
+  tag: fixed
+  bug: 1661229
+- note: More theme fixes and improvements
+  tag: fixed
+  bug: 1659380
+  bug2: 1662536
+  bug3: 1662585
+  bug4: 1662831
+- note: 'MailExtensions: Adding custom headers with mail.compose.other.header did
+  not work'
+  tag: fixed
+  bug: 1658890
