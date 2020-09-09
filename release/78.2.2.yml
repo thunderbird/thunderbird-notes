@@ -77,3 +77,10 @@ notes:
   not work'
   tag: fixed
   bug: 1658890
+
+
+# Unresolved
+- note: 'Selecting "Cancel" on the Master Password prompt at startup incorrectly
+         reports corrupted OpenPGP data.'
+  tag: unresolved
+  bug: 1664022
