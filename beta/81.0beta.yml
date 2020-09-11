@@ -98,7 +98,8 @@ notes:
   tag: fixed
   bug: 1660403
   group: 2
-- note: 'MailExtensions: Adding custom headers with mail.compose.other.header did not work'
+- note: 'Adding custom headers in the addressing widget (preference
+          mail.compose.other.header) did not work'
   tag: fixed
   bug: 1658890
   group: 2

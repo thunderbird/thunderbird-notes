@@ -61,6 +61,10 @@ notes:
 - note: Non-functional help menu items removed
   tag: fixed
   bug: 1659318
+- note: 'Adding custom headers in the addressing widget (preference
+    mail.compose.other.header) did not work'
+  tag: fixed
+  bug: 1658890
 - note: 'Calendar: Event reminder details were unreadable'
   tag: fixed
   bug: 1658923
@@ -73,10 +77,6 @@ notes:
   bug2: 1662536
   bug3: 1662585
   bug4: 1662831
-- note: 'MailExtensions: Adding custom headers with mail.compose.other.header did
-  not work'
-  tag: fixed
-  bug: 1658890
 
 
 # Unresolved
@@ -84,3 +84,6 @@ notes:
          reports corrupted OpenPGP data.'
   tag: unresolved
   bug: 1664022
+- note: 'Message list is not focused at startup'
+  tag: unresolved
+  bug: 1629522
