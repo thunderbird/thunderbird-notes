@@ -163,7 +163,7 @@ notes:
   group: 3
 
 
-- note: 'Recipient fields in compose window restored to Thunderbird 68 ordering'
+- note: 'Reply-To header moved in compose window; now appears under From header'
   tag: changed
   bug: 1653814
   group: 4
