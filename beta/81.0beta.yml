@@ -167,7 +167,7 @@ notes:
   tag: changed
   bug: 1653814
   group: 4
-- note: 'OpenPGP: Do not show external key UI when disabled by pref'
+- note: 'OpenPGP: Do not show external key UI when disabled by preference'
   tag: changed
   bug: 1657111
   group: 4
@@ -175,7 +175,7 @@ notes:
   tag: changed
   bug: 1621135
   group: 4
-- note: 'Drag & Dropping recipient pills resulted in lost pills when an error was present'
+- note: 'Dragging & Dropping recipient pills resulted in lost pills when an error was present'
   tag: fixed
   bug: 1663041
   group: 4
