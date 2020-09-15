@@ -1,7 +1,7 @@
 release:
   release_date: 2020-08-26
   text: |
-    **These notes apply to Thunderbird version 81 beta 3 released September 8, 2020.**
+    **These notes apply to Thunderbird version 81 beta 4 released September 16, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/81.0beta/system-requirements/)
 
@@ -13,7 +13,8 @@ release:
   groups:
   -
   - "Changed and Fixed in Beta 2"
-  - "New. Changed, and Fixed in Beta 3"
+  - "New, Changed, and Fixed in Beta 3"
+  - "Changed and Fixed in Beta 4"
 
 notes:
 - note: 'PDF.js viewer now included in Thunderbird'
@@ -161,7 +162,39 @@ notes:
   bug4: 1659380
   group: 3
 
+
+- note: 'Recipient fields in compose window restored to Thunderbird 68 ordering'
+  tag: changed
+  bug: 1653814
+  group: 4
+- note: 'OpenPGP: Do not show external key UI when disabled by pref'
+  tag: changed
+  bug: 1657111
+  group: 4
+- note: 'Calendar: Sidebar UI improvements'
+  tag: changed
+  bug: 1621135
+  group: 4
+- note: 'Drag & Dropping recipient pills resulted in lost pills when an error was present'
+  tag: fixed
+  bug: 1663041
+  group: 4
+- note: 'Spellcheck suggestions were difficult to read in dark theme'
+  tag: fixed
+  bug: 1663223
+  group: 4
+- note: 'Calendar: Multiple password prompts opened'
+  tag: fixed
+  bug: 1664016
+  group: 4
+- note: 'Linux Distributions: UI was not rendered completely when built without updater'
+  tag: fixed
+  bug: 1664607
+  bug2: 1664590
+  bug3: 1664721
+  group: 4
+
 # Unresolved
 - note: 'New news articles are not downloaded'
   tag: unresolved
-  bug: 16619155
+  bug: 1661955
