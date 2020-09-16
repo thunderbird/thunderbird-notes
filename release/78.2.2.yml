@@ -1,12 +1,11 @@
 release:
   release_date: 2020-09-10
   text: |
-    ** Thunderbird version 78.2.2 is only offered as direct download from
-    [thunderbird.net](https://www.thunderbird.net) and as an automatic update
-    for users running version 68.12.0 or higher
-
-    Add-on support: As of version 78.0, Thunderbird only supports MailExtensions.
-    Your favorite add-ons may not have been updated for compatibility.
+    **Thunderbird 78.2.2 is offered as an automatic update for users running
+    version 68.12.0 or higher and as a direct download from
+    [thunderbird.net](https://www.thunderbird.net/). For more on all of the
+    new features in version 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
 
     **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
 
