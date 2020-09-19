@@ -1,0 +1,66 @@
+release:
+  release_date: 2020-09-22
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: 'OpenPGP: Improved decryption performance with large messages'
+  tag: changed
+  bug: 1659433
+- note: 'OpenPGP: Do not show external key UI when disabled by preference'
+  tag: changed
+  bug: 1657111
+- note: 'Address book: Synchronization of CardDAV address books now supported'
+  tag: changed
+  bug: 1660127
+- note: 'Installation of "legacy" MailExtensions now disabled'
+  tag: changed
+  bug: 1661216
+- note: 'Reply-To header moved in compose window; now appears under From header'
+  tag: changed
+  bug: 1653814
+- note: 'Calendar: Sidebar UI improvements'
+  tag: changed
+  bug: 1621135
+
+- note: 'Selecting "Cancel" on the Master Password prompt at startup incorrectly
+         reported corrupted OpenPGP data'
+  tag: fixed
+  bug: 1664022
+- note: 'OpenPGP: Creating a new key pair did not automatically select it for use'
+  tag: fixed
+  bug: 1663422
+- note: 'Dragging & Dropping recipient pills resulted in lost pills when an error was
+    present'
+  tag: fixed
+  bug: 1663041
+- note: 'Spellcheck suggestions were unreadable in dark theme'
+  tag: fixed
+  bug: 1663223
+- note: 'Calendar: Multiple password prompts opened'
+  tag: fixed
+  bug: 1664016
+- note: 'Linux Distributions: UI was not rendered completely when built without updater'
+  tag: fixed
+  bug: 1664607
+  bug2: 1664721
+- note: 'MailExtensions: browser.folders.delete failed on IMAP folders'
+  tag: fixed
+  bug: 1651308
+
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.3">security fixes</a>
+  tag: fixed
+
+- note: 'Message list is not focused at startup'
+  tag: unresolved
+  bug: 1620310

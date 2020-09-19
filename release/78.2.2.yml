@@ -80,4 +80,4 @@ notes:
   bug: 1664022
 - note: 'Message list is not focused at startup'
   tag: unresolved
-  bug: 1629522
+  bug: 1620310
