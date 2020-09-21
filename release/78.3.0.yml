@@ -19,9 +19,6 @@ notes:
 - note: 'OpenPGP: Do not show external key UI when disabled by preference'
   tag: changed
   bug: 1657111
-- note: 'Address book: Synchronization of CardDAV address books now supported'
-  tag: changed
-  bug: 1660127
 - note: 'Installation of "legacy" MailExtensions now disabled'
   tag: changed
   bug: 1661216
