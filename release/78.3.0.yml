@@ -36,6 +36,9 @@ notes:
 - note: 'OpenPGP: Creating a new key pair did not automatically select it for use'
   tag: fixed
   bug: 1663422
+- note: 'Account setup wizard did not work with servers using a self-signed SSL/TLS certificate'
+  tag: fixed
+  bug: 1590473
 - note: 'Dragging & Dropping recipient pills resulted in lost pills when an error was
     present'
   tag: fixed
