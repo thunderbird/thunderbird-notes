@@ -1,5 +1,5 @@
 release:
-  release_date: 2020-09-22
+  release_date: 2020-09-24
   text: |
     **For more on all of the new features in Thunderbird 78, see
     [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
@@ -19,6 +19,10 @@ notes:
 - note: 'OpenPGP: Do not show external key UI when disabled by preference'
   tag: changed
   bug: 1657111
+- note: 'Account setup wizard will now open a popup when connecting to a server
+    with a self-signed SSL/TLS certificate'
+  tag: changed
+  bug: 1590473
 - note: 'Installation of "legacy" MailExtensions now disabled'
   tag: changed
   bug: 1661216
@@ -36,9 +40,6 @@ notes:
 - note: 'OpenPGP: Creating a new key pair did not automatically select it for use'
   tag: fixed
   bug: 1663422
-- note: 'Account setup wizard did not work with servers using a self-signed SSL/TLS certificate'
-  tag: fixed
-  bug: 1590473
 - note: 'Dragging & Dropping recipient pills resulted in lost pills when an error was
     present'
   tag: fixed
