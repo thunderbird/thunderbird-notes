@@ -1,0 +1,51 @@
+release:
+  release_date: 2020-09-25
+  text: |
+    **These notes apply to Thunderbird version 81 beta 4 released September 25, 2020.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/81.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+  import_system_requirements: '79.0beta'
+
+notes:
+
+- note: 'MailExtensions: API for running content scripts on displayed messages'
+  tag: new
+  bug: 15044475
+- note: 'MailExtensions: browser.tabs.sendMessage API added'
+  tag: new
+  bug: 1641576
+
+- note: 'Chat icons updated'
+  tag: changed
+  bug: 1662489
+- note: 'MailExtensions: compose.begin functions now support creating a message with attachments'
+  tag: changed
+  bug: 1662018
+
+- note: 'Searching an address book list did not display results'
+  tag: fixed
+  bug: 1663935
+- note: 'New news articles were not downloaded'
+  tag: fixed
+  bug: 1661955
+- note: 'Drag and dropping recipient pills lost cursor and selection'
+  tag: fixed
+  bug: 1663055
+- note: 'Single-click deletion of recipient pills with middle mouse button restored'
+  tag: fixed
+  bug: 1661438
+- note: 'Creating a new calendar event did not require an event title'
+  tag: fixed
+  bug: 1663303
+- note: 'Windows installer was unreadable with Windows in high contrast mode'
+  tag: fixed
+  bug: 1665321
+
+- note: 'MailExtensions: Updating attachments with onBeforeSend.addListener() did not work'
+  tag: fixed
+  bug: 1662015
+
