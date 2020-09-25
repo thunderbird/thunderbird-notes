@@ -1,6 +1,9 @@
 release:
   release_date: 2020-09-24
   text: |
+    **<span style="color: magenta">Frequent crashes were reported after
+    updating to Thunderbird 78.3.0. Thunderbird 78.3.1 is now available with a fix.</span>**
+
     **For more on all of the new features in Thunderbird 78, see
     [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
 
