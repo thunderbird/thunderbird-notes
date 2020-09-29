@@ -1,7 +1,7 @@
 release:
   release_date: 2020-09-25
   text: |
-    **These notes apply to Thunderbird version 81 beta 4 released September 25, 2020.**
+    **These notes apply to Thunderbird version 82 beta 2 released September 30, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/81.0beta/system-requirements/)
 
@@ -9,6 +9,10 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
   import_system_requirements: '79.0beta'
+
+  groups:
+  -
+  - "Changed and Fixed in Beta 2"
 
 notes:
 
@@ -49,3 +53,25 @@ notes:
   tag: fixed
   bug: 1662015
 
+# beta 2
+
+- note: 'Thunderbird will no longer automatically install updates when
+      Preferences tab is opened'
+  tag: changed
+  bug: 1666324
+  group: 2
+- note: 'Thunderbird did not use OpenPGP subkeys for encryption'
+  tag: fixed
+  bug: 1665281
+  group: 2
+- note: 'OpenPGP encrypted messages with international characters were
+    sometimes displayed incorrectly'
+  tag: fixed
+  bug: 1665287
+  group: 2
+- note: 'Dark mode, high contrast, and Windows theming fixes'
+  tag: fixed
+  bug: 1665336
+  bug2: 1667317
+  bug3: 1667109
+  group: 2
