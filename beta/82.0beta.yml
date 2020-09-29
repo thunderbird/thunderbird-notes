@@ -60,11 +60,12 @@ notes:
   tag: changed
   bug: 1666324
   group: 2
-- note: 'Thunderbird did not use OpenPGP subkeys for encryption'
+- note: 'OpenPGP: Improved support for encrypting with subkeys'
   tag: fixed
   bug: 1665281
+  bug2: 1665497
   group: 2
-- note: 'OpenPGP encrypted messages with international characters were
+- note: 'OpenPGP: Encrypted messages with international characters were
     sometimes displayed incorrectly'
   tag: fixed
   bug: 1665287
