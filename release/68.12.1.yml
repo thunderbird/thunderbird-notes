@@ -1,0 +1,19 @@
+release:
+  release_date: 2020-10-01
+  text: |
+    **Thunderbird version 68.12.1, released October 1, 2020.**
+
+    **System Requirements:
+    • Window: Windows 7, Windows Server 2008 R2 or later
+    • Mac: Mac OS X 10.9 or later
+    • Linux: GTK+ 3.4 or higher**.
+    Details [here](/en-US/thunderbird/68.0/system-requirements/).
+
+  import_system_requirements: '68.0'
+
+
+notes:
+- note: 'Thunderbird will no longer automatically install updates when
+      Preferences tab is opened'
+  tag: changed
+  bug: 1666324
