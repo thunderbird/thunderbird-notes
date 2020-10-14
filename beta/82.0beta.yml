@@ -1,7 +1,7 @@
 release:
   release_date: 2020-09-25
   text: |
-    **These notes apply to Thunderbird version 82 beta 2 released October 1, 2020.**
+    **These notes apply to Thunderbird version 82 beta 3 released October 16, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/81.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
   groups:
   -
   - "Changed and Fixed in Beta 2"
+  - "Changed and Fixed in Beta 3"
 
 notes:
 
@@ -76,3 +77,54 @@ notes:
   bug2: 1667317
   bug3: 1667109
   group: 2
+
+# beta 3
+
+- note: 'Yahoo and AOL mail users using password authentication will be migrated to OAuth2'
+  tag: changed
+  bug: 1606339
+  bug2: 1670892
+  group: 3
+
+- note: 'Thunderbird could freeze when updating global search index'
+  tag: fixed
+  bug: 1669872
+  group: 3
+- note: 'Recipient address fields in compose window could expand to fill all available space'
+  tag: fixed
+  bug: 1666463
+  bug2: 1667173
+  bug3: 1667602
+  group: 3
+- note: 'OpenPGP Key Manager was missing from Tools menu on macOS'
+  tag: fixed
+  bug: 1662279
+  group: 3
+- note: 'End-to-end encryption options not saved for multiple identities'
+  tag: fixed
+  bug: 1667025
+  group: 3
+- note: 'Inserting emoji characters in message compose window caused unexpected behavior'
+  tag: fixed
+  bug: 1665174
+  group: 3
+- note: 'HTTP refresh in content tabs did not work'
+  tag: fixed
+  bug: 1667774
+  group: 3
+- note: 'Multiple issues with handling of self-signed SSL certificates addressed'
+  tag: fixed
+  bug: 1590474
+  bug2: 1665577
+  bug3: 1667043
+  group: 3
+- note: 'Various keyboard navigation fixes'
+  tag: fixed
+  bug: 1666885
+  bug2: 1667567
+  bug3: 1667614
+  group: 3
+- note: 'Various color-related theme fixes'
+  tag: fixed
+  bug: 1668896
+  bug2: 1668410
