@@ -1,0 +1,28 @@
+release:
+  release_date: 2020-10-15
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: 'OpenPGP: Improved support for encrypting with subkeys'
+  tag: fixed
+  bug: 1665497
+- note: OpenPGP Key Manager was missing from Tools menu on macOS
+  tag: fixed
+  bug: 1662279
+- note: Creating a new calendar event did not require an event title
+  tag: fixed
+  bug: 1663303
+
+- note: 'Message list is not focused at startup'
+  tag: unresolved
+  bug: 1620310
