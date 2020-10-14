@@ -16,6 +16,9 @@ notes:
 - note: 'OpenPGP: Improved support for encrypting with subkeys'
   tag: fixed
   bug: 1665497
+- note: 'OpenPGP message status icons were not visible in message header pane'
+  tag: fixed
+  bug: 1670067
 - note: OpenPGP Key Manager was missing from Tools menu on macOS
   tag: fixed
   bug: 1662279
