@@ -1,0 +1,54 @@
+release:
+  release_date: 2020-10-22
+  text: |
+    **These notes apply to Thunderbird version 83 beta 1 released October 22, 2020.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/83.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+  import_system_requirements: '79.0beta'
+
+notes:
+- note: 'Calendar: Category colors now displayed in category selection dropdown'
+  tag: new
+  bug: 736243
+- note: 'Calendar: "Edit" item added to event context menu'
+  tag: new
+  bug: 1651783
+- note: 'MailExtensions: "compose_attachments" context added to Menus API'
+  tag: new
+  bug: 1670822
+- note: 'MailExtensions: Menus API now available on displayed messages'
+  tag: new
+  bug: 1670825
+
+- note: 'MailExtensions: Changed contact properties now passed in contact.onUpdated event'
+  tag: changed
+  bug: 1665454
+
+- note: 'Searching global search results did not work'
+  tag: fixed
+  bug: 1664761
+- note: 'Link location was not focused by default when adding a hyperlink in message composer'
+  tag: fixed
+  bug: 1670660
+- note: 'Appmenu displayed visual glitches'
+  tag: fixed
+  bug: 1636243
+- note: 'Keyboard shortcut for toggling message "read" status not shown in menus'
+  tag: fixed
+  bug: 1619248
+- note: 'Chat: Previous conversations were not shown'
+  tag: fixed
+  bug: 1665040
+- note: 'Calendar: Subscribing to ICS calendars was not possible'
+  tag: fixed
+  bug: 1663399
+- note: 'Calendar: Reminder details appeared editable when viewing an event'
+  tag: fixed
+  bug: 1651779
+- note: 'Calendar: Two "Home" calendars were visible on a new profile'
+  tag: fixed
+  bug: 1656782
