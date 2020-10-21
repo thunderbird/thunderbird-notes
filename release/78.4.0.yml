@@ -1,5 +1,5 @@
 release:
-  release_date: 2020-10-20
+  release_date: 2020-10-21
   text: |
     **For more on all of the new features in Thunderbird 78, see
     [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
@@ -66,3 +66,7 @@ notes:
     not work'
   tag: fixed
   bug: 1662015
+
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.4">security fixes</a>
+  tag: fixed
