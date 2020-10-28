@@ -1,3 +1,3 @@
-from loader import releasenotes
+from thunderbird_notes.loader import releasenotes
 
 __all__ = ['releasenotes', ]
