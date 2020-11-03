@@ -1,7 +1,7 @@
 release:
   release_date: 2020-10-22
   text: |
-    **These notes apply to Thunderbird version 83 beta 1 released October 22, 2020.**
+    **These notes apply to Thunderbird version 83 beta 2 released November 3, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/83.0beta/system-requirements/)
 
@@ -9,6 +9,10 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
   import_system_requirements: '79.0beta'
+
+  groups:
+  -
+  - "New, Changed, and Fixed in Beta 2"
 
 notes:
 - note: 'Calendar: Category colors now displayed in category selection dropdown'
@@ -52,3 +56,47 @@ notes:
 - note: 'Calendar: Two "Home" calendars were visible on a new profile'
   tag: fixed
   bug: 1656782
+
+
+# beta 2
+- note: 'Thunderbird prompts for an address to use when starting an email from an address book entry
+    with multiple addresses'
+  tag: new
+  bug: 84028
+  group: 2
+
+- note: 'OpenPGP public key import now supports multi-file selection'
+  tag: changed
+  bug: 1665145
+  group: 2
+
+- note: 'Advanced address book search dialog was unusable'
+  tag: fixed
+  bug: 1668147
+  group: 2
+- note: 'Encrypted draft reply emails lost "Re:" prefix'
+  tag: fixed
+  bug: 1661510
+  group: 2
+- note: 'Replying to a newsgroup message did not open the compose window'
+  tag: fixed
+  bug: 1672667
+  group: 2
+- note: 'Unable to delete multiple newsgroup messages'
+  tag: fixed
+  bug: 1657988
+  group: 2
+- note: 'Visual glitches when selecting multiple messages in the message pane and using Ctrl+click'
+  tag: fixed
+  bug: 1671800
+  group: 2
+- note: 'Switching between dark and light mode could lead to unreadable text on macOS'
+  tag: fixed
+  bug: 1668989
+  group: 2
+
+- note: 'In Thunderbird 83.0b2, HTML Calendar event descriptions are rendered in plain text due to bug
+    [1673164](http://bugzil.la/1673164)'
+  bug: 1659363
+  bug2: 1673164
+  tag: unresolved
