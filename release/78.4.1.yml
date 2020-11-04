@@ -1,0 +1,54 @@
+release:
+  release_date: 2020-11-06
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: Thunderbird prompts for an address to use when starting an email from an address
+    book entry with multiple addresses
+  tag: new
+  bug: 84028
+
+- note: Searching global search results did not work
+  tag: fixed
+  bug: 1664761
+- note: Link location was not focused by default when adding a hyperlink in message
+    composer
+  tag: fixed
+  bug: 1670660
+- note: Advanced address book search dialog was unusable
+  tag: fixed
+  bug: 1668147
+- note: Encrypted draft reply emails lost "Re:" prefix
+  tag: fixed
+  bug: 1661510
+- note: Replying to a newsgroup message did not open the compose window
+  tag: fixed
+  bug: 1672667
+- note: Unable to delete multiple newsgroup messages
+  tag: fixed
+  bug: 1657988
+- note: Appmenu displayed visual glitches
+  tag: fixed
+  bug: 1636243
+- note: Visual glitches when selecting multiple messages in the message pane and using
+    Ctrl+click
+  tag: fixed
+  bug: 1671800
+- note: Switching between dark and light mode could lead to unreadable text on macOS
+  tag: fixed
+  bug: 1668989
+
+
+- note: 'Message list is not focused at startup'
+  tag: unresolved
+  bug: 1620310
