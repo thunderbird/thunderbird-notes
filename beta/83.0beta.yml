@@ -1,7 +1,7 @@
 release:
   release_date: 2020-10-22
   text: |
-    **These notes apply to Thunderbird version 83 beta 2 released November 3, 2020.**
+    **These notes apply to Thunderbird version 83 beta 3 released November 9, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/83.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
   groups:
   -
   - "New, Changed, and Fixed in Beta 2"
+  - "New, Changed, and Fixed in Beta 3"
 
 notes:
 - note: 'Calendar: Category colors now displayed in category selection dropdown'
@@ -95,8 +96,41 @@ notes:
   bug: 1668989
   group: 2
 
-- note: 'In Thunderbird 83.0b2, HTML Calendar event descriptions are rendered in plain text due to bug
-    [1673164](http://bugzil.la/1673164)'
+
+# beta 3
+- note: 'OpenPGP: Configuration option to not automatically attach the public key to a signed message'
+  bug: 1654950
+  tag: new
+  group: 3
+- note: 'OpenPGP: Configuration option to disable email subject encryption'
+  bug: 1666073
+  tag: new
+  group: 3
+
+- note: 'MailExtensions: browser.tabs.create will now wait for "mail-delayed-startup-finished" event'
+  bug: 1674407
+  tag: changed
+  group: 3
+
+- note: 'OpenPGP: Support for inline PGP messages improved'
+  bug: 1672851
+  tag: fixed
+  group: 3
+- note: 'OpenPGP: Message security dialog showed unverified keys as unavailable'
+  bug: 1675285
+  tag: fixed
+  group: 3
+- note: 'Calendar: HTML rendering in event descriptions restored'
   bug: 1659363
   bug2: 1673164
-  tag: unresolved
+  tag: fixed
+  group: 3
+- note: 'Chat: New chat contact menu item did not function'
+  bug: 1663321
+  tag: fixed
+  group: 3
+- note: 'Theming improvements'
+  bug: 1674606
+  bug2: 1673861
+  tag: fixed
+  group: 3
