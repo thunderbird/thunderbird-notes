@@ -98,11 +98,11 @@ notes:
 
 
 # beta 3
-- note: 'OpenPGP: Configuration option to not automatically attach the public key to a signed message'
+- note: 'OpenPGP: Added option to disable attaching the public key to a signed message'
   bug: 1654950
   tag: new
   group: 3
-- note: 'OpenPGP: Configuration option to disable email subject encryption'
+- note: 'OpenPGP: Added option to disable email subject encryption'
   bug: 1666073
   tag: new
   group: 3
