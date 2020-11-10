@@ -13,7 +13,7 @@ release:
   import_system_requirements: '78.0'
 
 notes:
-- note: User Interface was inconsistent when switching from to Dark theme and back to the Default theme
+        - note: User interface was inconsistent when switching from to Dark theme and back to the Default theme
   tag: fixed
   bug: 1659282
 - note: Email subject would disappear when hovering over it with the mouse when using Windows 7 Classic theme
