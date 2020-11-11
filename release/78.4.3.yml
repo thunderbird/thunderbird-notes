@@ -1,5 +1,5 @@
 release:
-  release_date: 2020-11-10
+  release_date: 2020-11-11
   text: |
     **For more on all of the new features in Thunderbird 78, see
     [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
@@ -13,7 +13,7 @@ release:
   import_system_requirements: '78.0'
 
 notes:
-        - note: User interface was inconsistent when switching from to Dark theme and back to the Default theme
+- note: User interface was inconsistent when switching from to dark theme and back to the default theme
   tag: fixed
   bug: 1659282
 - note: Email subject would disappear when hovering over it with the mouse when using Windows 7 Classic theme
