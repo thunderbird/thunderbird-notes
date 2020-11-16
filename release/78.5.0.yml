@@ -42,3 +42,7 @@ notes:
   bug: 1673861
   bug2: 1674606
   bug3: 1676041
+
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.5">security fixes</a>
+  tag: fixed
