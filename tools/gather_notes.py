@@ -65,10 +65,12 @@ def load_notes(previous_esr, this_beta):
     beta_notes = {}
     new_notes = []
     rel_notes = []
-    min_version = StrictVersion('{}.0.0'.format(previous_esr))
+
+    esr_major = previous_esr.split('.')[0]
+    min_version = StrictVersion('{}.0.0'.format(esr_major))
     max_version = StrictVersion('{}.0'.format(this_beta))
 
-    bug_list, backout_list = get_buglist()
+    bug_list, backout_list = get_buglist(previous_esr)
     bugs_fixed = set.union(bug_list, backout_list)
 
     note_files = os.listdir(beta_dir)
@@ -122,6 +124,7 @@ def load_notes(previous_esr, this_beta):
     # TODO: Print out bugs that were not found in the previous notes
     # TODO: If there is nothing "new" or "changed" the output has an empty list, a comment would
     #  be better.
+    print('Wrote notes to {}.'.format(ver_notes_yaml))
 
 
 def get_bugs_in_changeset(changeset_data):
@@ -157,18 +160,18 @@ def is_backout_bug(changeset_description):
     return bool(BACKOUT_REGEX.search(changeset_description))
 
 
-def get_buglist():
+def get_buglist(previous_esr):
     """Retrieve the list of bugs since the last release"""
     from_rev = None
     with urlopen(MERCURIAL_TAGS_URL) as response:
         data = json.load(response)
 
+    e_major, e_minor, e_patch = previous_esr.split('.')
+    previous_esr_tag = 'THUNDERBIRD_{}_{}_{}_RELEASE'.format(e_major, e_minor, e_patch)
     to_rev = data['node']  # Rev of tip
 
     for tag in data['tags'][:10]:
-        # Just grab the first tag that ends with '_RELEASE' since they are in
-        # reverse order by date from the most recent
-        if tag['tag'].endswith('_RELEASE'):
+        if tag['tag'] == previous_esr_tag:
             print('Using tag {} at rev {}.'.format(tag['tag'], tag['node']))
             from_rev = tag['node']
             break
@@ -196,7 +199,7 @@ if __name__ == '__main__':
         this_beta = sys.argv[2]
     except IndexError:
         print("Usage: {} previous_esr current_beta".format(sys.argv[0]))
-        print("Example: ./tools/gather_notes.py 78 81")
+        print("Example: ./tools/gather_notes.py 78.4.3 84")
         print("")
         sys.exit(1)
 
