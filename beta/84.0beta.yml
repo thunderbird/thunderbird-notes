@@ -60,3 +60,7 @@ notes:
   tag: fixed
   bug: 1658657
 
+- note: 'Printing from calendar does not work'
+  tag: unresolved
+  bug: 1677819
+
