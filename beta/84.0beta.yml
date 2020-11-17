@@ -1,0 +1,62 @@
+release:
+  release_date: 2020-10-22
+  text: |
+    **These notes apply to Thunderbird version 84 beta 1 released November 18, 2020.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/83.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+  import_system_requirements: '79.0beta'
+
+notes:
+- note: 'OpenPGP: "Copy Key Id" option added to Key Manager context menu'
+  tag: new
+  bug: 1675272
+- note: 'Calendar: Support opening of .ics files by double-click'
+  tag: new
+  bug: 357480
+
+- note: 'Thunderbird now only shows quota exceeded indications on the main window'
+  tag: changed
+  bug: 1671748
+- note: 'MailExtensions: message.compose API extended with EditAsNew and Template functions'
+  tag: changed
+  bug: 1670379
+- note: 'MailExtensions: menus API enabled in messages being composed'
+  tag: changed
+  bug: 1670832
+
+
+- note: '"Place replies in the folder of the message being replied to" did not work
+    when using "Reply to List"'
+  tag: fixed
+  bug: 522450
+- note: 'Thunderbird did not honor the "Run search on server" option when searching messages'
+  tag: fixed
+  bug: 546925
+- note: 'OpenPGP: After importing a secret key, Key Manager displayed properties of the wrong key'
+  tag: fixed
+  bug: 1667054
+- note: 'OpenPGP: Key were missing from Key Manager'
+  tag: fixed
+  bug: 1674521
+- note: 'Print preview was blank'
+  tag: fixed
+  bug: 1667557
+- note: 'Autoconfig via LDAP did not work as expected'
+  tag: fixed
+  bug: 1662433
+- note: 'Various visual improvements'
+  tag: fixed
+  bug: 1651476
+  bug2: 1666882
+  bug3: 1672909
+  bug4: 1674639
+  bug5: 1675000
+  bug6: 1676680
+- note: 'MailExtensions: compose.beginForward did not respect composeDetails argument'
+  tag: fixed
+  bug: 1658657
+
