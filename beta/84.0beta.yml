@@ -63,10 +63,6 @@ notes:
   tag: fixed
   bug: 1658657
 
-- note: 'Printing from calendar does not work'
-  tag: unresolved
-  bug: 1677819
-
 #beta 2
 - note: 'MailExtensions: getComposeDetails will wait for "compose-editor-ready" event'
   tag: changed
@@ -82,7 +78,7 @@ notes:
   bug: 1676697
   bug2: 1678029
   group: 2
-- note: 'Filelink info bar fails to open up Filelink section in Options'
+- note: 'The "Link" button on the large attachments info bar failed to open up Filelink section in Options if the user had not yet configured Filelink'
   tag: fixed
   bug: 1677647
   group: 2
@@ -102,7 +98,9 @@ notes:
   tag: fixed
   bug: 1668478
   group: 2
-- note: 'MailExtensions: UpdateExtraAddressProcessing function was throwing Error of "does not have a method named: "hasEmailAddress" when mail lists were updated'
-  tag: fixed
-  bug: 1676128
-  group: 2
+
+#Known Issues
+- note: 'Printing from calendar does not work'
+  tag: unresolved
+  bug: 1677819
+
