@@ -86,7 +86,7 @@ notes:
   tag: fixed
   bug: 1664586
   group: 2
-- note: 'Address Book: Printing members of a mailing list resulted in incorrect output'
+- note: 'Address book: Printing members of a mailing list resulted in incorrect output'
   tag: fixed
   bug: 1676859
   group: 2
