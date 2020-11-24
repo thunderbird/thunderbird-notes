@@ -12,7 +12,7 @@ release:
 
   groups:
     -
-    - "New, Changed, and Fixed in Beta 2"
+    - "Changed and Fixed in Beta 2"
 
 notes:
 - note: 'OpenPGP: "Copy Key Id" option added to Key Manager context menu'
