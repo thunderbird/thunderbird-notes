@@ -10,9 +10,9 @@ release:
     - Linux: GTK+ 3.14 or higher
   import_system_requirements: '79.0beta'
 
-groups:
-  -
-  - "New, Changed, and Fixed in Beta 2"
+  groups:
+    -
+    - "New, Changed, and Fixed in Beta 2"
 
 notes:
 - note: 'OpenPGP: "Copy Key Id" option added to Key Manager context menu'
