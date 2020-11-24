@@ -68,50 +68,41 @@ notes:
   bug: 1677819
 
 #beta 2
-- note: 'Calendar: Auto-detection of calendars in GSuite accounts'
-  tag: new
-  bug: 1678302
+- note: 'MailExtensions: getComposeDetails will wait for "compose-editor-ready" event'
+  tag: changed
+  bug: 1675012
   group: 2
 - note: 'MailExtensions: Honor allowScriptsToClose argument in windows.create API function'
-  tag: new
+  tag: changed
   bug: 1675940
   group: 2
 
-- note: 'Use a special color for folders with unread messages with dark theme'
-  tag: changed
+- note: "Highlight color for folders with unread messages wasn't visible in dark theme"
+  tag: fixed
   bug: 1676697
   bug2: 1678029
   group: 2
-- note: 'Calendar: Ctrl-Enter shortcut removed from new event dialog'
-  tag: changed
-  bug: 1668478
-  group: 2
-- note: 'Updated timezone list to 2020d'
-  tag: changed
-  bug: 1669950
-  group: 2
-
-- note: 'Fix Button on Filelink info bar fails to open up Filelink section in Options'
+- note: 'Filelink info bar fails to open up Filelink section in Options'
   tag: fixed
   bug: 1677647
   group: 2
-- note: 'Ensure that the new mail icon is removed from the system tray at shutdown'
+- note: 'New mail icon was not removed from the system tray at shutdown'
   tag: fixed
   bug: 1664586
   group: 2
-- note: 'Fix Wrong mailing list printing output : display name is duplicate into the primary email address'
+- note: 'Address Book: Printing members of a mailing list resulted in incorrect output'
   tag: fixed
   bug: 1676859
   group: 2
-- note: 'Fixed a shutdown crash after IMAP copies'
+- note: 'Calendar: Auto-detection failed for GSuite accounts'
   tag: fixed
-  bug: 1586494
+  bug: 1678302
+  group: 2
+- note: 'Calendar: Pressing Ctrl-Enter in the new event dialog would create duplicate events'
+  tag: fixed
+  bug: 1668478
   group: 2
 - note: 'MailExtensions: UpdateExtraAddressProcessing function was throwing Error of "does not have a method named: "hasEmailAddress" when mail lists were updated'
   tag: fixed
   bug: 1676128
-  group: 2
-- note: 'MailExtensions: wait for editor when calling getComposeDetails'
-  tag: fixed
-  bug: 1675012
   group: 2
