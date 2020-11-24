@@ -1,7 +1,7 @@
 release:
   release_date: 2020-10-22
   text: |
-    **These notes apply to Thunderbird version 84 beta 1 released November 18, 2020.**
+    **These notes apply to Thunderbird version 84 beta 2 released November 24, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/83.0beta/system-requirements/)
 
@@ -17,6 +17,12 @@ notes:
 - note: 'Calendar: Support opening of .ics files by double-click'
   tag: new
   bug: 357480
+- note: '*Calendar: Auto-detection of calendars in GSuite accounts'
+  tag: new
+  bug: 1678302
+- note: '*MailExtensions: Honor allowScriptsToClose argument in windows.create API function'
+  tag: new
+  bug: 1675940
 
 - note: 'Thunderbird now only shows quota exceeded indications on the main window'
   tag: changed
@@ -27,7 +33,16 @@ notes:
 - note: 'MailExtensions: menus API enabled in messages being composed'
   tag: changed
   bug: 1670832
-
+- note: '*Use a special color for folders with unread messages with dark theme'
+  tag: changed
+  bug: 1676697
+  bug2: 1678029
+- note: '*Calendar: Ctrl-Enter shortcut removed from new event dialog'
+  tag: changed
+  bug: 1668478
+- note: '*Updated timezone list to 2020d'
+  tag: changed
+  bug: 1669950
 
 - note: '"Place replies in the folder of the message being replied to" did not work
     when using "Reply to List"'
@@ -59,6 +74,25 @@ notes:
 - note: 'MailExtensions: compose.beginForward did not respect composeDetails argument'
   tag: fixed
   bug: 1658657
+- note: '*MailExtensions: UpdateExtraAddressProcessing function was throwing Error of "does not have a method named: "hasEmailAddress" when mail lists were updated'
+  tag: fixed
+  bug: 1676128
+- note: '*MailExtensions: wait for editor when calling getComposeDetails'
+  tag: fixed
+  bug: 1675012
+- note: '*Fix Button on Filelink info bar fails to open up Filelink section in Options'
+  tag: fixed
+  bug: 1677647
+- note: '*Ensure that the new mail icon is removed from the system tray at shutdown'
+  tag: fixed
+  bug: 1664586
+- note: '*Fix Wrong mailing list printing output : display name is duplicate into the primary email address'
+  tag: fixed
+  bug: 1676859
+- note: '*Fixed a shutdown crash after IMAP copies'
+  tag: fixed
+  bug: 1586494
+
 
 - note: 'Printing from calendar does not work'
   tag: unresolved
