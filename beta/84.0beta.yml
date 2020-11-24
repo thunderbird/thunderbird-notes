@@ -91,14 +91,6 @@ notes:
   bug: 1669950
   group: 2
 
-- note: 'MailExtensions: UpdateExtraAddressProcessing function was throwing Error of "does not have a method named: "hasEmailAddress" when mail lists were updated'
-  tag: fixed
-  bug: 1676128
-  group: 2
-- note: 'MailExtensions: wait for editor when calling getComposeDetails'
-  tag: fixed
-  bug: 1675012
-  group: 2
 - note: 'Fix Button on Filelink info bar fails to open up Filelink section in Options'
   tag: fixed
   bug: 1677647
@@ -114,4 +106,12 @@ notes:
 - note: 'Fixed a shutdown crash after IMAP copies'
   tag: fixed
   bug: 1586494
+  group: 2
+- note: 'MailExtensions: UpdateExtraAddressProcessing function was throwing Error of "does not have a method named: "hasEmailAddress" when mail lists were updated'
+  tag: fixed
+  bug: 1676128
+  group: 2
+- note: 'MailExtensions: wait for editor when calling getComposeDetails'
+  tag: fixed
+  bug: 1675012
   group: 2
