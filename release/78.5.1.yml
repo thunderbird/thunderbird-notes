@@ -1,0 +1,68 @@
+release:
+  release_date: 2020-12-02
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: 'OpenPGP: Added option to disable email subject encryption'
+  tag: new
+  bug: 1666073
+
+- note: OpenPGP public key import now supports multi-file selection and bulk accepting imported keys
+  tag: changed
+  bug: 1665145
+  bug2: 1675342
+- note: 'MailExtensions: getComposeDetails will wait for "compose-editor-ready" event'
+  tag: changed
+  bug: 1675012
+
+- note: New mail icon was not removed from the system tray at shutdown
+  tag: fixed
+  bug: 1664586
+- note: '"Place replies in the folder of the message being replied to" did not work
+    when using "Reply to List"'
+  tag: fixed
+  bug: 522450
+- note: 'Thunderbird did not honor the "Run search on server" option when searching messages'
+  tag: fixed
+  bug: 546925
+- note: Highlight color for folders with unread messages wasn't visible in dark theme
+  tag: fixed
+  bug: 1676697
+  bug2: 1678029
+- note: 'OpenPGP: Key were missing from Key Manager'
+  tag: fixed
+  bug: 1674521
+- note: 'OpenPGP: Option to import keys from clipboard always disabled'
+  tag: fixed
+  bug: 1676842
+- note: The "Link" button on the large attachments info bar failed to open up Filelink
+    section in Options if the user had not yet configured Filelink
+  tag: fixed
+  bug: 1677647
+- note: 'Address book: Printing members of a mailing list resulted in incorrect output'
+  tag: fixed
+  bug: 1676859
+- note: 'Unable to connect to LDAP servers configured with a self-signed SSL certificate'
+  tag: fixed
+  bug: 1659947
+- note: Autoconfig via LDAP did not work as expected
+  tag: fixed
+  bug: 1662433
+- note: 'Calendar: Pressing Ctrl-Enter in the new event dialog would create duplicate
+    events'
+  tag: fixed
+  bug: 1668478
+
+- note: Various
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.5.1">security fixes</a>
+  tag: fixed
