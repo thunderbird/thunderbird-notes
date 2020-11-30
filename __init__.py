@@ -1,3 +1,3 @@
-from loader import releasenotes
+from .loader import releasenotes
 
 __all__ = ['releasenotes', ]
