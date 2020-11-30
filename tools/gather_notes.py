@@ -25,6 +25,7 @@ CHANGESET_URL_TEMPLATE = 'https://hg.mozilla.org/releases/comm-esr78/json-pushes
 BUG_NUMBER_REGEX = re.compile(r'bug \d+', re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r'back(\s?)out|backed out|backing out', re.IGNORECASE)
 
+
 class Bug:
     def __init__(self, bug_no, tag, note_text):
         self.bugs = [bug_no]
@@ -107,11 +108,14 @@ def load_notes(previous_esr, this_beta):
 
             new_notes.append(rel_note)
 
+    noted_bugs = set()
     for bug in new_notes:
         if any([b for b in bug.bugs if b in bugs_fixed]):
             for b2 in bug.bugs:
                 if b2 not in bugs_fixed:
                     bug.bugs.remove(b2)
+                else:
+                    noted_bugs.add(b2)
             new_note = mk_new_note(bug)
             rel_notes.append(new_note)
 
@@ -121,10 +125,22 @@ def load_notes(previous_esr, this_beta):
         yaml.dump([n for n in rel_notes if n['tag'] == 'changed'], fp, default_flow_style=False)
         yaml.dump([n for n in rel_notes if n['tag'] == 'fixed'], fp, default_flow_style=False)
 
-    # TODO: Print out bugs that were not found in the previous notes
     # TODO: If there is nothing "new" or "changed" the output has an empty list, a comment would
     #  be better.
     print('Wrote notes to {}.'.format(ver_notes_yaml))
+
+    # Print out bugs where no note is available
+    print('')
+    print('Bugs that do not have an associated note:')
+    no_note_bugs = sorted(bugs_fixed - noted_bugs)
+
+    bugzilla_url = 'https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary&id={}'.format(
+        ','.join([str(b) for b in no_note_bugs]))
+    with urlopen(bugzilla_url) as response:
+        data = json.load(response)
+
+    for bug in data['bugs']:
+        print('{} - {}'.format(bug['id'], bug['summary']))
 
 
 def get_bugs_in_changeset(changeset_data):
