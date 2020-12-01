@@ -33,7 +33,7 @@ notes:
     Note that manual installation of add-ons via drag-and-drop currently doesn''t work.'
   tag: changed
   bug: 1565180
-  bug: 1566347
+  bug2: 1566347
 - note: 'Gmail accounts ignored a non-standard trash folder selection.
     Note: If non-standard trash folder was selected previously in the account settings,
     this setting will now take effect which may be unexpected.'
@@ -88,7 +88,7 @@ notes:
   tag: fixed
   bug: 1579411
   bug2: 1577310
-  bug2: 1577591
+  bug3: 1577591
   group: 2
 - note: 'Contrast between tag label and background not optimal'
   tag: fixed
@@ -123,7 +123,7 @@ notes:
   bug2: 1584697
   bug3: 1582830
   bug4: 1585300
-  bug4: 1584487
+  bug5: 1584487
   group: 3
 - note: 'Some attachments couldn''t be opened in messages originating from MS Outlook 2016'
   tag: fixed
@@ -152,7 +152,7 @@ notes:
 - note: 'Calendar: Glitches with custom repeat and reminder number input'
   tag: fixed
   bug: 1583340
-  bug: 1583098
+  bug2: 1583098
   group: 3
 - note: 'Calendar: Problems with WCAP provider'
   tag: fixed

@@ -77,7 +77,7 @@ notes:
 - note: 'Run filters periodically. Improved filter logging.'
   tag: new
   bug: 864187
-  bug: 697522
+  bug2: 697522
 - note: 'OAuth2 authentication for Yandex'
   tag: new
   bug: 1559972
@@ -86,7 +86,7 @@ notes:
     needs to be set to false)'
   tag: new
   bug: 1491562
-  bug: 1509977
+  bug2: 1509977
 - note: 'On Windows a 64bit installer and MSI package are now available, see the
     [Thunderbird for Organisations](https://www.thunderbird.net/en-US/organizations/) page for details'
   tag: new
@@ -139,7 +139,7 @@ notes:
   bug: 1493158
   bug2: 1527547
   tag: changed
-- note: 'FileLink: 
+- note: 'FileLink:
     WeTransfer is already included.
     [Dropbox](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/) and
     [Box.com](https://addons.thunderbird.net/en-GB/thunderbird/addon/filelink-provider-for-box/)

@@ -13,7 +13,7 @@ notes:
 - note: 'Run filters periodically. Improved filter logging.'
   tag: new
   bug: 864187
-  bug: 697522
+  bug2: 697522
 - note: '"Off the record" (OTR) chat, see the [Wiki](https://wiki.mozilla.org/Thunderbird:OTR)'
   tag: new
   bug: 1518172

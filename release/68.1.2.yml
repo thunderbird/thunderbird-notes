@@ -46,7 +46,7 @@ notes:
 - note: 'Calendar: Glitches with custom repeat and reminder number input'
   tag: fixed
   bug: 1583340
-  bug: 1583098
+  bug2: 1583098
 - note: 'Calendar: Problems with WCAP provider'
   tag: fixed
   bug: 1582746

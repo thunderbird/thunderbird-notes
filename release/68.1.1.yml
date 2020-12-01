@@ -32,11 +32,11 @@ notes:
     or semicolons'
   tag: fixed
   bug: 1575046
-  bug: 1336785
-  bug: 1059988
+  bug2: 1336785
+  bug3: 1059988
 - note: 'Edit mailing list not working'
   tag: fixed
-  bug: 1575046 
+  bug: 1575046
 - note: 'Various theme fixes, especially dark theme improvements for Calendar'
   tag: fixed
   bug: 1579411
