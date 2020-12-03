@@ -13,6 +13,7 @@ release:
   groups:
     -
     - "Changed and Fixed in Beta 2"
+    - "New, Changed and Fixed in Beta 3"
 
 notes:
 - note: 'OpenPGP: "Copy Key Id" option added to Key Manager context menu'
@@ -98,6 +99,50 @@ notes:
   tag: fixed
   bug: 1668478
   group: 2
+
+#beta 3
+- note: 'Extension API: browserAction, composeAction, and messageDisplayAction toolbar buttons now support label and default_label properties'
+  tag: new
+  bug: 1583478
+  group: 3
+- note: 'Extension API: new function: browser.windows.openDefaultBrowser() to launch a URL in the OS default web browser'
+  tag: new
+  bug: 1664708
+  group: 3
+
+- note: 'Mac OS X: Remove obsolete Yosemite-specific code from base theme and add support for Big Sur'
+  tag: changed
+  bug: 1677949
+  group: 3
+
+- note: 'Message list: Running a quicksearch that returned no results did not offer to re-run as a global search'
+  tag: fixed
+  bug: 1663153
+  group: 3
+- note: 'Calendar: Dark theme was not entirely applied to the calendar on Linux'
+  tag: fixed
+  bug: 1655543
+  group: 3
+- note: 'Calendar: Could not import .ics file into a CalDAV calendar'
+  tag: fixed
+  bug: 1652984
+  group: 3
+- note: 'Address book: Some columns in address book were displayed as blank when they should have information'
+  tag: fixed
+  bug: 1631201
+  group: 3
+- note: 'Address book: The address book view was not updated when changing the name format in the menu'
+  tag: fixed
+  bug: 1678555
+  group: 3
+- note: 'OpenPGP: When a message was signed but not encrypted, and the signature verification failed, it would incorrectly report that the message was encrypted and could not be decrypted'
+  tag: fixed
+  bug: 1679768
+  group: 3
+- note: 'Extension API: It was possible to trick the Extension API into reporting a message belonged to a different account than it really did by manually editing headers in the locally stored copy of the email'
+  tag: fixed
+  bug: 1644032
+  group: 3
 
 #Known Issues
 - note: 'Printing from calendar does not work'
