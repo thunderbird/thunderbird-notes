@@ -1,7 +1,7 @@
 release:
   release_date: 2020-10-22
   text: |
-    **These notes apply to Thunderbird version 84 beta 3 released December 3, 2020.**
+    **These notes apply to Thunderbird version 84 beta 3 released December 4, 2020.**
 
     **System Requirements:** [Details](/en-US/thunderbird/83.0beta/system-requirements/)
 
@@ -101,50 +101,46 @@ notes:
   group: 2
 
 #beta 3
-- note: 'Extension API: browserAction, composeAction, and messageDisplayAction toolbar buttons now support label and default_label properties'
-  tag: new
-  bug: 1583478
-  group: 3
-- note: 'Extension API: new function: browser.windows.openDefaultBrowser() to launch a URL in the OS default web browser'
+- note: 'MailExtensions: Added browser.windows.openDefaultBrowser()'
   tag: new
   bug: 1664708
   group: 3
 
-- note: 'Mac OS X: Remove obsolete Yosemite-specific code from base theme and add support for Big Sur'
+- note: 'MailExtensions: APIs that returned an accountId will reflect the account the message belongs to, not what is stored in message headers'
   tag: changed
-  bug: 1677949
+  bug: 1644032
+  group: 3
+- note: 'MailExtensions: browserAction, composeAction, and messageDisplayAction toolbar buttons now support label and default_label properties'
+  tag: changed
+  bug: 1583478
   group: 3
 
-- note: 'Message list: Running a quicksearch that returned no results did not offer to re-run as a global search'
+- note: 'Running a quicksearch that returned no results did not offer to re-run as a global search'
   tag: fixed
   bug: 1663153
   group: 3
-- note: 'Calendar: Dark theme was not entirely applied to the calendar on Linux'
-  tag: fixed
-  bug: 1655543
-  group: 3
-- note: 'Calendar: Could not import .ics file into a CalDAV calendar'
-  tag: fixed
-  bug: 1652984
-  group: 3
-- note: 'Address book: Some columns in address book were displayed as blank when they should have information'
-  tag: fixed
-  bug: 1631201
-  group: 3
-- note: 'Address book: The address book view was not updated when changing the name format in the menu'
-  tag: fixed
-  bug: 1678555
-  group: 3
-- note: 'OpenPGP: When a message was signed but not encrypted, and the signature verification failed, it would incorrectly report that the message was encrypted and could not be decrypted'
+- note: 'OpenPGP: When signature verification failed on an unencrypted message, Thunderbird incorrectly reported that the message was encrypted and could not be decrypted'
   tag: fixed
   bug: 1679768
   group: 3
-- note: 'Extension API: It was possible to trick the Extension API into reporting a message belonged to a different account than it really did by manually editing headers in the locally stored copy of the email'
+- note: 'Address book: Some columns incorrectly displayed no data'
   tag: fixed
-  bug: 1644032
+  bug: 1631201
+  group: 3
+- note: 'Address book: The address book view did not update after changing the name format in the menu'
+  tag: fixed
+  bug: 1678555
+  group: 3
+- note: 'Calendar: Dark theme was incomplete on Linux'
+  tag: fixed
+  bug: 1655543
+  group: 3
+- note: 'Calendar: Could not import an ICS file into a CalDAV calendar'
+  tag: fixed
+  bug: 1652984
   group: 3
 
-#Known Issues
+# Known Issues
 - note: 'Printing from calendar does not work'
   tag: unresolved
   bug: 1677819
