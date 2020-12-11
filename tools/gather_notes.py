@@ -26,18 +26,11 @@ BUG_NUMBER_REGEX = re.compile(r'bug \d+', re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r'back(\s?)out|backed out|backing out', re.IGNORECASE)
 
 
-class Bug:
-    def __init__(self, bug_no, tag, note_text):
-        self.bugs = [bug_no]
+class RelNote:
+    def __init__(self, bugs, tag, note_text):
+        self.bugs = bugs
         self.tag = tag
         self.note = note_text
-
-    def add_bug(self, bug):
-        self.bugs.append(bug)
-
-    def strip_bugs(self, fixed):
-        fixed_bugs = [bug_no for bug_no in self.bugs if bug_no in fixed]
-        self.bugs = fixed_bugs
 
 
 def represent_dictionary_order(self, dict_data):
@@ -95,16 +88,12 @@ def load_notes(previous_esr, this_beta):
     for ver_str in [str(v) for v in versions]:
         ver_notes = beta_notes[ver_str]['notes']
         for note in ver_notes:
-            if 'bug' not in note:
+            if 'bugs' not in note:
                 continue
             if note['tag'] == 'unresolved':
                 continue
 
-            rel_note = Bug(note['bug'], note['tag'], note['note'])
-
-            for b in ('bug2', 'bug3', 'bug4', 'bug5', 'bug6', 'bug7', 'bug8', 'bug9'):
-                if b in note:
-                    rel_note.add_bug(note[b])
+            rel_note = RelNote(note['bugs'], note['tag'], note['note'])
 
             new_notes.append(rel_note)
 
