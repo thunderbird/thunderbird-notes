@@ -61,6 +61,9 @@ notes:
   format in the menu'
   tag: fixed
   bug: 1678555
+- note: 'Calendar: Could not import an ICS file into a CalDAV calendar'
+  tag: fixed
+  bug: 1652984
 - note: 'Calendar: Two "Home" calendars were visible on a new profile'
   tag: fixed
   bug: 1656782
@@ -74,6 +77,7 @@ notes:
   tag: fixed
   bug: 1679436
   bug2: 1680432
+  bug3: 1680947
 - note: 'MailExtensions: HTTP refresh in browser content tabs did not work'
   tag: fixed
   bug: 1667774
