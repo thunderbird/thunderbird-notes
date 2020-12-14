@@ -85,6 +85,10 @@ notes:
   tag: fixed
   bug: 1674932
 
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.6)
+  tag: fixed
+
+
 - note: 'Thunderbird performs sluggishly on macOS Big Sur'
   tag: unresolved
   bug: 1677272
