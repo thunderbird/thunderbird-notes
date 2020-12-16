@@ -43,7 +43,7 @@ notes:
     tag: changed
     bug: 1681023
 
-  - note: 'Gemeral: Fixed a performance issue during startup on Mac OS 11 (Big Sur).'
+  - note: 'General: Fixed a performance issue during startup on Mac OS 11 (Big Sur).'
     tag: fixed
     bug: 1680061
   - note: 'General: Fixed a crash on closing the Developer Toolbox.'
