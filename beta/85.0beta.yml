@@ -62,6 +62,10 @@ notes:
     tag: fixed
     bug: 1676166
     bug2: 1677819
+  - note: 'Various message search toolbar fixes'
+    tag: fixed
+    bug: 1679113
+    bug2: 1681010
   - note: 'Address book: Default address book preference was not honored'
     tag: fixed
     bug: 1665430
@@ -76,10 +80,6 @@ notes:
   - note: 'Compose window: New message is no longer marked as "changed" just from tabbing out of the recipient field without editing anything'
     tag: fixed
     bug: 1681389
-  - note: 'Various message search toolbar fixes'
-    tag: fixed
-    bug: 1679113
-    bug2: 1681010
   - note: 'Calendar: System timezone was not always properly detected'
     tag: fixed
     bug: 1678839
