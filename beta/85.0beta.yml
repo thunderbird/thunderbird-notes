@@ -14,13 +14,13 @@ notes:
   - note: 'If a message fails to send, a message is now logged in the console tab of the Developer Toolbox which identifies which message failed to send'
     tag: new
     bug: 1677980
-  - note: 'Address book: Added suport for OAuth2 CardDAV providers'
+  - note: 'Address book: Added support for OAuth2 CardDAV providers'
     tag: new
     bug: 1662979
   - note: 'Calendar: Thunderbird now informs the operating system that it knows how to open webcal: and webcals: URLs'
     tag: new
     bug: 352566
-  - note: 'MailExtensions: Added the capability to query a specific headerMessageId via extension API which is persistant across application restarts'
+  - note: 'MailExtensions: Added the capability to query a specific headerMessageId via extension API which is persistent across application restarts'
     tag: new
     bug: 1606573
   - note: 'MailExtensions: new functions: accounts.getDefault() and accounts.getDefaultIdentity(accountId)'
@@ -52,14 +52,14 @@ notes:
   - note: 'Address book: Read-only CardDAV address books were writable'
     tag: fixed
     bug: 1680149
-  - note: 'Address book: Candidate window for autocomplete suggestions did not appear next to the field when editing address book entries with an IME enabled'
+  - note: 'Address book: Autocomplete suggestions did not appear next to the field when editing address book entries with an IME enabled'
     tag: fixed
     bug: 1676785
   - note: 'Various printing bugfixes'
     tag: fixed
     bug: 1676166
     bug2: 1677819
-  - note: 'Address book: Default adddress book preference was not honored'
+  - note: 'Address book: Default address book preference was not honored'
     tag: fixed
     bug: 1665430
   - note: 'Compose window: The user-configured style for quoted text was not honored'
@@ -76,7 +76,7 @@ notes:
   - note: 'Message pane: Choosing something from the autocomplete dropdown in the toolbar search box would open three tabs instead of one'
     tag: fixed
     bug: 1679113
-  - note: 'Message pane: The placeholder text in the toolbar seach box was overlapping the search icon if your window was narrow'
+  - note: 'Message pane: The placeholder text in the toolbar search box was overlapping the search icon if your window was narrow'
     tag: fixed
     bug: 1681010
   - note: 'Calendar: System timezone was not always properly detected'
@@ -94,7 +94,7 @@ notes:
   - note: 'Chat: Could not add TLS certificate exceptions for XMPP connections'
     tag: fixed
     bug: 1590471
-  - note: 'MailExtensions: messages.list(folder) on a non-existant folder was throwing a generic not properly throwing an ExtensionError exception instead of a generic Exception'
+  - note: 'MailExtensions: messages.list(folder) on a non-existent folder was throwing a generic not properly throwing an ExtensionError exception instead of a generic Exception'
     tag: fixed
     bug: 15524497
   - note: 'MailExtensions: browserActions moved to a different toolbar are now properly displayed after restarting Thunderbird'
