@@ -52,10 +52,6 @@ notes:
     tag: changed
     bug: 15524497
 
-  - note: 'Address book: Read-only CardDAV address books were writable'
-    tag: fixed
-    bug: 1680149
-  - note: 'Address book: Autocomplete suggestions did not appear next to the field when editing address book entries with an IME enabled'
     tag: fixed
     bug: 1676785
   - note: 'Various printing bugfixes'
@@ -66,6 +62,10 @@ notes:
     tag: fixed
     bug: 1679113
     bug2: 1681010
+  - note: 'Address book: Read-only CardDAV address books were writable'
+    tag: fixed
+    bug: 1680149
+  - note: 'Address book: Autocomplete suggestions did not appear next to the field when editing address book entries with an IME enabled'
   - note: 'Address book: Default address book preference was not honored'
     tag: fixed
     bug: 1665430
