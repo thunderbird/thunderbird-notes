@@ -42,6 +42,12 @@ notes:
   - note: 'MailExtensions: setComposeDetails and begin* functions of compose API now use body and plainTextBody as compose mode selectors'
     tag: changed
     bug: 1681023
+  - note: 'MailExtensions: Variable names for accessing notifications have changed'
+    tag: changed
+    bug: 1673958
+  - note: 'MailExtensions: Read-only address books now accessible'
+    tag: changed
+    bug: 1679364
 
   - note: 'Address book: Read-only CardDAV address books were writable'
     tag: fixed
@@ -79,19 +85,16 @@ notes:
   - note: 'Calendar: The toolbar in the invitation details dialog was not honoring the theme colors'
     tag: fixed
     bug: 1680755
-  - note: 'Account settings: When creating a new account, some already entered settings were not kept when switching to the Advanced Config view'
+  - note: 'Account settings: When creating a new account, some already entered settings did not copy to the Advanced Config dialog'
     tag: fixed
     bug: 1679664
   - note: 'Account settings: When updating the title of a news & blogging type account, the title of the tab did not change'
     tag: fixed
     bug: 1674645
-  - note: 'Chat: fix ability to add certificate exceptions for XMPP connections'
+  - note: 'Chat: Could not add TLS certificate exceptions for XMPP connections'
     tag: fixed
     bug: 1590471
-  - note: 'MailExtensions: Variable names for accessing notifications have changed in order to correct deficiencies in the implementation'
-    tag: fixed
-    bug: 1673958
-  - note: 'MailExtensions: messages.list(folder) on a non-existant folder will now throw an ExtensionError exception instead of a generic Exception'
+  - note: 'MailExtensions: messages.list(folder) on a non-existant folder was throwing a generic not properly throwing an ExtensionError exception instead of a generic Exception'
     tag: fixed
     bug: 15524497
   - note: 'MailExtensions: browserActions moved to a different toolbar are now properly displayed after restarting Thunderbird'
@@ -101,15 +104,12 @@ notes:
     tag: fixed
     bug: 1617377
     bug2: 1658132
-  - note: 'MailExtensions: windows.create and windows.update now honor the titlePrefix parameter'
-    tag: fixed
-    bug: 1647768
-  - note: 'MailExtensions: browser.compose.setComposeDetails was not properly handling Windows-style line endings'
+  - note: 'MailExtensions: browser.compose.setComposeDetails did not properly handling Windows-style line endings'
     tag: fixed
     bug: 1672407
-  - note: 'MailExtensions: messages.getFull() was not returning all parts when OpenPGP was enabled'
+  - note: 'MailExtensions: windows.create and windows.update did not honor the titlePrefix parameter'
+    tag: fixed
+    bug: 1647768
+  - note: 'MailExtensions: messages.getFull() did not return all parts with OpenPGP enabled'
     tag: fixed
     bug: 1674964
-  - note: 'MailExtensions: The extension API is now able to access read-only address books'
-    tag: fixed
-    bug: 1679364
