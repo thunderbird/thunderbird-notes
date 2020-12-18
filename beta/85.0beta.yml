@@ -48,6 +48,9 @@ notes:
   - note: 'MailExtensions: Read-only address books now accessible'
     tag: changed
     bug: 1679364
+  - note: 'MailExtensions: messages.list(folder) on a non-existent folder now throws an ExtensionError exception'
+    tag: changed
+    bug: 15524497
 
   - note: 'Address book: Read-only CardDAV address books were writable'
     tag: fixed
@@ -73,12 +76,10 @@ notes:
   - note: 'Compose window: New message is no longer marked as "changed" just from tabbing out of the recipient field without editing anything'
     tag: fixed
     bug: 1681389
-  - note: 'Message pane: Choosing something from the autocomplete dropdown in the toolbar search box would open three tabs instead of one'
+  - note: 'Various message search toolbar fixes'
     tag: fixed
     bug: 1679113
-  - note: 'Message pane: The placeholder text in the toolbar search box was overlapping the search icon if your window was narrow'
-    tag: fixed
-    bug: 1681010
+    bug2: 1681010
   - note: 'Calendar: System timezone was not always properly detected'
     tag: fixed
     bug: 1678839
@@ -94,9 +95,6 @@ notes:
   - note: 'Chat: Could not add TLS certificate exceptions for XMPP connections'
     tag: fixed
     bug: 1590471
-  - note: 'MailExtensions: messages.list(folder) on a non-existent folder was throwing a generic not properly throwing an ExtensionError exception instead of a generic Exception'
-    tag: fixed
-    bug: 15524497
   - note: 'MailExtensions: browserActions moved to a different toolbar are now properly displayed after restarting Thunderbird'
     tag: fixed
     bug: 1598190
