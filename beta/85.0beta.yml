@@ -11,13 +11,13 @@ release:
   import_system_requirements: '79.0beta'
 
 notes:
-  - note: 'Sending mail: If a message fails to send, a message is now logged in the console tab of the Developer Toolbox which identifies which message failed to send.'
+  - note: 'If a message fails to send, a message is now logged in the console tab of the Developer Toolbox which identifies which message failed to send'
     tag: new
     bug: 1677980
-  - note: 'Address book: Added suport for OAuth2 CardDAV providers.'
+  - note: 'Address book: Added suport for OAuth2 CardDAV providers'
     tag: new
     bug: 1662979
-  - note: 'Calendar: Thunderbird now informs the operating system that it knows how to open webcal: and webcals: URLs.'
+  - note: 'Calendar: Thunderbird now informs the operating system that it knows how to open webcal: and webcals: URLs'
     tag: new
     bug: 352566
   - note: 'MailExtensions: Added the capability to query a specific headerMessageId via extension API which is persistant across application restarts'
@@ -27,97 +27,91 @@ notes:
     tag: new
     bug: 1681141
 
-  - note: 'General: The UI Customization controls formerly in the Customize submenu have all been moved into the View menu.'
+  - note: 'The UI Customization controls formerly in the Customize submenu have all been moved into the View menu'
     tag: changed
     bug: 1668612
   - note: 'Address book: CardDAV is now enabled by default (it was previously behind a hidden preference and off by default)'
     tag: changed
     bug: 1665230
-  - note: 'Calendar: Opening an event in the Today pane now opens the event summary instead of editing the event.'
+  - note: 'Calendar: Opening an event in the Today pane now opens the event summary'
     tag: changed
     bug: 1673654
-  - note: 'Calendar: When creating a new calendar, CalDAV is now used by default if the server supports it.'
+  - note: 'Calendar: When creating a new calendar, CalDAV is now used by default when supported by the server'
     tag: changed
     bug: 1670420
-  - note: 'MailExtensions: setComposeDetails and begin* functions of compose API now use body and plainTextBody as compose mode selectors.'
+  - note: 'MailExtensions: setComposeDetails and begin* functions of compose API now use body and plainTextBody as compose mode selectors'
     tag: changed
     bug: 1681023
 
-  - note: 'General: Fixed a performance issue during startup on Mac OS 11 (Big Sur).'
-    tag: fixed
-    bug: 1680061
-  - note: 'General: Fixed a crash on closing the Developer Toolbox.'
-    tag: fixed
-    bug: 1678495
-  - note: 'Address book: Thunderbird now prevents you from trying to make changes to read-only CardDAV address books.'
+  - note: 'Address book: Thunderbird now prevents you from trying to make changes to read-only CardDAV address books'
     tag: fixed
     bug: 1680149
-  - note: 'Address book: Candidate window appeared in the wrong place when using an IME to edit address book entries.'
+  - note: 'Address book: Candidate window appeared in the wrong place when using an IME to edit address book entries'
     tag: fixed
     bug: 1676785
-  - note: 'Address book: It was not possible to print a mailing list record.'
+  - note: 'Address book: Printing a mailing list record did not work'
     tag: fixed
     bug: 1676166
-  - note: 'Address book: Options > Composition > "Default startup directory in the address book window" was not being honored.'
+  - note: 'Address book: Options > Composition > "Default startup directory in the address book window" was not being honored'
     tag: fixed
     bug: 1665430
-  - note: 'Compose window: The user-configured style for quoted text was not honored in the compose window.'
+  - note: 'Compose window: The user-configured style for quoted text was not honored in the compose window'
     tag: fixed
     bug: 1641519
-  - note: 'Compose window: Recipient addresses that had not yet been autocompleted were lost when clicking Send button.'
+  - note: 'Compose window: Recipient addresses that had not yet been autocompleted were lost when clicking Send button'
     tag: fixed
     bug: 1674054
     bug2: 1679848
     bug3: 1681389
-  - note: 'Compose window: New message is no longer marked as "changed" just from tabbing out of the recipient field without editing anything.'
+  - note: 'Compose window: New message is no longer marked as "changed" just from tabbing out of the recipient field without editing anything'
     tag: fixed
     bug: 1681389
-  - note: 'Message pane: Choosing something from the autocomplete dropdown in the toolbar search box would open three tabs instead of one.'
+  - note: 'Message pane: Choosing something from the autocomplete dropdown in the toolbar search box would open three tabs instead of one'
     tag: fixed
     bug: 1679113
-  - note: 'Message pane: The placeholder text in the toolbar seach box was overlapping the search icon if your window was narrow.'
+  - note: 'Message pane: The placeholder text in the toolbar seach box was overlapping the search icon if your window was narrow'
     tag: fixed
     bug: 1681010
-  - note: 'Calendar: Printing the calendar did not work.'
+  - note: 'Calendar: Printing the calendar did not work'
     tag: fixed
     bug: 1677819
-  - note: 'Calendar: Improvments were made to the detection of the system timezone.'
+  - note: 'Calendar: Improvments were made to the detection of the system timezone'
     tag: fixed
     bug: 1678839
-  - note: 'Calendar: The toolbar in the invitation details dialog was not honoring the theme colors.'
+  - note: 'Calendar: The toolbar in the invitation details dialog was not honoring the theme colors'
     tag: fixed
     bug: 1680755
-  - note: 'Account settings: When creating a new account, some already entered settings were not kept when switching to the Advanced Config view.'
+  - note: 'Account settings: When creating a new account, some already entered settings were not kept when switching to the Advanced Config view'
     tag: fixed
     bug: 1679664
-  - note: 'Account settings: When updating the title of a news & blogging type account, the title of the tab did not change.'
+  - note: 'Account settings: When updating the title of a news & blogging type account, the title of the tab did not change'
     tag: fixed
     bug: 1674645
-  - note: 'Chat: fix ability to add certificate exceptions for XMPP connections.'
+  - note: 'Chat: fix ability to add certificate exceptions for XMPP connections'
     tag: fixed
     bug: 1590471
-  - note: 'MailExtensions: Variable names for accessing notifications have changed in order to correct deficiencies in the implementation.'
+  - note: 'MailExtensions: Variable names for accessing notifications have changed in order to correct deficiencies in the implementation'
     tag: fixed
     bug: 1673958
-  - note: 'MailExtensions: messages.list(folder) on a non-existant folder will now throw an ExtensionError exception instead of a generic Exception.'
+  - note: 'MailExtensions: messages.list(folder) on a non-existant folder will now throw an ExtensionError exception instead of a generic Exception'
     tag: fixed
     bug: 15524497
-  - note: 'MailExtensions: browserActions moved to a different toolbar are now properly displayed after restarting Thunderbird.'
+  - note: 'MailExtensions: browserActions moved to a different toolbar are now properly displayed after restarting Thunderbird'
     tag: fixed
     bug: 1598190
-  - note: 'MailExtensions: browser.compose.beginNew was not properly honoring plaintext vs HTML settings.'
+  - note: 'MailExtensions: browser.compose.beginNew was not properly honoring plaintext vs HTML settings'
     tag: fixed
     bug: 1617377
     bug2: 1658132
-  - note: 'MailExtensions: windows.create and windows.update now honor the titlePrefix parameter.'
+  - note: 'MailExtensions: windows.create and windows.update now honor the titlePrefix parameter'
     tag: fixed
     bug: 1647768
-  - note: 'MailExtensions: browser.compose.setComposeDetails was not properly handling Windows-style line endings.'
+  - note: 'MailExtensions: browser.compose.setComposeDetails was not properly handling Windows-style line endings'
     tag: fixed
     bug: 1672407
-  - note: 'MailExtensions: messages.getFull() was not returning all parts when OpenPGP was enabled.'
+  - note: 'MailExtensions: messages.getFull() was not returning all parts when OpenPGP was enabled'
     tag: fixed
     bug: 1674964
-  - note: 'MailExtensions: The extension API is now able to access read-only address books.'
+  - note: 'MailExtensions: The extension API is now able to access read-only address books'
     tag: fixed
     bug: 1679364
