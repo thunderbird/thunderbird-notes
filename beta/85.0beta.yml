@@ -52,8 +52,6 @@ notes:
     tag: changed
     bug: 15524497
 
-    tag: fixed
-    bug: 1676785
   - note: 'Various printing bugfixes'
     tag: fixed
     bug: 1676166
@@ -66,6 +64,8 @@ notes:
     tag: fixed
     bug: 1680149
   - note: 'Address book: Autocomplete suggestions did not appear next to the field when editing address book entries with an IME enabled'
+    tag: fixed
+    bug: 1676785
   - note: 'Address book: Default address book preference was not honored'
     tag: fixed
     bug: 1665430
