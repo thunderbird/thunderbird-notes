@@ -43,19 +43,20 @@ notes:
     tag: changed
     bug: 1681023
 
-  - note: 'Address book: Thunderbird now prevents you from trying to make changes to read-only CardDAV address books'
+  - note: 'Address book: Read-only CardDAV address books were writable'
     tag: fixed
     bug: 1680149
-  - note: 'Address book: Candidate window appeared in the wrong place when using an IME to edit address book entries'
+  - note: 'Address book: Candidate window for autocomplete suggestions did not appear next to the field when editing address book entries with an IME enabled'
     tag: fixed
     bug: 1676785
-  - note: 'Address book: Printing a mailing list record did not work'
+  - note: 'Various printing bugfixes'
     tag: fixed
     bug: 1676166
-  - note: 'Address book: Options > Composition > "Default startup directory in the address book window" was not being honored'
+    bug2: 1677819
+  - note: 'Address book: Default adddress book preference was not honored'
     tag: fixed
     bug: 1665430
-  - note: 'Compose window: The user-configured style for quoted text was not honored in the compose window'
+  - note: 'Compose window: The user-configured style for quoted text was not honored'
     tag: fixed
     bug: 1641519
   - note: 'Compose window: Recipient addresses that had not yet been autocompleted were lost when clicking Send button'
@@ -72,10 +73,7 @@ notes:
   - note: 'Message pane: The placeholder text in the toolbar seach box was overlapping the search icon if your window was narrow'
     tag: fixed
     bug: 1681010
-  - note: 'Calendar: Printing the calendar did not work'
-    tag: fixed
-    bug: 1677819
-  - note: 'Calendar: Improvments were made to the detection of the system timezone'
+  - note: 'Calendar: System timezone was not always properly detected'
     tag: fixed
     bug: 1678839
   - note: 'Calendar: The toolbar in the invitation details dialog was not honoring the theme colors'
