@@ -67,3 +67,6 @@ notes:
   tag: fixed
   bug: 1682808
   bug2: 1682971
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.6.1)
+  tag: fixed
