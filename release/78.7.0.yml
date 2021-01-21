@@ -1,0 +1,30 @@
+release:
+  release_date: 2021-01-26
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: 'OpenPGP: Verification of an inline signed message would fail if it contained leading whitespace'
+  tag: fixed
+  bug: 1679769
+- note: 'OpenPGP: Various other minor bug and stability fixes'
+  tag: fixed
+  bug: 1675325
+  bug2: 1677508
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.7)
+  tag: fixed
+
+
+- note: 'Thunderbird performs sluggishly on macOS Big Sur'
+  tag: unresolved
+  bug: 1677272
