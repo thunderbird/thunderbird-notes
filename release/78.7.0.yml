@@ -13,6 +13,19 @@ release:
   import_system_requirements: '78.0'
 
 notes:
+- note: 'Extension API: Compose API now supports editing messages and templates as new messages'
+  tag: new
+  bug: 1670379
+- note: 'Extension API: composeHtml is now exposed in MailIdentity'
+  tag: new
+  bug: 1617377
+- note: 'Extension API: windows.update and windows.create now support titlePreface'
+  tag: new
+  bug: 1647768
+
+- note: 'Account Manager: When deleting the last remaining account, the default account was not getting cleared and still pointed to the no-longer-existing account'
+  tag: fixed
+  bug: 1680653
 - note: 'OpenPGP: Verification of an inline signed message would fail if it contained leading whitespace'
   tag: fixed
   bug: 1679769
@@ -20,6 +33,18 @@ notes:
   tag: fixed
   bug: 1675325
   bug2: 1677508
+- note: 'Mail Window: Quickfilter bar buttons disappear when hovered on Windows 10 High Contrast Black theme'
+  tag: fixed
+  bug: 1676911
+- note: 'Extension API: browserAction buttons were not restored after restart if they were moved outside the default toolbar'
+  tag: fixed
+  bug: 1598190
+- note: 'Extension API: browser.compose.beginNew could not override identity plaintext setting'
+  tag: fixed
+  bug: 1658132
+- note: 'Extension API: browser.compose.beginForward was ignoring ComposeDetails'
+  tag: fixed
+  bug: 1658657
 
 - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.7)
   tag: fixed
