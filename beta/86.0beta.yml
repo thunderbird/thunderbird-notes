@@ -1,0 +1,75 @@
+release:
+  release_date: 2021-01-28
+  text: |
+    **These notes apply to Thunderbird version 86 beta 1 released January 28, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/86.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+  import_system_requirements: '79.0beta'
+
+notes:
+  - note: Allow pinning folder views to the Folder Pane
+    tag: new
+    bug: 1163555
+  - note: 'Message addressees that are not found in any address book will no longer appear in red type;
+     invalid addresses will appear red'
+    tag: changed
+    bug: 1660691
+  - note: Folder pane color scheme overhauled with a focus on readability
+    tag: changed
+    bug: 1682065
+  - note: 'Calendar: Imported events are not sorted before being displayed'
+    tag: changed
+    bug: 1683060
+  - note: 'Thunderbird did not properly handle Self-signed certificates on IMAP servers'
+    tag: fixed
+    bug: 1676141
+  - note: 'Pressing command+enter to send a message on macOS did not work'
+    tag: fixed
+    bug: 1682147
+  - note: 'Saving an image from a message body with "Save Image As" did not work'
+    tag: fixed
+    bug: 1682873
+  - note: 'Various issues with IMAP folders with non-ASCII names, especially on Gmail'
+    tag: fixed
+    bug: 1571672
+    bug2: 1685450
+    bug3: 1686034
+  - note: 'OpenPGP: Failed to save attachments that contained binary data after decryption'
+    tag: fixed
+    bug: 1686055
+  - note: 'Various global search fixes'
+    tag: fixed
+    bug: 1686317
+    bug2: 1578302
+  - note: 'Multiple Outlook address book support fixes'
+    tag: fixed
+    bug: 1681824
+    bug2: 1679525
+    bug3: 1682620
+  - note: 'Importing an address book from a CSV file always reported an error'
+    tag: fixed
+    bug: 1685048
+  - note: 'Windows uninstaller did not always remove all Thunderbird program files'
+    tag: fixed
+    bug: 1678823
+  - note: 'Calendar: HTML entities appeared in event and task descriptions'
+    tag: fixed
+    bug: 1663947
+  - note: 'Calendar: FileLink UI fixes for Caldav calendars'
+    tag: fixed
+    bug: 1669803
+  - note: 'Calendar: Various dialog updates'
+    tag: fixed
+    bug: 1685947
+
+  - note: MailExtension options pages did not always completely load
+    tag: fixed
+    bug: 1641577
+
+  - note: Various updater issues
+    tag: unresolved
+    bug: 1684188
