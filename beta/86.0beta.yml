@@ -35,9 +35,14 @@ notes:
     bug: 1682873
   - note: 'Various issues with IMAP folders with non-ASCII names, especially on Gmail'
     tag: fixed
-    bug: 1571672
+    bug: 1685033
     bug2: 1685450
     bug3: 1686034
+    bug4: 1685449
+    bug5: 1686415
+    bug6: 1687452
+    bug7: 1687727
+    bug8: 1687938
   - note: 'OpenPGP: Failed to save attachments that contained binary data after decryption'
     tag: fixed
     bug: 1686055
@@ -45,11 +50,7 @@ notes:
     tag: fixed
     bug: 1686317
     bug2: 1578302
-  - note: 'Multiple Outlook address book support fixes'
-    tag: fixed
-    bug: 1681824
-    bug2: 1679525
-    bug3: 1682620
+
   - note: 'Importing an address book from a CSV file always reported an error'
     tag: fixed
     bug: 1685048
