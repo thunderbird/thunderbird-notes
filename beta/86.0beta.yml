@@ -1,13 +1,17 @@
 release:
-  release_date: 2021-01-28
+  release_date: 2021-01-29
   text: |
-    **These notes apply to Thunderbird version 86 beta 1 released January 28, 2021.**
+    **These notes apply to Thunderbird version 86 beta 1 released January 29, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/86.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
+
+    <div style="color:magenta; font-weight:bold">Thunderbird 86.0b1 is using a new implementation of the message sending
+    code that is easier to maintain and more flexible. As with any major change, bugs are bound to happen. The old
+    behavior can be restored by setting the pref "mailnews.send.jsmodule" to false.</div>
   import_system_requirements: '79.0beta'
 
 notes:
@@ -18,6 +22,9 @@ notes:
      invalid addresses will appear red'
     tag: changed
     bug: 1660691
+  - note: 'Reenabled javascript-based message sending code by default'
+    tag: changed
+    bug: 1211292
   - note: Folder pane color scheme overhauled with a focus on readability
     tag: changed
     bug: 1682065
