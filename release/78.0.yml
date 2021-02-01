@@ -171,9 +171,6 @@ notes:
   tag: changed
   bug: 1636238
   bug2: 1638863
-- note: Thunderbird will now ask for OS account password before displaying saved passwords
-  tag: changed
-  bug: 1622293
 - note: Address books are now stored as SQLite databases to prepare for future
     addressbook improvements. Existing address books in MAB format (using a Mork database)
     will be converted.
