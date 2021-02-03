@@ -13,6 +13,9 @@ release:
   import_system_requirements: '78.0'
 
 notes:
+- note: CardDAV address books now support OAuth2 and Google Addressbook. See [support article](https://)
+  tag: new
+  bug: 1662979
 - note: Thunderbird will no longer allow installation of addons that use legacy APIs
   tag: changed
   bug: 1688904
