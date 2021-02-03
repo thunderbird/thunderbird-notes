@@ -1,0 +1,36 @@
+release:
+  release_date: 2021-02-05
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: Thunderbird will no longer allow installation of addons that use legacy APIs
+  tag: changed
+  bug: 1688904
+- note: Send message button sometimes remained enabled when it should be disabled
+  tag: fixed
+  bug: 1687431
+- note: Pressing command+enter to send a message on macOS did not work
+  tag: fixed
+  bug: 1682147
+- note: 'OpenPGP: Failed to save attachments that contained binary data after decryption'
+  tag: fixed
+  bug: 1686055
+- note: Global search UI fixes
+  tag: fixed
+  bug: 1578302
+  bug2: 1687034
+- note: Various theme and color fixes to improve ease of use
+  tag: fixed
+  bug: 1688034
+  bug2: 1688758
+  bug3: 1689509
