@@ -16,7 +16,7 @@ notes:
 - note: CardDAV address books now support OAuth2 and Google Contacts.
   tag: new
   bug: 1662979
-- note: Thunderbird will no longer allow installation of addons that use legacy APIs
+- note: Thunderbird will no longer allow installation of addons that use the legacy API
   tag: changed
   bug: 1688904
 - note: Send message button sometimes remained enabled when it should be disabled
