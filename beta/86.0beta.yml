@@ -1,7 +1,7 @@
 release:
   release_date: 2021-01-29
   text: |
-    **These notes apply to Thunderbird version 86 beta 1 released January 29, 2021.**
+    **These notes apply to Thunderbird version 86 beta 2 released February 8, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/86.0beta/system-requirements/)
 
@@ -13,6 +13,10 @@ release:
     code that is easier to maintain and more flexible. As with any major change, bugs are bound to happen. The old
     behavior can be restored by setting the pref "mailnews.send.jsmodule" to false.</div>
   import_system_requirements: '79.0beta'
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
   - note: Allow pinning folder views to the Folder Pane
@@ -78,6 +82,54 @@ notes:
     tag: fixed
     bug: 1641577
 
-  - note: Various updater issues
+# beta 2
+  - note: Thunderbird will no longer allow installation of addons that use the legacy API
+    tag: changed
+    bug: 1688904
+    group: 2
+
+  - note: 'Security information for S/MIME messages was not displayed correctly prior to a draft being saved'
+    tag: fixed
+    bug: 1683701
+    group: 2
+  - note: Automatic account setup did not use the provider email and display name
+    tag: fixed
+    bug: 1689079
+    group: 2
+  - note: Favorite Folder view did not maintain UI state between Thunderbird restarts
+    tag: fixed
+    bug: 1656501
+    group: 2
+  - note: Compact folder view did not work
+    tag: fixed
+    bug: 1689553
+    group: 2
+  - note: Searching addons from "Manage Extensions" page was not working
+    tag: fixed
+    bug: 1688887
+    group: 2
+  - note: Printing address book and calendar were broken in 86 beta 1
+    tag: fixed
+    bug: 1689461
+    bug2: 1689042
+    group: 2
+  - note: Recurring tasks were always marked incomplete; unable to use filters
+    tag: fixed
+    bug: 1686466
+    group: 2
+  - note: Thunderbird "about:" pages were not able to open links to web pages
+    tag: fixed
+    bug: 1690176
+    group: 2
+  - note: Various UI widgets not working
+    tag: fixed
+    bug: 1690467
+    bug2: 1690514
+    bug3: 1690098
+    bug4: 1689509
+    group: 2
+
+
+  - note: Thunderbird incorrectly states that it is being updated by another instance
     tag: unresolved
-    bug: 1684188
+    bug: 1690638
