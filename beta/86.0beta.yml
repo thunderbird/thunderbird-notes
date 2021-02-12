@@ -1,7 +1,7 @@
 release:
   release_date: 2021-01-29
   text: |
-    **These notes apply to Thunderbird version 86 beta 2 released February 8, 2021.**
+    **These notes apply to Thunderbird version 86 beta 3 released February 16, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/86.0beta/system-requirements/)
 
@@ -16,7 +16,8 @@ release:
 
   groups:
     -
-    - "Fixed in Beta 2"
+    - "Changed and Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   - note: Allow pinning folder views to the Folder Pane
@@ -130,6 +131,28 @@ notes:
     group: 2
 
 
-  - note: Thunderbird incorrectly states that it is being updated by another instance
-    tag: unresolved
-    bug: 1690638
+# beta 3
+  - note: Mail filter and junk logs were empty
+    tag: fixed
+    bug: 1690042
+    group: 3
+  - note: Converting an email to a calendar event or task failed
+    tag: fixed
+    bug: 1690900
+    group: 3
+  - note: 'Calendar: Changing the week start day from the default did not persist across restarts'
+    tag: fixed
+    bug: 1689775
+    group: 3
+  - note: Extension manager was missing link to addon support web page
+    tag: fixed
+    bug: 1642219
+    group: 3
+  - note: Extension manager did not show if an addon used experiment APIs
+    tag: fixed
+    bug: 1689060
+    group: 3
+  - note: 'Devtools: Viewing extension sources displayed a blank page'
+    tag: fixed
+    bug: 1690826
+    group: 3
