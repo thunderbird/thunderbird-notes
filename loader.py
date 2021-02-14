@@ -7,6 +7,17 @@ notes_dirs = [
     os.path.join(os.path.dirname(__file__), 'archive'),
 ]
 
+BUG_MKDOWN_T = "[{}](https://bugzilla.mozilla.org/show_bug.cgi?id={})"
+
+def mk_bug_links(bugs_list):
+    """Used for the release notes preview to create a string of links to
+    the relevant bugs in Bugzilla."""
+    links_list = []
+    bugs_list.sort()
+    for bug_no in bugs_list:
+        md = BUG_MKDOWN_T.format(bug_no, bug_no)
+        links_list.append(md)
+    return ' '.join(links_list)
 
 class ReleaseNotes(object):
     def __init__(self):
@@ -38,6 +49,11 @@ class ReleaseNotes(object):
                     n["release"]["system_requirements"] = ""
             # Push unresolved tags to separate "Known Issues" list.
             for note in n["notes"]:
+                bugs_list = []
+                for b in ('bug', 'bug2', 'bug3', 'bug4', 'bug5', 'bug6', 'bug7', 'bug8', 'bug9'):
+                    if b in note:
+                        bugs_list.append(int(note[b]))
+                note["bug_links"] = mk_bug_links(bugs_list)
                 if note["tag"] == "unresolved":
                     n["known_issues"].append(note)
                 else:

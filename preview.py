@@ -75,6 +75,7 @@ class Handler(FileSystemEventHandler):
         self.jinja_env.globals.update(url=url)
         self.jinja_env.globals.update(svg=svg)
         self.jinja_env.globals.update(donate_url=donate_url)
+        self.jinja_env.globals.update(is_preview=True)
         self.jinja_env.filters['markdown'] = safe_markdown
         self.jinja_env.filters['f'] = f
         self.jinja_env.filters['l10n_format_date'] = l10n_format_date
