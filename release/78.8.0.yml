@@ -1,0 +1,43 @@
+release:
+  release_date: 2021-02-23
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+  - note: Importing an address book from a CSV file always reported an error
+    tag: fixed
+    bug: 1685048
+
+  - note: Security information for S/MIME messages was not displayed correctly prior
+      to a draft being saved
+    tag: fixed
+    bug: 1683701
+  - note: 'Calendar: FileLink UI fixes for Caldav calendars'
+    tag: fixed
+    bug: 1669803
+  - note: Recurring tasks were always marked incomplete; unable to use filters
+    tag: fixed
+    bug: 1686466
+  - note: Various UI widgets not working
+    tag: fixed
+    bug: 1690098
+    bug2: 1690514
+  - note: Dark theme improvements
+    tag: fixed
+    bug: 1691106
+    bug2: 1691787
+  - note: Extension manager was missing link to addon support web page
+    tag: fixed
+    bug: 1642219
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.8)
+    tag: fixed
