@@ -27,13 +27,10 @@ BACKOUT_REGEX = re.compile(r'back(\s?)out|backed out|backing out', re.IGNORECASE
 
 
 class Bug:
-    def __init__(self, bug_no, tag, note_text):
-        self.bugs = [bug_no]
+    def __init__(self, tag, note_text, bugs):
+        self.bugs = bugs
         self.tag = tag
         self.note = note_text
-
-    def add_bug(self, bug):
-        self.bugs.append(bug)
 
     def strip_bugs(self, fixed):
         fixed_bugs = [bug_no for bug_no in self.bugs if bug_no in fixed]
@@ -100,11 +97,8 @@ def load_notes(previous_esr, this_beta):
             if note['tag'] == 'unresolved':
                 continue
 
-            rel_note = Bug(note['bug'], note['tag'], note['note'])
-
-            for b in ('bug2', 'bug3', 'bug4', 'bug5', 'bug6', 'bug7', 'bug8', 'bug9'):
-                if b in note:
-                    rel_note.add_bug(note[b])
+            note_bugs = [bug for k, bug in note.items() if k.startswith("bug")]
+            rel_note = Bug(note['tag'], note['note'], note_bugs)
 
             new_notes.append(rel_note)
 
