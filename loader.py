@@ -49,7 +49,10 @@ class ReleaseNotes(object):
                     n["release"]["system_requirements"] = ""
             # Push unresolved tags to separate "Known Issues" list.
             for note in n["notes"]:
-                bugs_list = [int(bug) for k, bug in note.items() if k.startswith("bug")]
+                bugs_list = []
+                for b in ('bug', 'bug2', 'bug3', 'bug4', 'bug5', 'bug6', 'bug7', 'bug8', 'bug9'):
+                    if b in note:
+                        bugs_list.append(int(note[b]))
                 note["bug_links"] = mk_bug_links(bugs_list)
                 if note["tag"] == "unresolved":
                     n["known_issues"].append(note)
