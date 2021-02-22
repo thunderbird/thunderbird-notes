@@ -39,14 +39,14 @@
           </li>
         {% endif %}
         {% if ns.changes %}
-        <li class="ml-2 mr-2">
-          <a href="#changes" class="btn-link">{{ _('Changes') }}</a>
-        </li>
+          <li class="ml-2 mr-2">
+            <a href="#changes" class="btn-link">{{ _('Changes') }}</a>
+          </li>
         {% endif %}
         {% if ns.fixes %}
-        <li class="ml-2 mr-2">
-          <a href="#fixes" class="btn-link">{{ _('Bug Fixes') }}</a>
-        </li>
+          <li class="ml-2 mr-2">
+            <a href="#fixes" class="btn-link">{{ _('Bug Fixes') }}</a>
+          </li>
         {% endif %}
         <li class="ml-2 mr-2">
           <a href="{{ url('thunderbird.releases.index') }}" class="btn-link">{{ _('All Releases') }}</a>
@@ -57,7 +57,7 @@
 {% endblock %}
 
 {% block content %}
-  <section  class="pt-20 flex justify-center items-center pl-8 pr-8">
+  <section class="pt-20 flex justify-center items-center pl-8 pr-8">
     <aside class="flex flex-col w-full max-w-6xl lg:ml-16 lg:mr-16">
       <p class="font-lg tracking-wider leading-loose mb-6 p-links-blue">
         {{ _('Check out the notes below for this version of Thunderbird. As always, you’re encouraged to <a href="%(feedback)s">tell us what you think</a>, or <a href="%(bugzilla)s">file a bug in Bugzilla</a>')|format(feedback='https://support.mozilla.org/questions/new/thunderbird', bugzilla='https://bugzilla.mozilla.org/') }}
@@ -94,15 +94,15 @@
             {% if note.get('group', 1)-1 == group and note.tag != 'unresolved' %}
               {% if note.tag == 'new' and section.name != note.tag %}
                 <h3 id="whatsnew" class="header-section">
-                  <span>{{ svg('bookmark') }}</span>{{ _('What’s New')}}
+                  <span>{{ svg('bookmark') }}</span>{{ _('What’s New') }}
                 </h3>
               {% elif note.tag == 'changed' and section.name != note.tag %}
                 <h3 id="changes" class="header-section pt-14 pb-4">
-                  <span>{{ svg('sync') }}</span>{{ _('Changes')}}
+                  <span>{{ svg('sync') }}</span>{{ _('Changes') }}
                 </h3>
               {% elif note.tag == 'fixed' and section.name != note.tag %}
                 <h3 id="fixes" class="header-section pt-14 pb-4">
-                  <span>{{ svg('check') }}</span>{{ _('Fixes')}}
+                  <span>{{ svg('check') }}</span>{{ _('Fixes') }}
                 </h3>
               {% endif %}
 
@@ -132,11 +132,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   {{ note.note|markdown|safe }}
                 </aside>
-		{% if is_preview %}
-                <aside>
-                  {{ note.bug_links|markdown|safe }}
-                </aside>
-		{% endif %}
+                {% if is_preview %}
+                  <aside>
+                    {{ note.bug_links|markdown|safe }}
+                  </aside>
+                {% endif %}
               </aside>
             {% endif %}
           {% endfor %}
@@ -144,7 +144,7 @@
 
         {% if known_issues %}
           <h3 id="known-issues" class="header-section pt-14 pb-4">
-            <span>{{ svg('warning') }}</span>{{ _('Known Issues')}}
+            <span>{{ svg('warning') }}</span>{{ _('Known Issues') }}
           </h3>
           {% for note in known_issues %}
             <aside id="note-{{ note.id }}" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
@@ -164,11 +164,11 @@
                   </p>
                 {% endif %}
               </aside>
-	      {% if is_preview %}
-              <aside>
-                {{ note.bug_links|markdown|safe }}
-              </aside>
-	      {% endif %}
+                {% if is_preview %}
+                  <aside>
+                    {{ note.bug_links|markdown|safe }}
+                  </aside>
+                {% endif %}
             </aside>
           {% endfor %}
         {% endif %}
