@@ -32,7 +32,7 @@ notes:
 - note: 'Copying a large message to an IMAP server would sometimes prematurely display a time-out error'
   tag: fixed
   bug: 1618455
-- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded'
+- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded; existing messages which were previously incorrectly encoded may now display with some words not separated by a space'
   tag: fixed
   bug: 1689804
 - note: 'Context menu did not open in the message source window'
