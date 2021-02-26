@@ -53,7 +53,7 @@ notes:
 - note: 'Changing the language of the spellchecker did not work in while compose window was open'
   tag: fixed
   bug: 1690101
-- note: 'Opening a message from the command-line using "-mail <URL>" failed'
+- note: 'Opening a message from the command-line using "-mail &lt;URL&gt;" failed'
   tag: fixed
   bug: 1684756
 - note: 'OpenPGP: Various errors when importing keys'
