@@ -1,0 +1,171 @@
+release:
+  release_date: 2021-02-26
+  text: |
+    **These notes apply to Thunderbird version 87 beta 1 released February 26, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/87.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+    <div style="color:magenta; font-weight:bold">Thunderbird since version 86.0b1 is using a new implementation of the message sending
+    code that is easier to maintain and more flexible. As with any major change, bugs are bound to happen. The old
+    behavior can be restored by setting the pref "mailnews.send.jsmodule" to false.</div>
+  import_system_requirements: '79.0beta'
+
+notes:
+- note: 'Thunderbird now runs as a native app on M1 Macs'
+  tag: new
+  bug: 1678775
+- note: 'Thunderbird is now supported on ARM64-based Linux'
+  tag: new
+  bug: 1673277
+- note: '<code>mid:</code> URI scheme defined in RFC 2392 is now supported to open messages by message ID'
+  tag: new
+  bug: 264270
+- note: 'Message Compose Window: New user interface for adding attachments'
+  tag: new
+  bug: 1640760
+- note: 'Message Compose Window: Clicking on an already-selected pill in the recipient list will now let you edit the address'
+  tag: new
+  bug: 1602901
+- note: 'Add-ons Manager: A warning indicating an add-on is incompatible is now shown by add-ons that use the legacy extension API'
+  tag: new
+  bug: 1689090
+- note: 'Extension API: Allow keyboard shortcuts to be added to composeAction buttons in the message compose window'
+  tag: new
+  bug: 1681153
+- note: 'Extension API: GSSAPI, Kerberos, and NTLM authentication are now supported in SmtpClient.jsm'
+  tag: new
+  bug: 1679731
+  bug2: 1679732
+- note: 'Extension API: <code>proxy</code> is now supported in SmtpClient.jsm'
+  tag: new
+  bug: 1690977
+
+- note: 'Address Book: Non-functional code for Outlook Express and WAB import was removed'
+  tag: changed
+  bug: 1687132
+- note: 'Account Manager: Support for Movemail accounts was removed'
+  tag: changed
+  bug: 1625741
+- note: 'Extension API: chromeTab tab type removed - use contentTab instead, which provides the same functionality'
+  tag: changed
+  bug: 1691304
+- note: 'Extension API: The contentPage parameter to contentTab has been renamed to url'
+  tag: changed
+  bug: 1691304
+
+- note: 'Mail: Uploading a large message to an IMAP server would sometimes prematurely display a time-out error'
+  tag: fixed
+  bug: 1618455
+- note: 'Mail: Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded; existing messages which were previously incorrectly encoded may now display with some words not separated by a space'
+  tag: fixed
+  bug: 1689804
+- note: 'Mail: View Source context menu did not work'
+  tag: fixed
+  bug: 1689985
+- note: 'Mail: When saving multiple attachments, the save directory/folder was not remembered between saves'
+  tag: fixed
+  bug: 1565007
+- note: 'Mail: Sending mail with attachments to BCC recipients was slow'
+  tag: fixed
+  bug: 1692484
+- note: 'Mail: Outgoing messages were wordwrapped incorrectly when mailnews.wraplength is set to 0'
+  tag: fixed
+  bug: 1690957
+- note: 'Mail Window: Buttons on QuickFilter toolbar were squished on Mac'
+  tag: fixed
+  bug: 1689041
+- note: 'Mail Window: Items in the Today Pane were squished together'
+  tag: fixed
+  bug: 1666050
+- note: 'Mail Window: Twisty arrow on message threads was not highlighted properly when message row was selected on Mac'
+  tag: fixed
+  bug: 1689772
+- note: 'Mail Window: On non-default Windows themes, unread folder label would overlap folder icon when new mail arrived'
+  tag: fixed
+  bug: 1690971
+- note: 'Message Compose Window: Editing the list of recipients would auto-collapse the height of the recipients widget, even if the user had manually resized it'
+  tag: fixed
+  bug: 1691466
+- note: 'Message Compose Window: On Mac, formatting toolbar buttons with dropdowns had no space between the icon and the dropdown marker'
+  tag: fixed
+  bug: 1692537
+- note: 'Message Compose Window: Changing the language of the spellchecker did not work while editing a message'
+  tag: fixed
+  bug: 1690101
+- note: 'Search: Some labels in global search were blank'
+  tag: fixed
+  bug: 1691285
+- note: 'Address Book: Synching a read-only Google address book via CardDAV would fail'
+  tag: fixed
+  bug: 1693665
+- note: 'Address Book: Preferences related to an address book were not removed when the address book was deleted'
+  tag: fixed
+  bug: 1693667
+- note: 'Address Book: <code>getetag</code> elements in CardDAV requests used the wrong namespace'
+  tag: fixed
+  bug: 1693669
+- note: 'Address Book: If an error ocurred while syncing a CardDAV address book, it would not try to sync again until you restarted'
+  tag: fixed
+  bug: 1693670
+- note: 'Address Book: Column header borders would disappear on every second navigation in directory pane in AB themes'
+  tag: fixed
+  bug: 1693501
+- note: 'Calendar: Disabling a calendar did not hide its events from the month or multiweek views'
+  tag: fixed
+  bug: 1691844
+- note: 'Calendar: Changing the cache mode of a CalDAV calendar connection would lose the username of the account'
+  tag: fixed
+  bug: 1589491
+- note: 'Calendar: Server-provided colors for Google calendars were not handled properly'
+  tag: fixed
+  bug: 1691837
+- note: 'Calendar: Add-on calendars were sometimes not visible after restarting'
+  tag: fixed
+  bug: 1679723
+- note: 'Tasks: The calendar preview for a recurring task did not use all available space in the dialog window'
+  tag: fixed
+  bug: 1679129
+- note: 'Tasks: It was not possible to delete a recurring task'
+  tag: fixed
+  bug: 1688708
+- note: 'Theme: Read only input fields appeared as if they were editable'
+  tag: fixed
+  bug: 1689247
+- note: 'Theme: Title bar on Mac was not styled correctly in the built-in light theme'
+  tag: fixed
+  bug: 1666133
+- note: 'Theme: Title bar on Windows had an unneeded 1 pixel gap above the tabs when the menu bar was hidden'
+  tag: fixed
+  bug: 1693081
+- note: 'Theme: With Windows default theme in AB mode the selected rows had the incorrect icon color'
+  tag: fixed
+  bug: 1693086
+- note: 'Account Manager: Newly-added identities were not listed until you closed and reopened the Account Manager'
+  tag: fixed
+  bug: 1670464
+- note: 'Opening a message from the command-line using "-mail <URL>" parameter would return a TypeError'
+  tag: fixed
+  bug: 1684756
+- note: 'Installer: Option `/RemoveDistributionDir=false` passed to setup.exe was ignored'
+  tag: fixed
+  bug: 1663391
+- note: 'OpenPGP: Various errors when importing keys'
+  tag: fixed
+  bug: 1690391
+  bug2: 1689980
+  bug3: 1690387
+- note: 'OpenPGP: Messages with a high compression ratio (over 10x) could not be decrypted'
+  tag: fixed
+  bug: 1686984
+- note: 'Extension API: alert() from the message compose window failed'
+  tag: fixed
+  bug: 1679713
+
+- note: '{relnote needswork} Networking: IMAP:C-C TB: Handling of GetOfflineFileStream return value is wrong.'
+  tag: fixed
+  bug: 1596036
+
