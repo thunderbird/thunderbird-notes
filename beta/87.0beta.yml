@@ -15,144 +15,47 @@ release:
   import_system_requirements: '79.0beta'
 
 notes:
-- note: 'Thunderbird now runs as a native app on M1 Macs'
+- note: 'Native support for macOS devices built with Apple Silicon CPUs'
   tag: new
   bug: 1678775
-- note: 'Thunderbird is now supported on ARM64-based Linux'
-  tag: new
-  bug: 1673277
-- note: '<code>mid:</code> URI scheme defined in RFC 2392 is now supported to open messages by message ID'
-  tag: new
-  bug: 264270
-- note: 'Message Compose Window: New user interface for adding attachments'
+- note: 'New user interface for adding attachments'
   tag: new
   bug: 1640760
-- note: 'Message Compose Window: Clicking on an already-selected pill in the recipient list will now let you edit the address'
-  tag: new
-  bug: 1602901
-- note: 'Add-ons Manager: A warning indicating an add-on is incompatible is now shown by add-ons that use the legacy extension API'
-  tag: new
-  bug: 1689090
-- note: 'Extension API: Allow keyboard shortcuts to be added to composeAction buttons in the message compose window'
-  tag: new
-  bug: 1681153
-- note: 'Extension API: GSSAPI, Kerberos, and NTLM authentication are now supported in SmtpClient.jsm'
-  tag: new
-  bug: 1679731
-  bug2: 1679732
-- note: 'Extension API: <code>proxy</code> is now supported in SmtpClient.jsm'
-  tag: new
-  bug: 1690977
 
-- note: 'Address Book: Non-functional code for Outlook Express and WAB import was removed'
+- note: 'Address book support for Outlook Express and Windows Address Book was removed'
   tag: changed
   bug: 1687132
-- note: 'Account Manager: Support for Movemail accounts was removed'
+- note: 'Movemail support was removed'
   tag: changed
   bug: 1625741
-- note: 'Extension API: chromeTab tab type removed - use contentTab instead, which provides the same functionality'
-  tag: changed
-  bug: 1691304
-- note: 'Extension API: The contentPage parameter to contentTab has been renamed to url'
-  tag: changed
-  bug: 1691304
 
-- note: 'Mail: Uploading a large message to an IMAP server would sometimes prematurely display a time-out error'
+- note: 'Copying a large message to an IMAP server would sometimes prematurely display a time-out error'
   tag: fixed
   bug: 1618455
-- note: 'Mail: Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded; existing messages which were previously incorrectly encoded may now display with some words not separated by a space'
+- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded'
   tag: fixed
   bug: 1689804
-- note: 'Mail: View Source context menu did not work'
+- note: 'Context menu did not open in the message source window'
   tag: fixed
   bug: 1689985
-- note: 'Mail: When saving multiple attachments, the save directory/folder was not remembered between saves'
+- note: 'Directory for saving multiple attachments was not remembered between saves'
   tag: fixed
   bug: 1565007
-- note: 'Mail: Sending mail with attachments to BCC recipients was slow'
-  tag: fixed
-  bug: 1692484
-- note: 'Mail: Outgoing messages were wordwrapped incorrectly when mailnews.wraplength is set to 0'
-  tag: fixed
-  bug: 1690957
-- note: 'Mail Window: Buttons on QuickFilter toolbar were squished on Mac'
-  tag: fixed
-  bug: 1689041
-- note: 'Mail Window: Items in the Today Pane were squished together'
-  tag: fixed
-  bug: 1666050
-- note: 'Mail Window: Twisty arrow on message threads was not highlighted properly when message row was selected on Mac'
-  tag: fixed
-  bug: 1689772
-- note: 'Mail Window: On non-default Windows themes, unread folder label would overlap folder icon when new mail arrived'
-  tag: fixed
-  bug: 1690971
-- note: 'Message Compose Window: Editing the list of recipients would auto-collapse the height of the recipients widget, even if the user had manually resized it'
-  tag: fixed
-  bug: 1691466
-- note: 'Message Compose Window: On Mac, formatting toolbar buttons with dropdowns had no space between the icon and the dropdown marker'
-  tag: fixed
-  bug: 1692537
-- note: 'Message Compose Window: Changing the language of the spellchecker did not work while editing a message'
-  tag: fixed
-  bug: 1690101
-- note: 'Search: Some labels in global search were blank'
-  tag: fixed
-  bug: 1691285
-- note: 'Address Book: Synching a read-only Google address book via CardDAV would fail'
-  tag: fixed
-  bug: 1693665
-- note: 'Address Book: Preferences related to an address book were not removed when the address book was deleted'
-  tag: fixed
-  bug: 1693667
-- note: 'Address Book: <code>getetag</code> elements in CardDAV requests used the wrong namespace'
-  tag: fixed
-  bug: 1693669
-- note: 'Address Book: If an error ocurred while syncing a CardDAV address book, it would not try to sync again until you restarted'
-  tag: fixed
-  bug: 1693670
-- note: 'Address Book: Column header borders would disappear on every second navigation in directory pane in AB themes'
-  tag: fixed
-  bug: 1693501
-- note: 'Calendar: Disabling a calendar did not hide its events from the month or multiweek views'
-  tag: fixed
-  bug: 1691844
-- note: 'Calendar: Changing the cache mode of a CalDAV calendar connection would lose the username of the account'
-  tag: fixed
-  bug: 1589491
-- note: 'Calendar: Server-provided colors for Google calendars were not handled properly'
-  tag: fixed
-  bug: 1691837
-- note: 'Calendar: Add-on calendars were sometimes not visible after restarting'
-  tag: fixed
-  bug: 1679723
-- note: 'Tasks: The calendar preview for a recurring task did not use all available space in the dialog window'
-  tag: fixed
-  bug: 1679129
-- note: 'Tasks: It was not possible to delete a recurring task'
-  tag: fixed
-  bug: 1688708
-- note: 'Theme: Read only input fields appeared as if they were editable'
-  tag: fixed
-  bug: 1689247
-- note: 'Theme: Title bar on Mac was not styled correctly in the built-in light theme'
-  tag: fixed
-  bug: 1666133
-- note: 'Theme: Title bar on Windows had an unneeded 1 pixel gap above the tabs when the menu bar was hidden'
-  tag: fixed
-  bug: 1693081
-- note: 'Theme: With Windows default theme in AB mode the selected rows had the incorrect icon color'
-  tag: fixed
-  bug: 1693086
-- note: 'Account Manager: Newly-added identities were not listed until you closed and reopened the Account Manager'
+- note: 'Newly-added identities were not listed in the account manager until it was closed and reopened'
   tag: fixed
   bug: 1670464
-- note: 'Opening a message from the command-line using "-mail <URL>" parameter would return a TypeError'
+- note: 'Clicking on an already-selected pill in the recipient list will now let you edit the address'
+  tag: fixed
+  bug: 1602901
+- note: 'Message headers in compose window disregarded manual resizing when adding additional recipients'
+  tag: fixed
+  bug: 1691466
+- note: 'Changing the language of the spellchecker did not work in while compose window was open'
+  tag: fixed
+  bug: 1690101
+- note: 'Opening a message from the command-line using "-mail <URL>" failed'
   tag: fixed
   bug: 1684756
-- note: 'Installer: Option `/RemoveDistributionDir=false` passed to setup.exe was ignored'
-  tag: fixed
-  bug: 1663391
 - note: 'OpenPGP: Various errors when importing keys'
   tag: fixed
   bug: 1690391
@@ -161,11 +64,53 @@ notes:
 - note: 'OpenPGP: Messages with a high compression ratio (over 10x) could not be decrypted'
   tag: fixed
   bug: 1686984
-- note: 'Extension API: alert() from the message compose window failed'
+- note: 'Some labels in global search results were blank'
+  tag: fixed
+  bug: 1691285
+- note: 'Address Book: Syncing a read-only Google address book via CardDAV failed'
+  tag: fixed
+  bug: 1693665
+- note: 'Address Book: Preferences related to an address book were not removed when the address book was deleted'
+  tag: fixed
+  bug: 1693667
+- note: 'Address Book: CardDAV sync errors did not retry until Thunderbird was restarted'
+  tag: fixed
+  bug: 1693670
+- note: 'Calendar: Events from a disabled calendar were still visible'
+  tag: fixed
+  bug: 1691844
+- note: 'Calendar: Changing the cache mode of a CalDAV calendar connection would lose the username of the account'
+  tag: fixed
+  bug: 1589491
+- note: 'Calendar: Add-on calendars were sometimes not visible after restarting'
+  tag: fixed
+  bug: 1679723
+- note: 'Calendar: The preview for a recurring task did not use all available space in the dialog window'
+  tag: fixed
+  bug: 1679129
+- note: 'Calendar: Removing a recurring task was not possible'
+  tag: fixed
+  bug: 1688708
+- note: 'Installer: Option to keep distribution directory on upgrade did not work'
+  tag: fixed
+  bug: 1663391
+- note: 'Various UI fixes for macOS: Quick Filter toolbar, Today Pane, message threads'
+  tag: fixed
+  bug: 1689041
+  bug2: 1666050
+  bug3: 1689772
+  bug4: 1692537
+- note: 'Various theme improvements'
+  tag: fixed
+  bug: 1689247
+  bug2: 1666133
+  bug3: 1693081
+  bug4: 1693086
+
+- note: 'MailExtensions: Calling alert() and related functions from a composeScript failed'
   tag: fixed
   bug: 1679713
-
-- note: '{relnote needswork} Networking: IMAP:C-C TB: Handling of GetOfflineFileStream return value is wrong.'
+- note: 'MailExtensions: Allow keyboard shortcuts to be added to composeAction buttons in the message compose window'
   tag: fixed
-  bug: 1596036
+  bug: 1681153
 
