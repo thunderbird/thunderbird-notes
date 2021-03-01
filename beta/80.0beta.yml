@@ -12,191 +12,231 @@ release:
   import_system_requirements: '79.0beta'
 
   groups:
-  -
+  - 
   - "Changed and Fixed in Beta 2"
   - "Changed and Fixed in Beta 3"
   - "Fixed in Beta 4"
   - "Changed and Fixed in Beta 5"
 
 notes:
-- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
-      online searching for OpenPGP keys, and more'
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, online
+    searching for OpenPGP keys, and more'
   tag: new
-  bug: 22687
-  bug2: 1652537
-  bug3: 1655113
+  bugs:
+  - 22687
+  - 1652537
+  - 1655113
 
 - note: '"Master Password" renamed to "Primary Password"'
   tag: changed
-  bug: 1649522
+  bugs:
+  - 1649522
 - note: 'Twitter search removed'
   tag: changed
-  bug: 1653792
+  bugs:
+  - 1653792
 - note: 'Building OpenPGP shared library linked to system libraries now supported'
   tag: changed
-  bug: 1634963
+  bugs:
+  - 1634963
 - note: 'MailExtension errors now shown in Developer Tools console by default'
   tag: changed
-  bug: 1650149
+  bugs:
+  - 1650149
 
 
 
 - note: 'IMAP server capabilities were not rechecked after upgrading to SSL/TLS connection'
   tag: fixed
-  bug: 1611624
+  bugs:
+  - 1611624
 - note: 'Advanced IMAP server preferences not saved in Account Manager'
   tag: fixed
-  bug: 1653588
+  bugs:
+  - 1653588
 - note: 'Message preview was sometimes blank after upgrading from Thunderbird 68'
   tag: fixed
-  bug: 1653168
+  bugs:
+  - 1653168
 - note: 'Address Book UI improvements'
   tag: fixed
-  bug: 1632331
-  bug2: 1659522
+  bugs:
+  - 1632331
+  - 1659522
 - note: 'Drag and drop of address book contacts did not work in some situations'
-  bug: 1649804
+  bugs:
+  - 1649804
   tag: fixed
 - note: 'Email addresses whitelisted for remote content not displayed in preferences'
-  bug: 1652575
+  bugs:
+  - 1652575
   tag: fixed
 
 
 # Beta 2 follows
 - note: 'Building OpenPGP shared library linked to system libraries now supported'
   tag: changed
-  bug: 1634963
+  bugs:
+  - 1634963
   group: 2
 - note: 'MailExtensions: Dynamic registration of calendar providers now supported'
   tag: changed
-  bug: 1652885
+  bugs:
+  - 1652885
   group: 2
 
 - note: 'OpenPGP bug fixes and improvements'
   tag: fixed
-  bug: 1633251
-  bug2: 1653763
-  bug3: 1656023
-  bug4: 1656391
-  bug5: 1657245
-  bug6: 1657464
+  bugs:
+  - 1633251
+  - 1653763
+  - 1656023
+  - 1656391
+  - 1657245
+  - 1657464
   group: 2
 - note: 'Address book migration failed when there was a dot in the file name'
   tag: fixed
-  bug: 1655686
+  bugs:
+  - 1655686
   group: 2
 - note: 'Address book: "Always prefer display name over message header" was always checked
     when editing a contact'
   tag: fixed
-  bug: 1655884
+  bugs:
+  - 1655884
   group: 2
 - note: 'Printing did not always work'
   tag: fixed
-  bug: 1654548
+  bugs:
+  - 1654548
   group: 2
-- note: '"Select All" (Ctrl+A) in message source did not work until focused with a mouse click'
+- note: '"Select All" (Ctrl+A) in message source did not work until focused with a mouse
+    click'
   tag: fixed
-  bug: 1657619
+  bugs:
+  - 1657619
   group: 2
 - note: 'Ctrl+scroll wheel not zooming in message reader'
   tag: fixed
-  bug: 1655244
+  bugs:
+  - 1655244
   group: 2
 - note: 'Chat did not display messages'
   tag: fixed
-  bug: 1646611
+  bugs:
+  - 1646611
   group: 2
 - note: 'Setting/changing a signature from a file lost when closing account settings'
   tag: fixed
-  bug: 1657050
+  bugs:
+  - 1657050
   group: 2
 - note: 'Message filter dialog fixes: Missing scrollbar, drop-down list not wide enough'
   tag: fixed
-  bug: 1633306
-  bug2: 1656648
+  bugs:
+  - 1633306
+  - 1656648
   group: 2
 - note: 'Various UX and theme improvements'
   tag: fixed
-  bug: 1655568
-  bug2: 1655573
-  bug3: 1655289
-  bug4: 656113
+  bugs:
+  - 1655568
+  - 1655573
+  - 1655289
+  - 656113
   group: 2
 
 
 # Beta 3
 - note: 'OpenPGP Key generation now disabled when there is no default mail account configured'
   tag: changed
-  bug: 1657497
+  bugs:
+  - 1657497
   group: 3
-- note: 'MailExtensions: Some APIs now use defineLazyPreferenceGetter in order
-      to benefit from caching'
+- note: 'MailExtensions: Some APIs now use defineLazyPreferenceGetter in order to benefit
+    from caching'
   tag: changed
-  bug: 1658116
+  bugs:
+  - 1658116
   group: 3
 
 - note: 'OpenPGP Key Manager search function did not work'
   tag: fixed
-  bug: 1657894
+  bugs:
+  - 1657894
   group: 3
 - note: 'OpenPGP Key Properties dialog was sometimes too small'
   tag: fixed
-  bug: 1643343
+  bugs:
+  - 1643343
   group: 3
 - note: 'Address book performance optimizations'
   tag: fixed
-  bug: 1658062
-  bug2: 1658128
+  bugs:
+  - 1658062
+  - 1658128
   group: 3
 
 
 # Beta 4
 - note: 'OpenPGP: Encrypted email would not send if address contained uppercase characters'
   tag: fixed
-  bug: 1657390
+  bugs:
+  - 1657390
   group: 4
 - note: 'OpenPGP: "Key ID" column could not be resized in Key Manage'
   tag: fixed
-  bug: 1658512
+  bugs:
+  - 1658512
   group: 4
 - note: 'Message Composer: Order of attachments could not be modified using drag & drop'
   tag: fixed
-  bug: 1658114
+  bugs:
+  - 1658114
   group: 4
 - note: 'Address Book: Migration did not preserve names of address books used in filters'
   tag: fixed
-  bug: 1659971
+  bugs:
+  - 1659971
   group: 4
 
 
 # Beta 5
 - note: 'OpenPGP: Encrypted messages are now signed automatically'
   tag: changed
-  bug: 1659487
+  bugs:
+  - 1659487
   group: 5
 - note: 'Calendar: Event summary dialog is now themeable'
   tag: changed
-  bug: 1659079
+  bugs:
+  - 1659079
   group: 5
 
 - note: 'OpenPGP: Keys containing invalid UTF-8 strings could not be imported'
   tag: fixed
-  bug: 1658730
+  bugs:
+  - 1658730
   group: 5
 - note: 'Dialog to add a new mail account from "Account Settings" did not open'
   tag: fixed
-  bug: 1659241
+  bugs:
+  - 1659241
   group: 5
 - note: 'Composing messages with a "fixed width" font did not work'
   tag: fixed
-  bug: 1658999
+  bugs:
+  - 1658999
   group: 5
 
 
 # Unresolved
 - note: 'Thunderbird may become unresponsive when sorting large IMAP folders'
   tag: unresolved
-  bug: 1657565
+  bugs:
+  - 1657565
 - note: 'MailExtensions: Content scripts in mail editor do not work'
   tag: unresolved
-  bug: 1652686
+  bugs:
+  - 1652686

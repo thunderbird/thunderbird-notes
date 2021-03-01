@@ -15,58 +15,68 @@ release:
 notes:
 - note: 'MailExtensions: browser.tabs.sendMessage API added'
   tag: new
-  bug: 1641576
+  bugs:
+  - 1641576
 - note: 'MailExtensions: messageDisplayScripts API added'
   tag: new
-  bug: 1504475
+  bugs:
+  - 1504475
 
 - note: Yahoo and AOL mail users using password authentication will be migrated to OAuth2
   tag: changed
-  bug: 1606339
-  bug2: 1670892
-- note: 'MailExtensions: messageDisplay APIs extended to support multiple selected
-    messages'
+  bugs:
+  - 1606339
+  - 1670892
+- note: 'MailExtensions: messageDisplay APIs extended to support multiple selected messages'
   tag: changed
-  bug: 1617461
-- note: 'MailExtensions: compose.begin functions now support creating a message with
-    attachments'
+  bugs:
+  - 1617461
+- note: 'MailExtensions: compose.begin functions now support creating a message with attachments'
   tag: changed
-  bug: 1662018
+  bugs:
+  - 1662018
 
 
 - note: Thunderbird could freeze when updating global search index
   tag: fixed
-  bug: 1669872
+  bugs:
+  - 1669872
 - note: Multiple issues with handling of self-signed SSL certificates addressed
   tag: fixed
-  bug: 1590474
-  bug2: 1665577
-  bug3: 1667043
+  bugs:
+  - 1590474
+  - 1665577
+  - 1667043
 - note: Recipient address fields in compose window could expand to fill all available space
   tag: fixed
-  bug: 1666463
-  bug2: 1667173
-  bug3: 1667602
+  bugs:
+  - 1666463
+  - 1667173
+  - 1667602
 - note: Inserting emoji characters in message compose window caused unexpected behavior
   tag: fixed
-  bug: 1638874
-  bug2: 1665174
+  bugs:
+  - 1638874
+  - 1665174
 - note: Button to restore default folder icon color was not keyboard accessible
   tag: fixed
-  bug: 1663075
+  bugs:
+  - 1663075
 - note: Various keyboard navigation fixes
   tag: fixed
-  bug: 1667567
-  bug2: 1667614
+  bugs:
+  - 1667567
+  - 1667614
 - note: Various color-related theme fixes
   tag: fixed
-  bug: 1668410
-  bug2: 1668896
-- note: 'MailExtensions: Updating attachments with onBeforeSend.addListener() did
-    not work'
+  bugs:
+  - 1668410
+  - 1668896
+- note: 'MailExtensions: Updating attachments with onBeforeSend.addListener() did not work'
   tag: fixed
-  bug: 1662015
+  bugs:
+  - 1662015
 
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.4">security fixes</a>
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.4">security
+    fixes</a>
   tag: fixed

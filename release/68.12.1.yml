@@ -13,7 +13,8 @@ release:
 
 
 notes:
-- note: 'Thunderbird will no longer automatically install updates when
-      Preferences tab is opened'
+- note: 'Thunderbird will no longer automatically install updates when Preferences tab
+    is opened'
   tag: changed
-  bug: 1666324
+  bugs:
+  - 1666324

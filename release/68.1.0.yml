@@ -19,49 +19,57 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: 'Offer to configure Exchange accounts for Office365.
-    A third-party add-on is required for this account type.
-    IMAP still exists as alternative.'
+- note: 'Offer to configure Exchange accounts for Office365. A third-party add-on is required
+    for this account type. IMAP still exists as alternative.'
   tag: new
-  bug: 1571772
+  bugs:
+  - 1571772
 - note: 'Edit tag not working'
   tag: fixed
-  bug: 1578148
+  bugs:
+  - 1578148
 - note: 'Write window: "Insert > Characters and Symbols" not working'
   tag: fixed
-  bug: 1578300
+  bugs:
+  - 1578300
 - note: 'Moving/dragging messages from "Search Messages" result dialog not working'
   tag: fixed
-  bug: 1577987
-  bug2: 1577970
+  bugs:
+  - 1577987
+  - 1577970
 - note: 'Command line -compose "attachment=" not working'
   tag: fixed
-  bug: 1577117
+  bugs:
+  - 1577117
 - note: 'Custom views not working'
   tag: fixed
-  bug: 1578029
+  bugs:
+  - 1578029
 - note: 'Issues with list of content types/actions for incoming attachments'
   tag: fixed
-  bug: 1576950
-  bug2: 1576825
-  bug3: 1578591
+  bugs:
+  - 1576950
+  - 1576825
+  - 1578591
 - note: '"Learn More" links in Error Console not working'
   tag: fixed
-  bug: 1427590
-- note: 'Visual glitches: Quick Filter Bar tag buttons too tall,
-    missing scroll bar on Connection Setting subdialog,
-    LDAP server selection after "New", "Edit" and "Delete"'
+  bugs:
+  - 1427590
+- note: 'Visual glitches: Quick Filter Bar tag buttons too tall, missing scroll bar on
+    Connection Setting subdialog, LDAP server selection after "New", "Edit" and "Delete"'
   tag: fixed
-  bug: 1577582
-  bug2: 1577259
-  bug3: 1576365
+  bugs:
+  - 1577582
+  - 1577259
+  - 1576365
 - note: 'Calendar: Parts of CalDAV dialog not working'
   tag: fixed
-  bug: 1577989
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.1">security
+  bugs:
+  - 1577989
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.1">security
     fixes</a>
   tag: fixed
 - note: 'Calendar: Free/busy information in attendees dialog not displayed/scrolled correctly'
   tag: unresolved
-  bug: 1578196
+  bugs:
+  - 1578196

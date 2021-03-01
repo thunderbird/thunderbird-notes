@@ -14,10 +14,13 @@ release:
 notes:
 - note: 'IMAP stability improvements'
   tag: fixed
-  bug: 1586494
+  bugs:
+  - 1586494
 - note: 'HTML tags in IRC topic changes were rendered incorrectly'
   tag: fixed
-  bug: 1607097
+  bugs:
+  - 1607097
 - note: 'MailExtensions: Websockets could not be used'
   tag: fixed
-  bug: 1627649
+  bugs:
+  - 1627649

@@ -1,186 +1,229 @@
 release:
   release_date: 2019-09-09
-  text: "**These release notes apply to Thunderbird version 70 beta 4 released October 17th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 70 beta 4 released October\
+    \ 17th, 2019.**"
   import_system_requirements: '68.0'
   groups:
-    -
-    - "Fixed in Beta 2"
-    - "Fixed in Beta 3"
-    - "Fixed in Beta 4"
+  - 
+  - "Fixed in Beta 2"
+  - "Fixed in Beta 3"
+  - "Fixed in Beta 4"
 
 notes:
-- note: 'Allow selecting messages via selection boxes instead of classic selection.
-    "Select Messages" column needs to be selected via the thread pane''s column picker.'
+- note: 'Allow selecting messages via selection boxes instead of classic selection. "Select
+    Messages" column needs to be selected via the thread pane''s column picker.'
   tag: new
-  bug: 1017904
-- note: 'Message Display MailExtensions API with documentation
-    [here](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplay.html)'
+  bugs:
+  - 1017904
+- note: 'Message Display MailExtensions API with documentation [here](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplay.html)'
   tag: new
-  bug: 1575708
+  bugs:
+  - 1575708
 - note: 'Thunderbird Options/Preferences tab redesigned and with new user interface'
   tag: changed
-  bug: 1498332
+  bugs:
+  - 1498332
 - note: 'Account creation dialog redesigned and with new user interface'
   tag: changed
-  bug: 1551133
+  bugs:
+  - 1551133
 - note: 'Dialog for folder compaction (purging of deleted messages)'
   tag: changed
-  bug: 716412
-- note: 'Thread pane column picker stays open for selecting multiple columns until user clicks outside or hits escape'
+  bugs:
+  - 716412
+- note: 'Thread pane column picker stays open for selecting multiple columns until user
+    clicks outside or hits escape'
   tag: changed
-  bug: 545906
-- note: 'Add-ons manager with new user interface and notifications.
-    Note that manual installation of add-ons via drag-and-drop currently doesn''t work.'
+  bugs:
+  - 545906
+- note: 'Add-ons manager with new user interface and notifications. Note that manual installation
+    of add-ons via drag-and-drop currently doesn''t work.'
   tag: changed
-  bug: 1565180
-  bug2: 1566347
-- note: 'Gmail accounts ignored a non-standard trash folder selection.
-    Note: If non-standard trash folder was selected previously in the account settings,
-    this setting will now take effect which may be unexpected.'
+  bugs:
+  - 1565180
+  - 1566347
+- note: 'Gmail accounts ignored a non-standard trash folder selection. Note: If non-standard
+    trash folder was selected previously in the account settings, this setting will now
+    take effect which may be unexpected.'
   tag: fixed
-  bug: 1578148
+  bugs:
+  - 1578148
 - note: 'Edit tag not working'
   tag: fixed
-  bug: 1578148
+  bugs:
+  - 1578148
 - note: 'Write window: "Insert > Characters and Symbols" not working'
   tag: fixed
-  bug: 1578300
+  bugs:
+  - 1578300
 - note: 'Moving/dragging messages from "Search Messages" result dialog not working'
   tag: fixed
-  bug: 1577987
-  bug2: 1577970
+  bugs:
+  - 1577987
+  - 1577970
 - note: 'Command line -compose "attachment=" not working'
   tag: fixed
-  bug: 1577117
+  bugs:
+  - 1577117
 - note: 'Custom views not working'
   tag: fixed
-  bug: 1578029
+  bugs:
+  - 1578029
 - note: 'Issues with list of content types/actions for incoming attachments'
   tag: fixed
-  bug: 1576950
-  bug2: 1576825
-  bug3: 1578591
+  bugs:
+  - 1576950
+  - 1576825
+  - 1578591
 - note: 'Clicking mailto links in browser doesn''t open Thunderbird Write window'
   tag: fixed
-  bug: 1577706
+  bugs:
+  - 1577706
 - note: '"Learn More" links in Error Console not working'
   tag: fixed
-  bug: 1427590
-- note: 'Visual glitches: Quick Filter Bar tag buttons too tall,
-    missing scroll bar on Connection Setting subdialog,
-    LDAP server selection after "New", "Edit" and "Delete"'
+  bugs:
+  - 1427590
+- note: 'Visual glitches: Quick Filter Bar tag buttons too tall, missing scroll bar on
+    Connection Setting subdialog, LDAP server selection after "New", "Edit" and "Delete"'
   tag: fixed
-  bug: 1577582
-  bug2: 1577259
-  bug3: 1576365
+  bugs:
+  - 1577582
+  - 1577259
+  - 1576365
 - note: 'Calendar: Parts of CalDAV dialog not working'
   tag: fixed
-  bug: 1577989
+  bugs:
+  - 1577989
 - note: 'Calendar: Free/busy information in attendees dialog not loaded'
   tag: fixed
-  bug: 1578196
+  bugs:
+  - 1578196
 # Beta 2 below.
 - note: 'Issues with attachments in IMAP messages'
   tag: fixed
-  bug: 1579341
+  bugs:
+  - 1579341
   group: 2
 - note: 'Various theme fixes, especially dark theme improvements for Calendar'
   tag: fixed
-  bug: 1579411
-  bug2: 1577310
-  bug3: 1577591
+  bugs:
+  - 1579411
+  - 1577310
+  - 1577591
   group: 2
 - note: 'Contrast between tag label and background not optimal'
   tag: fixed
-  bug: 1579364
+  bugs:
+  - 1579364
   group: 2
 - note: 'Accepting auto-complete results via click didn''t move to the next line'
   tag: fixed
-  bug: 1580950
+  bugs:
+  - 1580950
   group: 2
 - note: 'Account Central pane always loaded at start-up'
   tag: fixed
-  bug: 1579575
+  bugs:
+  - 1579575
   group: 2
 - note: 'Setting a contact photo in the addressbook not working'
   tag: fixed
-  bug: 1581253
+  bugs:
+  - 1581253
   group: 2
 - note: 'Manual installation of add-ons via drag & drop onto the Add-ons Manager not working'
   tag: fixed
-  bug: 1566347
+  bugs:
+  - 1566347
   group: 2
 - note: '"Config Editor" button not removed if blocked by policy'
   tag: fixed
-  bug: 1579019
+  bugs:
+  - 1579019
   group: 2
 # Beta 3 below.
-- note: 'Visual glitches: Missing context menu in filter, downloads and password manager dialogs,
-    unwanted scrollbars and cut-off text in Account Manager,
-    incorrect colors in Calendar MiniMonth and agenda scrollbars, theme issues on Windows 7'
+- note: 'Visual glitches: Missing context menu in filter, downloads and password manager
+    dialogs, unwanted scrollbars and cut-off text in Account Manager, incorrect colors
+    in Calendar MiniMonth and agenda scrollbars, theme issues on Windows 7'
   tag: fixed
-  bug: 1584720
-  bug2: 1584697
-  bug3: 1582830
-  bug4: 1585300
-  bug5: 1584487
+  bugs:
+  - 1584720
+  - 1584697
+  - 1582830
+  - 1585300
+  - 1584487
   group: 3
 - note: 'Some attachments couldn''t be opened in messages originating from MS Outlook 2016'
   tag: fixed
-  bug: 1584383
+  bugs:
+  - 1584383
   group: 3
 - note: 'Address book import form CSV'
   tag: fixed
-  bug: 1584026
+  bugs:
+  - 1584026
   group: 3
 - note: 'Performance problem in message body search'
   tag: fixed
-  bug: 1584558
+  bugs:
+  - 1584558
   group: 3
-- note: 'Ctrl+Enter to send a message would open an attachment if the attachment pane had focus'
+- note: 'Ctrl+Enter to send a message would open an attachment if the attachment pane had
+    focus'
   tag: fixed
-  bug: 1578450
+  bugs:
+  - 1578450
   group: 3
 - note: 'Template selection for "Reply with Template"'
   tag: fixed
-  bug: 1584122
+  bugs:
+  - 1584122
   group: 3
 - note: 'Calendar: Issues with "Today Pane" start-up'
   tag: fixed
-  bug: 1582746
+  bugs:
+  - 1582746
   group: 3
 - note: 'Calendar: Glitches with custom repeat and reminder number input'
   tag: fixed
-  bug: 1583340
-  bug2: 1583098
+  bugs:
+  - 1583340
+  - 1583098
   group: 3
 - note: 'Calendar: Problems with WCAP provider'
   tag: fixed
-  bug: 1582746
+  bugs:
+  - 1582746
   group: 3
 # Beta 4 below.
 - note: 'Better visual feedback for unread messages when using the dark theme'
   tag: fixed
-  bug: 1588000
+  bugs:
+  - 1588000
   group: 4
 - note: 'Various issues when editing mailing lists'
   tag: fixed
-  bug: 1584211
-  bug2: 1587587
+  bugs:
+  - 1584211
+  - 1587587
   group: 4
-- note: 'Integration with macOS addressbook and notifications not working after introduction of notarization'
+- note: 'Integration with macOS addressbook and notifications not working after introduction
+    of notarization'
   tag: fixed
-  bug: 1586617
+  bugs:
+  - 1586617
   group: 4
 # restore the following item for further betas.
-- note: 'Calendar: Lightning not updating to corresponding 70.0b4 version. Workaround: Set preference
-    <code>extensions.lastAppVersion</code> to a value of 69.0 to force a refresh. Check version number in the
-    Add-on Manager afterwards.'
+- note: 'Calendar: Lightning not updating to corresponding 70.0b4 version. Workaround:
+    Set preference <code>extensions.lastAppVersion</code> to a value of 69.0 to force a
+    refresh. Check version number in the Add-on Manager afterwards.'
   tag: unresolved
-  bug: 1562573
+  bugs:
+  - 1562573
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
-  bug: 1574322
+  bugs:
+  - 1574322
 # gData not hosted by Thunderbird any more
 # - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
   # the Mozilla FTP server. A US-English version can be downloaded
@@ -190,4 +233,5 @@ notes:
   # bug: 1516816
 - note: 'Chat: Twitter not working due to API changes at Twitter.com.'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

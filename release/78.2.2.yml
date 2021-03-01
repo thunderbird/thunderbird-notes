@@ -15,69 +15,87 @@ release:
 notes:
 - note: Drag and Drop reordering of recipient pills now supported
   tag: new
-  bug: 1601749
+  bugs:
+  - 1601749
 
 - note: 'OpenPGP: Some signature states reported as "mismatch" now report "unknown"'
   tag: changed
-  bug: 1662881
+  bugs:
+  - 1662881
 - note: Privacy policy now displayed in a tab when updated
   tag: changed
-  bug: 1651298
+  bugs:
+  - 1651298
 - note: 'Chat: Non-functional Twitter support removed'
   tag: changed
-  bug: 1445778
+  bugs:
+  - 1445778
 
 - note: 'OpenPGP: Improvements to key importing when failures occur'
   tag: fixed
-  bug: 1663037
+  bugs:
+  - 1663037
 - note: 'OpenPGP: Decryption did not work with certain HTTP proxy configurations'
   tag: fixed
-  bug: 1661913
-- note: 'OpenPGP: "Discover keys online" option did not work when searching for an
-  email address'
+  bugs:
+  - 1661913
+- note: 'OpenPGP: "Discover keys online" option did not work when searching for an email
+    address'
   tag: fixed
-  bug: 1663157
+  bugs:
+  - 1663157
 
 - note: Email filters reported failure when moving a message to original folder
   tag: fixed
-  bug: 1653690
-- note: 'Message filters: Filters shown as enabled in configuration dialog were not
-  always enabled'
+  bugs:
+  - 1653690
+- note: 'Message filters: Filters shown as enabled in configuration dialog were not always
+    enabled'
   tag: fixed
-  bug: 1660917
+  bugs:
+  - 1660917
 - note: vCard 2.1 attachments not handled properly
   tag: fixed
-  bug: 1659323
-  bug2: 1660134
+  bugs:
+  - 1659323
+  - 1660134
 - note: Sending messages sometimes failed when recipients were in LDAP address book
   tag: fixed
-  bug: 1371309
+  bugs:
+  - 1371309
 - note: Non-functional help menu items removed
   tag: fixed
-  bug: 1659318
-- note: 'Adding custom headers in the addressing widget (preference
-    mail.compose.other.header) did not work'
+  bugs:
+  - 1659318
+- note: 'Adding custom headers in the addressing widget (preference mail.compose.other.header)
+    did not work'
   tag: fixed
-  bug: 1658890
+  bugs:
+  - 1658890
 - note: 'Calendar: Event reminder details were unreadable'
   tag: fixed
-  bug: 1658923
+  bugs:
+  - 1658923
 - note: Windows 10 high-contrast theme fixes
   tag: fixed
-  bug: 1661229
+  bugs:
+  - 1661229
 - note: More theme fixes and improvements
   tag: fixed
-  bug: 1659380
-  bug2: 1662536
-  bug3: 1662585
-  bug4: 1662831
+  bugs:
+  - 1659380
+  - 1662536
+  - 1662585
+  - 1662831
 
 
 # Unresolved
-- note: 'Selecting "Cancel" on the Master Password prompt at startup incorrectly
-         reports corrupted OpenPGP data.'
+- note: 'Selecting "Cancel" on the Master Password prompt at startup incorrectly reports
+    corrupted OpenPGP data.'
   tag: unresolved
-  bug: 1664022
+  bugs:
+  - 1664022
 - note: 'Message list is not focused at startup'
   tag: unresolved
-  bug: 1620310
+  bugs:
+  - 1620310

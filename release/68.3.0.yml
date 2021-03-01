@@ -19,42 +19,55 @@ release:
 notes:
 - note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/68/messageDisplayAction.html)'
   tag: new
-  bug: 1531597
-- note: 'Navigation buttons are now available in content tabs, for example those opened via an add-on search'
+  bugs:
+  - 1531597
+- note: 'Navigation buttons are now available in content tabs, for example those opened
+    via an add-on search'
   tag: new
-  bug: 787683
+  bugs:
+  - 787683
 - note: '"New email" icon in Windows systray changed from in-tray with arrow to envelope'
   tag: changed
-  bug: 1594200
+  bugs:
+  - 1594200
 - note: 'Icons of attachments in the attachment pane of the Write window not always correct'
   tag: fixed
-  bug: 1593280
+  bugs:
+  - 1593280
 - note: 'Toolbar buttons of add-ons in the menubar not shown after startup'
   tag: fixed
-  bug: 1584160
-- note: 'LDAP lookup not working when SSL was enabled. LDAP search not working when
-    "All Address Books" was selected.'
+  bugs:
+  - 1584160
+- note: 'LDAP lookup not working when SSL was enabled. LDAP search not working when "All
+    Address Books" was selected.'
   tag: fixed
-  bug: 1576364
+  bugs:
+  - 1576364
 - note: 'Scam link confirmation panel not working'
   tag: fixed
-  bug: 1596413
-- note: 'In Write window, the Link Properties dialog wasn''t showing named anchors in context menu'
+  bugs:
+  - 1596413
+- note: 'In Write window, the Link Properties dialog wasn''t showing named anchors in context
+    menu'
   tag: fixed
-  bug: 1593629
+  bugs:
+  - 1593629
 - note: 'Calendar: Start-up failed if the application menu is not on the calendar toolbars'
   tag: fixed
-  bug: 1588516
-- note: 'Chat: Account reordering via drag-and-drop not working on Instant messaging status dialog (Show Accounts)'
+  bugs:
+  - 1588516
+- note: 'Chat: Account reordering via drag-and-drop not working on Instant messaging status
+    dialog (Show Accounts)'
   tag: fixed
-  bug: 1591505
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.3">security
+  bugs:
+  - 1591505
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.3">security
     fixes</a>
   tag: fixed
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
-    updated during the upgrade process. They will however be updated during the add-on update
-    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
-    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+    updated during the upgrade process. They will however be updated during the add-on
+    update check. It is of course possible to reinstall compatible add-ons via the Add-ons
+    Manager or via [addons.thunderbird.net](https://addons.thunderbird.net).'
   tag: unresolved
-  bug: 1574183
+  bugs:
+  - 1574183

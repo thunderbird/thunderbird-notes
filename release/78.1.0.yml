@@ -26,50 +26,62 @@ release:
   import_system_requirements: '78.0'
 
 notes:
-- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard,
-    online searching for OpenPGP keys, and more'
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, online
+    searching for OpenPGP keys, and more'
   tag: new
-  bug: 22687
-  bug2: 1652537
-  bug3: 1655113
+  bugs:
+  - 22687
+  - 1652537
+  - 1655113
 - note: 'The preferences tab now has a search field'
   tag: new
-  bug: 1573678
+  bugs:
+  - 1573678
 - note: 'Dark background in message reader is now disabled'
   tag: changed
-  bug: 1639249
+  bugs:
+  - 1639249
 - note: 'Thunderbird startup was slow when using folder color customizations with many
     folders. **Previously configured colors will not be migrated.**'
   tag: fixed
-  bug: 1652279
+  bugs:
+  - 1652279
 - note: 'Mail quota usage in status bar did not support terabyte folder sizes'
   tag: fixed
-  bug: 1636665
+  bugs:
+  - 1636665
 - note: 'Changing Junk mail settings with keyboard toggled wrong setting'
   tag: fixed
-  bug: 1607613
+  bugs:
+  - 1607613
 - note: 'Advanced IMAP server preferences not saved in Account Manager'
   tag: fixed
-  bug: 1653588
+  bugs:
+  - 1653588
 - note: 'Address book migration updates and fixes'
   tag: fixed
-  bug: 1652940
+  bugs:
+  - 1652940
 - note: 'Address book: Last Modified Date was not updated'
   tag: fixed
-  bug: 1634863
+  bugs:
+  - 1634863
 - note: 'Dark mode improvements'
   tag: fixed
-  bug: 1653750
-  bug2: 1653751
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.1">security fixes</a>
+  bugs:
+  - 1653750
+  - 1653751
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.1">security
+    fixes</a>
   tag: fixed
 
 # unresolved
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
-  bug: 1556261
+  bugs:
+  - 1556261
 - note: 'Fixed width font not working in compose window'
   tag: unresolved
-  bug: 1655279
+  bugs:
+  - 1655279
 

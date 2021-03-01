@@ -20,20 +20,23 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: 'When upgrading a 64bit version of Thunderbird version 60 to version 68,
-    the existing profile wasn''t recognized and a new profile was created.<br>
-    Note: If your profile is still not recognized, select it by visiting about:profiles
-    in the Troubleshooting Information.'
+- note: 'When upgrading a 64bit version of Thunderbird version 60 to version 68, the existing
+    profile wasn''t recognized and a new profile was created.<br> Note: If your profile
+    is still not recognized, select it by visiting about:profiles in the Troubleshooting
+    Information.'
   tag: fixed
-  bug: 1593540
+  bugs:
+  - 1593540
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
-    updated during the upgrade process. They will however be updated during the add-on update
-    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
-    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+    updated during the upgrade process. They will however be updated during the add-on
+    update check. It is of course possible to reinstall compatible add-ons via the Add-ons
+    Manager or via [addons.thunderbird.net](https://addons.thunderbird.net).'
   tag: unresolved
-  bug: 1574183
-- note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or
-    switch off option "Query OSCP responder servers" in the certificate settings in advanced options.'
+  bugs:
+  - 1574183
+- note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or switch
+    off option "Query OSCP responder servers" in the certificate settings in advanced options.'
   tag: unresolved
-  bug: 1576364
+  bugs:
+  - 1576364
 

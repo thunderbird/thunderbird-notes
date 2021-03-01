@@ -20,42 +20,55 @@ release:
 notes:
 - note: 'MailExtensions: Raw message source available to MailExtensions'
   tag: new
-  bug: 1525274
-- note: 'MailExtensions: messages.update function extended to mark messages as junk or not junk'
+  bugs:
+  - 1525274
+- note: 'MailExtensions: messages.update function extended to mark messages as junk or
+    not junk'
   tag: changed
-  bug: 1598332
+  bugs:
+  - 1598332
 - note: 'MailExtensions: browser.compose.begin functions no longer expand mailing lists'
   tag: changed
-  bug: 1612480
+  bugs:
+  - 1612480
 - note: 'Various improvements to account setup when connecting to an Exchange server'
   tag: fixed
-  bug: 1598861
-  bug2: 1611405
+  bugs:
+  - 1598861
+  - 1611405
 - note: 'Thread collapsed when opening news message in a new window'
   tag: fixed
-  bug: 1526765
-- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird 60'
+  bugs:
+  - 1526765
+- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird
+    60'
   tag: fixed
-  bug: 1574183
+  bugs:
+  - 1574183
 - note: 'Updating addons did not prompt when requesting new permissions'
   tag: fixed
-  bug: 1620861
+  bugs:
+  - 1620861
 - note: 'Extra recipients panel not keyboard-accessible'
   tag: fixed
-  bug: 1612717
+  bugs:
+  - 1612717
 - note: 'Accessibility: Status bar was not detected by screenreaders'
   tag: fixed
-  bug: 1621287
+  bugs:
+  - 1621287
 - note: 'MailExtensions: messages.query by folder name did not require accountsRead permission'
   tag: fixed
-  bug: 1625793
+  bugs:
+  - 1625793
 - note: 'Calendar: Invitations with embedded null bytes did not always decode correctly'
   tag: fixed
-  bug: 1623896
+  bugs:
+  - 1623896
 - note: 'Calendar: Cancelled events didn''t show with a line-through'
   tag: fixed
-  bug: 1621210
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.7">security
+  bugs:
+  - 1621210
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.7">security
     fixes</a>
   tag: fixed

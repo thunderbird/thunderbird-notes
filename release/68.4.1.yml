@@ -19,37 +19,46 @@ release:
   import_system_requirements: '68.0'
 notes:
 - note: 'Various improvements when setting up an account for a Microsoft Exchange server:
-    Now offers IMAP/SMTP if available, better detection for Office 365 accounts; re-run configuration after password change.'
+    Now offers IMAP/SMTP if available, better detection for Office 365 accounts; re-run
+    configuration after password change.'
   tag: changed
-  bug: 1592258
-  bug2: 1598861
-  bug3: 1600954
-- note: 'Attachments with one or more spaces in their names couldn''t be opened under some circumstances'
+  bugs:
+  - 1592258
+  - 1598861
+  - 1600954
+- note: 'Attachments with one or more spaces in their names couldn''t be opened under some
+    circumstances'
   tag: fixed
-  bug: 1601905
-- note: 'After changing view layout, the message display pane showed garbled content under some circumstances'
+  bugs:
+  - 1601905
+- note: 'After changing view layout, the message display pane showed garbled content under
+    some circumstances'
   tag: fixed
-  bug: 265393
+  bugs:
+  - 265393
 - note: 'Tags were lost on messages in shared IMAP folders under some circumstances'
   tag: fixed
-  bug: 1596371
-- note: 'Various theme changes to achieve "pixel perfection": Unread icon, "no results" icon,
-    paragraph format and font selector, background of folder summary tooltip'
+  bugs:
+  - 1596371
+- note: 'Various theme changes to achieve "pixel perfection": Unread icon, "no results"
+    icon, paragraph format and font selector, background of folder summary tooltip'
   tag: fixed
-  bug: 1605612
-  bug2: 1605613
-  bug3: 1606249
-  bug4: 1602941
+  bugs:
+  - 1605612
+  - 1605613
+  - 1606249
+  - 1602941
 - note: 'Calendar: Event attendee dialog was not displayed correctly'
   tag: fixed
-  bug: 1604797
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.4.1">security
+  bugs:
+  - 1604797
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.4.1">security
     fixes</a>
   tag: fixed
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
-    updated during the upgrade process. They will however be updated during the add-on update
-    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
-    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+    updated during the upgrade process. They will however be updated during the add-on
+    update check. It is of course possible to reinstall compatible add-ons via the Add-ons
+    Manager or via [addons.thunderbird.net](https://addons.thunderbird.net).'
   tag: unresolved
-  bug: 1574183
+  bugs:
+  - 1574183

@@ -19,47 +19,59 @@ release:
 notes:
 - note: 'Various Theme fixes where incorrect colors, backgrounds, etc. were displayed'
   tag: fixed
-  bug: 1498908
+  bugs:
+  - 1498908
 - note: 'Add-on Options menu not working on Mac'
   tag: fixed
-  bug: 1482334
+  bugs:
+  - 1482334
 - note: 'Shift+PageUp/PageDown in Write window'
   tag: fixed
-  bug: 1482425
+  bugs:
+  - 1482425
 - note: 'Saving content of Write windows didn''t overwrite existing file'
   tag: fixed
-  bug: 1498483
+  bugs:
+  - 1498483
 - note: 'Issues related to "Edit Template" command'
   tag: fixed
-  bug: 1498866
+  bugs:
+  - 1498866
 - note: 'Gloda attachment filtering'
   tag: fixed
-  bug: 1499860
+  bugs:
+  - 1499860
 - note: 'Mailing list address auto-complete enter/return handling'
   tag: fixed
-  bug: 1499410
+  bugs:
+  - 1499410
 - note: 'Thunderbird hung if HTML signature references non-existent image'
   tag: fixed
-  bug: 1495698
+  bugs:
+  - 1495698
 - note: 'Filters not working for headers that appear more than once'
   tag: fixed
-  bug: 678322
+  bugs:
+  - 678322
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.3">security
     fixes</a>
   tag: fixed
-- note: 'According to RFC 5721, passwords containing non-ASCII characters are
-    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
-    office365.com'
+- note: 'According to RFC 5721, passwords containing non-ASCII characters are encoded using
+    UTF-8 which can lead to problems with non-compliant providers, for example office365.com'
   tag: unresolved
-  bug: 1500772
-- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
-    or Link Properties dialog'
+  bugs:
+  - 1500772
+- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced
+    Property Editor or Link Properties dialog'
   tag: unresolved
-  bug: 1501663
-- note: 'CalDav access to some servers not working.
-    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  bugs:
+  - 1501663
+- note: 'CalDav access to some servers not working. Workaround: Set preference network.cookie.same-site.enabled
+    to false.'
   tag: unresolved
-  bug: 1468912
+  bugs:
+  - 1468912
 - note: 'Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

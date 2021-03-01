@@ -13,13 +13,18 @@ release:
   import_system_requirements: '78.0'
 
 notes:
-- note: User interface was inconsistent when switching from the default theme to the dark theme and back to the default theme
+- note: User interface was inconsistent when switching from the default theme to the dark
+    theme and back to the default theme
   tag: fixed
-  bug: 1659282
-- note: Email subject would disappear when hovering over it with the mouse when using Windows 7 Classic theme
+  bugs:
+  - 1659282
+- note: Email subject would disappear when hovering over it with the mouse when using Windows
+    7 Classic theme
   tag: fixed
-  bug: 1675970
+  bugs:
+  - 1675970
 
 - note: 'Message list is not focused at startup'
   tag: unresolved
-  bug: 1620310
+  bugs:
+  - 1620310

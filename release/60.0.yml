@@ -21,236 +21,284 @@ notes:
 - note: When writing a message, a delete button now allows the removal of a recipient.
     This delete button is displayed when hovering the To/Cc/Bcc selector.
   tag: new
-  bug: 1100103
-- note: 'Many improvements to attachments handling during compose:
-    Attachments can now be reordered using a dialog, keyboard shortcuts, or drag and drop.
-    The "Attach" button moved to the right to be above the attachment pane.
-    The access key of the attachment pane (e.g. Alt+M, may vary depending on localization, Ctrl+M on Mac)
-    now also works to show or hide the pane.
-    The attachment pane can also be shown initially when
-    composing a new message. Right-click on the header to enable this option.
-    Hiding a non-empty attachment pane will now show a placeholder paperclip to indicate
-    the presence of attachments and avoid sending them accidentally.'
+  bugs:
+  - 1100103
+- note: 'Many improvements to attachments handling during compose: Attachments can now
+    be reordered using a dialog, keyboard shortcuts, or drag and drop. The "Attach" button
+    moved to the right to be above the attachment pane. The access key of the attachment
+    pane (e.g. Alt+M, may vary depending on localization, Ctrl+M on Mac) now also works
+    to show or hide the pane. The attachment pane can also be shown initially when composing
+    a new message. Right-click on the header to enable this option. Hiding a non-empty
+    attachment pane will now show a placeholder paperclip to indicate the presence of attachments
+    and avoid sending them accidentally.'
   tag: new
-  bug: 1428631
-  bug2: 663695
+  bugs:
+  - 1428631
+  - 663695
 - note: '"Edit Template" command. This also solves various problems when saving as template
     (duplicates created, message ID lost).'
   tag: new
-  bug: 1389062
+  bugs:
+  - 1389062
 - note: '"New Message from Template" command'
   tag: new
-  bug: 1389083
+  bugs:
+  - 1389083
 - note: Allow changing the Spellcheck Language from status bar
   tag: new
-  bug: 1399370
+  bugs:
+  - 1399370
 - note: Light and Dark themes
   tag: new
-  bug: 1456219
+  bugs:
+  - 1456219
 - note: WebExtension themes are now enabled in Thunderbird
   tag: new
-  bug: 1450670
+  bugs:
+  - 1450670
 - note: A default startup directory in the address book window can now be configured
   tag: new
-  bug: 1308776
+  bugs:
+  - 1308776
 - note: Individual feed update interval
   tag: new
-  bug: 1312813
-- note: An option under "Tools > Options, Advanced, General" now allows to select
-    whether date/time display will follow the application locale (adjusted by operating
-    system's format settings for that locale) or the locale selected in the operating
-    system's regional settings. In other words, an US English Thunderbird can use,
-    for example, German formats.
+  bugs:
+  - 1312813
+- note: An option under "Tools > Options, Advanced, General" now allows to select whether
+    date/time display will follow the application locale (adjusted by operating system's
+    format settings for that locale) or the locale selected in the operating system's regional
+    settings. In other words, an US English Thunderbird can use, for example, German formats.
   tag: new
-  bug: 1384007
+  bugs:
+  - 1384007
 - note: 'OAuth2 authentication for Yahoo and AOL'
   tag: new
-  bug: 1310384
+  bugs:
+  - 1310384
 - note: 'FIDO U2F support'
   tag: new
-  bug: 1444101
-- note: 'Thunderbird now allows the conversion of folders from mbox to maildir format
-    and vice versa. This is an **experimental** feature that needs to be enabled by
-    setting the preference mail.store_conversion_enabled.
-    Note that this functionality does not not work if the option
-    "Allow Windows Search/Spotlight to search messages" is selected.'
+  bugs:
+  - 1444101
+- note: 'Thunderbird now allows the conversion of folders from mbox to maildir format and
+    vice versa. This is an **experimental** feature that needs to be enabled by setting
+    the preference mail.store_conversion_enabled. Note that this functionality does not
+    not work if the option "Allow Windows Search/Spotlight to search messages" is selected.'
   tag: new
-  bug: 856087
-- note: 'Calendar: Allow copying, cutting or deleting of a selected occurrence or
-    the entire series for recurring events'
+  bugs:
+  - 856087
+- note: 'Calendar: Allow copying, cutting or deleting of a selected occurrence or the entire
+    series for recurring events'
   tag: new
-  bug: 393084
-- note: 'Calendar: Provide an option to display locations for events in calendar day
-    and week views'
+  bugs:
+  - 393084
+- note: 'Calendar: Provide an option to display locations for events in calendar day and
+    week views'
   tag: new
-  bug: 321434
-- note: 'Calendar: Provide the ability for sending/not sending meeting notifications
-    directly instead of showing a popup'
+  bugs:
+  - 321434
+- note: 'Calendar: Provide the ability for sending/not sending meeting notifications directly
+    instead of showing a popup'
   tag: new
-  bug: 463402
+  bugs:
+  - 463402
 - note: 'Calendar: Option to select the target calendar when pasting an event or task'
   tag: new
-  bug: 719351
-- note: 'Calendar: Allow email scheduling for CalDAV servers supporting server-side
-    scheduling'
+  bugs:
+  - 719351
+- note: 'Calendar: Allow email scheduling for CalDAV servers supporting server-side scheduling'
   tag: new
-  bug: 1299610
+  bugs:
+  - 1299610
 - note: Thunderbird Chat now contains multiple built-in message themes
   tag: new
-  bug: 1409839
-- note: "**IMPORTANT:** Add-ons not marked as compatible with Thunderbird
-    60 by their authors will be disabled (this can be reverted via preference extensions.strictCompatibility)"
+  bugs:
+  - 1409839
+- note: "**IMPORTANT:** Add-ons not marked as compatible with Thunderbird 60 by their authors\
+    \ will be disabled (this can be reverted via preference extensions.strictCompatibility)"
   tag: changed
-  bug: 1451097
+  bugs:
+  - 1451097
 - note: 'IMAP: When after sending a message storing that sent message fails, the message
     can now be stored in a local folder'
   tag: changed
-  bug: 28211
-- note: Add-on options can no longer be configured from the Add-on Manager page. A
-    new menu item "Add-on Options" is now available on the Tools menu.
+  bugs:
+  - 28211
+- note: Add-on options can no longer be configured from the Add-on Manager page. A new
+    menu item "Add-on Options" is now available on the Tools menu.
   tag: changed
-  bug: 1419145
-- note: When messages are composed in paragraph format, "body text" and split mail
-    quotes are converted to paragraphs when pressing the enter key
+  bugs:
+  - 1419145
+- note: When messages are composed in paragraph format, "body text" and split mail quotes
+    are converted to paragraphs when pressing the enter key
   tag: changed
-  bug: 1354002
-- note: '"Edit As New Message" will now use the account''s default compose format,
-    either HTML or plain text ignoring the format of the message. Plain text messages
-    will be converted to HTML and vice versa. Then using the modifier, the format
-    choice will be reverted.'
+  bugs:
+  - 1354002
+- note: '"Edit As New Message" will now use the account''s default compose format, either
+    HTML or plain text ignoring the format of the message. Plain text messages will be
+    converted to HTML and vice versa. Then using the modifier, the format choice will be
+    reverted.'
   tag: changed
-  bug: 731688
-- note: The "Edit Draft" command now also honors the use of the shift key to convert
-    HTML to plain text or vice versa when editing a draft
+  bugs:
+  - 731688
+- note: The "Edit Draft" command now also honors the use of the shift key to convert HTML
+    to plain text or vice versa when editing a draft
   tag: changed
-  bug: 1389771
-- note: The plain text to HTML conversion has been improved where such a conversion
-    is necessary for "Edit As New Message" or when the shift modifier is used for
-    "Edit Draft" or "New Message from Template".
+  bugs:
+  - 1389771
+- note: The plain text to HTML conversion has been improved where such a conversion is
+    necessary for "Edit As New Message" or when the shift modifier is used for "Edit Draft"
+    or "New Message from Template".
   tag: changed
-  bug: 1392052
-- note: During address entry, the matching part of the address is now shown in bold.
-    Preference mail.autoComplete.commentColumn allows to display the address book
-    where the address is stored.
+  bugs:
+  - 1392052
+- note: During address entry, the matching part of the address is now shown in bold. Preference
+    mail.autoComplete.commentColumn allows to display the address book where the address
+    is stored.
   tag: changed
-  bug: 1436290
-- note: When attaching a message via drag and drop, the subject of the message is
-    now used as attachment name instead of "Attached Message"
+  bugs:
+  - 1436290
+- note: When attaching a message via drag and drop, the subject of the message is now used
+    as attachment name instead of "Attached Message"
   tag: changed
-  bug: 209629
-- note: 'Better address book photo handling: Photos can be added by drag and drop and
-    a copy of all photos will be stored in the Thunderbird profile'
+  bugs:
+  - 209629
+- note: 'Better address book photo handling: Photos can be added by drag and drop and a
+    copy of all photos will be stored in the Thunderbird profile'
   tag: changed
-  bug: 892889
-- note: On first start, Thunderbird now shows the account setup dialog, no longer
-    the account provisioner dialog
+  bugs:
+  - 892889
+- note: On first start, Thunderbird now shows the account setup dialog, no longer the account
+    provisioner dialog
   tag: changed
-  bug: 1349259
-- note: Thunderbird follows Firefox' Photon design with rectangular tabs and many
-    other theme improvements
+  bugs:
+  - 1349259
+- note: Thunderbird follows Firefox' Photon design with rectangular tabs and many other
+    theme improvements
   tag: changed
-  bug: 1387877
-- note: 'When customizing the From: address, Thunderbird will now use this address
-    for the SMTP "MAIL FROM" command. Previously the address configured in the identity
-    was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the
-    previous behavior.'
+  bugs:
+  - 1387877
+- note: 'When customizing the From: address, Thunderbird will now use this address for
+    the SMTP "MAIL FROM" command. Previously the address configured in the identity was
+    used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the previous
+    behavior.'
   tag: changed
-  bug: 1294027
+  bugs:
+  - 1294027
 - note: Native notifications on Linux are now re-enabled
   tag: changed
-  bug: 1358837
-- note: Thunderbird now uses Mozilla's latest proxy technology (add-on FoxyProxy now
-    supported)
+  bugs:
+  - 1358837
+- note: Thunderbird now uses Mozilla's latest proxy technology (add-on FoxyProxy now supported)
   tag: changed
-  bug: 791645
-- note: Thunderbird now uses the latest Rust-based Mozilla technology,
-    including Quantum's CSS engine (based on Servo) and encoding_rs, for displaying and encoding messages
+  bugs:
+  - 791645
+- note: Thunderbird now uses the latest Rust-based Mozilla technology, including Quantum's
+    CSS engine (based on Servo) and encoding_rs, for displaying and encoding messages
   tag: changed
-  bug: 1363281
+  bugs:
+  - 1363281
 - note: 'All certificates issued by Symantec roots before 2016-06-01 are distrusted for
-    use in TLS secured traffic in Thunderbird 60 and above. This applies to all
-    brands Symantec operated: Thawte, RapidSSL, GeoTrust, Verisign, and
-    Symantec. For usage in S/MIME the certificates remain valid.
-    Details [here](https://wiki.mozilla.org/CA/Additional_Trust_Changes#Symantec).'
+    use in TLS secured traffic in Thunderbird 60 and above. This applies to all brands
+    Symantec operated: Thawte, RapidSSL, GeoTrust, Verisign, and Symantec. For usage in
+    S/MIME the certificates remain valid. Details [here](https://wiki.mozilla.org/CA/Additional_Trust_Changes#Symantec).'
   tag: changed
-  bug: 1437826
+  bugs:
+  - 1437826
 - note: 'Calendar: Removal of capability to send email invitations compatible to Outlook
     2002 and earlier'
   tag: changed
-  bug: 463402
+  bugs:
+  - 463402
 - note: 'Calendar: Reminders on read-only calendars can now be dismissed, while reminders
-    for missed events will now only be displayed for writable calendars if option
-    "Show missed reminders for writable calendars" is selected'
+    for missed events will now only be displayed for writable calendars if option "Show
+    missed reminders for writable calendars" is selected'
   tag: changed
-  bug: 356002
+  bugs:
+  - 356002
 - note: 'Thunderbird Chat: Nicknames inside of messages are colored to match the participants
     list'
   tag: changed
-  bug: 1409901
-- note: 'When many Thunderbird clients or other email clients accessed the same IMAP
-    draft folder, messages were sometimes sent with the wrong identity. This has been
-    corrected and the user will be notified if none of their identities matches the
-    draft. '
+  bugs:
+  - 1409901
+- note: 'When many Thunderbird clients or other email clients accessed the same IMAP draft
+    folder, messages were sometimes sent with the wrong identity. This has been corrected
+    and the user will be notified if none of their identities matches the draft. '
   tag: fixed
-  bug: 394216
-- note: 'Various problems related to handling the IMAP trash folder: Under certain
-    circumstances the selection of the trash folder didn''t persist, for example when
-    the name contained non-ASCII characters, or in localized versions of Thunderbird.
-    At times unwanted additional trash folders were created. Selection of a trash
-    folder didn''t give immediate visual feedback.'
+  bugs:
+  - 394216
+- note: 'Various problems related to handling the IMAP trash folder: Under certain circumstances
+    the selection of the trash folder didn''t persist, for example when the name contained
+    non-ASCII characters, or in localized versions of Thunderbird. At times unwanted additional
+    trash folders were created. Selection of a trash folder didn''t give immediate visual
+    feedback.'
   tag: fixed
-  bug: 1335982
+  bugs:
+  - 1335982
 - note: Shared IMAP folders not shown in subscribe dialog under some circumstances
   tag: fixed
-  bug: 1419735
-- note: Messages moved between IMAP accounts were missing parts (embedded content
-    or attachments) under some circumstances
+  bugs:
+  - 1419735
+- note: Messages moved between IMAP accounts were missing parts (embedded content or attachments)
+    under some circumstances
   tag: fixed
-  bug: 1430480
+  bugs:
+  - 1430480
 - note: Improvements encoding/decoding message headers
   tag: fixed
-  bug: 1437282
+  bugs:
+  - 1437282
 - note: Text in the address book card view wasn't selectable
   tag: fixed
-  bug: 96968
-- note: "Passwords can now contain non-ASCII characters, like international characters,
-    for example áäß, and symbols, for example €§£. Note: According to RFC 5721, passwords are
-    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
-    office365.com."
+  bugs:
+  - 96968
+- note: "Passwords can now contain non-ASCII characters, like international characters,\
+    \ for example áäß, and symbols, for example €§£. Note: According to RFC 5721, passwords\
+    \ are encoded using UTF-8 which can lead to problems with non-compliant providers,\
+    \ for example office365.com."
   tag: fixed
-  bug: 312593
-- note: 'Outlook import. Note: Mail, address book and settings need to be imported individually as
-    "Import Everything" currently does not work.'
+  bugs:
+  - 312593
+- note: 'Outlook import. Note: Mail, address book and settings need to be imported individually
+    as "Import Everything" currently does not work.'
   tag: fixed
-  bug: 1176748
-  bug2: 1474870
+  bugs:
+  - 1176748
+  - 1474870
 - note: 'Localized versions of Thunderbird didn''t show a localized name for Hotmail''s
     "Deleted" folder'
   tag: fixed
-  bug: 1320191
+  bugs:
+  - 1320191
 - note: 'Contacts sidebar: Selection and context menu behavior'
   tag: fixed
-  bug: 1322032
+  bugs:
+  - 1322032
 - note: 'Better error handling for Gmail authentication to avoid re-downloading of folders'
   tag: fixed
-  bug: 1453643
+  bugs:
+  - 1453643
 - note: Thunderbird used a stale cached password after user edited a saved password
   tag: fixed
-  bug: 516464
+  bugs:
+  - 516464
 - note: 'Calendar: Wrong time formatting for some time zones'
   tag: fixed
-  bug: 1396639
+  bugs:
+  - 1396639
 - note: "Calendar: Can't copy information from event dialog for received invitations"
   tag: fixed
-  bug: 390753
+  bugs:
+  - 390753
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60">security
     fixes</a>
   tag: fixed
-- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
-    or Link Properties dialog'
+- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced
+    Property Editor or Link Properties dialog'
   tag: unresolved
-  bug: 1501663
-- note: 'CalDav access to some servers not working.
-    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  bugs:
+  - 1501663
+- note: 'CalDav access to some servers not working. Workaround: Set preference network.cookie.same-site.enabled
+    to false.'
   tag: unresolved
-  bug: 1468912
+  bugs:
+  - 1468912

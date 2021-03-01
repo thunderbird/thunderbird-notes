@@ -1,127 +1,155 @@
 release:
   release_date: 2019-06-14
-  text: "**These release notes apply to Thunderbird version 68 beta 5 released July 18th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 68 beta 5 released July 18th,\
+    \ 2019.**"
   import_system_requirements: '60.0beta'
   groups:
-    -
-    - "Changed and Fixed in Beta 2"
-    - "New, Changed and Fixed in Beta 3"
-    - "Changed and Fixed in Beta 4"
-    - "Fixed in Beta 5"
+  - 
+  - "Changed and Fixed in Beta 2"
+  - "New, Changed and Fixed in Beta 3"
+  - "Changed and Fixed in Beta 4"
+  - "Fixed in Beta 5"
 
 notes:
 - note: 'Run filters periodically. Improved filter logging.'
   tag: new
-  bug: 864187
-  bug2: 697522
+  bugs:
+  - 864187
+  - 697522
 - note: '"Off the record" (OTR) chat, see the [Wiki](https://wiki.mozilla.org/Thunderbird:OTR)'
   tag: new
-  bug: 1518172
+  bugs:
+  - 1518172
 - note: 'File link attachments can now be linked to again instead of uploading them again'
   tag: new
-  bug: 1542991
-- note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise environments,
-    using Windows Group Policy or a cross-platform JSON file'
+  bugs:
+  - 1542991
+- note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise
+    environments, using Windows Group Policy or a cross-platform JSON file'
   tag: new
-  bug: 1552457
+  bugs:
+  - 1552457
 - note: 'TCP keepalive for IMAP protocol'
   tag: new
-  bug: 1535969
-- note: '**Add-on support: Restartless add-ons and non-restartless legacy add-ons using XUL overlays
-    are only supported if add-on authors have adapted them**'
+  bugs:
+  - 1535969
+- note: '**Add-on support: Restartless add-ons and non-restartless legacy add-ons using
+    XUL overlays are only supported if add-on authors have adapted them**'
   tag: changed
-  bug: 1552634
-- note: '**Theme support**: Thunderbird no longer supports so-called lightweight themes. Therefore
-    none of the themes offered at addons.thunderbird.net currently work.
-    Lightweight themes will be converted to WebExtension themes, but
-    this conversion has NOT happened yet. It has happened at addons.mozilla.org.
-    Workaround: Manually install from
-    [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/themes/) by dragging the link
-    or .xpi file into the Add-ons Manager.'
+  bugs:
+  - 1552634
+- note: '**Theme support**: Thunderbird no longer supports so-called lightweight themes.
+    Therefore none of the themes offered at addons.thunderbird.net currently work. Lightweight
+    themes will be converted to WebExtension themes, but this conversion has NOT happened
+    yet. It has happened at addons.mozilla.org. Workaround: Manually install from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/themes/)
+    by dragging the link or .xpi file into the Add-ons Manager.'
   tag: changed
 - note: 'Application menu aka "Hamburger menu"'
   tag: changed
-  bug: 1546309
+  bugs:
+  - 1546309
 - note: 'Box.com file link provider was removed and is now available as add-on at [ATN](https://addons.thunderbird.net/thunderbird/addon/filelink-provider-for-box/)'
   tag: changed
-  bug: 1531595
+  bugs:
+  - 1531595
 - note: 'UI improvements for external attachments'
   tag: changed
-  bug: 1345167
+  bugs:
+  - 1345167
 - note: 'Improvements to scam warnings'
   tag: changed
-  bug: 1476428
+  bugs:
+  - 1476428
 - note: 'Various UI improvements. Many changes affecting UI, and so problems are expected.
     Please file bug reports at [bugzilla.mozilla.org](https://bugzilla.mozilla.org/).'
   tag: changed
 - note: 'Malfunction when deleting a message opened in a tab or stand-alone window'
   tag: fixed
-  bug: 1518823
+  bugs:
+  - 1518823
 - note: 'Blank new mail notification under some circumstances'
   tag: fixed
-  bug: 1547202
+  bugs:
+  - 1547202
 - note: 'Spellcheck marks disappeared erroneously for words with an apostrophe'
   tag: fixed
-  bug: 1418629
+  bugs:
+  - 1418629
   # Beta 2 below.
 - note: Various theme improvements.
   tag: changed
-  bug: 1559833
-  bug2: 1559176
+  bugs:
+  - 1559833
+  - 1559176
   group: 2
-- note: 'SMTP password wasn''t removed when account was deleted or server or user name were changed'
+- note: 'SMTP password wasn''t removed when account was deleted or server or user name
+    were changed'
   tag: fixed
-  bug: 1315662
+  bugs:
+  - 1315662
   group: 2
-- note: 'Calendar: Multiple connections with different users to the same CalDAV server not working'
+- note: 'Calendar: Multiple connections with different users to the same CalDAV server
+    not working'
   tag: fixed
-  bug: 1544596
+  bugs:
+  - 1544596
   group: 2
-- note: 'Chat: Context (right-click) menu and spelling. In each conversation an individual spellcheck language
-  can be selected now.'
+- note: 'Chat: Context (right-click) menu and spelling. In each conversation an individual
+    spellcheck language can be selected now.'
   tag: fixed
-  bug: 1556203
-  bug2: 1559789
+  bugs:
+  - 1556203
+  - 1559789
   group: 2
   # Beta 3 below.
 - note: 'OAuth2 authentication for Yandex'
   tag: new
-  bug: 1559972
+  bugs:
+  - 1559972
   group: 3
 - note: 'Auto-compact threshold increased from 20 MB to 200 MB'
   tag: changed
-  bug: 1462666
+  bugs:
+  - 1462666
   group: 3
 - note: 'Customising From address broke saving draft and sending message'
   tag: fixed
-  bug: 1542667
+  bugs:
+  - 1542667
   group: 3
 - note: 'Chat: Status selector not working'
   tag: fixed
-  bug: 1559641
+  bugs:
+  - 1559641
   group: 3
   # Beta 4 below.
-- note: 'Thunderbird 68 beta may display a message "You have launched an older version of Thunderbird" and will not
-  allow opening a specific profile. Workaround: start with option --allow-downgrade.'
+- note: 'Thunderbird 68 beta may display a message "You have launched an older version
+    of Thunderbird" and will not allow opening a specific profile. Workaround: start with
+    option --allow-downgrade.'
   tag: changed
-  bug: 1535116
+  bugs:
+  - 1535116
   group: 4
 - note: 'Find toolbar not fully working'
   tag: fixed
-  bug: 1562677
+  bugs:
+  - 1562677
   group: 4
 - note: 'Display of external or detached attachments not correct in message preview'
   tag: fixed
-  bug: 1562200
+  bugs:
+  - 1562200
   group: 4
 - note: 'Tab and shift-tab not fully working on the main window'
   tag: fixed
-  bug: 1561288
-  bug2: 1558393
+  bugs:
+  - 1561288
+  - 1558393
   group: 4
 - note: 'Chat: Ctrl+D and Ctrl+U not working to switch between conversations'
   tag: fixed
-  bug: 1559097
+  bugs:
+  - 1559097
   group: 4
 - note: 'Calendar: Many fixes in Lightning, but note the first unresolved item'
   tag: fixed
@@ -129,43 +157,56 @@ notes:
   # Beta 5 below.
 - note: 'Ignore (Sub)Thread not working'
   tag: fixed
-  bug: 1565840
+  bugs:
+  - 1565840
   group: 5
 - note: 'Some search engines not working'
   tag: fixed
-  bug: 1566200
+  bugs:
+  - 1566200
   group: 5
 - note: 'Global indexer causing high CPU loads under some circumstances'
   tag: fixed
-  bug: 1362483
+  bugs:
+  - 1362483
   group: 5
 - note: 'Many fixes of UX/UI glitches'
   tag: fixed
   group: 5
-- note: 'Calendar: Mailing lists not expanding when added as invitees. Note the first unresolved item.'
+- note: 'Calendar: Mailing lists not expanding when added as invitees. Note the first unresolved
+    item.'
   tag: fixed
-  bug: 1530213
+  bugs:
+  - 1530213
   group: 5
-- note: 'Calendar: Lightning not updating to corresponding beta 5 version. Workaround: Set preference
-  <code>extensions.lastAppVersion</code> to a value of 67.0 to force a refresh. Check version number in the
-  Add-on Manager afterwards.'
+- note: 'Calendar: Lightning not updating to corresponding beta 5 version. Workaround:
+    Set preference <code>extensions.lastAppVersion</code> to a value of 67.0 to force a
+    refresh. Check version number in the Add-on Manager afterwards.'
   tag: unresolved
-  bug: 1562573
-- note: 'Thunderbird 68 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
+  bugs:
+  - 1562573
+- note: 'Thunderbird 68 beta may not recognise an existing profile. Workaround: start with
+    the profile manager option -p.'
   tag: unresolved
-  bug: 1542025
+  bugs:
+  - 1542025
 - note: 'The spellchecker may mark words preceding a single quote as misspelled'
   tag: unresolved
-  bug: 1565919
+  bugs:
+  - 1565919
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
-  bug: 1512812
-- note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
-    the Mozilla FTP server. A US-English version can be downloaded [here](https://queue.taskcluster.net/v1/task/BwwaMEyrRVm-vIh0Pa9Cdg/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).
+  bugs:
+  - 1512812
+- note: 'Calendar: A localized version of Provider for Google Calendar not available at
+    addons.thunderbird.net or the Mozilla FTP server. A US-English version can be downloaded
+    [here](https://queue.taskcluster.net/v1/task/BwwaMEyrRVm-vIh0Pa9Cdg/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
-  bug: 1516816
+  bugs:
+  - 1516816
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

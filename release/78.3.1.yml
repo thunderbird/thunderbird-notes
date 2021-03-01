@@ -19,4 +19,5 @@ release:
 notes:
 - note: 'Thunderbird crashed after updating to 78.3.0'
   tag: fixed
-  bug: 1667120
+  bugs:
+  - 1667120

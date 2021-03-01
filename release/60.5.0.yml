@@ -19,43 +19,56 @@ release:
 notes:
 - note: 'FileLink provider WeTransfer to upload large attachments'
   tag: new
-  bug: 1511950
-- note: 'Thunderbird now allows the addition of OpenSearch search engines from a local XML file
-    using a minimal user inferface: [+] button to select a file an add, [-] to remove.'
+  bugs:
+  - 1511950
+- note: 'Thunderbird now allows the addition of OpenSearch search engines from a local
+    XML file using a minimal user inferface: [+] button to select a file an add, [-] to
+    remove.'
   tag: new
-  bug: 1427317
+  bugs:
+  - 1427317
 - note: 'More search engines: Google and DuckDuckGo available by default in some locales'
   tag: new
-  bug: 1427133
-- note: 'During account creation, Thunderbird will now detect servers using the Microsoft Exchange protocol.
-    It will offer the installation of a 3rd party add-on (Owl) which supports that protocol.'
+  bugs:
+  - 1427133
+- note: 'During account creation, Thunderbird will now detect servers using the Microsoft
+    Exchange protocol. It will offer the installation of a 3rd party add-on (Owl) which
+    supports that protocol.'
   tag: new
-  bug: 1500105
+  bugs:
+  - 1500105
 - note: 'Thunderbird now compatible with other WebExtension-based FileLink add-ons like
-      the [Dropbox add-on](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/)'
+    the [Dropbox add-on](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/)'
   tag: fixed
-  bug: 1511943
+  bugs:
+  - 1511943
 - note: 'Crash when using custom sound for new email notification'
   tag: fixed
-  bug: 1495799
-  bug2: 1482659
+  bugs:
+  - 1495799
+  - 1482659
 - note: 'WebExtension-based dictionaries from addons.mozilla.org not working in Thunderbird'
   tag: fixed
-  bug: 1460748
+  bugs:
+  - 1460748
 - note: 'Calendar: Printing of calendars not working'
   tag: fixed
-  bug: 1517155
+  bugs:
+  - 1517155
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.5">security
     fixes</a>
   tag: fixed
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
-  bug: 1512812
-- note: 'CalDav access to some servers not working.
-    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  bugs:
+  - 1512812
+- note: 'CalDav access to some servers not working. Workaround: Set preference network.cookie.same-site.enabled
+    to false.'
   tag: unresolved
-  bug: 1468912
+  bugs:
+  - 1468912
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

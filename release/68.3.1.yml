@@ -17,32 +17,41 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged messages'
+- note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged
+    messages'
   tag: changed
-  bug: 1596702
+  bugs:
+  - 1596702
 - note: 'Account setup is now using client side DNS MX lookup instead of relying on a server.'
   tag: changed
-  bug: 1349337
-  bug2: 1573564
+  bugs:
+  - 1349337
+  - 1573564
 - note: 'Searching LDAP address book crashed in some circumstances'
   tag: fixed
-  bug: 1601389
+  bugs:
+  - 1601389
 - note: 'Message navigation with backward and forward buttons did not work in some circumstances'
   tag: fixed
-  bug: 533504
-  bug2: 1600500
+  bugs:
+  - 533504
+  - 1600500
 - note: 'WebExtension toolbar icons were displayed too small'
   tag: fixed
-  bug: 1598955
+  bugs:
+  - 1598955
 - note: 'Calendar: Tasks due today were not listed in bold'
   tag: fixed
-  bug: 1598885
+  bugs:
+  - 1598885
 - note: 'Calendar: Last day of long-running events was not shown'
   tag: fixed
-  bug: 1572964
+  bugs:
+  - 1572964
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
-    updated during the upgrade process. They will however be updated during the add-on update
-    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
-    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+    updated during the upgrade process. They will however be updated during the add-on
+    update check. It is of course possible to reinstall compatible add-ons via the Add-ons
+    Manager or via [addons.thunderbird.net](https://addons.thunderbird.net).'
   tag: unresolved
-  bug: 1574183
+  bugs:
+  - 1574183

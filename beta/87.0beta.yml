@@ -17,98 +17,136 @@ release:
 notes:
 - note: 'Native support for macOS devices built with Apple Silicon CPUs'
   tag: new
-  bug: 1678775
+  bugs:
+  - 1678775
 - note: 'New user interface for adding attachments'
   tag: new
-  bug: 1640760
+  bugs:
+  - 1640760
 
-- note: 'Clicking on an already-selected pill in the recipient list will now allow editing the address'
+- note: 'Clicking on an already-selected pill in the recipient list will now allow editing
+    the address'
   tag: changed
-  bug: 1602901
+  bugs:
+  - 1602901
 - note: 'Movemail support was removed'
   tag: changed
-  bug: 1625741
+  bugs:
+  - 1625741
 
-- note: 'Copying a large message to an IMAP server would sometimes prematurely display a time-out error'
+- note: 'Copying a large message to an IMAP server would sometimes prematurely display
+    a time-out error'
   tag: fixed
-  bug: 1618455
-- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded;
-    existing messages which were previously incorrectly encoded may now display with some words not separated by a space'
+  bugs:
+  - 1618455
+- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed
+    were incorrectly encoded; existing messages which were previously incorrectly encoded
+    may now display with some words not separated by a space'
   tag: fixed
-  bug: 1689804
+  bugs:
+  - 1689804
 - note: 'Context menu did not open in the message source window'
   tag: fixed
-  bug: 1689985
+  bugs:
+  - 1689985
 - note: 'Directory for saving multiple attachments was not remembered between saves'
   tag: fixed
-  bug: 1565007
-- note: 'Newly-added identities were not listed in the account manager until it was closed and reopened'
+  bugs:
+  - 1565007
+- note: 'Newly-added identities were not listed in the account manager until it was closed
+    and reopened'
   tag: fixed
-  bug: 1670464
-- note: 'Message headers in compose window disregarded manual resizing when adding additional recipients'
+  bugs:
+  - 1670464
+- note: 'Message headers in compose window disregarded manual resizing when adding additional
+    recipients'
   tag: fixed
-  bug: 1691466
-- note: 'Changing the language of the spellchecker did not work in while compose window was open'
+  bugs:
+  - 1691466
+- note: 'Changing the language of the spellchecker did not work in while compose window
+    was open'
   tag: fixed
-  bug: 1690101
+  bugs:
+  - 1690101
 - note: 'Opening a message from the command-line using "-mail &lt;URL&gt;" failed'
   tag: fixed
-  bug: 1684756
+  bugs:
+  - 1684756
 - note: 'OpenPGP: Various errors when importing keys'
   tag: fixed
-  bug: 1690391
-  bug2: 1689980
-  bug3: 1690387
+  bugs:
+  - 1690391
+  - 1689980
+  - 1690387
 - note: 'OpenPGP: Messages with a high compression ratio (over 10x) could not be decrypted'
   tag: fixed
-  bug: 1686984
+  bugs:
+  - 1686984
 - note: 'Some labels in global search results were blank'
   tag: fixed
-  bug: 1691285
+  bugs:
+  - 1691285
 - note: 'Address Book: Syncing a read-only Google address book via CardDAV failed'
   tag: fixed
-  bug: 1693665
-- note: 'Address Book: Preferences related to an address book were not removed when the address book was deleted'
+  bugs:
+  - 1693665
+- note: 'Address Book: Preferences related to an address book were not removed when the
+    address book was deleted'
   tag: fixed
-  bug: 1693667
+  bugs:
+  - 1693667
 - note: 'Address Book: CardDAV sync errors did not retry until Thunderbird was restarted'
   tag: fixed
-  bug: 1693670
+  bugs:
+  - 1693670
 - note: 'Calendar: Events from a disabled calendar were still visible'
   tag: fixed
-  bug: 1691844
-- note: 'Calendar: Changing the cache mode of a CalDAV calendar connection would lose the username of the account'
+  bugs:
+  - 1691844
+- note: 'Calendar: Changing the cache mode of a CalDAV calendar connection would lose the
+    username of the account'
   tag: fixed
-  bug: 1589491
+  bugs:
+  - 1589491
 - note: 'Calendar: Add-on calendars were sometimes not visible after restarting'
   tag: fixed
-  bug: 1679723
-- note: 'Calendar: The preview for a recurring task did not use all available space in the dialog window'
+  bugs:
+  - 1679723
+- note: 'Calendar: The preview for a recurring task did not use all available space in
+    the dialog window'
   tag: fixed
-  bug: 1679129
+  bugs:
+  - 1679129
 - note: 'Calendar: Removing a recurring task was not possible'
   tag: fixed
-  bug: 1688708
+  bugs:
+  - 1688708
 - note: 'Installer: Option to keep distribution directory on upgrade did not work'
   tag: fixed
-  bug: 1663391
+  bugs:
+  - 1663391
 - note: 'Various UI fixes for macOS: Quick Filter toolbar, Today Pane, message threads'
   tag: fixed
-  bug: 1689041
-  bug2: 1666050
-  bug3: 1689772
-  bug4: 1692537
+  bugs:
+  - 1689041
+  - 1666050
+  - 1689772
+  - 1692537
 - note: 'Various theme improvements'
   tag: fixed
-  bug: 1689247
-  bug2: 1666133
-  bug3: 1693081
-  bug4: 1693086
+  bugs:
+  - 1689247
+  - 1666133
+  - 1693081
+  - 1693086
 
 - note: 'MailExtensions: Calling alert() and related functions from a composeScript failed'
   tag: fixed
-  bug: 1679713
-- note: 'MailExtensions: Allow keyboard shortcuts to be added to composeAction buttons in the message compose window'
+  bugs:
+  - 1679713
+- note: 'MailExtensions: Allow keyboard shortcuts to be added to composeAction buttons
+    in the message compose window'
   tag: fixed
-  bug: 1681153
+  bugs:
+  - 1681153
 

@@ -17,19 +17,20 @@ release:
   import_system_requirements: '60.0beta'
 
 notes:
-- note: 'Offer to configure Exchange accounts for Office365.
-    A third-party add-on is required for this account type.
-    IMAP still exists as alternative.'
+- note: 'Offer to configure Exchange accounts for Office365. A third-party add-on is required
+    for this account type. IMAP still exists as alternative.'
   tag: new
-  bug: 1571772
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.9">security
+  bugs:
+  - 1571772
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.9">security
     fixes</a>
   tag: fixed
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
-  bug: 1512812
+  bugs:
+  - 1512812
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

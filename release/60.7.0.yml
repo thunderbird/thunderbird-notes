@@ -17,16 +17,20 @@ release:
   import_system_requirements: '60.0beta'
 
 notes:
-- note: 'Attachment pane of Write window no longer focussed when attaching files using a keyboard shortcut'
+- note: 'Attachment pane of Write window no longer focussed when attaching files using
+    a keyboard shortcut'
   tag: changed
-  bug: 1519328
+  bugs:
+  - 1519328
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird60.7">security
     fixes</a>
   tag: fixed
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
-  bug: 1512812
+  bugs:
+  - 1512812
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

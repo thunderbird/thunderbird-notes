@@ -11,7 +11,7 @@ release:
   import_system_requirements: '79.0beta'
 
   groups:
-  -
+  - 
   - "Changed and Fixed in Beta 2"
   - "New, Changed, and Fixed in Beta 3"
   - "Changed and Fixed in Beta 4"
@@ -19,182 +19,228 @@ release:
 notes:
 - note: 'PDF.js viewer now included in Thunderbird'
   tag: new
-  bug: 810815
+  bugs:
+  - 810815
 
 - note: 'Address book: Synchronization of CardDAV address books now supported'
   tag: changed
-  bug: 1660127
+  bugs:
+  - 1660127
 - note: 'Calendar: Opening an existing event now opens summary dialog'
   tag: changed
-  bug: 1575195
+  bugs:
+  - 1575195
 - note: 'Chat: Image based emoticons replaced with Unicode'
   tag: changed
-  bug: 1658648
+  bugs:
+  - 1658648
 - note: 'Chat: Non-functional Twitter support removed'
   tag: changed
-  bug: 1445778
+  bugs:
+  - 1445778
 - note: 'MailExtensions: messageDisplay APIs extended to support multiple selected messages'
   tag: changed
-  bug: 1617461
+  bugs:
+  - 1617461
 
 
 - note: 'Message list not in focus at startup'
   tag: fixed
-  bug: 1629522
+  bugs:
+  - 1629522
 - note: 'Email filters reported failure when moving a message to original folder'
   tag: fixed
-  bug: 1653690
+  bugs:
+  - 1653690
 - note: 'Sending messages sometimes failed when recipients were in LDAP address book'
   tag: fixed
-  bug: 1371309
+  bugs:
+  - 1371309
 - note: 'Address book: Creating mailing list from contacts sidebar failed'
   tag: fixed
-  bug: 1659162
+  bugs:
+  - 1659162
 - note: 'Address book: Search box icon duplicated after toolbar customization'
   tag: fixed
-  bug: 1650486
+  bugs:
+  - 1650486
 - note: 'vCard 2.1 attachments not handled properly'
   tag: fixed
-  bug: 1659323
-  bug2: 1660134
+  bugs:
+  - 1659323
+  - 1660134
 - note: 'Non-functional help menu items removed'
   tag: fixed
-  bug: 1659318
+  bugs:
+  - 1659318
 - note: 'Calendar: Event reminder details were unreadable'
   tag: fixed
-  bug: 1658923
+  bugs:
+  - 1658923
 
 - note: 'MailExtensions: browser.folders.delete failed on IMAP folders'
   tag: fixed
-  bug: 1651308
+  bugs:
+  - 1651308
 - note: 'MailExtensions: Content scripts in message composer did not work'
   tag: fixed
-  bug: 1652686
+  bugs:
+  - 1652686
 
 
 # Beta 2
 - note: 'OpenPGP enabled by default'
   tag: changed
-  bug: 1659536
+  bugs:
+  - 1659536
   group: 2
 - note: 'OpenPGP: Disabled the use of MD5/SM2/SM3 algorithms'
   tag: changed
-  bug: 1641720
+  bugs:
+  - 1641720
   group: 2
 
-- note: 'OpenPGP: Users with sub-identities were unable to encrypt or sign messages
-  when switching identities'
+- note: 'OpenPGP: Users with sub-identities were unable to encrypt or sign messages when
+    switching identities'
   tag: fixed
-  bug: 1661160
+  bugs:
+  - 1661160
   group: 2
-- note: 'Message filters: Filters shown as enabled in configuration dialog were not always enabled'
+- note: 'Message filters: Filters shown as enabled in configuration dialog were not always
+    enabled'
   tag: fixed
-  bug: 1660917
+  bugs:
+  - 1660917
   group: 2
 - note: 'OpenPGP message security window did not support dark mode'
   tag: fixed
-  bug: 1661203
+  bugs:
+  - 1661203
   group: 2
 - note: 'Thread summaries were unreadable on macOS using dark mode'
   tag: fixed
-  bug: 1660403
+  bugs:
+  - 1660403
   group: 2
-- note: 'Adding custom headers in the addressing widget (preference
-          mail.compose.other.header) did not work'
+- note: 'Adding custom headers in the addressing widget (preference mail.compose.other.header)
+    did not work'
   tag: fixed
-  bug: 1658890
+  bugs:
+  - 1658890
   group: 2
 
 # Beta 3
 - note: 'Drag and Drop reordering of recipient pills now supported'
   tag: new
-  bug: 1601749
+  bugs:
+  - 1601749
   group: 3
 - note: 'Calendar: Remote calendar auto-detection now supported'
   tag: new
-  bug: 306495
+  bugs:
+  - 306495
   group: 3
 - note: 'OpenPGP: Some signature states reported as "mismatch" now report "unknown"'
   tag: changed
-  bug: 1662881
+  bugs:
+  - 1662881
   group: 3
 - note: 'Privacy policy now displayed in a tab when updated'
   tag: changed
-  bug: 1651298
+  bugs:
+  - 1651298
   group: 3
 - note: 'Installation of "legacy" MailExtensions now disabled'
   tag: changed
-  bug: 1661216
+  bugs:
+  - 1661216
   group: 3
 - note: 'OpenPGP: Improvements to key importing when failures occur'
   tag: fixed
-  bug: 1663037
+  bugs:
+  - 1663037
   group: 3
 - note: 'OpenPGP: Decryption did not work with certain HTTP proxy configurations'
   tag: fixed
-  bug: 1661913
+  bugs:
+  - 1661913
   group: 3
-- note: 'OpenPGP: "Discover keys online" option did not work when searching for an email address'
+- note: 'OpenPGP: "Discover keys online" option did not work when searching for an email
+    address'
   tag: fixed
-  bug: 1663157
+  bugs:
+  - 1663157
   group: 3
 - note: 'OpenPGP: Creating a new key pair did not automatically select it for use'
   tag: fixed
-  bug: 1663422
+  bugs:
+  - 1663422
   group: 3
 - note: 'News reader crashed when downloading new articles. See unresolved issues.'
   tag: fixed
-  bug: 1657493
+  bugs:
+  - 1657493
   group: 3
 - note: 'Button to restore default folder icon color was not keyboard accessible'
   tag: fixed
-  bug: 1663075
+  bugs:
+  - 1663075
   group: 3
 - note: 'Windows 10 high-contrast theme fixes'
   tag: fixed
-  bug: 1661229
+  bugs:
+  - 1661229
   group: 3
 - note: 'More theme fixes and improvements'
   tag: fixed
-  bug: 1662536
-  bug2: 1662585
-  bug3: 1662831
-  bug4: 1659380
+  bugs:
+  - 1662536
+  - 1662585
+  - 1662831
+  - 1659380
   group: 3
 
 
 - note: 'Reply-To header moved in compose window; now appears under From header'
   tag: changed
-  bug: 1653814
+  bugs:
+  - 1653814
   group: 4
 - note: 'OpenPGP: Do not show external key UI when disabled by preference'
   tag: changed
-  bug: 1657111
+  bugs:
+  - 1657111
   group: 4
 - note: 'Calendar: Sidebar UI improvements'
   tag: changed
-  bug: 1621135
+  bugs:
+  - 1621135
   group: 4
 - note: 'Dragging & Dropping recipient pills resulted in lost pills when an error was present'
   tag: fixed
-  bug: 1663041
+  bugs:
+  - 1663041
   group: 4
 - note: 'Spellcheck suggestions were difficult to read in dark theme'
   tag: fixed
-  bug: 1663223
+  bugs:
+  - 1663223
   group: 4
 - note: 'Calendar: Multiple password prompts opened'
   tag: fixed
-  bug: 1664016
+  bugs:
+  - 1664016
   group: 4
 - note: 'Linux Distributions: UI was not rendered completely when built without updater'
   tag: fixed
-  bug: 1664607
-  bug2: 1664590
-  bug3: 1664721
+  bugs:
+  - 1664607
+  - 1664590
+  - 1664721
   group: 4
 
 # Unresolved
 - note: 'New news articles are not downloaded'
   tag: unresolved
-  bug: 1661955
+  bugs:
+  - 1661955

@@ -12,22 +12,26 @@ release:
   import_system_requirements: '52.0'
 notes:
 - note: 'Better support for Charter/Spectrum IMAP: Thunderbird will now detect Charter''s
-    IMAP service and send an additional IMAP select command to the server. Check the
-    various preferences ending in "force_select" to see whether auto-detection has
-    discovered this case.'
-  bug: 1231592
+    IMAP service and send an additional IMAP select command to the server. Check the various
+    preferences ending in "force_select" to see whether auto-detection has discovered this
+    case.'
+  bugs:
+  - 1231592
   tag: new
 - note: In search folders spanning multiple base folders clicking on a message sometimes
     marked another message as read
-  bug: 1387581
+  bugs:
+  - 1387581
   tag: fixed
-- note: IMAP alerts have been corrected and now show the correct server name in case
-    of connection problems
-  bug: 1401026
+- note: IMAP alerts have been corrected and now show the correct server name in case of
+    connection problems
+  bugs:
+  - 1401026
   tag: fixed
-- note: POP alerts have been corrected and now indicate connection problems in case
-    the configured POP server cannot be found
-  bug: 1400359
+- note: POP alerts have been corrected and now indicate connection problems in case the
+    configured POP server cannot be found
+  bugs:
+  - 1400359
   tag: fixed
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.5">security
     fixes</a>

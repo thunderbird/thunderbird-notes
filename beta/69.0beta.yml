@@ -1,119 +1,141 @@
 release:
   release_date: 2019-07-26
-  text: "**These release notes apply to Thunderbird version 69 beta 4 released August 28th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 69 beta 4 released August 28th,\
+    \ 2019.**"
   import_system_requirements: '68.0'
   groups:
-    -
-    - "Fixed in Beta 2"
-    - "Fixed in Beta 3"
-    - "New and Fixed in Beta 4"
+  - 
+  - "Fixed in Beta 2"
+  - "Fixed in Beta 3"
+  - "New and Fixed in Beta 4"
 
 notes:
-- note: 'While Thunderbird was in safe mode, the help menu did not offer an item to restart with add-ons enabled'
+- note: 'While Thunderbird was in safe mode, the help menu did not offer an item to restart
+    with add-ons enabled'
   tag: fixed
-  bug: 724963
+  bugs:
+  - 724963
   # Beta 2 below.
 - note: 'Chat text input area had near zero height (in beta 1)'
   tag: fixed
-  bug: 1564443
+  bugs:
+  - 1564443
   group: 2
 - note: 'Links on Help menu not working (in beta 1)'
   tag: fixed
-  bug: 1570586
+  bugs:
+  - 1570586
   group: 2
 - note: 'New email notification not properly formatted in some cases'
   tag: fixed
-  bug: 1569129
+  bugs:
+  - 1569129
   group: 2
 - note: 'F6 focus in address book not correct'
   tag: fixed
-  bug: 1546650
+  bugs:
+  - 1546650
   group: 2
 - note: 'Some visual glitches: Wrong colors, backgrounds, tooltips, etc.'
   tag: fixed
-  bug: 1569399
-  bug2: 1569670
-  bug3: 1567770
-  bug4: 1534114
+  bugs:
+  - 1569399
+  - 1569670
+  - 1567770
+  - 1534114
   group: 2
   # Beta 3 below.
 - note: 'Column choice and sort order in "Search Messages" dialog lost after relaunch'
   tag: fixed
-  bug: 297251
+  bugs:
+  - 297251
   group: 3
 - note: 'Theme installation not working via the Add-on Manager (in beta 1 and 2)'
   tag: fixed
-  bug: 1572827
+  bugs:
+  - 1572827
   group: 3
-- note: 'The spellchecker marked words preceding a single quote as misspelled (in beta 2)'
+- note: 'The spellchecker marked words preceding a single quote as misspelled (in beta
+    2)'
   tag: fixed
-  bug: 1565919
+  bugs:
+  - 1565919
   group: 3
-- note: 'More visual glitches: Attachment pane height, link color for detached/external attachments,
-    dark theme, compose window toolbar, error console window title'
+- note: 'More visual glitches: Attachment pane height, link color for detached/external
+    attachments, dark theme, compose window toolbar, error console window title'
   tag: fixed
-  bug: 1571663
-  bug2: 1572106
-  bug3: 1571634
-  bug4: 1527551
-  bug5: 1524255
-  bug6: 1567783
+  bugs:
+  - 1571663
+  - 1572106
+  - 1571634
+  - 1527551
+  - 1524255
+  - 1567783
   group: 3
   # Beta 4 below.
-- note: 'Offer to configure Exchange accounts for Office365.
-    A third-party add-on is required for this account type.
-    IMAP still exists as alternative.'
+- note: 'Offer to configure Exchange accounts for Office365. A third-party add-on is required
+    for this account type. IMAP still exists as alternative.'
   tag: new
-  bug: 1571772
+  bugs:
+  - 1571772
   group: 4
 - note: 'LDAP address auto-complete and server preference not working'
   tag: fixed
-  bug: 1574590
+  bugs:
+  - 1574590
   group: 4
-- note: 'Even more visual glitches: Scrollbar in chat account settings,
-    missing context menu in contacts sidebar, missing chat participant tooltip,
-    icon sizes in toolbars, selection of tagged messages using dark theme,
-    message pane toggle in application menu'
+- note: 'Even more visual glitches: Scrollbar in chat account settings, missing context
+    menu in contacts sidebar, missing chat participant tooltip, icon sizes in toolbars,
+    selection of tagged messages using dark theme, message pane toggle in application menu'
   tag: fixed
-  bug: 1529295
-  bug2: 1574724
-  bug3: 1570679
-  bug4: 1574859
-  bug5: 1575487
-  bug6: 1576397
+  bugs:
+  - 1529295
+  - 1574724
+  - 1570679
+  - 1574859
+  - 1575487
+  - 1576397
   group: 4
-- note: 'Links containing a #reference don''t open correctly in the external browser.
-    External browser may open in a background window.'
+- note: 'Links containing a #reference don''t open correctly in the external browser. External
+    browser may open in a background window.'
   tag: fixed
-  bug: 1573051
-  bug2: 1572970
+  bugs:
+  - 1573051
+  - 1572970
   group: 4
 - note: 'Clicking mailto links in browser doesn''t open Thunderbird Write window'
   tag: unresolved
-  bug: 1577706
+  bugs:
+  - 1577706
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
-  bug: 1574322
+  bugs:
+  - 1574322
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
-  bug: 1535265
-  bug2: 1553427
-  bug3: 1556261
+  bugs:
+  - 1535265
+  - 1553427
+  - 1556261
 # restore the following item for further betas.
 # - note: 'Calendar: Lightning not updating to corresponding beta NN version. Workaround: Set preference
   # <code>extensions.lastAppVersion</code> to a value of 68.0 to force a refresh. Check version number in the
   # Add-on Manager afterwards.'
   # tag: unresolved
   # bug: 1562573
-- note: 'Thunderbird 69 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
+- note: 'Thunderbird 69 beta may not recognise an existing profile. Workaround: start with
+    the profile manager option -p.'
   tag: unresolved
-  bug: 1542025
-- note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
-    the Mozilla FTP server. A US-English version can be downloaded
+  bugs:
+  - 1542025
+- note: 'Calendar: A localized version of Provider for Google Calendar not available at
+    addons.thunderbird.net or the Mozilla FTP server. A US-English version can be downloaded
     [here](http://ftp.mozilla.org/pub/thunderbird/releases/69.0b2/en-US/gdata-provider.en-US.xpi).
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
-  bug: 1516816
+  bugs:
+  - 1516816
 - note: 'Chat: Twitter not working due to API changes at Twitter.com.'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

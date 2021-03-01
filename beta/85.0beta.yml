@@ -11,142 +11,202 @@ release:
   import_system_requirements: '79.0beta'
 
   groups:
-    -
-    - "Fixed in Beta 2"
-    - "fixed in Beta 3"
+  - 
+  - "Fixed in Beta 2"
+  - "fixed in Beta 3"
 
 notes:
-- note: 'If a message fails to send, a message is now logged in the console tab of the Developer Toolbox which identifies which message failed to send'
+- note: 'If a message fails to send, a message is now logged in the console tab of the
+    Developer Toolbox which identifies which message failed to send'
   tag: new
-  bug: 1677980
+  bugs:
+  - 1677980
 - note: 'Address book: Added support for OAuth2 CardDAV providers'
   tag: new
-  bug: 1662979
-- note: 'Calendar: Thunderbird now informs the operating system that it knows how to open webcal: and webcals: URLs'
+  bugs:
+  - 1662979
+- note: 'Calendar: Thunderbird now informs the operating system that it knows how to open
+    webcal: and webcals: URLs'
   tag: new
-  bug: 352566
-- note: 'MailExtensions: Added the capability to query a specific headerMessageId via extension API which is persistent across application restarts'
+  bugs:
+  - 352566
+- note: 'MailExtensions: Added the capability to query a specific headerMessageId via extension
+    API which is persistent across application restarts'
   tag: new
-  bug: 1606573
+  bugs:
+  - 1606573
 - note: 'MailExtensions: new functions: accounts.getDefault() and accounts.getDefaultIdentity(accountId)'
   tag: new
-  bug: 1681141
+  bugs:
+  - 1681141
 
-- note: 'The UI Customization controls formerly in the Customize submenu have all been moved into the View menu'
+- note: 'The UI Customization controls formerly in the Customize submenu have all been
+    moved into the View menu'
   tag: changed
-  bug: 1668612
-- note: 'Address book: CardDAV is now enabled by default (it was previously behind a hidden preference and off by default)'
+  bugs:
+  - 1668612
+- note: 'Address book: CardDAV is now enabled by default (it was previously behind a hidden
+    preference and off by default)'
   tag: changed
-  bug: 1665230
+  bugs:
+  - 1665230
 - note: 'Calendar: Opening an event in the Today pane now opens the event summary'
   tag: changed
-  bug: 1673654
-- note: 'Calendar: When creating a new calendar, CalDAV is now used by default when supported by the server'
+  bugs:
+  - 1673654
+- note: 'Calendar: When creating a new calendar, CalDAV is now used by default when supported
+    by the server'
   tag: changed
-  bug: 1670420
-- note: 'MailExtensions: setComposeDetails and begin* functions of compose API now use body and plainTextBody as compose mode selectors'
+  bugs:
+  - 1670420
+- note: 'MailExtensions: setComposeDetails and begin* functions of compose API now use
+    body and plainTextBody as compose mode selectors'
   tag: changed
-  bug: 1681023
+  bugs:
+  - 1681023
 - note: 'MailExtensions: Variable names for accessing notifications have changed'
   tag: changed
-  bug: 1673958
+  bugs:
+  - 1673958
 - note: 'MailExtensions: Read-only address books now accessible'
   tag: changed
-  bug: 1679364
-- note: 'MailExtensions: messages.list(folder) on a non-existent folder now throws an ExtensionError exception'
+  bugs:
+  - 1679364
+- note: 'MailExtensions: messages.list(folder) on a non-existent folder now throws an ExtensionError
+    exception'
   tag: changed
-  bug: 15524497
+  bugs:
+  - 15524497
 
 - note: 'Various printing bugfixes'
   tag: fixed
-  bug: 1676166
-  bug2: 1677819
+  bugs:
+  - 1676166
+  - 1677819
 - note: 'Various message search toolbar fixes'
   tag: fixed
-  bug: 1679113
-  bug2: 1681010
+  bugs:
+  - 1679113
+  - 1681010
 - note: 'Address book: Read-only CardDAV address books were writable'
   tag: fixed
-  bug: 1680149
-- note: 'Address book: Autocomplete suggestions did not appear next to the field when editing address book entries with an IME enabled'
+  bugs:
+  - 1680149
+- note: 'Address book: Autocomplete suggestions did not appear next to the field when editing
+    address book entries with an IME enabled'
   tag: fixed
-  bug: 1676785
+  bugs:
+  - 1676785
 - note: 'Address book: Default address book preference was not honored'
   tag: fixed
-  bug: 1665430
+  bugs:
+  - 1665430
 - note: 'Compose window: The user-configured style for quoted text was not honored'
   tag: fixed
-  bug: 1641519
-- note: 'Compose window: Recipient addresses that had not yet been autocompleted were lost when clicking Send button'
+  bugs:
+  - 1641519
+- note: 'Compose window: Recipient addresses that had not yet been autocompleted were lost
+    when clicking Send button'
   tag: fixed
-  bug: 1674054
-  bug2: 1679848
-  bug3: 1681389
-- note: 'Compose window: New message is no longer marked as "changed" just from tabbing out of the recipient field without editing anything'
+  bugs:
+  - 1674054
+  - 1679848
+  - 1681389
+- note: 'Compose window: New message is no longer marked as "changed" just from tabbing
+    out of the recipient field without editing anything'
   tag: fixed
-  bug: 1681389
+  bugs:
+  - 1681389
 - note: 'Calendar: System timezone was not always properly detected'
   tag: fixed
-  bug: 1678839
-- note: 'Calendar: The toolbar in the invitation details dialog was not honoring the theme colors'
+  bugs:
+  - 1678839
+- note: 'Calendar: The toolbar in the invitation details dialog was not honoring the theme
+    colors'
   tag: fixed
-  bug: 1680755
-- note: 'Account settings: When creating a new account, some already entered settings did not copy to the Advanced Config dialog'
+  bugs:
+  - 1680755
+- note: 'Account settings: When creating a new account, some already entered settings did
+    not copy to the Advanced Config dialog'
   tag: fixed
-  bug: 1679664
-- note: 'Account settings: When updating the title of a news & blogging type account, the title of the tab did not change'
+  bugs:
+  - 1679664
+- note: 'Account settings: When updating the title of a news & blogging type account, the
+    title of the tab did not change'
   tag: fixed
-  bug: 1674645
+  bugs:
+  - 1674645
 - note: 'Chat: Could not add TLS certificate exceptions for XMPP connections'
   tag: fixed
-  bug: 1590471
-- note: 'MailExtensions: browserActions moved to a different toolbar are now properly displayed after restarting Thunderbird'
+  bugs:
+  - 1590471
+- note: 'MailExtensions: browserActions moved to a different toolbar are now properly displayed
+    after restarting Thunderbird'
   tag: fixed
-  bug: 1598190
-- note: 'MailExtensions: browser.compose.beginNew was not properly honoring plaintext vs HTML settings'
+  bugs:
+  - 1598190
+- note: 'MailExtensions: browser.compose.beginNew was not properly honoring plaintext vs
+    HTML settings'
   tag: fixed
-  bug: 1617377
-  bug2: 1658132
-- note: 'MailExtensions: browser.compose.setComposeDetails did not properly handling Windows-style line endings'
+  bugs:
+  - 1617377
+  - 1658132
+- note: 'MailExtensions: browser.compose.setComposeDetails did not properly handling Windows-style
+    line endings'
   tag: fixed
-  bug: 1672407
-- note: 'MailExtensions: windows.create and windows.update did not honor the titlePrefix parameter'
+  bugs:
+  - 1672407
+- note: 'MailExtensions: windows.create and windows.update did not honor the titlePrefix
+    parameter'
   tag: fixed
-  bug: 1647768
+  bugs:
+  - 1647768
 - note: 'MailExtensions: messages.getFull() did not return all parts with OpenPGP enabled'
   tag: fixed
-  bug: 1674964
+  bugs:
+  - 1674964
 
 # Beta 2
-- note: 'Sending messages and saving drafts with attachments that were copy & pasted into the compose window could fail'
+- note: 'Sending messages and saving drafts with attachments that were copy & pasted into
+    the compose window could fail'
   tag: fixed
-  bug: 1683548
+  bugs:
+  - 1683548
   group: 2
-- note: 'Calendar: Descriptions were sometimes blank when editing a single occurrence of a repeating event'
+- note: 'Calendar: Descriptions were sometimes blank when editing a single occurrence of
+    a repeating event'
   tag: fixed
-  bug: 1664731
+  bugs:
+  - 1664731
   group: 2
 - note: 'LDAP address book stability fix'
   tag: fixed
-  bug: 1680914
+  bugs:
+  - 1680914
   group: 2
 
 # Beta 3
-- note: 'Very long subject lines distorted the message compose and display windows, making them unusable'
+- note: 'Very long subject lines distorted the message compose and display windows, making
+    them unusable'
   tag: fixed
-  bug: 1682023
-  bug2: 77806
+  bugs:
+  - 1682023
+  - 77806
   group: 3
-- note: 'Messages with invalid vcard attachments were not marked as read when viewed in the preview window'
+- note: 'Messages with invalid vcard attachments were not marked as read when viewed in
+    the preview window'
   tag: fixed
-  bug: 1680468
+  bugs:
+  - 1680468
   group: 3
 - note: 'OpenPGP: Embedded newlines in an inline OpenPGP message failed to verify'
   tag: fixed
-  bug: 1679769
+  bugs:
+  - 1679769
   group: 3
 - note: 'Visual consistency and theme improvements'
   tag: fixed
-  bug: 1682808
-  bug2: 1682971
+  bugs:
+  - 1682808
+  - 1682971
   group: 3

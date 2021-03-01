@@ -19,34 +19,43 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: 'Visual glitches: Missing context menu in filter, downloads, password manager and Config Editor search boxes,
-    unwanted scrollbars and cut-off text in Account Manager,
+- note: 'Visual glitches: Missing context menu in filter, downloads, password manager and
+    Config Editor search boxes, unwanted scrollbars and cut-off text in Account Manager,
     incorrect colors in Calendar agenda scrollbars, theme issues on Windows 7'
   tag: fixed
-  bug: 1584720
-  bug2: 1584697
-  bug3: 1582830
-  bug4: 1585300
-  bug5: 1584487
+  bugs:
+  - 1584720
+  - 1584697
+  - 1582830
+  - 1585300
+  - 1584487
 - note: 'Some attachments couldn''t be opened in messages originating from MS Outlook 2016'
   tag: fixed
-  bug: 1584383
+  bugs:
+  - 1584383
 - note: 'Address book import form CSV'
   tag: fixed
-  bug: 1584026
+  bugs:
+  - 1584026
 - note: 'Performance problem in message body search'
   tag: fixed
-  bug: 1584558
-- note: 'Ctrl+Enter to send a message would open an attachment if the attachment pane had focus'
+  bugs:
+  - 1584558
+- note: 'Ctrl+Enter to send a message would open an attachment if the attachment pane had
+    focus'
   tag: fixed
-  bug: 1578450
+  bugs:
+  - 1578450
 - note: 'Calendar: Issues with "Today Pane" start-up'
   tag: fixed
-  bug: 1582746
+  bugs:
+  - 1582746
 - note: 'Calendar: Glitches with custom repeat and reminder number input'
   tag: fixed
-  bug: 1583340
-  bug2: 1583098
+  bugs:
+  - 1583340
+  - 1583098
 - note: 'Calendar: Problems with WCAP provider'
   tag: fixed
-  bug: 1582746
+  bugs:
+  - 1582746

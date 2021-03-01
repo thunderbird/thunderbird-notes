@@ -12,116 +12,152 @@ release:
     **Thunderbird 74 no longer supports "legacy" extensions.**
   import_system_requirements: '68.0'
   groups:
-    -
-    - "Changed and Fixed in Beta 2"
+  - 
+  - "Changed and Fixed in Beta 2"
 
 notes:
 - note: 'MailExtensions: API to block sending a message from compose window'
   tag: new
-  bug: 1532528
+  bugs:
+  - 1532528
 - note: 'MailExtensions: API to interact with message in compose window'
   tag: new
-  bug: 1590121
-- note: '**Add-on support: As of version 74.0 beta, Thunderbird only supports
-    MailExtensions and MailExtension Experiments.
-    Restartless add-ons and non-restartless legacy add-ons using XUL overlays
-    are no longer supported.**'
+  bugs:
+  - 1590121
+- note: '**Add-on support: As of version 74.0 beta, Thunderbird only supports MailExtensions
+    and MailExtension Experiments. Restartless add-ons and non-restartless legacy add-ons
+    using XUL overlays are no longer supported.**'
   tag: changed
-  bug: 1614237
+  bugs:
+  - 1614237
 - note: 'Calendar: The Lightning calendar add-on is now integrated into Thunderbird'
   tag: changed
-  bug: 1608610
+  bugs:
+  - 1608610
 - note: 'Account Manager moved to a tab'
   tag: changed
-  bug: 1610445
+  bugs:
+  - 1610445
 - note: 'Improved UI of global search results tab'
   tag: changed
-  bug: 1022228
+  bugs:
+  - 1022228
 - note: 'MailExtensions: Allow commands.update() to disable a command'
   tag: changed
-  bug: 1475043
+  bugs:
+  - 1475043
 - note: 'MailExtensions: Allow browser.query.messages to query by tag'
   tag: changed
-  bug: 1600547
-- note: 'MailExtensions: Changed folder enumeration to return tree structure rather than list'
+  bugs:
+  - 1600547
+- note: 'MailExtensions: Changed folder enumeration to return tree structure rather than
+    list'
   tag: changed
-  bug: 1606584
+  bugs:
+  - 1606584
 - note: 'MailExtensions: Exposed message "Junk" status to addons'
   tag: changed
-  bug: 1610457
-- note: 'When copying messages from an IMAP folder to a local folder, offline store wasn''t used'
+  bugs:
+  - 1610457
+- note: 'When copying messages from an IMAP folder to a local folder, offline store wasn''t
+    used'
   tag: fixed
-  bug: 505456
+  bugs:
+  - 505456
 - note: 'SMTP timeout when forwarding message via filter'
   tag: fixed
-  bug: 1222046
+  bugs:
+  - 1222046
 - note: 'Partial updates not working'
   tag: fixed
-  bug: 1410512
+  bugs:
+  - 1410512
 - note: 'Thread collapsed when opening news message in a new window'
   tag: fixed
-  bug: 1526765
-- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird 60'
+  bugs:
+  - 1526765
+- note: 'Addons not automatically updated to compatible version after upgrade from Thunderbird
+    60'
   tag: fixed
-  bug: 1574183
+  bugs:
+  - 1574183
 - note: 'Opening the properties of a folder sometimes hung on Mac'
   tag: fixed
-  bug: 1574322
-- note: 'Multiple master password prompts. Fixed by prompting for master password at startup time.'
+  bugs:
+  - 1574322
+- note: 'Multiple master password prompts. Fixed by prompting for master password at startup
+    time.'
   tag: fixed
-  bug: 1610390
+  bugs:
+  - 1610390
 - note: 'Offline replication of LDAP databases sometimes failed to replace an earlier copy'
   tag: fixed
-  bug: 1608304
+  bugs:
+  - 1608304
 - note: 'Calendar: Last day of multiple-day event not displayed'
   tag: fixed
-  bug: 1572964
+  bugs:
+  - 1572964
 - note: 'Chat: Avatars not displayed in tooltips'
   tag: fixed
-  bug: 1592422
+  bugs:
+  - 1592422
 
 # beta 2 follows
 - note: 'Thunderbird will now display a popup window when starting up on a new profile'
   tag: changed
-  bug: 1590036
+  bugs:
+  - 1590036
   group: 2
 - note: 'MailExtensions: Action APIs now provide tab and click information'
   tag: changed
-  bug: 1617514
+  bugs:
+  - 1617514
   group: 2
 - note: 'MailExtensions: Allow composeAction to open popups from onBeforeSend'
   tag: changed
-  bug: 1617742
+  bugs:
+  - 1617742
   group: 2
 - note: 'Long subject lines did not wrap in message header'
   tag: fixed
-  bug: 1616764
+  bugs:
+  - 1616764
   group: 2
 - note: 'Account Manager in tab not consistent with Options/Preferences in tab'
   tag: fixed
-  bug: 1613758
+  bugs:
+  - 1613758
   group: 2
-- note: '"Get New Messages for All Accounts" not working for OAuth2-authenticated IMAP accounts'
+- note: '"Get New Messages for All Accounts" not working for OAuth2-authenticated IMAP
+    accounts'
   tag: fixed
-  bug: 1593611
+  bugs:
+  - 1593611
   group: 2
 - note: 'Searching in message bodies led to false negatives under some circumstances in
     quoted-printable encoded HTML bodies'
   tag: fixed
-  bug: 1614796
+  bugs:
+  - 1614796
   group: 2
-- note: 'Calendar: Starting with 74.0 beta 2, building Thunderbird with --enable-calendar is deprecated,
-    and should be removed from your mozconfig file'
+- note: 'Calendar: Starting with 74.0 beta 2, building Thunderbird with --enable-calendar
+    is deprecated, and should be removed from your mozconfig file'
   tag: fixed
-  bug: 1612190
+  bugs:
+  - 1612190
   group: 2
 - note: 'Chat: macOS users were not be able to connect to a server'
   tag: fixed
-  bug: 1615714
+  bugs:
+  - 1615714
   group: 2
 - note: 'WebExtension toolbar button badges not displayed'
   tag: unresolved
-  bug: 1599275
-- note: 'Address auto-completion not working on Mac if the Mac address book is enabled (File > Use Mac OS X Address Book)'
+  bugs:
+  - 1599275
+- note: 'Address auto-completion not working on Mac if the Mac address book is enabled
+    (File > Use Mac OS X Address Book)'
   tag: unresolved
-  bug: 1615468
+  bugs:
+  - 1615468

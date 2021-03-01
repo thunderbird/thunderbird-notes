@@ -15,75 +15,95 @@ release:
 notes:
 - note: 'MailExtensions: Added browser.windows.openDefaultBrowser()'
   tag: new
-  bug: 1664708
+  bugs:
+  - 1664708
 
 - note: Thunderbird now only shows quota exceeded indications on the main window
   tag: changed
-  bug: 1671748
+  bugs:
+  - 1671748
 - note: 'MailExtensions: menus API enabled in messages being composed'
   tag: changed
-  bug: 1670832
-- note: 'MailExtensions: Honor allowScriptsToClose argument in windows.create API
-  function'
+  bugs:
+  - 1670832
+- note: 'MailExtensions: Honor allowScriptsToClose argument in windows.create API function'
   tag: changed
-  bug: 1675940
-- note: 'MailExtensions: APIs that returned an accountId will reflect the account
-  the message belongs to, not what is stored in message headers'
+  bugs:
+  - 1675940
+- note: 'MailExtensions: APIs that returned an accountId will reflect the account the message
+    belongs to, not what is stored in message headers'
   tag: changed
-  bug: 1644032
+  bugs:
+  - 1644032
 
 - note: Keyboard shortcut for toggling message "read" status not shown in menus
   tag: fixed
-  bug: 1619248
-- note: 'OpenPGP: After importing a secret key, Key Manager displayed properties of
-  the wrong key'
+  bugs:
+  - 1619248
+- note: 'OpenPGP: After importing a secret key, Key Manager displayed properties of the
+    wrong key'
   tag: fixed
-  bug: 1667054
+  bugs:
+  - 1667054
 - note: 'OpenPGP: Inline PGP parsing improvements'
   tag: fixed
-  bug: 1660041
+  bugs:
+  - 1660041
 - note: 'OpenPGP: Discovering keys online via Key Manager sometimes failed on Linux'
   tag: fixed
-  bug: 1634053
+  bugs:
+  - 1634053
 - note: 'OpenPGP: Encrypted attachment "Decrypt and Open/Save As" did not work'
   tag: fixed
-  bug: 1663169
+  bugs:
+  - 1663169
 - note: 'OpenPGP: Importing keys failed on macOS'
   tag: fixed
-  bug: 1680757
+  bugs:
+  - 1680757
 - note: 'OpenPGP: Verification of clear signed UTF-8 text failed'
   tag: fixed
-  bug: 1679756
+  bugs:
+  - 1679756
 - note: 'Address book: Some columns incorrectly displayed no data'
   tag: fixed
-  bug: 1631201
-- note: 'Address book: The address book view did not update after changing the name
-  format in the menu'
+  bugs:
+  - 1631201
+- note: 'Address book: The address book view did not update after changing the name format
+    in the menu'
   tag: fixed
-  bug: 1678555
+  bugs:
+  - 1678555
 - note: 'Calendar: Could not import an ICS file into a CalDAV calendar'
   tag: fixed
-  bug: 1652984
+  bugs:
+  - 1652984
 - note: 'Calendar: Two "Home" calendars were visible on a new profile'
   tag: fixed
-  bug: 1656782
+  bugs:
+  - 1656782
 - note: 'Calendar: Dark theme was incomplete on Linux'
   tag: fixed
-  bug: 1655543
+  bugs:
+  - 1655543
 - note: 'Dark theme did not apply to new mail notification popups'
   tag: fixed
-  bug: 1681083
+  bugs:
+  - 1681083
 - note: 'Folder icon, message list, and contact side bar visual improvements'
   tag: fixed
-  bug: 1679436
-  bug2: 1680432
-  bug3: 1680947
+  bugs:
+  - 1679436
+  - 1680432
+  - 1680947
 - note: 'MailExtensions: HTTP refresh in browser content tabs did not work'
   tag: fixed
-  bug: 1667774
+  bugs:
+  - 1667774
 - note: 'MailExtensions: messageDisplayScripts failed to run in main window'
   tag: fixed
-  bug: 1674932
+  bugs:
+  - 1674932
 
 - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.6)
   tag: fixed
@@ -91,4 +111,5 @@ notes:
 
 - note: 'Thunderbird performs sluggishly on macOS Big Sur'
   tag: unresolved
-  bug: 1677272
+  bugs:
+  - 1677272
