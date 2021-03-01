@@ -22,9 +22,9 @@ notes:
   tag: new
   bug: 1640760
 
-- note: 'Address book support for Outlook Express and Windows Address Book was removed'
+- note: 'Clicking on an already-selected pill in the recipient list will now allow editing the address'
   tag: changed
-  bug: 1687132
+  bug: 1602901
 - note: 'Movemail support was removed'
   tag: changed
   bug: 1625741
@@ -32,7 +32,8 @@ notes:
 - note: 'Copying a large message to an IMAP server would sometimes prematurely display a time-out error'
   tag: fixed
   bug: 1618455
-- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded; existing messages which were previously incorrectly encoded may now display with some words not separated by a space'
+- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed were incorrectly encoded;
+    existing messages which were previously incorrectly encoded may now display with some words not separated by a space'
   tag: fixed
   bug: 1689804
 - note: 'Context menu did not open in the message source window'
@@ -44,9 +45,6 @@ notes:
 - note: 'Newly-added identities were not listed in the account manager until it was closed and reopened'
   tag: fixed
   bug: 1670464
-- note: 'Clicking on an already-selected pill in the recipient list will now let you edit the address'
-  tag: fixed
-  bug: 1602901
 - note: 'Message headers in compose window disregarded manual resizing when adding additional recipients'
   tag: fixed
   bug: 1691466
