@@ -1,59 +1,71 @@
 release:
   release_date: 2017-11-10
-  text: "**These release notes apply to Thunderbird version 57 beta 2 released November 20th, 2017.**"
+  text: "**These release notes apply to Thunderbird version 57 beta 2 released November\
+    \ 20th, 2017.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2057.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 notes:
 - note: Allow changing the Spellcheck Language from status bar display
   tag: new
-  bug: 1399370
+  bugs:
+  - 1399370
 - note: '"New Message from Template" command'
   tag: new
-  bug: 1389083
-- note: '"Edit As New Message" will now use the account''s default compose format,
-    either HTML or plain text ignoring the format of the message. Plain text messages
-    will be converted to HTML and vice versa. Then using the modifier, the format
-    choice will be reverted.'
+  bugs:
+  - 1389083
+- note: '"Edit As New Message" will now use the account''s default compose format, either
+    HTML or plain text ignoring the format of the message. Plain text messages will be
+    converted to HTML and vice versa. Then using the modifier, the format choice will be
+    reverted.'
   tag: changed
-  bug: 731688
-- note: The plain text to HTML conversion has been improved where such a conversion
-    is necessary for "Edit As New Message" or when the shift modifier is used for
-    "Edit Draft" or "New Message from Template".
+  bugs:
+  - 731688
+- note: The plain text to HTML conversion has been improved where such a conversion is
+    necessary for "Edit As New Message" or when the shift modifier is used for "Edit Draft"
+    or "New Message from Template".
   tag: changed
-  bug: 1392052
-- note: The "Edit Draft" command now also honors the use of the shift key to convert
-    HTML to plain text or vice versa when editing a draft
+  bugs:
+  - 1392052
+- note: The "Edit Draft" command now also honors the use of the shift key to convert HTML
+    to plain text or vice versa when editing a draft
   tag: changed
-  bug: 1389771
-- note: When attaching a message via drag and drop, the subject of the message is
-    now used as attachment name instead of "Attached Message"
+  bugs:
+  - 1389771
+- note: When attaching a message via drag and drop, the subject of the message is now used
+    as attachment name instead of "Attached Message"
   tag: changed
-  bug: 209629
-- note: On first start, Thunderbird now shows the account setup dialog, no longer
-    the account provisioner dialog
+  bugs:
+  - 209629
+- note: On first start, Thunderbird now shows the account setup dialog, no longer the account
+    provisioner dialog
   tag: changed
-  bug: 1349259
-- note: Thunderbird follows Firefox' Photon design with rectangular tabs and many
-    other theme improvements
+  bugs:
+  - 1349259
+- note: Thunderbird follows Firefox' Photon design with rectangular tabs and many other
+    theme improvements
   tag: changed
-  bug: 1387877
-- note: In Thunderbird 54 beta a better support for Charter users was introduced.
-    As a side effect, messages moved to a different IMAP folder were immediately removed
-    from the source folder, even when the delete model "Just mark it as deleted" was
-    in effect. This has now been restored to its pre-version 54 state, so moved IMAP
-    messages are only crossed out in the source folder when this delete model is used.
+  bugs:
+  - 1387877
+- note: In Thunderbird 54 beta a better support for Charter users was introduced. As a
+    side effect, messages moved to a different IMAP folder were immediately removed from
+    the source folder, even when the delete model "Just mark it as deleted" was in effect.
+    This has now been restored to its pre-version 54 state, so moved IMAP messages are
+    only crossed out in the source folder when this delete model is used.
   tag: changed
-  bug: 1352859
-- note: 'When many Thunderbird clients or other email clients accessed the same IMAP
-    draft folder, messages were sometimes sent with the wrong identity. This has been
-    corrected and the user will be notified if none of their identities matches the
-    draft. '
+  bugs:
+  - 1352859
+- note: 'When many Thunderbird clients or other email clients accessed the same IMAP draft
+    folder, messages were sometimes sent with the wrong identity. This has been corrected
+    and the user will be notified if none of their identities matches the draft. '
   tag: fixed
-  bug: 394216
+  bugs:
+  - 394216
 - note: "Passwords can now contain non-ASCII characters, like international characters,\
-    \ for example \xE1\xE4\xDF, and symbols, for example \u20AC\xA7"
+    \ for example áäß, and symbols, for example €§"
   tag: fixed
-  bug: 312593
+  bugs:
+  - 312593
 - note: Certain add-ons would cause Thunderbird not to start
   tag: fixed
-  bug: 1417209
+  bugs:
+  - 1417209

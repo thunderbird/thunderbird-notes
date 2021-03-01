@@ -21,46 +21,54 @@ release:
 notes:
 - note: 'Issues with attachments in IMAP messages'
   tag: fixed
-  bug: 1579341
-- note: 'Gmail accounts ignored a non-standard trash folder selection.
-    Note: If non-standard trash folder was selected previously in the account settings,
-    this setting will now take effect which may be unexpected.'
+  bugs:
+  - 1579341
+- note: 'Gmail accounts ignored a non-standard trash folder selection. Note: If non-standard
+    trash folder was selected previously in the account settings, this setting will now
+    take effect which may be unexpected.'
   tag: fixed
-  bug: 1578148
-- note: 'Entering/pasting lists of recipients into the addressing widget or
-    mailing list not working reliably, especially when lists contained multiple commas
-    or semicolons'
+  bugs:
+  - 1578148
+- note: 'Entering/pasting lists of recipients into the addressing widget or mailing list
+    not working reliably, especially when lists contained multiple commas or semicolons'
   tag: fixed
-  bug: 1575046
-  bug: 1336785
-  bug: 1059988
+  bugs:
+  - 1575046
+  - 1336785
+  - 1059988
 - note: 'Edit mailing list not working'
   tag: fixed
-  bug: 1575046 
+  bugs:
+  - 1575046
 - note: 'Various theme fixes, especially dark theme improvements for Calendar'
   tag: fixed
-  bug: 1579411
-  bug2: 1577310
-  bug3: 1577591
-  bug4: 1582564
-  bug5: 1582830
+  bugs:
+  - 1579411
+  - 1577310
+  - 1577591
+  - 1582564
+  - 1582830
 - note: 'Contrast between tag label and background not optimal'
   tag: fixed
-  bug: 1579364
+  bugs:
+  - 1579364
 - note: 'Account Central pane always loaded at start-up'
   tag: fixed
-  bug: 1579575
+  bugs:
+  - 1579575
 - note: '"Config Editor" button not removed if blocked by policy'
   tag: fixed
-  bug: 1579019
-- note: 'Calendar: Free/busy information in attendees dialog not scrolled correctly.
-    Note: Scroll arrows still not behaving correctly.'
+  bugs:
+  - 1579019
+- note: 'Calendar: Free/busy information in attendees dialog not scrolled correctly. Note:
+    Scroll arrows still not behaving correctly.'
   tag: fixed
-  bug: 1579030
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.1.1">security
+  bugs:
+  - 1579030
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.1.1">security
     fixes</a>
   tag: fixed
 - note: 'Calendar: Problems with WCAP provider'
   tag: unresolved
-  bug: 1582746
+  bugs:
+  - 1582746

@@ -13,34 +13,42 @@ release:
   import_system_requirements: '78.0'
 
 notes:
-- note: Thunderbird will no longer automatically install updates when Preferences
-    tab is opened
+- note: Thunderbird will no longer automatically install updates when Preferences tab is
+    opened
   tag: changed
-  bug: 1666324
+  bugs:
+  - 1666324
 - note: 'OpenPGP: Improved support for encrypting with subkeys'
   tag: fixed
-  bug: 1665281
-- note: 'OpenPGP: Encrypted messages with international characters were sometimes
-    displayed incorrectly'
+  bugs:
+  - 1665281
+- note: 'OpenPGP: Encrypted messages with international characters were sometimes displayed
+    incorrectly'
   tag: fixed
-  bug: 1665287
+  bugs:
+  - 1665287
 - note: Single-click deletion of recipient pills with middle mouse button restored
   tag: fixed
-  bug: 1661438
+  bugs:
+  - 1661438
 - note: Searching an address book list did not display results
   tag: fixed
-  bug: 1663935
+  bugs:
+  - 1663935
 - note: Windows installer was unreadable with Windows in high contrast mode
   tag: fixed
-  bug: 1665321
+  bugs:
+  - 1665321
 - note: Dark mode, high contrast, and Windows theming fixes
   tag: fixed
-  bug: 1665336
-  bug2: 1667109
-  bug3: 1667317
-  bug4: 1661229
+  bugs:
+  - 1665336
+  - 1667109
+  - 1667317
+  - 1661229
 
 
 - note: 'Message list is not focused at startup'
   tag: unresolved
-  bug: 1620310
+  bugs:
+  - 1620310

@@ -9,72 +9,88 @@ release:
     _[#openpgp:mozilla.org](https://chat.mozilla.org/#/room/#openpgp:mozilla.org)_.**
   import_system_requirements: '68.0'
   groups:
-  -
+  - 
   - "New and Fixed in Beta 2"
   - "New and Fixed in Beta 3"
 
 notes:
 - note: 'Native support for OpenPGP encryption'
   tag: new
-  bug: 1628424
+  bugs:
+  - 1628424
 - note: 'DisableSystemAddonUpdate policy added'
   tag: new
-  bug: 1628156
+  bugs:
+  - 1628156
 - note: 'Global Search menu item in app menu'
   tag: new
-  bug: 1356792
+  bugs:
+  - 1356792
 - note: '"Delete" action column in thread pane (message list)'
   tag: new
-  bug: 1626841
+  bugs:
+  - 1626841
 - note: 'Calendar: Added ICS import support to -file command line option'
   tag: new
-  bug: 1583595
+  bugs:
+  - 1583595
 - note: 'MailExtensions: Added composeScripts API'
   tag: new
-  bug: 1630786
+  bugs:
+  - 1630786
 - note: 'Various theme and dark mode improvements'
   tag: changed
-  bug: 1629084
-  bug2: 1627748
-  bug3: 1629515
-  bug4: 1629518
-  bug5: 1630985
-  bug6: 1631779
+  bugs:
+  - 1629084
+  - 1627748
+  - 1629515
+  - 1629518
+  - 1630985
+  - 1631779
 - note: 'MailExtensions: Return a tab object with getComposeDetails'
   tag: changed
-  bug: 1629023
+  bugs:
+  - 1629023
 - note: 'Password display font had characters that were difficult to read'
   tag: fixed
-  bug: 242418
+  bugs:
+  - 242418
 - note: 'Improvements to recipient address pills'
   tag: fixed
-  bug: 1627451
-  bug2: 1630765
-  bug3: 1633287
-  bug4: 1633562
-  bug5: 1629295
+  bugs:
+  - 1627451
+  - 1630765
+  - 1633287
+  - 1633562
+  - 1629295
 - note: 'Calendar: Event printouts were blank'
   tag: fixed
-  bug: 1626391
+  bugs:
+  - 1626391
 - note: 'MailExtensions: browser.runtime.openOptionsPage did not display page'
   tag: fixed
-  bug: 1526802
+  bugs:
+  - 1526802
 - note: 'MailExtensions: Calendar and task tabs did not trigger browser.tabs events'
   tag: fixed
-  bug: 1627556
+  bugs:
+  - 1627556
 
 # Beta 2
 - note: 'Lock icon added next to OTR encrypted chat messages'
   tag: new
-  bug: 1519799
+  bugs:
+  - 1519799
   group: 2
 - note: 'Chat on macOS did not connect to servers'
   tag: fixed
-  bug: 1635734
+  bugs:
+  - 1635734
   group: 2
 - note: 'Global search(Gloda) view was broken'
   tag: fixed
-  bug: 1636500
+  bugs:
+  - 1636500
   group: 2
 
 # Beta 3
@@ -83,28 +99,35 @@ notes:
   group: 3
 - note: 'WebSockets could not be used'
   tag: fixed
-  bug: 1627649
+  bugs:
+  - 1627649
   group: 3
 - note: 'Custom headers added for searching or filtering could not be removed'
   tag: fixed
-  bug: 1631577
+  bugs:
+  - 1631577
   group: 3
 
-- note: 'Older Linux distributions may not have working OpenPGP support when using
-    the official builds'
+- note: 'Older Linux distributions may not have working OpenPGP support when using the
+    official builds'
   tag: unresolved
-  bug: 1634209
+  bugs:
+  - 1634209
 - note: 'Print progress dialog is disabled'
   tag: unresolved
-  bug: 1625299
+  bugs:
+  - 1625299
 - note: 'Message composer not using correct fonts'
   tag: unresolved
-  bug: 1622231
-  bug2: 1625218
+  bugs:
+  - 1622231
+  - 1625218
 - note: 'Addons cannot be removed'
   tag: unresolved
-  bug: 1629459
+  bugs:
+  - 1629459
 - note: 'Anomalies when inserting an image into the compose window'
   tag: unresolved
-  bug: 1636971
+  bugs:
+  - 1636971
 

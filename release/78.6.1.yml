@@ -16,57 +16,72 @@ notes:
 - note: 'MailExtensions: browserAction, composeAction, and messageDisplayAction toolbar
     buttons now support label and default_label properties'
   tag: changed
-  bug: 1583478
+  bugs:
+  - 1583478
 
-- note: 'Running a quicksearch that returned no results did not offer to re-run as a global search'
+- note: 'Running a quicksearch that returned no results did not offer to re-run as a global
+    search'
   tag: fixed
-  bug: 1663153
+  bugs:
+  - 1663153
 - note: Message search toolbar fixes
   tag: fixed
-  bug: 1681010
-- note: Very long subject lines distorted the message compose and display windows,
-    making them unusable
+  bugs:
+  - 1681010
+- note: Very long subject lines distorted the message compose and display windows, making
+    them unusable
   tag: fixed
-  bug: 77806
-  bug2: 1682023
-- note: 'Compose window: Recipient addresses that had not yet been autocompleted were
-  lost when clicking Send button'
+  bugs:
+  - 77806
+  - 1682023
+- note: 'Compose window: Recipient addresses that had not yet been autocompleted were lost
+    when clicking Send button'
   tag: fixed
-  bug: 1674054
-  bug2: 1679848
-  bug3: 1681389
+  bugs:
+  - 1674054
+  - 1679848
+  - 1681389
 - note: 'Compose window: New message is no longer marked as "changed" just from tabbing
-  out of the recipient field without editing anything'
+    out of the recipient field without editing anything'
   tag: fixed
-  bug: 1681389
+  bugs:
+  - 1681389
 - note: 'Account autodiscover fixes when using MS Exchange servers'
   tag: fixed
-  bug: 1679759
-  bug2: 1682890
+  bugs:
+  - 1679759
+  - 1682890
 - note: LDAP address book stability fix
   tag: fixed
-  bug: 1680914
-- note: Messages with invalid vcard attachments were not marked as read when viewed
-    in the preview window
+  bugs:
+  - 1680914
+- note: Messages with invalid vcard attachments were not marked as read when viewed in
+    the preview window
   tag: fixed
-  bug: 1680468
+  bugs:
+  - 1680468
 - note: 'Chat: Could not add TLS certificate exceptions for XMPP connections'
   tag: fixed
-  bug: 1590471
+  bugs:
+  - 1590471
 - note: 'Calendar: System timezone was not always properly detected'
   tag: fixed
-  bug: 1678839
-- note: 'Calendar: Descriptions were sometimes blank when editing a single occurrence
-  of a repeating event'
+  bugs:
+  - 1678839
+- note: 'Calendar: Descriptions were sometimes blank when editing a single occurrence of
+    a repeating event'
   tag: fixed
-  bug: 1664731
+  bugs:
+  - 1664731
 - note: Various printing bugfixes
   tag: fixed
-  bug: 1676166
+  bugs:
+  - 1676166
 - note: Visual consistency and theme improvements
   tag: fixed
-  bug: 1682808
-  bug2: 1682971
+  bugs:
+  - 1682808
+  - 1682971
 
 - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.6.1)
   tag: fixed

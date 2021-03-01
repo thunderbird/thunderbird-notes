@@ -11,126 +11,157 @@ release:
   import_system_requirements: '79.0beta'
 
   groups:
-  -
+  - 
   - "New, Changed, and Fixed in Beta 2"
   - "New, Changed, and Fixed in Beta 3"
 
 notes:
 - note: 'Calendar: Category colors now displayed in category selection dropdown'
   tag: new
-  bug: 736243
+  bugs:
+  - 736243
 - note: 'Calendar: "Edit" item added to event context menu'
   tag: new
-  bug: 1651783
+  bugs:
+  - 1651783
 - note: 'MailExtensions: "compose_attachments" context added to Menus API'
   tag: new
-  bug: 1670822
+  bugs:
+  - 1670822
 - note: 'MailExtensions: Menus API now available on displayed messages'
   tag: new
-  bug: 1670825
+  bugs:
+  - 1670825
 
 - note: 'MailExtensions: Changed contact properties now passed in contact.onUpdated event'
   tag: changed
-  bug: 1665454
+  bugs:
+  - 1665454
 
 - note: 'Searching global search results did not work'
   tag: fixed
-  bug: 1664761
+  bugs:
+  - 1664761
 - note: 'Link location was not focused by default when adding a hyperlink in message composer'
   tag: fixed
-  bug: 1670660
+  bugs:
+  - 1670660
 - note: 'Appmenu displayed visual glitches'
   tag: fixed
-  bug: 1636243
+  bugs:
+  - 1636243
 - note: 'Keyboard shortcut for toggling message "read" status not shown in menus'
   tag: fixed
-  bug: 1619248
+  bugs:
+  - 1619248
 - note: 'Chat: Previous conversations were not shown'
   tag: fixed
-  bug: 1665040
+  bugs:
+  - 1665040
 - note: 'Calendar: Subscribing to ICS calendars was not possible'
   tag: fixed
-  bug: 1663399
+  bugs:
+  - 1663399
 - note: 'Calendar: Reminder details appeared editable when viewing an event'
   tag: fixed
-  bug: 1651779
+  bugs:
+  - 1651779
 - note: 'Calendar: Two "Home" calendars were visible on a new profile'
   tag: fixed
-  bug: 1656782
+  bugs:
+  - 1656782
 
 
 # beta 2
-- note: 'Thunderbird prompts for an address to use when starting an email from an address book entry
-    with multiple addresses'
+- note: 'Thunderbird prompts for an address to use when starting an email from an address
+    book entry with multiple addresses'
   tag: new
-  bug: 84028
+  bugs:
+  - 84028
   group: 2
 
 - note: 'OpenPGP public key import now supports multi-file selection'
   tag: changed
-  bug: 1665145
+  bugs:
+  - 1665145
   group: 2
 
 - note: 'Advanced address book search dialog was unusable'
   tag: fixed
-  bug: 1668147
+  bugs:
+  - 1668147
   group: 2
 - note: 'Encrypted draft reply emails lost "Re:" prefix'
   tag: fixed
-  bug: 1661510
+  bugs:
+  - 1661510
   group: 2
 - note: 'Replying to a newsgroup message did not open the compose window'
   tag: fixed
-  bug: 1672667
+  bugs:
+  - 1672667
   group: 2
 - note: 'Unable to delete multiple newsgroup messages'
   tag: fixed
-  bug: 1657988
+  bugs:
+  - 1657988
   group: 2
-- note: 'Visual glitches when selecting multiple messages in the message pane and using Ctrl+click'
+- note: 'Visual glitches when selecting multiple messages in the message pane and using
+    Ctrl+click'
   tag: fixed
-  bug: 1671800
+  bugs:
+  - 1671800
   group: 2
 - note: 'Switching between dark and light mode could lead to unreadable text on macOS'
   tag: fixed
-  bug: 1668989
+  bugs:
+  - 1668989
   group: 2
 
 
 # beta 3
 - note: 'OpenPGP: Added option to disable attaching the public key to a signed message'
-  bug: 1654950
+  bugs:
+  - 1654950
   tag: new
   group: 3
 - note: 'OpenPGP: Added option to disable email subject encryption'
-  bug: 1666073
+  bugs:
+  - 1666073
   tag: new
   group: 3
 
-- note: 'MailExtensions: browser.tabs.create will now wait for "mail-delayed-startup-finished" event'
-  bug: 1674407
+- note: 'MailExtensions: browser.tabs.create will now wait for "mail-delayed-startup-finished"
+    event'
+  bugs:
+  - 1674407
   tag: changed
   group: 3
 
 - note: 'OpenPGP: Support for inline PGP messages improved'
-  bug: 1672851
+  bugs:
+  - 1672851
   tag: fixed
   group: 3
 - note: 'OpenPGP: Message security dialog showed unverified keys as unavailable'
-  bug: 1675285
+  bugs:
+  - 1675285
   tag: fixed
   group: 3
 - note: 'Calendar: HTML rendering in event descriptions restored'
-  bug: 1659363
-  bug2: 1673164
+  bugs:
+  - 1659363
+  - 1673164
   tag: fixed
   group: 3
 - note: 'Chat: New chat contact menu item did not function'
-  bug: 1663321
+  bugs:
+  - 1663321
   tag: fixed
   group: 3
 - note: 'Theming improvements'
-  bug: 1674606
-  bug2: 1673861
+  bugs:
+  - 1674606
+  - 1673861
   tag: fixed
   group: 3

@@ -20,27 +20,32 @@ release:
 notes:
 - note: 'Account Manager: text fields were too small in some cases'
   tag: fixed
-  bug: 1616387
+  bugs:
+  - 1616387
 - note: 'Account Manager: Authentication method did not update when selecting an SMTP server'
   tag: fixed
-  bug: 1631437
+  bugs:
+  - 1631437
 - note: 'Links with embedded credentials did not open on Windows'
   tag: fixed
-  bug: 1609451
-- note: 'Messages were sometimes sent with a badly formed address when filled from
-    the address book'
+  bugs:
+  - 1609451
+- note: 'Messages were sometimes sent with a badly formed address when filled from the
+    address book'
   tag: fixed
-  bug: 1629842
-- note: 'Accessibility: Screen readers were reporting too many activities from the
-    status bar'
+  bugs:
+  - 1629842
+- note: 'Accessibility: Screen readers were reporting too many activities from the status
+    bar'
   tag: fixed
-  bug: 1628891
-- note: 'MailExtensions: Setting IMAP messages as read with browser.messages.updated
-    failed to persist'
+  bugs:
+  - 1628891
+- note: 'MailExtensions: Setting IMAP messages as read with browser.messages.updated failed
+    to persist'
   tag: fixed
-  bug: 1631184
+  bugs:
+  - 1631184
 
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.8">security
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.8">security
     fixes</a>
   tag: fixed

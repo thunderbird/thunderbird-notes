@@ -17,53 +17,64 @@ release:
 
   import_system_requirements: '68.0'
 notes:
-- note: 'A language for the user interface can now be chosen in the advanced settings (multilingual UI)'
+- note: 'A language for the user interface can now be chosen in the advanced settings (multilingual
+    UI)'
   tag: new
-  bug: 1590206
+  bugs:
+  - 1590206
 - note: 'Problem with Google authentication (OAuth2)'
   tag: fixed
-  bug: 1592407
-- note: 'Selected or unread messages not shown in the correct color in the thread pane (message list)
-    under some circumstances'
+  bugs:
+  - 1592407
+- note: 'Selected or unread messages not shown in the correct color in the thread pane
+    (message list) under some circumstances'
   tag: fixed
-  bug: 1585765
+  bugs:
+  - 1585765
 - note: 'When using a language pack, names of standard folders weren''t localized'
   tag: fixed
-  bug: 1575512
+  bugs:
+  - 1575512
 - note: 'Address book default startup directory in preferences panel not persisted'
   tag: fixed
-  bug: 1591364
-- note: 'Various visual glitches: Conditions in filter editor not high enough,
-    folder location widget not showing folder name,
-    problem with menubar customization, add-on home page links accumulating,
-    theme issues on Windows 7'
+  bugs:
+  - 1591364
+- note: 'Various visual glitches: Conditions in filter editor not high enough, folder location
+    widget not showing folder name, problem with menubar customization, add-on home page
+    links accumulating, theme issues on Windows 7'
   tag: fixed
-  bug: 1590666
-  bug2: 1590113
-  bug3: 1590851
-  bug4: 1591693
-  bug5: 1560476
+  bugs:
+  - 1590666
+  - 1590113
+  - 1590851
+  - 1591693
+  - 1560476
 - note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
     Note: If your profile is still not recognised, select it by visiting about:profiles
     in the Troubleshooting Information.'
   tag: fixed
-  bug: 1587067
+  bugs:
+  - 1587067
 - note: 'Chat: Extended context menu on Instant messaging status dialog (Show Accounts)'
   tag: fixed
-  bug: 1591506
-- note: 'Then upgrading a 64bit version of Thunderbird version 60 to version 68,
-    a new profile will be created.
-    Workaround: Select the correct profile by visiting about:profiles in the Troubleshooting Information.'
+  bugs:
+  - 1591506
+- note: 'Then upgrading a 64bit version of Thunderbird version 60 to version 68, a new
+    profile will be created. Workaround: Select the correct profile by visiting about:profiles
+    in the Troubleshooting Information.'
   tag: unresolved
-  bug: 1593540
+  bugs:
+  - 1593540
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
-    updated during the upgrade process. They will however be updated during the add-on update
-    check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
-    or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+    updated during the upgrade process. They will however be updated during the add-on
+    update check. It is of course possible to reinstall compatible add-ons via the Add-ons
+    Manager or via [addons.thunderbird.net](https://addons.thunderbird.net).'
   tag: unresolved
-  bug: 1574183
-- note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or
-    switch off option "Query OSCP responder servers" in the certificate settings in advanced options.'
+  bugs:
+  - 1574183
+- note: 'LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or switch
+    off option "Query OSCP responder servers" in the certificate settings in advanced options.'
   tag: unresolved
-  bug: 1576364
+  bugs:
+  - 1576364
 

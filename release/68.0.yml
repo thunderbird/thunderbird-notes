@@ -70,176 +70,218 @@ release:
 notes:
 - note: 'File link attachments can now be linked to again instead of uploading them again'
   tag: new
-  bug: 1542991
+  bugs:
+  - 1542991
 - note: 'Mark all folders of an account as read'
   tag: new
-  bug: 317301
+  bugs:
+  - 317301
 - note: 'Run filters periodically. Improved filter logging.'
   tag: new
-  bug: 864187
-  bug: 697522
+  bugs:
+  - 864187
+  - 697522
 - note: 'OAuth2 authentication for Yandex'
   tag: new
-  bug: 1559972
-- note: 'Language packs can now be selected in the Advanced Options. Preference
-    intl.multilingual.enabled needs to be set (and possily also extensions.langpacks.signatures.required
-    needs to be set to false)'
+  bugs:
+  - 1559972
+- note: 'Language packs can now be selected in the Advanced Options. Preference intl.multilingual.enabled
+    needs to be set (and possily also extensions.langpacks.signatures.required needs to
+    be set to false)'
   tag: new
-  bug: 1491562
-  bug: 1509977
-- note: 'On Windows a 64bit installer and MSI package are now available, see the
-    [Thunderbird for Organisations](https://www.thunderbird.net/en-US/organizations/) page for details'
+  bugs:
+  - 1491562
+  - 1509977
+- note: 'On Windows a 64bit installer and MSI package are now available, see the [Thunderbird
+    for Organisations](https://www.thunderbird.net/en-US/organizations/) page for details'
   tag: new
-- note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise environments,
-    using Windows Group Policy or a cross-platform JSON file'
+- note: 'Added a policy engine that allows customized Thunderbird deployments in enterprise
+    environments, using Windows Group Policy or a cross-platform JSON file'
   tag: new
-  bug: 1552457
+  bugs:
+  - 1552457
 - note: 'TCP keepalive for IMAP protocol'
   tag: new
-  bug: 1535969
+  bugs:
+  - 1535969
 - note: 'Full Unicode support for MAPI interfaces: New support for MAPISendMailW'
   tag: new
-  bug: 1048658
-- note: 'To protect your profile data against a downgrade,
-    Thunderbird 68 may display a message "You have launched an older version of Thunderbird" and will not
-    allow opening a specific profile. Workaround: start with option --allow-downgrade. See
-    [this support article](https://support.mozilla.org/kb/unable-launch-older-version-profile)
-    for details.'
+  bugs:
+  - 1048658
+- note: 'To protect your profile data against a downgrade, Thunderbird 68 may display a
+    message "You have launched an older version of Thunderbird" and will not allow opening
+    a specific profile. Workaround: start with option --allow-downgrade. See [this support
+    article](https://support.mozilla.org/kb/unable-launch-older-version-profile) for details.'
   tag: new
-  bug: 1535116
-- note: 'Calendar: Time zone data can now include past and future changes.
-    All known time zone changes from 2018 to 2022 are included.'
+  bugs:
+  - 1535116
+- note: 'Calendar: Time zone data can now include past and future changes. All known time
+    zone changes from 2018 to 2022 are included.'
   tag: new
-  bug: 1494160
+  bugs:
+  - 1494160
 - note: 'Chat: In each conversation an individual spellcheck language can be selected now'
   tag: new
-  bug: 1559789
+  bugs:
+  - 1559789
 - note: '**Add-on support: Add-ons are only supported if add-on authors have adapted them**'
   tag: changed
-- note: '** Dictionary support: Only WebExtension dictionaries are supported now.**
-    Both addons.mozilla.org and addons.thunderbird.net now provide WebExtension dictionaries.'
+- note: '** Dictionary support: Only WebExtension dictionaries are supported now.** Both
+    addons.mozilla.org and addons.thunderbird.net now provide WebExtension dictionaries.'
   tag: changed
-- note: '** Theme support: Only WebExtension themes are supported now.**
-    Both addons.mozilla.org and addons.thunderbird.net now provide WebExtension themes.'
+- note: '** Theme support: Only WebExtension themes are supported now.** Both addons.mozilla.org
+    and addons.thunderbird.net now provide WebExtension themes.'
   tag: changed
-- note: 'The stand-alone options window has been removed, all options are now shown in a tab'
+- note: 'The stand-alone options window has been removed, all options are now shown in
+    a tab'
   tag: changed
-  bug: 1465061
+  bugs:
+  - 1465061
 - note: "Changed UI when installing add-ons"
   tag: changed
-  bug: 1496632
-  bug2: 1498967
+  bugs:
+  - 1496632
+  - 1498967
 - note: 'Various theme improvements including a dark message list/thread pane'
   tag: changed
-  bug: 1504187
+  bugs:
+  - 1504187
 - note: 'Application menu aka "Hamburger menu"'
   tag: changed
-  bug: 1546309
+  bugs:
+  - 1546309
 - note: 'Improvements when entering, selecting and removing recipients in the Write window'
-  bug: 1493158
-  bug2: 1527547
+  bugs:
+  - 1493158
+  - 1527547
   tag: changed
-- note: 'FileLink: 
-    WeTransfer is already included.
-    [Dropbox](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/) and
-    [Box.com](https://addons.thunderbird.net/en-GB/thunderbird/addon/filelink-provider-for-box/)
+- note: 'FileLink: WeTransfer is already included. [Dropbox](https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/)
+    and [Box.com](https://addons.thunderbird.net/en-GB/thunderbird/addon/filelink-provider-for-box/)
     using the new WebExtensions FileLink API are available as add-ons, amongst others.'
   tag: changed
-  bug: 1511950
-  bug2: 1531595
-- note: 'Text and background colors in the Write window and custom colors for tags are no longer restricted to a
-    fixed 10x7 matrix of HTML colors'
+  bugs:
+  - 1511950
+  - 1531595
+- note: 'Text and background colors in the Write window and custom colors for tags are
+    no longer restricted to a fixed 10x7 matrix of HTML colors'
   tag: changed
-  bug: 1497041
-  bug2: 1495808
+  bugs:
+  - 1497041
+  - 1495808
 - note: 'Composition text and background colors no longer sent by default. New option in
     "Tools > Options, Composition".'
-  bug: 690644
+  bugs:
+  - 690644
   tag: changed
-- note: 'UI improvements for external and detached attachments, now showing as links with new
-    menu option "Open Containing Folder"'
+- note: 'UI improvements for external and detached attachments, now showing as links with
+    new menu option "Open Containing Folder"'
   tag: changed
-  bug: 1345167
+  bugs:
+  - 1345167
 - note: 'Textual attachments (plain text, HTML, XML, etc.) are no longer displayed inline.
     Toggle preference mail.inline_attachments.text to display them inline again.'
   tag: changed
-  bug: 1509709
+  bugs:
+  - 1509709
 - note: 'Improved phishing attempt detection for messages with certain forms'
   tag: changed
-  bug: 1249562
+  bugs:
+  - 1249562
 - note: 'Improvements to scam warnings'
   tag: changed
-  bug: 1476428
-- note: 'Reply to self will now search all identities (default of preference
-    mailnews.reply_to_self_check_all_ident changed to true)'
-  bug: 1511723
+  bugs:
+  - 1476428
+- note: 'Reply to self will now search all identities (default of preference mailnews.reply_to_self_check_all_ident
+    changed to true)'
+  bugs:
+  - 1511723
   tag: changed
 - note: 'Maildir now uses the message ID as file name and "eml" as file extension'
-  bug: 1259040
-  bug2: 1144478
+  bugs:
+  - 1259040
+  - 1144478
   tag: changed
 - note: 'Auto-compact threshold increased from 20 MB to 200 MB'
   tag: changed
-  bug: 1462666
+  bugs:
+  - 1462666
 - note: "Calendar: UI improvements for event dialog"
   tag: changed
-  bug: 1496086
-- note: 'Calendar: Thunderbird''s calendar add-on Lightning now uses the same version numbering scheme'
+  bugs:
+  - 1496086
+- note: 'Calendar: Thunderbird''s calendar add-on Lightning now uses the same version numbering
+    scheme'
   tag: changed
-  bug: 1520365
-- note: 'Thunderbird 68 distrusts most SSL/TLS certificates issued by the
-    Certificate Authorities (CA) with the brand names Symantec, GeoTrust,
-    RapidSSL and Thawte. Consequently, any SSL/TLS connections to servers
-    using an affected certificate will fail. Affected servers must be
-    updated to use a different certificate. If Thunderbird displays an error
-    message which states that an additional policy constraint has failed,
-    you should check if the server uses a certificate issued by one of the
-    mentioned brands. Additional information on Mozilla''s action is
-    available at
-    [here](https://blog.mozilla.org/security/2018/03/12/distrust-symantec-tls-certificates/).'
+  bugs:
+  - 1520365
+- note: 'Thunderbird 68 distrusts most SSL/TLS certificates issued by the Certificate Authorities
+    (CA) with the brand names Symantec, GeoTrust, RapidSSL and Thawte. Consequently, any
+    SSL/TLS connections to servers using an affected certificate will fail. Affected servers
+    must be updated to use a different certificate. If Thunderbird displays an error message
+    which states that an additional policy constraint has failed, you should check if the
+    server uses a certificate issued by one of the mentioned brands. Additional information
+    on Mozilla''s action is available at [here](https://blog.mozilla.org/security/2018/03/12/distrust-symantec-tls-certificates/).'
   tag: changed
 - note: 'Column choice and sort order in "Search Messages" dialog lost after relaunch'
   tag: fixed
-  bug: 297251
+  bugs:
+  - 297251
 - note: 'Global indexer causing high CPU loads under some circumstances'
   tag: fixed
-  bug: 1362483
+  bugs:
+  - 1362483
 - note: 'Tags set on IMAP folders sometimes not visible to other users'
-  bug: 583677
+  bugs:
+  - 583677
   tag: fixed
 - note: '"Contribute" button in add-on details not working'
   tag: fixed
-  bug: 1500895
-- note: 'SMTP password wasn''t removed when account was deleted or server or user name were changed'
+  bugs:
+  - 1500895
+- note: 'SMTP password wasn''t removed when account was deleted or server or user name
+    were changed'
   tag: fixed
-  bug: 1315662
+  bugs:
+  - 1315662
 - note: 'Mbox to Maildir conversion not working if Windows search integration is enabled'
   tag: fixed
-  bug: 1472524
-- note: 'Mails won''t get removed from Trash folder using Maildir.
-    Note: Other deletion issues related to Maildir may still persist.'
+  bugs:
+  - 1472524
+- note: 'Mails won''t get removed from Trash folder using Maildir. Note: Other deletion
+    issues related to Maildir may still persist.'
   tag: fixed
-  bug: 1317117
-- note: 'When sending of a message failed due a security issue, only "unknown error" was displayed.
-    Now more details are given.'
+  bugs:
+  - 1317117
+- note: 'When sending of a message failed due a security issue, only "unknown error" was
+    displayed. Now more details are given.'
   tag: fixed
-  bug: 1497488
+  bugs:
+  - 1497488
 - note: 'Improvements of SMTP 5.7.1 message'
   tag: fixed
-  bug: 1195026
-- note: 'Calendar: Multiple connections with different users to the same CalDAV server not working'
+  bugs:
+  - 1195026
+- note: 'Calendar: Multiple connections with different users to the same CalDAV server
+    not working'
   tag: fixed
-  bug: 1544596
+  bugs:
+  - 1544596
 - note: 'Chat: Fixed XMPP authentication when using SASL'
-  bug: 1527480
+  bugs:
+  - 1527480
   tag: fixed
 - note: 'Edit tag not working (will be fixed in version 68.1)'
   tag: unresolved
-  bug: 1578148
-- note: 'Moving messages from "Search Messages" result dialog not working (will be fixed in version 68.1)'
+  bugs:
+  - 1578148
+- note: 'Moving messages from "Search Messages" result dialog not working (will be fixed
+    in version 68.1)'
   tag: unresolved
-  bug: 1577987
-- note: 'Issues with list of content types/actions for incoming attachments (will be fixed in version 68.1)'
+  bugs:
+  - 1577987
+- note: 'Issues with list of content types/actions for incoming attachments (will be fixed
+    in version 68.1)'
   tag: unresolved
-  bug: 1576950
-  bug2: 1576825
+  bugs:
+  - 1576950
+  - 1576825

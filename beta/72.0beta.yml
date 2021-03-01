@@ -1,88 +1,110 @@
 release:
   release_date: 2019-12-04
-  text: "**These release notes apply to Thunderbird version 72 beta 3 released January 3rd, 2020.**"
+  text: "**These release notes apply to Thunderbird version 72 beta 3 released January\
+    \ 3rd, 2020.**"
   import_system_requirements: '68.0'
   groups:
-    -
-    - "Fixed in Beta 2"
-    - "Changed and Fixed in Beta 3"
+  - 
+  - "Fixed in Beta 2"
+  - "Changed and Fixed in Beta 3"
 
 notes:
 - note: '[Raw message source available to WebExtensions](https://thunderbird-webextensions.readthedocs.io/en/latest/messages.html#getraw-messageid)'
   tag: new
-  bug: 1525274
+  bugs:
+  - 1525274
 - note: 'Themes can be previewed in the Add-On Manager'
   tag: new
-  bug: 1598903
+  bugs:
+  - 1598903
 - note: 'Icons displaying encrypted and signed emails looked vertically stretched'
   tag: fixed
-  bug: 1598611
+  bugs:
+  - 1598611
 - note: 'WebExtension toolbar icons were displayed too small'
   tag: fixed
-  bug: 1598955
+  bugs:
+  - 1598955
 - note: 'Folder tree and address book tree lacked vibrancy in Mac OS X'
   tag: fixed
-  bug: 1595408
+  bugs:
+  - 1595408
 - note: 'Searching LDAP address book crashed in some circumstances'
   tag: fixed
-  bug: 1601389
+  bugs:
+  - 1601389
   group: 2
 - note: 'Message navigation with backward and forward buttons did not work in some circumstances'
   tag: fixed
-  bug: 533504
-  bug2: 1600500
+  bugs:
+  - 533504
+  - 1600500
   group: 2
 - note: 'Calendar: Last day of long-running events was not shown'
   tag: fixed
-  bug: 1572964
+  bugs:
+  - 1572964
   group: 2
 - note: 'Calendar: Event attendee dialog was not displayed correctly'
   tag: fixed
-  bug: 1596938
+  bugs:
+  - 1596938
   group: 2
 - note: 'Calendar: Tasks due today were not listed in bold'
   tag: fixed
-  bug: 1598885
+  bugs:
+  - 1598885
   group: 2
 - note: 'Various improvements when setting up an account for a Microsoft Exchange server:
-    Now offers IMAP/SMTP if available, better detection for Office 365 accounts; re-run configuration after password change.'
+    Now offers IMAP/SMTP if available, better detection for Office 365 accounts; re-run
+    configuration after password change.'
   tag: changed
-  bug: 1592258
-  bug2: 1598861
-  bug3: 1600954
+  bugs:
+  - 1592258
+  - 1598861
+  - 1600954
   group: 3
-- note: 'After changing view layout, the message display pane showed garbled content under some circumstances'
+- note: 'After changing view layout, the message display pane showed garbled content under
+    some circumstances'
   tag: fixed
-  bug: 265393
+  bugs:
+  - 265393
   group: 3
 - note: 'Certificate Manager not working'
   tag: fixed
-  bug: 1603537
+  bugs:
+  - 1603537
   group: 3
-- note: 'Various theme changes to achieve "pixel perfection": Unread icon, "no results" icon,
-    paragraph format and font selector, background of folder summary tooltip'
+- note: 'Various theme changes to achieve "pixel perfection": Unread icon, "no results"
+    icon, paragraph format and font selector, background of folder summary tooltip'
   tag: fixed
-  bug: 1605612
-  bug2: 1605613
-  bug3: 1606249
-  bug4: 1602941
+  bugs:
+  - 1605612
+  - 1605613
+  - 1606249
+  - 1602941
   group: 3
 - note: 'Chat: For XMPP accounts, no user icons were shown for users with avatar'
   tag: fixed
-  bug: 1592422
+  bugs:
+  - 1592422
   group: 3
 - note: 'Chat: Contact and conversation context menus not working'
   tag: fixed
-  bug: 1601573
+  bugs:
+  - 1601573
   group: 3
-- note: 'Calendar: Lightning not updating to corresponding 72.0b3 version. Workaround: Set preference
-    <code>extensions.lastAppVersion</code> to a value of 71.0 to force a refresh. Check version number in the
-    Add-on Manager afterwards.'
+- note: 'Calendar: Lightning not updating to corresponding 72.0b3 version. Workaround:
+    Set preference <code>extensions.lastAppVersion</code> to a value of 71.0 to force a
+    refresh. Check version number in the Add-on Manager afterwards.'
   tag: unresolved
-  bug: 1562573
+  bugs:
+  - 1562573
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
-  bug: 1574322
+  bugs:
+  - 1574322
 - note: 'WebExtension toolbar button badges not displayed'
   tag: unresolved
-  bug: 1599275
+  bugs:
+  - 1599275

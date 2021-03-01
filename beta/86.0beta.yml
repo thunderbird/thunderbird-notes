@@ -15,144 +15,179 @@ release:
   import_system_requirements: '79.0beta'
 
   groups:
-    -
-    - "Changed and Fixed in Beta 2"
-    - "Fixed in Beta 3"
+  - 
+  - "Changed and Fixed in Beta 2"
+  - "Fixed in Beta 3"
 
 notes:
-  - note: Allow pinning folder views to the Folder Pane
-    tag: new
-    bug: 1163555
-  - note: 'Message addressees that are not found in any address book will no longer appear in red type;
-     invalid addresses will appear red'
-    tag: changed
-    bug: 1660691
-  - note: 'Reenabled javascript-based message sending code by default'
-    tag: changed
-    bug: 1211292
-  - note: Folder pane color scheme overhauled with a focus on readability
-    tag: changed
-    bug: 1682065
-  - note: 'Calendar: Imported events are not sorted before being displayed'
-    tag: changed
-    bug: 1683060
-  - note: 'Thunderbird did not properly handle Self-signed certificates on IMAP servers'
-    tag: fixed
-    bug: 1676141
-  - note: 'Pressing command+enter to send a message on macOS did not work'
-    tag: fixed
-    bug: 1682147
-  - note: 'Saving an image from a message body with "Save Image As" did not work'
-    tag: fixed
-    bug: 1682873
-  - note: 'Various issues with IMAP folders with non-ASCII names, especially on Gmail'
-    tag: fixed
-    bug: 1685033
-    bug2: 1685450
-    bug3: 1686034
-    bug4: 1685449
-    bug5: 1686415
-    bug6: 1687452
-    bug7: 1687727
-    bug8: 1687938
-  - note: 'OpenPGP: Failed to save attachments that contained binary data after decryption'
-    tag: fixed
-    bug: 1686055
-  - note: 'Various global search fixes'
-    tag: fixed
-    bug: 1686317
-    bug2: 1578302
+- note: Allow pinning folder views to the Folder Pane
+  tag: new
+  bugs:
+  - 1163555
+- note: 'Message addressees that are not found in any address book will no longer appear
+    in red type; invalid addresses will appear red'
+  tag: changed
+  bugs:
+  - 1660691
+- note: 'Reenabled javascript-based message sending code by default'
+  tag: changed
+  bugs:
+  - 1211292
+- note: Folder pane color scheme overhauled with a focus on readability
+  tag: changed
+  bugs:
+  - 1682065
+- note: 'Calendar: Imported events are not sorted before being displayed'
+  tag: changed
+  bugs:
+  - 1683060
+- note: 'Thunderbird did not properly handle Self-signed certificates on IMAP servers'
+  tag: fixed
+  bugs:
+  - 1676141
+- note: 'Pressing command+enter to send a message on macOS did not work'
+  tag: fixed
+  bugs:
+  - 1682147
+- note: 'Saving an image from a message body with "Save Image As" did not work'
+  tag: fixed
+  bugs:
+  - 1682873
+- note: 'Various issues with IMAP folders with non-ASCII names, especially on Gmail'
+  tag: fixed
+  bugs:
+  - 1685033
+  - 1685450
+  - 1686034
+  - 1685449
+  - 1686415
+  - 1687452
+  - 1687727
+  - 1687938
+- note: 'OpenPGP: Failed to save attachments that contained binary data after decryption'
+  tag: fixed
+  bugs:
+  - 1686055
+- note: 'Various global search fixes'
+  tag: fixed
+  bugs:
+  - 1686317
+  - 1578302
 
-  - note: 'Importing an address book from a CSV file always reported an error'
-    tag: fixed
-    bug: 1685048
-  - note: 'Windows uninstaller did not always remove all Thunderbird program files'
-    tag: fixed
-    bug: 1678823
-  - note: 'Calendar: HTML entities appeared in event and task descriptions'
-    tag: fixed
-    bug: 1663947
-  - note: 'Calendar: FileLink UI fixes for Caldav calendars'
-    tag: fixed
-    bug: 1669803
-  - note: 'Calendar: Various dialog updates'
-    tag: fixed
-    bug: 1685947
+- note: 'Importing an address book from a CSV file always reported an error'
+  tag: fixed
+  bugs:
+  - 1685048
+- note: 'Windows uninstaller did not always remove all Thunderbird program files'
+  tag: fixed
+  bugs:
+  - 1678823
+- note: 'Calendar: HTML entities appeared in event and task descriptions'
+  tag: fixed
+  bugs:
+  - 1663947
+- note: 'Calendar: FileLink UI fixes for Caldav calendars'
+  tag: fixed
+  bugs:
+  - 1669803
+- note: 'Calendar: Various dialog updates'
+  tag: fixed
+  bugs:
+  - 1685947
 
-  - note: MailExtension options pages did not always completely load
-    tag: fixed
-    bug: 1641577
+- note: MailExtension options pages did not always completely load
+  tag: fixed
+  bugs:
+  - 1641577
 
 # beta 2
-  - note: Thunderbird will no longer allow installation of addons that use the legacy API
-    tag: changed
-    bug: 1688904
-    group: 2
+- note: Thunderbird will no longer allow installation of addons that use the legacy API
+  tag: changed
+  bugs:
+  - 1688904
+  group: 2
 
-  - note: 'Security information for S/MIME messages was not displayed correctly prior to a draft being saved'
-    tag: fixed
-    bug: 1683701
-    group: 2
-  - note: Automatic account setup did not use the provider email and display name
-    tag: fixed
-    bug: 1689079
-    group: 2
-  - note: Favorite Folder view did not maintain UI state between Thunderbird restarts
-    tag: fixed
-    bug: 1656501
-    group: 2
-  - note: Compact folder view did not work
-    tag: fixed
-    bug: 1689553
-    group: 2
-  - note: Searching addons from "Manage Extensions" page was not working
-    tag: fixed
-    bug: 1688887
-    group: 2
-  - note: Printing address book and calendar were broken in 86 beta 1
-    tag: fixed
-    bug: 1689461
-    bug2: 1689042
-    group: 2
-  - note: Recurring tasks were always marked incomplete; unable to use filters
-    tag: fixed
-    bug: 1686466
-    group: 2
-  - note: Thunderbird "about:" pages were not able to open links to web pages
-    tag: fixed
-    bug: 1690176
-    group: 2
-  - note: Various UI widgets not working
-    tag: fixed
-    bug: 1690467
-    bug2: 1690514
-    bug3: 1690098
-    bug4: 1689509
-    group: 2
+- note: 'Security information for S/MIME messages was not displayed correctly prior to
+    a draft being saved'
+  tag: fixed
+  bugs:
+  - 1683701
+  group: 2
+- note: Automatic account setup did not use the provider email and display name
+  tag: fixed
+  bugs:
+  - 1689079
+  group: 2
+- note: Favorite Folder view did not maintain UI state between Thunderbird restarts
+  tag: fixed
+  bugs:
+  - 1656501
+  group: 2
+- note: Compact folder view did not work
+  tag: fixed
+  bugs:
+  - 1689553
+  group: 2
+- note: Searching addons from "Manage Extensions" page was not working
+  tag: fixed
+  bugs:
+  - 1688887
+  group: 2
+- note: Printing address book and calendar were broken in 86 beta 1
+  tag: fixed
+  bugs:
+  - 1689461
+  - 1689042
+  group: 2
+- note: Recurring tasks were always marked incomplete; unable to use filters
+  tag: fixed
+  bugs:
+  - 1686466
+  group: 2
+- note: Thunderbird "about:" pages were not able to open links to web pages
+  tag: fixed
+  bugs:
+  - 1690176
+  group: 2
+- note: Various UI widgets not working
+  tag: fixed
+  bugs:
+  - 1690467
+  - 1690514
+  - 1690098
+  - 1689509
+  group: 2
 
 
 # beta 3
-  - note: Mail filter and junk logs were empty
-    tag: fixed
-    bug: 1690042
-    group: 3
-  - note: Converting an email to a calendar event or task failed
-    tag: fixed
-    bug: 1690900
-    group: 3
-  - note: 'Calendar: Changing the week start day from the default did not persist across restarts'
-    tag: fixed
-    bug: 1689775
-    group: 3
-  - note: Extension manager was missing link to addon support web page
-    tag: fixed
-    bug: 1642219
-    group: 3
-  - note: Extension manager did not show if an addon used experiment APIs
-    tag: fixed
-    bug: 1689060
-    group: 3
-  - note: 'Devtools: Viewing extension sources displayed a blank page'
-    tag: fixed
-    bug: 1690826
-    group: 3
+- note: Mail filter and junk logs were empty
+  tag: fixed
+  bugs:
+  - 1690042
+  group: 3
+- note: Converting an email to a calendar event or task failed
+  tag: fixed
+  bugs:
+  - 1690900
+  group: 3
+- note: 'Calendar: Changing the week start day from the default did not persist across
+    restarts'
+  tag: fixed
+  bugs:
+  - 1689775
+  group: 3
+- note: Extension manager was missing link to addon support web page
+  tag: fixed
+  bugs:
+  - 1642219
+  group: 3
+- note: Extension manager did not show if an addon used experiment APIs
+  tag: fixed
+  bugs:
+  - 1689060
+  group: 3
+- note: 'Devtools: Viewing extension sources displayed a blank page'
+  tag: fixed
+  bugs:
+  - 1690826
+  group: 3

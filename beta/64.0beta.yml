@@ -1,145 +1,183 @@
 release:
   release_date: 2018-10-26
-  text: "**These release notes apply to Thunderbird version 64 beta 4 released December 2nd, 2018.**"
+  text: "**These release notes apply to Thunderbird version 64 beta 4 released December\
+    \ 2nd, 2018.**"
   import_system_requirements: '60.0beta'
   groups:
-    -
-    - "Beta 2"
-    - "Beta 3"
-    - "Beta 4"
+  - 
+  - "Beta 2"
+  - "Beta 3"
+  - "Beta 4"
 
 notes:
-- note: "**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
-    minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on
-    authors have adapted them, and Lightning/Calendar is the only one we know that has been adapted.**"
+- note: "**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made\
+    \ the necessary minor adjustments. Non-restartless legacy add-ons using XUL overlays\
+    \ are only supported if add-on authors have adapted them, and Lightning/Calendar is\
+    \ the only one we know that has been adapted.**"
   tag: changed
 - note: "Changed UI when installing add-ons. Restart required for legacy extensions."
   tag: changed
-  bug: 1496632
-  bug2: 1498967
+  bugs:
+  - 1496632
+  - 1498967
 - note: "Calendar: UI improvements for event dialog"
   tag: changed
-  bug: 1496086
+  bugs:
+  - 1496086
 - note: 'Print preview not working in Thunderbird version 63 beta'
   tag: fixed
-  bug: 1495898
+  bugs:
+  - 1495898
 - note: 'Various Theme fixes where incorrect colors, backgrounds, etc. were displayed.
     Folders with new messages not shown in bold on Mac.'
   tag: fixed
-  bug: 1498908
+  bugs:
+  - 1498908
 - note: 'Add-on Options menu not working on Mac'
   tag: fixed
-  bug: 1482334
+  bugs:
+  - 1482334
 - note: 'Shift+PageUp/PageDown in Write window'
   tag: fixed
-  bug: 1482425
+  bugs:
+  - 1482425
 - note: 'Saving content of Write windows didn''t overwrite existing file'
   tag: fixed
-  bug: 1498483
+  bugs:
+  - 1498483
 - note: 'Issues related to "Edit Template" command'
   tag: fixed
-  bug: 1498866
+  bugs:
+  - 1498866
 - note: 'Gloda attachment filtering'
   tag: fixed
-  bug: 1499860
+  bugs:
+  - 1499860
 - note: 'S/MIME encryption/signing not working in Thunderbird version 63 beta'
   tag: fixed
-  bug: 1500003
+  bugs:
+  - 1500003
 - note: 'Body search/filtering didn''t reliably ignore content of tags'
   tag: fixed
-  bug: 1230815
-- note: 'Mails won''t get removed from Trash folder using Maildir.
-    Note: Other deletion issues related to Maildir still persist.'
+  bugs:
+  - 1230815
+- note: 'Mails won''t get removed from Trash folder using Maildir. Note: Other deletion
+    issues related to Maildir still persist.'
   tag: fixed
-  bug: 1317117
+  bugs:
+  - 1317117
 - note: 'If the "Date" header of a message was invalid, Jan 1970 or Dec 1969 was displayed.
     Now using date from "Received" header instead.'
   tag: fixed
-  bug: 32216
+  bugs:
+  - 32216
 - note: 'Mailing list address auto-complete enter/return handling'
   tag: fixed
-  bug: 1499410
-- note: 'When sending of a message failed due a security issue, only "unknown error" was displayed.
-    Now more details are given.'
+  bugs:
+  - 1499410
+- note: 'When sending of a message failed due a security issue, only "unknown error" was
+    displayed. Now more details are given.'
   tag: fixed
-  bug: 1497488
+  bugs:
+  - 1497488
 - note: '"Select All" in mail view not working in Thunderbird version 63 beta'
   tag: fixed
-  bug: 1498588
+  bugs:
+  - 1498588
 # Beta 2 below.
-- note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are
-    encoded using UTF-8 which can lead to problems with non-compliant providers, for example
-    office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using
-    a Latin-1 encoding again to work around this issue.'
+- note: 'According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters
+    are encoded using UTF-8 which can lead to problems with non-compliant providers, for
+    example office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are
+    now using a Latin-1 encoding again to work around this issue.'
   tag: fixed
-  bug: 1500772
+  bugs:
+  - 1500772
   group: 2
 - note: '"Download rest of message" not working if global inbox was used'
   tag: fixed
-  bug: 1503395
+  bugs:
+  - 1503395
   group: 2
 - note: 'Shutdown crash/hang after entering an empty IMAP password'
   tag: fixed
-  bug: 1257058
+  bugs:
+  - 1257058
   group: 2
 # Beta 3 below.
 - note: 'Cookie removal (not working since Thunderbird version 52)'
   tag: fixed
-  bug: 1503654
+  bugs:
+  - 1503654
   group: 3
-- note: 'Encoding problems for users (especially in Poland) when a file was sent via a folder using
-    "Sent to > Mail recipient" due to a problem in the Thunderbird MAPI interface'
+- note: 'Encoding problems for users (especially in Poland) when a file was sent via a
+    folder using "Sent to > Mail recipient" due to a problem in the Thunderbird MAPI interface'
   tag: fixed
-  bug: 1505315
+  bugs:
+  - 1505315
   group: 3
-- note: 'Under some circumstances Thunderbird on Mac would send attachments using the
-    so-called AppleDouble format which could lead to problems with mail servers and recipients'
+- note: 'Under some circumstances Thunderbird on Mac would send attachments using the so-called
+    AppleDouble format which could lead to problems with mail servers and recipients'
   tag: fixed
-  bug: 1506800
+  bugs:
+  - 1506800
   group: 3
 - note: 'Encoding problems when exporting address books or messages using the system charset.
     Messages are now always exported using the UTF-8 encoding.'
   tag: fixed
-  bug: 1506422
+  bugs:
+  - 1506422
   group: 3
 # Beta 4 below.
 - note: 'Inappropriate warning "Thunderbird prevented the site (addons.thunderbird.net)
     from asking you to install software on your computer" when installing add-ons'
   tag: fixed
-  bug: 1230815
+  bugs:
+  - 1230815
   group: 4
-- note: 'Incorrect display of correspondents column since own email address was not always detected'
+- note: 'Incorrect display of correspondents column since own email address was not always
+    detected'
   tag: fixed
-  bug: 1271353
+  bugs:
+  - 1271353
   group: 4
-- note: 'New email not inserted in correct sort order in threaded unified view or search folder'
+- note: 'New email not inserted in correct sort order in threaded unified view or search
+    folder'
   tag: fixed
-  bug: 1470049
+  bugs:
+  - 1470049
   group: 4
-- note: 'Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email
-    (working in Thunderbird ESR, will be fixed in version 65 beta)'
+- note: 'Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email (working
+    in Thunderbird ESR, will be fixed in version 65 beta)'
   tag: unresolved
-  bug: 1509102
+  bugs:
+  - 1509102
   group: 4
-- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor
-    or Link Properties dialog (working in Thunderbird ESR, will be fixed in version 65 beta)'
+- note: 'Double-clicking on a word in the Write window sometimes launches the Advanced
+    Property Editor or Link Properties dialog (working in Thunderbird ESR, will be fixed
+    in version 65 beta)'
   tag: unresolved
-  bug: 1501663
+  bugs:
+  - 1501663
   group: 4
-- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working in Thunderbird ESR)'
+- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working
+    in Thunderbird ESR)'
   tag: unresolved
-  bug: 1418629
+  bugs:
+  - 1418629
   group: 4
 - note: 'Editing a plaint text draft may display the entire message as quote (in blue)
     (working in Thunderbird ESR, will be fixed in version 65 beta)'
   tag: unresolved
-  bug: 1501259
+  bugs:
+  - 1501259
   group: 4
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778
   group: 4
 - note: 'Chat: Participants not sorted'
   tag: unresolved
-  bug: 1480057
+  bugs:
+  - 1480057
   group: 4

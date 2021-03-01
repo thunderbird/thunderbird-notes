@@ -17,32 +17,40 @@ release:
   import_system_requirements: '60.0beta'
 
 notes:
-- note: 'Thunderbird 60 will migrate security databases (key3.db, cert8.db to key4.db, cert9.db).
-    Thunderbird 60.3.2 and earlier contained a fault that potentially deleted saved passwords
-    and private certificate keys for users using a master password.
-    Version 60.3.3 will prevent the loss of data; affected users
-    who have already upgraded to version 60.3.2 or earlier can restore the deleted key3.db
-    file from backup to complete the migration.'
+- note: 'Thunderbird 60 will migrate security databases (key3.db, cert8.db to key4.db,
+    cert9.db). Thunderbird 60.3.2 and earlier contained a fault that potentially deleted
+    saved passwords and private certificate keys for users using a master password. Version
+    60.3.3 will prevent the loss of data; affected users who have already upgraded to version
+    60.3.2 or earlier can restore the deleted key3.db file from backup to complete the
+    migration.'
   tag: mitigated
-  bug: 1510212
+  bugs:
+  - 1510212
 - note: 'Address book search and auto-complete slowness introduced in Thunderbird 60.3.2'
   tag: fixed
-  bug: 1511885
-- note: 'Plain text markup with * for bold, / for italics, _ for underline and | for code did not
-    work when the enclosed text contained non-ASCII characters'
+  bugs:
+  - 1511885
+- note: 'Plain text markup with * for bold, / for italics, _ for underline and | for code
+    did not work when the enclosed text contained non-ASCII characters'
   tag: fixed
-  bug: 1505911
-- note: 'While composing a message, a link not removed when link location was removed in the link properties panel'
+  bugs:
+  - 1505911
+- note: 'While composing a message, a link not removed when link location was removed in
+    the link properties panel'
   tag: fixed
-  bug: 1510183
-- note: 'Decoding problems for messages with less common charsets (cp932, cp936). This will be
-    fixed in version 60.4.0.'
+  bugs:
+  - 1510183
+- note: 'Decoding problems for messages with less common charsets (cp932, cp936). This
+    will be fixed in version 60.4.0.'
   tag: unresolved
-  bug: 1511950
-- note: 'CalDav access to some servers not working.
-    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  bugs:
+  - 1511950
+- note: 'CalDav access to some servers not working. Workaround: Set preference network.cookie.same-site.enabled
+    to false.'
   tag: unresolved
-  bug: 1468912
+  bugs:
+  - 1468912
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

@@ -1,72 +1,94 @@
 release:
   release_date: 2019-04-02
-  text: "**These release notes apply to Thunderbird version 67 beta 3 released May 10th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 67 beta 3 released May 10th,\
+    \ 2019.**"
   import_system_requirements: '60.0beta'
   groups:
-    -
-    - "Changed and Fixed in Beta 2"
-    - "Fixed in Beta 3"
+  - 
+  - "Changed and Fixed in Beta 2"
+  - "Fixed in Beta 3"
 
 notes:
-- note: '**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary
-    minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on
-    authors have adapted them. ** Apart from Lightning/Calendar there are a few that have been
-    adapted, like "ThunderHTMLedit", "Compact Header", "Signature Switch" and "Send Later".'
+- note: '**ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made
+    the necessary minor adjustments. Non-restartless legacy add-ons using XUL overlays
+    are only supported if add-on authors have adapted them. ** Apart from Lightning/Calendar
+    there are a few that have been adapted, like "ThunderHTMLedit", "Compact Header", "Signature
+    Switch" and "Send Later".'
   tag: changed
-- note: '** DICTIONARY SUPPORT: Only WebExtension dictionaries are supported now.**
-    Both addons.mozilla.org and addons.thunderbird.net now provide WebExtension dictionaries.'
+- note: '** DICTIONARY SUPPORT: Only WebExtension dictionaries are supported now.** Both
+    addons.mozilla.org and addons.thunderbird.net now provide WebExtension dictionaries.'
   tag: changed
 - note: 'Improvements when entering, selecting and removing recipients in the Write window'
-  bug: 1493158
-  bug2: 1527547
+  bugs:
+  - 1493158
+  - 1527547
   tag: changed
   # Beta 2 below.
-- note: 'Attachment pane of Write window no longer focussed when attaching files using a keyboard shortcut'
+- note: 'Attachment pane of Write window no longer focussed when attaching files using
+    a keyboard shortcut'
   tag: changed
-  bug: 1519328
+  bugs:
+  - 1519328
   group: 2
 - note: 'Navigation of attachments in Write window'
   tag: fixed
-  bug: 1526811
-  bug2: 1542317
+  bugs:
+  - 1526811
+  - 1542317
   group: 2
-- note: 'Insufficient contrast between forground and background colors for some tagged messages'
+- note: 'Insufficient contrast between forground and background colors for some tagged
+    messages'
   tag: fixed
-  bug: 1534360
+  bugs:
+  - 1534360
   group: 2
 - note: 'IMAP offline folder selection not working'
   tag: fixed
-  bug: 1546604
+  bugs:
+  - 1546604
   group: 3
 - note: 'Installation problems on 32-bit Windows'
   tag: fixed
-  bug: 1547631
+  bugs:
+  - 1547631
   group: 3
 - note: 'Customising From address breaks saving draft and sending message'
   tag: unresolved
-  bug: 1542667
+  bugs:
+  - 1542667
 - note: 'Malfunction when deleting a message opened in a tab or stand-alone window'
   tag: unresolved
-  bug: 1518823
-- note: 'Thunderbird 67 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.'
+  bugs:
+  - 1518823
+- note: 'Thunderbird 67 beta may not recognise an existing profile. Workaround: start with
+    the profile manager option -p.'
   tag: unresolved
-  bug: 1542025
-- note: 'Thunderbird 67 beta may display a message "You''ve launched an older version of Firefox" and will not
-  allow opening a specific profile. Workaround: start with option --allow-downgrade.'
+  bugs:
+  - 1542025
+- note: 'Thunderbird 67 beta may display a message "You''ve launched an older version of
+    Firefox" and will not allow opening a specific profile. Workaround: start with option
+    --allow-downgrade.'
   tag: unresolved
-  bug: 1535116
+  bugs:
+  - 1535116
 - note: 'Due to changes in the Mozilla platform profiles stored on Windows network shares
     addressed via drive letters are now addressed via UNC'
   tag: unresolved
-  bug: 1512812
-- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working in Thunderbird ESR)'
+  bugs:
+  - 1512812
+- note: 'Spellcheck marks disappeared erroneously for words with an apostrophe (working
+    in Thunderbird ESR)'
   tag: unresolved
-  bug: 1418629
-- note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
-    the Mozilla FTP server. A US-English version can be downloaded [here](https://queue.taskcluster.net/v1/task/VM8btfxVSEKx6RZHQxl0jg/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).
+  bugs:
+  - 1418629
+- note: 'Calendar: A localized version of Provider for Google Calendar not available at
+    addons.thunderbird.net or the Mozilla FTP server. A US-English version can be downloaded
+    [here](https://queue.taskcluster.net/v1/task/VM8btfxVSEKx6RZHQxl0jg/runs/0/artifacts/public/build/gdata-provider.en-US.xpi).
     The XPI file needs to be installed manually in Thunderbird.'
   tag: unresolved
-  bug: 1516816
+  bugs:
+  - 1516816
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

@@ -17,38 +17,50 @@ release:
   import_system_requirements: '60.0beta'
 
 notes:
-- note: 'Under some circumstances Thunderbird on Mac will send attachments using the
-    so-called AppleDouble format which can lead to problems with mail servers and recipients'
+- note: 'Under some circumstances Thunderbird on Mac will send attachments using the so-called
+    AppleDouble format which can lead to problems with mail servers and recipients'
   tag: fixed
-  bug: 1506800
+  bugs:
+  - 1506800
 - note: 'Encoding problems when exporting address books or messages using the system charset.
     Messages are now always exported using the UTF-8 encoding.'
   tag: fixed
-  bug: 1506422
+  bugs:
+  - 1506422
 - note: 'If the "Date" header of a message was invalid, Jan 1970 or Dec 1969 was displayed.
     Now using date from "Received" header instead.'
   tag: fixed
-  bug: 32216
+  bugs:
+  - 32216
 - note: 'Body search/filtering didn''t reliably ignore content of tags'
   tag: fixed
-  bug: 1230815
-- note: 'Inappropriate warning "Thunderbird prevented the site (addons.thunderbird.net) 
+  bugs:
+  - 1230815
+- note: 'Inappropriate warning "Thunderbird prevented the site (addons.thunderbird.net)
     from asking you to install software on your computer" when installing add-ons'
   tag: fixed
-  bug: 1230815
-- note: 'Incorrect display of correspondents column since own email address was not always detected'
+  bugs:
+  - 1230815
+- note: 'Incorrect display of correspondents column since own email address was not always
+    detected'
   tag: fixed
-  bug: 1271353
+  bugs:
+  - 1271353
 - note: 'Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email'
   tag: fixed
-  bug: 1509102
-- note: 'New email not inserted in correct sort order in threaded unified view or search folder'
+  bugs:
+  - 1509102
+- note: 'New email not inserted in correct sort order in threaded unified view or search
+    folder'
   tag: fixed
-  bug: 1470049
-- note: 'CalDav access to some servers not working.
-    Workaround: Set preference network.cookie.same-site.enabled to false.'
+  bugs:
+  - 1470049
+- note: 'CalDav access to some servers not working. Workaround: Set preference network.cookie.same-site.enabled
+    to false.'
   tag: unresolved
-  bug: 1468912
+  bugs:
+  - 1468912
 - note: 'Chat: Twitter not working due to API changes at Twitter.com'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

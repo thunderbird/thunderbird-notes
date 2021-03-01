@@ -26,44 +26,58 @@ release:
 notes:
 - note: 'OpenPGP: Key revocation, extending key expiration, and secret key backup'
   tag: new
-  bug: 1651712
+  bugs:
+  - 1651712
 - note: 'Drag & Drop multiple attachments to macOS Finder created duplicate files'
   tag: fixed
-  bug: 1494588
+  bugs:
+  - 1494588
 - note: 'Faceted search date and relevance settings not saved'
   tag: fixed
-  bug: 663859
-- note: 'FileLink attachments included as a link and file when added from a network drive via drag & drop'
+  bugs:
+  - 663859
+- note: 'FileLink attachments included as a link and file when added from a network drive
+    via drag & drop'
   tag: fixed
-  bug: 793118
+  bugs:
+  - 793118
 - note: 'About Thunderbird dialog keyboard shortcuts did not work'
   tag: fixed
-  bug: 1638563
+  bugs:
+  - 1638563
 - note: 'CC''d recipients sometimes displayed collapsed in header pane'
   tag: fixed
-  bug: 1652410
-- note: 'Incremental search in contacts sidebar did not always display local results when an LDAP server was also in use'
+  bugs:
+  - 1652410
+- note: 'Incremental search in contacts sidebar did not always display local results when
+    an LDAP server was also in use'
   tag: fixed
-  bug: 1644026
+  bugs:
+  - 1644026
 - note: 'Contacts sidebar search results cleared after removing a contact'
   tag: fixed
-  bug: 1644084
+  bugs:
+  - 1644084
 - note: 'OpenPGP: Messages with long Armor Header lines did not display'
   tag: fixed
-  bug: 1653651
+  bugs:
+  - 1653651
 - note: 'OpenPGP: Messages containing non-UTF-8 text were not supported'
   tag: fixed
-  bug: 1651896
+  bugs:
+  - 1651896
 - note: 'Various UI and theming fixes'
   tag: fixed
-  bug: 1649577
-  bug2: 1650240
-  bug3: 1650789
-  bug4: 1650791
-  bug5: 1652199
-  bug6: 1652015
-  bug7: 1651472
-  bug8: 1653628
+  bugs:
+  - 1649577
+  - 1650240
+  - 1650789
+  - 1650791
+  - 1652199
+  - 1652015
+  - 1651472
+  - 1653628
 - note: 'Chat: Participants list did not display operator flags'
   tag: fixed
-  bug: 1648585
+  bugs:
+  - 1648585

@@ -1,166 +1,208 @@
 release:
   release_date: 2019-10-26
-  text: "**These release notes apply to Thunderbird version 71 beta 4 released November 29th, 2019.**"
+  text: "**These release notes apply to Thunderbird version 71 beta 4 released November\
+    \ 29th, 2019.**"
   import_system_requirements: '68.0'
   groups:
-    -
-    - "Fixed in Beta 2"
-    - "New, Changed and Fixed in Beta 3"
-    - "Changed and Fixed in Beta 4"
+  - 
+  - "Fixed in Beta 2"
+  - "New, Changed and Fixed in Beta 3"
+  - "Changed and Fixed in Beta 4"
 
 notes:
 - note: '[Message display toolbar action WebExtension API](https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html)'
   tag: new
-  bug: 1531597
+  bugs:
+  - 1531597
 - note: 'Improved "Recent" folder list for "Move to" and "Copy to" in message context menu'
   tag: changed
-  bug: 949135
-- note: 'Address books are now stored as SQLite databases. Existing address books in
-    MAB format (using a Mork database) will be converted.'
+  bugs:
+  - 949135
+- note: 'Address books are now stored as SQLite databases. Existing address books in MAB
+    format (using a Mork database) will be converted.'
   tag: changed
-  bug: 1572324
-  bug2: 1576525
-  bug3: 1581765
-- note: 'Choosing a language for the user interface (multilingual UI) is now enabled
-    (but ATN doesn''t supply language packs for beta versions)'
+  bugs:
+  - 1572324
+  - 1576525
+  - 1581765
+- note: 'Choosing a language for the user interface (multilingual UI) is now enabled (but
+    ATN doesn''t supply language packs for beta versions)'
   tag: changed
-  bug: 1590206
+  bugs:
+  - 1590206
 - note: 'Calendar storage access is now asynchronous to improve performance'
   tag: changed
-  bug: 501689
+  bugs:
+  - 501689
 - note: 'Application windows not maintaining their size after restart'
   tag: fixed
-  bug: 1580420
-- note: 'Selected or unread messages not shown in the correct color in the thread pane (message list) under some circumstances'
+  bugs:
+  - 1580420
+- note: 'Selected or unread messages not shown in the correct color in the thread pane
+    (message list) under some circumstances'
   tag: fixed
-  bug: 1585765
+  bugs:
+  - 1585765
 - note: 'Issues when upgrading from a 32bit version of Thunderbird to a 64bit version.
     Note: If your profile is still not recognised, selected it by visiting about:profiles
     in the Troubleshooting Information.'
   tag: fixed
-  bug: 1587067
+  bugs:
+  - 1587067
 - note: 'When using a language pack, names of standard folders aren''t localized'
   tag: fixed
-  bug: 1575512
+  bugs:
+  - 1575512
 # Beta 2 below.
 - note: 'Problem with Google authentication (OAuth2)'
   tag: fixed
-  bug: 1592407
+  bugs:
+  - 1592407
   group: 2
 - note: 'Incorrect background color for summary view in dark theme with dark system theme'
   tag: fixed
-  bug: 1591531
+  bugs:
+  - 1591531
   group: 2
 - note: 'Mail account setup dialog resizing unexpectedly'
   tag: fixed
-  bug: 1590503
+  bugs:
+  - 1590503
   group: 2
-- note: 'Various visual glitches: Conditions in filter editor not high enough,
-    folder location widget not showing folder name,
-    global POP inbox not showing folder name, problem with menubar customization'
+- note: 'Various visual glitches: Conditions in filter editor not high enough, folder location
+    widget not showing folder name, global POP inbox not showing folder name, problem with
+    menubar customization'
   tag: fixed
-  bug: 1590666
-  bug2: 1590113
-  bug3: 1590851
+  bugs:
+  - 1590666
+  - 1590113
+  - 1590851
   group: 2
 - note: 'Chat: Nickname not highlighted and textual smilies not replaced with emoticons'
   tag: fixed
-  bug: 1591399
+  bugs:
+  - 1591399
   group: 2
-- note: 'Chat: When creating a chat account, some properties, like the password, not saved properly'
+- note: 'Chat: When creating a chat account, some properties, like the password, not saved
+    properly'
   tag: fixed
-  bug: 1591148
+  bugs:
+  - 1591148
   group: 2
 - note: 'Chat: Extended context menu on Instant messaging status dialog (Show Accounts)'
   tag: fixed
-  bug: 1591506
+  bugs:
+  - 1591506
   group: 2
-- note: 'Calendar: Various glitches: Drag and drop of events,
-    multiple identical notifications, toggles in Today Pane,
-    agenda items not styled properly'
+- note: 'Calendar: Various glitches: Drag and drop of events, multiple identical notifications,
+    toggles in Today Pane, agenda items not styled properly'
   tag: fixed
-  bug: 1590505
-  bug2: 1588694
-  bug3: 1590506
-  bug4: 1591553
+  bugs:
+  - 1590505
+  - 1588694
+  - 1590506
+  - 1591553
   group: 2
 # Beta 3 below.
-- note: 'Navigation buttons are now available in content tabs, for example those opened via an add-on search'
+- note: 'Navigation buttons are now available in content tabs, for example those opened
+    via an add-on search'
   tag: new
-  bug: 787683
+  bugs:
+  - 787683
   group: 3
 - note: 'During email account setup the "Configure manually" button is now available immediately'
   tag: changed
-  bug: 1590636
+  bugs:
+  - 1590636
   group: 3
-- note: 'Address book column picker stays open for selecting multiple columns until user clicks outside or hits escape'
+- note: 'Address book column picker stays open for selecting multiple columns until user
+    clicks outside or hits escape'
   tag: changed
-  bug: 1592393
+  bugs:
+  - 1592393
   group: 3
 - note: '"New email" icon in Windows systray changed from in-tray with arrow to envelope'
   tag: changed
-  bug: 1594200
+  bugs:
+  - 1594200
   group: 3
 - note: 'Icons of attachments in the attachment pane of the Write window not always correct'
   tag: fixed
-  bug: 1593280
+  bugs:
+  - 1593280
   group: 3
 - note: 'Contact age calculation in address book not correct'
   tag: fixed
-  bug: 1592536
+  bugs:
+  - 1592536
   group: 3
 - note: 'Toolbar buttons of add-ons in the menubar not shown after startup'
   tag: fixed
-  bug: 1584160
+  bugs:
+  - 1584160
   group: 3
-- note: 'LDAP lookup not working when SSL was enabled. LDAP search not working when
-    "All Address Books" was selected.'
+- note: 'LDAP lookup not working when SSL was enabled. LDAP search not working when "All
+    Address Books" was selected.'
   tag: fixed
-  bug: 1576364
-  bug2: 1593347
+  bugs:
+  - 1576364
+  - 1593347
   group: 3
 - note: 'Chat: Unable to send messages using XMPP'
   tag: fixed
-  bug: 1592505
+  bugs:
+  - 1592505
   group: 3
-- note: 'Chat: Account reordering via drag-and-drop not working on Instant messaging status dialog (Show Accounts)'
+- note: 'Chat: Account reordering via drag-and-drop not working on Instant messaging status
+    dialog (Show Accounts)'
   tag: fixed
-  bug: 1591505
+  bugs:
+  - 1591505
   group: 3
 # Beta 4 below.
-- note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged messages'
+- note: 'In dark theme unread messages no longer shown in blue to distinguish from tagged
+    messages'
   tag: changed
-  bug: 1596702
+  bugs:
+  - 1596702
   group: 4
 - note: 'Poor response time when entering an address for auto-completion'
   tag: fixed
-  bug: 1597163
+  bugs:
+  - 1597163
   group: 4
 - note: 'Dragging contacts from one address book to another sometimes failed'
   tag: fixed
-  bug: 1595059
+  bugs:
+  - 1595059
   group: 4
 - note: 'Scam link confirmation panel not working'
   tag: fixed
-  bug: 1596413
+  bugs:
+  - 1596413
   group: 4
-- note: 'In Write window, the Link Properties dialog wasn''t showing named anchors in context menu'
+- note: 'In Write window, the Link Properties dialog wasn''t showing named anchors in context
+    menu'
   tag: fixed
-  bug: 1593629
+  bugs:
+  - 1593629
   group: 4
 - note: 'Calendar: Start-up failed if the application menu is not on the calendar toolbars'
   tag: fixed
-  bug: 1588516
+  bugs:
+  - 1588516
   group: 4
 # restore the following item for further betas.
-- note: 'Calendar: Lightning not updating to corresponding 71.0b4 version. Workaround: Set preference
-    <code>extensions.lastAppVersion</code> to a value of 70.0 to force a refresh. Check version number in the
-    Add-on Manager afterwards.'
+- note: 'Calendar: Lightning not updating to corresponding 71.0b4 version. Workaround:
+    Set preference <code>extensions.lastAppVersion</code> to a value of 70.0 to force a
+    refresh. Check version number in the Add-on Manager afterwards.'
   tag: unresolved
-  bug: 1562573
+  bugs:
+  - 1562573
 - note: 'Opening the properties of a folder may hang on Mac'
   tag: unresolved
-  bug: 1574322
+  bugs:
+  - 1574322
 # gData not hosted by Thunderbird any more
 # - note: 'Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or
   # the Mozilla FTP server. A US-English version can be downloaded
@@ -170,4 +212,5 @@ notes:
   # bug: 1516816
 - note: 'Chat: Twitter not working due to API changes at Twitter.com.'
   tag: unresolved
-  bug: 1445778
+  bugs:
+  - 1445778

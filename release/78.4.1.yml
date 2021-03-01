@@ -16,39 +16,49 @@ notes:
 - note: Thunderbird prompts for an address to use when starting an email from an address
     book entry with multiple addresses
   tag: new
-  bug: 84028
+  bugs:
+  - 84028
 
 - note: Searching global search results did not work
   tag: fixed
-  bug: 1664761
-- note: Link location was not focused by default when adding a hyperlink in message
-    composer
+  bugs:
+  - 1664761
+- note: Link location was not focused by default when adding a hyperlink in message composer
   tag: fixed
-  bug: 1670660
+  bugs:
+  - 1670660
 - note: Advanced address book search dialog was unusable
   tag: fixed
-  bug: 1668147
+  bugs:
+  - 1668147
 - note: Encrypted draft reply emails lost "Re:" prefix
   tag: fixed
-  bug: 1661510
+  bugs:
+  - 1661510
 - note: Replying to a newsgroup message did not open the compose window
   tag: fixed
-  bug: 1672667
+  bugs:
+  - 1672667
 - note: Unable to delete multiple newsgroup messages
   tag: fixed
-  bug: 1657988
+  bugs:
+  - 1657988
 - note: Appmenu displayed visual glitches
   tag: fixed
-  bug: 1636243
+  bugs:
+  - 1636243
 - note: Visual glitches when selecting multiple messages in the message pane and using
     Ctrl+click
   tag: fixed
-  bug: 1671800
+  bugs:
+  - 1671800
 - note: Switching between dark and light mode could lead to unreadable text on macOS
   tag: fixed
-  bug: 1668989
+  bugs:
+  - 1668989
 
 
 - note: 'Message list is not focused at startup'
   tag: unresolved
-  bug: 1620310
+  bugs:
+  - 1620310

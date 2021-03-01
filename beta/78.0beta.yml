@@ -1,6 +1,7 @@
 release:
   release_date: 2020-06-16
-  text: "**These release notes apply to Thunderbird version 78 beta 4 released June 29, 2020.**"
+  text: "**These release notes apply to Thunderbird version 78 beta 4 released June 29,\
+    \ 2020.**"
   system_requirements: |
     ## Windows
 
@@ -54,7 +55,7 @@ release:
         - DBus 1.0 or higher
         - GNOME 2.16 or higher
   groups:
-  -
+  - 
   - "New, Changed, and Fixed in Beta 2"
   - "New and Fixed in Beta 3"
   - "New, Changed, and Fixed in Beta 4"
@@ -62,198 +63,245 @@ release:
 notes:
 - note: 'Color customization of Folder Pane icons'
   tag: new
-  bug: 1637668
+  bugs:
+  - 1637668
 - note: 'Additional Enterprise policies'
   tag: new
-  bug: 1622703
+  bugs:
+  - 1622703
 - note: 'Calendar: Add event preview to ICS import dialog'
   tag: new
-  bug: 1631902
+  bugs:
+  - 1631902
 - note: 'OpenPGP support improvements'
   tag: changed
-  bug: 1639683
-  bug2: 1641374
-  bug3: 1638398
-  bug4: 1638537
+  bugs:
+  - 1639683
+  - 1641374
+  - 1638398
+  - 1638537
 - note: 'Various Address Book improvements'
   tag: changed
-  bug: 1633294
-  bug2: 1630184
+  bugs:
+  - 1633294
+  - 1630184
 - note: 'Dark mode improvements'
   tag: changed
-  bug: 1619725
-  bug2: 1640390
+  bugs:
+  - 1619725
+  - 1640390
 - note: 'Use scalable icons throughout Thunderbird'
   tag: changed
-  bug: 1636238
-  bug2: 1638863
+  bugs:
+  - 1636238
+  - 1638863
 - note: 'Account settings UI improvements'
   tag: changed
-  bug: 1628497
+  bugs:
+  - 1628497
 - note: 'MailExtensions: Handle message attachments in browser.compose functions'
   tag: changed
-  bug: 1613535
+  bugs:
+  - 1613535
 - note: 'Calendar: Location URLs are now clickable'
   tag: changed
-  bug: 1614972
+  bugs:
+  - 1614972
 - note: 'Various fixes for recipient address entry'
   tag: fixed
-  bug: 1636393
-  bug2: 1602477
-  bug3: 1640722
+  bugs:
+  - 1636393
+  - 1602477
+  - 1640722
 - note: 'Fixed width font not working in Write window'
   tag: fixed
-  bug: 1622231
+  bugs:
+  - 1622231
 - note: 'Accessibility improvements'
   tag: fixed
-  bug: 1637230
-  bug2: 1637536
+  bugs:
+  - 1637230
+  - 1637536
 - note: 'Attachment pane in message preview layout broke when toggled or resized'
   tag: fixed
-  bug: 1636558
+  bugs:
+  - 1636558
 - note: 'Access key Alt+M for the attachment pane of the Write window not working correctly'
   tag: fixed
-  bug: 1625263
+  bugs:
+  - 1625263
 - note: 'Addons could not be removed'
   tag: fixed
-  bug: 1629459
+  bugs:
+  - 1629459
 
 
 # Beta 2
 - note: 'MailExtensions: browser.identity API enabled'
   tag: new
-  bug: 1644000
+  bugs:
+  - 1644000
   group: 2
 - note: 'MailExtensions: Event fired when the user changes compose identity'
   tag: new
-  bug: 1642189
+  bugs:
+  - 1642189
   group: 2
 
 - note: 'Improvements to the location bar of a tab displaying web pages'
   tag: changed
-  bug: 1644689
+  bugs:
+  - 1644689
   group: 2
 - note: 'Several improvements to vCard parsing'
   tag: changed
-  bug: 1639496
-  bug2: 1643262
+  bugs:
+  - 1639496
+  - 1643262
   group: 2
 - note: 'Various look and feel improvements'
-  bug: 1645700
-  bug2: 1645687
-  bug3: 1644730
-  bug4: 1643159
-  bug5: 1514863
-  bug6: 1645094
-  bug7: 1644798
+  bugs:
+  - 1645700
+  - 1645687
+  - 1644730
+  - 1643159
+  - 1514863
+  - 1645094
+  - 1644798
   tag: changed
   group: 2
 
 - note: 'Print-progress dialog was disabled'
   tag: fixed
-  bug: 1625299
+  bugs:
+  - 1625299
   group: 2
 - note: '"Clear Recent History" window did nothing'
   tag: fixed
-  bug: 1639415
+  bugs:
+  - 1639415
   group: 2
 - note: '"Initially Show Attachment Pane" option was not working for Write window'
   tag: fixed
-  bug: 1634946
+  bugs:
+  - 1634946
   group: 2
-- note: 'Links in the Account Central content tab opened in Thunderbird as well as the browser'
+- note: 'Links in the Account Central content tab opened in Thunderbird as well as the
+    browser'
   tag: fixed
-  bug: 1645271
+  bugs:
+  - 1645271
   group: 2
 - note: 'Order of columns in the thread pane was not persisted correctly'
   tag: fixed
-  bug: 1612055
+  bugs:
+  - 1612055
   group: 2
 - note: 'URLs in the message header display were not reachable via keyboard'
   tag: fixed
-  bug: 1589863
+  bugs:
+  - 1589863
   group: 2
 - note: 'Calendar: URLs in the event reminder dialog were not clickable'
   tag: fixed
-  bug: 1644990
+  bugs:
+  - 1644990
   group: 2
 - note: 'MailExtensions: Extension popup windows opened in a copy of the main window'
   tag: fixed
-  bug: 1644083
+  bugs:
+  - 1644083
   group: 2
 
 
 # Beta 3
 - note: 'Preference to disable OpenPGP functionality'
   tag: new
-  bug: 1645914
+  bugs:
+  - 1645914
   group: 3
 - note: 'MailExtensions: UI components for browser pages added'
   tag: new
-  bug: 1645945
+  bugs:
+  - 1645945
   group: 3
-- note: 'OpenPGP support did not work on some Linux distributions when using the official builds'
+- note: 'OpenPGP support did not work on some Linux distributions when using the official
+    builds'
   tag: fixed
-  bug: 1634209
+  bugs:
+  - 1634209
   group: 3
 - note: 'Thunderbird 78 did not run on Red Hat Linux 7'
   tag: fixed
-  bug: 1646993
+  bugs:
+  - 1646993
+  - 1643258
   group: 3
-  bug2: 1643258
 - note: 'Anomalies appeared when inserting an image into the compose window'
   tag: fixed
-  bug: 1636971
+  bugs:
+  - 1636971
   group: 3
 - note: 'Chat: Copying from chat conversations not working'
   tag: fixed
-  bug: 1611442
+  bugs:
+  - 1611442
   group: 3
 
 
 # Beta 4
 - note: 'Chat: Direct message support for Matrix'
-  bug: 1348064
+  bugs:
+  - 1348064
   tag: new
   group: 4
 - note: 'OpenPGP improvements'
-  bug: 1642795
-  bug2: 1647671
-  bug3: 1646367
-  bug4: 1648957
-  bug5: 1648978
-  bug6: 1638645
+  bugs:
+  - 1642795
+  - 1647671
+  - 1646367
+  - 1648957
+  - 1648978
+  - 1638645
   tag: changed
   group: 4
 - note: 'Various look and feel improvements'
-  bug: 1647479
-  bug2: 1647471
-  bug3: 1648170
+  bugs:
+  - 1647479
+  - 1647471
+  - 1648170
   tag: changed
   group: 4
 - note: 'Addresses added to address book were not inserted into sorted order'
-  bug: 1639750
+  bugs:
+  - 1639750
   tag: fixed
   group: 4
 - note: 'Address book migration not working under certain circumstances'
-  bug: 1647249
+  bugs:
+  - 1647249
   tag: fixed
   group: 4
 - note: 'Chat: Own messages not displayed in private chats when server supports "echo-message"'
-  bug: 1646049
+  bugs:
+  - 1646049
   tag: fixed
   group: 4
-- note: 'MailExtensions: Tab was not defined in browser.menus.onClicked callback on out-of-window messages'
-  bug: 1644487
+- note: 'MailExtensions: Tab was not defined in browser.menus.onClicked callback on out-of-window
+    messages'
+  bugs:
+  - 1644487
   tag: fixed
   group: 4
 - note: 'MailExtensions: Select elements in action popups closed the window unexpectedly'
-  bug: 1627197
+  bugs:
+  - 1627197
   tag: fixed
   group: 4
 
 
 # Unresolved
 - note: 'Preferences search not available'
-  bug: 1573678
+  bugs:
+  - 1573678
   tag: unresolved

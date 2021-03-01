@@ -28,40 +28,51 @@ release:
 notes:
 - note: 'Building OpenPGP shared library linked to system libraries now supported'
   tag: changed
-  bug: 1634963
+  bugs:
+  - 1634963
 - note: 'MailExtension errors now shown in Developer Tools console by default'
   tag: changed
-  bug: 1650149
+  bugs:
+  - 1650149
 - note: 'MailExtensions: Dynamic registration of calendar providers now supported'
   tag: changed
-  bug: 1652885
+  bugs:
+  - 1652885
 
 
 - note: 'OpenPGP improvements'
   tag: fixed
-  bug: 1655210
+  bugs:
+  - 1655210
 - note: 'Message preview was sometimes blank after upgrading from Thunderbird 68'
   tag: fixed
-  bug: 1653168
+  bugs:
+  - 1653168
 - note: 'Email addresses whitelisted for remote content not displayed in preferences'
-  bug: 1652575
+  bugs:
+  - 1652575
   tag: fixed
 - note: 'Importing data from Seamonkey did not work'
   tag: fixed
-  bug: 272292
+  bugs:
+  - 272292
 - note: 'Renaming a mail list did not update the side bar'
   tag: fixed
-  bug: 1632331
+  bugs:
+  - 1632331
 - note: 'MailExtensions: messenger.* namespace was undefined'
   tag: fixed
-  bug: 1641573
+  bugs:
+  - 1641573
 
 
 
 # unresolved
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
-  bug: 1556261
+  bugs:
+  - 1556261
 - note: 'Fixed width font not working in compose window'
   tag: unresolved
-  bug: 1655279
+  bugs:
+  - 1655279

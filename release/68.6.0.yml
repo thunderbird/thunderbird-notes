@@ -20,18 +20,22 @@ release:
 notes:
 - note: 'Thunderbird now displays a popup window when starting up on a new profile'
   tag: new
-  bug: 1590036
+  bugs:
+  - 1590036
 - note: 'Thunderbird now provides partial updates resulting in smaller downloads'
   tag: changed
-  bug: 1410512
+  bugs:
+  - 1410512
 - note: 'Searching in message bodies led to false negatives under some circumstances in
     quoted-printable encoded HTML bodies'
   tag: fixed
-  bug: 1614796
-- note: '"Get New Messages for All Accounts" not working for OAuth2-authenticated IMAP accounts'
+  bugs:
+  - 1614796
+- note: '"Get New Messages for All Accounts" not working for OAuth2-authenticated IMAP
+    accounts'
   tag: fixed
-  bug: 1593611
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.6">security
+  bugs:
+  - 1593611
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.6">security
     fixes</a>
   tag: fixed

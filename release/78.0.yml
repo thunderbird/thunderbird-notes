@@ -75,235 +75,287 @@ release:
 notes:
 - note: New Account Hub for centralized account setup
   tag: new
-  bug: 1589005
+  bugs:
+  - 1589005
 - note: 'Redesigned recipient address fields (To, Cc, Bcc) as single-line input fields
-    (pills) for multiple addresses instead of one line per address. *More improvements to come.*'
+    (pills) for multiple addresses instead of one line per address. *More improvements
+    to come.*'
   tag: new
-  bug: 440377
-  bug2: 1609647
-  bug3: 1615917
-  bug4: 1603166
-  bug5: 1602477
+  bugs:
+  - 440377
+  - 1609647
+  - 1615917
+  - 1603166
+  - 1602477
 - note: Color customization of Folder Pane icons
   tag: new
-  bug: 1637668
-- note: Allow selecting messages via selection boxes instead of classic selection.
-    "Select Messages" column needs to be selected via the thread pane's column picker.
+  bugs:
+  - 1637668
+- note: Allow selecting messages via selection boxes instead of classic selection. "Select
+    Messages" column needs to be selected via the thread pane's column picker.
   tag: new
-  bug: 1017904
+  bugs:
+  - 1017904
 - note: '"Delete" action column in thread pane (message list). "Select Messages" column
     needs to be selected via the thread pane''s column picker.'
   tag: new
-  bug: 1626841
+  bugs:
+  - 1626841
 - note: Themes can be previewed in the Add-On Manager
   tag: new
-  bug: 1598903
+  bugs:
+  - 1598903
 - note: Minimize to tray support added for Windows
   tag: new
-  bug: 208923
-  bug2: 1626161
+  bugs:
+  - 208923
+  - 1626161
 - note: New config option to anonymize message date header
   tag: new
-  bug: 1603359
+  bugs:
+  - 1603359
 - note: Global Search menu item in app menu
   tag: new
-  bug: 1356792
+  bugs:
+  - 1356792
 - note: 'Additional Enterprise policies'
   tag: new
-  bug: 1622703
-  bug2: 1628156
+  bugs:
+  - 1622703
+  - 1628156
 - note: 'Calendar: Added ICS import support to -file command line option'
   tag: new
-  bug: 1583595
+  bugs:
+  - 1583595
 - note: 'Calendar: Add event preview to ICS import dialog'
   tag: new
-  bug: 1631902
+  bugs:
+  - 1631902
 - note: 'Chat: OTR messaging support'
   tag: new
-  bug: 1518166
+  bugs:
+  - 1518166
 - note: 'Chat: IRC echo-message capability'
   tag: new
-  bug: 1601102
+  bugs:
+  - 1601102
 
 - note: '**Add-on support: As of version 78.0, Thunderbird only supports MailExtensions
-    and MailExtension Experiments. Restartless add-ons and non-restartless legacy
-    add-ons using XUL overlays are no longer supported.**'
+    and MailExtension Experiments. Restartless add-ons and non-restartless legacy add-ons
+    using XUL overlays are no longer supported.**'
   tag: changed
-  bug: 1614237
-- note: '**As of version 78.0, "sideloaded" extensions are no longer supported.
-  Enterprise administrators can deploy extensions using policies.'
+  bugs:
+  - 1614237
+- note: '**As of version 78.0, "sideloaded" extensions are no longer supported. Enterprise
+    administrators can deploy extensions using policies.'
   tag: changed
-  bug: 1656652
-- note: 'Linux minimum runtime requirements have changed: GTK 3.14, GLIBC 2.17, libstdc++ 4.8.1
-    [Details](/en-US/thunderbird/78.0/system-requirements/)'
+  bugs:
+  - 1656652
+- note: 'Linux minimum runtime requirements have changed: GTK 3.14, GLIBC 2.17, libstdc++
+    4.8.1 [Details](/en-US/thunderbird/78.0/system-requirements/)'
   tag: changed
-  bug: 1634204
+  bugs:
+  - 1634204
 - note: Thunderbird Options/Preferences tab redesigned and with new user interface
   tag: changed
-  bug: 1498332
+  bugs:
+  - 1498332
 - note: Account creation dialog redesigned and with new user interface
   tag: changed
-  bug: 1551133
-  bug2: 1590636
-  bug3: 1590636
+  bugs:
+  - 1551133
+  - 1590636
+  - 1590636
 - note: Account Manager moved to a tab
   tag: changed
-  bug: 1610445
-  bug2: 1628497
+  bugs:
+  - 1610445
+  - 1628497
 - note: Add-ons manager with new user interface and notifications
   tag: changed
-  bug: 1566347
-  bug2: 1621841
-  bug3: 1621213
-  bug4: 1600923
-- note: Improved "Recent" folder list for "Move to" and "Copy to" in message context
-    menu
+  bugs:
+  - 1566347
+  - 1621841
+  - 1621213
+  - 1600923
+- note: Improved "Recent" folder list for "Move to" and "Copy to" in message context menu
   tag: changed
-  bug: 949135
+  bugs:
+  - 949135
 - note: Improved UI of global search results tab
   tag: changed
-  bug: 1022228
+  bugs:
+  - 1022228
 - note: Improvements to the location bar of a tab displaying web pages
   tag: changed
-  bug: 1644689
+  bugs:
+  - 1644689
 - note: 'Use scalable icons throughout Thunderbird to improve support for HiDPI monitors
     and dark mode'
   tag: changed
-  bug: 1636238
-  bug2: 1638863
-- note: Address books are now stored as SQLite databases to prepare for future
-    addressbook improvements. Existing address books in MAB format (using a Mork database)
-    will be converted.
+  bugs:
+  - 1636238
+  - 1638863
+- note: Address books are now stored as SQLite databases to prepare for future addressbook
+    improvements. Existing address books in MAB format (using a Mork database) will be
+    converted.
   tag: changed
-  bug: 1572324
-  bug2: 1576525
-  bug3: 1581765
-  bug4: 1606285
-  bug5: 1606284
+  bugs:
+  - 1572324
+  - 1576525
+  - 1581765
+  - 1606285
+  - 1606284
 - note: New parser and formatter for vCard. vCard versions 3.0 and 4.0 are now supported.
   tag: changed
-  bug: 1639430
+  bugs:
+  - 1639430
 - note: Various theme and dark mode improvements
   tag: changed
-  bug: 1627748
-  bug2: 1629084
-  bug3: 1629515
-  bug4: 1629518
-  bug5: 1630985
-  bug6: 1631779
-  bug7: 1619725
-  bug8: 1640390
-  bug9: 1591531
+  bugs:
+  - 1627748
+  - 1629084
+  - 1629515
+  - 1629518
+  - 1630985
+  - 1631779
+  - 1619725
+  - 1640390
+  - 1591531
 - note: Various look and feel improvements
   tag: changed
-  bug: 1514863
-  bug2: 1643159
-  bug3: 1644730
-  bug4: 1644798
-  bug5: 1645094
-  bug6: 1645687
-  bug7: 1645700
-  bug8: 1647471
-  bug9: 1647479
+  bugs:
+  - 1514863
+  - 1643159
+  - 1644730
+  - 1644798
+  - 1645094
+  - 1645687
+  - 1645700
+  - 1647471
+  - 1647479
 - note: Improved dialog for folder compaction (purging of deleted messages)
   tag: changed
-  bug: 716412
+  bugs:
+  - 716412
 - note: Graphics hardware acceleration is now enabled by default
   tag: changed
-  bug: 1623265
+  bugs:
+  - 1623265
 - note: TLS 1.0 and 1.1 disabled
   tag: changed
-  bug: 1606733
+  bugs:
+  - 1606733
 - note: 'Calendar: The Lightning calendar add-on is now integrated into Thunderbird'
   tag: changed
-  bug: 1608610
+  bugs:
+  - 1608610
 - note: 'Calendar: Lightning version removed from Thunderbird user agent string'
   tag: changed
-  bug: 1624241
+  bugs:
+  - 1624241
 - note: 'Calendar: Web Calendar Access Protocol (WCAP) support removed'
   tag: changed
-  bug: 1579020
+  bugs:
+  - 1579020
 - note: 'Calendar: Storage access is now asynchronous to improve performance'
   tag: changed
-  bug: 501689
+  bugs:
+  - 501689
 - note: 'Calendar: Location URLs are now clickable'
   tag: changed
-  bug: 1614972
-- note: 'Addon Developers: Updates to and expansion of MailExtensions APIs.
-    [Details](https://developer.thunderbird.net/add-ons/updating/tb78)'
+  bugs:
+  - 1614972
+- note: 'Addon Developers: Updates to and expansion of MailExtensions APIs. [Details](https://developer.thunderbird.net/add-ons/updating/tb78)'
   tag: changed
-  bug: 1532528
-  bug2: 1532528
-  bug3: 1599380
-  bug4: 1531593
-  bug5: 1630786
-  bug6: 1644000
-  bug7: 1645945
+  bugs:
+  - 1532528
+  - 1532528
+  - 1599380
+  - 1531593
+  - 1630786
+  - 1644000
+  - 1645945
 
 - note: Password display font had characters that were difficult to read
   tag: fixed
-  bug: 242418
-- note: When copying messages from an IMAP folder to a local folder, offline store
-    wasn't used
+  bugs:
+  - 242418
+- note: When copying messages from an IMAP folder to a local folder, offline store wasn't
+    used
   tag: fixed
-  bug: 505456
-- note: While Thunderbird was in safe mode, the help menu did not offer an item to
-    restart with add-ons enabled
+  bugs:
+  - 505456
+- note: While Thunderbird was in safe mode, the help menu did not offer an item to restart
+    with add-ons enabled
   tag: fixed
-  bug: 724963
+  bugs:
+  - 724963
 - note: Mailbox quotas not displayed correctly
   tag: fixed
-  bug: 841906
+  bugs:
+  - 841906
 - note: Images not rotated when composing a message
   tag: fixed
-  bug: 1340927
+  bugs:
+  - 1340927
 - note: Email addresses sometimes displayed incorrectly in message composer
   tag: fixed
-  bug: 1526456
+  bugs:
+  - 1526456
 - note: 'Many accessibility fixes and improvements: message composer, account setup, attachment
     pane'
   tag: fixed
-  bug: 1589859
-  bug2: 1613284
-  bug3: 1620310
-  bug4: 1620718
-  bug5: 1637230
-  bug6: 1637536
-  bug7: 1589863
+  bugs:
+  - 1589859
+  - 1613284
+  - 1620310
+  - 1620718
+  - 1637230
+  - 1637536
+  - 1589863
 - note: Mailbox format conversion fixes
   tag: fixed
-  bug: 1515254
-  bug2: 1611897
+  bugs:
+  - 1515254
+  - 1611897
 - note: 'Address book improvements: exporting, editing contacts, contact photos'
   tag: fixed
-  bug: 1619155
-  bug2: 1622642
-  bug3: 1624207
-  bug4: 1624207
-  bug5: 1626167
-  bug6: 1630184
-  bug7: 1633294
+  bugs:
+  - 1619155
+  - 1622642
+  - 1624207
+  - 1624207
+  - 1626167
+  - 1630184
+  - 1633294
 - note: 'Chat: Renaming contacts in context menu did not work'
   tag: fixed
-  bug: 1622000
+  bugs:
+  - 1622000
 - note: 'Calendar: Task and event dialogs were sometimes too small for their content'
   tag: fixed
-  bug: 1623817
+  bugs:
+  - 1623817
 - note: 'Calendar: URLs in the event reminder dialog were not clickable'
   tag: fixed
-  bug: 1644990
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.0">security fixes</a>
+  bugs:
+  - 1644990
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.0">security
+    fixes</a>
   tag: fixed
 
 
 # Unresolved
 - note: 'Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable'
   tag: unresolved
-  bug: 1556261
+  bugs:
+  - 1556261
 - note: 'Preferences search not available'
-  bug: 1573678
+  bugs:
+  - 1573678
   tag: unresolved
 - note: 'Drag and drop of address book contacts not working in some situations'
-  bug: 1649804
+  bugs:
+  - 1649804
   tag: unresolved

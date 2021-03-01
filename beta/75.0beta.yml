@@ -12,110 +12,137 @@ release:
     **As of Thunderbird 74, "legacy" extensions are no longer supported.**
   import_system_requirements: '68.0'
   groups:
-  -
+  - 
   - "Fixed in Beta 2"
   - "Changed and Fixed in Beta 3"
 
 notes:
-- note: 'Improvements of recipient pills: Allow incremental selection of recipient pills with Ctrl+A.
-    Added "Move to To/Cc/Bcc" to recipient pill context menu.'
-  bug: 1615917
-  bug2: 1609647
+- note: 'Improvements of recipient pills: Allow incremental selection of recipient pills
+    with Ctrl+A. Added "Move to To/Cc/Bcc" to recipient pill context menu.'
+  bugs:
+  - 1615917
+  - 1609647
   tag: new
 - note: 'MailExtensions: API event for new message notifications'
-  bug: 1599380
+  bugs:
+  - 1599380
   tag: new
 - note: 'MailExtensions: Allow access to message body with browser.compose'
-  bug: 1613534
+  bugs:
+  - 1613534
   tag: changed
 - note: 'Calendar: Hide UI elements when calendars are disabled'
-  bug: 1617786
+  bugs:
+  - 1617786
   tag: changed
 - note: 'Images not rotated when composing a message'
-  bug: 1340927
+  bugs:
+  - 1340927
   tag: fixed
 - note: 'Extra recipients panel not keyboard-accessible'
-  bug: 1612717
+  bugs:
+  - 1612717
   tag: fixed
 - note: 'Address pills created from an LDAP address book appeared in orange'
-  bug: 1609928
+  bugs:
+  - 1609928
   tag: fixed
 - note: 'Searching across multiple address books sometimes returned incomplete results'
-  bug: 1617797
+  bugs:
+  - 1617797
   tag: fixed
 - note: 'Removing contacts from "All Address Books" view sometimes failed'
-  bug: 1619157
+  bugs:
+  - 1619157
   tag: fixed
 - note: '"Verify" button was not always enabled when subscribing to a new feed'
-  bug: 1604873
+  bugs:
+  - 1604873
   tag: fixed
 - note: 'Moving feeds between accounts via drag & drop was failing under some circumstances'
-  bug: 1617268
+  bugs:
+  - 1617268
   tag: fixed
 - note: 'MailExtensions: browser.menus.overrideContext not working'
-  bug: 1608626
+  bugs:
+  - 1608626
   tag: fixed
 - note: 'Calendar: Menus appeared in message windows'
-  bug: 1620123
+  bugs:
+  - 1620123
   tag: fixed
 
 # Beta 2 follows
 - note: 'Accessibility: Status bar was not detected by screenreaders'
-  bug: 1621287
+  bugs:
+  - 1621287
   tag: fixed
   group: 2
 - note: 'MailExtensions: Did not prompt when requesting new permissions'
-  bug: 1620861
+  bugs:
+  - 1620861
   tag: fixed
   group: 2
 - note: 'MailExtensions: Mailing lists did not expand before triggering onBeforeSend'
-  bug: 1619057
+  bugs:
+  - 1619057
   tag: fixed
   group: 2
 - note: 'Calendar: Invitations with embedded null bytes did not always decode correctly'
-  bug: 1623896
+  bugs:
+  - 1623896
   tag: fixed
   group: 2
 - note: "Calendar: Cancelled events didn't show with a line-through"
-  bug: 1621210
+  bugs:
+  - 1621210
   tag: fixed
   group: 2
 - note: 'Chat: Account wizard did not properly save all options'
-  bug: 1622607
+  bugs:
+  - 1622607
   tag: fixed
   group: 2
 
 # Beta 3 follows
 - note: 'Hardware acceleration was disabled by default'
   tag: changed
-  bug: 1623265
+  bugs:
+  - 1623265
   group: 3
-- note: 'Printing did not work. **This is a temporary fix that disables the print
-      progress dialog.**'
+- note: 'Printing did not work. **This is a temporary fix that disables the print progress
+    dialog.**'
   tag: fixed
-  bug: 1620314
+  bugs:
+  - 1620314
   group: 3
 - note: 'Autodiscover: Standard protocols were not given priority over Exchange'
   tag: fixed
-  bug: 1611405
+  bugs:
+  - 1611405
   group: 3
 - note: 'Language packs were not available for download'
   tag: fixed
-  bug: 1625337
+  bugs:
+  - 1625337
   group: 3
 
 - note: 'Print progress dialog is disabled.'
   tag: unresolved
-  bug: 1625299
+  bugs:
+  - 1625299
 - note: 'Message composer not using correct fonts'
   tag: unresolved
-  bug: 1622231
-  bug2: 1625218
-- note: 'Message composer colors are unreadable when using dark mode on macOS
-and Linux. *Workaround: Set the OS to use a Light theme.*'
+  bugs:
+  - 1622231
+  - 1625218
+- note: 'Message composer colors are unreadable when using dark mode on macOS and Linux.
+    *Workaround: Set the OS to use a Light theme.*'
   tag: unresolved
-  bug: 1625837
+  bugs:
+  - 1625837
 - note: 'Unable to export address book'
   tag: unresolved
-  bug: 1624207
+  bugs:
+  - 1624207
 

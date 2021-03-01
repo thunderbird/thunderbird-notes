@@ -20,29 +20,35 @@ release:
 notes:
 - note: 'Support for Client Identity IMAP/SMTP Service Extension'
   tag: new
-  bug: 1532388
+  bugs:
+  - 1532388
 - note: 'Support for OAuth 2.0 authentication for POP3 accounts'
   tag: new
-  bug: 1538409
+  bugs:
+  - 1538409
 - note: 'Status area goes blank during account setup'
   tag: fixed
-  bug: 1593122
+  bugs:
+  - 1593122
 - note: 'Calendar: Could not remove color for default categories'
   tag: fixed
-  bug: 1584853
+  bugs:
+  - 1584853
 - note: 'Calendar: Prevent calendar component loading multiple times'
   tag: fixed
-  bug: 1606375
+  bugs:
+  - 1606375
 - note: 'Calendar: Today pane did not retain width between sessions'
   tag: fixed
-  bug: 1610207
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.5">security
+  bugs:
+  - 1610207
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird68.5">security
     fixes</a>
   tag: fixed
 - note: 'When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically
-  updated during the upgrade process. They will however be updated during the add-on update
-  check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager
-  or via [addons.thunderbird.net](https://addons.thunderbird.net).'
+    updated during the upgrade process. They will however be updated during the add-on
+    update check. It is of course possible to reinstall compatible add-ons via the Add-ons
+    Manager or via [addons.thunderbird.net](https://addons.thunderbird.net).'
   tag: unresolved
-  bug: 1574183
+  bugs:
+  - 1574183

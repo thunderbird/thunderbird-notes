@@ -6,122 +6,153 @@ release:
     **As of Thunderbird 74, "legacy" extensions are no longer supported.**
   import_system_requirements: '68.0'
   groups:
-  -
+  - 
   - "Fixed in Beta 2"
   - "Changed and Fixed in Beta 3"
 
 notes:
 - note: 'New Account Hub for centralized account setup'
   tag: new
-  bug: 1589005
+  bugs:
+  - 1589005
 - note: 'Minimize to tray support added for Windows'
   tag: new
-  bug: 208923
-  bug2: 1626161
+  bugs:
+  - 208923
+  - 1626161
 - note: 'New config option to anonymize message date header'
   tag: new
-  bug: 1603359
+  bugs:
+  - 1603359
 - note: 'MailExtensions: Add API for managing identities'
   tag: new
-  bug: 1531593
-  bug2: 1617448
+  bugs:
+  - 1531593
+  - 1617448
 - note: 'Thunderbird will now ask for OS account password before displaying saved passwords'
   tag: changed
-  bug: 1622293
+  bugs:
+  - 1622293
 - note: 'Addons page UI refreshed'
   tag: changed
-  bug: 1600923
+  bugs:
+  - 1600923
 - note: 'MailExtensions: Allow experiments to use address book cache'
   tag: changed
-  bug: 1617379
+  bugs:
+  - 1617379
 - note: 'Calendar: Lightning version removed from Thunderbird user agent string'
   tag: changed
-  bug: 1624241
+  bugs:
+  - 1624241
 - note: 'Email addresses sometimes displayed incorrectly in message composer'
   tag: fixed
-  bug: 1526456
+  bugs:
+  - 1526456
 - note: 'Address book improvements: exporting, editing contacts, contact photos'
   tag: fixed
-  bug: 1622642
-  bug2: 1619155
-  bug3: 1624207
-  bug4: 1626167
-  bug5: 1624207
+  bugs:
+  - 1622642
+  - 1619155
+  - 1624207
+  - 1626167
+  - 1624207
 - note: 'Dark theme fixes: message composer, address book, calendar'
   tag: fixed
-  bug: 1622860
-  bug2: 1622695
-  bug3: 1623938
-  bug4: 1624214
-  bug5: 1625300
-  bug6: 1625987
-  bug7: 1622695
+  bugs:
+  - 1622860
+  - 1622695
+  - 1623938
+  - 1624214
+  - 1625300
+  - 1625987
+  - 1622695
 - note: 'Various accessibility fixes: message composer, account setup, attachment pane'
   tag: fixed
-  bug: 1589859
-  bug2: 1620718
-  bug3: 1613284
-  bug4: 1620310
+  bugs:
+  - 1589859
+  - 1620718
+  - 1613284
+  - 1620310
 - note: 'Mailbox format conversion fixes'
   tag: fixed
-  bug: 1515254
-  bug2: 1611897
+  bugs:
+  - 1515254
+  - 1611897
 - note: 'Mailbox quotas not displayed correctly'
   tag: fixed
-  bug: 841906
+  bugs:
+  - 841906
 - note: 'Chat: Add OTR Fingerprint menu was incorrectly shown for IRC channels'
   tag: fixed
-  bug: 1621266
+  bugs:
+  - 1621266
 - note: 'Chat: Renaming contacts in context menu did not work'
   tag: fixed
-  bug: 1622000
+  bugs:
+  - 1622000
 - note: 'Calendar: Task and event dialogs were sometimes too small for their content'
   tag: fixed
-  bug: 1623817
+  bugs:
+  - 1623817
 - note: 'Calendar: Rotated day and week views not displayed correctly'
   tag: fixed
-  bug: 1608765
+  bugs:
+  - 1608765
 
 # Beta 2 follows
 - note: 'Preferences: "Files & Attachments" column headers did not align with content'
   tag: fixed
   group: 2
-  bug: 1628448
-- note: 'Accessibility: Screen readers were reporting too many activities from the status bar'
+  bugs:
+  - 1628448
+- note: 'Accessibility: Screen readers were reporting too many activities from the status
+    bar'
   tag: fixed
   group: 2
-  bug: 1628891
+  bugs:
+  - 1628891
 - note: 'Chat: Multiple OTR system messages were collapsed, resulting in missed notifications'
   tag: fixed
   group: 2
-  bug: 1549938
+  bugs:
+  - 1549938
 
 
 # Beta 3 follows
 - note: 'Removed "Run in Private Windows" section from Addons page'
   tag: changed
   group: 3
-  bug: 1630055
-- note: 'Messages were sometimes sent with a badly formed address when filled from the addressbook'
+  bugs:
+  - 1630055
+- note: 'Messages were sometimes sent with a badly formed address when filled from the
+    addressbook'
   tag: fixed
   group: 3
-  bug: 1629842
-- note: 'MailExtensions: Setting IMAP messages as read with browser.messages.updated failed to persist'
+  bugs:
+  - 1629842
+- note: 'MailExtensions: Setting IMAP messages as read with browser.messages.updated failed
+    to persist'
   tag: fixed
   group: 3
-  bug: 1631184
-- note: 'MailExtensions: Multiple extensions using compose.onBeforeSend could send an email prematurely'
+  bugs:
+  - 1631184
+- note: 'MailExtensions: Multiple extensions using compose.onBeforeSend could send an email
+    prematurely'
   tag: fixed
   group: 3
-  bug: 1631011
+  bugs:
+  - 1631011
 
 - note: 'Print progress dialog is disabled.'
   tag: unresolved
-  bug: 1625299
+  bugs:
+  - 1625299
 - note: 'Message composer not using correct fonts'
   tag: unresolved
-  bug: 1622231
-  bug2: 1625218
+  bugs:
+  - 1622231
+  - 1625218
 
 
 

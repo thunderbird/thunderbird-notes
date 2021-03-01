@@ -11,7 +11,7 @@ release:
   import_system_requirements: '79.0beta'
 
   groups:
-  -
+  - 
   - "Changed and Fixed in Beta 2"
   - "Changed and Fixed in Beta 3"
 
@@ -19,112 +19,138 @@ notes:
 
 - note: 'MailExtensions: API for running content scripts on displayed messages'
   tag: new
-  bug: 15044475
+  bugs:
+  - 15044475
 - note: 'MailExtensions: browser.tabs.sendMessage API added'
   tag: new
-  bug: 1641576
+  bugs:
+  - 1641576
 
 - note: 'Chat icons updated'
   tag: changed
-  bug: 1662489
+  bugs:
+  - 1662489
 - note: 'MailExtensions: compose.begin functions now support creating a message with attachments'
   tag: changed
-  bug: 1662018
+  bugs:
+  - 1662018
 
 - note: 'Searching an address book list did not display results'
   tag: fixed
-  bug: 1663935
+  bugs:
+  - 1663935
 - note: 'New news articles were not downloaded'
   tag: fixed
-  bug: 1661955
+  bugs:
+  - 1661955
 - note: 'Drag and dropping recipient pills lost cursor and selection'
   tag: fixed
-  bug: 1663055
+  bugs:
+  - 1663055
 - note: 'Single-click deletion of recipient pills with middle mouse button restored'
   tag: fixed
-  bug: 1661438
+  bugs:
+  - 1661438
 - note: 'Creating a new calendar event did not require an event title'
   tag: fixed
-  bug: 1663303
+  bugs:
+  - 1663303
 - note: 'Windows installer was unreadable with Windows in high contrast mode'
   tag: fixed
-  bug: 1665321
+  bugs:
+  - 1665321
 
 - note: 'MailExtensions: Updating attachments with onBeforeSend.addListener() did not work'
   tag: fixed
-  bug: 1662015
+  bugs:
+  - 1662015
 
 # beta 2
 
-- note: 'Thunderbird will no longer automatically install updates when
-      Preferences tab is opened'
+- note: 'Thunderbird will no longer automatically install updates when Preferences tab
+    is opened'
   tag: changed
-  bug: 1666324
+  bugs:
+  - 1666324
   group: 2
 - note: 'OpenPGP: Improved support for encrypting with subkeys'
   tag: fixed
-  bug: 1665281
-  bug2: 1665497
+  bugs:
+  - 1665281
+  - 1665497
   group: 2
-- note: 'OpenPGP: Encrypted messages with international characters were
-    sometimes displayed incorrectly'
+- note: 'OpenPGP: Encrypted messages with international characters were sometimes displayed
+    incorrectly'
   tag: fixed
-  bug: 1665287
+  bugs:
+  - 1665287
   group: 2
 - note: 'Dark mode, high contrast, and Windows theming fixes'
   tag: fixed
-  bug: 1665336
-  bug2: 1667317
-  bug3: 1667109
+  bugs:
+  - 1665336
+  - 1667317
+  - 1667109
   group: 2
 
 # beta 3
 
 - note: 'Yahoo and AOL mail users using password authentication will be migrated to OAuth2'
   tag: changed
-  bug: 1606339
-  bug2: 1670892
+  bugs:
+  - 1606339
+  - 1670892
   group: 3
 
 - note: 'Thunderbird could freeze when updating global search index'
   tag: fixed
-  bug: 1669872
+  bugs:
+  - 1669872
   group: 3
-- note: 'Recipient address fields in compose window could expand to fill all available space'
+- note: 'Recipient address fields in compose window could expand to fill all available
+    space'
   tag: fixed
-  bug: 1666463
-  bug2: 1667173
-  bug3: 1667602
+  bugs:
+  - 1666463
+  - 1667173
+  - 1667602
   group: 3
 - note: 'OpenPGP Key Manager was missing from Tools menu on macOS'
   tag: fixed
-  bug: 1662279
+  bugs:
+  - 1662279
   group: 3
 - note: 'End-to-end encryption options not saved for multiple identities'
   tag: fixed
-  bug: 1667025
+  bugs:
+  - 1667025
   group: 3
 - note: 'Inserting emoji characters in message compose window caused unexpected behavior'
   tag: fixed
-  bug: 1665174
+  bugs:
+  - 1665174
   group: 3
 - note: 'HTTP refresh in content tabs did not work'
   tag: fixed
-  bug: 1667774
+  bugs:
+  - 1667774
   group: 3
 - note: 'Multiple issues with handling of self-signed SSL certificates addressed'
   tag: fixed
-  bug: 1590474
-  bug2: 1665577
-  bug3: 1667043
+  bugs:
+  - 1590474
+  - 1665577
+  - 1667043
   group: 3
 - note: 'Various keyboard navigation fixes'
   tag: fixed
-  bug: 1666885
-  bug2: 1667567
-  bug3: 1667614
+  bugs:
+  - 1666885
+  - 1667567
+  - 1667614
   group: 3
 - note: 'Various color-related theme fixes'
   tag: fixed
-  bug: 1668896
-  bug2: 1668410
+  bugs:
+  - 1668896
+  - 1668410

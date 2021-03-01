@@ -10,20 +10,24 @@ release:
     **Please refer to [Release Notes for version 52.0](https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/) to see the list of improvements and fixed issues.**
   import_system_requirements: '52.0'
 notes:
-- note: 'Thunderbird will now prompt to compact IMAP folders even if the account is
-    online. Note: Under certain circumstances an incorrect estimate of the expected gain is shown.'
+- note: 'Thunderbird will now prompt to compact IMAP folders even if the account is online.
+    Note: Under certain circumstances an incorrect estimate of the expected gain is shown.'
   tag: changed
-- note: 'Complete fix of the EFAIL vulnerability: 1) Removing some HTML crafted to carry out an attack.
-    2) Optionally: Not decrypting subordinate message parts that otherwise might reveal decrypted content to the attacker.
-    Preference mailnews.p7m_subparts_external needs to be set to true for added security.'
+- note: 'Complete fix of the EFAIL vulnerability: 1) Removing some HTML crafted to carry
+    out an attack. 2) Optionally: Not decrypting subordinate message parts that otherwise
+    might reveal decrypted content to the attacker. Preference mailnews.p7m_subparts_external
+    needs to be set to true for added security.'
   tag: fixed
-  bug: 1419417
+  bugs:
+  - 1419417
 - note: 'Various problems when forwarding messages inline when using "simple" HTML view'
   tag: fixed
-  bug: 394322
+  bugs:
+  - 394322
 - note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.9">security
     fixes</a>
   tag: fixed
 - note: Deleting or detaching attachments will corrupt messages under certain circumstances
   tag: unresolved
-  bug: 1473893
+  bugs:
+  - 1473893

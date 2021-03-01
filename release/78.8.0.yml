@@ -13,31 +13,38 @@ release:
   import_system_requirements: '78.0'
 
 notes:
-  - note: Importing an address book from a CSV file always reported an error
-    tag: fixed
-    bug: 1685048
+- note: Importing an address book from a CSV file always reported an error
+  tag: fixed
+  bugs:
+  - 1685048
 
-  - note: Security information for S/MIME messages was not displayed correctly prior
-      to a draft being saved
-    tag: fixed
-    bug: 1683701
-  - note: 'Calendar: FileLink UI fixes for Caldav calendars'
-    tag: fixed
-    bug: 1669803
-  - note: Recurring tasks were always marked incomplete; unable to use filters
-    tag: fixed
-    bug: 1686466
-  - note: Various UI widgets not working
-    tag: fixed
-    bug: 1690098
-    bug2: 1690514
-  - note: Dark theme improvements
-    tag: fixed
-    bug: 1691106
-    bug2: 1691787
-  - note: Extension manager was missing link to addon support web page
-    tag: fixed
-    bug: 1642219
+- note: Security information for S/MIME messages was not displayed correctly prior to a
+    draft being saved
+  tag: fixed
+  bugs:
+  - 1683701
+- note: 'Calendar: FileLink UI fixes for Caldav calendars'
+  tag: fixed
+  bugs:
+  - 1669803
+- note: Recurring tasks were always marked incomplete; unable to use filters
+  tag: fixed
+  bugs:
+  - 1686466
+- note: Various UI widgets not working
+  tag: fixed
+  bugs:
+  - 1690098
+  - 1690514
+- note: Dark theme improvements
+  tag: fixed
+  bugs:
+  - 1691106
+  - 1691787
+- note: Extension manager was missing link to addon support web page
+  tag: fixed
+  bugs:
+  - 1642219
 
-  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.8)
-    tag: fixed
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.8)
+  tag: fixed

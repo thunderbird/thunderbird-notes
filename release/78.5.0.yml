@@ -15,34 +15,42 @@ release:
 notes:
 - note: 'OpenPGP: Added option to disable attaching the public key to a signed message'
   tag: new
-  bug: 1654950
+  bugs:
+  - 1654950
 - note: 'MailExtensions: "compose_attachments" context added to Menus API'
   tag: new
-  bug: 1670822
+  bugs:
+  - 1670822
 - note: 'MailExtensions: Menus API now available on displayed messages'
   tag: new
-  bug: 1670825
+  bugs:
+  - 1670825
 
 - note: 'MailExtensions: browser.tabs.create will now wait for "mail-delayed-startup-finished"
     event'
   tag: changed
-  bug: 1674407
+  bugs:
+  - 1674407
 
 - note: 'OpenPGP: Support for inline PGP messages improved'
   tag: fixed
-  bug: 1672851
+  bugs:
+  - 1672851
 - note: 'OpenPGP: Message security dialog showed unverified keys as unavailable'
   tag: fixed
-  bug: 1675285
+  bugs:
+  - 1675285
 - note: 'Chat: New chat contact menu item did not function'
   tag: fixed
-  bug: 1663321
+  bugs:
+  - 1663321
 - note: Various theme and usability improvements
   tag: fixed
-  bug: 1673861
-  bug2: 1674606
-  bug3: 1676041
+  bugs:
+  - 1673861
+  - 1674606
+  - 1676041
 
-- note: Various
-    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.5">security fixes</a>
+- note: Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.5">security
+    fixes</a>
   tag: fixed

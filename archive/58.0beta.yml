@@ -1,30 +1,38 @@
 release:
   release_date: 2017-11-27
-  text: "**These release notes apply to Thunderbird version 58 beta 2 released December 10th, 2017.**"
+  text: "**These release notes apply to Thunderbird version 58 beta 2 released December\
+    \ 10th, 2017.**"
   bug_search_url: https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2058.0&product=Thunderbird&resolution=FIXED
   import_system_requirements: '53.0beta'
 notes:
 - note: When composing a message, attachments can now be reordered
   tag: new
-  bug: 663695
+  bugs:
+  - 663695
 - note: Thunderbird Chat now contains multiple built-in message themes
   tag: new
-  bug: 1409839
+  bugs:
+  - 1409839
 - note: 'Thunderbird Chat: Nicknames inside of messages are colored to match the participants
     list'
   tag: changed
-  bug: 1409901
+  bugs:
+  - 1409901
 - note: Better error handling for Yahoo accounts
   tag: fixed
-  bug: 1408610
+  bugs:
+  - 1408610
 - note: Outlook import
   tag: fixed
-  bug: 1176748
+  bugs:
+  - 1176748
 - note: Performance problem when repairing, rebuilding or compacting folders or accessing
     large folders
   tag: fixed
-  bug: 1415723
+  bugs:
+  - 1415723
 - note: 'Localised versions of Thunderbird didn''t show a localised name for Hotmail''s
     "Deleted" folder '
   tag: fixed
-  bug: 1320191
+  bugs:
+  - 1320191

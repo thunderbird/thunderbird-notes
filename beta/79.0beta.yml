@@ -58,7 +58,7 @@ release:
         - GNOME 2.16 or higher
 
   groups:
-  -
+  - 
   - "New and Fixed in Beta 2"
   - "New, Changed, and Fixed in Beta 3"
 
@@ -66,125 +66,161 @@ notes:
 
 - note: 'Date and relevance setting remembered in facet search results'
   tag: new
-  bug: 663859
+  bugs:
+  - 663859
 - note: 'The preferences tab now has a search field'
   tag: new
-  bug: 1573678
+  bugs:
+  - 1573678
 - note: 'Language packs and dictionaries added to about:support'
   tag: new
-  bug: 1648165
+  bugs:
+  - 1648165
 - note: 'Theming improvements to the address book window and dialogs'
   tag: fixed
-  bug: 1649577
-  bug2: 1650789
+  bugs:
+  - 1649577
+  - 1650789
 
-- note: 'FileLink both created a link and attached a file to the message if the file was from a network share'
+- note: 'FileLink both created a link and attached a file to the message if the file was
+    from a network share'
   tag: fixed
-  bug: 793118
+  bugs:
+  - 793118
 - note: 'IMAP fetch chunk size was always 65536 bytes'
   tag: fixed
-  bug: 1580480
+  bugs:
+  - 1580480
 - note: 'Incremental search in contacts side bar failed to return some results'
   tag: fixed
-  bug: 1644026
-- note: 'When deleting a contact from search results in contacts sidebar, the entire result set disappeared'
+  bugs:
+  - 1644026
+- note: 'When deleting a contact from search results in contacts sidebar, the entire result
+    set disappeared'
   tag: fixed
-  bug: 1644084
+  bugs:
+  - 1644084
 - note: 'Crash on failure of LDAP address book replication'
   tag: fixed
-  bug: 1645512
+  bugs:
+  - 1645512
 - note: 'Adaptive Junk Mail settings could not be disabled'
   tag: fixed
-  bug: 1646529
+  bugs:
+  - 1646529
 - note: '"Unresponsive script" error on start-up for profiles with many folders'
   tag: fixed
-  bug: 1647251
+  bugs:
+  - 1647251
 - note: 'OAuth authorization window was missing the URL bar'
   tag: fixed
-  bug: 1649423
+  bugs:
+  - 1649423
 
 
 # Beta 2
 - note: 'OpenPGP: Key revocation, extending key expiration, and secret key backup'
   tag: new
-  bug: 1651712
+  bugs:
+  - 1651712
   group: 2
 - note: 'Drag & Drop multiple attachments to macOS Finder created duplicate files'
   tag: fixed
-  bug: 1494588
+  bugs:
+  - 1494588
   group: 2
 - note: 'About Thunderbird dialog keyboard shortcuts did not work'
   tag: fixed
-  bug: 1638563
+  bugs:
+  - 1638563
   group: 2
 - note: 'CC''d recipients sometimes displayed collapsed in header pane'
   tag: fixed
-  bug: 1652410
+  bugs:
+  - 1652410
   group: 2
 - note: 'Message filter and Folder Pane dialogs did not use the correct theme'
   tag: fixed
-  bug: 1650791
-  bug2: 1652015
+  bugs:
+  - 1650791
+  - 1652015
   group: 2
 - note: 'Changing Junk mail settings with keyboard toggled wrong setting'
   tag: fixed
-  bug: 1607613
+  bugs:
+  - 1607613
   group: 2
 - note: 'OpenPGP: Messages with long Armor Header lines did not display'
   tag: fixed
-  bug: 1653651
+  bugs:
+  - 1653651
   group: 2
 - note: 'OpenPGP: Messages containing non-UTF-8 text were not supported'
   tag: fixed
-  bug: 1651896
+  bugs:
+  - 1651896
   group: 2
 - note: 'Address book migration updates and fixes'
   tag: fixed
-  bug: 1652940
+  bugs:
+  - 1652940
   group: 2
 - note: 'Address book: Last Modified Date was not updated'
   tag: fixed
-  bug: 1634863
+  bugs:
+  - 1634863
   group: 2
 - note: 'Chat: Participants list did not display operator flags'
   tag: fixed
-  bug: 1648585
+  bugs:
+  - 1648585
   group: 2
 
 # Beta 3
-- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, online searching for OpenPGP keys, and more'
+- note: '**OpenPGP support is now feature complete.** Improvements: new Key Wizard, online
+    searching for OpenPGP keys, and more'
   tag: new
-  bug: 22687
-  bug2: 1652537
-  bug3: 1655113
+  bugs:
+  - 22687
+  - 1652537
+  - 1655113
   group: 3
 - note: 'Dark background in message reader is now disabled'
   tag: changed
-  bug: 1639249
+  bugs:
+  - 1639249
   group: 3
-- note: 'Attachment corruption could occur when downloading large attachments from an IMAP server that supports chunking'
+- note: 'Attachment corruption could occur when downloading large attachments from an IMAP
+    server that supports chunking'
   tag: fixed
-  bug: 1654995
+  bugs:
+  - 1654995
   group: 3
-- note: 'Thunderbird startup was slow when using folder color customizations with many folders. **Previously configured colors will not be migrated.**'
+- note: 'Thunderbird startup was slow when using folder color customizations with many
+    folders. **Previously configured colors will not be migrated.**'
   tag: fixed
-  bug: 1652279
+  bugs:
+  - 1652279
   group: 3
 - note: 'Mail quota usage in status bar did not support terabyte folder sizes'
-  bug: 1636665
+  bugs:
+  - 1636665
   tag: fixed
   group: 3
 - note: 'Dark mode improvements'
   tag: fixed
-  bug: 1653751
-  bug2: 1653750
+  bugs:
+  - 1653751
+  - 1653750
   group: 3
 
 
 
 - note: 'Chat displays no messages'
   tag: unresolved
-  bug: 1646611
+  bugs:
+  - 1646611
 - note: 'Fixed width font not working in compose window'
   tag: unresolved
-  bug: 1655279
+  bugs:
+  - 1655279

@@ -21,16 +21,20 @@ release:
 notes:
 - note: 'OpenPGP enabled by default'
   tag: changed
-  bug: 1659536
+  bugs:
+  - 1659536
 - note: 'OpenPGP: Disabled the use of MD5/SM2/SM3 algorithms'
   tag: changed
-  bug: 1641720
+  bugs:
+  - 1641720
 
-- note: 'OpenPGP: Users with sub-identities were unable to encrypt or sign messages
-  when switching identities'
+- note: 'OpenPGP: Users with sub-identities were unable to encrypt or sign messages when
+    switching identities'
   tag: fixed
-  bug: 1661160
+  bugs:
+  - 1661160
 - note: 'OpenPGP message security window did not support dark mode'
   tag: fixed
-  bug: 1661203
+  bugs:
+  - 1661203
 
