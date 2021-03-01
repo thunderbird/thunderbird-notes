@@ -1,7 +1,7 @@
 release:
   release_date: 2021-02-26
   text: |
-    **These notes apply to Thunderbird version 87 beta 1 released February 26, 2021.**
+    **These notes apply to Thunderbird version 87 beta 1 released March 3, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/87.0beta/system-requirements/)
 
@@ -62,6 +62,10 @@ release:
         - DBus 1.0 or higher
         - GNOME 2.16 or higher
         - PulseAudio
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
 - note: 'Native support for macOS devices built with Apple Silicon CPUs'
@@ -198,3 +202,41 @@ notes:
   tag: fixed
   bugs:
   - 1681153
+
+# beta 2
+
+- note: 'Account provisioner did not properly handle UTD-8 data'
+  tag: fixed
+  bugs:
+    - 1693883
+  group: 2
+- note: 'New mail notification displayed old messages that were unread'
+  tag: fixed
+  bugs:
+    - 375717
+  group: 2
+- note: 'New mail notification did not occur for newly arrived messages if previously received mail was unread'
+  tag: fixed
+  bugs:
+    - 210148
+  group: 2
+- note: 'Signed messages without a public key were sent with an incorrect mime-type, causing display issues in other mail clients'
+  tag: fixed
+  bugs:
+    - 1693156
+  group: 2
+- note: 'MailExtensions: Options pages opened in a tab did not have access to MailExtension APIs through the browser/messenger object'
+  tag: fixed
+  bugs:
+    - 1692975
+  group: 2
+- note: 'Entry field in "search messages" dialog did not expand to fill available width'
+  tag: fixed
+  bugs:
+    - 1694797
+  group: 2
+- note: 'Dialog displayed after importing messages from Outlook showed incomplete results'
+  tag: fixed
+  bugs:
+    - 1695441
+  group: 2
