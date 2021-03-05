@@ -205,7 +205,7 @@ notes:
 
 # beta 2
 
-- note: 'Account provisioner did not properly handle UTD-8 data'
+- note: 'Account provisioner did not properly handle UTF-8 data'
   tag: fixed
   bugs:
     - 1693883
