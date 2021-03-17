@@ -1,7 +1,7 @@
 release:
   release_date: 2021-02-26
   text: |
-    **These notes apply to Thunderbird version 87 beta 1 released March 3, 2021.**
+    **These notes apply to Thunderbird version 87 beta 3 released March 16, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/87.0beta/system-requirements/)
 
@@ -66,6 +66,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
 - note: 'Native support for macOS devices built with Apple Silicon CPUs'
@@ -240,3 +241,69 @@ notes:
   bugs:
     - 1695441
   group: 2
+
+# beta 3
+
+- note: 'Support recipient aliases for OpenPGP encryptioni. Documentation can be found <a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:Aliases">here</a>.'
+  tag: new
+  bugs:
+    - 1644085
+    - 1697239
+  group: 3
+
+- note: 'If an add-on has preferences, you can now access them via a button next to that add-on in the Add-Ons Manager. This used to be buried in a menu.'
+  tag: changed
+  bugs:
+    - 1692616
+  group: 3
+- note: 'The drop zones for "insert inline" and "add attachment" when dragging an image into a message were repositioned to be more intuitive.'
+  tag: changed
+  bugs:
+    - 1695579
+  group: 3
+
+- note: 'Some fields were unreadable in the Dark theme in the General preferences panel.'
+  tag: fixed
+  bugs:
+    - 1695409
+  group: 3
+- note: 'Sending a message containing an anchor tag with an invalid data URI would fail.'
+  tag: fixed
+  bugs:
+    - 1696052
+  group: 3
+- note: 'When switching tabs, the focus was not moved to something in the new tab, potentially causing keyboard and menu actions to interact with a field you can no longer see.'
+  tag: fixed
+  bugs:
+    - 1695098
+  group: 3
+- note: 'When forwarding a message with multiple attachments, not all of the attachments were visible.'
+  tag: fixed
+  bugs:
+    - 1695644
+  group: 3
+- note: 'If you dragged an attachment into a message and then dragged it back out too quickly, the drop zone did not disappear, preventing you from further interacting with the message.'
+  tag: fixed
+  bugs:
+    - 1695521
+  group: 3
+- note: 'Address Book: It was not possible to access to the Notes field in Outlook Address Books from Outlook 2010 and newer.'
+  tag: fixed
+  bugs:
+    - 1695359
+  group: 3
+- note: 'Address Book: Importing VCards with non-ascii characters would fail.'
+  tag: fixed
+  bugs:
+    - 1694264
+  group: 3
+- note: 'Address Book: Some values may not have been parsed when syncing from Google address books.'
+  tag: fixed
+  bugs:
+    - 1694339
+  group: 3
+- note: 'The key and signature parts of the message security popup on a received message could not be selected for copy/paste.'
+  tag: fixed
+  bugs:
+    - 1693138
+  group: 3
