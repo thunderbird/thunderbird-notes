@@ -1,0 +1,70 @@
+release:
+  release_date: '2021-03-23'
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+# Fixed
+- note: 'New mail notification displayed old messages that were unread'
+  tag: fixed
+  bugs:
+  - 375717
+
+- note: 'Spaces following soft line breaks in messages using quoted-printable and format=flowed
+  were incorrectly encoded; existing messages which were previously incorrectly encoded
+  may now display with some words not separated by a space'
+  tag: fixed
+  bugs:
+  - 1689804
+- note: 'Some fields were unreadable in the Dark theme in the General preferences panel'
+  tag: fixed
+  bugs:
+  - 1695409
+- note: 'Sending a message containing an anchor tag with an invalid data URI failed'
+  tag: fixed
+  bugs:
+  - 1696052
+- note: 'When switching tabs, input focus was not moved to the new tab'
+  tag: fixed
+  bugs:
+  - 1695098
+- note: 'Address Book: Syncing a read-only Google address book via CardDAV failed'
+  tag: fixed
+  bugs:
+  - 1693665
+- note: 'Address Book: Importing VCards with non-ascii characters would fail'
+  tag: fixed
+  bugs:
+  - 1694264
+- note: 'Address Book: Some values may not have been parsed when syncing from Google address
+    books.'
+  tag: fixed
+  bugs:
+  - 1694339
+- note: Add-ons Manager did not show if an addon used experiment APIs
+  tag: fixed
+  bugs:
+  - 1689060
+- note: 'Calendar: Removing a recurring task was not possible'
+  tag: fixed
+  bugs:
+  - 1688708
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.9)
+  tag: fixed
+
+# Backout
+- note: 'The fix for [bug 210148](https://bugzil.la/210148) included in Thunderbird 78.8.1 was removed. _New mail
+   notifications not showing if there were unread messages from previous notifications._'
+  tag: unresolved
+  bugs:
+    - 210148
