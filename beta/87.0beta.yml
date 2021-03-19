@@ -244,14 +244,14 @@ notes:
 
 # beta 3
 
-- note: 'Support recipient aliases for OpenPGP encryptioni. Documentation can be found <a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:Aliases">here</a>.'
+- note: 'Support recipient aliases for OpenPGP encryption. Documentation can be found <a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:Aliases">here</a>.'
   tag: new
   bugs:
     - 1644085
     - 1697239
   group: 3
 
-- note: 'If an add-on has preferences, you can now access them via a button next to that add-on in the Add-Ons Manager. This used to be buried in a menu.'
+- note: 'If an add-on has preferences, they can now be accessed via a button next to that add-on in the Add-Ons Manager.'
   tag: changed
   bugs:
     - 1692616
@@ -282,15 +282,10 @@ notes:
   bugs:
     - 1695644
   group: 3
-- note: 'If you dragged an attachment into a message and then dragged it back out too quickly, the drop zone did not disappear, preventing you from further interacting with the message.'
+- note: 'When dragging an attachment into a message and then quickly dragging it back out again, the drop zone did not disappear, preventing further interaction with the message.'
   tag: fixed
   bugs:
     - 1695521
-  group: 3
-- note: 'Address Book: It was not possible to access to the Notes field in Outlook Address Books from Outlook 2010 and newer.'
-  tag: fixed
-  bugs:
-    - 1695359
   group: 3
 - note: 'Address Book: Importing VCards with non-ascii characters would fail.'
   tag: fixed
