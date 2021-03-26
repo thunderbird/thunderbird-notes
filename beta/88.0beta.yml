@@ -89,7 +89,7 @@ notes:
   tag: changed
   bugs:
   - '1695790'
-- note: 'Mail Extensions: Many changes and improvements - see developer documentation'
+- note: 'Mail Extensions: Many changes and improvements - see <a href="https://webextension-api.thunderbird.net/en/latest/changes/beta88.html">developer documentation</a>'
   tag: changed
   bugs:
   - '1550960'
