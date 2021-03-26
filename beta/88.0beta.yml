@@ -1,0 +1,209 @@
+release:
+  release_date: 2021-03-26
+  text: |
+    **These notes apply to Thunderbird version 88 beta 1 released March 26, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+    <div style="color:magenta; font-weight:bold">Thunderbird since version 86.0b1 is using a new implementation of the message sending
+    code that is easier to maintain and more flexible. As with any major change, bugs are bound to happen. The old
+    behavior can be restored by setting the pref "mailnews.send.jsmodule" to false.</div>
+
+  system_requirements: |
+    ## Windows
+
+    ### Operating Systems
+    - Windows 7
+    - Windows 8
+    - Windows 10
+
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 200 MB hard drive space
+
+    ---
+
+    ## Mac
+
+    ### Operating Systems
+
+    - macOS 10.12
+    - macOS 10.13
+    - macOS 10.14
+    - macOS 10.15
+    - macOS 11
+
+    ###  Recommended Hardware
+
+    - Macintosh computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 3.14 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.8.1 or higher
+        - glibc 2.17 or higher
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
+        - PulseAudio
+
+notes:
+
+- note: 'Chat: Additional commands and events handled in Matrix'
+  tag: new
+  bugs:
+  - '1346441'
+  - '1347542'
+- note: 'Chat: Support Matrix servers that require Single-Signon'
+  tag: new
+  bugs:
+  - '1626182'
+- note: 'Chat: Send presence to Matrix servers'
+  tag: new
+  bugs:
+  - '1699060'
+
+- note: 'Calendar: Filter and sort items to be imported in the Import dialog'
+  tag: new
+  bugs:
+  - '1683063'
+  - '1686382'
+
+- note: 'Mail: Adding an attachment no longer produces an animation when "prefers-reduced-motion" preference is set'
+  tag: changed
+  bugs:
+  - '1695790'
+- note: 'Mail Extensions: Many changes and improvements - see developer documentation'
+  tag: changed
+  bugs:
+  - '1550960'
+  - '1598078'
+  - '1625746'
+  - '1677062'
+  - '1681131'
+  - '1681008'
+  - '1691253'
+  - '1694544'
+  - '1695297'
+  - '1696884'
+  - '1697075'
+  - '1698270'
+
+- note: 'The dialog to confirm setting Thunderbird as the default application was displayed after each startup on Windows 10 even if Thunderbird was already the default if "always check at startup" was enabled'
+  tag: fixed
+  bugs:
+  - '1696218'
+- note: 'Mail: Subject column in message lists sometimes showed text from invalid email headers'
+  tag: fixed
+  bugs:
+  - '1615064'
+- note: 'Mail: Right clicking on a folder mode header made the folder tree unresponsive'
+  tag: fixed
+  bugs:
+  - '1692764'
+- note: 'Mail: When creating or renaming an IMAP folder, it was duplicated in the folder tree if multiple folder modes were selected'
+  tag: fixed
+  bugs:
+  - '1696965'
+- note: 'Mail: Could not open PDF attachments when "Open messages in new window" preference set'
+  tag: fixed
+  bugs:
+  - '1663427'
+- note: 'Mail: UI did not update properly after setting up a new email account'
+  tag: fixed
+  bugs:
+  - '1689724'
+- note: 'Mail: Print dialog would take a long time to appear if remote content in message loaded slowly'
+  tag: fixed
+  bugs:
+  - '1694796'
+- note: 'Mail: New message notifications sent to the OS were sometimes excessively large'
+  tag: fixed
+  bugs:
+  - '1697882'
+- note: 'Mail: There were multiple problems with the behavior of editing recipient address pills'
+  tag: fixed
+  bugs:
+  - '1694502'
+  - '1696692'
+  - '1696789'
+  - '1698461'
+- note: 'Mail: Dragging an email into a compose window to attach it was broken'
+  tag: fixed
+  bugs:
+  - '1695641'
+- note: 'Mail: Spellcheck was mistakenly re-enabled when saving message as draft'
+  tag: fixed
+  bugs:
+  - '1695923'
+- note: 'Mail: On Mac, Cmd+Shift+Enter with focus on an address input would send immediately instead of the intended send later'
+  tag: fixed
+  bugs:
+  - '1696790'
+- note: 'Mail: Close tab button did not work when single-clicked with <code>mail.tabs.closeButtons</code> set to 3'
+  tag: fixed
+  bugs:
+  - '1679587'
+- note: 'Mail: Message summary pane had usability issues when multiple messages were selected'
+  tag: fixed
+  bugs:
+  - '1689934'
+- note: 'Mail: Keyboard shortcut to open the Message Security popup did not work on Mac'
+  tag: fixed
+  bugs:
+  - '1692263'
+
+- note: 'Address Book: Linux shortcut for Advanced Address Book Search (Ctrl+Shift+F) did not work'
+  tag: fixed
+  bugs:
+  - '1686428'
+- note: 'Address Book: Import Address Book from CSV did not not allow mapping all available fields'
+  tag: fixed
+  bugs:
+  - '194095'
+- note: 'Address Book: Radio buttons could not be selected on photo tab of an address card'
+  tag: fixed
+  bugs:
+  - '1671637'
+
+- note: 'Chat: Double clicking an account type in new account wizard did not select it'
+  tag: fixed
+  bugs:
+  - '1696901'
+- note: 'Chat: Matrix chat messages were not always associated with their participants correctly'
+  tag: fixed
+  bugs:
+  - '1698622'
+- note: 'Chat: /msg command in Matrix did not actually send the message'
+  tag: fixed
+  bugs:
+  - '1699064'
+
+- note: 'Calendar: There was a potential dataloss issue related to event reminders'
+  tag: fixed
+  bugs:
+  - '1671051'
+- note: 'Calendar: Could not reload .ics calendars unless calendars of other types also existed'
+  tag: fixed
+  bugs:
+  - '1658216'
+- note: 'Calendar: Import and export via CSV did not parse years correctly in event dates'
+  tag: fixed
+  bugs:
+  - '1695584'
