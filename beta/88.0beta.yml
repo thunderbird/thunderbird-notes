@@ -89,7 +89,7 @@ notes:
   tag: changed
   bugs:
   - '1695790'
-- note: 'Mail Extensions: Many changes and improvements - see <a href="https://webextension-api.thunderbird.net/en/latest/changes/beta88.html">developer documentation</a>'
+- note: 'Mail Extensions: Changes and improvements - see <a href="https://webextension-api.thunderbird.net/en/latest/changes/beta88.html">developer documentation</a>'
   tag: changed
   bugs:
   - '1550960'
@@ -207,3 +207,16 @@ notes:
   tag: fixed
   bugs:
   - '1695584'
+
+- note: 'Mail Extensions: <code>messages.getRaw()</code> did not work for NNTP/news messages'
+  tag: fixed
+  bugs:
+  - '1696884'
+- note: 'Mail Extensions: <code>contacts.quickSearch()</code> was failing on mailing lists'
+  tag: fixed
+  bugs:
+  - '1695297'
+- note: 'Mail Extensions: <code>menus.onClicked()</code> did not keep the user input status so <code>browserAction.openPopup()</code> could not be used'
+  tag: fixed
+  bugs:
+  - '1681131'
