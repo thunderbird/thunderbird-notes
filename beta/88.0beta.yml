@@ -105,7 +105,7 @@ notes:
   - '1697075'
   - '1698270'
 
-- note: 'The default application confirmation dialog was displayed after each startup on Windows 10, even if Thunderbird is the default when "always check at startup" was enabled'
+- note: 'The default application confirmation dialog was displayed after each startup on Windows 10, even if Thunderbird is the default when "always check at startup" enabled'
   tag: fixed
   bugs:
   - '1696218'
