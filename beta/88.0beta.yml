@@ -85,7 +85,7 @@ notes:
   - '1683063'
   - '1686382'
 
-- note: 'Mail: Adding an attachment no longer produces an animation when the operating system settings indicate less motion is desired'
+- note: 'Mail: Adding an attachment no longer produces an animation when the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion#user_preferences">operating system settings</a> indicate that less motion is desired or preference ui.prefersReducedMotion is set to 1.'
   tag: changed
   bugs:
   - '1695790'
