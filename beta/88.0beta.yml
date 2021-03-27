@@ -70,7 +70,7 @@ notes:
   bugs:
   - '1346441'
   - '1347542'
-- note: 'Chat: Support Matrix servers that require Single-Signon'
+- note: 'Chat: Support Matrix servers that require Single Sign-on'
   tag: new
   bugs:
   - '1626182'
@@ -85,7 +85,7 @@ notes:
   - '1683063'
   - '1686382'
 
-- note: 'Mail: Adding an attachment no longer produces an animation when "prefers-reduced-motion" preference is set'
+- note: 'Mail: Adding an attachment no longer produces an animation when the operating system settings indicate less motion is desired'
   tag: changed
   bugs:
   - '1695790'
