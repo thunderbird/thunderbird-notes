@@ -1,7 +1,7 @@
 release:
   release_date: 2021-03-26
   text: |
-    **These notes apply to Thunderbird version 88 beta 1 released March 26, 2021.**
+    **These notes apply to Thunderbird version 88 beta 2 released April 2, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
 
@@ -9,11 +9,16 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
-    <div style="color:magenta; font-weight:bold">Thunderbird since version 86.0b1 is using a new implementation of the message sending
-    code that is easier to maintain and more flexible. As with any major change, bugs are bound to happen. The old
-    behavior can be restored by setting the pref "mailnews.send.jsmodule" to false.</div>
+    <div style="color:magenta; font-weight:bold">Thunderbird 88.0beta is using a new implementation of the message sending
+    code that is easier to maintain and more flexible.</div>
+    <div style="color:magenta; font-weight:bold">As with any major change, bugs are bound to happen. The old
+    behavior can be restored by setting the preferences "mailnews.send.jsmodule" and "mailnews.smtp.jsmodule" to false.</div>
 
   import_system_requirements: '87.0beta'
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
 
@@ -172,3 +177,34 @@ notes:
   tag: fixed
   bugs:
   - '1681131'
+
+# beta 2
+- note: 'Preferences page on Windows did not have a setting for displaying an icon in the system tray'
+  tag: fixed
+  bugs:
+    - 1700440
+  group: 2
+- note: 'Delivery Status Notifications did not work in Thunderbird 88.0beta 1'
+  tag: fixed
+  bugs:
+    - 1701450
+  group: 2
+- note: 'Various issues with drag & dropped attachments'
+  tag: fixed
+  bugs:
+    - 1676094
+    - 1699051
+    - 1701450
+  group: 2
+- note: 'Calendar: Invites from Microsoft Teams did not display the meeting URL'
+  tag: fixed
+  bugs:
+    - 1666296
+  group: 2
+- note: 'Various UX and theme improvements'
+  tag: fixed
+  bugs:
+    - 1700764
+    - 1701525
+    - 1700128
+  group: 2
