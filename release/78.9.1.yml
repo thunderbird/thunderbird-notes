@@ -1,0 +1,35 @@
+release:
+  release_date: '2021-04-08'
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+  # New
+- note: 'Support recipient aliases for OpenPGP encryption. Documentation can be found <a
+    href="https://wiki.mozilla.org/Thunderbird:OpenPGP:Aliases">here</a>.'
+  tag: new
+  bugs:
+  - 1644085
+  - 1697239
+  # Fixed
+- note: 'The key and signature parts of the message security popup on a received message
+    could not be selected for copy/paste.'
+  tag: fixed
+  bugs:
+  - 1693138
+- note: 'Various UX and theme improvements'
+  tag: fixed
+  bugs:
+  - 1700764
+  - 1701525
+  - 1700691
+  - 1701571
