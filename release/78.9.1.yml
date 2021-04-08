@@ -33,3 +33,6 @@ notes:
   - 1701525
   - 1700691
   - 1701571
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.9.1)
+  tag: fixed
