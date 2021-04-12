@@ -1,7 +1,7 @@
 release:
   release_date: 2021-03-26
   text: |
-    **These notes apply to Thunderbird version 88 beta 2 released April 2, 2021.**
+    **These notes apply to Thunderbird version 88 beta 3 released April 14, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
 
@@ -19,6 +19,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "New & Fixed in Beta 3"
 
 notes:
 
@@ -208,3 +209,27 @@ notes:
     - 1701525
     - 1700128
   group: 2
+
+# beta 3
+- note: 'Calendar: webcal:// URL handler now registered on Windows'
+  tag: new
+  bugs:
+    - 1237571
+  group: 3
+
+- note: 'Various tweaks and fixes to new SMTP and MIME implementations'
+  tag: fixed
+  bugs: [1701804, 1701741, 1701864]
+  group: 3
+- note: 'HTML links in composed messages were duplicated after converting to plain text'
+  tag: fixed
+  bugs: [1692771]
+  group: 3
+- note: 'Some dialog windows were too small on Windows'
+  tag: fixed
+  bugs: [1702433]
+  group: 3
+- note: 'Clicking a notification dialog did not open a Thunderbird window when minimize-to-tray was active'
+  tag: fixed
+  bugs: [1702741]
+  group: 3
