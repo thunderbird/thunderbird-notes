@@ -217,15 +217,15 @@ notes:
     - 1237571
   group: 3
 
-- note: 'Various tweaks and fixes to new SMTP and MIME implementations'
+- note: 'Some users could not send messages using new SMTP and MIME implementations'
   tag: fixed
   bugs: [1701804, 1701741, 1701864]
   group: 3
-- note: 'HTML links in composed messages were duplicated after converting to plain text'
+- note: 'Hyperlinks in composed messages were duplicated after converting to plain text'
   tag: fixed
   bugs: [1692771]
   group: 3
-- note: 'Some dialog windows were too small on Windows'
+- note: 'Usability improvements to various dialogs on Windows'
   tag: fixed
   bugs: [1702433]
   group: 3
