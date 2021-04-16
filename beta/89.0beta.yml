@@ -1,0 +1,74 @@
+release:
+  release_date: 2021-04-21
+  text: |
+    **These notes apply to Thunderbird version 88 beta 2 released April 21, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+    <div style="color:magenta; font-weight:bold">Thunderbird developers are working to minimize the impact of
+    the newly inherited Proton UI on Thunderbird. If necessary, Proton can be disabled by setting
+    "browser.proton.enabled" to "false". Please submit a bug report describing the problem.
+    </div>
+
+  import_system_requirements: '87.0beta'
+
+notes:
+- note: "Preferences/Options" renamed to "Settings" and "Add-ons" renamed to "Add-ons and Themes"
+  bugs: [1702731]
+  tag: changed
+- note: Chat modules and custom widgets are now lazy-loaded to improve Thunderbird startup time
+  bugs: [1700013, 1700014]
+  tag: changed
+
+- note: Links in PDF attachments did not open in a web browser
+  bugs: [1698723]
+  tag: fixed
+- note: Printing to a PDF file failed
+  bugs: [1701172]
+  tag: fixed
+- note: New message notifications displayed messages that were older than the newly received message
+  bugs: [1675415]
+  tag: fixed
+- note: Sending messages with attachments sometimes failed
+  bugs: [1699057]
+  tag: fixed
+- note: When removing a mail folder, Thunderbird did not correctly warn about all affected filters
+  bugs: [1701259]
+  tag: fixed
+- note: Various improvements to recipient pills in message compose window
+  bugs: [1659332, 1701313, 1700273, 632127]
+  tag: fixed
+- note: Message preview "tooltips" did not appear when hovering over a message in the message list
+  bugs: [1688424]
+  tag: fixed
+- note: On Windows, it was possible for the taskbar icon and the tray icon to both disappear under some circumstances
+  bugs: [1701891]
+  tag: fixed
+- note: Removing an address book while viewing "All address books" did not remove its contents from the view
+  bugs: [1702090]
+  tag: fixed
+- note: Bundled OTR library did not work on macOS
+  bugs: [1700349]
+  tag: fixed
+- note: 'Chat: OAuth window was too small to be usable'
+  bugs: [1697859]
+  tag: fixed
+- note: Event boxes were not always focused when clicked
+  bugs: [1700024]
+  tag: fixed
+- note: Dragging and dropping an ICS file to the Today Pan did not populate the "New Event" dialog
+  bugs: [1683460]
+  tag: fixed
+- note: Calendar notifications were not displayed in order
+  bugs: [1691885]
+  tag: fixed
+- note: Event dialog layout refreshed
+  bugs: [1705250]
+  tag: fixed
+- note: Dark Theme fixes and improvements
+  bugs: [1701281, 1701740, 1703366]
+  tag: fixed
