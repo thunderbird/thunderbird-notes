@@ -17,7 +17,7 @@ release:
   import_system_requirements: '87.0beta'
 
 notes:
-- note: "Preferences/Options" renamed to "Settings" and "Add-ons" renamed to "Add-ons and Themes"
+- note: '"Preferences/Options" renamed to "Settings" and "Add-ons" renamed to "Add-ons and Themes"'
   bugs: [1702731]
   tag: changed
 - note: Chat modules and custom widgets are now lazy-loaded to improve Thunderbird startup time
