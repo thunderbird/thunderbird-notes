@@ -72,3 +72,6 @@ notes:
 - note: Dark Theme fixes and improvements
   bugs: [1701281, 1701740, 1703366]
   tag: fixed
+- note: System theme on Linux did not always use native scrollbars
+  bugs: [1705460]
+  tag: fixed
