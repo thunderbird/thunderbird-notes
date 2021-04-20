@@ -17,7 +17,11 @@ release:
   import_system_requirements: '87.0beta'
 
 notes:
-- note: '"Preferences/Options" renamed to "Settings" and "Add-ons" renamed to "Add-ons and Themes"'
+- note: Access to Outlook Contacts; To enable, set _ldap_2.servers.outlook.dirType_ to _3_; This setting may cause startup delays.
+  bugs: [1697669]
+  tag: new
+
+- note: 'Renamed "Add-ons" to "Add-ons and Themes" and "Options" to "Preferences"'
   bugs: [1702731]
   tag: changed
 - note: Chat modules and custom widgets are now lazy-loaded to improve Thunderbird startup time
