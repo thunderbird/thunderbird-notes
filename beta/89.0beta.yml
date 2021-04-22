@@ -17,7 +17,7 @@ release:
   import_system_requirements: '87.0beta'
 
 notes:
-- note: Access to Outlook Contacts; To enable, set _ldap_2.servers.outlook.dirType_ to _3_; This setting may cause startup delays.
+- note: Access to Outlook Contacts; To enable, set `ldap_2.servers.outlook.dirType` to `3`; This setting may cause startup delays.
   bugs: [1697669]
   tag: new
 
@@ -64,7 +64,7 @@ notes:
 - note: Event boxes were not always focused when clicked
   bugs: [1700024]
   tag: fixed
-- note: Dragging and dropping an ICS file to the Today Pan did not populate the "New Event" dialog
+- note: Dragging and dropping an ICS file to the Today Pane did not populate the "New Event" dialog
   bugs: [1683460]
   tag: fixed
 - note: Calendar notifications were not displayed in order
