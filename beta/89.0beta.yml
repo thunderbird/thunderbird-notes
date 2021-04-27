@@ -1,7 +1,7 @@
 release:
   release_date: 2021-04-21
   text: |
-    **These notes apply to Thunderbird version 89 beta 1 released April 21, 2021.**
+    **These notes apply to Thunderbird version 89 beta 2 released April 29, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
 
@@ -15,6 +15,10 @@ release:
     </div>
 
   import_system_requirements: '87.0beta'
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
 - note: Access to Outlook Contacts; To enable, set `ldap_2.servers.outlook.dirType` to `3`; This setting may cause startup delays.
@@ -79,3 +83,33 @@ notes:
 - note: System theme on Linux did not always use native scrollbars
   bugs: [1705460]
   tag: fixed
+
+# group 2
+- note: Selected OpenPGP key was lost after opening the Key Properties dialog in Account Settings
+  bugs: [1701356]
+  tag: fixed
+  group: 2
+- note: '"Outgoing (SMTP) Server" password dialog did not have an option to remember the password'
+  bugs: [1706191]
+  tag: fixed
+  group: 2
+- note: Thunderbird sent invalid IPv6 literals in SMTP HELO, resulting in unsent messages
+  bugs: [1707543]
+  tag: fixed
+  group: 2
+- note: Account Setup did not always complete successfully when opened from Account Settings page
+  bugs: [1705272]
+  tag: fixed
+  group: 2
+- note: 'User nickname colors were not used in chat content'
+  bugs: [1706740]
+  tag: fixed
+  group: 2
+- note: 'Chat: Multiple system messages did not collapse'
+  bugs: [1659118]
+  tag: fixed
+  group: 2
+- note: 'Various UI fixes related to introduction of Proton UI upstream'
+  bugs: [1706895, 1706978, 1707273]
+  tag: fixed
+  group: 2
