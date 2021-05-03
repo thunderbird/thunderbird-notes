@@ -1,0 +1,22 @@
+release:
+  release_date: '2021-05-05'
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: Removed the fix for [bug 1689804](https://bugzilla.mozilla.org/show_bug.cgi?id=1689804) introduced in Thunderbird
+    78.9.0, restoring the previous behavior
+  tag: changed
+  bugs: [1689804]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.10.1)
+  tag: fixed
