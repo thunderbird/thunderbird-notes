@@ -1,7 +1,7 @@
 release:
   release_date: 2021-04-21
   text: |
-    **These notes apply to Thunderbird version 89 beta 2 released April 29, 2021.**
+    **These notes apply to Thunderbird version 89 beta 3 released May 6, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
 
@@ -19,6 +19,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "New and Fixed in Beta 3"
 
 notes:
 - note: Access to Outlook Contacts; To enable, set `ldap_2.servers.outlook.dirType` to `3`; This setting may cause startup delays.
@@ -109,7 +110,50 @@ notes:
   bugs: [1659118]
   tag: fixed
   group: 2
-- note: 'Various UI fixes related to introduction of Proton UI upstream'
+- note: 'Various fixes related to introduction of Proton UI upstream'
   bugs: [1706895, 1706978, 1707273]
   tag: fixed
   group: 2
+
+# beta 3
+- note: Added support for importing OpenPGP keys without a primary secret key
+  bugs: [1654893]
+  tag: new
+  group: 3
+
+- note: 'Unable to create folder names containing ampersand (&) characters on some IMAP servers'
+  bugs: [1705765]
+  tag: fixed
+  group: 3
+- note: Quoted plain text messages wrapped incorrectly when using format=flowed and quoted-printable
+  bugs: [1702197]
+  tag: fixed
+  group: 3
+- note: Sending messages with BCC'd recipients failed if the message contained non-UTF-8 attachments
+  bugs: [1707178]
+  tag: fixed
+  group: 3
+- note: SMTP with NTLM authentication did not work
+  bugs: [1708710]
+  tag: fixed
+  group: 3
+- note: Parsing some OpenPGP user IDs failed
+  bugs: [1704435]
+  tag: fixed
+  group: 3
+- note: Various improvements to OpenPGP partial encryption reminders
+  bugs: [1702582,1701924,1701908]
+  tag: fixed
+  group: 3
+- note: New mail notification sound was not played if new mail arrived without reading previously recevied messages
+  bugs: [1706890]
+  tag: fixed
+  group: 3
+- note: Troubleshooting information page did not display row labels on macOS
+  bugs: [1709261]
+  tag: fixed
+  group: 3
+- note: 'Various fixes related to introduction of Proton UI upstream'
+  bugs: [1707187, 1708618]
+  tag: fixed
+  group: 3
