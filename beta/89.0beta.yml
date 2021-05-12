@@ -1,7 +1,7 @@
 release:
   release_date: 2021-04-21
   text: |
-    **These notes apply to Thunderbird version 89 beta 3 released May 6, 2021.**
+    **These notes apply to Thunderbird version 89 beta 4 released May 8, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
 
@@ -20,6 +20,7 @@ release:
     -
     - "Fixed in Beta 2"
     - "New and Fixed in Beta 3"
+    - "Fixed in Beta 4"
 
 notes:
 - note: Access to Outlook Contacts; To enable, set `ldap_2.servers.outlook.dirType` to `3`; This setting may cause startup delays.
@@ -157,3 +158,49 @@ notes:
   bugs: [1707187, 1708618]
   tag: fixed
   group: 3
+
+# beta 4
+- note: Unable to send messages when the SMTP server password contained non-ASCII characters
+  bugs: [1707062]
+  tag: fixed
+  group: 4
+- note: Draft messages with attachments could not be saved if the message was closed and opened for editing a second time
+  bugs: [1710220]
+  tag: fixed
+  group: 4
+- note: Sending replies sometimes failed if message had BCC'd recipients
+  bugs: [1709412]
+  tag: fixed
+  group: 4
+- note: Some temporary files created by the message composer were not automatically removed after closing the compose window
+  bugs: [1710323]
+  tag: fixed
+  group: 4
+- note: Contacts moved between CardDAV address books were not synced to the new server
+  bugs: [1695592]
+  tag: fixed
+  group: 4
+- note: Google Contacts via CardDAV stopped synchronizing after an hour
+  bugs: [1709492]
+  tag: fixed
+  group: 4
+- note: Participant names in an XMPP multi-user conference were displayed incorrectly if the display name contained UTF-8 characters
+  bugs: [1708695]
+  tag: fixed
+  group: 4
+- note: 'Calendar: Reduced flickering effect in Today Pane'
+  bugs: [1708596]
+  tag: fixed
+  group: 4
+- note: 'Calendar: The time of day indicator line did not update automatically'
+  bugs: [1665374]
+  tag: fixed
+  group: 4
+- note: Mail toolbar buttons were too big when displaying both icons and text
+  bugs: [1691297]
+  tag: fixed
+  group: 4
+- note: 'Various fixes related to introduction of Proton UI upstream'
+  bugs: [1703988, 1710214]
+  tag: fixed
+  group: 4
