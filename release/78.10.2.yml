@@ -1,0 +1,45 @@
+release:
+  release_date: '2021-05-17'
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+  # New
+- note: Added support for importing OpenPGP keys without a primary secret key
+  tag: new
+  bugs: [1654893]
+- note: 'Add-ons manager displays a preferences icon for mail extensions that include an options page'
+  tag: new
+  bugs: [1692616]
+
+  # Fixed
+- note: 'OpenPGP messages with a high compression ratio (over 10x) could not be decrypted'
+  tag: fixed
+  bugs: [1686984]
+- note: Selected OpenPGP key was lost after opening the Key Properties dialog in Account Settings
+  tag: fixed
+  bugs: [1701356]
+- note: Parsing some OpenPGP user IDs failed
+  tag: fixed
+  bugs: [1704435]
+- note: Various improvements to OpenPGP partial encryption reminders
+  tag: fixed
+  bugs: [1701908, 1701924, 1702582]
+- note: Troubleshooting information page did not display row labels on macOS
+  tag: fixed
+  bugs: [1709261]
+- note: Mail toolbar buttons were too big when displaying both icons and text
+  tag: fixed
+  bugs: [1691297]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.10.2)
+  tag: fixed
