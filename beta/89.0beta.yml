@@ -9,10 +9,13 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
-    <div style="color:magenta; font-weight:bold">Thunderbird developers are working to minimize the impact of
+    <div style="color:magenta; font-weight:bold">Thunderbird 89.0 beta 4 fixes two OpenPGP security vulnerabilities.
+    Details are included in the <a href="https://www.mozilla.org/en-US/security/advisories/mfsa2021-22/">security
+    advisory for Thunderbird 78.10.2</a>.</div>
+    <br>
+    **Thunderbird developers are working to minimize the impact of
     the newly inherited Proton UI on Thunderbird. If necessary, Proton can be disabled by setting
-    "browser.proton.enabled" to "false". Please submit a bug report describing the problem.
-    </div>
+    "browser.proton.enabled" to "false". Please submit a bug report describing the problem.**
 
   import_system_requirements: '87.0beta'
 
@@ -202,5 +205,9 @@ notes:
   group: 4
 - note: 'Various fixes related to introduction of Proton UI upstream'
   bugs: [1703988, 1710214]
+  tag: fixed
+  group: 4
+
+- note: OpenPGP [security fixes](https://www.mozilla.org/en-US/security/advisories/mfsa2021-22/)
   tag: fixed
   group: 4
