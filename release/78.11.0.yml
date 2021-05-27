@@ -1,0 +1,34 @@
+release:
+  release_date: '2021-06-01'
+  text: |
+    **For more on all of the new features in Thunderbird 78, see
+    [New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+  # Fixed
+- note: OpenPGP could not be disabled for an account if a key was previously configured
+  tag: fixed
+  bugs: [1709046]
+- note: Recipients were unable to decrypt some messages when the sender had changed the message encryption from OpenPGP to S/MIME
+  tag: fixed
+  bugs: [1697252]
+- note: Contacts moved between CardDAV address books were not synced to the new server
+  tag: fixed
+  bugs: [1695592]
+- note: CardDAV compatibility fixes for Google Contacts
+  tag: fixed
+  bugs: [1709492, 1707569]
+- note: Folder pane had no clear indication of focus on macOS
+  tag: fixed
+  bugs: [1712469]
+- note: Windows theme improvements
+  tag: fixed
+  bugs: [1712632, 1712293]
