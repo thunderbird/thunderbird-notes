@@ -32,3 +32,6 @@ notes:
 - note: Windows theme improvements
   tag: fixed
   bugs: [1712632, 1712293]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.11)
+  tag: fixed
