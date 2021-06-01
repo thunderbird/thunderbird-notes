@@ -1,0 +1,115 @@
+release:
+  release_date: 2021-06-03
+  text: |
+    **These notes apply to Thunderbird version 90 beta 1 released June 3, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '87.0beta'
+
+notes:
+  - note: Enable redirect of messages
+    tag: new
+    bugs: [12916]
+  - note: Allow showing empty CC/BCC rows in compose window
+    tag: new
+    bugs: [1616514]
+  - note: Keyboard shortcuts to access To/CC/BCC fields of compose window
+    tag: new
+    bugs: [1667692]
+  - note: 'New address book user interface: Set `mail.addr_book.useNewAddressBook` to `true` to enable'
+    tag: new
+    bugs: [1705982,1708572]
+  - note: Offer to automatically set up CardDAV address books for supported email providers
+    tag: new
+    bugs: [1698010]
+  - note: Prompt to choose the identity of an accepted calendar invite when no identity matches the event attendees list
+    tag: new
+    bugs: [1702782]
+  - note: 'Support mid: URL scheme for Related Links in calendar event dialogs'
+    tag: new
+    bugs: [1706158]
+  - note: Latvian language support
+    tag: new
+    bugs: [1707048]
+
+  - note: Printing UI updated
+    tag: changed
+    bugs: [1711822, 1713045]
+  - note: Default IRC server for new chat accounts changed to "libera.chat"
+    tag: changed
+    bugs: [1712319]
+
+  - note: Recipient pills used with contacts or attachments side bars could result in two widgets being "active"
+    tag: fixed
+    bugs: [1663062]
+  - note: After a public bulk mail notification, additional recipients could be erroneously discarded
+    tag: fixed
+    bugs: [1706204]
+  - note: Dragging addresses from contacts sidebar to address fields moved selected pills
+    tag: fixed
+    bugs: [1691842]
+  - note: Sending an email containing HTML links with spaces in the URL sometimes rendered incorrectly, resulting in broken links
+    tag: fixed
+    bugs: [1707360]
+  - note: SMTP server error messages were not displayed in error dialog
+    tag: fixed
+    bugs: [1710066]
+  - note: Partially downloaded messages displayed in an external window did not refresh after clicking link to download the rest of the message
+    tag: fixed
+    bugs: [1708073]
+  - note: Manually runnning filters on a maildir folder did not work
+    tag: fixed
+    bugs: [1529929]
+  - note: Saved search virtual folders were not retained after restarting Thunderbird
+    tag: fixed
+    bugs: [1533624]
+  - note: Drag & drop operations could be disrupted by incoming mail notifications
+    tag: fixed
+    bugs: [948082]
+  - note: Dragging a folder from an authenticated IMAP server to a not-yet authenticated server fails
+    tag: fixed
+    bugs: [1690093]
+  - note: Preview of chat theme was disabled in Preferences
+    tag: fixed
+    bugs: [1646874]
+  - note: Chat account settings did not always save as expected
+    tag: fixed
+    bugs: [1695434]
+  - note: Matrix chat support improvements
+    tag: fixed
+    bugs: [1699106,1699107,1699125,1701213,1706634,1706640,1707908,1707948,1709022]
+  - note: LDAP address books did not display multi-valued attributes
+    tag: fixed
+    bugs: [119199]
+
+  - note: Today was difficult to pick out visually in the month/multiweek calendar views
+    tag: fixed
+    bugs: [964040]
+  - note: Columns in Today Pane were not resizable
+    tag: fixed
+    bugs: [1665930]
+  - note: Calendar event text could render outside the confines of the event block
+    tag: fixed
+    bugs: [1668904]
+  - note: Event time and event name were not vertically aligned
+    tag: fixed
+    bugs: [1694820]
+  - note: Related Links in events were not clickable
+    tag: fixed
+    bugs: [1706117]
+  - note: Improved formatting of even descriptions with long links, such as Zoom invites
+    tag: fixed
+    bugs: [1709436]
+  - note: After switching tabs, day and week calendar views did not keep scroll position
+    tag: fixed
+    bugs: [1710964]
+
+  - note: Many theme improvements
+    tag: fixed
+    bugs: [1701406,1706662,1707656,1709596,1709738,1710085,1710619,1711025,1711042,1711219,1711259,1711260,1712226,
+           1713135]
