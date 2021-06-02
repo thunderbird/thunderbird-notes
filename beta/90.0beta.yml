@@ -21,10 +21,10 @@ notes:
   - note: Keyboard shortcuts to access To/CC/BCC fields of compose window
     tag: new
     bugs: [1667692]
-  - note: 'New address book user interface: Set `mail.addr_book.useNewAddressBook` to `true` to enable'
+  - note: 'First iteration of new address book user interface: Set `mail.addr_book.useNewAddressBook` to `true` to enable'
     tag: new
     bugs: [1705982,1708572]
-  - note: Offer to automatically set up CardDAV address books for supported email providers
+  - note: CardDAV address books automatically detected based on provided user information
     tag: new
     bugs: [1698010]
   - note: Prompt to choose the identity of an accepted calendar invite when no identity matches the event attendees list
