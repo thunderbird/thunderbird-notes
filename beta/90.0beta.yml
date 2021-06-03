@@ -74,7 +74,7 @@ notes:
   - note: Dragging a folder from an authenticated IMAP server to a not-yet authenticated server fails
     tag: fixed
     bugs: [1690093]
-  - note: Preview of chat theme was disabled in Preferences
+  - note: 'Preferences: Preview of selected chat theme was not displayed'
     tag: fixed
     bugs: [1646874]
   - note: Chat account settings did not always save as expected
