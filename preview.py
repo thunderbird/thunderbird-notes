@@ -5,6 +5,7 @@ from __future__ import print_function
 import argparse
 import datetime
 import jinja2
+import markupsafe
 import markdown
 import os
 import sys
@@ -33,7 +34,7 @@ args = parser.parse_args()
 def safe_markdown(text):
     if not text:
         text = ''
-    return jinja2.Markup(markdown.markdown(text))
+    return markupsafe.Markup(markdown.markdown(text))
 
 
 def l10n_format_date(text):
