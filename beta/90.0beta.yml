@@ -1,7 +1,7 @@
 release:
   release_date: 2021-06-03
   text: |
-    **These notes apply to Thunderbird version 90 beta 1 released June 3, 2021.**
+    **These notes apply to Thunderbird version 90 beta 2 released June 17, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
 
@@ -9,7 +9,15 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
+    <div style="color:magenta; font-weight:bold">Thunderbird 90.0b2 enables a new LDAP implementation.
+        As with any major change, bugs may be present. The original behavior may be restored by setting
+        the preference "mailnews.ldap.jsmodule" to false.</div>
+
   import_system_requirements: '87.0beta'
+
+  groups:
+    -
+    - "New, changed, and fixed in Beta 2"
 
 notes:
   - note: Enable redirect of messages
@@ -113,3 +121,37 @@ notes:
     tag: fixed
     bugs: [1701406,1706662,1707656,1709596,1709738,1710085,1710619,1711025,1711042,1711219,1711259,1711260,1712226,
            1713135]
+
+# beta 2
+  - note: "OpenPGP: Added config option to disable encrypting saved drafts"
+    tag: new
+    bugs: [1681168]
+    group: 2
+
+  - note: LDAP client code replaced with Javascript implementation
+    tag: changed
+    bugs: [1696625]
+    group: 2
+  - note: Sending a message will now fail if any recipients are not accepted by the SMTP server
+    tag: changed
+    bugs: [1713724]
+    group: 2
+  - note: Error messages from an SMTP server are now displayed to the user
+    tag: changed
+    bugs: [1714878]
+    group: 2
+
+  - note: Mail folder pane was not visible after completing manual account setup on a new profile
+    tag: fixed
+    bugs: [1713918]
+    group: 2
+  - note: "Account setup wizard did not display the selected protocol for automatically configured accounts when only
+      one protocol was available"
+    tag: fixed
+    bugs: [1715120]
+    group: 2
+  - note: "Calendar: The wrong month was sometimes selected for printing"
+    tag: fixed
+    bugs: [1714492]
+    group: 2
+
