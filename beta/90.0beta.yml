@@ -145,6 +145,11 @@ notes:
     tag: fixed
     bugs: [1713918]
     group: 2
+  - note: 'Multiple overlapping new message alerts could be displayed at once when then "Use the system notification"
+      preferences was unchecked'
+    tag: fixed
+    bugs: [1715713]
+    group: 2
   - note: "Account setup wizard did not display the selected protocol for automatically configured accounts when only
       one protocol was available"
     tag: fixed
