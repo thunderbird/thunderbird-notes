@@ -67,7 +67,7 @@ notes:
   - note: SMTP server error messages were not displayed in error dialog
     tag: fixed
     bugs: [1710066]
-  - note: Partially downloaded messages displayed in an stand-alone window did not refresh after clicking link to download the rest of the message
+  - note: Partially downloaded messages displayed in a stand-alone window did not refresh after clicking link to download the rest of the message
     tag: fixed
     bugs: [1708073]
   - note: Manually runnning filters on a maildir folder did not work
