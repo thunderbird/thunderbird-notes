@@ -19,7 +19,7 @@ release:
   groups:
     -
     - "New, changed, and fixed in Beta 2"
-    - "New, changed, and fixed in Beta 3"
+    - "Changed and fixed in Beta 3"
 
 notes:
   - note: Enable redirect of messages
