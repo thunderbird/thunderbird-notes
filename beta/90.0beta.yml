@@ -163,15 +163,19 @@ notes:
     group: 2
 
 # beta 3
-  - note: 'Mail: New message notifications were duplicated if additional messages were received without being read yet'
+  - note: 'New message notifications were duplicated if additional messages were received without being read yet'
     tag: fixed
-    bugs: ['1715735']
+    bugs: [1715735]
+    group: 3
+  - note: 'Address Book: double-clicking a contact in an LDAP directory did not open the edit dialog'
+    tag: fixed
+    bugs: [1716704]
     group: 3
   - note: 'Calendar: A parsing error for alarm triggers of type "DURATION" caused sync problems for some users'
     tag: fixed
-    bugs: ['1560151']
+    bugs: [1560151]
     group: 3
   - note: 'Various theme improvements'
     tag: fixed
-    bugs: ['1716950','1717288']
+    bugs: [1716950,1717288]
     group: 3
