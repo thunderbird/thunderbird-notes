@@ -13,10 +13,6 @@ release:
         As with any major change, bugs may be present. The original behavior may be restored by setting
         the preference "mailnews.ldap.jsmodule" to false.</div>
 
-    <div style="color:magenta; font-weight:bold">Thunderbird 90.0 beta 3 fixes two security vulnerabilities in IMAP and the WebExtension API.
-    Details are included in the <a href="https://www.mozilla.org/en-US/security/advisories/mfsa2021-22/">security
-    advisory for Thunderbird 78.11.0</a>.</div>
-    <br>
 
   import_system_requirements: '87.0beta'
 
