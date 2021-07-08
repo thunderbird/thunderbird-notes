@@ -28,6 +28,11 @@ if len(sys.argv) == 1:
     parser.print_help()
     sys.exit(1)
 
+is_email = False
+if "email" in sys.argv:
+    is_email = True
+    sys.argv.remove("email")
+
 args = parser.parse_args()
 
 
@@ -114,10 +119,15 @@ observer = Observer()
 for notedir in notes_dirs:
     observer.schedule(handler, path=notedir, recursive=False)
 observer.start()
-print("Updating preview.html every time data is modified, press Ctrl-C to end.")
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
+
+if is_email:
     observer.stop()
+else:
+    print("Updating preview.html every time data is modified, press Ctrl-C to end.")
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+
 observer.join()
