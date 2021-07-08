@@ -33,7 +33,7 @@ BUG_NUMBER_REGEX = re.compile(r"bug \d+", re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r"back(\s?)out|backed out|backing out", re.IGNORECASE)
 
 PD_VERSIONS = "https://product-details.mozilla.org/1.0/thunderbird_versions.json"
-CUR_VERSION_URL = "https://hg.mozilla.org/releases/{c_repo}/raw-file/tip/mail/config/version.txt"
+CUR_VERSION_URL = "https://hg.mozilla.org/releases/{repo}/raw-file/tip/mail/config/version.txt"
 
 
 class RelNote:
