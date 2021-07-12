@@ -1,3 +1,5 @@
 preview.html
 *.pyc
 ver_notes.yml
+ver_notes_old.yml
+.DS_Store
