@@ -194,19 +194,6 @@ notes:
     - 1717236
     - 1717238
 
-  - note: 'Extensions API: LDAP address books failed to return cards to browser.contacts.quickSearch'
-    tag: fixed
-    bugs:
-    - 1716858
-  - note: 'Extensions API: messages.query returned an empty Message List when folder property is Trash or Junk Folder'
-    tag: fixed
-    bugs:
-    - 1605937
-  - note: 'Extensions API: skiptrash in browser.messages.delete allowed silent delete of mailbox messages'
-    tag: fixed
-    bugs:
-    - 1616114
-
 # Known Issues
   - note: 'First message displayed after starting Thunderbird is displayed in the incorrect character set if it was in a different-than-default character set'
     tag: unresolved
