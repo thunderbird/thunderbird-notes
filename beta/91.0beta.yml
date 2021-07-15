@@ -196,4 +196,8 @@ notes:
     tag: unresolved
     bugs:
     - 1720261
+  - note: 'Print preview never loads/printing doesn''t work'
+    tag: unresolved
+    bugs:
+    - []
 
