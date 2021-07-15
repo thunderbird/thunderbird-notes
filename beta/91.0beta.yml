@@ -67,19 +67,7 @@ notes:
     bugs:
     - 1671891
     - 1718987
-  - note: 'Extensions API: API for listening to message add/update/remove events (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1627604#c4">docs</a>)'
-    tag: new
-    bugs:
-    - 1627604
-  - note: 'Extensions API: Allow setting/getting the signature via identities (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1642690#c7">docs</a>)'
-    tag: new
-    bugs:
-    - 1642690
 
-  - note: 'Address Book: Edit > Remove Address Book accesskey changed from "D" to "d"'
-    tag: changed
-    bugs:
-    - 1719087
   - note: 'Calendar: UI improvements to calendar display'
     tag: changed
     bugs:
@@ -125,6 +113,9 @@ notes:
     - 1719467
     - 1718302
     - 1718555
+  - note: 'Changes to the WebExtensions API can be found <a href="https://webextension-api.thunderbird.net/en/latest/changes/beta91.html">here</a>'
+    tag: changed
+    bugs: []
 
   - note: 'The calendar and other areas were not properly initialized if initial account setup was not completed, making them impossible to use'
     tag: fixed
@@ -234,59 +225,3 @@ notes:
     bugs:
     - 1720261
 
-  - note: '<b>Items below this point are still being sorted and cleaned up, and the descriptions may be wrong on some of them; should have this sorted soon.</b>'
-    tag: new-changed-fixed
-    bugs: []
-
-  - note: 'Add-Ons: Extensions API: Extend MailTab to allow getting / setting the threaded / group by state of views'
-    tag: new-changed-fixed
-    bugs:
-    - 1719093
-  - note: 'Add-Ons: Extensions API: All events and functions of the compose API, which give access to message content or allow to alter the message, should require the compose permission'
-    tag: new-changed-fixed
-    bugs:
-    - 1719908
-  - note: 'Add-Ons: Extensions API: Deleting an attachment from a message / Saving a new draft stops the message being accessed'
-    tag: new-changed-fixed
-    bugs:
-    - 1645595
-  - note: 'Add-Ons: Extensions API: [API suggestion] Add tab parameter to messenger.cloudfile.onFile* events'
-    tag: new-changed-fixed
-    bugs:
-    - 1674374
-  - note: 'Add-Ons: Extensions API: Wrong content script tab ID with multiple mailTab windows'
-    tag: new-changed-fixed
-    bugs:
-    - 1711040
-  - note: 'Add-Ons: Extensions API: messages.getFull can not decode body of nntp message'
-    tag: new-changed-fixed
-    bugs:
-    - 1713145
-  - note: 'Add-Ons: Extensions API: Return pages in the messages API as soon as they are ready, and not after the last page has been finished.'
-    tag: new-changed-fixed
-    bugs:
-    - 1716022
-  - note: 'Add-Ons: Extensions API: Improve documentation for browser.mailTabs.update'
-    tag: new-changed-fixed
-    bugs:
-    - 1719091
-  - note: 'Add-Ons: Extensions API: Dispatch "compose-editor-ready" event also if OpenPGP is not enabled.'
-    tag: new-changed-fixed
-    bugs:
-    - 1719673
-  - note: 'Add-Ons: Extensions API: accounts api fails on subFolders'
-    tag: new-changed-fixed
-    bugs:
-    - 1719739
-  - note: 'Add-Ons: Extensions API: [API Request] Contacts search provider API'
-    tag: new-changed-fixed
-    bugs:
-    - 1670752
-  - note: 'Add-Ons: Extensions API: Improve user feedback on permission update prompts'
-    tag: new-changed-fixed
-    bugs:
-    - 1718830
-  - note: 'Add-Ons: Extensions API: WebExtensions API regression in menus.onShown due to landing of Bug 1716022 (Return pages in the messages API as soon as they are ready)'
-    tag: new-changed-fixed
-    bugs:
-    - 1717348
