@@ -17,7 +17,6 @@ release:
   import_system_requirements: '87.0beta'
 
 notes:
-1699093
   - note: 'Import/Export Thunderbird profiles (Mac/Linux only - see known issues at bottom)'
     tag: new
     bugs:
