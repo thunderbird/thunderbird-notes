@@ -62,6 +62,11 @@ notes:
     tag: new
     bugs:
     - 1719100
+  - note: 'Mail: Encrypt mail to BCC recipients (with warning that it will expose the recipients in the list of keys)'
+    tag: new
+    bugs:
+    - 1671891
+    - 1718987
   - note: 'Extensions API: API for listening to message add/update/remove events (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1627604#c4">docs</a>)'
     tag: new
     bugs:
@@ -187,6 +192,10 @@ notes:
     tag: fixed
     bugs:
     - 1577548
+  - note: 'Mail: "New Message from Template" would open the message composer with "Encryption Required" set if it was stored encrypted'
+    tag: fixed
+    bugs:
+    - 1710191
   - note: 'The screen location of some dialog windows (spell check, etc) would not persist between uses'
     tag: fixed
     bugs:
@@ -229,18 +238,6 @@ notes:
     tag: new-changed-fixed
     bugs: []
 
-  - note: 'Security: OpenPGP: BCC use is blocked with OpenPGP Encryption while there should be a warning only'
-    tag: new-changed-fixed
-    bugs:
-    - 1671891
-  - note: 'Security: OpenPGP: Also encrypt for BCC recipients, after bug 1671891 allows encrypted email with BCC recipients'
-    tag: new-changed-fixed
-    bugs:
-    - 1718987
-  - note: 'Security: OpenPGP: "New Message from Template" will change the security setting from "No Encryption" to "Encryption Required"'
-    tag: new-changed-fixed
-    bugs:
-    - 1710191
   - note: 'Add-Ons: Extensions API: Extend MailTab to allow getting / setting the threaded / group by state of views'
     tag: new-changed-fixed
     bugs:
