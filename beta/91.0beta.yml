@@ -17,7 +17,7 @@ release:
   import_system_requirements: '87.0beta'
 
 notes:
-
+1699093
   - note: 'Import/Export Thunderbird profiles (Mac/Linux only - see known issues at bottom)'
     tag: new
     bugs:
@@ -40,20 +40,6 @@ notes:
     tag: new
     bugs:
     - 1337356
-  - note: 'Chat: Enabled support for Matrix'
-    tag: new
-    bugs:
-    - 1699092
-    - 1699093
-    - 1699099
-    - 1712707
-    - 1712717
-    - 1712722
-    - 1712723
-    - 1712767
-    - 1712944
-    - 1714849
-    - 1715329
   - note: 'Mail: When entering a list name from your address book into a recipient field, the list is now expanded to list the recipients, allowing the recipients to be further modified before sending'
     tag: new
     bugs:
