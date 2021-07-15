@@ -1,0 +1,295 @@
+release:
+  release_date: 2021-07-13
+  text: |
+    **These notes apply to Thunderbird version 91 beta 1 released July 13, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+    <div style="color:magenta; font-weight:bold">Thunderbird 90.0b2 enables a new LDAP implementation.
+        As with any major change, bugs may be present. The original behavior may be restored by setting
+        the preference "mailnews.ldap.jsmodule" to false.</div>
+
+
+  import_system_requirements: '87.0beta'
+
+notes:
+
+  - note: 'Import/Export Thunderbird profiles (Mac/Linux only - see known issues at bottom)'
+    tag: new
+    bugs:
+    - 271863
+    - 63389
+  - note: 'Suggest replacements for discontinued/incompatible add-ons'
+    tag: new
+    bugs:
+    - 1713761
+  - note: 'Permissions to access calendar and address book are now requested when a GMail account is set up, so that calendar and address book can be accessed without having to re-authorize (<a href="https://thunderbird.topicbox.com/groups/beta/T9886a223d58b7aad-M09757bc2dee271bf7d29580b">see notes</a>)'
+    tag: new
+    bugs:
+    - 1715923
+    - 1713543
+  - note: 'Calendar: Per-calendar and global notification settings (in addition to alerts set in events)'
+    tag: new
+    bugs:
+    - 1497434
+  - note: 'Tasks: Undo/Redo support for event and task creation and deletion'
+    tag: new
+    bugs:
+    - 1337356
+  - note: 'Chat: Enabled support for Matrix'
+    tag: new
+    bugs:
+    - 1699092
+    - 1699093
+    - 1699099
+    - 1712707
+    - 1712717
+    - 1712722
+    - 1712723
+    - 1712767
+    - 1712944
+    - 1714849
+    - 1715329
+  - note: 'Mail: When entering a list name from your address book into a recipient field, the list is now expanded to list the recipients, allowing the recipients to be further modified before sending'
+    tag: new
+    bugs:
+    - 119977
+  - note: 'Mail: Quick Find is now available in the multi-message (thread summary) view'
+    tag: new
+    bugs:
+    - 1719100
+  - note: 'Extensions API: API for listening to message add/update/remove events (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1627604#c4">docs</a>)'
+    tag: new
+    bugs:
+    - 1627604
+  - note: 'Extensions API: Allow setting/getting the signature via identities (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1642690#c7">docs</a>)'
+    tag: new
+    bugs:
+    - 1642690
+
+  - note: 'Address Book: Edit > Remove Address Book accesskey changed from "D" to "d"'
+    tag: changed
+    bugs:
+    - 1719087
+  - note: 'Calendar: UI improvements to calendar display'
+    tag: changed
+    bugs:
+    - 1719116
+    - 1665930
+    - 1715600
+    - 1719645
+    - 1607834
+    - 1717637
+    - 1718466
+    - 1719177
+    - 1718718
+  - note: 'Mail: UI improvements to the message compose window'
+    tag: changed
+    bugs:
+    - 1718492
+    - 1714329
+    - 1714519
+    - 1716823
+    - 1719558
+    - 1712425
+    - 1705100
+    - 1717160
+    - 1715596
+    - 1720041
+  - note: 'Mail: UI improvements to the message reader UI'
+    tag: changed
+    bugs:
+    - 1667716
+    - 1717233
+    - 1585559
+  - note: 'Mail: AutoComplete from LDAP directories now searches by substring instead of left-side match'
+    tag: changed
+    bugs:
+    - 1626944
+  - note: 'Many Fixes for visibility issues in dark mode and high contrast themes'
+    tag: changed
+    bugs:
+    - 1716166
+    - 1716208
+    - 1718769
+    - 1719179
+    - 1719467
+    - 1718302
+    - 1718555
+
+  - note: 'The calendar and other areas were not properly initialized if initial account setup was not completed, making them impossible to use'
+    tag: fixed
+    bugs:
+    - 1714586
+  - note: 'Address Book: Field "Prefers to receive messages formatted as" in an entry was not displayed correctly'
+    tag: fixed
+    bugs:
+    - 567989
+  - note: 'Address Book: Dragging a mailing list from one address book into another would remove all list members.'
+    tag: fixed
+    bugs:
+    - 1703187
+  - note: 'Address Book: Updates to CardDAV entries would be lost if the server couldn''t be found when modifying or deleting entries'
+    tag: fixed
+    bugs:
+    - 1717960
+  - note: 'Address Book: Username and password were not saved when adding a new CardDAV account'
+    tag: fixed
+    bugs:
+    - 1718616
+  - note: 'Address Book: Users with LDAP admin rights could delete accounts if trying to delete an entry from an address book backed by LDAP'
+    tag: fixed
+    bugs:
+    - 1480844
+  - note: 'Calendar: Refreshing the calendar was visually jarring because it refreshed everything instead of just what changed'
+    tag: fixed
+    bugs:
+    - 1711251
+    - 1716680
+  - note: 'Calendar: Time zones were not accounted for in agenda list order'
+    tag: fixed
+    bugs:
+    - 1716672
+  - note: 'Calendar: RSVP replies to invitations sometimes sent from the wrong email address'
+    tag: fixed
+    bugs:
+    - 1562896
+  - note: 'Calendar: Read-only CalDAV and ICS calendars did not get set as read-only in the UI'
+    tag: fixed
+    bugs:
+    - 1665203
+    - 1715756
+  - note: 'Calendar: Could not subscribe to a calendar that does not require credentials on server that incorrectly sets MIME type of response'
+    tag: fixed
+    bugs:
+    - 1719368
+  - note: 'Mail: IMAP errors shown to the user did not tell you which account the error applied to'
+    tag: fixed
+    bugs:
+    - 1709165
+  - note: 'Mail: Dragging attachments from a message onto the desktop would sometimes use the mailbox name as filename instead of the actual filename of the attachment'
+    tag: fixed
+    bugs:
+    - 1528932
+  - note: 'Mail: File uploaded using wrong fileName if attachment was renamed or forwarded and using a cloud provider to store the attachment'
+    tag: fixed
+    bugs:
+    - 1671835
+  - note: 'Mail: Could not scroll the attachments list when the number of attachments was too many to display in the default size of the box'
+    tag: fixed
+    bugs:
+    - 1716705
+  - note: 'Mail: Temporary errors from POP3 servers would cause Thunderbird to stop downloading mail until it was restarted'
+    tag: fixed
+    bugs:
+    - 1577548
+  - note: 'The screen location of some dialog windows (spell check, etc) would not persist between uses'
+    tag: fixed
+    bugs:
+    - 1717235
+    - 1717236
+    - 1717238
+
+  - note: 'Extensions API: LDAP address books failed to return cards to browser.contacts.quickSearch'
+    tag: fixed
+    bugs:
+    - 1716858
+  - note: 'Extensions API: messages.query returned an empty Message List when folder property is Trash or Junk Folder'
+    tag: fixed
+    bugs:
+    - 1605937
+  - note: 'Extensions API: skiptrash in browser.messages.delete allowed silent delete of mailbox messages'
+    tag: fixed
+    bugs:
+    - 1616114
+
+# Known Issues
+  - note: 'First message displayed after starting Thunderbird is displayed in the incorrect character set if it was in a different-than-default character set'
+    tag: unresolved
+    bugs:
+    - 1718119
+  - note: '"Repair Text Encoding" menu item does not work'
+    tag: unresolved
+    bugs:
+    - 1713786
+  - note: 'Crash when opening PDF attachments'
+    tag: unresolved
+    bugs:
+    - 1663859
+  - note: 'Profile Import/Export does not work on Windows'
+    tag: unresolved
+    bugs:
+    - 1720261
+
+  - note: '<b>Items below this point are still being sorted and cleaned up, and the descriptions may be wrong on some of them; should have this sorted soon.</b>'
+    tag: new-changed-fixed
+    bugs: []
+
+  - note: 'Security: OpenPGP: BCC use is blocked with OpenPGP Encryption while there should be a warning only'
+    tag: new-changed-fixed
+    bugs:
+    - 1671891
+  - note: 'Security: OpenPGP: Also encrypt for BCC recipients, after bug 1671891 allows encrypted email with BCC recipients'
+    tag: new-changed-fixed
+    bugs:
+    - 1718987
+  - note: 'Security: OpenPGP: "New Message from Template" will change the security setting from "No Encryption" to "Encryption Required"'
+    tag: new-changed-fixed
+    bugs:
+    - 1710191
+  - note: 'Add-Ons: Extensions API: Extend MailTab to allow getting / setting the threaded / group by state of views'
+    tag: new-changed-fixed
+    bugs:
+    - 1719093
+  - note: 'Add-Ons: Extensions API: All events and functions of the compose API, which give access to message content or allow to alter the message, should require the compose permission'
+    tag: new-changed-fixed
+    bugs:
+    - 1719908
+  - note: 'Add-Ons: Extensions API: Deleting an attachment from a message / Saving a new draft stops the message being accessed'
+    tag: new-changed-fixed
+    bugs:
+    - 1645595
+  - note: 'Add-Ons: Extensions API: [API suggestion] Add tab parameter to messenger.cloudfile.onFile* events'
+    tag: new-changed-fixed
+    bugs:
+    - 1674374
+  - note: 'Add-Ons: Extensions API: Wrong content script tab ID with multiple mailTab windows'
+    tag: new-changed-fixed
+    bugs:
+    - 1711040
+  - note: 'Add-Ons: Extensions API: messages.getFull can not decode body of nntp message'
+    tag: new-changed-fixed
+    bugs:
+    - 1713145
+  - note: 'Add-Ons: Extensions API: Return pages in the messages API as soon as they are ready, and not after the last page has been finished.'
+    tag: new-changed-fixed
+    bugs:
+    - 1716022
+  - note: 'Add-Ons: Extensions API: Improve documentation for browser.mailTabs.update'
+    tag: new-changed-fixed
+    bugs:
+    - 1719091
+  - note: 'Add-Ons: Extensions API: Dispatch "compose-editor-ready" event also if OpenPGP is not enabled.'
+    tag: new-changed-fixed
+    bugs:
+    - 1719673
+  - note: 'Add-Ons: Extensions API: accounts api fails on subFolders'
+    tag: new-changed-fixed
+    bugs:
+    - 1719739
+  - note: 'Add-Ons: Extensions API: [API Request] Contacts search provider API'
+    tag: new-changed-fixed
+    bugs:
+    - 1670752
+  - note: 'Add-Ons: Extensions API: Improve user feedback on permission update prompts'
+    tag: new-changed-fixed
+    bugs:
+    - 1718830
+  - note: 'Add-Ons: Extensions API: WebExtensions API regression in menus.onShown due to landing of Bug 1716022 (Return pages in the messages API as soon as they are ready)'
+    tag: new-changed-fixed
+    bugs:
+    - 1717348
