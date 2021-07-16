@@ -172,7 +172,7 @@ notes:
     tag: fixed
     bugs:
     - 1710191
-  - note: 'The screen location of some dialog windows (spell check, etc) would not persist between uses'
+  - note: 'The screen location of some dialog windows would not persist between uses'
     tag: fixed
     bugs:
     - 1717235
