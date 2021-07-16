@@ -9,6 +9,9 @@
 exec 1>&2
 
 # run yamllint on all yaml files in the repo
-while IFS= read -r filename; do
+changedyamlfiles=`git diff --diff-filter=ACMR --staged --name-only | egrep '\.yamllint$|\.yml$|\.yaml$'`
+if [ -n "$changedyamlfiles" ]; then
+  while IFS= read -r filename; do
     yamllint --no-warnings --config-file=.yamllint $filename
-done <<< $(git diff-index --cached --diff-filter=AM --name-only HEAD | egrep '\.yamllint$|\.yml$|\.yaml$')
+  done <<< "$changedyamlfiles"
+fi
