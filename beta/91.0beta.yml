@@ -39,7 +39,7 @@ notes:
     tag: new
     bugs:
     - 1337356
-  - note: 'Mail: When entering a list name from your address book into a recipient field, the list is now expanded to list the recipients, allowing the recipients to be further modified before sending'
+  - note: 'Mail: Context menu to expand mail list pills in the compose window to the list of recipients'
     tag: new
     bugs:
     - 119977
