@@ -45,6 +45,9 @@ MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/{repo}/json-tags"
 CUR_VERSION_URL = (
     "https://hg.mozilla.org/releases/{repo}/raw-file/tip/mail/config/version.txt"
 )
+CUR_VERSION_DISPLAY_URL = (
+    "https://hg.mozilla.org/releases/{repo}/raw-file/tip/mail/config/version_display.txt"
+)
 
 SOURCE_URL = "https://hg.mozilla.org/releases/{repo}/file/{hash}"
 
@@ -96,6 +99,9 @@ def main(comm_repo, build):
     with urlopen(CUR_VERSION_URL.format(repo=comm_repo)) as response:
         data = response.read()
         release_version = data.strip().decode("utf-8")
+    with urlopen(CUR_VERSION_DISPLAY_URL.format(repo=comm_repo)) as response:
+        data = response.read()
+        release_display_version = data.strip().decode("utf-8")
 
     revs = get_revs(comm_repo)
 
@@ -110,11 +116,11 @@ def main(comm_repo, build):
     moz_link = REV_MD_TMPL.format(link_text=moz_source_text, link_url=moz_source_url)
 
     email_subject = RELEASE_EMAIL_SUBJECT.format(
-        release_version=release_version, build=build
+        release_version=release_display_version, build=build
     )
     email_body_html = markdown_render(
         RELEASE_EMAIL_HTML.format(
-            release_version=release_version,
+            release_version=release_display_version,
             build=build,
             repo=comm_repo,
             moz_repo=moz_repo,
@@ -123,7 +129,7 @@ def main(comm_repo, build):
         )
     )
     gen_preview(release_version)
-    attach_fn = "Thunderbird_{}.html".format(release_version.replace(".", "_"))
+    attach_fn = "Thunderbird_{}.html".format(release_display_version.replace(".", "_"))
     shutil.move("preview.html", attach_fn)
 
     subprocess.run("thunderbird -compose 'format=html','attachment={}','to={}','cc={}','subject={}','body={}'"
