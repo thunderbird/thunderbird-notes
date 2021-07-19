@@ -1,18 +1,17 @@
 release:
   release_date: 2021-07-13
   text: |
-    **These notes apply to Thunderbird version 91 beta 1 released July 13, 2021.**
+    **These notes apply to Thunderbird version 91 beta 2 released July 20, 2021.**
 
-    **System Requirements:** [Details](/en-US/thunderbird/88.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/91.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
-    <div style="color:magenta; font-weight:bold">Thunderbird 90.0b2 enables a new LDAP implementation.
-        As with any major change, bugs may be present. The original behavior may be restored by setting
-        the preference "mailnews.ldap.jsmodule" to false.</div>
-
+  groups:
+    -
+    - "New, Changed, and Fixed in Beta 2"
 
   import_system_requirements: '87.0beta'
 
@@ -179,25 +178,47 @@ notes:
     - 1717236
     - 1717238
 
+# Beta 2
+  - note: 'Add support for "X-Unsent: 1" header, to open a saved email in a compose window for editing'
+    tag: new
+    bugs: [166541]
+    group: 2
+
+  - note: WeTransfer FileLink provider removed
+    tag: changed
+    bugs: [1705109]
+    group: 2
+
+  - note: Thunderbird could crash when displaying PDF attachments from a message in an IMAP folder
+    tag: fixed
+    bugs: [1663859]
+  - note: First non-ASCII message displayed on startup was displayed with incorrect encoding
+    tag: fixed
+    bugs: [1718119]
+    group: 2
+  - note: Key size field in the OpenPGP key generation dialog was too small
+    tag: fixed
+    bugs: [1716235]
+    group: 2
+  - note: Import/Export profile feature did not work on Windows
+    tag: fixed
+    bugs: [1720261]
+    group: 2
+  - note: DNS-over-HTTPS preference lacked a default provider value
+    tag: fixed
+    bugs: [1717988]
+    group: 2
+  - note: New IRC accounts were unable to connect to the server
+    tag: fixed
+    bugs: [1719995]
+    group: 2
+
+
 # Known Issues
-  - note: 'First message displayed after starting Thunderbird is displayed in the incorrect character set if it was in a different-than-default character set'
-    tag: unresolved
-    bugs:
-    - 1718119
   - note: '"Repair Text Encoding" menu item does not work'
     tag: unresolved
-    bugs:
-    - 1713786
-  - note: 'Crash when opening PDF attachments'
-    tag: unresolved
-    bugs:
-    - 1663859
-  - note: 'Profile Import/Export does not work on Windows'
-    tag: unresolved
-    bugs:
-    - 1720261
+    bugs: [1713786]
   - note: 'Print preview never loads/printing doesn''t work'
     tag: unresolved
-    bugs:
-    - []
+    bugs: [1720397]
 
