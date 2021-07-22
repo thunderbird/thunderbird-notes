@@ -115,6 +115,11 @@ def main(comm_repo, build):
     )
     moz_link = REV_MD_TMPL.format(link_text=moz_source_text, link_url=moz_source_url)
 
+    notes_suffix = ""
+    if (comm_repo == 'comm-beta'):
+        notes_suffix = 'beta'
+    notes_version = "{}{}".format(release_version,notes_suffix)
+
     email_subject = RELEASE_EMAIL_SUBJECT.format(
         release_version=release_display_version, build=build
     )
@@ -128,7 +133,7 @@ def main(comm_repo, build):
             moz_link=moz_link,
         )
     )
-    gen_preview(release_version)
+    gen_preview(notes_version)
     attach_fn = "Thunderbird_{}.html".format(release_display_version.replace(".", "_"))
     shutil.move("preview.html", attach_fn)
 
