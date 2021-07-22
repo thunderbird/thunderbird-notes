@@ -1,7 +1,7 @@
 release:
   release_date: 2021-07-13
   text: |
-    **These notes apply to Thunderbird version 91 beta 2 released July 20, 2021.**
+    **These notes apply to Thunderbird version 91 beta 3 released July 23, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/91.0beta/system-requirements/)
 
@@ -12,6 +12,7 @@ release:
   groups:
     -
     - "New, Changed, and Fixed in Beta 2"
+    - "Changed and Fixed in Beta 3"
 
   import_system_requirements: '87.0beta'
 
@@ -213,6 +214,59 @@ notes:
     bugs: [1719995]
     group: 2
 
+# Beta 3
+
+  - note: 'Theme: Make the toolbarbutton/menulist menus more Big Sur like'
+    tag: changed
+    bugs:
+    - 1721088
+    group: 3
+
+  - note: '`Escape` keypress or [x] click on no-reply alert triggered `Reply anyway`'
+    tag: fixed
+    bugs:
+    - 1720214
+    group: 3
+  - note: 'With `Display Attachments Inline`, attached email message showed no message headers in inline preview (Mac & Windows only)'
+    tag: fixed
+    bugs:
+    - 1721232
+    group: 3
+  - note: 'OpenPGP: Homebrew''s GPG Smartcard libraries not found on M1 Macs'
+    tag: fixed
+    bugs:
+    - 1693931
+    group: 3
+  - note: 'Cancelling account discovery in the Account Manager didn''t work'
+    tag: fixed
+    bugs:
+    - 1720195
+    group: 3
+  - note: 'Remove Data checkbox missing in Remove Account dialog'
+    tag: fixed
+    bugs:
+    - 1721087
+    group: 3
+  - note: 'Action popups remained empty on Mac'
+    tag: fixed
+    bugs:
+    - 1690987
+    group: 3
+  - note: 'Clicking on add-on name in the add-on manger improperly opened "Choose Application" dialog'
+    tag: fixed
+    bugs:
+    - 1707503
+    group: 3
+  - note: 'Calendar invitations dialog did not use dark theme'
+    tag: fixed
+    bugs:
+    - 1705497
+    group: 3
+  - note: 'Theme: Some menus in Account Manager menus were not readable in high-contrast themes'
+    tag: fixed
+    bugs:
+    - 1721173
+    group: 3
 
 # Known Issues
   - note: '"Repair Text Encoding" menu item does not work'
