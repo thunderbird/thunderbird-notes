@@ -1,7 +1,7 @@
 release:
   release_date: 2021-07-13
   text: |
-    **These notes apply to Thunderbird version 91 beta 3 released July 23, 2021.**
+    **These notes apply to Thunderbird version 91 beta 4 released July 26, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/91.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
     -
     - "New, Changed, and Fixed in Beta 2"
     - "Changed and Fixed in Beta 3"
+    - "Fixed in beta 4"
 
   import_system_requirements: '87.0beta'
 
@@ -268,11 +269,57 @@ notes:
     - 1721173
     group: 3
 
+# beta 4
+  - note: Enterprise policies updated
+    tag: changed
+    bugs: [ 1707210, 1668192 ]
+    group: 4
+
+  - note: Various printing issues
+    tag: fixed
+    bugs: [1720713, 1721671, 1721975]
+    group: 4
+  - note: Outgoing username field was not disabled when adding an SMTP account that does not require authentication
+    tag: fixed
+    bugs: [1720547]
+    group: 4
+  - note: When starting Thunderbird in offline mode, connections to the incoming mail server were opened
+    tag: fixed
+    bugs: [1719288]
+    group: 4
+  - note: Archiving messages from an NNTP account made the target folder unusable
+    tag: fixed
+    bugs: [1166225]
+    group: 4
+  - note: An "Open File" dialog was presented for some NNTP messages instead of displaying the message
+    tag: fixed
+    bugs: [1693019]
+    group: 4
+  - note: Reading VCard names with multiple values failed
+    tag: fixed
+    bugs: [1721946]
+    group: 4
+  - note: Addressbook search fixes
+    tag: fixed
+    bugs: [1720917, 1716861, 1721821, 1721828, 1721807]
+    group: 4
+  - note: CalDAV calendar autodiscovery did not send entered password causing fallback to manual entry
+    tag: fixed
+    bugs: [1720862]
+    group: 4
+  - note: Location field was not preserved when modifying recurring events stored on a remote calendar
+    tag: fixed
+    bugs: [1595332]
+    group: 4
+  - note: Various UI fixes
+    tag: fixed
+    bugs: [1721804, 1721761, 1721676]
+    group: 4
+
+
 # Known Issues
   - note: '"Repair Text Encoding" menu item does not work'
     tag: unresolved
     bugs: [1713786]
-  - note: 'Print preview never loads/printing doesn''t work'
-    tag: unresolved
-    bugs: [1720397]
+
 
