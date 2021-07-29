@@ -1,7 +1,7 @@
 release:
   release_date: 2021-07-13
   text: |
-    **These notes apply to Thunderbird version 91 beta 4 released July 26, 2021.**
+    **These notes apply to Thunderbird version 91 beta 5 released July 29, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/91.0beta/system-requirements/)
 
@@ -13,7 +13,8 @@ release:
     -
     - "New, Changed, and Fixed in Beta 2"
     - "Changed and Fixed in Beta 3"
-    - "Fixed in beta 4"
+    - "Changed and Fixed in Beta 4"
+    - "Changed and Fixed in Beta 5"
 
   import_system_requirements: '87.0beta'
 
@@ -316,6 +317,31 @@ notes:
     bugs: [1721804, 1721761, 1721676]
     group: 4
 
+# beta 5
+  - note: End-to-End Encryption "Advanced Settings" are now disabled when encryption is not configured
+    tag: changed
+    bugs: [1719265]
+    group: 5
+  - note: Keyboard access keys conflicted between the Folder Pane toolbar and main toolbar menu
+    tag: fixed
+    bugs: [1716962]
+    group: 5
+  - note: An erroneous "Sender" header was displayed in the message preview after viewing certain S/MIME signed emails
+    tag: fixed
+    bugs: [1680843]
+    group: 5
+  - note: A Thunderbird icon pinned to the Windows taskbar reverted to a non-functional placeholder after an update
+    tag: fixed
+    bugs: [1675918]
+    group: 5
+  - note: Chat status icon appeared distorted on Linux and macOS
+    tag: fixed
+    bugs: [1720870]
+    group: 5
+  - note: Dark theme colors were not always applied properly when editing an event
+    tag: fixed
+    bugs: [1722472]
+    group: 5
 
 # Known Issues
   - note: '"Repair Text Encoding" menu item does not work'
