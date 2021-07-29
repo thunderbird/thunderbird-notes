@@ -1,0 +1,417 @@
+release:
+  release_date: '2021-08-11'
+  text: |
+    ** Thunderbird version 91.0 is only offered as direct download from
+        [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+        Thunderbird version 78 or earlier.**
+        A future release will provide updates from earlier versions.
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - macOS: macOS 10.12 or later (macOS 11.0 for Silicon)
+    - Linux: GTK+ 3.14 or higher
+
+  system_requirements: |
+    ## Windows
+    ### Operating Systems (32-bit and 64-bit)
+    - Windows 7
+    - Windows 8
+    - Windows 10
+    ### Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1 GB RAM / 2 GB of RAM for the 64-bit version
+    - 200 MB hard drive space
+    ---
+
+    ## Mac
+    ### Operating Systems
+    - macOS 10.12
+    - macOS 10.13
+    - macOS 10.14
+    - macOS 10.15
+    - macOS 11
+    ###  Recommended Hardware
+    - Macintosh computer with an Intel or Apple Silicon processor
+    - 2 GB RAM
+    - 200 MB hard drive space
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+    - Thunderbird will not run at all without the following libraries or packages:
+        - GTK+ 3.14 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+        - libstdc++ 4.8.1 or higher
+        - glibc 2.17 or higher
+    - For optimal functionality, we recommend the following libraries or packages:
+        - NetworkManager 0.7 or higher
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
+        - PulseAudio
+
+notes:
+# New
+- note: 'Native support for macOS devices built with Apple Silicon CPUs'
+  tag: new
+  bugs: [ 1678775 ]
+- note: Latvian language support
+  tag: new
+  bugs: [ 1707048 ]
+- note: 'New user interface for adding attachments'
+  tag: new
+  bugs: [ 1640760 ]
+- note: Enable redirect of messages
+  tag: new
+  bugs: [ 12916 ]
+- note: 'Import/Export Thunderbird profiles'
+  tag: new
+  bugs: [271863, 63389, 1720261]
+- note: Allow showing empty CC/BCC rows in compose window
+  tag: new
+  bugs: [ 1616514 ]
+- note: 'Add support for "X-Unsent: 1" header, to open a saved email in a compose window for editing'
+  tag: new
+  bugs: [ 166541 ]
+- note: 'Add support for non-ASCII characters in recipient addresses'
+  tag: new
+  bugs: [1563891]
+- note: 'Context menu to expand mail list pills in the compose window to the list of recipients'
+  tag: new
+  bugs:
+    - 119977
+- note: 'Quick Find is now available in the multi-message (thread summary) view'
+  tag: new
+  bugs:
+    - 1719100
+- note: 'Encrypt mail to BCC recipients (with warning that it will expose the recipients in the list of keys)'
+  tag: new
+  bugs:
+    - 1671891
+    - 1718987
+- note: Keyboard shortcuts to access To/CC/BCC fields of compose window
+  tag: new
+  bugs: [ 1667692 ]
+- note: Allow pinning folder views to the Folder Pane
+  tag: new
+  bugs: [ 1163555 ]
+- note: 'Language packs and dictionaries added to about:support'
+  tag: new
+  bugs: [ 1648165 ]
+- note: 'PDF.js viewer now included in Thunderbird'
+  tag: new
+  bugs: [ 810815 ]
+- note: 'OpenPGP: "Copy Key Id" option added to Key Manager context menu'
+  tag: new
+  bugs: [ 1675272 ]
+- note: "OpenPGP: Added config option to disable encrypting saved drafts"
+  tag: new
+  bugs: [ 1681168 ]
+- note: 'CardDAV address book support'
+  tag: new
+  bugs: [ 1660127, 1665230 ]
+- note: CardDAV address books automatically detected based on provided user information
+  tag: new
+  bugs: [ 1698010 ]
+- note: Access to Outlook Contacts; To enable, set `ldap_2.servers.outlook.dirType` to
+    `3`; This setting may cause startup delays.
+  tag: new
+  bugs: [ 1697669 ]
+- note: 'Suggest replacements for discontinued/incompatible add-ons'
+  tag: new
+  bugs: [1713761]
+- note: 'Chat: Beta-level support for Matrix servers (set `chat.prpls.prpl-matrix.disable` to `false`)'
+  tag: new
+  bugs:
+    - '1346441'
+    - '1347542'
+    - '1626182'
+    - '1699060'
+- note: 'Calendar: Remote calendar auto-detection now supported'
+  tag: new
+  bugs: [ 306495 ]
+- note: 'Calendar: Calendar and category colors now displayed in selection dropdowns'
+  tag: new
+  bugs: [ 736243 ]
+- note: 'Calendar: "Edit" item added to event context menu'
+  tag: new
+  bugs: [ 1651783 ]
+- note: 'Calendar: Support opening of .ics files by double-click'
+  tag: new
+  bugs: [ 357480 ]
+- note: 'Calendar: Thunderbird now informs the operating system that it knows how to open
+  webcal: URLs'
+  tag: new
+  bugs: [ 352566, 1237571 ]
+- note: 'Calendar: Filter and sort items to be imported in the Import dialog'
+  tag: new
+  bugs:
+    - '1683063'
+    - '1686382'
+- note: Prompt to choose the identity of an accepted calendar invite when no identity matches
+    the event attendees list
+  tag: new
+  bugs: [ 1702782 ]
+- note: 'Support mid: URL scheme for Related Links in calendar event dialogs'
+  tag: new
+  bugs: [ 1706158 ]
+- note: 'Permissions to access calendar and address book are now requested when a GMail account is set up, so that
+  calendar and address book can be accessed without having to re-authorize
+  (<a href="https://thunderbird.topicbox.com/groups/beta/T9886a223d58b7aad-M09757bc2dee271bf7d29580b">see notes</a>)'
+  tag: new
+  bugs: [1715923, 1713543]
+- note: 'Calendar: Per-calendar and global notification settings (in addition to alerts set in events)'
+  tag: new
+  bugs: [1497434]
+- note: 'Tasks: Undo/Redo support for event and task creation and deletion'
+  tag: new
+  bugs: [1337356]
+
+# Changed
+- note: '"Master Password" renamed to "Primary Password"'
+  tag: changed
+  bugs: [ 1649522 ]
+- note: 'Renamed "Add-ons" to "Add-ons and Themes" and "Options" to "Preferences"'
+  tag: changed
+  bugs: [ 1702731 ]
+- note: 'Mail recipients that are not found in any address book will no longer appear
+  in red type; invalid addresses will appear red'
+  tag: changed
+  bugs: [ 1660691 ]
+- note: 'Clicking on an already-selected pill in the recipient list will now allow editing
+  the address'
+  tag: changed
+  bugs: [ 1602901 ]
+- note: 'AutoComplete from LDAP directories now searches by substring instead of left-side match'
+  tag: changed
+  bugs: [ 1626944 ]
+- note: Folder pane color scheme overhauled with a focus on readability
+  tag: changed
+  bugs: [ 1682065 ]
+- note: Sending a message will now fail if any recipients are not accepted by the SMTP
+    server
+  tag: changed
+  bugs: [ 1713724 ]
+- note: Error messages from an SMTP server are now displayed to the user
+  tag: changed
+  bugs: [ 1714878 ]
+- note: 'UI Customization controls moved to the View menu'
+  tag: changed
+  bugs: [ 1668612 ]
+- note: End-to-End Encryption "Advanced Settings" are now disabled when encryption is not configured
+  tag: changed
+  bugs: [ 1719265 ]
+- note: 'Movemail support removed'
+  tag: changed
+  bugs: [ 1625741 ]
+- note: WeTransfer FileLink provider removed
+  tag: changed
+  bugs: [ 1705109 ]
+- note: Enterprise policies updated
+  tag: changed
+  bugs: [ 1707210, 1668192 ]
+- note: Printing UI updated
+  tag: changed
+  bugs: [ 1711822, 1713045 ]
+- note: Chat modules and custom widgets are now lazy-loaded to improve Thunderbird startup time
+  tag: changed
+  bugs: [ 1700013, 1700014 ]
+- note: Default IRC server for new chat accounts changed to "libera.chat"
+  tag: changed
+  bugs: [ 1712319 ]
+- note: 'Chat: Image based emoticons replaced with Unicode'
+  tag: changed
+  bugs: [ 1658648 ]
+- note: 'Calendar: Opening an existing event now opens summary dialog'
+  tag: changed
+  bugs: [ 1575195, 1673654 ]
+- note: 'Calendar: Default to CalDAV when supported by the server'
+  tag: changed
+  bugs: [ 1670420 ]
+
+# Fixed
+- note: 'Thunderbird did not properly handle Self-signed certificates on IMAP servers'
+  tag: fixed
+  bugs:
+    - 1676141
+- note: 'Various issues with special and non-ASCII characters in IMAP folders names, especially on Gmail'
+  tag: fixed
+  bugs:
+    - 1685033
+    - 1685449
+    - 1685450
+    - 1686034
+    - 1686415
+    - 1687452
+    - 1687727
+    - 1687938
+- note: Drag & drop operations could be disrupted by incoming mail notifications
+  tag: fixed
+  bugs: [ 948082 ]
+- note: Dragging a folder from an authenticated IMAP server to a not-yet authenticated
+    server fails
+  tag: fixed
+  bugs: [ 1690093 ]
+- note: 'Temporary errors from POP3 servers would cause Thunderbird to stop downloading mail until it was restarted'
+  tag: fixed
+  bugs: [1577548]
+- note: Favorite Folder view did not maintain UI state between Thunderbird restarts
+  tag: fixed
+  bugs:
+    - 1656501
+- note: Saved search virtual folders were not retained after restarting Thunderbird
+  tag: fixed
+  bugs: [ 1533624 ]
+- note: Thunderbird did not correctly warn about all affected filters when removing a folder
+  tag: fixed
+  bugs: [ 1701259 ]
+- note: Manually running filters on a maildir folder did not work
+  tag: fixed
+  bugs: [ 1529929 ]
+- note: Partially downloaded messages displayed in a stand-alone window did not refresh
+    after clicking link to download the rest of the message
+  tag: fixed
+  bugs: [ 1708073 ]
+- note: An erroneous "Sender" header was displayed in the message preview after viewing certain S/MIME signed emails
+  tag: fixed
+  bugs: [ 1680843 ]
+- note: Some temporary files created by the message composer were not automatically removed
+    after closing the compose window
+  tag: fixed
+  bugs: [ 1710323 ]
+- note: Archiving messages from an NNTP account made the target folder unusable
+  tag: fixed
+  bugs: [ 1166225 ]
+- note: 'Compose window: The user-configured style for quoted text was not honored'
+  tag: fixed
+  bugs: [ 1641519 ]
+- note: 'Message headers in compose window disregarded manual resizing when adding additional
+    recipients'
+  tag: fixed
+  bugs:
+    - 1691466
+- note: Various improvements to new message notifications
+  tag: fixed
+  bugs: [375717, 1675415, 1706890, 1715713]
+- note: A Thunderbird icon pinned to the Windows taskbar reverted to a non-functional placeholder after an update
+  tag: fixed
+  bugs: [ 1675918 ]
+- note: Various improvements to recipient pills in message compose window
+  tag: fixed
+  bugs: [ 1659332, 1701313, 1663062,1691842 ]
+- note: 'Keyboard shortcut to open the Message Security popup did not work on Mac'
+  tag: fixed
+  bugs:
+    - 1692263
+- note: 'Subject column in message lists sometimes showed text from invalid email headers'
+  tag: fixed
+  bugs:
+    - 1615064
+- note: 'Account settings: When creating a new account, some already entered settings did
+    not copy to the Advanced Config dialog'
+  tag: fixed
+  bugs:
+    - 1679664
+- note: 'Default address book preference was not honored in the contacts sidebar'
+  tag: fixed
+  bugs: [ 1665430 ]
+- note: 'Import Address Book from CSV did not not allow mapping all available fields'
+  tag: fixed
+  bugs:
+    - 194095
+- note: LDAP address books did not display multi-valued attributes
+  tag: fixed
+  bugs: [ 119199 ]
+- note: 'Address Book: Users with LDAP admin rights could delete accounts if trying to delete an entry from an address book backed by LDAP'
+  tag: fixed
+  bugs: [1480844]
+- note: 'Some preferences related to an address book were not removed when the address book was deleted'
+  tag: fixed
+  bugs:
+    - 1693667
+- note: 'Shortcut for Advanced Address Book Search (Ctrl+Shift+F) did not work on Linux'
+  tag: fixed
+  bugs:
+    - 1686428
+- note: 'Radio buttons could not be selected on photo tab of an address card'
+  tag: fixed
+  bugs:
+    - 1671637
+- note: 'Windows uninstaller did not always remove all Thunderbird program files'
+  tag: fixed
+  bugs: [1678823]
+- note: 'Chat: Double clicking an account type in new account wizard did not select it'
+  tag: fixed
+  bugs:
+    - 1696901
+- note: Chat account settings did not always save as expected
+  tag: fixed
+  bugs: [ 1695434 ]
+- note: 'User nickname colors were not used in chat content'
+  tag: fixed
+  bugs: [ 1706740 ]
+- note: 'Chat: Multiple system messages did not collapse'
+  tag: fixed
+  bugs: [ 1659118 ]
+- note: 'Calendar: Reminder details appeared editable when viewing an event'
+  tag: fixed
+  bugs: [ 1651779 ]
+- note: 'Calendar: HTML rendering in event descriptions restored'
+  tag: fixed
+  bugs: [ 1659363, 1673164 ]
+- note: 'Calendar: The toolbar in the invitation details dialog was not honoring the theme
+    colors'
+  tag: fixed
+  bugs:
+    - 1680755
+- note: 'Calendar: Various dialog updates'
+  tag: fixed
+  bugs:
+    - 1685947
+    - 1705250
+- note: 'Calendar: Import and export via CSV did not parse years correctly in event dates'
+  tag: fixed
+  bugs:
+    - 1695584
+- note: 'Calendar: Event boxes were not always focused when clicked'
+  tag: fixed
+  bugs: [ 1700024 ]
+- note: Dragging and dropping an ICS file to the Today Pane did not populate the "New Event"
+    dialog
+  tag: fixed
+  bugs: [1683460]
+- note: 'Calendar: Reduced flickering effect in Today Pane'
+  tag: fixed
+  bugs: [1708596]
+- note: 'Calendar: The time of day indicator line did not update automatically'
+  tag: fixed
+  bugs: [1665374]
+- note: Location field was not preserved when modifying recurring events stored on a remote calendar
+  tag: fixed
+  bugs: [ 1595332 ]
+- note: Today was difficult to pick out visually in the month/multiweek calendar views
+  tag: fixed
+  bugs: [964040]
+- note: Columns in Today Pane were not resizable
+  tag: fixed
+  bugs: [1665930]
+- note: Calendar event text could render outside the confines of the event block
+  tag: fixed
+  bugs: [1668904]
+- note: Event time and event name were not vertically aligned
+  tag: fixed
+  bugs: [1694820]
+- note: Improved formatting of event descriptions with long links, such as Zoom invites
+  tag: fixed
+  bugs: [1709436]
+- note: 'RSVP replies to invitations sometimes sent from the wrong email address'
+  tag: fixed
+  bugs: [1562896]
+
+- note: 'Various UI and theme improvements, especially to dark themes'
+  tag: fixed
+
+- note: Bug 1690395
+  tag: unresolved
