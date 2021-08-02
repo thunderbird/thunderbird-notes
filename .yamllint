@@ -1,0 +1,14 @@
+---
+
+extends: default
+
+rules:
+  commas:
+    level: warning
+  empty-lines: disable
+  indentation:
+    level: warning
+  line-length:
+    level: warning
+  trailing-spaces:
+    level: warning
