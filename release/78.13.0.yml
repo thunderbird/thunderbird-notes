@@ -1,0 +1,33 @@
+release:
+  release_date: '2021-08-10'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+  # Changed
+- note: WeTransfer FileLink provider removed
+  tag: changed
+  bugs: [1705109]
+- note: The fix for bug 1707360, from Thunderbird 78.12.0, was removed for causing regressions
+  tag: changed
+  bugs: [1707360]
+
+  # Fixed
+- note: 'OpenPGP: Homebrew''s GPG Smartcard libraries not found on M1 Macs'
+  tag: fixed
+  bugs:
+  - 1693931
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.13)
+  tag: fixed
+
+- note: Sending an email containing HTML links with spaces in the URL sometimes resulted
+    in broken links
+  tag: unresolved
+  bugs: [ 1707360 ]
