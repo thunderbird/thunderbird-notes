@@ -1,7 +1,7 @@
 release:
   release_date: 2021-07-13
   text: |
-    **These notes apply to Thunderbird version 91 beta 5 released July 29, 2021.**
+    **These notes apply to Thunderbird version 91 beta 5 released August 2, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/91.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - "Changed and Fixed in Beta 3"
     - "Changed and Fixed in Beta 4"
     - "Changed and Fixed in Beta 5"
+    - "Changed and Fixed in Beta 6"
 
   import_system_requirements: '87.0beta'
 
@@ -343,9 +344,26 @@ notes:
     bugs: [1722472]
     group: 5
 
+# beta 6
+  - note: The fix for bug 1707360, from Thunderbird 90.0b1, was removed for causing regressions
+    tag: changed
+    bugs: [1707360]
+    group: 6
+
+  - note: '"Local Folders" were always moved to the end of the account list on startup'
+    tag: fixed
+    bugs: [1721574]
+    group: 6
+  - note: Keyboard access keys did not work in the Compact Folder dialog
+    tag: fixed
+    bugs: [1722408]
+    group: 6
+  - note: Details of event inviations were not displayed
+    tag: fixed
+    bugs: [1695039]
+    group: 6
+
 # Known Issues
   - note: '"Repair Text Encoding" menu item does not work'
     tag: unresolved
     bugs: [1713786]
-
-
