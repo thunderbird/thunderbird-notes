@@ -57,6 +57,9 @@ notes:
 - note: 'Native support for macOS devices built with Apple Silicon CPUs'
   tag: new
   bugs: [ 1678775 ]
+- note: Thunderbird now operates in multi-process (e10s) mode by default
+  tag: new
+  bugs: [1646648]
 - note: Latvian language support
   tag: new
   bugs: [ 1707048 ]
@@ -66,12 +69,18 @@ notes:
 - note: Enable redirect of messages
   tag: new
   bugs: [ 12916 ]
-- note: 'Import/Export Thunderbird profiles'
+- note: 'Ability to change order of accounts in UI'
   tag: new
-  bugs: [271863, 63389, 1720261]
+  bugs: [244347]
 - note: Allow showing empty CC/BCC rows in compose window
   tag: new
   bugs: [ 1616514 ]
+- note: 'Warning popup when sending a reply to a likely non-existant email address such as "noreply@example.com"'
+  tag: new
+  bugs: [1342809]
+- note: 'Warning popup when public recipients of a message exceeds threshold'
+  tag: new
+  bugs: [271405]
 - note: 'Add support for "X-Unsent: 1" header, to open a saved email in a compose window for editing'
   tag: new
   bugs: [ 166541 ]
@@ -86,11 +95,6 @@ notes:
   tag: new
   bugs:
     - 1719100
-- note: 'Encrypt mail to BCC recipients (with warning that it will expose the recipients in the list of keys)'
-  tag: new
-  bugs:
-    - 1671891
-    - 1718987
 - note: Keyboard shortcuts to access To/CC/BCC fields of compose window
   tag: new
   bugs: [ 1667692 ]
@@ -109,6 +113,11 @@ notes:
 - note: "OpenPGP: Added config option to disable encrypting saved drafts"
   tag: new
   bugs: [ 1681168 ]
+- note: 'Encrypt mail to BCC recipients (with warning that it will expose the recipients in the list of keys)'
+  tag: new
+  bugs:
+    - 1671891
+    - 1718987
 - note: 'CardDAV address book support'
   tag: new
   bugs: [ 1660127, 1665230 ]
@@ -176,6 +185,9 @@ notes:
 - note: 'Renamed "Add-ons" to "Add-ons and Themes" and "Options" to "Preferences"'
   tag: changed
   bugs: [ 1702731 ]
+- note: Account setup moved to a tab
+  tag: changed
+  bugs: [1610445]
 - note: 'Mail recipients that are not found in any address book will no longer appear
   in red type; invalid addresses will appear red'
   tag: changed
@@ -184,12 +196,15 @@ notes:
   the address'
   tag: changed
   bugs: [ 1602901 ]
-- note: 'AutoComplete from LDAP directories now searches by substring instead of left-side match'
-  tag: changed
-  bugs: [ 1626944 ]
 - note: Folder pane color scheme overhauled with a focus on readability
   tag: changed
   bugs: [ 1682065 ]
+- note: Sending backend, SMTP protocol, and LDAP protocol implementations rewritten in Javascript
+  tag: changed
+  bugs: [1211292, 1661694, 1696625]
+- note: Sending backend, SMTP, and IMAP protocols now operate only in UTF-8 mode
+  tag: changed
+  bugs: [862292, 1563891, 1571672]
 - note: Sending a message will now fail if any recipients are not accepted by the SMTP
     server
   tag: changed
@@ -215,6 +230,9 @@ notes:
 - note: Printing UI updated
   tag: changed
   bugs: [ 1711822, 1713045 ]
+- note: 'AutoComplete from LDAP directories now searches by substring instead of left-side match'
+  tag: changed
+  bugs: [ 1626944 ]
 - note: Chat modules and custom widgets are now lazy-loaded to improve Thunderbird startup time
   tag: changed
   bugs: [ 1700013, 1700014 ]
