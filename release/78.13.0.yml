@@ -27,7 +27,6 @@ notes:
 - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.13)
   tag: fixed
 
-- note: Sending an email containing HTML links with spaces in the URL sometimes resulted
-    in broken links
+- note: Sending an email containing HTML links with spaces in the URL sometimes results in broken links
   tag: unresolved
-  bugs: [ 1707360 ]
+  bugs: [1707360]
