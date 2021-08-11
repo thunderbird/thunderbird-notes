@@ -431,5 +431,5 @@ notes:
 - note: 'Various UI and theme improvements, especially to dark themes'
   tag: fixed
 
-- note: Bug 1690395
-  tag: unresolved
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.0)
+  tag: fixed
