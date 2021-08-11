@@ -1,0 +1,45 @@
+release:
+  release_date: 2021-08-12
+  text: |
+    **These notes apply to Thunderbird version 92 beta 1 released August 12, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+
+  import_system_requirements: '87.0beta'
+
+notes:
+  - note: Tags are now colored in mail filter editor
+    tag: new
+    bugs: [1724191]
+
+  - note: Thunderbird registered Accessibility Handlers using same GUIDs as Firefox, causing performance issues for NVDA users
+    tag: fixed
+    bugs: [1689791]
+  - note: Focus lost when reordering accounts by keyboard in the Account Manager
+    tag: fixed
+    bugs: [1703501]
+  - note: Recipient autocomplete always preferred the primary email address for a contact
+    tag: fixed
+    bugs: [1709799]
+  - note: Improvements to the Import/Export feature
+    tag: fixed
+    bugs: [1720261, 1723471, 1723473, 1723482, 1723486]
+  - note: Status checkmark on View > Calendar > Calendar Pane > Show Calendar Pane was reversed
+    tag: fixed
+    bugs: [1718548]
+  - note: Filtering tasks in the Today Pane did not work
+    tag: fixed
+    bugs: [1723293]
+  - note: Email based event scheduling displayed the date and time in a format unreadable by humans
+    tag: fixed
+    bugs: [1723423]
+
+
+  - note: Various theme, UX, and visual fixes
+    tag: fixed
+    bugs: [1723182, 1724197, 1724341]
