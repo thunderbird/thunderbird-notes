@@ -29,6 +29,12 @@ notes:
   - note: Improvements to the Import/Export feature
     tag: fixed
     bugs: [1720261, 1723471, 1723473, 1723482, 1723486]
+  - note: LDAP performance improvements
+    tag: fixed
+    bugs: [1721138, 1724185]
+  - note: OTR chat encryption failed on 32-bit Windows builds
+    tag: fixed
+    bugs: [1724914]
   - note: Status checkmark on View > Calendar > Calendar Pane > Show Calendar Pane was reversed
     tag: fixed
     bugs: [1718548]
@@ -38,8 +44,6 @@ notes:
   - note: Email based event scheduling displayed the date and time in a format unreadable by humans
     tag: fixed
     bugs: [1723423]
-
-
   - note: Various theme, UX, and visual fixes
     tag: fixed
-    bugs: [1723182, 1724197, 1724341]
+    bugs: [1723182, 1724197, 1724341, 1724633]
