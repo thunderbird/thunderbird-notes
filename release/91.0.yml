@@ -433,3 +433,7 @@ notes:
 
 - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.0)
   tag: fixed
+
+- note: OTR chat encryption fails on 32-bit Windows builds
+  tag: unresolved
+  bugs: [1724914]
