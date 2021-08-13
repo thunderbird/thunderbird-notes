@@ -47,3 +47,7 @@ notes:
   - note: Various theme, UX, and visual fixes
     tag: fixed
     bugs: [1723182, 1724197, 1724341, 1724633]
+
+  - note: Thunderbird may hang when sending a message if "Check spelling before sending" is enabled in Preferences
+    tag: unresolved
+    bugs: [1721801, 1725576]
