@@ -1,7 +1,7 @@
 release:
   release_date: 2021-08-13
   text: |
-    **These notes apply to Thunderbird version 92 beta 1 released August 13, 2021.**
+    **These notes apply to Thunderbird version 92 beta 2 released August 16, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -11,6 +11,10 @@ release:
 
 
   import_system_requirements: '87.0beta'
+
+  groups:
+    -
+    - "New, Changed, and Fixed in Beta 2"
 
 notes:
   - note: Tags are now colored in mail filter editor
@@ -47,6 +51,31 @@ notes:
   - note: Various theme, UX, and visual fixes
     tag: fixed
     bugs: [1723182, 1724197, 1724341, 1724633]
+
+
+# beta 2
+  - note: 'Preference for disabling the unread message count badge on Windows taskbar icon added: `mail.biff.show_badge`'
+    tag: new
+    bugs: [1725473]
+    group: 2
+  - note: Context menu items related to OpenPGP and attachments are now hidden when not applicable
+    tag: changed
+    bugs: [1720950]
+    group: 2
+  - note: Extensions listed on the Recommended Addons did not have a clear way to view details in a browser
+    tag: fixed
+    bugs: [1633792]
+    group: 2
+  - note: Folder icons could be overridden by linked favicons in HTML messages
+    tag: fixed
+    bugs: [1724753]
+  - note: 'mid: URLs in calendar invites did not open the linked mail message'
+    tag: fixed
+    bugs: [1724292]
+    group: 2
+  - note: Various theme and UX fixes
+    tag: fixed
+    bugs: [1709985, 1722126, 1725309, 1725581, 1725705]
 
   - note: Thunderbird may hang when sending a message if "Check spelling before sending" is enabled in Preferences
     tag: unresolved
