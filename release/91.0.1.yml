@@ -1,0 +1,23 @@
+release:
+  release_date: '2021-08-16'
+  text: |
+    ** Thunderbird 91 is only offered as direct download from
+        [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+        Thunderbird version 78 or earlier.**
+        A future release will provide updates from earlier versions.
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - macOS: macOS 10.12 or later (macOS 11.0 for Silicon)
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  - note: OTR chat encryption failed on 32-bit Windows builds
+    tag: fixed
+    bugs: [1724914]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.0.1)
+    tag: fixed
