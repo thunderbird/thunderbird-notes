@@ -27,8 +27,8 @@ beta_dir = Path(os.path.join(here, "beta"))
 release_dir = Path(os.path.join(here, "release"))
 ver_notes_yaml = "{this_esr}.yml"
 
-MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr78/json-tags"
-CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr78/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
+MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr91/json-tags"
+CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr91/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
 BUG_NUMBER_REGEX = re.compile(r"bug \d+", re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r"back(\s?)out|backed out|backing out", re.IGNORECASE)
 
@@ -231,7 +231,7 @@ def get_versions():
         index = beta.find(".")
         versions["this_beta"] = beta[:index]
 
-    with urlopen(CUR_VERSION_URL.format(repo="comm-esr78")) as response:
+    with urlopen(CUR_VERSION_URL.format(repo="comm-esr91")) as response:
         data = response.read()
         versions["this_esr"] = data.strip().decode("utf-8")
 

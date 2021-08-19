@@ -1,0 +1,52 @@
+release:
+  release_date: '2021-08-23'
+  text: |
+    ** Thunderbird 91 is only offered as direct download from
+        [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+        Thunderbird version 78 or earlier.**
+        A future release will provide updates from earlier versions.
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - macOS: macOS 10.12 or later (macOS 11.0 for Silicon)
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # New
+- note: Tags are now colored in mail filter editor
+  tag: new
+  bugs: [1724191]
+- note: 'Preference for disabling the unread message count badge on Windows taskbar icon
+    added: `mail.biff.show_badge`'
+  tag: new
+  bugs: [1725473]
+  # Changed
+- note: Context menu items related to OpenPGP and attachments are now hidden when not applicable
+  tag: changed
+  bugs: [1720950]
+  # Fixed
+- note: Creating a new account with manual setup failed
+  tag: fixed
+  bugs: [1725812]
+- note: Recipient autocomplete always preferred the primary email address for a contact
+  tag: fixed
+  bugs: [1709799]
+- note: LDAP performance improvements
+  tag: fixed
+  bugs: [1721138, 1724185]
+- note: Extensions listed on the Recommended Addons did not have a clear way to view details
+    in a browser
+  tag: fixed
+  bugs: [1633792]
+- note: Status checkmark on View > Calendar > Calendar Pane > Show Calendar Pane was reversed
+  tag: fixed
+  bugs: [ 1718548 ]
+- note: 'mid: URLs in calendar invites did not open the linked mail message'
+  tag: fixed
+  bugs: [1724292]
+- note: Various theme and UX fixes
+  tag: fixed
+  bugs: [1709985, 1722126, 1725581, 1725705, 1723182, 1724197, 1724633]
