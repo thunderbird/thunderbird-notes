@@ -1,7 +1,7 @@
 release:
   release_date: 2021-08-13
   text: |
-    **These notes apply to Thunderbird version 92 beta 2 released August 16, 2021.**
+    **These notes apply to Thunderbird version 92 beta 3 released August 24, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
   groups:
     -
     - "New, Changed, and Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   - note: Tags are now colored in mail filter editor
@@ -76,6 +77,60 @@ notes:
   - note: Various theme and UX fixes
     tag: fixed
     bugs: [1709985, 1722126, 1725309, 1725581, 1725705]
+
+# beta 3
+  - note: Compose window attachment pane did not close when disabling signing of an OpenPGP message
+    tag: fixed
+    bugs: [1725447]
+    group: 3
+  - note: Unread message count badge on Windows tray icon did not update after moving messages to the Junk folder
+    tag: fixed
+    bugs: [1725674]
+    group: 3
+  - note: Using "Reply to List" with some list emails incorrectly opened a "no-reply" warning
+    tag: fixed
+    bugs: [1725719]
+    group: 3
+  - note: Unified folders showed no messages when underlying folders were removed
+    tag: fixed
+    bugs: [1725737]
+    group: 3
+  - note: Folder pane toolbar did not always presist after restarting Thunderbird
+    tag: fixed
+    bugs: [1725460]
+    group: 3
+  - note: Creating a new account with manual setup failed
+    tag: fixed
+    bugs: [1725812]
+    group: 3
+  - note: Account setup UX issues with Exchange autodiscover
+    tag: fixed
+    bugs: [1724940]
+    group: 3
+  - note: Account settings did not display non-UTF-8 server descriptions correctly
+    tag: fixed
+    bugs: [1726018]
+    group: 3
+  - note: Thunderbird sometimes sent an unnecessary "SMTPUTF8", causing some servers to reject mail
+    tag: fixed
+    bugs: [1726106]
+    group: 3
+  - note: Various CardDAV setup and auto-detection fixes
+    tag: fixed
+    bugs: [1722294, 1725612, 1726263]
+    group: 3
+  - note: Dates (such as birthday) stored in contacts may display the wrong date; a one-time manual fix may be needed
+        for dates that are incorrect.
+    tag: fixed
+    bugs: [1726077]
+    group: 3
+  - note: New chat messages were not visible (white text on white background) in dark mode
+    tag: fixed
+    bugs: [1725896]
+  - note: No mouseover pop was displayed with event details for non-all-day events in the Today Pane
+    tag: fixed
+    bugs: [1585296]
+    group: 3
 
   - note: Thunderbird may hang when sending a message if "Check spelling before sending" is enabled in Preferences
     tag: unresolved
