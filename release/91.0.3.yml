@@ -1,0 +1,59 @@
+release:
+  release_date: '2021-08-26'
+  text: |
+    ** Thunderbird 91 is only offered as direct download from
+        [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+        Thunderbird version 78 or earlier.**
+        A future release will provide updates from earlier versions.
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - macOS: macOS 10.12 or later (macOS 11.0 for Silicon)
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: Folder icons could be overridden by linked favicons in HTML messages
+  tag: fixed
+  bugs: [1724753]
+- note: Unified folders showed no messages when underlying folders were removed
+  tag: fixed
+  bugs: [1725737]
+- note: Folder pane toolbar did not always presist after restarting Thunderbird
+  tag: fixed
+  bugs: [1725460]
+- note: Compose window attachment pane did not close when disabling signing of an OpenPGP
+    message
+  tag: fixed
+  bugs: [1725447]
+- note: Using "Reply to List" with some list emails incorrectly opened a "no-reply" warning
+  tag: fixed
+  bugs: [1725719]
+- note: Unread message count badge on Windows tray icon did not update after moving messages
+    to the Junk folder
+  tag: fixed
+  bugs: [1725674]
+- note: Account setup UX issues with Exchange autodiscover
+  tag: fixed
+  bugs: [1724940]
+- note: Account settings did not display non-UTF-8 server descriptions correctly
+  tag: fixed
+  bugs: [1726018]
+- note: Thunderbird sometimes sent an unnecessary "SMTPUTF8", causing some servers to reject
+    mail
+  tag: fixed
+  bugs: [1726106]
+- note: No mouseover pop was displayed with event details for non-all-day events in the
+    Today Pane
+  tag: fixed
+  bugs: [1585296]
+- note: Filtering tasks in the Today Pane did not work
+  tag: fixed
+  bugs: [1723293]
+- note: Email based event scheduling displayed the date and time in a format unreadable
+    by humans
+  tag: fixed
+  bugs: [1723423]
