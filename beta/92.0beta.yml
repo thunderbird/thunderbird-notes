@@ -95,7 +95,7 @@ notes:
     tag: fixed
     bugs: [1725737]
     group: 3
-  - note: Folder pane toolbar did not always presist after restarting Thunderbird
+  - note: Folder pane toolbar did not always persist after restarting Thunderbird
     tag: fixed
     bugs: [1725460]
     group: 3

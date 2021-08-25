@@ -22,7 +22,7 @@ notes:
 - note: Unified folders showed no messages when underlying folders were removed
   tag: fixed
   bugs: [1725737]
-- note: Folder pane toolbar did not always presist after restarting Thunderbird
+- note: Folder pane toolbar did not always persist after restarting Thunderbird
   tag: fixed
   bugs: [1725460]
 - note: Compose window attachment pane did not close when disabling signing of an OpenPGP
