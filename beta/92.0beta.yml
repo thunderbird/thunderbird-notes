@@ -1,7 +1,7 @@
 release:
   release_date: 2021-08-13
   text: |
-    **These notes apply to Thunderbird version 92 beta 3 released August 24, 2021.**
+    **These notes apply to Thunderbird version 92 beta 4 released August 26, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     -
     - "New, Changed, and Fixed in Beta 2"
     - "Fixed in Beta 3"
+    - "Neu, Geändert, und Behoben in Beta 4"
 
 notes:
   - note: Tags are now colored in mail filter editor
@@ -131,6 +132,27 @@ notes:
     tag: fixed
     bugs: [1585296]
     group: 3
+
+# beta 4
+  - note: Menu item for disabling subject encryption for a single message added
+    tag: new
+    bugs: [1719868]
+    group: 4
+
+  - note: VCard attachments now sent with "text/vcard" instead of "text/x-vcard"
+    tag: changed
+    bugs: [1718018]
+    group: 4
+
+  - note: Account setup did not use provider display name for setting up calendars
+    tag: fixed
+    bugs: [1724071]
+    group: 4
+
+  - note: Various theme and UX fixes
+    tag: fixed
+    bugs: [1726208, 1726525, 1726556, 1726559, 1727263]
+
 
   - note: Thunderbird may hang when sending a message if "Check spelling before sending" is enabled in Preferences
     tag: unresolved
