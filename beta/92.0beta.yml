@@ -1,7 +1,7 @@
 release:
   release_date: 2021-08-13
   text: |
-    **These notes apply to Thunderbird version 92 beta 4 released August 26, 2021.**
+    **These notes apply to Thunderbird version 92 beta 5 released September 2, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -16,7 +16,8 @@ release:
     -
     - "New, Changed, and Fixed in Beta 2"
     - "Fixed in Beta 3"
-    - "Neu, Geändert, und Behoben in Beta 4"
+    - "New, Changed, and Fixed in Beta 4"
+    - "Changed and fixed in beta 5"
 
 notes:
   - note: Tags are now colored in mail filter editor
@@ -157,3 +158,33 @@ notes:
   - note: Thunderbird may hang when sending a message if "Check spelling before sending" is enabled in Preferences
     tag: unresolved
     bugs: [1721801, 1725576]
+
+# beta 5
+  - note: Enable "print message" only when one message is selected
+    tag: changed
+    bugs: [1727107]
+    group: 5
+  - note: New mail notifications did not properly take subfolders into account
+    tag: fixed
+    bugs: [1720947]
+    group: 5
+  - note: Enabled/Disabled state of message filters did not persist as expected
+    tag: fixed
+    bugs: [1727366]
+    group: 5
+  - note: Printing a message did not print a list of its attachments
+    tag: fixed
+    bugs: [1727055]
+    group: 5
+  - note: Images attached from a web page were not sent as expected
+    tag: fixed
+    bugs: [1727164]
+    group: 5
+  - note: LDAP address books using Kerberos/GSS-API authentication did not authenticate
+    tag: fixed
+    bugs: [1727478]
+    group: 5
+  - note: Calendar event editor did not honor `mail.spellcheck.inline`
+    tag: fixed
+    bugs: [1726400]
+    group: 5
