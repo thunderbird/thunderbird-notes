@@ -1,0 +1,20 @@
+release:
+  release_date: '2021-09-07'
+  text: |
+    **Thunderbird 78.15.0, scheduled for October 5, will be the final 78.x release.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird78.14)
+  tag: fixed
+
+- note: Sending an email containing HTML links with spaces in the URL sometimes results in broken links
+  tag: unresolved
+  bugs: [1707360]
