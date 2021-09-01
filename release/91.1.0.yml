@@ -1,0 +1,38 @@
+release:
+  release_date: '2021-09-07'
+  text: |
+    ** Thunderbird 91 is only offered as direct download from
+        [thunderbird.net](https://www.thunderbird.net) and not as an upgrade from
+        Thunderbird version 78 or earlier.**
+        A future release will provide updates from earlier versions.
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - macOS: macOS 10.12 or later (macOS 11.0 for Silicon)
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '78.0'
+
+notes:
+  # Changed
+- note: VCard attachments now sent with "text/vcard" instead of "text/x-vcard"
+  tag: changed
+  bugs: [1718018]
+  # Fixed
+- note: Thunderbird registered Accessibility Handlers using same GUIDs as Firefox, causing
+    performance issues for NVDA users
+  tag: fixed
+  bugs: [1689791]
+- note: Focus lost when reordering accounts by keyboard in the Account Manager
+  tag: fixed
+  bugs: [1703501]
+- note: Account setup did not use provider display name for setting up calendars
+  tag: fixed
+  bugs: [1724071]
+- note: Various theme and UX fixes
+  tag: fixed
+  bugs: [1726208, 1726525, 1726556, 1726559, 1727263]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.1)
+  tag: fixed
