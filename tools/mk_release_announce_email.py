@@ -137,10 +137,13 @@ def main(comm_repo, build):
     attach_fn = "Thunderbird_{}.html".format(release_display_version.replace(".", "_"))
     shutil.move("preview.html", attach_fn)
 
+    cc = "Thunderbird Support <support-crew@discuss.thunderbird.net>"
+    if comm_repo == "comm-beta":
+        cc += ";TB Beta <beta@discuss.thunderbird.net>"
     subprocess.run("thunderbird -compose 'format=html','attachment={}','to={}','cc={}','subject={}','body={}'"
                    .format(os.path.abspath(attach_fn),
                            "Thunderbird Drivers <thunderbird-drivers@mozilla.org>",
-                           "Thunderbird Support <support-crew@discuss.thunderbird.net>",
+                           cc,
                            email_subject, email_body_html), shell=True)
 
 
