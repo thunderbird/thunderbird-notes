@@ -1,0 +1,89 @@
+release:
+  release_date: 2021-09-09
+  text: |
+    **These notes apply to Thunderbird version 93 beta 1 released September 9, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '87.0beta'
+
+notes:
+  - note: Added config option to more aggressively warn sender about having many public recipients to an email (`mail.compose.warn_public_recipients.aggressive`)
+    tag: new
+    bugs: [1707801]
+  - note: Removing events from a calendar now prompts for confirmation
+    tag: new
+    bugs: [1428254]
+
+  - note: Replace "About Junk Mail" dialog with a link to the support page
+    tag: changed
+    bugs: [1725220]
+  - note: Support for importing and exporting calendars from Outlook CSV format was removed
+    tag: changed
+    bugs: [1226851]
+  - note: Saving a single message as .eml now uses a unique filename
+    tag: changed
+    bugs: [1722223]
+  - note: Thunderbird can now be used without setting up a mail account
+    tag: changed
+    bugs: [942615]
+
+  - note: Importing a profile from a ZIP file greater than 2GB failed
+    tag: fixed
+    bugs: [1722938]
+  - note: Message download progress was calculated incorrectly
+    tag: fixed
+    bugs: [1726429]
+  - note: IMAP startup performance improved for accounts with a multitude of folders
+    tag: fixed
+    bugs: [163964]
+  - note: OpenPGP public key was attached multiple times when forwading a message
+    tag: fixed
+    bugs: [1725033]
+  - note: Windows tray icon disappeared if Thunderbird was started by a shortcut with "Run" set to "Minimized"
+    tag: fixed
+    bugs: [1726900]
+  - note: Delivery Status Notifications were only shown for the first recipient
+    tag: fixed
+    bugs: [1728705]
+  - note: Composing a message from a template with attachments failed due to a temporary file being removed
+    tag: fixed
+    bugs: [1727830]
+  - note: Windows tray message count badge displayed the "unread" count instead of the "new" message count
+    tag: fixed
+    bugs: [1721063]
+  - note: Some downstream Thunderbird builds were incorrectly checking addons for a signature, causing all addons to be disabled
+    tag: fixed
+    bugs: [1727113]
+  - note: Attached VCards displayed as plain text when an email was HTML formatted
+    tag: fixed
+    bugs: [1726529]
+  - note: Mailing list names with non-ASCII characters incorrectly displayed with an error
+    tag: fixed
+    bugs: [1726926]
+  - note: LDAP directories were not searched for matches when adding recipients to an email
+    tag: fixed
+    bugs: [1726350]
+  - note: Clicking "Connect to an LDAP address book" in account setup opened CardDAV setup dialog
+    tag: fixed
+    bugs: [ 1727737 ]
+  - note: IRC server connections did not automatically retry after a timeout
+    tag: fixed
+    bugs: [1690415]
+  - note: Read-only CalDAV calendars and CardDAV address books were not detected
+    tag: fixed
+    bugs: [1670416, 1722730]
+  - note: Multipart messages containing a calendar invite did not display any of the human-readable alternatives
+    tag: fixed
+    bugs: [760412]
+
+  - note: Various keyboard accessibility fixes
+    tag: fixed
+    bugs: [1707659, 1727099, 1728296]
+  - note: Various theme and UX fixes
+    tag: fixed
+    bugs: [544844, 1724906, 1725088, 1724843, 1724842, 1713872]
