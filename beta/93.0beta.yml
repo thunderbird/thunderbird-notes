@@ -53,6 +53,9 @@ notes:
   - note: Composing a message from a template with attachments failed due to a temporary file being removed
     tag: fixed
     bugs: [1727830]
+  - note: Multiple bulk mail notification warnings were displayed
+    tag: fixed
+    bugs: [1727862]
   - note: Windows tray message count badge displayed the "unread" count instead of the "new" message count
     tag: fixed
     bugs: [1721063]
