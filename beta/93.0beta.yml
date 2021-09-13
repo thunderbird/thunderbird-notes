@@ -1,7 +1,7 @@
 release:
   release_date: 2021-09-09
   text: |
-    **These notes apply to Thunderbird version 93 beta 1 released September 9, 2021.**
+    **These notes apply to Thunderbird version 93 beta 2 released September 13, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: '87.0beta'
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
   - note: Added config option to more aggressively warn sender about having many public recipients to an email (`mail.compose.warn_public_recipients.aggressive`)
@@ -90,3 +94,27 @@ notes:
   - note: Various theme and UX fixes
     tag: fixed
     bugs: [544844, 1724906, 1725088, 1724843, 1724842, 1713872]
+
+
+# beta 2
+  - note: Buttons on compose window dialogs did not have a visual indication of focus
+    tag: fixed
+    bugs: [ 1730153 ]
+    group: 2
+  - note: Dropdown fields in message compose window were unreadable on Windows 7 with a dark theme
+    tag: fixed
+    bugs: [ 1729977 ]
+    group: 2
+  - note: Attachment sizes were no longer included on printed emails
+    tag: fixed
+    bugs: [1729279]
+    group: 2
+  - note: Addressbooks set up with autoconfig showed no search results
+    tag: fixed
+    bugs: [1729254]
+    group: 2
+  - note: LDAP search queries containing non-ASCII characters produced no results
+    tag: fixed
+    bugs: [1728942]
+    group: 2
+
