@@ -1,7 +1,7 @@
 release:
   release_date: 2021-09-09
   text: |
-    **These notes apply to Thunderbird version 93 beta 2 released September 13, 2021.**
+    **These notes apply to Thunderbird version 93 beta 3 released September 20, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   - note: Added config option to more aggressively warn sender about having many public recipients to an email (`mail.compose.warn_public_recipients.aggressive`)
@@ -117,4 +118,22 @@ notes:
     tag: fixed
     bugs: [1728942]
     group: 2
+
+# beta 3
+  - note: A message sent with multiple attachments sometimes only sent one
+    tag: fixed
+    bugs: [1729437]
+    group: 3
+  - note: Recipient pill context menus on macOS did not work
+    tag: fixed
+    bugs: [1729741]
+    group: 3
+  - note: Decrypting binary attachments when using an external GnuPG configuration failed
+    tag: fixed
+    bugs: [1704820]
+    group: 3
+  - note: Message Security popup did not display all recipients due a missing scrollbar
+    tag: fixed
+    bugs: [1692497]
+    group: 3
 
