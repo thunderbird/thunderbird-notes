@@ -1,7 +1,7 @@
 release:
   release_date: 2021-09-09
   text: |
-    **These notes apply to Thunderbird version 93 beta 3 released September 20, 2021.**
+    **These notes apply to Thunderbird version 93 beta 4 released September 23, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
+    - "Changed and Fixed in Beta 4"
 
 notes:
   - note: Added config option to more aggressively warn sender about having many public recipients to an email (`mail.compose.warn_public_recipients.aggressive`)
@@ -137,3 +138,37 @@ notes:
     bugs: [1692497]
     group: 3
 
+# beta 4
+  - note: Thunderbird will now warn if a S/MIME encrypted message includes BCC recipients
+    tag: changed
+    bugs: [119384]
+    group: 4
+
+  - note: Thunderbird sometimes attached the wrong messages when forwarding multiple messages by attachment
+    tag: fixed
+    bugs: [1729432]
+    group: 4
+  - note: Thunderbird did not re-prompt for an SMTP username if one was not provided
+    tag: fixed
+    bugs: [1730151]
+    group: 4
+  - note: Messages with BCC recipients that were held in the Outbox did not retain the BCC header when moved to the Sent folder
+    tag: fixed
+    bugs: [1730738]
+    group: 4
+  - note: Some calendar days were displayed incorrectly or duplicated (eg. two "29th" days of a particular month)
+    tag: fixed
+    bugs: [1673835]
+    group: 4
+  - note: Thunderbird displayed reminders for events that were cancelled or declined
+    tag: fixed
+    bugs: [1724666]
+    group: 4
+  - note: MS Teams meeting event descriptions were unreadable when stored on Google Calendar
+    tag: fixed
+    bugs: [1727061]
+    group: 4
+  - note: New Feed Account dialog did not honor dark mode
+    tag: fixed
+    bugs: [1731129]
+    group: 4
