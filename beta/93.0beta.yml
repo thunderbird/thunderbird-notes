@@ -139,7 +139,7 @@ notes:
     group: 3
 
 # beta 4
-  - note: Thunderbird will now warn if a S/MIME encrypted message includes BCC recipients
+  - note: Thunderbird will now warn if an S/MIME encrypted message includes BCC recipients
     tag: changed
     bugs: [119384]
     group: 4
