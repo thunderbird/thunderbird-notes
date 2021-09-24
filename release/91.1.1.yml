@@ -12,7 +12,7 @@ release:
     - macOS: macOS 10.12 or later (macOS 11.0 for Silicon)
     - Linux: GTK+ 3.14 or higher
 
-  import_system_requirements: '78.0'
+  import_system_requirements: '91.0'
 
 notes:
   # New
