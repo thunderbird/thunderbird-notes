@@ -1,0 +1,53 @@
+release:
+  release_date: '2021-09-28'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later (macOS 11.0 for Silicon)
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Changed
+- note: Thunderbird will now warn if an S/MIME encrypted message includes BCC recipients
+  tag: changed
+  bugs: [119384]
+  # Fixed
+- note: Message Security popup did not display all recipients due a missing scrollbar
+  tag: fixed
+  bugs: [1692497]
+- note: Delivery Status Notifications were only shown for the first recipient
+  tag: fixed
+  bugs: [1728705]
+- note: Composing a message from a template with attachments failed due to a temporary
+    file being removed
+  tag: fixed
+  bugs: [1727830]
+- note: Attachment sizes were no longer included on printed emails
+  tag: fixed
+  bugs: [1729279]
+- note: A message sent with multiple attachments sometimes only sent one
+  tag: fixed
+  bugs: [1729437]
+- note: Thunderbird sometimes attached the wrong messages when forwarding multiple messages
+    by attachment
+  tag: fixed
+  bugs: [1729432]
+- note: Thunderbird did not re-prompt for an SMTP username if one was not provided
+  tag: fixed
+  bugs: [1730151]
+- note: Messages with BCC recipients that were held in the Outbox did not retain the BCC
+    header when moved to the Sent folder
+  tag: fixed
+  bugs: [1730738]
+- note: Thunderbird displayed reminders for events that were cancelled or declined
+  tag: fixed
+  bugs: [1724666]
+- note: New Feed Account dialog did not honor dark mode
+  tag: fixed
+  bugs: [1731129]
