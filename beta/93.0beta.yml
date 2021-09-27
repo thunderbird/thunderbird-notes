@@ -1,7 +1,7 @@
 release:
   release_date: 2021-09-09
   text: |
-    **These notes apply to Thunderbird version 93 beta 4 released September 23, 2021.**
+    **These notes apply to Thunderbird version 93 beta 5 released September 28, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
     - "Changed and Fixed in Beta 4"
+    - "Fixed in Beta 5"
 
 notes:
   - note: Added config option to more aggressively warn sender about having many public recipients to an email (`mail.compose.warn_public_recipients.aggressive`)
@@ -172,3 +173,37 @@ notes:
     tag: fixed
     bugs: [1731129]
     group: 4
+
+# beta 5
+  - note: Dragging and dropping multiple email attachments between windows did not always copy all attachments
+    tag: fixed
+    bugs: [1457074]
+    group: 5
+  - note: Recipeint address pills in an error state could incorrectly merge with mailing list pills when expanding the list
+    tag: fixed
+    bugs: [1730363]
+    group: 5
+  - note: Account name fields in the account manager were not big enough for long names
+    tag: fixed
+    bugs: [1665191]
+    group: 5
+  - note: LDAP searches using an extensibleMatch filter returned no results
+    tag: fixed
+    bugs: [1730874]
+    group: 5
+  - note: Public ICS calendars served with an incorrect Content-Type could not be added
+    tag: fixed
+    bugs: [1723415]
+    group: 5
+  - note: Setting a CalDAV calendar to manually update had no effect
+    tag: fixed
+    bugs: [1730006]
+    group: 5
+  - note: CalDAV calendars set to read-only became writable after restarting Thunderbird
+    tag: fixed
+    bugs: [1729235]
+    group: 5
+  - note: Phantom event was shown at the end of each day in Calendar week view
+    tag: fixed
+    bugs: [1731091]
+    group: 5
