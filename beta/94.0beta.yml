@@ -1,0 +1,80 @@
+release:
+  release_date: 2021-09-09
+  text: |
+    **These notes apply to Thunderbird version 93 beta 5 released September 28, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '87.0beta'
+
+#  groups:
+#    -
+
+notes:
+  - note: Opening a **news://** URL now works if an account is not configured for that news server
+    tag: new
+    bugs: [41133]
+  - note: Preference add to disable automatic pausing RSS feed updates after a fetch failure
+    tag: new
+    bugs: [1656651]
+
+  - note: New message detection for non-INBOX IMAP folders improved
+    tag: changed
+    bugs: [1708981]
+  - note: '"Discover OpenPGP Key" context menu item is no longer displayed when a key is already available'
+    tag: changed
+    bugs: [1726369]
+  - note: NNTP account set up moved to its own wizard; "Other accounts" wizard removed
+    tag: changed
+    bugs: [1727304]
+  - note: Account Manager UI updated
+    tag: changed
+    bugs: [1728521, 1728797, 1730179]
+  - note: Preference for OTR encrypted conversation logging moved to Protocol settings
+    tag: changed
+    bugs: [1729924]
+
+  - note: SMTP Auth Usernames with special characters were not properly encoded, leading to unexpected authentication failures
+    tag: fixed
+    bugs: [1722085]
+  - note: Multi-message view was not fully scrollable
+    tag: fixed
+    bugs: [1730740]
+  - note: Icon to clear the global search input (and others) was not displayed
+    tag: fixed
+    bugs: [1726341]
+  - note: Closing a tab with middle-mouse click did not work
+    tag: fixed
+    bugs: [1731497]
+  - note: Attachment bar in message compose window was not keyboard accessible
+    tag: fixed
+    bugs: [1729314]
+  - note: Vertical scrollbar in "Conversations" chat panel did not work correctly
+    tag: fixed
+    bugs: [1716316]
+  - note: Chat account "Advanced Options" dialog had no clickable buttons on macOS
+    tag: fixed
+    bugs: [1731899]
+  - note: Saving a copy of a calendar invite (More -> Save As Copy) did not work
+    tag: fixed
+    bugs: [1724093]
+  - note: Right clicking on a calendar in the calendar list did not select the calendar
+    tag: fixed
+    bugs: [1731751]
+  - note: Events in the first or last week of a month were not always printed when printing a month view
+    tag: fixed
+    bugs: [1732753]
+  - note: Accessibility improvements; clearer display of area of focus
+    tag: fixed
+    bugs: [1732301, 1732850, 1733435]
+
+  - note: Various theme improvements, HiDPI improvements
+    tag: fixed
+    bugs: [1728491, 1730365, 1730457, 1730555, 1730634, 1732301, 1733271]
+  - note: No theme preview for Dark and Light themes was displayed
+    tag: fixed
+    bugs: [1732371]
