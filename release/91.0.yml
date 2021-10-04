@@ -39,8 +39,7 @@ release:
 
     ## GNU/Linux
     ### Software Requirements
-    *Please note that GNU/Linux distributors may provide packages for your distribution which have
-    different requirements.*
+    - *Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.*
     - Thunderbird will not run at all without the following libraries or packages:
         - GTK+ 3.14 or higher
         - X.Org 1.0 or higher (1.7 or higher is recommended)

@@ -1,0 +1,49 @@
+release:
+  release_date: '2021-10-07'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later (macOS 11.0 for Silicon)
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Changed
+- note: Saving a single message as .eml now uses a unique filename
+  tag: changed
+  bugs: [1722223]
+  # Fixed
+- note: New mail notifications did not properly take subfolders into account
+  tag: fixed
+  bugs: [1720947]
+- note: Decrypting binary attachments when using an external GnuPG configuration failed
+  tag: fixed
+  bugs: [1704820]
+- note: Account name fields in the account manager were not big enough for long names
+  tag: fixed
+  bugs: [1665191]
+- note: LDAP searches using an extensibleMatch filter returned no results
+  tag: fixed
+  bugs: [1730874]
+- note: Read-only CalDAV calendars and CardDAV address books were not detected
+  tag: fixed
+  bugs: [1670416, 1722730]
+- note: Multipart messages containing a calendar invite did not display any of the human-readable
+    alternatives
+  tag: fixed
+  bugs: [760412]
+- note: Some calendar days were displayed incorrectly or duplicated (eg. two "29th" days
+    of a particular month)
+  tag: fixed
+  bugs: [1673835]
+- note: Phantom event was shown at the end of each day in Calendar week view
+  tag: fixed
+  bugs: [1731091]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.2)
+  tag: fixed
