@@ -53,6 +53,9 @@ notes:
   - note: Attachment bar in message compose window was not keyboard accessible
     tag: fixed
     bugs: [1729314]
+  - note: '"Repair Text Encoding" menu item did not work
+    tag: fixed
+    bugs: [1713786]
   - note: Vertical scrollbar in "Conversations" chat panel did not work correctly
     tag: fixed
     bugs: [1716316]
