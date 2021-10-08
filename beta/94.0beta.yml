@@ -1,9 +1,9 @@
 release:
-  release_date: 2021-09-09
+  release_date: 2021-10-06
   text: |
-    **These notes apply to Thunderbird version 93 beta 5 released September 28, 2021.**
+    **These notes apply to Thunderbird version 94 beta 1 released October 6, 2021.**
 
-    **System Requirements:** [Details](/en-US/thunderbird/92.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/94.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
