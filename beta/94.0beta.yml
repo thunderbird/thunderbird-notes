@@ -1,7 +1,7 @@
 release:
   release_date: 2021-10-06
   text: |
-    **These notes apply to Thunderbird version 94 beta 1 released October 6, 2021.**
+    **These notes apply to Thunderbird version 94 beta 2 released October 09, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/94.0beta/system-requirements/)
 
@@ -11,8 +11,9 @@ release:
 
   import_system_requirements: '87.0beta'
 
-#  groups:
-#    -
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
   - note: Opening a **news://** URL now works if an account is not configured for that news server
@@ -81,3 +82,13 @@ notes:
   - note: No theme preview for Dark and Light themes was displayed
     tag: fixed
     bugs: [1732371]
+
+  # beta 2
+  - note: '"Attachments" menu panels for attached files were empty'
+    tag: fixed
+    bugs: [1734360]
+    group: 2
+  - note: Stability improvements
+    tag: fixed
+    bugs: [1175168, 1733686]
+    group: 2
