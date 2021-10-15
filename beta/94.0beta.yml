@@ -92,3 +92,39 @@ notes:
     tag: fixed
     bugs: [1175168, 1733686]
     group: 2
+
+
+  # beta 3
+  - note: BCC-only messages could not be sent from the Outbox
+    tag: fixed
+    bugs: [1734070]
+    group: 3
+  - note: Default mail headers were set incorrectly when the value contained a colon (:)
+    tag: fixed
+    bugs: [1734210]
+    group: 3
+  - note: Mail tabs could not be closed using the context menu
+    tag: fixed
+    bugs: [1734413]
+    group: 3
+  - note: '"Print" context menu was still shown when no message pane was displayed'
+    tag: fixed
+    bugs: [1734586]
+    group: 3
+  - note: Default DSN request was not set when using "Edit as New Message"
+    tag: fixed
+    bugs: [1734459]
+    group: 3
+  - note: RSS feed attachments could not be saved
+    tag: fixed
+    bugs: [1733682]
+    group: 3
+  - note: Calendar "start of the week" changed from Sunday to Saturday after updating to 94.0b1
+    tag: fixed
+    bugs: [1734504]
+    group: 3
+  - note: Various Calendar event dialog fixes
+    tag: fixed
+    bugs: [1726096, 1728276, 1732783]
+    group: 3
+
