@@ -1,0 +1,67 @@
+release:
+  release_date: '2021-10-21'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # New
+- note: Preference add to disable automatic pausing RSS feed updates after a fetch failure
+  tag: new
+  bugs: [1656651]
+  # Fixed
+#- note: Recipeint address pills in an error state could incorrectly merge with mailing
+#    list pills when expanding the list
+#  tag: fixed
+#  bugs: [1730363]
+- note: BCC-only messages could not be sent from the Outbox
+  tag: fixed
+  bugs: [ 1734070 ]
+- note: Default DSN request was not set when using "Edit as New Message"
+  tag: fixed
+  bugs: [ 1734459 ]
+- note: Vertical scrollbar in "Conversations" chat panel did not work correctly
+  tag: fixed
+  bugs: [ 1716316 ]
+- note: Chat account "Advanced Options" dialog had no clickable buttons on macOS
+  tag: fixed
+  bugs: [ 1731899 ]
+- note: RSS feed attachments could not be saved
+  tag: fixed
+  bugs: [ 1733682 ]
+- note: Public ICS calendars served with an incorrect Content-Type could not be added
+  tag: fixed
+  bugs: [1723415]
+- note: Setting a CalDAV calendar to manually update had no effect
+  tag: fixed
+  bugs: [1730006]
+- note: CalDAV calendars set to read-only became writable after restarting Thunderbird
+  tag: fixed
+  bugs: [1729235]
+- note: Saving a copy of a calendar invite (More -> Save As Copy) did not work
+  tag: fixed
+  bugs: [1724093]
+- note: Events in the first or last week of a month were not always printed when printing
+    a month view
+  tag: fixed
+  bugs: [1732753]
+- note: Accessibility improvements; clearer display of area of focus
+  tag: fixed
+  bugs: [1732850, 1733435]
+- note: Various theme improvements, HiDPI improvements
+  tag: fixed
+  bugs: [1730365, 1730457, 1730634, 1733271]
+- note: '"Attachments" menu panels for attached files were empty'
+  tag: fixed
+  bugs: [1734360]
+- note: Stability improvements
+  tag: fixed
+  bugs: [1175168]
