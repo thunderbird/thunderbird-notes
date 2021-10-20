@@ -14,14 +14,14 @@ release:
 
 notes:
   # New
-- note: Preference add to disable automatic pausing RSS feed updates after a fetch failure
+- note: Preference added to disable automatic pausing RSS feed updates after a fetch failure
   tag: new
   bugs: [1656651]
   # Fixed
-#- note: Recipeint address pills in an error state could incorrectly merge with mailing
-#    list pills when expanding the list
-#  tag: fixed
-#  bugs: [1730363]
+- note: Recipeint address pills in an error state could incorrectly merge with mailing
+    list pills when expanding the list
+  tag: fixed
+  bugs: [1730363]
 - note: BCC-only messages could not be sent from the Outbox
   tag: fixed
   bugs: [ 1734070 ]
