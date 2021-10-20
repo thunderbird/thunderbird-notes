@@ -135,6 +135,10 @@ notes:
     tag: fixed
     bugs: [1735160]
     group: 4
+  - note: Thunderbird redownloaded already locally stored messages when "Allow antivirus clients to quarantine" was enabled.
+    tag: fixed
+    bugs: [1734843]
+    group: 4
   - note: Windows tray icon did not reappear after restarting Windows Explorer
     tag: fixed
     bugs: [1734564]
