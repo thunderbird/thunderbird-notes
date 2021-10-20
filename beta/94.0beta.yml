@@ -1,7 +1,7 @@
 release:
   release_date: 2021-10-06
   text: |
-    **These notes apply to Thunderbird version 94 beta 3 released October 15, 2021.**
+    **These notes apply to Thunderbird version 94 beta 4 released October 21, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/94.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
+    - "Fixed in Beta 4"
 
 notes:
   - note: Opening a **news://** URL now works if an account is not configured for that news server
@@ -129,3 +130,32 @@ notes:
     bugs: [1726096, 1728276, 1732783]
     group: 3
 
+  # beta 4
+  - note: Thunderbird did not send the QUIT command when closing an SMTP connection
+    tag: fixed
+    bugs: [1735160]
+    group: 4
+  - note: Windows tray icon did not reappear after restarting Windows Explorer
+    tag: fixed
+    bugs: [1734564]
+    group: 4
+  - note: Virtual Folder Properties dialog was too small for locales with lengthy strings
+    tag: fixed
+    bugs: [1736327]
+    group: 4
+  - note: Compose window attachment drag and drop fixes
+    tag: fixed
+    bugs: [1732903,1735459]
+    group: 4
+  - note: CardDAV address books without a name did not work
+    tag: fixed
+    bugs: [1732565]
+    group: 4
+  - note: Thunderbird tried to refresh disabled and manual-only calendars when going from offline to online
+    tag: fixed
+    bugs: [1735907]
+    group: 4
+  - note: Theming improvements
+    tag: fixed
+    bugs: [1736035]
+    group: 4
