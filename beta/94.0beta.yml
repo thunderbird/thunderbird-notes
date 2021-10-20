@@ -1,7 +1,7 @@
 release:
   release_date: 2021-10-06
   text: |
-    **These notes apply to Thunderbird version 94 beta 2 released October 09, 2021.**
+    **These notes apply to Thunderbird version 94 beta 3 released October 15, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/94.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   - note: Opening a **news://** URL now works if an account is not configured for that news server
