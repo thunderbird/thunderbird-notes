@@ -43,7 +43,7 @@ notes:
 
   - note: SMTP Auth Usernames with special characters were not properly encoded, leading to unexpected authentication failures
     tag: fixed
-    bugs: [1722085]
+    bugs: [1733085]
   - note: Multi-message view was not fully scrollable
     tag: fixed
     bugs: [1730740]
