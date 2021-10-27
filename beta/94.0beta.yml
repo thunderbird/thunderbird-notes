@@ -1,7 +1,7 @@
 release:
   release_date: 2021-10-06
   text: |
-    **These notes apply to Thunderbird version 94 beta 4 released October 21, 2021.**
+    **These notes apply to Thunderbird version 94 beta 5 released October 28, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/94.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
     - "Fixed in Beta 4"
+    - "Fixed in Beta 5"
 
 notes:
   - note: Opening a **news://** URL now works if an account is not configured for that news server
@@ -163,3 +164,29 @@ notes:
     tag: fixed
     bugs: [1736035]
     group: 4
+
+  # beta 5
+  - note: New mail popups were displayed while running full screen applications
+    tag: fixed
+    bugs: [1735458]
+    group: 5
+  - note: Messages received with non-standard "koi8r" encoding were not supported
+    tag: fixed
+    bugs: [1735731]
+    group: 5
+  - note: Various macOS stability improvements
+    tag: fixed
+    bugs: [1735508, 1736942, 1737489]
+    group: 5
+  - note: Drag and Drop area for file attachments on Windows was incorrect
+    tag: fixed
+    bugs: [1737386]
+    group: 5
+  - note: PDF attachments opened in Firefox while composing an email
+    tag: fixed
+    bugs: [1734428]
+    group: 5
+  - note: Importing an ICS file with TODO items failed
+    tag: fixed
+    bugs: [1727938]
+    group: 5
