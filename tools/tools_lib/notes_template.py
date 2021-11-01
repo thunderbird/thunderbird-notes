@@ -13,14 +13,14 @@ release:
 notes:
 """
 
-REQUIREMENTS_IMPORT = {"release": "78.0",
+REQUIREMENTS_IMPORT = {"release": "91.0",
                        "beta": "86.0beta",
                        }
 
-TMPL_RELEASE_TEXT = """**For more on all of the new features in Thunderbird 78, see
-[New in Thunderbird 78.0](https://support.mozilla.org/en-US/kb/new-thunderbird-78/).**
+TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 91, see
+[New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
 
-**System Requirements:** [Details](/en-US/thunderbird/78.0/system-requirements/)
+**System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
 
 - Windows: Windows 7 or later
 - Mac: macOS 10.9 or later
