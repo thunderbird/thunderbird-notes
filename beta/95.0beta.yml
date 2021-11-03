@@ -1,0 +1,82 @@
+release:
+  release_date: 2021-11-03
+  text: |
+    **These notes apply to Thunderbird version 95 beta 1 released November 3, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/95.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '87.0beta'
+
+notes:
+  - note: Commandline tools now included for OpenPGP debugging
+    tag: new
+    bugs: [1730711]
+  - note: New address book UI enabled by default; Set `mail.addr_book.useNewAddressBook` to `false` to disable.
+    tag: new
+    bugs: [1737739]
+
+  - note: OpenPGP public keys will no longer count as an attachment in the message list
+    tag: changed
+    bugs: [1678220]
+  - note: Email account provisioner moved to a tab
+    tag: changed
+    bugs: [1700487]
+  - note: Adding a search engine via URL now supported
+    tag: changed
+    bugs: [1718411]
+  - note: FileLink messages' template updated; Thunderbird advertisement removed
+    tag: changed
+    bugs: [1736150, 1736208]
+  - note: Date selection in Calendar print settings widget changed to use mini calendar widget
+    tag: changed
+    bugs: [1731783]
+  - note: Today Pane UI refreshed
+    tag: changed
+    bugs: [ 412740, 1728743, 1666085, 1738376 ]
+
+  - note: Troubleshoot Mode menu item did not always indicate whether troubleshooting mode was enabled
+    tag: fixed
+    bugs: [1729728]
+  - note: Sending an email through an SMTP server configured with a IPv6 address failed
+    tag: fixed
+    bugs: [1736508]
+  - note: PDF attachments opened in Firefox while composing an email (updated since 94.0b5)
+    tag: fixed
+    bugs: [1734428]
+  - note: New Mail notifications were not visible on Windows
+    tag: fixed
+    bugs: [1734577]
+
+  - note: Message content could be unintentionally hidden due to CSS class names conflicting
+    tag: fixed
+    bugs: [1736244]
+  - note: Printing multiple messages at once was not possible
+    tag: fixed
+    bugs: [1737730]
+
+  - note: Non-utf8 news groups were not supported
+    tag: fixed
+    bugs: [1734361]
+
+  - note: Event alerts with a flashing alarm were not shown
+    tag: fixed
+    bugs: [1737316]
+  - note: Multiday selections were not cleared when changing week viewed
+    tag: fixed
+    bugs: [1737569]
+  - note: vCard attachments were not shown when using "inline" view for attachments
+    tag: fixed
+    bugs: [583572]
+  - note: When printing from Calendar, after leaving the "Calendar" settings, there was no way to go back
+    tag: fixed
+    bugs: [1724090]
+  - note: Calendar theme updates
+    tag: fixed
+    bugs: [1734883, 1734894]
+
+
+
