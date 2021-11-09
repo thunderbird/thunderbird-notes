@@ -13,7 +13,7 @@ release:
 
   groups:
     -
-    - "Fixed in Beta 2"
+    - "Changed and Fixed in Beta 2"
 
 notes:
   - note: Commandline tools now included for OpenPGP debugging
