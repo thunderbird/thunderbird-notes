@@ -1,7 +1,7 @@
 release:
   release_date: 2021-11-03
   text: |
-    **These notes apply to Thunderbird version 95 beta 1 released November 3, 2021.**
+    **These notes apply to Thunderbird version 95 beta 2 released November 9, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/95.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: '87.0beta'
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
   - note: Commandline tools now included for OpenPGP debugging
@@ -78,5 +82,28 @@ notes:
     tag: fixed
     bugs: [1734883, 1734894]
 
-
-
+# beta 2
+  - note: After an update, Thunderbird will now check installed addons for updates
+    tag: changed
+    bugs: [1738458]
+    group: 2
+  - note: 'Addons were disabled when "Offline Settings" were set to "Ask me for online state (on startup)"'
+    tag: fixed
+    bugs: [1732515]
+    group: 2
+  - note: Clicking '"addons://" links in the Addons Manager prompted for an application to open it, rather than opening internally
+    tag: fixed
+    bugs: [1739452]
+    group: 2
+  - note: The Contacts sidebar "Address Book" drop down was unreadable on Windows
+    tag: fixed
+    bugs: [1738604]
+    group: 2
+  - note: Month pickers in the Calendar print UI lacked scrollbars when the content overflowed
+    tag: fixed
+    bugs: [1739038]
+    group: 2
+  - note: Some recurring events were initially missing from the Today Pane agenda
+    tag: fixed
+    bugs: [1738867]
+    group: 2
