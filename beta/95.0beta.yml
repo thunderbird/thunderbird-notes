@@ -1,7 +1,7 @@
 release:
   release_date: 2021-11-03
   text: |
-    **These notes apply to Thunderbird version 95 beta 2 released November 9, 2021.**
+    **These notes apply to Thunderbird version 95 beta 3 released November 13, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/95.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Changed and Fixed in Beta 2"
+    - "Fixed in beta 3"
 
 notes:
   - note: Commandline tools now included for OpenPGP debugging
@@ -107,3 +108,38 @@ notes:
     tag: fixed
     bugs: [1738867]
     group: 2
+
+# beta 3
+  - note: SMTP server port was reset to "0" after clicking the "Re-Test" button in the Account Setup wizard
+    tag: fixed
+    bugs: [1735938]
+    group: 3
+  - note: No "Paste" option was available in the config editor (about:config) context menu
+    tag: fixed
+    bugs: [1736131]
+    group: 3
+  - note: Saving a PDF attachment opened in a separate tab saved the email message instead
+    tag: fixed
+    bugs: [1737544]
+    group: 3
+  - note: Opening a PDF attachment from a message in a standalone or compose window did move the focus to opened attachment
+    tag: fixed
+    bugs: [1740213]
+    group: 3
+  - note: Attachments that should open in Thunderbird, such as ICS attachments, offered to save the file instead
+    tag: fixed
+    bugs: [1737711]
+    group: 3
+  - note: After restart, Thunderbird was not able to restore opened message tabs when the message was in a folder with non-ASCII characters in its name
+    tag: fixed
+    bugs: [1739784]
+    group: 3
+  - note: The "pill" indicator was incorrectly shown when sending a message to newsgroup
+    tag: fixed
+    bugs: [1739159]
+    group: 3
+  - note: When creating a new event by clicking and dragging the mouse to create a box, the view did not auto-scroll after reaching the bottom
+    tag: fixed
+    bugs: [1683326, 1683328]
+    group: 3
+
