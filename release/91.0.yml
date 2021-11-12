@@ -232,6 +232,9 @@ notes:
 - note: 'AutoComplete from LDAP directories now searches by substring instead of left-side match'
   tag: changed
   bugs: [ 1626944 ]
+- note: Support dropped for macOS address book integration
+  tag: changed
+  bugs: [1720257]
 - note: Chat modules and custom widgets are now lazy-loaded to improve Thunderbird startup time
   tag: changed
   bugs: [ 1700013, 1700014 ]
