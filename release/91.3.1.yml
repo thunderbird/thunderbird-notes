@@ -1,0 +1,62 @@
+release:
+  release_date: '2021-11-15'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Changed
+- note: OpenPGP public keys will no longer count as an attachment in the message list
+  tag: changed
+  bugs: [1678220]
+- note: Adding a search engine via URL now supported
+  tag: changed
+  bugs: [1718411]
+- note: FileLink messages' template updated; Thunderbird advertisement removed
+  tag: changed
+  bugs: [1736150]
+- note: After an update, Thunderbird will now check installed addons for updates
+  tag: changed
+  bugs: [1738458]
+  # Fixed
+
+- note: New mail popups were displayed while running full screen applications
+  tag: fixed
+  bugs: [1735458]
+- note: Messages received with non-standard "koi8r" encoding were not supported
+  tag: fixed
+  bugs: [1735731]
+- note: Various macOS stability improvements
+  tag: fixed
+  bugs: [1736942]
+- note: PDF attachments opened in Firefox while composing an email
+  tag: fixed
+  bugs: [1734428]
+- note: 'Addons were disabled when "Offline Settings" were set to "Ask me for online state
+    (on startup)"'
+  tag: fixed
+  bugs: [1732515]
+- note: Clicking '"addons://" links in the Addons Manager prompted for an application to
+    open it, rather than opening internally
+  tag: fixed
+  bugs: [1739452]
+- note: The Contacts sidebar "Address Book" drop down was unreadable on Windows
+  tag: fixed
+  bugs: [1738604]
+- note: vCard attachments were not shown when using "inline" view for attachments
+  tag: fixed
+  bugs: [ 583572 ]
+- note: Importing an ICS file with TODO items failed
+  tag: fixed
+  bugs: [ 1727938 ]
+- note: Event alerts with a flashing alarm were not shown
+  tag: fixed
+  bugs: [ 1737316 ]
