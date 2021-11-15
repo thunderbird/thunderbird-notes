@@ -57,6 +57,3 @@ notes:
 - note: Importing an ICS file with TODO items failed
   tag: fixed
   bugs: [ 1727938 ]
-- note: Event alerts with a flashing alarm were not shown
-  tag: fixed
-  bugs: [ 1737316 ]
