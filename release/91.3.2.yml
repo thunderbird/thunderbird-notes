@@ -1,0 +1,62 @@
+release:
+  release_date: '2021-11-19'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Changed
+- note: Date selection in Calendar print settings widget changed to use mini calendar widget
+  tag: changed
+  bugs: [1731783]
+
+  # Fixed
+- note: '"Repair Text Encoding" menu item did not work'
+  tag: fixed
+  bugs: [1713786]
+- note: Troubleshoot Mode menu item did not always indicate whether troubleshooting mode
+    was enabled
+  tag: fixed
+  bugs: [1729728]
+- note: Message content could be unintentionally hidden due to CSS class names conflicting
+  tag: fixed
+  bugs: [1736244]
+- note: SMTP server port was reset to "0" after clicking the "Re-Test" button in the Account
+    Setup wizard
+  tag: fixed
+  bugs: [ 1735938 ]
+- note: No "Paste" option was available in the config editor (about:config) context menu
+  tag: fixed
+  bugs: [ 1736131 ]
+- note: Saving a PDF attachment opened in a separate tab saved the email message instead
+  tag: fixed
+  bugs: [ 1737544 ]
+- note: Opening a PDF attachment from a message in a standalone or compose window did move
+    the focus to opened attachment
+  tag: fixed
+  bugs: [ 1740213 ]
+- note: After restart, Thunderbird was not able to restore opened message tabs when the
+    message was in a folder with non-ASCII characters in its name
+  tag: fixed
+  bugs: [ 1739784 ]
+- note: The "pill" indicator was incorrectly shown when sending a message to newsgroup
+  tag: fixed
+  bugs: [ 1739159 ]
+- note: When printing from Calendar, after leaving the "Calendar" settings, there was no
+    way to go back
+  tag: fixed
+  bugs: [1724090]
+- note: Month pickers in the Calendar print UI lacked scrollbars when the content overflowed
+  tag: fixed
+  bugs: [1739038]
+- note: Account Manager and Addons Manager were unreadable when using the Dark theme
+  tag: fixed
+  bugs: [1741095]
