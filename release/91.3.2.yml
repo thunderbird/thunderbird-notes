@@ -17,6 +17,9 @@ notes:
 - note: Date selection in Calendar print settings widget changed to use mini calendar widget
   tag: changed
   bugs: [1731783]
+- note: 'OpenPGP: Botan updated to 2.18.2; addresses [CVE-2021-40529](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40529)'
+  tag: changed
+  bugs: [1738708]
 
   # Fixed
 - note: '"Repair Text Encoding" menu item did not work'
