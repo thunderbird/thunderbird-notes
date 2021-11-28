@@ -1,7 +1,7 @@
 release:
   release_date: 2021-11-03
   text: |
-    **These notes apply to Thunderbird version 95 beta 4 released November 22, 2021.**
+    **These notes apply to Thunderbird version 95 beta 5 released November 29, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/95.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - "Changed and Fixed in Beta 2"
     - "Fixed in beta 3"
     - "Changed and Fixed in beta 4"
+    - "Fixed in beta 5"
 
 notes:
   - note: Commandline tools now included for OpenPGP debugging
@@ -178,3 +179,29 @@ notes:
     tag: fixed
     bugs: [1740407]
     group: 4
+
+# Beta 5
+  - note: In account setup, after selecting an extension provided protocol, it was not possible to create an IMAP/POP account
+    tag: fixed
+    bugs: [1729965]
+    group: 5
+  - note: Saving attachments from IMAP accounts where usernames contained special characters failed
+    tag: fixed
+    bugs: [1741820]
+    group: 5
+  - note: When printing multiple messages, the attachment lists did not print for messages that were not currently displayed
+    tag: fixed
+    bugs: [1741282]
+    group: 5
+  - note: S/MIME signatures were shown as invalid by Outlook
+    tag: fixed
+    bugs: [1731529]
+    group: 5
+  - note: Calendar print dialog did not have a cancel button
+    tag: fixed
+    bugs: [1742158]
+    group: 5
+  - note: Lengthy event names for multiday events did not wrap
+    tag: fixed
+    bugs: [1736386]
+    group: 5
