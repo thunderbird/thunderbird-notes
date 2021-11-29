@@ -1,0 +1,58 @@
+release:
+  release_date: '2021-12-07'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: IMAP startup performance improved for accounts with a multitude of folders
+  tag: fixed
+  bugs: [163964]
+- note: Thunderbird failed to send messages when configured to use an IPv6 SMTP server by IP address (instead of a hostname)
+  tag: fixed
+  bugs: [1728773]
+- note: Printing multiple messages at once was not possible
+  tag: fixed
+  bugs: [1737730, 1741282]
+- note: Non-utf8 news groups were not supported
+  tag: fixed
+  bugs: [1734361]
+- note: Thunderbird stalled after sending a message with NNTP and SMTP recipients
+  tag: fixed
+  bugs: [1738890]
+- note: Clicking a "mailto:" started the composer with the default sending identity instead of a configured alternate
+  tag: fixed
+  bugs: [1737637]
+- note: Drag and dropped text into a plain text message in the compose window was handled inconsistently
+  tag: fixed
+  bugs: [1740711]
+- note: FileLink messages did not display correctly when viewed in Outlook
+  tag: fixed
+  bugs: [1736208, 1740664]
+- note: In account setup, after selecting an extension provided protocol, it was not possible to create an IMAP/POP account
+  tag: fixed
+  bugs: [1729965]
+- note: Multiday selections were not cleared when changing week viewed
+  tag: fixed
+  bugs: [1737569]
+- note: When creating a new event by clicking and dragging the mouse to create a box, the view did not auto-scroll after reaching the bottom
+  tag: fixed
+  bugs: [1683326, 1683328]
+- note: Calendar Invitation Panel did not scroll when multiple invitations were pending
+  tag: fixed
+  bugs: [1730065]
+- note: Calendar print dialog did not have a cancel button
+  tag: fixed
+  bugs: [1742158]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.4)
+  tag: fixed
