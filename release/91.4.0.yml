@@ -29,6 +29,9 @@ notes:
 - note: Thunderbird stalled after sending a message with NNTP and SMTP recipients
   tag: fixed
   bugs: [1738890]
+- note: Using Thunderbird with multiple language packs caused high RAM and CPU use and sluggish performance
+  tag: fixed
+  bugs: [1728744]
 - note: Clicking a "mailto:" started the composer with the default sending identity instead of a configured alternate
   tag: fixed
   bugs: [1737637]
