@@ -20,6 +20,9 @@ notes:
 - note: Thunderbird failed to send messages when configured to use an IPv6 SMTP server by IP address (instead of a hostname)
   tag: fixed
   bugs: [1728773]
+- note: Forwarding messages with attachments sometimes failed
+  tag: fixed
+  bugs: [1741805]
 - note: Printing multiple messages at once was not possible
   tag: fixed
   bugs: [1737730, 1741282]
