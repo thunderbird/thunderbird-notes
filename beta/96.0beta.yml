@@ -1,0 +1,107 @@
+release:
+  release_date: 2021-12-07
+  text: |
+    **These notes apply to Thunderbird version 96 beta 1 released December 7, 2021.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/95.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '87.0beta'
+
+notes:
+  - note: Thunderbird will now display a message when an upgrade migration task is taking a long time to complete
+    tag: new
+    bugs: [1730659]
+  - note: Thunderbird may now be built with OpenPGP support and a system librnp
+    tag: new
+    bugs: [1732809]
+  - note: Added menu option to permanently decrypt OpenPGP encrypted messages to a folder
+    tag: new
+    bugs: [1693332]
+  - note: Contact photos now supported
+    tag: new
+    bugs: [1736958]
+  - note: Invites to Multi-User chats now supported
+    tag: new
+    bugs: [1733568]
+
+  - note: Thunderbird will now delay refreshing cached calendars at start-up
+    tag: changed
+    bugs: [1739270]
+  - note: '"about:" dialog will now show information from distribution.ini to identify repackaged builds such as Flatpaks'
+    tag: changed
+    bugs: [1470730]
+
+  - note: Messages with autocrypt headers loaded slowly, causing Thunderbird to hang
+    tag: fixed
+    bugs: [1742578]
+  - note: Empty "To:" header was displayed on newsgroup messages
+    tag: fixed
+    bugs: [1739090]
+  - note: Errors in the Activity Manager caused individual processes to appear stuck
+    tag: fixed
+    bugs: [1736526]
+  - note: Server hostnames were cut-off in the account manager
+    tag: fixed
+    bugs: [1742206]
+  - note: When searching for available provider email addresses in the Account Provisioner, lengthy emails were cut off
+    tag: fixed
+    bugs: [1741508]
+  - note: Account Setup did not support non-ASCII characters
+    tag: fixed
+    bugs: [1735983]
+  - note: Account Setup did not always retain set values
+    tag: fixed
+    bugs: [1731729]
+  - note: Virtual folders did not retain folder selection when a folder name contained non-ASCII characters
+    tag: fixed
+    bugs: [1739789]
+  - note: Messages saved as "html" or "eml" did not include message headers
+    tag: fixed
+    bugs: [1738031]
+  - note: Temporary files created for forwarded attachments sometimes had the wrong extension
+    tag: fixed
+    bugs: [1729632]
+  - note: '"Private web page" field was not included when exporting a contact to a vCard'
+    tag: fixed
+    bugs: [1736124]
+  - note: Addons were still active after restarting Thunderbird in troubleshooting mode with "disable all addons" checked
+    tag: fixed
+    bugs: [1737486]
+  - note: FileLink attachments did not always display the FileLink provider's icon
+    tag: fixed
+    bugs: [1667652]
+  - note: FileLink privacy notifications persisted in the compose window after removing all FileLink attachments
+    tag: fixed
+    bugs: [1743203]
+  - note: '"Loading" icon remained after a FileLink upload failed'
+    tag: fixed
+    bugs: [1715405]
+  - note: Chat conversations' context menu did not recognize links
+    tag: fixed
+    bugs: [1740073]
+  - note: '"Verify Identity" was incorrectly shown in a direct conversations context menu when no buddy was present'
+    tag: fixed
+    bugs: [1740222]
+  - note: Relative dates were not always shown correctly in the Today Pane when using ICAL.js backend
+    tag: fixed
+    bugs: [1741296]
+  - note: Event edit toolbar button was not disabled when an invitation was selected
+    tag: fixed
+    bugs: [1737612]
+  - note: Creating a new event from Calendar multiday view set the start time to a default rather than the selected time
+    tag: fixed
+    bugs: [1741191]
+  - note: List of calendars did not scroll when its length exceeded available space
+    tag: fixed
+    bugs: [1743348]
+  - note: Event view headers and content were not lined up consistently for RTL locales
+    tag: fixed
+    bugs: [1712942]
+  - note: Various theme and UX improvements
+    tag: fixed
+    bugs: [1739693, 1740525, 1740958, 1742567, 1743440, 1743199, 1743411, 1744405]
+
