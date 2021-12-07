@@ -24,9 +24,6 @@ notes:
   - note: Contact photos now supported
     tag: new
     bugs: [1736958]
-  - note: Invites to Multi-User chats now supported
-    tag: new
-    bugs: [1733568]
 
   - note: Thunderbird will now delay refreshing cached calendars at start-up
     tag: changed
@@ -34,6 +31,9 @@ notes:
   - note: '"about:" dialog will now show information from distribution.ini to identify repackaged builds such as Flatpaks'
     tag: changed
     bugs: [1470730]
+  - note: New Javascript NNTP implementation enabled by default; Set `mailnews.nntp.jsmodule` to `false` to disable
+    tag: changed
+    bugs: [1707550]
 
   - note: Messages with autocrypt headers loaded slowly, causing Thunderbird to hang
     tag: fixed
