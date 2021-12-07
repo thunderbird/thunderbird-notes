@@ -35,7 +35,7 @@ notes:
     tag: changed
     bugs: [1707550]
 
-  - note: Messages with autocrypt headers loaded slowly, causing Thunderbird to hang
+  - note: Some messages with autocrypt headers loaded slowly, causing Thunderbird to hang
     tag: fixed
     bugs: [1742578]
   - note: Empty "To:" header was displayed on newsgroup messages
@@ -105,3 +105,6 @@ notes:
     tag: fixed
     bugs: [1739693, 1740525, 1740958, 1742567, 1743440, 1743199, 1743411, 1744405]
 
+  - note: Multiple messages may appear as one; Inbox repair has no effect
+    tag: unresolved
+    bugs: [1742975]
