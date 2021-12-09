@@ -21,9 +21,12 @@ notes:
   - note: Added menu option to permanently decrypt OpenPGP encrypted messages to a folder
     tag: new
     bugs: [1693332]
-  - note: Contact photos now supported
+  - note: Adding contact photos now supported in the new Address Book
     tag: new
     bugs: [1736958]
+  - note: Upcoming events in the Today Pane show how far away they are
+    tag: new
+    bugs: [1741296]
 
   - note: Thunderbird will now delay refreshing cached calendars at start-up
     tag: changed
@@ -86,9 +89,6 @@ notes:
   - note: '"Verify Identity" was incorrectly shown in a direct conversations context menu when no buddy was present'
     tag: fixed
     bugs: [1740222]
-  - note: Relative dates were not always shown correctly in the Today Pane when using ICAL.js backend
-    tag: fixed
-    bugs: [1741296]
   - note: Event edit toolbar button was not disabled when an invitation was selected
     tag: fixed
     bugs: [1737612]
