@@ -11,6 +11,10 @@ release:
 
   import_system_requirements: '87.0beta'
 
+  groups:
+    -
+    - "Fixed in Beta 2"
+
 notes:
   - note: Thunderbird will now display a message when an upgrade migration task is taking a long time to complete
     tag: new
