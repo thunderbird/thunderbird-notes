@@ -1,9 +1,9 @@
 release:
   release_date: 2021-12-07
   text: |
-    **These notes apply to Thunderbird version 96 beta 1 released December 7, 2021.**
+    **These notes apply to Thunderbird version 96 beta 2 released December 13, 2021.**
 
-    **System Requirements:** [Details](/en-US/thunderbird/95.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/96.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
@@ -104,6 +104,21 @@ notes:
   - note: Various theme and UX improvements
     tag: fixed
     bugs: [1739693, 1740525, 1740958, 1742567, 1743440, 1743199, 1743411, 1744405]
+
+
+# beta 2
+  - note: Saving a news (NNTP) draft message failed after restart
+    tag: fixed
+    group: 2
+    bugs: [1744946]
+  - note: URL input boxes on content tabs erroneously displayed a search glass icon on macOS
+    tag: fixed
+    group: 2
+    bugs: [1742236]
+  - note: Message bars (such as content blocking) did not use high contrast theme colors
+    tag: fixed
+    group: 2
+    bugs: [1745244]
 
   - note: Multiple messages may appear as one; Inbox repair has no effect
     tag: unresolved
