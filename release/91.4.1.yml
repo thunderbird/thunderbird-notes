@@ -1,0 +1,78 @@
+release:
+  release_date: '2021-12-17'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: Attachments that should open in Thunderbird, such as ICS attachments, offered to
+    save the file instead
+  tag: fixed
+  bugs: [1737711]
+- note: Saving attachments from IMAP accounts where usernames contained special characters
+    failed
+  tag: fixed
+  bugs: [1741820]
+- note: Temporary files created for forwarded attachments sometimes had the wrong extension
+  tag: fixed
+  bugs: [1729632]
+- note: S/MIME signatures were shown as invalid by Outlook
+  tag: fixed
+  bugs: [1731529]
+- note: URL input boxes on content tabs erroneously displayed a search glass icon on macOS
+  tag: fixed
+  bugs: [1742236]
+- note: Message bars (such as content blocking) did not use high contrast theme colors
+  tag: fixed
+  bugs: [1745244]
+- note: Some messages with autocrypt headers loaded slowly, causing Thunderbird to hang
+  tag: fixed
+  bugs: [1742578]
+- note: Server hostnames were cut-off in the account manager
+  tag: fixed
+  bugs: [1742206]
+- note: Account Setup did not support non-ASCII characters
+  tag: fixed
+  bugs: [1735983]
+- note: Account Setup did not always retain set values
+  tag: fixed
+  bugs: [1731729]
+- note: Virtual folders did not retain folder selection when a folder name contained non-ASCII
+    characters
+  tag: fixed
+  bugs: [1739789]
+- note: Messages saved as "html" or "eml" did not include message headers
+  tag: fixed
+  bugs: [1738031]
+- note: '"Private web page" field was not included when exporting a contact to a vCard'
+  tag: fixed
+  bugs: [1736124]
+- note: Addons were still active after restarting Thunderbird in troubleshooting mode with
+    "disable all addons" checked
+  tag: fixed
+  bugs: [1737486]
+- note: FileLink attachments did not always display the FileLink provider's icon
+  tag: fixed
+  bugs: [1667652]
+- note: FileLink privacy notifications persisted in the compose window after removing all
+    FileLink attachments
+  tag: fixed
+  bugs: [1743203]
+- note: '"Loading" icon remained after a FileLink upload failed'
+  tag: fixed
+  bugs: [1715405]
+- note: Lengthy event names for multiday events did not wrap
+  tag: fixed
+  bugs: [1736386]
+- note: Various theme and UX improvements
+  tag: fixed
+  bugs: [1740525, 1742567, 1743199, 1743411, 1744405]
