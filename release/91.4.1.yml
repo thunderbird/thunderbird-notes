@@ -76,3 +76,6 @@ notes:
 - note: Various theme and UX improvements
   tag: fixed
   bugs: [1740525, 1742567, 1743199, 1743411, 1744405]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.4.1)
+  tag: fixed
