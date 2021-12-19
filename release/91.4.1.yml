@@ -17,7 +17,7 @@ notes:
 - note: Attachments that should open in Thunderbird, such as ICS attachments, offered to
     save the file instead
   tag: fixed
-  bugs: [1737711]
+  bugs: [1737711, 1690395]
 - note: Saving attachments from IMAP accounts where usernames contained special characters
     failed
   tag: fixed
@@ -40,7 +40,7 @@ notes:
 - note: Server hostnames were cut-off in the account manager
   tag: fixed
   bugs: [1742206]
-- note: Account Setup did not support non-ASCII characters
+- note: Account Setup did not support non-ASCII characters in passwords
   tag: fixed
   bugs: [1735983]
 - note: Account Setup did not always retain set values

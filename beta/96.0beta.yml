@@ -57,7 +57,7 @@ notes:
   - note: When searching for available provider email addresses in the Account Provisioner, lengthy emails were cut off
     tag: fixed
     bugs: [1741508]
-  - note: Account Setup did not support non-ASCII characters
+  - note: Account Setup did not support non-ASCII characters in passwords
     tag: fixed
     bugs: [1735983]
   - note: Account Setup did not always retain set values
