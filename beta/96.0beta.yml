@@ -1,7 +1,7 @@
 release:
   release_date: 2021-12-07
   text: |
-    **These notes apply to Thunderbird version 96 beta 2 released December 13, 2021.**
+    **These notes apply to Thunderbird version 96 beta 3 released December 20, 2021.**
 
     **System Requirements:** [Details](/en-US/thunderbird/96.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   - note: Thunderbird will now display a message when an upgrade migration task is taking a long time to complete
@@ -123,6 +124,13 @@ notes:
     tag: fixed
     group: 2
     bugs: [1745244]
+
+
+# beta 3
+  - note: Thunderbird was unable to open a composer window in some cases when using the `-compose` commandline argument
+    tag: fixed
+    bugs: [1745814]
+    group: 3
 
   - note: Multiple messages may appear as one; Inbox repair has no effect
     tag: unresolved
