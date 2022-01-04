@@ -1,7 +1,7 @@
 release:
   release_date: 2021-12-07
   text: |
-    **These notes apply to Thunderbird version 96 beta 3 released December 20, 2021.**
+    **These notes apply to Thunderbird version 96 beta 4 released January 4, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/96.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
+    - "Fixed in Beta 4"
 
 notes:
   - note: Thunderbird will now display a message when an upgrade migration task is taking a long time to complete
@@ -131,6 +132,20 @@ notes:
     tag: fixed
     bugs: [1745814]
     group: 3
+
+  # beta 4
+  - note: JS LDAP implementation did not support self-signed SSL certificates
+    tag: fixed
+    bugs: [1746087]
+    group: 4
+  - note: RSS keyword labels without a configured color were illegible
+    tag: fixed
+    bugs: [1747909]
+    group: 4
+  - note: Relative event times in Today Pane did not update
+    tag: fixed
+    bugs: [1738354]
+    group: 4
 
   - note: Multiple messages may appear as one; Inbox repair has no effect
     tag: unresolved
