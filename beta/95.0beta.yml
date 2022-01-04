@@ -124,7 +124,7 @@ notes:
     tag: fixed
     bugs: [1737544]
     group: 3
-  - note: Opening a PDF attachment from a message in a standalone or compose window did move the focus to opened attachment
+  - note: Opening a PDF attachment from a message in a standalone or compose window did not move the focus to opened attachment
     tag: fixed
     bugs: [1740213]
     group: 3

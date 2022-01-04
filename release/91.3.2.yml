@@ -42,7 +42,7 @@ notes:
 - note: Saving a PDF attachment opened in a separate tab saved the email message instead
   tag: fixed
   bugs: [ 1737544 ]
-- note: Opening a PDF attachment from a message in a standalone or compose window did move
+- note: Opening a PDF attachment from a message in a standalone or compose window did not move
     the focus to opened attachment
   tag: fixed
   bugs: [ 1740213 ]
