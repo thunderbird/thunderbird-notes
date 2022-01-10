@@ -1,0 +1,130 @@
+release:
+  release_date: 2022-01-11
+  text: |
+    **These notes apply to Thunderbird version 97 beta 1 released January 11, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/97.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  system_requirements: |
+    ## Windows
+    
+    ### Operating Systems
+    - Windows 7
+    - Windows 8
+    - Windows 10
+    - Windows 11
+    
+    ### Windows Recommended Hardware
+    - Pentium 4 or newer processor that supports SSE2
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 200 MB hard drive space
+    - additional hard drive space for mail storage
+    
+    ---
+    
+    ## Mac
+    
+    ### Operating Systems
+    
+    - macOS 10.12
+    - macOS 10.13
+    - macOS 10.14
+    - macOS 10.15
+    - macOS 11
+    - macOS 12
+    
+    ###  Recommended Hardware
+    
+    - Mac computer with an Intel x86 processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+    - additional hard drive space for mail storage
+    
+    ---
+    
+    ## GNU/Linux
+    ### Software Requirements
+    
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+    
+    - Thunderbird will not run at all without the following libraries or packages:
+        - glibc 2.17 or higher
+        - GTK+ 3.14 or higher
+        - libstdc++ 4.8.1 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+
+    - For optimal functionality, we recommend the following libraries or packages:
+        - DBus 1.0 or higher
+        - GNOME 2.16 or higher
+        - libxtst 1.2.3 or higher
+        - NetworkManager 0.7 or higher
+        - PulseAudio
+
+notes:
+  - note: Thunderbird will now offer to send large forwarded attachments via FileLink
+    tag: new
+    bugs: [1325948]
+
+  - note: FileLink will check the provider for sufficient space before uploading
+    tag: changed
+    bugs: [1649850]
+  - note: Additional fields for download limits, expiration, and password protection added to FileLink template
+    tag: changed
+    bugs: [1643729]
+  - note: Link to create a new email address in Account Setup now hidden if "Email address" contains a value
+    tag: changed
+    bugs: [1731673]
+
+  - note: Partially signed unencrypted messages displayed an incorrect "partially encrypted" notification
+    tag: fixed
+    bugs: [1731422]
+  - note: Auto-complete incorrectly changed a pasted email address to the primary address of a contact
+    tag: fixed
+    bugs: [1524076]
+  - note: Triggering recipient pill creation in the compose window incorrectly used the entire field as input
+    tag: fixed
+    bugs: [1698484]
+  - note: Compose notification bars were not easily accessible via keyboard
+    tag: fixed
+    bugs: [1729714]
+  - note: "Save message" confirmation dialog buttons were not navigable using arrow keys
+    tag: fixed
+    bugs: [1735076]
+  - note: Message size calculations incorrectly included FileLink attachments
+    tag: fixed
+    bugs: [1725550]
+  - note: After converting a FileLink attachment back to an e-mail attachment, the privacy notification persisted
+    tag: fixed
+    bugs: [1744250]
+  - note: A failed FileLink provider change removed the attachment completely
+    tag: fixed
+    bugs: [1744740]
+  - note: After saving a draft and subsequently sending a FileLink email, the original file was removed from disk
+    tag: fixed
+    bugs: [1746860]
+  - note: Chat OTR encryption did not work
+    tag: fixed
+    bugs: [1734384, 1747243]
+  - note: Chat protocol icons in account wizard appeared distorted
+    tag: fixed
+    bugs: [1746607]
+  - note: Hour blocks in Calendar day and week views were sometimes squashed
+    tag: fixed
+    bugs: [1729499]
+  - note: Adding a Google calendar with a non-gmail or googlemail e-mail address failed
+    tag: fixed
+    bugs: [1737414]
+  - note: Calendar autoscroll in multi-day views was not bidirectional
+    tag: fixed
+    bugs: [1739364]
+  - note: Detection of attached vCalendar files improved
+    tag: fixed
+    bugs: 1744985
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1743509, 1744076, 1745235, 1745554, 1748049]
