@@ -92,7 +92,7 @@ notes:
   - note: Compose notification bars were not easily accessible via keyboard
     tag: fixed
     bugs: [1729714]
-  - note: "Save message" confirmation dialog buttons were not navigable using arrow keys
+  - note: '"Save message" confirmation dialog buttons were not navigable using arrow keys'
     tag: fixed
     bugs: [1735076]
   - note: Message size calculations incorrectly included FileLink attachments
@@ -124,7 +124,7 @@ notes:
     bugs: [1739364]
   - note: Detection of attached vCalendar files improved
     tag: fixed
-    bugs: 1744985
+    bugs: [1744985]
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1743509, 1744076, 1745235, 1745554, 1748049]
