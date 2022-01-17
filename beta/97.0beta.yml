@@ -1,7 +1,7 @@
 release:
   release_date: 2022-01-11
   text: |
-    **These notes apply to Thunderbird version 97 beta 1 released January 11, 2022.**
+    **These notes apply to Thunderbird version 97 beta 2 released January 17, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/97.0beta/system-requirements/)
 
@@ -64,6 +64,10 @@ release:
         - libxtst 1.2.3 or higher
         - NetworkManager 0.7 or higher
         - PulseAudio
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
   - note: Thunderbird will now offer to send large forwarded attachments via FileLink
@@ -128,3 +132,17 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1743509, 1744076, 1745235, 1745554, 1748049]
+
+# beta 2
+  - note: Attachments with filename extensions that were not registered in MIME types could not be opened
+    tag: fixed
+    group: 2
+    bugs: [1747360]
+  - note: Attachments filenames were not sanitized before saving to disk
+    tag: fixed
+    bugs: [1747977]
+    group: 2
+  - note: '"Open with" attachment dialog did not have a selected radio button option'
+    tag: fixed
+    bugs: [1749757]
+    group: 2
