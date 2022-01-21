@@ -1,0 +1,32 @@
+release:
+  release_date: '2022-01-24'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.9 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: JS LDAP implementation did not support self-signed SSL certificates
+  tag: fixed
+  bugs: [1746087]
+- note: After saving a draft and subsequently sending a FileLink email, the original file
+    was removed from disk
+  tag: fixed
+  bugs: [1746860]
+- note: Chat OTR encryption did not work
+  tag: fixed
+  bugs: [1734384]
+- note: OTR verification bar was not removed after completing verification
+  tag: fixed
+  bugs: [1746863]
+- note: Various theme improvements
+  tag: fixed
+  bugs: [1748440, 1749781]
