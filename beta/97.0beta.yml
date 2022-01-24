@@ -1,7 +1,7 @@
 release:
   release_date: 2022-01-11
   text: |
-    **These notes apply to Thunderbird version 97 beta 2 released January 17, 2022.**
+    **These notes apply to Thunderbird version 97 beta 3 released January 24, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/97.0beta/system-requirements/)
 
@@ -68,6 +68,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   - note: Thunderbird will now offer to send large forwarded attachments via FileLink
@@ -146,3 +147,13 @@ notes:
     tag: fixed
     bugs: [1749757]
     group: 2
+
+# beta 3
+  - note: Clicking links in new mail notifications did not open the message
+    tag: fixed
+    group: 3
+    bugs: [1749909]
+  - note: Popups from browser action buttons had a transparent background
+    tag: fixed
+    group: 3
+    bugs: [1750495]
