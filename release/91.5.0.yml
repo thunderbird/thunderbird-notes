@@ -7,7 +7,7 @@ release:
     **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
 
     - Windows: Windows 7 or later
-    - Mac: macOS 10.9 or later
+    - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: '91.0'

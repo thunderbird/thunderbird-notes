@@ -23,7 +23,7 @@ TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 91, see
 **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
 
 - Windows: Windows 7 or later
-- Mac: macOS 10.9 or later
+- Mac: macOS 10.12 or later
 - Linux: GTK+ 3.14 or higher
 """
 
