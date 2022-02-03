@@ -1,0 +1,30 @@
+release:
+  release_date: '2022-02-08'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # New
+- note: Thunderbird will now offer to send large forwarded attachments via FileLink
+  tag: new
+  bugs: [1325948]
+  # Fixed
+- note: Partially signed unencrypted messages displayed an incorrect "partially encrypted"
+    notification
+  tag: fixed
+  bugs: [1731422]
+- note: In the attachment bar, the "Import OpenPGP Key" item displayed for public keys displayed an error and did not import the key
+  tag: fixed
+  bugs: [1752718]
+- note: '"Open with" attachment dialog did not have a selected radio button option'
+  tag: fixed
+  bugs: [1749757]
