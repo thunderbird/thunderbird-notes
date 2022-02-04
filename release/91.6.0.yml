@@ -22,6 +22,9 @@ notes:
     notification
   tag: fixed
   bugs: [1731422]
+- note: Attachments filenames were not sanitized before saving to disk
+  tag: fixed
+  bugs: [1747977]
 - note: In the attachment bar, the "Import OpenPGP Key" item displayed for public keys displayed an error and did not import the key
   tag: fixed
   bugs: [1752718]
