@@ -14,7 +14,7 @@ notes:
 """
 
 REQUIREMENTS_IMPORT = {"release": "91.0",
-                       "beta": "86.0beta",
+                       "beta": "97.0beta",
                        }
 
 TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 91, see
@@ -27,6 +27,11 @@ TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 91, see
 - Linux: GTK+ 3.14 or higher
 """
 
-TMPL_BETA_TEXT = """Coming soon!"""
+TMPL_BETA_TEXT = """**These notes apply to Thunderbird version {ver_major} beta 1 released {human_date}.**
 
+**System Requirements:** [Details](/en-US/thunderbird/{ver_major}.0beta/system-requirements/)
 
+- Windows: Windows 7 or later
+- Mac: macOS 10.12 or later
+- Linux: GTK+ 3.14 or higher
+"""
