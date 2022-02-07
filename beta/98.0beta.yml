@@ -1,0 +1,75 @@
+release:
+  release_date: '2022-02-09'
+  text: |
+    **These notes apply to Thunderbird version 98 beta 1 released February  9, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/98.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+notes:
+  - note: Thunderbird will use the first occurrence of headers that should only appear once
+    tag: changed
+    bugs: [310189]
+  - note: Duplicated OpenPGP encrypted attachments were shown when `display-attachments-inline` was enabled
+    tag: changed
+    bugs: [1749340]
+  - note: Thunderbird generated views of meeting invitations are now expanded by default
+    tag: changed
+    bugs: [1742101]
+
+  - note: SMTP send progress bar could trigger high CPU usage when the server connection failed
+    tag: fixed
+    bugs: [742697]
+  - note: Improved POP server authentication detection during Account Setup
+    tag: fixed
+    bugs: [1752397]
+  - note: Emails were not downloading at startup under some conditions
+    tag: fixed
+    bugs: [1735531]
+  - note: Importing an OpenPGP key from an attachment context menu failed
+    tag: fixed
+    bugs: [1752718]
+  - note: "`Ctrl+mouse wheel` did not zoom in the message source window"
+    tag: fixed
+    bugs: [1749305]
+  - note: Importer did not work with mail directories outside of the profile directory
+    tag: fixed
+    bugs: [1750880]
+  - note: Archiving multiple folders at once failed
+    tag: fixed
+    bugs: [1752516]
+  - note: News folders did not display biff indicator
+    tag: fixed
+    bugs: [1751160]
+  - note: News posting failures were not reported when using news-only profiles
+    tag: fixed
+    bugs: [1751466]
+  - note: Newsgroups were not removed from folder pane when unsubscribed and the root folder was collapsed
+    tag: fixed
+    bugs: [1752082]
+  - note: LDAP Autoconfig could block Thunderbird startup
+    tag: fixed
+    bugs: [1752773]
+
+
+  - note: It was possible to create annual calendar events with invalid days
+    tag: fixed
+    bugs: [1156738]
+  - note: Mini-month views did not properly update at midnight
+    tag: fixed
+    bugs: [1648718]
+  - note: UX improvements when using rotated calendar views
+    tag: fixed
+    bugs: [1749949]
+  - note: Port numbers were not shown in "Confirm Security Exception" dialog for CalDAV connections
+    tag: fixed
+    bugs: [1750655]
+
+  - note: Dark theme fixes
+    tag: fixed
+    bugs: [1751732, 1751918]
