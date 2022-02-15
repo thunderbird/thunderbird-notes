@@ -1,0 +1,29 @@
+release:
+  release_date: '2022-02-15'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Changed
+- note: Thunderbird generated views of meeting invitations are now expanded by default
+  tag: changed
+  bugs: [1742101]
+  # Fixed
+- note: Emails were not downloading at startup under some conditions
+  tag: fixed
+  bugs: [1735531]
+- note: Port numbers were not shown in "Confirm Security Exception" dialog for CalDAV connections
+  tag: fixed
+  bugs: [1750655]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.6.1)
+  tag: fixed

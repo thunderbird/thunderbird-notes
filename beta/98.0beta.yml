@@ -1,7 +1,7 @@
 release:
   release_date: '2022-02-09'
   text: |
-    **These notes apply to Thunderbird version 98 beta 1 released February  9, 2022.**
+    **These notes apply to Thunderbird version 98 beta 2 released February 15, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/98.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: 97.0beta
+
+  groups:
+    -
+    - "New & Fixed in Beta 2"
 
 notes:
   - note: Thunderbird will use the first occurrence of headers that should only appear once
@@ -73,3 +77,13 @@ notes:
   - note: Dark theme fixes
     tag: fixed
     bugs: [1751732, 1751918]
+
+#beta 2
+  - note: "What's new link displayed in About: dialog"
+    tag: new
+    bugs: [1619815]
+    group: 2
+  - note: Copy/Cut/Paste actions not working in Thunderbird Preferences
+    tag: fixed
+    bugs: [1731934]
+    group: 2
