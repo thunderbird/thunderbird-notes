@@ -60,7 +60,6 @@ notes:
     tag: fixed
     bugs: [1752773]
 
-
   - note: It was possible to create annual calendar events with invalid days
     tag: fixed
     bugs: [1156738]
