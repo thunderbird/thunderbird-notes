@@ -1,7 +1,7 @@
 release:
   release_date: '2022-02-09'
   text: |
-    **These notes apply to Thunderbird version 98 beta 2 released February 15, 2022.**
+    **These notes apply to Thunderbird version 98 beta 3 released March 1, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/98.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "New & Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   - note: Thunderbird will use the first occurrence of headers that should only appear once
@@ -86,3 +87,26 @@ notes:
     tag: fixed
     bugs: [1731934]
     group: 2
+
+
+# beta 3
+  - note: Opening `mid:` URLs on macOS failed
+    tag: fixed
+    bugs: [1753887]
+    group: 3
+  - note: Address books stored in older formats were loaded as SQLite files, causing a crash
+    tag: fixed
+    bugs: [1739498]
+    group: 3
+  - note: Address book dialogs could be obscured by a contact details pane
+    tag: fixed
+    bugs: [1756854]
+    group: 3
+  - note: Replicated LDAP directories were lost after switching Thunderbird to "Offline"`mode
+    tag: fixed
+    bugs: [1754186]
+    group: 3
+  - note: Importing webcals from the commandline failed if the URI ended with an `.ics` file extension
+    tag: fixed
+    bugs: [1754682]
+    group: 3
