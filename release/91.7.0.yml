@@ -1,0 +1,33 @@
+release:
+  release_date: '2022-03-08'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Changed
+- note: Thunderbird will use the first occurrence of headers that should only appear once
+  tag: changed
+  bugs: [310189]
+
+  # Fixed
+- note: Auto-complete incorrectly changed a pasted email address to the primary address of a contact
+  tag: fixed
+  bugs: [1524076]
+- note: Attachments with filename extensions that were not registered in MIME types could not be opened
+  tag: fixed
+  bugs: [1747360]
+- note: Copy/Cut/Paste actions not working in Thunderbird Preferences
+  tag: fixed
+  bugs: [1731934]
+- note: Improved screen reader support of displayed message headers
+  tag: fixed
+  bugs: [1589861]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.7)
+  tag: fixed
