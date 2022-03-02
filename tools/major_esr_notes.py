@@ -6,7 +6,7 @@ import sys
 import os
 
 from pathlib import Path
-from distutils.version import StrictVersion
+from packaging.version import Version
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedSeq as CS
 
@@ -52,8 +52,8 @@ def load_notes(previous, current):
     beta_notes = {}
     new_notes = []
 
-    min_version = StrictVersion("{}.0".format(previous))
-    max_version = StrictVersion("{}.0".format(current))
+    min_version = Version("{}.0".format(previous))
+    max_version = Version("{}.0".format(current))
 
     # Get the list of bugs that were uplifted during the previous cycle.
     previous_glob = "{}.*.yml".format(previous)
@@ -75,7 +75,7 @@ def load_notes(previous, current):
     for _file in note_files:
         if not _file.endswith("beta.yml"):
             continue
-        version = StrictVersion(_file[:-8])
+        version = Version(_file[:-8])
         # Exclude the previous esr's beta and lower and anything newer than
         # the current esr
         if version <= min_version:
@@ -87,7 +87,7 @@ def load_notes(previous, current):
             doc = yaml.load(fp)
             beta_notes[_file[:-8]] = doc
 
-    versions = sorted([StrictVersion(v) for v in beta_notes.keys()])
+    versions = sorted([Version(v) for v in beta_notes.keys()])
 
     for ver_str in [str(v) for v in versions]:
         ver_notes = beta_notes[ver_str]["notes"]

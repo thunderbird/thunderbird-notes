@@ -9,7 +9,7 @@ import re
 import json
 from pathlib import Path
 from urllib.request import urlopen
-from distutils.version import StrictVersion
+from packaging.version import Version
 from datetime import date, timedelta
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedSeq as CS

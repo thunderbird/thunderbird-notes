@@ -11,7 +11,7 @@ import re
 import json
 from pathlib import Path
 from urllib.request import urlopen
-from distutils.version import StrictVersion
+from packaging.version import Version
 from collections import OrderedDict
 import yaml
 
@@ -61,8 +61,8 @@ def load_notes(previous_esr, this_beta):
     rel_notes = []
 
     esr_major = previous_esr.split('.')[0]
-    min_version = StrictVersion('{}.0.0'.format(esr_major))
-    max_version = StrictVersion('{}.0'.format(this_beta))
+    min_version = Version('{}.0.0'.format(esr_major))
+    max_version = Version('{}.0'.format(this_beta))
 
     bug_list, backout_list = get_buglist(previous_esr)
     bugs_fixed = set.union(bug_list, backout_list)
@@ -71,7 +71,7 @@ def load_notes(previous_esr, this_beta):
     for _file in note_files:
         if not _file.endswith('beta.yml'):
             continue
-        version = StrictVersion(_file[:-8])
+        version = Version(_file[:-8])
         # Exclude the previous esr's beta and lower and anything newer than
         # the current esr
         if version < min_version:
@@ -83,7 +83,7 @@ def load_notes(previous_esr, this_beta):
             doc = yaml.safe_load(fp)
             beta_notes[_file[:-8]] = doc
 
-    versions = sorted([StrictVersion(v) for v in beta_notes.keys()])
+    versions = sorted([Version(v) for v in beta_notes.keys()])
 
     for ver_str in [str(v) for v in versions]:
         ver_notes = beta_notes[ver_str]['notes']
