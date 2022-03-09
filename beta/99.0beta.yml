@@ -1,0 +1,81 @@
+release:
+  release_date: '2022-03-10'
+  text: |
+    **These notes apply to Thunderbird version 99 beta 1 released March 10, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/99.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+notes:
+  - note: Icons now displayed on recurring events and modified events within a recurring series
+    bugs: [1674912]
+    tag: new
+
+
+  - note: Javascript Ical parser (ical.js) enabled by default
+    bugs: [978570]
+    tag: changed
+
+
+  - note: Focus jumped in compose window when closing the contactss sidebar
+    bugs: [1754733]
+    tag: fixed
+  - note: '"Save-As" attachment dialog did not have filename pre-populated'
+    bugs: [1755592]
+    tag: fixed
+  - note: Window and tab states were not properly saved at shutdown
+    bugs: [1755838]
+    tag: fixed
+
+  - note: Default actions for "Enter" and "Esc" keys were not triggered in contact dialog
+    bugs: [1752042, 1752051]
+    tag: fixed
+  - note: Context menus of Address Book were not keyboard accessible
+    bugs: [1753286]
+    tag: fixed
+  - note: Some context menus opened on screen top-left
+    bugs: [1756315]
+    tag: fixed
+
+  - note: OpenPGP ECC keys created by Thunderbird could not be imported into GnuPG
+    bugs: [1713621]
+    tag: fixed
+  - note: Exportinng multiple public PGP keys from Thunderbird was not possible
+    bugs: [1751086]
+    tag: fixed
+  - note: Improved error reporting for external GnuPG configurations
+    bugs: [1752010]
+    tag: fixed
+  - note: Replying to a newsgroup message erroneously displayed a "No-reply" popup warning
+    bugs: [1752741]
+    tag: fixed
+
+  - note: Various issues with Filelink attachments
+    bugs: [828848, 1670791]
+    tag: fixed
+
+  - note: Thunderbird automatically joined any IRC channel it was invited to
+    bugs: [956694]
+    tag: fixed
+
+  - note: CalDAV calendars were marked read-only on startup
+    bugs: [1738443]
+    tag: fixed
+  - note: Some labels in Calendar were displayed in multiple languages
+    bugs: [1752130]
+    tag: fixed
+  - note: Possible to create annual recurring events with invalid dates
+    bugs: [1754121]
+    tag: fixed
+
+  - note: Event invitation links improvements
+    bugs: [1745745, 1754898]
+    tag: fixed
+  - note: Category and calendar colors were missing in event dialog
+    bugs: [1757428]
+    tag: fixed
