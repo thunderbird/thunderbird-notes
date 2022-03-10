@@ -20,6 +20,8 @@ notes:
   - note: Javascript Ical parser (ical.js) enabled by default
     bugs: [978570]
     tag: changed
+  - note: Javascript POP implementation enabled by default
+    tag: changed
 
 
   - note: Focus jumped in compose window when closing the contactss sidebar
