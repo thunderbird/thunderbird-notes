@@ -22,6 +22,9 @@ notes:
     tag: changed
   - note: Javascript POP implementation enabled by default
     tag: changed
+  - note: Invitations to IRC and XMPP chat rooms will now prompt the user if they would like to join
+    bugs: [956694]
+    tag: changed
 
 
   - note: Focus jumped in compose window when closing the contactss sidebar
@@ -59,10 +62,6 @@ notes:
 
   - note: Various issues with Filelink attachments
     bugs: [828848, 1670791]
-    tag: fixed
-
-  - note: Thunderbird automatically joined any IRC channel it was invited to
-    bugs: [956694]
     tag: fixed
 
   - note: CalDAV calendars were marked read-only on startup
