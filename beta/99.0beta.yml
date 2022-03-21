@@ -31,7 +31,7 @@ notes:
     tag: changed
 
 
-  - note: Focus jumped in compose window when closing the contactss sidebar
+  - note: Focus jumped in compose window when closing the contacts sidebar
     bugs: [1754733]
     tag: fixed
   - note: '"Save-As" attachment dialog did not have filename pre-populated'
