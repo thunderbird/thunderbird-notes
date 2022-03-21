@@ -1,7 +1,7 @@
 release:
   release_date: '2022-03-10'
   text: |
-    **These notes apply to Thunderbird version 99 beta 1 released March 10, 2022.**
+    **These notes apply to Thunderbird version 99 beta 2 released March 21, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/99.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: 97.0beta
+
+  groups:
+    -
+    - "Changed & Fixed in Beta 2"
 
 notes:
   - note: Icons now displayed on recurring events and modified events within a recurring series
@@ -80,3 +84,35 @@ notes:
   - note: Category and calendar colors were missing in event dialog
     bugs: [1757428]
     tag: fixed
+
+# beta 2
+  - note: Google accounts using password authentication will be migrated to OAuth2. See
+      [Google support](https://support.google.com/accounts/answer/6010255?hl=en).
+    tag: changed
+    bugs: [1757713]
+    group: 2
+
+  - note: POP USERPASS authentication did not work for some configuration scenarios
+    bugs: [1759271]
+    tag: fixed
+    group: 2
+  - note: POP activity was not reflected in the status bar
+    bugs: [1759372]
+    tag: fixed
+    group: 2
+  - note: CLIENTID extension to SMTP was not supported by smtp-js
+    bugs: [1759197]
+    tag: fixed
+    group: 2
+  - note: News messages could not be read after restoring connectivity to a failed NNTP server
+    bugs: [1757904]
+    tag: fixed
+    group: 2
+  - note: Email notification were not read by screen readers
+    bugs: [1735048]
+    tag: fixed
+    group: 2
+  - note: Updates to event invitations could not be accepted
+    bugs: [1759055]
+    tag: fixed
+    group: 2
