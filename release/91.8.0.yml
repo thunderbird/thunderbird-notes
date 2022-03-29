@@ -1,0 +1,41 @@
+release:
+  release_date: '2022-04-05'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: OpenPGP ECC keys created by Thunderbird could not be imported into GnuPG
+  tag: fixed
+  bugs: [1713621]
+- note: Exporting multiple public PGP keys from Thunderbird was not possible
+  tag: fixed
+  bugs: [1751086]
+- note: Replying to a newsgroup message erroneously displayed a "No-reply" popup warning
+  tag: fixed
+  bugs: [1752741]
+- note: Opening `mid:` URLs on macOS failed
+  tag: fixed
+  bugs: [1753887]
+- note: Address books stored in older formats were loaded as SQLite files, causing a crash
+  tag: fixed
+  bugs: [1739498]
+- note: Replicated LDAP directories were lost after switching Thunderbird to "Offline"`mode
+  tag: fixed
+  bugs: [1754186]
+- note: Importing webcals from the commandline failed if the URI ended with an `.ics` file
+    extension
+  tag: fixed
+  bugs: [1754682]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.8)
+  tag: fixed
