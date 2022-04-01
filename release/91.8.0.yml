@@ -13,6 +13,13 @@ release:
   import_system_requirements: '91.0'
 
 notes:
+  # Changed
+- note: Google accounts using password authentication will be migrated to OAuth2. See
+    [Google support](https://support.google.com/accounts/answer/6010255?hl=en).
+  tag: changed
+  bugs: [1757713]
+
+
   # Fixed
 - note: OpenPGP ECC keys created by Thunderbird could not be imported into GnuPG
   tag: fixed
