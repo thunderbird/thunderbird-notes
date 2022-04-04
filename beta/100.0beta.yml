@@ -1,0 +1,100 @@
+release:
+  release_date: '2022-04-06'
+  text: |
+    **These notes apply to Thunderbird version 100 beta 1 released April  6, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/100.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+notes:
+  # new
+  - note: es-MX localized build now available
+    tag: new
+    bugs: [1759929]
+  - note: '"Select all addresses" now supported from composer pill context menu'
+    tag: new
+    bugs: [1760692]
+  - note: Matrix chat support enabled by default. This is a **beta** feature.
+    tag: new
+    bugs: [1712721]
+  - note: Importing sqlite addressbooks now supported
+    tag: new
+    bugs: [1673483]
+  - note: Importing addressbooks via CSV file now supports semi-colon (;) delimited files
+    tag: new
+    bugs: [159967]
+  - note: Exporting current profile now supported on importing tab
+    tag: new
+    bugs: [1757695]
+  - note: 'OpenPGP: Public keys from email attachments and autocrypt headers now saved for future use'
+    tag: new
+    bugs: [1667564]
+  - note: Expired OpenPGP recipient keys now indicated in compose window
+    tag: new
+    bugs: [1751883]
+
+  # changed
+  - note: Account settings moved to macOS application menu
+    tag: changed
+    bugs: [308555]
+  - note: '"PreferMailFormat" property removed from addressbook'
+    tag: changed
+    bugs: [1758460]
+
+  # fixed
+  - note: Additional SMTP errors now propogated to user
+    tag: fixed
+    bugs: [1758651]
+  - note: Thunderbird was unable to download new POP messages in some cases
+    tag: fixed
+    bugs: [1761589]
+  - note: Quoted lines in plain text replies were errorenously wrapped
+    tag: fixed
+    bugs: [1759370]
+  - note: Save dialog was incorrectly shown when closing empty composer windows
+    tag: fixed
+    bugs: [1740102]
+  - note: Various compose window UX fixes
+    tag: fixed
+    bugs: [1730226, 1741361, 1744033, 1761909, 1720348]
+  - note: Incorrect OpenPGP preferences were used for secondary identities
+    tag: fixed
+    bugs: [1756665]
+  - note: Adding an expiry date to an OpenPGP key that did not have one was not possible
+    tag: fixed
+    bugs: [1759293]
+  - note: UI showed old OpenPGP key expiry date after changing it
+    tag: fixed
+    bugs: [1708914]
+  - note: Various OpenPGP key lookup fixes
+    tag: fixed
+    bugs: [1751885]
+  - note: Creating news accounts by clicking a news URL did not work
+    tag: fixed
+    bugs: [1760393]
+  - note: Search box did not have focus after opening addressbook tab
+    tag: fixed
+    bugs: [1751299]
+  - note: Non-UTF8 CSV files could not be imported to addressbook
+    tag: fixed
+    bugs: [1760728]
+  - note: Modified CalDAV items could hang if the server indicated that no items changed
+    tag: fixed
+    bugs: [1757850]
+  - note: Reminders for events created by another user could not be closed
+    tag: fixed
+    bugs: [1727123]
+  - note: Start/End time widgets were not disabled for All-day events in event edit dialog
+    tag: fixed
+    bugs: [1744442]
+  - note: Incorrect access key used for `File->New->Message` menu item
+    tag: fixed
+    bugs: [1751556]
+  - note: Various theme improvements
+    tag: fixed
+    bugs: [1761617, 1762081]
