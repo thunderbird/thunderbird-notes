@@ -15,7 +15,7 @@ release:
 notes:
   # Changed
 - note: Google accounts using password authentication will be migrated to OAuth2. See
-    [KB Article](https://support.mozilla.org/en-US/kb/automatic-conversion-google-mail-accounts-oauth20-).
+    [KB Article](https://support.mozilla.org/en-US/kb/automatic-conversion-google-mail-accounts-oauth20).
   tag: changed
   bugs: [1757713]
 
