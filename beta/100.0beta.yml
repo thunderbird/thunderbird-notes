@@ -1,7 +1,7 @@
 release:
   release_date: '2022-04-06'
   text: |
-    **These notes apply to Thunderbird version 100 beta 1 released April  6, 2022.**
+    **These notes apply to Thunderbird version 100 beta 2 released April 12, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/100.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: 97.0beta
+
+  groups:
+    -
+    - "Fixed in Beta 2"
 
 notes:
   # new
@@ -98,3 +102,27 @@ notes:
   - note: Various theme improvements
     tag: fixed
     bugs: [1761617, 1762081]
+
+
+# beta 2
+  - note: Some icons in mail toolbar were not visible
+    tag: fixed
+    group: 2
+    bugs: [1763228]
+  - note: Importing large OpenPGP key files failed
+    tag: fixed
+    group: 2
+    bugs: [1763258]
+  - note: Various issues opening `news://` URLs fixed
+    tag: fixed
+    group: 2
+    bugs: [1762114]
+  - note: Some Matrix conversations did not show correct encrypted state
+    tag: fixed
+    group: 2
+    bugs: [1763587]
+  - note: Edit event dialog was not sized properly on macOS and Windows
+    tag: fixed
+    group: 2
+    bugs: [1762423]
+
