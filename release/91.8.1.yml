@@ -1,0 +1,31 @@
+release:
+  release_date: '2022-04-14'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: CLIENTID extension to SMTP was not supported by smtp-js
+  tag: fixed
+  bugs: [1759197]
+- note: OpenPGP was not able to use some previously supported key types
+  tag: fixed
+  bugs: [1764242]
+- note: OpenPGP Key Manager did not always display correct information after importing additional IDs
+  tag: fixed
+  bugs: [1718627]
+- note: Duplicate new mail notifications could be displayed when server-side filters were in use
+  tag: fixed
+  bugs: [1757522]
+- note: Cancelling an SMTP password entry resulted in multiple failure dialogs being displayed
+  tag: fixed
+  bugs: [1761061]
