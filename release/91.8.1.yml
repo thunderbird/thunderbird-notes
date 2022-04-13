@@ -17,6 +17,9 @@ notes:
 - note: CLIENTID extension to SMTP was not supported by smtp-js
   tag: fixed
   bugs: [1759197]
+- note: Additional SMTP errors now propogated to user
+  tag: fixed
+  bugs: [1758651]
 - note: OpenPGP was not able to use some previously supported key types
   tag: fixed
   bugs: [1764242]
