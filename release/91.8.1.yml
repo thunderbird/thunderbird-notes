@@ -1,5 +1,5 @@
 release:
-  release_date: '2022-04-14'
+  release_date: '2022-04-18'
   text: |
     **For more on all the new features in Thunderbird 91, see
     [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
@@ -17,7 +17,7 @@ notes:
 - note: CLIENTID extension to SMTP was not supported by smtp-js
   tag: fixed
   bugs: [1759197]
-- note: Additional SMTP errors now propogated to user
+- note: Additional SMTP errors now propagated to user
   tag: fixed
   bugs: [1758651]
 - note: OpenPGP was not able to use some previously supported key types
