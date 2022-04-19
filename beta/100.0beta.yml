@@ -1,7 +1,7 @@
 release:
   release_date: '2022-04-06'
   text: |
-    **These notes apply to Thunderbird version 100 beta 2 released April 12, 2022.**
+    **These notes apply to Thunderbird version 100 beta 3 released April 19, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/100.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "Fixed in Beta 3"
 
 notes:
   # new
@@ -126,3 +127,28 @@ notes:
     group: 2
     bugs: [1762423]
 
+# beta 3
+  - note: Thunderbird failed to retrieve complete message when using POP and set to download partial messages
+    tag: fixed
+    bugs: [1763974]
+    group: 3
+  - note: OpenPGP Key Manager did not always display correct information after importing additional IDs
+    tag: fixed
+    bugs: [1718627]
+    group: 3
+  - note: Decrypt OpenPGP keys via GPGME failed
+    tag: fixed
+    bugs: [1763907]
+    group: 3
+  - note: OpenPGP was not able to use some previously supported key types
+    tag: fixed
+    bugs: [1764242]
+    group: 3
+  - note: macOS disk image graphics updated
+    tag: fixed
+    bugs: [1763661]
+    group: 3
+  - note: Task creation field on macOS incorrectly displayed a search icon
+    tag: fixed
+    bugs: [1764369]
+    group: 3
