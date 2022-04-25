@@ -1,7 +1,7 @@
 release:
   release_date: '2022-04-06'
   text: |
-    **These notes apply to Thunderbird version 100 beta 3 released April 19, 2022.**
+    **These notes apply to Thunderbird version 100 beta 4 released April 26, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/100.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in Beta 2"
     - "Fixed in Beta 3"
+    - "Fixed in Beta 4"
 
 notes:
   # new
@@ -152,3 +153,25 @@ notes:
     tag: fixed
     bugs: [1764369]
     group: 3
+
+# beta 4
+  - note: macOS keyboard shortcuts to hide Thunderbird window did not work
+    tag: fixed
+    bugs: [1755922]
+    group: 4
+  - note: Opening Account Settings from Tools menu on macOS with no windows open failed
+    tag: fixed
+    bugs: [1758360]
+    group: 4
+  - note: Tooltips on chat user avatars may not be displayed correctly
+    tag: fixed
+    bugs: [1764138]
+    group: 4
+  - note: Chat system messages were not grouped correctly when displayed
+    tag: fixed
+    bugs: [1764329]
+    group: 4
+  - note: Chat username splitting in the account wizard did not work after changing protocols
+    tag: fixed
+    bugs: [1764403]
+    group: 4
