@@ -155,11 +155,11 @@ notes:
     group: 3
 
 # beta 4
-  - note: macOS keyboard shortcuts to hide Thunderbird window did not work
+  - note: macOS keyboard shortcuts for Application menu items did not work
     tag: fixed
     bugs: [1755922]
     group: 4
-  - note: Opening Account Settings from Tools menu on macOS with no windows open failed
+  - note: Opening Account Settings from Tools menu on macOS failed
     tag: fixed
     bugs: [1758360]
     group: 4
