@@ -1,0 +1,28 @@
+release:
+  release_date: '2022-05-03'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: macOS disk image graphics updated
+  tag: fixed
+  bugs: [1763661]
+- note: CalDAV calendars were marked read-only on startup
+  tag: fixed
+  bugs: [1738443]
+- note: Task creation field on macOS incorrectly displayed a search icon
+  tag: fixed
+  bugs: [1764369]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.9)
+  tag: fixed
