@@ -125,7 +125,7 @@ Using betas: {min_version} -> {max_version}
     new_yaml["notes"] = notes_sequence
 
     out_yaml = ver_notes_yaml.format(this_esr=this_esr)
-    with open(out_yaml, "w") as fp:
+    with open(release_dir / out_yaml, "w") as fp:
         yaml.dump(new_yaml, fp)
         
     print("Wrote notes to {}.".format(out_yaml))
