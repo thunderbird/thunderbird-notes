@@ -13,6 +13,11 @@ release:
   import_system_requirements: '91.0'
 
 notes:
+  # changed
+- note: A warning is now displayed if an OpenPGP key has unsafe attributes that are ignored;
+    See [support article](https://support.mozilla.org/kb/openpgp-unsafe-key-properties-ignored).
+  tag: changed
+  bugs: [1765982]
   # Fixed
 - note: macOS disk image graphics updated
   tag: fixed
