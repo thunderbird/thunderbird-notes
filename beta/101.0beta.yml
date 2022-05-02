@@ -1,0 +1,107 @@
+release:
+  release_date: '2022-05-04'
+  text: |
+    **These notes apply to Thunderbird version 101 beta 1 released May  4, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+notes:
+  - note: Google Talk chat accounts now support logging in with OAuth2
+    tag: new
+    bugs: [1238631]
+  - note: Matrix reactions (emoji) now supported
+    tag: new
+    bugs: [1712711]
+
+  - note: New profiles will default to using "Threaded" message view
+    tag: changed
+    bugs: [1764842]
+  - note: OpenPGP Key Manager will now display key creation date
+    tag: changed
+    bugs: [1757095]
+  - note: Replaced Security compose toolbar button with Encryption toggle and Encryption options buttons
+    tag: changed
+    bugs: [1764324]
+  - note: A warning is now displayed if an OpenPGP key has unsafe attributes that are ignored;
+      See [support article](https://support.mozilla.org/kb/openpgp-unsafe-key-properties-ignored).
+    tag: changed
+    bugs: [1765982]
+  - note: Per-recipient and per-domain email format preferences removed; Sending options moved to Compose Settings
+    tag: changed
+    bugs: [1727493, 1228846]
+
+  - note: Messages did not reload in all open windows after Junk status was changed
+    tag: fixed
+    bugs: [1176694]
+  - note: Messages with Message-Id headers longer than 332 characters could not be forwarded
+    tag: fixed
+    bugs: [1763629]
+  - note: OpenPGP integration in Thunderbird 91.8.0 and 91.8.1 did not allow SHA-1 key signatures
+    tag: fixed
+    bugs: [1763641]
+  - note: OpenPGP "Repair Message" button did not work with some emails
+    tag: fixed
+    bugs: [1762832, 1689086]
+  - note: Encryption status in compose window did not refresh after OpenPGP key change events
+    tag: fixed
+    bugs: [1765974]
+  - note: OpenPGP Key Properties dialog incorrectly displayed a subkey ID sometimes
+    tag: fixed
+    bugs: [1766899]
+  - note: News messages were not displayed if previously accessed by URI without subscribing to the group
+    tag: fixed
+    bugs: [1758097]
+  - note: Changing news server hostname caused in infinite subscription prompts
+    tag: fixed
+    bugs: [1765752]
+  - note: Authenticating to some news servers failed
+    tag: fixed
+    bugs: [1766176]
+  - note: Detached attachments were opened from a temporary copy instead of the selected save location
+    tag: fixed
+    bugs: [1761973]
+  - note: Opening "cid:" links failed
+    tag: fixed
+    bugs: [1734161]
+  - note: Changing focus in the compose window with multiple recipient pills selected did not always deselect the pills
+    tag: fixed
+    bugs: [1762895]
+  - note: Standalone message windows were not draggable by the title bar on macOS
+    tag: fixed
+    bugs: [1766946]
+  - note: LDAP extensible filters of form `type:rule:=value` did not work
+    tag: fixed
+    bugs: [1763288]
+  - note: Subscribing to CardDAV address books from Account Setup tab did not subscribe to all selected address books
+    tag: fixed
+    bugs: [1763763]
+  - note: Adding CardDAV address books failed if a mail extension-provided address book was present
+    tag: fixed
+    bugs: [1763599]
+  - note: OTR encrypted chat did not work on FreeBSD
+    tag: fixed
+    bugs: [1764118]
+  - note: URI-encoded Matrix mentions were not handled
+    tag: fixed
+    bugs: [1764727]
+  - note: Removing obsolete proprietary chat accounts did not work
+    tag: fixed
+    bugs: [1752751]
+  - note: Calendar event updates could not be accepted
+    tag: fixed
+    bugs: [1756547]
+  - note: Calendar event dialog was not properly sized, cutting off its contents
+    tag: fixed
+    bugs: [1763443]
+  - note: HTML for unmodified recurring events was not displayed in the event dialog
+    tag: fixed
+    bugs: [1760858]
+  - note: Various UX and theme improvements
+    tag: fixed
+    bugs: [1756668, 1764105, 1689010, 1764851, 1764824, 1721264, 1765213, 1766404, 1766635, 1766935]
