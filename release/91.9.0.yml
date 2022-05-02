@@ -19,6 +19,9 @@ notes:
   tag: changed
   bugs: [1765982]
   # Fixed
+- note: OpenPGP integration in Thunderbird 91.8.0 and 91.8.1 did not allow SHA-1 key signatures
+  tag: fixed
+  bugs: [1763641]
 - note: macOS disk image graphics updated
   tag: fixed
   bugs: [1763661]
