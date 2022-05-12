@@ -56,6 +56,7 @@ release:
 notes:
   - note: Problems with Gmail (folders not showing, repeated email download, etc.) introduced in version 52.2.0.
     tag: fixed
+    bugs: [1234567]
     group: 2
 
   - note: >
@@ -74,6 +75,7 @@ notes:
     * changed
     * fixed
     * unresolved: This will appear in a separate "Known Issues" list.
+* `bugs`: This is a list of bug numbers associated with the note. They appear on Beta release notes and when using the preview script.
 * `group`: This is optional. If added, it will associate the note with the subheading in the "groups" list in the Release dictionary. Notes with no group set always go in the first unlabeled section of Known Issues. Groups are currently ignored in the Unresolved Issues.
 
 Each string variable in the YAML file can be defined with quotes, without quotes, or using the two text block operators `>` and `|`.
@@ -86,3 +88,7 @@ Each string variable in the YAML file can be defined with quotes, without quotes
 
 Like our other sites, the `master` branch pushes to staging at https://stage.thunderbird.net and the `prod` branch pushes live.
 Changes or additions to these .yml files will automatically trigger a rebuild of the staging and production sites respectively.
+
+# Other Tools
+
+See [Tools Readme](tools/README.md).
