@@ -1,7 +1,7 @@
 release:
   release_date: '2022-05-04'
   text: |
-    **These notes apply to Thunderbird version 101 beta 2 released May 12, 2022.**
+    **These notes apply to Thunderbird version 101 beta 3 released May 17, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in Beta 2"
+    - "New, Changed, and Fixed in Beta 3"
 
 notes:
   - note: Google Talk chat accounts now support logging in with OAuth2
@@ -119,3 +120,39 @@ notes:
     tag: fixed
     bugs: [1766524]
     group: 2
+
+# beta 3
+  - note: OpenPGP Key Assistant enabled by default
+    tag: new
+    bugs: [1767592]
+    group: 3
+  - note: OpenPGP Key Manager now supports refreshing keys from key server
+    tag: new
+    bugs: [1698391]
+    group: 3
+  - note: Compose toolbar button for OpenPGP & S/MIME signing available via "Customize Toolbar"
+    tag: new
+    bugs: [1768609]
+    group: 3
+
+  - note: OpenPGP dialog for key "acceptance per email" now displayed in more circumstances
+    tag: changed
+    bugs: [1766906]
+    group: 3
+
+  - note: Importing OpenPGP public keys without a blank line following the header failed
+    tag: fixed
+    bugs: [1768424]
+    group: 3
+  - note: OpenPGP CollectedKeysDB could have duplicates; Revocations were not stored in CollectedKeysDB
+    tag: fixed
+    bugs: [1767942,1767945]
+    group: 3
+  - note: OpenPGP keys rejected for an email may be handled incorrectly
+    tag: fixed
+    bugs: [1767801]
+    group: 3
+  - note: S/MIME encrypted emails incorrectly showed email Subject as encrypted
+    tag: fixed
+    bugs: [1768615]
+    group: 3
