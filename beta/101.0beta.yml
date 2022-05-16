@@ -47,7 +47,7 @@ notes:
   - note: Messages with Message-Id headers longer than 332 characters could not be forwarded
     tag: fixed
     bugs: [1763629]
-  - note: OpenPGP integration in Thunderbird 91.8.0 and 91.8.1 did not allow SHA-1 key signatures
+  - note: OpenPGP integration in Thunderbird 91.8.0 and 91.8.1 rejected key properties bound with SHA-1 signatures
     tag: fixed
     bugs: [1763641]
   - note: OpenPGP "Repair Message" button did not work with some emails
@@ -126,7 +126,7 @@ notes:
     tag: new
     bugs: [1767592]
     group: 3
-  - note: OpenPGP Key Manager now supports refreshing keys from key server
+  - note: OpenPGP Key Properties now supports refreshing keys from key server
     tag: new
     bugs: [1698391]
     group: 3
