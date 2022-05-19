@@ -1,0 +1,17 @@
+release:
+  release_date: '2022-05-20'
+  text: |
+    **For more on all the new features in Thunderbird 91, see
+    [New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.9.1)
+  tag: fixed
