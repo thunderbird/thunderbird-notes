@@ -1,7 +1,7 @@
 release:
   release_date: '2022-05-04'
   text: |
-    **These notes apply to Thunderbird version 101 beta 3 released May 17, 2022.**
+    **These notes apply to Thunderbird version 101 beta 4 released May 20, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -15,6 +15,8 @@ release:
     -
     - "Fixed in Beta 2"
     - "New, Changed, and Fixed in Beta 3"
+    - "New & Fixed in Beta 4"
+
 
 notes:
   - note: Google Talk chat accounts now support logging in with OAuth2
@@ -156,3 +158,14 @@ notes:
     tag: fixed
     bugs: [1768615]
     group: 3
+
+# beta 4
+  - note: Printing using the system dialog without preview now supported; Set `print.prefer_system_dialog` to `true`
+    tag: new
+    bugs: [1768936]
+    group: 4
+
+  - note: IMAP flag changes from another client were not seen after some inactivity
+    tag: fixed
+    bugs: [1747173]
+    group: 4
