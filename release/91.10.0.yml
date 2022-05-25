@@ -1,0 +1,19 @@
+release:
+  release_date: '2022-05-31'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: Various UX and theme improvements
+  tag: fixed
+  bugs: [1766404, 1766635]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.10)
+  tag: fixed
