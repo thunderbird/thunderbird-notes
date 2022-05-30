@@ -12,19 +12,21 @@ release:
   import_system_requirements: 97.0beta
 
 notes:
-
+# new
+  - note: Profile Import/Export UI refreshed and moved to a tab
+    tag: new
+    bugs: [1764398, 1769347]
   - note: Multiple active spelling dictionaries now supported in compose window
     tag: new
     bugs: [1761221]
-  - note: '`Download more dictionaries` item added to `Spelling` button in compose window'
+  - note: '`Add dictionaries` item added to `Spelling` button in compose window'
     tag: new
     bugs: [408209]
 
-
+# changed
   - note: SMTP client will now ignore socket errors after `QUIT` command is sen
     tag: changed
     bugs: [1606047]
-
   - note: OpenPGP Key Manager dialog layout improvements
     tag: changed
     bugs: [1767519]
@@ -52,7 +54,7 @@ notes:
   - note: Default action of `Edit` button in recurring event dialog changed to display submenu
     tag: changed
     bugs: [1769657]
-
+# fixed
   - note: Dropdowns for select and autocomplete fields in browser-based login forms were not shown
     tag: fixed
     bugs: [1770005]
@@ -74,27 +76,18 @@ notes:
   - note: IMAP server hostname changes were not reflected in `Folder Properties` dialog
     tag: fixed
     bugs: [1483485]
-
   - note: Drag and drop of attachable URLs onto compose window handling improved
     tag: fixed
     bugs: [1766073]
-
   - note: Account types provided by an addon were not available in Account Setup with a new profile
     tag: fixed
     bugs: [1771371]
-
-    
-  - note: Importing a CSV file to Address Book failed
-    tag: fixed
-    bugs: [1769347]
-
-  - note: Icons associated with Chat accounts were not shown in Chat-related notifications
+  - note: Chat Room Icons accounts were not shown in notifications
     tag: fixed
     bugs: [1770506]
   - note: Matrix messages with "notify" push rule action were not marked as highlights
     tag: fixed
     bugs: [1770507]
-
   - note: Accepting a recurrence exception to an event accepted event associated with the original recurring event rather than the exception
     tag: fixed
     bugs: [1745147]
@@ -104,8 +97,6 @@ notes:
   - note: Event modifications in a remote calendar while in offline mode were not synchronized after going back online
     tag: fixed
     bugs: [1769200]
-
-
   - note: Colors from Linux GTK theme were not used when Thunderbird System Theme was active
     tag: fixed
     bugs: [1768631]
