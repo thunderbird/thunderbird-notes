@@ -27,7 +27,7 @@ notes:
   - note: SMTP client will now ignore socket errors after `QUIT` command is sen
     tag: changed
     bugs: [1606047]
-  - note: OpenPGP Key Manager dialog layout improvements
+  - note: OpenPGP `Key Manager` dialog layout improvements
     tag: changed
     bugs: [1767519]
   - note: Writing OpenPGP keyring data will block Thunderbird shutdown to prevent data loss
@@ -35,14 +35,14 @@ notes:
     bugs: [1757963]
   - note: Improvements to new Address Book UI
     tag: changed
-    bugs: [1769490, 1770847, 1770716, 1771635, 1762126]
+    bugs: [1769490, 1770847, 1770716, 1771635, 1762126, 1770844, 1771574, 1771601, 1770383, 1770793, 1770790, ]
   - note: '"Old" Address Book user interface removed'
     tag: changed
     bugs: [1762127]
   - note: Address book contact data is now stored in the vCard format. The change isn't backwards-compatible; backups are stored in the profile directory.
     tag: changed
     bugs: [469209]
-  - note: Tab Icons updated
+  - note: Tab icons updated
     tag: changed
     bugs: [1766465]
   - note: '[macOS] `Alt+Up` and `Alt+Down` keyboard shortcuts removed from Spaces Toolbar; Use `Fn+RightArrow` and `Fn+LeftArrow`'
@@ -51,6 +51,9 @@ notes:
   - note: Default install directory for Thunderbird Beta changed to not conflict with release versions
     tag: changed
     bugs: [435657]
+  - note: Addon Search will no longer display addons that are incompatible
+    tag: changed
+    bugs: [1771723]
   - note: Default action of `Edit` button in recurring event dialog changed to display submenu
     tag: changed
     bugs: [1769657]
@@ -70,7 +73,7 @@ notes:
   - note: IMAP folder subscription changes on servers using OAuth2 authentication were not reflected in folder pane until Thunderbird was restarted
     tag: fixed
     bugs: [1759883]
-  - note: '"Empty Trash on Exit" did not work with IMAP accounts using OAuth2 authentication'
+  - note: '`Empty Trash on Exit` did not work with IMAP accounts using OAuth2 authentication'
     tag: fixed
     bugs: [1745205]
   - note: IMAP server hostname changes were not reflected in `Folder Properties` dialog
@@ -79,10 +82,13 @@ notes:
   - note: Drag and drop of attachable URLs onto compose window handling improved
     tag: fixed
     bugs: [1766073]
-  - note: Account types provided by an addon were not available in Account Setup with a new profile
+  - note: Account types provided by an addon were not available in `Account Setup` with a new profile
     tag: fixed
     bugs: [1771371]
-  - note: Chat Room Icons accounts were not shown in notifications
+  - note: '"Chat" and "Addons and Themes" icons were not shown in the toolbar `Customize` dialog'
+    tag: fixed
+    bugs: [1771611]
+  - note: Chat room icons were not shown in notifications
     tag: fixed
     bugs: [1770506]
   - note: Matrix messages with "notify" push rule action were not marked as highlights
@@ -97,7 +103,7 @@ notes:
   - note: Event modifications in a remote calendar while in offline mode were not synchronized after going back online
     tag: fixed
     bugs: [1769200]
-  - note: Colors from Linux GTK theme were not used when Thunderbird System Theme was active
+  - note: Colors from Linux GTK theme were not used when Thunderbird's System Theme was active
     tag: fixed
     bugs: [1768631]
   - note: 'Various UI style and theme fixes: Profile Manager, Edit Contact panel, Addons Permission panel, Event Summary'
