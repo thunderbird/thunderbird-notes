@@ -1,7 +1,7 @@
 release:
   release_date: '2022-05-31'
   text: |
-    **These notes apply to Thunderbird version 101 beta 1 released May 31, 2022.**
+    **These notes apply to Thunderbird version 102 beta 1 released May 31, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -31,12 +31,15 @@ notes:
   - note: Writing OpenPGP keyring data will block Thunderbird shutdown to prevent data loss
     tag: changed
     bugs: [1757963]
+  - note: Improvements to new Address Book UI
+    tag: changed
+    bugs: [1769490, 1770847, 1770716, 1771635, 1762126]
   - note: '"Old" Address Book user interface removed'
     tag: changed
     bugs: [1762127]
-  - note: Improvements to new Address Book UI
+  - note: Address book contact data is now stored in the vCard format. The change isn't backwards-compatible; backups are stored in the profile directory.
     tag: changed
-    bugs: [1769490, 1770847, 1770716, 1771635]
+    bugs: [469209]
   - note: Tab Icons updated
     tag: changed
     bugs: [1766465]
@@ -84,9 +87,6 @@ notes:
   - note: Importing a CSV file to Address Book failed
     tag: fixed
     bugs: [1769347]
-  - note: vCard first and last name values from `N` fields were not always parsed correctly
-    tag: fixed
-    bugs: [1769889]
 
   - note: Icons associated with Chat accounts were not shown in Chat-related notifications
     tag: fixed
