@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-05-31'
+  release_date: '2022-06-01'
   text: |
-    **These notes apply to Thunderbird version 102 beta 1 released May 31, 2022.**
+    **These notes apply to Thunderbird version 102 beta 1 released June  1, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -54,6 +54,9 @@ notes:
   - note: Addon Search will no longer display addons that are incompatible
     tag: changed
     bugs: [1771723]
+  - note: Searching from the `Themes` page of Addon Manager will now limit search results to only include themes
+    tag: changed
+    bugs: [1576772]
   - note: Default action of `Edit` button in recurring event dialog changed to display submenu
     tag: changed
     bugs: [1769657]
@@ -61,12 +64,18 @@ notes:
   - note: Dropdowns for select and autocomplete fields in browser-based login forms were not shown
     tag: fixed
     bugs: [1770005]
+  - note: Contacts sidebar context menu button had a misleading highlighted border, suggesting it had focus
+    tag: fixed
+    bugs: [1771802]
   - note: Configuring multiple SMTP accounts using the same server was not possible
     tag: fixed
     bugs: [1752104]
   - note: Display problems with very long subject lines in message panel fixed
     tag: fixed
     bugs: [1770364]
+  - note: '"More" recipients button in message header was difficult to read with some themes'
+    tag: fixed
+    bugs: [1771738]
   - note: '"Tags" submenu was disabled in standalone message window after opening a message from an .eml file'
     tag: fixed
     bugs: [1767050]
@@ -85,6 +94,9 @@ notes:
   - note: Account types provided by an addon were not available in `Account Setup` with a new profile
     tag: fixed
     bugs: [1771371]
+  - note: Addons automatically updated when Thunderbird updated despite Addon updates being turned off
+    tag: fixed
+    bugs: [1756302]
   - note: '"Chat" and "Addons and Themes" icons were not shown in the toolbar `Customize` dialog'
     tag: fixed
     bugs: [1771611]
