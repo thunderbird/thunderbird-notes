@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-01'
   text: |
-    **These notes apply to Thunderbird version 102 beta 1 released June  1, 2022.**
+    **These notes apply to Thunderbird version 102 beta 2 released June  3, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: 97.0beta
+
+  groups:
+    -
+    - "Changed & Fixed in Beta 2"
 
 notes:
 # new
@@ -102,7 +106,7 @@ notes:
     bugs: [1771611]
   - note: Chat room icons were not shown in notifications
     tag: fixed
-    bugs: [1770506]
+    bugs: [17706fb57a24a5fe3cb25620bef17f1b857eda988740506]
   - note: Matrix messages with "notify" push rule action were not marked as highlights
     tag: fixed
     bugs: [1770507]
@@ -121,6 +125,22 @@ notes:
   - note: 'Various UI style and theme fixes: Profile Manager, Edit Contact panel, Addons Permission panel, Event Summary'
     tag: fixed
     bugs: [1767574, 1768045, 1768363, 1770491, 1768410]
+
+
+# beta 2
+  - note: Thunderbird will not try to use OTR Chat encryption if the protocol supports native encryption
+    tag: changed
+    bugs: [1771510]
+    group: 2
+
+  - note: '`CC` disclosure button in the Compose Window incorrectly showed the `To` keyboard shortcut'
+    tag: fixed
+    bugs: [1772000]
+    group: 2
+  - note: Changes to the Organization field in a VCard were not always saved
+    tag: fixed
+    bugs: [1772062]
+    group: 2
 
 # unresolved
   - note: Drag and drop of a message onto a compose window shows 0-byte attachment named `Attached Message Part`; Attachment is sent
