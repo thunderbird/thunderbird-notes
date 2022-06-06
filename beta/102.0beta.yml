@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-01'
   text: |
-    **These notes apply to Thunderbird version 102 beta 2 released June  3, 2022.**
+    **These notes apply to Thunderbird version 102 beta 3 released June  6, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Changed & Fixed in Beta 2"
+    - "Changed & Fixed in Beta 3"
 
 notes:
 # new
@@ -141,6 +142,34 @@ notes:
     tag: fixed
     bugs: [1772062]
     group: 2
+
+# beta 3
+  - note: Message Header toolbar buttons will not display a border when set to show icons only
+    tag: changed
+    bugs: [1772469]
+    group: 3
+  - note: Edit contact form UX improvements
+    tag: changed
+    bugs: [1772244, 1772340]
+    group: 3
+
+  - note: No tooltip to see full addresses on an email was shown
+    tag: fixed
+    bugs: [1772319]
+    group: 3
+  - note: Primary password dialog did not adapt to Dark Mode on startup
+    tag: fixed
+    bugs: [1771700]
+    group: 3
+  - note: Active main menu items were difficult to read on Windows
+    tag: fixed
+    bugs: [1772192]
+    group: 3
+  - note: Thunderbird permitted inline editing of read-only event titles
+    tag: fixed
+    bugs: [1727913]
+    group: 3
+
 
 # unresolved
   - note: Drag and drop of a message onto a compose window shows 0-byte attachment named `Attached Message Part`; Attachment is sent
