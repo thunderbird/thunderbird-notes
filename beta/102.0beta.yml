@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-01'
   text: |
-    **These notes apply to Thunderbird version 102 beta 4 released June  9, 2022.**
+    **These notes apply to Thunderbird version 102 beta 5 released June 14, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - "Changed & Fixed in Beta 2"
     - "Changed & Fixed in Beta 3"
     - "Changed & Fixed in Beta 4"
+    - "Changed & Fixed in Beta 5"
 
 notes:
 # new
@@ -198,3 +199,41 @@ notes:
     tag: fixed
     bugs: [1773131]
     group: 4
+
+# beta 5
+  - note: When automatically attaching OpenPGP keys to emails, Thunderbird will not send signatures
+    tag: changed
+    bugs: [1629309]
+    group: 5
+  - note: Inline attachment filenames now sent without data-uri encoding
+    tag: changed
+    bugs: [1772664]
+    group: 5
+  - note: Thunderbird will not support "Secondly" or "Minutely" recurring calendar events
+    tag: changed
+    bugs: [1770984]
+    group: 5
+
+  - note: Non-square contact photos appeared distorted in the message header pane
+    tag: fixed
+    bugs: [1773271]
+    group: 5
+  - note: Address book search improved
+    tag: fixed
+    bugs: [1773177]
+    group: 5
+  - note: Contact Notes field contents could overflow
+    tag: fixed
+    bugs: [1771696]
+    group: 5
+  - note: Matrix backscroll behavior improved
+    tag: fixed
+    bugs: [1770459]
+    group: 5
+  - note: Calendar file import dialog title was not localized
+    tag: fixed
+    bugs: [1771617]
+    group: 5
+  - note: Various visual and theme improvements
+    tag: fixed
+    bugs: [1773485, 1773525, 1773449, 1773230, 1773490, 1772911, 1771575]
