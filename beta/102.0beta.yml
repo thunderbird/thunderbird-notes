@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-01'
   text: |
-    **These notes apply to Thunderbird version 102 beta 6 released June 16, 2022.**
+    **These notes apply to Thunderbird version 102 beta 7 released June 18, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/101.0beta/system-requirements/)
 
@@ -18,6 +18,7 @@ release:
     - "Changed & Fixed in Beta 4"
     - "Changed & Fixed in Beta 5"
     - "Changed & Fixed in Beta 6"
+    - "Lucky Beta 7"
 
 notes:
 # new
@@ -266,3 +267,89 @@ notes:
     tag: fixed
     group: 6
     bugs: [1773783,1772624,1773913,1773979, 1768410]
+
+# beta 7
+  - note: Addressbook UX and accessibility improvements over previous betas
+    tag: changed
+    group: 7
+    bugs: [1717632, 1774510, 1773201]
+
+  - note: Mailbox corruption could occur when `Allow antivirus clients to quarantine individual incoming messages` was
+            enabled on IMAP accounts
+    tag: fixed
+    group: 7
+    bugs: [1742975]
+  - note: '"Open message in containing folder" did not work for standalone windows'
+    tag: fixed
+    group: 7
+    bugs: [1774177]
+  - note: No checkmark for "My OpenPGP Public Key" menu item in compose window "Attach" toolbar button was shown when sending an OpenPGP encrypted message
+    tag: fixed
+    group: 7
+    bugs: [1769212]
+  - note: OpenPGP Key Assistant "Learn more" links did not work
+    tag: fixed
+    group: 7
+    bugs: [1773720]
+  - note: '"Encrypt" button became enabled when sending a message even though it should not'
+    tag: fixed
+    group: 7
+    bugs: [1774123]
+  - note: Recipients were not de-duplicated before sending, leading to sending errors
+    tag: fixed
+    group: 7
+    bugs: [1774525]
+  - note: Sending a message with non-ascii characters in recipient local parts failed unexpectedly when the server did not support SMTPUTF8
+    tag: fixed
+    group: 7
+    bugs: [1773672]
+  - note: Thunderbird started with a new profile was unusable on systems that use short timezone codes
+    tag: fixed
+    group: 7
+    bugs: [1760805]
+  - note: Message pane size varied when Thunderbird was started with a new profile
+    tag: fixed
+    group: 7
+    bugs: [1774040]
+  - note: Profile import did not import customized tag names
+    tag: fixed
+    group: 7
+    bugs: [1773827]
+  - note: Context menus in "Filter Rules" did not follow dark theme
+    tag: fixed
+    group: 7
+    bugs: [1774562]
+  - note: Restore "nickname" field on contact edit form
+    tag: fixed
+    group: 7
+    bugs: [1771569]
+  - note: Restore "Required Information Missing" dialog when saving a contact
+    tag: fixed
+    group: 7
+    bugs: [1771575]
+  - note: '"New CardDAV Address Book" dialog did not resize after detecting available address books'
+    tag: fixed
+    group: 7
+    bugs: [1744144]
+  - note: Matrix conversations that changed type had in invalid state and did not load
+    tag: fixed
+    group: 7
+    bugs: [1774372]
+  - note: Some encrypted Matrix messages never displayed decrypted
+    tag: fixed
+    group: 7
+    bugs: [1772767]
+  - note: 'Multiple "Invite Attendees" interface UX improvements'
+    tag: fixed
+    group: 7
+    bugs: [1759486]
+  - note: Calendar view reloaded when switching tabs
+    tag: fixed
+    group: 7
+    bugs: [1774117]
+  - note: Various icons were not visible
+    tag: fixed
+    group: 7
+    bugs: [1774529, 1774596]
+
+
