@@ -1,0 +1,22 @@
+release:
+  release_date: '2022-06-24'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: CLIENTID fix for bug 1759197 in Thunderbird 91.8.1 did not work; additional fix applied
+  tag: fixed
+  bugs: [1772027]
+- note: '"Save-As" attachment dialog did not have filename pre-populated'
+  tag: fixed
+  bugs: [1755592]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.11)
+  tag: fixed
