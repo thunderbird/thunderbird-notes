@@ -112,7 +112,7 @@ notes:
     bugs: [1771611]
   - note: Chat room icons were not shown in notifications
     tag: fixed
-    bugs: [17706fb57a24a5fe3cb25620bef17f1b857eda988740506]
+    bugs: [1770506]
   - note: Matrix messages with "notify" push rule action were not marked as highlights
     tag: fixed
     bugs: [1770507]
