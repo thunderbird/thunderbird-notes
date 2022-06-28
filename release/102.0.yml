@@ -44,8 +44,7 @@ notes:
   tag: new
   bugs: [1693332]
   weight: 700
-- note: 'OpenPGP: Public keys from email attachments and autocrypt headers now saved for
-    future use'
+- note: 'OpenPGP: Public keys from email attachments and autocrypt headers now cached for future use'
   tag: new
   bugs: [1667564]
   weight: 700
@@ -187,8 +186,7 @@ notes:
   tag: changed
   bugs: [1757963]
   weight: 700
-- note: When automatically attaching OpenPGP keys to emails, Thunderbird will not send
-    signatures
+- note: When automatically attaching OpenPGP keys to emails, Thunderbird will strip key certificates
   tag: changed
   bugs: [1629309]
   weight: 700
@@ -378,10 +376,6 @@ notes:
 - note: Importing OpenPGP public keys without a blank line following the header failed
   tag: fixed
   bugs: [1768424]
-  weight: 700
-- note: OpenPGP CollectedKeysDB could have duplicates; Revocations were not stored in CollectedKeysDB
-  tag: fixed
-  bugs: [1767942, 1767945]
   weight: 700
 - note: Dragging and dropping multiple email attachments between windows did not always
     copy all attachments
