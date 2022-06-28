@@ -61,6 +61,9 @@ notes:
   tag: new
   bugs: [1698391]
   weight: 700
+- note: Spaces vertical toolbar for easier in-app navigation
+  tag: new
+  bugs: [1665511]
 - note: Compose toolbar button for OpenPGP & S/MIME signing available via "Customize Toolbar"
   tag: new
   bugs: [1768609]
@@ -152,11 +155,6 @@ notes:
 - note: '[macOS] Account settings moved to application menu'
   tag: changed
   bugs: [308555]
-  weight: 300
-- note: '[macOS] `Alt+Up` and `Alt+Down` keyboard shortcuts removed from Spaces Toolbar;
-    Use `Fn+RightArrow` and `Fn+LeftArrow`'
-  tag: changed
-  bugs: [1767823]
   weight: 300
 - note: New profiles will default to using "Threaded" message view
   tag: changed
