@@ -1,6 +1,10 @@
 release:
   release_date: '2022-06-29'
   text: |
+    **Thunderbird version 102.0 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 91 or
+    earlier. A future release will provide updates from earlier versions.**
+    
     **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
 
     - Windows: Windows 7 or later
@@ -134,6 +138,8 @@ notes:
   tag: changed
   bugs: [1606047]
   weight: 100
+- note: Javascript POP implementation enabled by default
+  tag: changed
 - note: Buttons on "Update Failed" popup now open Beta and Release specific pages on Thunderbird
     website
   tag: changed
