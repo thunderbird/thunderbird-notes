@@ -504,15 +504,6 @@ notes:
   tag: fixed
   bugs: [1740073]
   weight: 3500
-- note: '"Verify Identity" was incorrectly shown in a direct conversations context menu
-    when no buddy was present'
-  tag: fixed
-  bugs: [1740222]
-  weight: 3500
-- note: Chat protocol icons in account wizard appeared distorted
-  tag: fixed
-  bugs: [1746607]
-  weight: 3500
 - note: Chat username splitting in the account wizard did not work after changing protocols
   tag: fixed
   bugs: [1764403]
