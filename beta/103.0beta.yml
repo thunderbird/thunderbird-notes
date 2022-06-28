@@ -1,0 +1,54 @@
+release:
+  release_date: '2022-06-29'
+  text: |
+    **These notes apply to Thunderbird version 103 beta 1 released June 29, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/103.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+notes:
+  # new
+  - note: Support selecting multiple dictionaries in composition settings
+    tag: new
+    bugs: [1766604]
+  # changed
+  - note: Support for additional fields added to Address Book
+    tag: changed
+    bugs: [1774765]
+  # fixed
+  - note: Mailbox MSF files could become corrupt in some circumstances
+    tag: fixed
+    bugs: [1773822]
+  - note: IMAP stability improvements
+    tag: fixed
+    bugs: [1770811, 1771409]
+  - note: OpenPGP Key Assistant did not show status for addresses handled by aliases
+    tag: fixed
+    bugs: [1774802]
+  - note: Thunderbird continued using an old password after changing it
+    tag: fixed
+    bugs: [1768121]
+  - note: LDAP Address Books could not be configured using IPv6 address literals
+    tag: fixed
+    bugs: [1775292]
+  - note: Mailing lists in Address Book were not editable
+    tag: fixed
+    bugs: [1774096]
+  - note: Address Book Accessibility improvements
+    tag: fixed
+    bugs: [1738942, 1751978, 1751986, 1771829]
+  - note: Attendees in Event Summary dialog were not selectable
+    tag: fixed
+    bugs: [1771526]
+  - note: Application font size was not consistent
+    tag: fixed
+    bugs: [1774514]
+  - note: Various UI improvements
+    tag: fixed
+    bugs: [1774967, 1775174, 1775296, 1775305]
+
