@@ -115,7 +115,7 @@ def weight(note):
 
 
 def sort_notes(orig_yaml_file):
-    with orig_yaml_file.open() as fp:
+    with open(orig_yaml_file) as fp:
         doc = yaml.load(fp)
 
     notes = doc["notes"]
