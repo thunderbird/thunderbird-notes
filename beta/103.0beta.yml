@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-29'
   text: |
-    **These notes apply to Thunderbird version 103 beta 1 released June 29, 2022.**
+    **These notes apply to Thunderbird version 103 beta 2 released July 1, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/103.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: 97.0beta
+
+  groups:
+    -
+    - "The bugs go marching two by two (Beta 2)"
 
 notes:
   # new
@@ -52,3 +56,36 @@ notes:
     tag: fixed
     bugs: [1774967, 1775174, 1775296, 1775305]
 
+# beta 2
+  - note: Non-ASCII messages forwarded as attachments were garbled
+    tag: fixed
+    bugs: [1777351]
+    group: 2
+  - note: New mail notifications were only shown for one mail account when multiple accounts were configured
+    tag: fixed
+    bugs: [1776580]
+    group: 2
+  - note: Attaching an external OpenPGP public key failed if configured with a subkey ID
+    tag: fixed
+    bugs: [1777251]
+    group: 2
+  - note: CardDAV contacts (notably Google-hosted) with more than one email address were not always editable
+    tag: fixed
+    bugs: [1777214]
+    group: 2
+  - note: Sometimes only the first letter of a contact's Organization name was displayed
+    tag: fixed
+    bugs: [1776625]
+    group: 2
+  - note: Address Book accessibility improvements
+    tag: fixed
+    bugs: [1776644]
+    group: 2
+  - note: UX improvements to various dialogs
+    tag: fixed
+    bugs: [1571143, 1776597, 1777291, 1776894]
+    group: 2
+  - note: Icons converted to new style
+    tag: fixed
+    bugs: [1776780,1776752]
+    group: 2
