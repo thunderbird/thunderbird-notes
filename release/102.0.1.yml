@@ -27,6 +27,9 @@ notes:
 - note: Thunderbird continued using an old password after changing it
   tag: fixed
   bugs: [1768121]
+- note: New mail notifications were only shown for one mail account when multiple accounts were configured
+  tag: fixed
+  bugs: [1776580]
 - note: LDAP Address Books could not be configured using IPv6 address literals
   tag: fixed
   bugs: [1775292]
