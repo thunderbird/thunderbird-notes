@@ -13,7 +13,8 @@ release:
 
   groups:
     -
-    - "The bugs go marching two by two (Beta 2)"
+    - "Fixed in beta 2"
+    - "Changed & Fixed in beta 3"
 
 notes:
   # new
@@ -89,3 +90,38 @@ notes:
     tag: fixed
     bugs: [1776780,1776752]
     group: 2
+
+# beta 3
+  - note: Double-clicking chat messages will no longer execute a default action
+    tag: changed
+    bugs: [1777542]
+    group: 3
+
+  - note: Address fields were not populated when using "Edit as new message"
+    tag: fixed
+    bugs: [1774991]
+    group: 3
+  - note: OpenPGP signatures were broken when "Primary Password" dialog remained open
+    tag: fixed
+    bugs: [1764175]
+    group: 3
+  - note: Importing from Seamonkey or Outlook failed in step 2
+    tag: fixed
+    bugs: [1777520]
+    group: 3
+  - note: Sub-folders with new messages were not highlighted until clicked
+    tag: fixed
+    bugs: [1734192]
+    group: 3
+  - note: '"File" menu was covered by Spaces Toolbar'
+    tag: fixed
+    bugs: [1773406]
+    group: 3
+  - note: Attachment paper clip was cut off in message list
+    tag: fixed
+    bugs: [1777468]
+    group: 3
+  - note: Double-click to edit selected contacts action did not work
+    tag: fixed
+    bugs: [1752013]
+    group: 3
