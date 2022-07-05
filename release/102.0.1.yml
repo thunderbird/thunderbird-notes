@@ -1,0 +1,45 @@
+release:
+  release_date: '2022-07-05'
+  text: |
+    **Thunderbird version 102.0.1 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 91 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  # Fixed
+- note: Mailbox MSF files could become corrupt in some circumstances
+  tag: fixed
+  bugs: [1773822]
+- note: OpenPGP Key Assistant did not show status for addresses handled by aliases
+  tag: fixed
+  bugs: [1774802]
+- note: Attaching an external OpenPGP public key failed if configured with a subkey ID
+  tag: fixed
+  bugs: [1777251]
+- note: Thunderbird continued using an old password after changing it
+  tag: fixed
+  bugs: [1768121]
+- note: LDAP Address Books could not be configured using IPv6 address literals
+  tag: fixed
+  bugs: [1775292]
+- note: CardDAV contacts (notably Google-hosted) with more than one email address were
+    not always editable
+  tag: fixed
+  bugs: [1777214]
+- note: Address Book accessibility improvements
+  tag: fixed
+  bugs: [1776644]
+- note: Various UI improvements
+  tag: fixed
+  bugs: [1775174, 1775305, 1571143, 1776597, 1776894, 1777291]
+- note: Icons converted to new style
+  tag: fixed
+  bugs: [1776752, 1776780]
