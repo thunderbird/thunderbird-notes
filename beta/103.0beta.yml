@@ -133,6 +133,10 @@ notes:
     bugs: [1645217]
     group: 4
 
+  - note: After compacting folders, new downloaded messages were inaccessible
+    tag: fixed
+    bugs: [1777454]
+    group: 4
   - note: Saving email source and images failed
     tag: fixed
     bugs: [1777323]
