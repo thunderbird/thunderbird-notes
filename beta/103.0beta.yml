@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-29'
   text: |
-    **These notes apply to Thunderbird version 103 beta 2 released July 1, 2022.**
+    **These notes apply to Thunderbird version 103 beta 4 released July 8, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/103.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in beta 2"
     - "Changed & Fixed in beta 3"
+    - "Changed & Fixed in beta 4"
 
 notes:
   # new
@@ -125,3 +126,38 @@ notes:
     tag: fixed
     bugs: [1752013]
     group: 3
+
+# beta 4
+  - note: Support for Google Talk chat accounts removed
+    tag: changed
+    bugs: [1645217]
+    group: 4
+
+  - note: Saving email source and images failed
+    tag: fixed
+    bugs: [1777323]
+    group: 4
+  - note: Deleting messages from a POP server occasionally failed
+    tag: fixed
+    bugs: [1774732]
+    group: 4
+  - note: Offline cache was unusable for NNTP accounts
+    tag: fixed
+    bugs: [1777642]
+    group: 4
+  - note: News messages were not shown in preview pane
+    tag: fixed
+    bugs: [1777439]
+    group: 4
+  - note: Some CardDAV contact fields were displayed with additional backslashes in the value
+    tag: fixed
+    bugs: [1772677]
+    group: 4
+  - note: Pending chat message contents were not updated when the conversation was not selected
+    tag: fixed
+    bugs: [1777713]
+    group: 4
+  - note: Various UI improvements
+    tag: fixed
+    bugs: [1776082, 1776657, 1778164, 1770021, 1778221]
+    group: 4
