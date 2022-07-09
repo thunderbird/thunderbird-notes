@@ -1,0 +1,67 @@
+release:
+  release_date: '2022-07-12'
+  text: |
+    **Thunderbird version 102.0.2 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 91 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+  # Changed
+- note: Double-clicking chat messages will no longer execute a default action
+  tag: changed
+  bugs: [1777542]
+  # Fixed
+- note: '"File" menu was covered by Spaces Toolbar'
+  tag: fixed
+  bugs: [1773406]
+- note: Sub-folders with new messages were not highlighted until clicked
+  tag: fixed
+  bugs: [1734192]
+- note: Attachment paper clip was cut off in message list
+  tag: fixed
+  bugs: [1777468]
+- note: OpenPGP signatures were broken when "Primary Password" dialog remained open
+  tag: fixed
+  bugs: [1764175]
+- note: Non-ASCII messages forwarded as attachments were garbled
+  tag: fixed
+  bugs: [1777351]
+- note: Importing from Seamonkey or Outlook failed in second step
+  tag: fixed
+  bugs: [1777520]
+- note: Deleting messages from a POP server occasionally failed
+  tag: fixed
+  bugs: [1774732]
+- note: Offline cache was unusable for NNTP accounts
+  tag: fixed
+  bugs: [1777642]
+- note: News messages were not shown in preview pane
+  tag: fixed
+  bugs: [1777439]
+- note: Address fields were not populated when using "Edit as new message"
+  tag: fixed
+  bugs: [1774991]
+- note: Sometimes only the first letter of a contact's Organization name was displayed
+  tag: fixed
+  bugs: [1776625]
+- note: Double-click to edit selected contacts action did not work
+  tag: fixed
+  bugs: [1752013]
+- note: Some CardDAV contact fields were displayed with additional backslashes in the value
+  tag: fixed
+  bugs: [1772677]
+- note: Pending chat message contents were not updated when the conversation was not selected
+  tag: fixed
+  bugs: [1777713]
+- note: Various UI improvements
+  tag: fixed
+  bugs: [1770021, 1776082, 1776657, 1778164, 1778221]
