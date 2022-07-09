@@ -5,13 +5,13 @@ release:
     thunderbird.net and not as an upgrade from Thunderbird version 91 or
     earlier. A future release will provide updates from earlier versions.**
 
-    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
-  import_system_requirements: '91.0'
+  import_system_requirements: '102.0'
 
 notes:
   # Fixed
