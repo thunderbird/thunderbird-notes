@@ -147,6 +147,10 @@ def sort_notes(orig_yaml_file):
         notes_seq.yaml_set_comment_before_after_key(note_counter, "{}\n".format(tag_name.capitalize()), 2)
         note_counter += len(notes_tagged)
 
+    for note in notes_seq:
+        if "weight" in note:
+            del note["weight"]
+
     doc["notes"] = notes_seq
 
     print("Writing sorted notes file to sorted.yml.")
