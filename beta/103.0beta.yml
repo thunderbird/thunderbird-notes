@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-29'
   text: |
-    **These notes apply to Thunderbird version 103 beta 4 released July 8, 2022.**
+    **These notes apply to Thunderbird version 103 beta 5 released July 12, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/103.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - "Fixed in beta 2"
     - "Changed & Fixed in beta 3"
     - "Changed & Fixed in beta 4"
+    - "Changed & Fixed in beta 5"
 
 notes:
   # new
@@ -165,3 +166,47 @@ notes:
     tag: fixed
     bugs: [1776082, 1776657, 1778164, 1770021, 1778221]
     group: 4
+
+# beta 5
+  - note: Thunderbird on macOS will now prompt for Primary Password on startup if set
+    tag: changed
+    bugs: [1778725]
+    group: 5
+
+  - note: Compose window failed to populate some fields when S/MIME was configured
+    tag: fixed
+    bugs: [1777683]
+    group: 5
+  - note: Signing S/MIME messages failed
+    tag: fixed
+    bugs: [1777336]
+    group: 5
+  - note: Messages sent as attachments incorrectly had an "X-Mozilla-Cloud-Part" header
+    tag: fixed
+    bugs: [1778915]
+    group: 5
+  - note: Marking a message as a Favorite (starred) did not update the thread pane when using Unified Folders
+    tag: fixed
+    bugs: [1751350]
+    group: 5
+  - note: Activity Manager did not display POP message downloads
+    tag: fixed
+    bugs: [1777892]
+    group: 5
+  - note: Non-text attachments has an incorrect "charset=windows-1250" mime header
+    tag: fixed
+    bugs: [1777495]
+    group: 5
+  - note: Expired news messages did not display an error
+    tag: fixed
+    bugs: [1778229]
+    group: 5
+  - note: Improved Address Book import/export support in Profile Importer
+    tag: fixed
+    bugs: [1777824]
+    group: 5
+
+  - note: Various UI improvements
+    tag: fixed
+    bugs: [1778740, 1776078, 1777622]
+    group: 5
