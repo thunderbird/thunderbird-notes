@@ -1,0 +1,56 @@
+release:
+  release_date: '2022-07-20'
+  text: |
+    **Thunderbird version 102.0.2 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 91 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+  # Changed
+- note: Support for Google Talk chat accounts removed
+  tag: changed
+  bugs: [1645217]
+  # Fixed
+- note: Thunderbird could crash on startup on Windows 11
+  tag: fixed
+  bugs: [1773392]
+- note: After compacting folders, new downloaded messages were inaccessible
+  tag: fixed
+  bugs: [1777454]
+- note: Marking a message as a Favorite (starred) did not update the thread pane when using
+    Unified Folders
+  tag: fixed
+  bugs: [1751350]
+- note: Compose window failed to populate some fields when S/MIME was configured
+  tag: fixed
+  bugs: [1777683]
+- note: Non-text attachments has an incorrect "charset=windows-1250" mime header
+  tag: fixed
+  bugs: [1777495]
+- note: Messages sent as attachments incorrectly had an "X-Mozilla-Cloud-Part" header
+  tag: fixed
+  bugs: [1778915]
+- note: Improved Address Book import/export support in Profile Importer
+  tag: fixed
+  bugs: [1777824]
+- note: IMAP stability improvements
+  tag: fixed
+  bugs: [1770811]
+- note: Offline cache was unusable for NNTP accounts
+  tag: fixed
+  bugs: [1777642]
+- note: Signing S/MIME messages failed
+  tag: fixed
+  bugs: [1777336]
+- note: Various UI improvements
+  tag: fixed
+  bugs: [1776078, 1777622, 1778740]
