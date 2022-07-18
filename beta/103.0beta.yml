@@ -1,7 +1,7 @@
 release:
   release_date: '2022-06-29'
   text: |
-    **These notes apply to Thunderbird version 103 beta 5 released July 12, 2022.**
+    **These notes apply to Thunderbird version 103 beta 6 released July 19, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/103.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - "Changed & Fixed in beta 3"
     - "Changed & Fixed in beta 4"
     - "Changed & Fixed in beta 5"
+    - "Changed & Fixed in beta 6"
 
 notes:
   # new
@@ -210,3 +211,47 @@ notes:
     tag: fixed
     bugs: [1778740, 1776078, 1777622]
     group: 5
+
+# beta 6
+  - note: Thunderbird will no longer offer to import OpenPGP that are incomplete
+    tag: changed
+    bugs: [1778867]
+    group: 6
+
+
+  - note: Update notification popups were still displayed after switching to another desktop workspace on Linux
+    tag: fixed
+    bugs: [1628907]
+    group: 6
+  - note: OAuth did not work with some POP servers
+    tag: fixed
+    bugs: [1778576]
+    group: 6
+  - note: Mail Folder Properties dialog was not sized correctly, cutting off contents
+    tag: fixed
+    bugs: [1778958]
+    group: 6
+  - note: OpenPGP public key was not automatically attached after enabling encryption from reminder and default setting is "Do not encrypt"
+    tag: fixed
+    bugs: [1778939]
+    group: 6
+  - note: Importing OpenPGP keys stored in binary format failed
+    tag: fixed
+    bugs: [1778509]
+    group: 6
+  - note: Performance Profiler did not work on Thunderbird
+    tag: fixed
+    bugs: [1771304]
+    group: 6
+  - note: Drag and Drop from Address Book into Compose window sometimes added unexpected contacts to the target
+    tag: fixed
+    bugs: [1732553]
+    group: 6
+  - note: Calendar did not respect `Date and Time Formatting` in Settings
+    tag: fixed
+    bugs: [1758739]
+    group: 6
+  - note: Calendar Column Picker closed prematurely after selecting/deselecting a single column
+    tag: fixed
+    bugs: [1779194]
+    group: 6
