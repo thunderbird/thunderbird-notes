@@ -1,0 +1,22 @@
+release:
+  release_date: '2022-07-26'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  - note: Support for Google Talk chat accounts removed
+    tag: changed
+    bugs: [1645217]
+
+  - note: OpenPGP signatures were broken when "Primary Password" dialog remained open
+    tag: fixed
+    bugs: [1764175]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.12)
+    tag: fixed
