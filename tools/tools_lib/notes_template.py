@@ -13,14 +13,15 @@ release:
 notes:
 """
 
-REQUIREMENTS_IMPORT = {"release": "91.0",
+REQUIREMENTS_IMPORT = {"release": "102.0",
                        "beta": "97.0beta",
                        }
 
-TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 91, see
-[New in Thunderbird 91.0](https://support.mozilla.org/en-US/kb/new-thunderbird-91/).**
+TMPL_RELEASE_TEXT = """**Thunderbird version 102.0.2 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 91 or
+    earlier. A future release will provide updates from earlier versions.**
 
-**System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+**System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
 
 - Windows: Windows 7 or later
 - Mac: macOS 10.12 or later
