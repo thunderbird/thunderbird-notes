@@ -1,0 +1,32 @@
+release:
+  release_date: '2022-07-26'
+  text: |
+    **Thunderbird version 102.1.0 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 91 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+- note: Activity Manager did not display POP message downloads
+  tag: fixed
+  bugs: [1777892]
+- note: Mail Folder Properties dialog was not sized correctly, cutting off contents
+  tag: fixed
+  bugs: [1778958]
+- note: Expired news messages did not display an error
+  tag: fixed
+  bugs: [1778229]
+- note: Calendar Column Picker closed prematurely after selecting/deselecting a single column
+  tag: fixed
+  bugs: [1779194]
+- note: Various UI improvements
+  tag: fixed
+  bugs: [1778436, 1779317, 1779474]
