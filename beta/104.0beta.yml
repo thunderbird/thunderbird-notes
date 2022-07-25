@@ -1,0 +1,115 @@
+release:
+  release_date: '2022-07-27'
+  text: |
+    **These notes apply to Thunderbird version 104 beta 1 released July 27, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/104.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+notes:
+- note: Commandline argument to open Calendar at startup added (`-calendar`)
+  tag: new
+  bugs: [359807]
+- note: Setting to use OS-configure timezone added
+  tag: new
+  bugs: [1606357]
+
+- note: Next and Previous Calendar menu items in Go menu now hidden until Calendar is activated
+  tag: changed
+  bugs: [1708320]
+- note: OpenPGP Key Manager will clear selected keys after a deletion is performed
+  tag: changed
+  bugs: [1743697]
+- note: Link to "introduction to e2e encryption" article updated
+  tag: changed
+  bugs: [1776306]
+- note: Search box in horizontal Address book layout moved to the left
+  tag: changed
+  bugs: [1779809]
+
+- note: Thunderbird startup performance improvements
+  tag: fixed
+  bugs: [1780323, 1780324, 1780325, 1780326, 1780328]
+- note: Compacting IMAP folders failed when "Just mark as deleted" was set
+  tag: fixed
+  bugs: [1776727]
+- note: POP3 message download progress bar was not displayed
+  tag: fixed
+  bugs: [1777765]
+- note: Self-signed TLS certificates did not work with POP3 connections
+  tag: fixed
+  bugs: [1778464]
+- note: Non-ascii characters in passwords did not work with POP3 connections
+  tag: fixed
+  bugs: [1778883]
+- note: An error was not displayed when an incorrect password was entered for a POP3 account
+  tag: fixed
+  bugs: [1779535]
+- note: OAuth2 authentication was not available when the mail domain did not match the OAuth provider domain
+  tag: fixed
+  bugs: [1779518]
+- note: '"Empty Trash on Exit" was not always triggered when message quarantine was enabled'
+  tag: fixed
+  bugs: [1777953]
+- note: '"Save Image As" context menu item did not work'
+  tag: fixed
+  bugs: [1778804]
+- note: Exporting an OpenPGP public key from Account Settings failed
+  tag: fixed
+  bugs: [1779745]
+- note: Saving encrypted OpenPGP attachments created corrupt files
+  tag: fixed
+  bugs: [1780123]
+- note: Auto-attaching vCard and OpenPGP keys did not always work as expected
+  tag: fixed
+  bugs: [1771339]
+- note: '"Default" label not shown for emails when editing a contact'
+  tag: fixed
+  bugs: [1776372]
+- note: Contact Title, Role, and Organization fields could be displayed in the wrong order
+  tag: fixed
+  bugs: [1779526]
+- note: Contact birthdays on February 29 were displayed incorrectly in non-leap years
+  tag: fixed
+  bugs: [1779789]
+- note: NNTP articles were not displayed in preview pane when a Primary Password was set
+  tag: fixed
+  bugs: [1745033]
+- note: NNTP articles did not download when the hostname of the server was not all in lower-case
+  tag: fixed
+  bugs: [1778924]
+- note: Saving NNTP messages to local disk failed
+  tag: fixed
+  bugs: [1780450]
+- note: Auto-detection of CalDAV and CardDAV via DNS records used server domain leading to failures
+  tag: fixed
+  bugs: [1769493]
+- note: Detection of photos in vCards improved
+  tag: fixed
+  bugs: [1777303]
+- note: Drag and drop contacts to another address book was not available
+  tag: fixed
+  bugs: [1777913, 1778957]
+- note: Contacts stored in a Google CardDAV address book contained extra backslashes in text fields
+  tag: fixed
+  bugs: [1777920]
+- note: Some recurring events were missing from Agenda on first load
+  tag: fixed
+  bugs: [1771168]
+- note: Editing events via right click menu failed to save changes
+  tag: fixed
+  bugs: [1776792]
+
+
+
+- note: Various accessibility improvements
+  tag: fixed
+  bugs: [1775245, 1777184]
+- note: Various visual and theme improvements
+  tag: fixed
+  bugs: [1774696, 1774763, 1778436, 1778979]
