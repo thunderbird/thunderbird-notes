@@ -1,7 +1,7 @@
 release:
   release_date: '2022-07-27'
   text: |
-    **These notes apply to Thunderbird version 104 beta 1 released July 27, 2022.**
+    **These notes apply to Thunderbird version 104 beta 2 released August 2, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/104.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: 97.0beta
+
+  groups:
+    -
+    - "Fixed in beta 2"
 
 notes:
 - note: Commandline argument to open Calendar at startup added (`-calendar`)
@@ -105,11 +109,40 @@ notes:
   tag: fixed
   bugs: [1776792]
 
-
-
 - note: Various accessibility improvements
   tag: fixed
   bugs: [1775245, 1777184]
 - note: Various visual and theme improvements
   tag: fixed
   bugs: [1774696, 1774763, 1778436, 1778979]
+
+# beta 2
+- note: macOS display issues made Thunderbird unusable
+  tag: fixed
+  bugs: [1777741]
+  group: 2
+- note: OpenPGP Key Import wizard did not adapt to dark theme
+  tag: fixed
+  bugs: [1781440]
+  group: 2
+- note: Address book only recognized first two email addresses
+  tag: fixed
+  bugs: [1777156]
+  group: 2
+- note: Contacts without First/Last/Display Names appeared blank in contact list
+  tag: fixed
+  bugs: [1777415, 1779805]
+  group: 2
+- note: RSS feed URL links in headers panel could not be activated by keyboard
+  tag: fixed
+  bugs: [1777802]
+  group: 2
+- note: Settings page used caused excessive CPU usage
+  tag: fixed
+  bugs: [1781737]
+  group: 2
+
+- note: Various visual and theme improvements
+  tag: fixed
+  bugs: [1780678, 1781931]
+  group: 2
