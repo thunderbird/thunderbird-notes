@@ -1,0 +1,120 @@
+release:
+  release_date: '2022-08-08'
+  text: |
+    **Thunderbird version 102.1.1 is only offered as direct download from
+        thunderbird.net and not as an upgrade from Thunderbird version 91 or
+        earlier. A future release will provide updates from earlier versions.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+  # Changed
+- note: OpenPGP Key Manager will clear selected keys after a deletion is performed
+  tag: changed
+  bugs: [1743697]
+  # Fixed
+- note: Update notification popups were still displayed after switching to another desktop
+    workspace on Linux
+  tag: fixed
+  bugs: [1628907]
+- note: macOS display issues made Thunderbird unusable
+  tag: fixed
+  bugs: [1777741]
+- note: OpenPGP public key was not automatically attached after enabling encryption from
+    reminder and default setting is "Do not encrypt"
+  tag: fixed
+  bugs: [1778939]
+- note: Importing OpenPGP keys stored in binary format failed
+  tag: fixed
+  bugs: [1778509]
+- note: Exporting an OpenPGP public key from Account Settings failed
+  tag: fixed
+  bugs: [1779745]
+- note: Saving encrypted OpenPGP attachments created corrupt files
+  tag: fixed
+  bugs: [1780123]
+- note: Receiving many OpenPGP keys in a single email caused Thunderbird to hang
+  tag: fixed
+  bugs: [1775115]
+- note: POP3 message download progress bar was not displayed
+  tag: fixed
+  bugs: [1777765]
+- note: OAuth2 authentication was not available when the mail domain did not match the
+    OAuth provider domain
+  tag: fixed
+  bugs: [1779518]
+- note: OAuth did not work with some POP servers
+  tag: fixed
+  bugs: [1778576]
+- note: RSS feed URL links in headers panel could not be activated by keyboard
+  tag: fixed
+  bugs: [1777802]
+- note: Self-signed TLS certificates did not work with POP3 connections
+  tag: fixed
+  bugs: [1778464]
+- note: Non-ascii characters in passwords did not work with POP3 connections
+  tag: fixed
+  bugs: [1778883]
+- note: An error was not displayed when an incorrect password was entered for a POP3 account
+  tag: fixed
+  bugs: [1779535]
+- note: NNTP articles were not displayed in preview pane when a Primary Password was set
+  tag: fixed
+  bugs: [1745033]
+- note: NNTP articles did not download when the hostname of the server was not all in lower-case
+  tag: fixed
+  bugs: [1778924]
+- note: Saving NNTP messages to local disk failed
+  tag: fixed
+  bugs: [1780450]
+- note: Drag and Drop from Address Book into Compose window sometimes added unexpected
+    contacts to the target
+  tag: fixed
+  bugs: [1732553]
+- note: '"Default" label not shown for emails when editing a contact'
+  tag: fixed
+  bugs: [1776372]
+- note: Contact Title, Role, and Organization fields could be displayed in the wrong order
+  tag: fixed
+  bugs: [1779526]
+- note: Contact birthdays on February 29 were displayed incorrectly in non-leap years
+  tag: fixed
+  bugs: [1779789, 1779100]
+- note: Detection of photos in vCards improved
+  tag: fixed
+  bugs: [1777303]
+- note: Drag and drop contacts to another address book was not available
+  tag: fixed
+  bugs: [1777913, 1778957]
+- note: Contacts stored in a Google CardDAV address book contained extra backslashes in
+    text fields
+  tag: fixed
+  bugs: [1777920]
+- note: Contacts without First/Last/Display Names appeared blank in contact list
+  tag: fixed
+  bugs: [1777415, 1779805]
+- note: Auto-attaching vCard and OpenPGP keys did not always work as expected
+  tag: fixed
+  bugs: [1771339]
+- note: Settings page used caused excessive CPU usage
+  tag: fixed
+  bugs: [1781737]
+- note: Calendar did not respect `Date and Time Formatting` in Settings
+  tag: fixed
+  bugs: [1758739]
+- note: OpenPGP Key Import wizard did not adapt to dark theme
+  tag: fixed
+  bugs: [1781440]
+- note: Various visual and theme improvements
+  tag: fixed
+  bugs: [1780678, 1774696, 1778436]
+- note: Various accessibility improvements
+  tag: fixed
+  bugs: [1775245, 1777184]
