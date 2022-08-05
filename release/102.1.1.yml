@@ -118,3 +118,13 @@ notes:
 - note: Various accessibility improvements
   tag: fixed
   bugs: [1775245, 1777184]
+
+- note: '"Get Map" feature missing from address book for physical addresses'
+  tag: unresolved
+  bugs: [1781076]
+- note: Custom fields missing from address book
+  tag: unresolved
+  bugs: [1776129]
+- note: No dedicated "Department" field in address book
+  tag: unresolved
+  bugs: [1777780]
