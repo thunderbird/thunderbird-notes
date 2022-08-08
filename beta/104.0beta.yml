@@ -1,7 +1,7 @@
 release:
   release_date: '2022-07-27'
   text: |
-    **These notes apply to Thunderbird version 104 beta 2 released August 2, 2022.**
+    **These notes apply to Thunderbird version 104 beta 3 released August 9, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/104.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in beta 2"
+    - "Changed & Fixed in beta 3"
 
 notes:
 - note: Commandline argument to open Calendar at startup added (`-calendar`)
@@ -146,3 +147,50 @@ notes:
   tag: fixed
   bugs: [1780678, 1781931]
   group: 2
+
+# beta 3
+- note: Encryption reminder for S/MIME emails disabled
+  tag: changed
+  bugs: [1779613]
+  group: 3
+- note: Contact address lines are now adjusted to appear in the expected order
+  tag: changed
+  bugs: [1779567]
+  group: 3
+- note: Custom1-4 fields restored to Address Book UI; existing data is preserved from pre-102 profiles
+  tag: changed
+  bugs: [1776129]
+  group: 3
+
+- note: Repairing IMAP folders in Offline mode removed the local copy of the folders
+  tag: fixed
+  bugs: [1776214]
+  group: 3
+- note: Message threading status and sort order was not transferred when applying column layout to other folders
+  tag: fixed
+  bugs: [574986]
+  group: 3
+- note: Searching on attachment status did not work in Message Search dialog
+  tag: fixed
+  bugs: [1782392]
+  group: 3
+- note: Saving attachments from newsgroups did not work
+  tag: fixed
+  bugs: [1782471]
+  group: 3
+- note: Setting contact type to "None" was not possible if a type was previously set
+  tag: fixed
+  bugs: [1776214, 1778043]
+  group: 3
+- note: '"File -> New -> Address Book Contact" from Compose window did not work'
+  tag: fixed
+  bugs: [1782418]
+  group: 3
+- note: Editing a contact without Name fields populated filled in the email address into the name fields
+  tag: fixed
+  bugs: [1776294]
+  group: 3
+- note: Various visual and theme improvements
+  tag: fixed
+  bugs: [1781463, 1782580, 1782902]
+  group: 3
