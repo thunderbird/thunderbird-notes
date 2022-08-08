@@ -1,0 +1,35 @@
+release:
+  release_date: '2022-08-09'
+  text: |
+    **Thunderbird version 102.1.2 is only offered as direct download from
+        thunderbird.net and not as an upgrade from Thunderbird version 91 or
+        earlier. A future release will provide updates from earlier versions.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+- note: The fix for [bug 1777765](http://bugzil.la/1777765) (no POP download progress bar)
+    was backed out from this release to address broken POP message download with `Fetch
+    headers only` selected in Account Settings ([bug 1783552](http://bugzil.la/1783552)).
+  tag: fixed
+  bugs: [1777765, 1783552]
+
+- note: No progress bar shown for POP message downloads
+  tag: unresolved
+  bugs: [1777765]
+- note: '"Get Map" feature missing from address book for physical addresses'
+  tag: unresolved
+  bugs: [1781076]
+- note: Custom fields missing from address book
+  tag: unresolved
+  bugs: [1776129]
+- note: No dedicated "Department" field in address book
+  tag: unresolved
+  bugs: [1777780]
