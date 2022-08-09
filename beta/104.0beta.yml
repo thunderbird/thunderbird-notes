@@ -1,7 +1,7 @@
 release:
   release_date: '2022-07-27'
   text: |
-    **These notes apply to Thunderbird version 104 beta 3 released August 9, 2022.**
+    **These notes apply to Thunderbird version 104 beta 3 released August 10, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/104.0beta/system-requirements/)
 
@@ -162,6 +162,12 @@ notes:
   bugs: [1776129]
   group: 3
 
+- note: The fix for [bug 1777765](http://bugzil.la/1777765) (no POP download progress bar)
+    was backed out from this release to address broken POP message download with `Fetch
+    headers only` selected in Account Settings ([bug 1783552](http://bugzil.la/1783552)).
+  tag: fixed
+  bugs: [1777765, 1783552]
+  group: 3
 - note: Repairing IMAP folders in Offline mode removed the local copy of the folders
   tag: fixed
   bugs: [1776214]
@@ -194,3 +200,8 @@ notes:
   tag: fixed
   bugs: [1781463, 1782580, 1782902]
   group: 3
+
+- note: No progress bar shown for POP message downloads
+  tag: unresolved
+  bugs: [1777765]
+
