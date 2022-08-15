@@ -1,7 +1,7 @@
 release:
   release_date: '2022-07-27'
   text: |
-    **These notes apply to Thunderbird version 104 beta 3 released August 10, 2022.**
+    **These notes apply to Thunderbird version 104 beta 4 released August 16, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/104.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in beta 2"
     - "Changed & Fixed in beta 3"
+    - "Changed & Fixed in beta 4"
 
 notes:
 - note: Commandline argument to open Calendar at startup added (`-calendar`)
@@ -201,7 +202,58 @@ notes:
   bugs: [1781463, 1782580, 1782902]
   group: 3
 
-- note: No progress bar shown for POP message downloads
-  tag: unresolved
-  bugs: [1777765]
+# beta 4
+- note: C++ NNTP implementation removed
+  tag: changed
+  bugs: [1781720]
+  group: 4
+- note: Selecting or unselecting a dictionary in the `Spelling` compose toolbar button will no longer immediately
+         close the menu; Making dictionary changes via the editor context menu will continue to close the context menu
+  tag: changed
+  bugs: [1783001]
+  group: 4
+
+
+- note: POP3 message download progress bar was not displayed
+  tag: fixed
+  bugs: [1777765, 1783552]
+  group: 4
+- note: POP `Fetch headers only` mode did not work for some server configurations
+  tag: fixed
+  bugs: [1783290]
+  group: 4
+- note: A TLS certificate override dialog for self-signed certificates was not shown for IMAP accounts
+  tag: fixed
+  bugs: [1764770]
+  group: 4
+- note: Running `Compact Folders` on maildir folders caused a redownload of all messages in the folder
+  tag: fixed
+  bugs: [1683714]
+  group: 4
+- note: '`Remove All Expired Articles` was not displayed on expired NNTP messages'
+  tag: fixed
+  bugs: [1782365]
+  group: 4
+- note: '`ALT+<numpad digits>` keypress events were intercepted by the Spaces Toolbar, preventing special character
+        entry on Windows'
+  tag: fixed
+  bugs: [1777666]
+  group: 4
+- note: Autocomplete functionality in the composer failed under some circumstances
+  tag: fixed
+  bugs: [1782486]
+  group: 4
+- note: Address book toolbar buttons were not keyboard accessible
+  tag: fixed
+  bugs: [1751282]
+  group: 4
+- note: Sending messages to encrypted Matrix rooms failed in some cases
+  tag: fixed
+  bugs: [1780089]
+  group: 4
+
+- note: Various visual and theme improvements
+  tag: fixed
+  bugs: [1779445, 1784032]
+  group: 4
 
