@@ -1,0 +1,68 @@
+release:
+  release_date: '2022-08-18'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+- note: 'Config setting added to disable OpenPGP "encryption is possible" reminder: `mail.openpgp.remind_encryption_possible`'
+  tag: new
+  bugs: [1779838]
+  # Changed
+- note: Thunderbird on macOS will now prompt for Primary Password on startup if set
+  tag: changed
+  bugs: [1778725]
+- note: Thunderbird will no longer offer to import OpenPGP that are incomplete
+  tag: changed
+  bugs: [1778867]
+- note: Selecting or unselecting a dictionary in the `Spelling` compose toolbar button
+    will no longer immediately close the menu; Making dictionary changes via the editor
+    context menu will continue to close the context menu
+  tag: changed
+  bugs: [1783001]
+- note: Contact address lines are now adjusted to appear in the expected order
+  tag: changed
+  bugs: [1779567]
+
+  # Fixed
+- note: '`ALT+<numpad digits>` keypress events were intercepted by the Spaces Toolbar,
+    preventing special character entry on Windows'
+  tag: fixed
+  bugs: [1777666]
+- note: Searching on attachment status did not work in Message Search dialog
+  tag: fixed
+  bugs: [1782392]
+- note: Repairing IMAP folders in Offline mode removed the local copy of the folders
+  tag: fixed
+  bugs: [1776214]
+- note: POP3 message download progress bar was not displayed
+  tag: fixed
+  bugs: [1777765, 1783552]
+- note: A TLS certificate override dialog for self-signed certificates was not shown for
+    IMAP accounts
+  tag: fixed
+  bugs: [1764770]
+- note: Setting contact type to "None" was not possible if a type was previously set
+  tag: fixed
+  bugs: [1776214, 1778043]
+- note: Editing a contact without Name fields populated filled in the email address into
+    the name fields
+  tag: fixed
+  bugs: [1776294]
+- note: Address book toolbar buttons were not keyboard accessible
+  tag: fixed
+  bugs: [1751282]
+
+- note: Auto-detection of CalDAV and CardDAV via DNS records used server domain leading
+    to failures
+  tag: fixed
+  bugs: [1769493]
+- note: Various visual and theme improvements
+  tag: fixed
+  bugs: [1778979, 1781463, 1782580, 1782902, 1779445, 1784032, 1779619, 1783809]
