@@ -1,0 +1,22 @@
+release:
+  release_date: '2022-08-17'
+  text: |
+    **Thunderbird 91.13.0 is the final release of Thunderbird 91.
+    See what's new in Thunderbird 102 on the [https://www.thunderbird.net/en-US/thunderbird/102.1.2/releasenotes/]().**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  - note: Updated Thunderbird donation URL from "donate.mozilla.org" to "give.thunderbird.net"
+    tag: changed
+    bugs: [1761555]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.13)
+    tag: fixed
+
