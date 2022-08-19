@@ -1,5 +1,5 @@
 release:
-  release_date: '2022-08-18'
+  release_date: '2022-08-23'
   text: |
     **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
 
@@ -18,7 +18,7 @@ notes:
 - note: Thunderbird on macOS will now prompt for Primary Password on startup if set
   tag: changed
   bugs: [1778725]
-- note: Thunderbird will no longer offer to import OpenPGP that are incomplete
+- note: Thunderbird will no longer offer to import OpenPGP keys that are incomplete
   tag: changed
   bugs: [1778867]
 - note: Selecting or unselecting a dictionary in the `Spelling` compose toolbar button
@@ -29,8 +29,14 @@ notes:
 - note: Contact address lines are now adjusted to appear in the expected order
   tag: changed
   bugs: [1779567]
+- note: Custom1-4 fields restored to Address Book UI; existing data is preserved from pre-102 profiles
+  tag: changed
+  bugs: [1776129]
 
   # Fixed
+- note: Thunderbird startup performance improvements
+  tag: fixed
+  bugs: [1780328]
 - note: '`ALT+<numpad digits>` keypress events were intercepted by the Spaces Toolbar,
     preventing special character entry on Windows'
   tag: fixed
@@ -38,19 +44,31 @@ notes:
 - note: Searching on attachment status did not work in Message Search dialog
   tag: fixed
   bugs: [1782392]
-- note: Repairing IMAP folders in Offline mode removed the local copy of the folders
+- note: Repairing IMAP folders in Offline mode removed local copy of the folders
   tag: fixed
   bugs: [1776214]
 - note: POP3 message download progress bar was not displayed
   tag: fixed
   bugs: [1777765, 1783552]
+- note: POP `Fetch headers only` mode did not work for some server configurations
+  tag: fixed
+  bugs: [1783290]
+- note: POP accounts using GSSAPI or NTLM authentication were not able to log into the server
+  tag: fixed
+  bugs: [1784842]
 - note: A TLS certificate override dialog for self-signed certificates was not shown for
     IMAP accounts
   tag: fixed
   bugs: [1764770]
+- note: Message threading status and sort order was not transferred when applying column layout to other folders
+  tag: fixed
+  bugs: [574986]
+- note: Saving attachments from newsgroups did not work
+  tag: fixed
+  bugs: [1782471]
 - note: Setting contact type to "None" was not possible if a type was previously set
   tag: fixed
-  bugs: [1776214, 1778043]
+  bugs: [1778043]
 - note: Editing a contact without Name fields populated filled in the email address into
     the name fields
   tag: fixed
@@ -66,3 +84,15 @@ notes:
 - note: Various visual and theme improvements
   tag: fixed
   bugs: [1778979, 1781463, 1782580, 1782902, 1779445, 1784032, 1779619, 1783809]
+
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.2)
+  tag: fixed
+
+# unresolved
+- note: '"Get Map" feature missing from address book for physical addresses'
+  tag: unresolved
+  bugs: [1781076]
+- note: No dedicated "Department" field in address book
+  tag: unresolved
+  bugs: [1777780]
