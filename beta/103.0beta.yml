@@ -217,7 +217,7 @@ notes:
     group: 5
 
 # beta 6
-  - note: Thunderbird will no longer offer to import OpenPGP that are incomplete
+  - note: Thunderbird will no longer offer to import OpenPGP keys that are incomplete
     tag: changed
     bugs: [1778867]
     group: 6

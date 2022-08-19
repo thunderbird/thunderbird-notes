@@ -169,7 +169,7 @@ notes:
   tag: fixed
   bugs: [1777765, 1783552]
   group: 3
-- note: Repairing IMAP folders in Offline mode removed the local copy of the folders
+- note: Repairing IMAP folders in Offline mode removed local copy of the folders
   tag: fixed
   bugs: [1776214]
   group: 3
@@ -187,7 +187,7 @@ notes:
   group: 3
 - note: Setting contact type to "None" was not possible if a type was previously set
   tag: fixed
-  bugs: [1776214, 1778043]
+  bugs: [1778043]
   group: 3
 - note: '"File -> New -> Address Book Contact" from Compose window did not work'
   tag: fixed
