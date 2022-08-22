@@ -60,9 +60,6 @@ notes:
     IMAP accounts
   tag: fixed
   bugs: [1764770]
-- note: Message threading status and sort order was not transferred when applying column layout to other folders
-  tag: fixed
-  bugs: [574986]
 - note: Saving attachments from newsgroups did not work
   tag: fixed
   bugs: [1782471]
