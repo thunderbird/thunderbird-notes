@@ -1,0 +1,110 @@
+release:
+  release_date: '2022-08-24'
+  text: |
+    **These notes apply to Thunderbird version 105 beta 1 released August 24, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/105.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+notes:
+  - note: Option added to show containing address book for a contact when using `All Address Books` in vertical mode
+    tag: new
+    bugs: [1778871]
+
+  - note: HTML emails are now rendered in Standards mode
+    tag: changed
+    bugs: [1429491]
+
+  - note: Buttons to connect automatically discovered Address Books and Calendar during `Account Setup` now displayed
+    tag: changed
+    bugs: [1781020]
+  - note: POP C++ implementation removed
+    tag: changed
+    bugs: [1781721]
+  - note: Setting added to change Calendar event double-click action to oprn `Edit Event` dialog rather than view only;
+            Set `calendar.events.defaultActionEdit` to `true`.
+    tag: changed
+    bugs: [1685007]
+  - note: Devtools performance profile will use Thunderbird presets instead of Web Developer presets
+    tag: changed
+    bugs: [1785954]
+
+
+  - note: More Thunderbird startup performance improvements
+    tag: fixed
+    bugs: [1783770, 1785967, 1783941]
+  - note: Remote content warning bar was not displayed for IMAP messages and .eml files
+    tag: fixed
+    bugs: [1784313]
+  - note: SMTP servers were not always properly initialized, and were not listed in `Account Settings`
+    tag: fixed
+    bugs: [1773123]
+  - note: Sending a message while a recipient pill was being modified did not save changes
+    tag: fixed
+    bugs: [1779785]
+  - note: Digital signing of messages was not disabled after switching to an identity that could not sign
+    tag: fixed
+    bugs: [1783909]
+  - note: POP message retrieval stopped after a network error occurred and connectivity was restored
+    tag: fixed
+    bugs: [1779306]
+  - note: IMAP folder "Compact" action did not wait for expunge operation to complete prior to compaction
+    tag: fixed
+    bugs: [1782374]
+  - note: POP accounts using GSSAPI or NTLM authentication were not able to log into the server
+    tag: fixed
+    bugs: [1784842]
+  - note: Activity Manager didn't show "Get Messages" activity when "Leave messages on server" was turned off and no new
+          messages were found
+    tag: fixed
+    bugs: [1783508]
+  - note: Mail quota color did not update properly for multiple accounts
+    tag: fixed
+    bugs: [1784041]
+  - note: Profile export failed if an expected file did not exist
+    tag: fixed
+    bugs: [1784389]
+  - note: List of spellcheck dictionaries in `Check Spelling` dialog grew without bounds when many dictionaries were available
+    tag: fixed
+    bugs: [1785016]
+  - note: NNTP connection was not closed immediately if authentication dialog was canceled
+    tag: fixed
+    bugs: [1783517]
+  - note: Dragging a news message to the Desktop caused Thunderbird to hang when synchronized for offline use
+    tag: fixed
+    bugs: [1783569]
+  - note: Downloading NNTP messages for offline use failed
+    tag: fixed
+    bugs: [1785773]
+  - note: Address Book display pane continued to show contacts after deletion
+    tag: fixed
+    bugs: [1777808]
+  - note: Address Book contact lists cut off display of some characters, the result being unreadable
+    tag: fixed
+    bugs: [1780909]
+  - note: Improved performance of matching a contact to an email address
+    tag: fixed
+    bugs: [1782725]
+  - note: Global Search entry box initially contained "undefined"
+    tag: fixed
+    bugs: [1780963]
+
+  - note: Adding a CalDAV calendar on BSD-based OS's failed due to DNS errors
+    tag: fixed
+    bugs: [1737507]
+  - note: ICS calendar files with a `FREEBUSY` property could not be imported
+    tag: fixed
+    bugs: [1783441]
+
+  - note: Icons converted to new style
+    tag: fixed
+    bugs: [1776093, 1780556, 1780563, 1781796]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1783927, 1784328, 1785134]
+
