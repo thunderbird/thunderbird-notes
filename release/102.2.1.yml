@@ -1,0 +1,85 @@
+release:
+  release_date: '2022-09-01'
+  text: |
+    <div style="color: #d70022; font-weight: bold">Thunderbird 102.2.1 contains
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.2.1">
+    high-impact security fixes</a>; users are encouraged to update as soon as possible.</div>
+    
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+- note: Commandline argument to open Calendar at startup added (`-calendar`)
+  tag: new
+  bugs: [359807]
+  # Changed
+- note: Buttons to connect automatically discovered Address Books and Calendar during `Account
+    Setup` now displayed
+  tag: changed
+  bugs: [1781020]
+  # Fixed
+- note: Compacting IMAP folders failed when "Just mark as deleted" was set
+  tag: fixed
+  bugs: [1776727]
+- note: Message threading status and sort order was not transferred when applying column
+    layout to other folders
+  tag: fixed
+  bugs: [574986]
+- note: Folder names with half-width Kana characters were displayed incorrectly
+  tag: fixed
+  bugs: [1786191]
+- note: Digital signing of messages was not disabled after switching to an identity that
+    could not sign
+  tag: fixed
+  bugs: [1783909]
+- note: POP message retrieval stopped after a network error occurred and connectivity was
+    restored
+  tag: fixed
+  bugs: [1779306]
+- note: Activity Manager didn't show "Get Messages" activity when "Leave messages on server"
+    was turned off and no new messages were found
+  tag: fixed
+  bugs: [1783508]
+- note: Mail quota color did not update properly for multiple accounts
+  tag: fixed
+  bugs: [1784041]
+- note: Profile export failed if an expected file did not exist
+  tag: fixed
+  bugs: [1784389]
+- note: '`Check Spelling` dialog could exceed screen size when many dictionaries were available'
+  tag: fixed
+  bugs: [1785016]
+- note: Dragging a news message to the Desktop caused Thunderbird to hang when synchronized
+    for offline use
+  tag: fixed
+  bugs: [1783569]
+- note: '`Remove All Expired Articles` was not displayed on expired NNTP messages'
+  tag: fixed
+  bugs: [1782365]
+- note: Sending messages to encrypted Matrix rooms failed in some cases
+  tag: fixed
+  bugs: [1780089]
+- note: Adding a CalDAV calendar on BSD-based OS's failed due to DNS errors
+  tag: fixed
+  bugs: [1737507]
+- note: Various visual and UX improvements
+  tag: fixed
+  bugs: [1783927, 1784328]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.2.1)
+  tag: fixed
+
+
+# unresolved
+- note: '"Get Map" feature missing from address book for physical addresses'
+  tag: unresolved
+  bugs: [1781076]
+- note: No dedicated "Department" field in address book
+  tag: unresolved
+  bugs: [1777780]
