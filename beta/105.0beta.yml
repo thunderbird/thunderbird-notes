@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-08-24'
+  release_date: '2022-08-1'
   text: |
-    **These notes apply to Thunderbird version 105 beta 1 released August 24, 2022.**
+    **These notes apply to Thunderbird version 105 beta 2 released August 1, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/105.0beta/system-requirements/)
 
@@ -10,6 +10,10 @@ release:
     - Linux: GTK+ 3.14 or higher
 
   import_system_requirements: 97.0beta
+
+  groups:
+    -
+    - "Fixed in beta 2"
 
 notes:
   - note: Option added to show containing address book for a contact when using `All Address Books` in vertical mode
@@ -108,3 +112,24 @@ notes:
     tag: fixed
     bugs: [1783927, 1784328, 1785134]
 
+    # Beta 2
+  - note: Null listener in IMAP compaction/expunge caused crash
+    tag: fixed
+    bugs: [1787650]
+    group: 2
+  - note: Password prompt did not include server hostname for POP servers
+    tag: fixed
+    bugs: [1786920]
+    group: 2
+  - note: Emails in Yahoo and AOL accounts were incorrectly classified as Junk
+    tag: fixed
+    bugs: [1782719]
+    group: 2
+  - note: NNTP client became stuck when connecting to Public-Inbox servers
+    tag: fixed
+    bugs: [1786203]
+    group: 2
+  - note: Unable to open context menu in newsgroups header for groups that are not subscribed
+    tag: fixed
+    bugs: [1783506]
+    group: 2
