@@ -113,10 +113,6 @@ notes:
     bugs: [1783927, 1784328, 1785134]
 
     # Beta 2
-  - note: Null listener in IMAP compaction/expunge caused crash
-    tag: fixed
-    bugs: [1787650]
-    group: 2
   - note: Password prompt did not include server hostname for POP servers
     tag: fixed
     bugs: [1786920]
