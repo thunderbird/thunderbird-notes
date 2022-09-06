@@ -1,0 +1,44 @@
+release:
+  release_date: '2022-09-07'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+    
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Changed
+- note: Setting added to change Calendar event double-click action to open `Edit Event`
+    dialog rather than view only; Set `calendar.events.defaultActionEdit` to `true`.
+  tag: changed
+  bugs: [1685007]
+  # Fixed
+- note: Running `Compact Folders` on maildir folders caused a redownload of all messages
+    in the folder
+  tag: fixed
+  bugs: [1683714]
+- note: Accessing mail folders in profiles with many folders was slow
+  tag: fixed
+  bugs: [1788901]
+- note: SMTP servers were not always properly initialized, and were not listed in `Account
+    Settings`
+  tag: fixed
+  bugs: [1773123]
+- note: APOP authentication unsupported when connecting to POP3 server
+  tag: fixed
+  bugs: [1787766]
+- note: OpenPGP key discovery failed
+  tag: fixed
+  bugs: [1786916]
+- note: POP accounts hosted by AOL were not able to authenticate using OAuth2
+  tag: fixed
+  bugs: [1782250]
+- note: Unable to open context menu in newsgroups header for groups that are not subscribed
+  tag: fixed
+  bugs: [1783506]
