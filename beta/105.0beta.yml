@@ -1,5 +1,5 @@
 release:
-  release_date: '2022-09-06'
+  release_date: '2022-09-07'
   text: |
     **These notes apply to Thunderbird version 105 beta 3 released September 6, 2022.**
 
@@ -31,7 +31,7 @@ notes:
   - note: POP C++ implementation removed
     tag: changed
     bugs: [1781721]
-  - note: Setting added to change Calendar event double-click action to oprn `Edit Event` dialog rather than view only;
+  - note: Setting added to change Calendar event double-click action to open `Edit Event` dialog rather than view only;
             Set `calendar.events.defaultActionEdit` to `true`.
     tag: changed
     bugs: [1685007]
@@ -132,11 +132,7 @@ notes:
     group: 2
 
     # Beta 3
-  - note: Exception occurred when forwarding an encrypted/signed message
-    tag: fixed
-    bugs: [1784536]
-    group: 3
-  - note: Error message shown for every line that fails to write when disk is full
+  - note: Error message was shown repeatedly when temporary disk space was full
     tag: fixed
     bugs: [1788580]
     group: 3
@@ -144,7 +140,7 @@ notes:
     tag: fixed
     bugs: [1787766]
     group: 3
-  - note: Off-by-one error prevented OpenPGP discovery from working
+  - note: OpenPGP key discovery failed
     tag: fixed
     bugs: [1786916]
     group: 3
