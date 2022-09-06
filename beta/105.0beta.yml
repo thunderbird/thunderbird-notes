@@ -148,11 +148,11 @@ notes:
     tag: fixed
     bugs: [1786916]
     group: 3
-  - note: OAUTH not returned in CAPA
+  - note: POP accounts hosted by AOL were not able to authenticate using OAuth2
     tag: fixed
     bugs: [1782250]
     group: 3
-  - note: Missing folder properties handled incorrectly
+  - note: Accessing mail folders in profiles with many folders was slow
     tag: fixed
     bugs: [1788901]
     group: 3
