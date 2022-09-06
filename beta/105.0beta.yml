@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-09-01'
+  release_date: '2022-09-06'
   text: |
-    **These notes apply to Thunderbird version 105 beta 2 released September 1, 2022.**
+    **These notes apply to Thunderbird version 105 beta 3 released September 6, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/105.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in beta 2"
+    - "Fixed in beta 3"
 
 notes:
   - note: Option added to show containing address book for a contact when using `All Address Books` in vertical mode
@@ -129,3 +130,37 @@ notes:
     tag: fixed
     bugs: [1783506]
     group: 2
+
+    # Beta 3
+  - note: Exception occurred when forwarding an encrypted/signed message
+    tag: fixed
+    bugs: [1784536]
+    group: 3
+  - note: Error message shown for every line that fails to write when disk is full
+    tag: fixed
+    bugs: [1788580]
+    group: 3
+  - note: APOP authentication unsupported when connecting to POP3 server
+    tag: fixed
+    bugs: [1787766]
+    group: 3
+  - note: Off-by-one error prevented OpenPGP discovery from working
+    tag: fixed
+    bugs: [1786916]
+    group: 3
+  - note: OAUTH not returned in CAPA
+    tag: fixed
+    bugs: [1782250]
+    group: 3
+  - note: Missing folder properties handled incorrectly
+    tag: fixed
+    bugs: [1788901]
+    group: 3
+  - note: Sending news articles containing lines starting with dot were sometimes clipped
+    tag: fixed
+    bugs: [1787955]
+    group: 3
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1782235, 1788725, 1787448]
+    group: 3
