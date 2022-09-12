@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-09-12'
+  release_date: '2022-09-13'
   text: |
-    **These notes apply to Thunderbird version 105 beta 4 released September 12, 2022.**
+    **These notes apply to Thunderbird version 105 beta 4 released September 13, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/105.0beta/system-requirements/)
 
@@ -163,17 +163,18 @@ notes:
     group: 3
 
     # Beta 4
+  - note: Task List and Today Pane sidebars will no longer load when not visible
+    tag: changed
+    bugs: [1788549]
+    group: 4
+
   - note: Connections to POP3 servers without UIDL support failed
     tag: fixed
     bugs: [1789314]
     group: 4
-  - note: Only fetching headers failed if server did not advertise TOP capability
+  - note: Pop accounts with "Fetch headers only" set downloaded complete messages if server did not advertise TOP capability
     tag: fixed
     bugs: [1789356]
-    group: 4
-  - note: VCards could only be attached to all messages or no messages
-    tag: fixed
-    bugs: [1787614]
     group: 4
   - note: Delete from POP Server mail filter rule intermittently failed to trigger
     tag: fixed
@@ -187,17 +188,17 @@ notes:
     tag: fixed
     bugs: [1787789]
     group: 4
-  - note: Address book search failed if one or more contacts was formatted in an unsupported way
+  - note: Address book search and autocomplete failed if a contact vCard could not be parsed
     tag: fixed
     bugs: [1789793]
+    group: 4
+  - note: Attach "My vCard" option was not available
+    tag: fixed
+    bugs: [1787614]
     group: 4
   - note: Improved performance of calendar date calculation
     tag: fixed
     bugs: [1787677]
-    group: 4
-  - note: Task list and Today Pane to-do list were loading even when not visible
-    tag: fixed
-    bugs: [1788549]
     group: 4
   - note: Quarterly calendar events on the last day of the month repeated one month early
     tag: fixed
