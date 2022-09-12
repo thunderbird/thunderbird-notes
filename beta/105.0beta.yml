@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-09-07'
+  release_date: '2022-09-12'
   text: |
-    **These notes apply to Thunderbird version 105 beta 3 released September 6, 2022.**
+    **These notes apply to Thunderbird version 105 beta 4 released September 12, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/105.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in beta 2"
     - "Fixed in beta 3"
+    - "Fixed in beta 4"
 
 notes:
   - note: Option added to show containing address book for a contact when using `All Address Books` in vertical mode
@@ -160,3 +161,45 @@ notes:
     tag: fixed
     bugs: [1782235, 1788725, 1787448]
     group: 3
+
+    # Beta 4
+  - note: Connections to POP3 servers without UIDL support failed
+    tag: fixed
+    bugs: [1789314]
+    group: 4
+  - note: Only fetching headers failed if server did not advertise TOP capability
+    tag: fixed
+    bugs: [1789356]
+    group: 4
+  - note: VCards could only be attached to all messages or no messages
+    tag: fixed
+    bugs: [1787614]
+    group: 4
+  - note: Delete from POP Server mail filter rule intermittently failed to trigger
+    tag: fixed
+    bugs: [1789418]
+    group: 4
+  - note: Attaching OpenPGP keys without a set size to non-encrypted messages briefly displayed a size of zero bytes
+    tag: fixed
+    bugs: [1788952]
+    group: 4
+  - note: Newsgroups named with consecutive dots would not appear when refreshing list of newsgroups
+    tag: fixed
+    bugs: [1787789]
+    group: 4
+  - note: Address book search failed if one or more contacts was formatted in an unsupported way
+    tag: fixed
+    bugs: [1789793]
+    group: 4
+  - note: Improved performance of calendar date calculation
+    tag: fixed
+    bugs: [1787677]
+    group: 4
+  - note: Task list and Today Pane to-do list were loading even when not visible
+    tag: fixed
+    bugs: [1788549]
+    group: 4
+  - note: Quarterly calendar events on the last day of the month repeated one month early
+    tag: fixed
+    bugs: [1789362]
+    group: 4
