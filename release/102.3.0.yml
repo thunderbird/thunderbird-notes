@@ -1,0 +1,71 @@
+release:
+  release_date: '2022-09-20'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Changed
+- note: Devtools performance profile will use Thunderbird presets instead of Web Developer
+    presets
+  tag: changed
+  bugs: [1785954]
+  # Fixed
+- note: Thunderbird startup performance improvements
+  tag: fixed
+  bugs: [1785967]
+- note: Saving email source and images failed
+  tag: fixed
+  bugs: [1777323, 1778804]
+- note: Error message was shown repeatedly when temporary disk space was full
+  tag: fixed
+  bugs: [1788580]
+- note: Attaching OpenPGP keys without a set size to non-encrypted messages briefly displayed
+    a size of zero bytes
+  tag: fixed
+  bugs: [1788952]
+- note: Global Search entry box initially contained "undefined"
+  tag: fixed
+  bugs: [1780963]
+- note: Delete from POP Server mail filter rule intermittently failed to trigger
+  tag: fixed
+  bugs: [1789418]
+- note: Connections to POP3 servers without UIDL support failed
+  tag: fixed
+  bugs: [1789314]
+- note: Pop accounts with "Fetch headers only" set downloaded complete messages if server
+    did not advertise TOP capability
+  tag: fixed
+  bugs: [1789356]
+- note: '"File -> New -> Address Book Contact" from Compose window did not work'
+  tag: fixed
+  bugs: [1782418]
+- note: Attach "My vCard" option in compose window was not available
+  tag: fixed
+  bugs: [1787614]
+- note: Improved performance of matching a contact to an email address
+  tag: fixed
+  bugs: [1782725]
+- note: Address book only recognized a contact's first two email addresses
+  tag: fixed
+  bugs: [1777156]
+- note: Address book search and autocomplete failed if a contact vCard could not be parsed
+  tag: fixed
+  bugs: [1789793]
+- note: Downloading NNTP messages for offline use failed
+  tag: fixed
+  bugs: [1785773]
+- note: NNTP client became stuck when connecting to Public-Inbox servers
+  tag: fixed
+  bugs: [1786203]
+- note: Various visual and UX improvements
+  tag: fixed
+  bugs: [1782235, 1787448, 1788725, 1790324]
