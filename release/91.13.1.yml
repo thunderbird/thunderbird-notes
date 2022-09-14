@@ -1,0 +1,22 @@
+release:
+  release_date: '2022-09-19'
+  text: |
+    <div style="color: #d70022; font-weight: bold">By popular demand, Thunderbird 91.13.1 contains
+    <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.13.1">
+    important security updates</a> that shipped in Thunderbird 102.2.1.
+    Users are encouraged to update as soon as possible.</div>
+    
+    **See [what's new](https://www.thunderbird.net/thunderbird/102.0/whatsnew/) in Thunderbird 102.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/91.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '91.0'
+
+notes:
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.13.1)
+    tag: fixed
+
