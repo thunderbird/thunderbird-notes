@@ -17,9 +17,8 @@ REQUIREMENTS_IMPORT = {"release": "102.0",
                        "beta": "97.0beta",
                        }
 
-TMPL_RELEASE_TEXT = """**Thunderbird version 102.0.2 is only offered as direct download from
-    thunderbird.net and not as an upgrade from Thunderbird version 91 or
-    earlier. A future release will provide updates from earlier versions.**
+TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 102, see
+[What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
 
 **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
 
