@@ -1,0 +1,107 @@
+release:
+  release_date: '2022-09-19'
+  text: |
+    **These notes apply to Thunderbird version 106 beta 1 released September 19, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+  groups:
+    -
+
+notes:
+    # New
+  - note: CSS styling in messages is now possible
+    tag: new
+    bugs: [1790725]
+  - note: Added a "Remove" button to remove contact fields while editing contacts
+    tag: new
+    bugs: [1774702]
+  - note: Improved startup speed by delaying loading of calendars
+    tag: new
+    bugs: [1783585]
+  - note: Various improvements to new App Menu
+    tag: new
+    bugs: [1786417, 1786422, 1786421, 1786420, 1786414, 1790175, 1790266, 1790636, 1790799, 1786176]
+  - note: Added Supernova icon set to multiple interfaces
+    tag: new
+    bugs: [1784525, 1786083, 1786434, 1786524, 1789728]
+
+    # Changed
+  - note: Consolidate timezone provider and service interfaces
+    tag: changed
+    bugs: [1786971]
+
+    # Fixed
+  - note: Emails received via SMS could not display images
+    tag: fixed
+    bugs: [1774805]
+  - note: Spell Check disappeared for text selections before a line break or new paragraph
+    tag: fixed
+    bugs: [1779846]
+  - note: FileLink attachment would fail if attachment filename contained Unicode characters
+    tag: fixed
+    bugs: [1789589]
+  - note: POP CRAM-MD5 encrypted password authentication would not work if server did not advertise support
+    tag: fixed
+    bugs: [1789975]
+  - note: Loss of messages would occur if messages were moved from POP/Local to IMAP while offline, followed by going online
+    tag: fixed
+    bugs: [1787963]
+  - note: Compose window encryption options now only appear for encryption technologies that have already been configured
+    tag: fixed
+    bugs: [1788988]
+  - note: POP3 error caused duplicate messages to repeatedly download
+    tag: fixed
+    bugs: [1789958]
+  - note: Temporarily disabled OpenPGP profile import to prevent data corruption
+    tag: fixed
+    bugs: [1790605]
+  - note: Nickname column would not display in horizontal view of Address Book
+    tag: fixed
+    bugs: [1778000]
+  - note: Chat account input now accepts any URI rather than only HTTPS URLs
+    tag: fixed
+    bugs: [1776706]
+  - note: CardDAV server sync would silently fail if sync token was expired
+    tag: fixed
+    bugs: [1791183]
+  - note: LDAP/macOS contacts now display correctly
+    tag: fixed
+    bugs: [1791347]
+  - note: Old chat fields would be lost when upgrading to Thunderbird 102.2.1 due to transition to IMPP
+    tag: fixed
+    bugs: [1789990]
+  - note: Thunderbird would hang if calendar event exceeded the year 2035
+    tag: fixed
+    bugs: [1789999]
+  - note: Creating a New Event from the Today Pane would use the currently selected day from the main calendar instead of from the Today Pane
+    tag: fixed
+    bugs: [1791203]
+  - note: Removed libical
+    tag: fixed
+    bugs: [1787097, 1788828]
+  - note: Thunderbird text branding did not always match locale of localized build
+    tag: fixed
+    bugs: [1786199]
+  - note: Thunderbird installer and Thunderbird updater would create  Windows desktop shortcuts with different names
+    tag: fixed
+    bugs: [1787264]
+  - note: Extension "Options" button now disabled rather than hidden when an extension is disabled or has no options
+    tag: fixed
+    bugs: [1776181]
+  - note: Tabbing now works again in the App Menu
+    tag: fixed
+    bugs: [1787252]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1785851, 1783903, 1787960, 1788151, 1755623, 1789161, 1787286, 1699207, 1790324, 1790712, 1774081, 1790499]
+
+
+
+
