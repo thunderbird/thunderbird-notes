@@ -73,3 +73,12 @@ notes:
 - note: Various visual and UX improvements
   tag: fixed
   bugs: [1782235, 1787448, 1788725, 1790324]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.3)
+  tag: fixed
+
+
+# unresolved
+- note: No dedicated "Department" field in address book
+  tag: unresolved
+  bugs: [1777780]
