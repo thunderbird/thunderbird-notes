@@ -101,22 +101,22 @@ notes:
     1790712, 1774081, 1790499, 1784525, 1786083, 1786434, 1786524, 1789728]
 
     # Beta 2
-  - note: Printing address book did not include all contact details of contacts modified after upgrading to Thunderbird 102
-    tag: fixed
-    bugs: [1782076]
-    group: 2
-  - note: Fixed calendar event corruption when upgrading from Thunderbird 91 to 102
-    tag: fixed
-    bugs: [1790339]
-    group: 2
-  - note: Reminder window did not disappear after reminders were dismissed or snoozed
-    tag: fixed
-    bugs: [1791228]
-    group: 2
-  - note: Menu items for dark-themed alarm dialog were invisible on Windows 7
-    tag: fixed
-    bugs: [1791738]
-    group: 2
+- note: Printing address book did not include all contact details of contacts modified after upgrading to Thunderbird 102
+  tag: fixed
+  bugs: [1782076]
+  group: 2
+- note: Fixed calendar event corruption when upgrading from Thunderbird 91 to 102
+  tag: fixed
+  bugs: [1790339]
+  group: 2
+- note: Reminder window did not disappear after reminders were dismissed or snoozed
+  tag: fixed
+  bugs: [1791228]
+  group: 2
+- note: Menu items for dark-themed alarm dialog were invisible on Windows 7
+  tag: fixed
+  bugs: [1791738]
+  group: 2
 
 
 
