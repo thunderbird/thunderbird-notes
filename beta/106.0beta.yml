@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-09-21'
+  release_date: '2022-09-26'
   text: |
-    **These notes apply to Thunderbird version 106 beta 1 released September 21, 2022.**
+    **These notes apply to Thunderbird version 106 beta 2 released September 26, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
   - 
+  - "Fixed in beta 2"
 
 notes:
     # New
@@ -98,6 +99,20 @@ notes:
   tag: fixed
   bugs: [1785851, 1783903, 1787960, 1788151, 1755623, 1789161, 1787286, 1699207, 1790324,
     1790712, 1774081, 1790499, 1784525, 1786083, 1786434, 1786524, 1789728]
+
+    # Beta 2
+  - note: Printing address book did not include all contact details of contacts modified after upgrading to Thunderbird 102
+    tag: fixed
+    bugs: [1782076]
+  - note: Fixed calendar event corruption when upgrading from Thunderbird 91 to 102
+    tag: fixed
+    bugs: [1790339]
+  - note: Reminder window did not disappear after reminders were dismissed or snoozed
+    tag: fixed
+    bugs: [1791228]
+  - note: Menu items for dark-themed alarm dialog were invisible on Windows 7
+    tag: fixed
+    bugs: [1791738]
 
 
 
