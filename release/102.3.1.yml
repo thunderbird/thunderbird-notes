@@ -1,0 +1,40 @@
+release:
+  release_date: '2022-09-28'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Changed
+- note: Compose window encryption options now only appear for encryption technologies that
+    have already been configured
+  tag: changed
+  bugs: [1788988]
+- note: Number of contacts in currently selected address book now displayed at bottom of Address Book list column
+  tag: changed
+  bugs: [1745571]
+  # Fixed
+- note: Password prompt did not include server hostname for POP servers
+  tag: fixed
+  bugs: [1786920]
+- note: '`Edit Contact` was missing from Contacts sidebar context menus'
+  tag: fixed
+  bugs: [1771795]
+- note: Address Book contact lists cut off display of some characters, the result being
+    unreadable
+  tag: fixed
+  bugs: [1780909]
+- note: Menu items for dark-themed alarm dialog were invisible on Windows 7
+  tag: fixed
+  bugs: [1791738]
+
+- note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.3.1)
+  tag: fixed
