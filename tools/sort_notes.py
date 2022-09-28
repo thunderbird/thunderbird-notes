@@ -4,16 +4,11 @@ import sys
 import os
 
 from pathlib import Path
-from ruamel.yaml import YAML
-from ruamel.yaml.comments import CommentedSeq as CS
+
 import requests
 
-
-yaml = YAML(typ="rt")
-yaml.default_flow_style = False
-yaml.unicode_supplementary = False
-yaml.preserve_quotes = True
-yaml.width = 85
+from tools_lib import yaml
+from ruamel.yaml.comments import CommentedSeq as CS
 
 
 here = os.path.dirname(__file__)

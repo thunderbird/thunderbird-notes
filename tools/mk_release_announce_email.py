@@ -36,9 +36,11 @@ import shutil
 from urllib.request import urlopen
 from collections import namedtuple
 
-import yaml
+from tools_lib import yaml
+
 import markupsafe
 import markdown
+
 
 GECKO_REV_URL = "https://hg.mozilla.org/releases/{repo}/raw-file/tip/.gecko_rev.yml"
 MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/{repo}/json-tags"

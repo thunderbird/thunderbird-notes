@@ -8,18 +8,12 @@ import os
 import sys
 import tempfile
 
-from ruamel.yaml import YAML
+from tools_lib import yaml
 
 parser = argparse.ArgumentParser()
 parser.add_argument('file', help='file to parse', nargs='*')
 parser.add_argument('-w', '--write', help='overwrite file with formatted output', action='store_true')
 args = parser.parse_args()
-
-yaml = YAML(typ="rt")
-yaml.default_flow_style = False
-yaml.unicode_supplementary = False
-yaml.preserve_quotes = True
-yaml.width = 85
 
 
 def round_trip(sout, sin):

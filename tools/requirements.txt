@@ -2,3 +2,5 @@
 ruamel.yaml>=0.16.12
 packaging>=21.0
 requests>=2.27.1
+markupsafe
+markdown

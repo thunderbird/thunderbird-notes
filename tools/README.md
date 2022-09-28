@@ -70,6 +70,18 @@ notes are sorted based on weight.
 
 Output is written to "sorted.yml".
 
+### yamlfmt.py
+
+**Usage:** `./tools/yamlfmt.py <yaml_file> [-w]`
+
+**Example:** `./tools/yamlfmt.py release/102.0.yml [-w]`
+
+Formats a YAML file consistently enough that yamllint should not complain
+too much.
+
+The optional `-w` argument will write the output back to the same file. Omit
+it to write to stdout.
+
 ## Obsolete Scripts
 
 ### bug_fixer.py
@@ -77,5 +89,3 @@ This script was used to convert bug number fields from "bug, bug2, bug3"
 to the "bugs" field that's now in use. There's no reason to run it ever
 again and is kept for historical reference. 
 
-### gather_notes.py
-`gather_notes.py` is the predecessor to `mk_esr_notes.py`. Don't use it.

@@ -7,16 +7,9 @@ import os
 
 from pathlib import Path
 from packaging.version import Version
-from ruamel.yaml import YAML
+
+from tools_lib import yaml, notes_template
 from ruamel.yaml.comments import CommentedSeq as CS
-
-from tools_lib import notes_template
-
-yaml = YAML(typ="rt")
-yaml.default_flow_style = False
-yaml.unicode_supplementary = False
-yaml.preserve_quotes = True
-yaml.width = 85
 
 here = os.path.dirname(__file__)
 beta_dir = Path(os.path.join(here, "..", "beta"))
