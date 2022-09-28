@@ -69,7 +69,7 @@ ReleaseRevs = namedtuple("ReleaseRevs", ["comm_rev", "gecko_ref", "gecko_rev"])
 def get_revs(c_repo):
     with urlopen(GECKO_REV_URL.format(repo=c_repo)) as response:
         data = response.read()
-        gecko_rev_data = yaml.safe_load(data)
+        gecko_rev_data = yaml.load(data)
         gecko_ref = gecko_rev_data["GECKO_HEAD_REF"]
         gecko_rev = gecko_rev_data["GECKO_HEAD_REV"]
 
