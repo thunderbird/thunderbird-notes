@@ -121,7 +121,7 @@ notes:
     group: 2
 
   # beta 3
-  - note: '`Quit` was removed from AppMenu'
-    tag: fixed
+  - note: '`Quit` menu item restored to AppMenu (was not present in 106.0beta1, 106.0beta2)'
+    tag: changed
     bugs: [1792239]
     group: 3
