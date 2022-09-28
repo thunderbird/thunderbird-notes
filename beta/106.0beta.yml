@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-09-27'
+  release_date: '2022-09-21'
   text: |
-    **These notes apply to Thunderbird version 106 beta 2 released September 27, 2022.**
+    **These notes apply to Thunderbird version 106 beta 3 released September 28, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
 
@@ -12,112 +12,116 @@ release:
   import_system_requirements: 97.0beta
 
   groups:
-  - 
-  - "Fixed in beta 2"
+    - 
+    - "Fixed in beta 2"
+    - "Fixed in beta 3"
 
 notes:
-    # New
-- note: Using CSS styles in composer enabled; set editor.use_css to true
-  tag: new
-  bugs: [1790725]
-- note: Added "Remove" button to remove contact fields
-  tag: new
-  bugs: [1774702]
+  # New
+  - note: Using CSS styles in composer enabled; set `editor.use_css` to true
+    tag: new
+    bugs: [1790725]
+  - note: Added "Remove" button to remove contact fields
+    tag: new
+    bugs: [1774702]
 
-    # Changed
-- note: Thunderbird will no longer attempt to import account passwords when importing from
-    another Thunderbird profile in order to prevent profile corruption and permanent data
-    loss
-  tag: changed
-  bugs: [1790605]
-- note: Compose window encryption options now only appear for encryption technologies that
-    have already been configured
-  tag: changed
-  bugs: [1788988]
-- note: Extension "Options" button now disabled rather than hidden when an extension is
-    disabled or has no options
-  tag: changed
-  bugs: [1776181]
-- note: Thunderbird will try to use POP CRAM-MD5 authentication even if not advertised
-    by server
-  tag: changed
-  bugs: [1789975]
+  # Changed
+  - note: Thunderbird will no longer attempt to import account passwords when importing
+      from another Thunderbird profile in order to prevent profile corruption and permanent
+      data loss
+    tag: changed
+    bugs: [1790605]
+  - note: Compose window encryption options now only appear for encryption technologies
+      that have already been configured
+    tag: changed
+    bugs: [1788988]
+  - note: Extension "Options" button now disabled rather than hidden when an extension
+      is disabled or has no options
+    tag: changed
+    bugs: [1776181]
+  - note: Thunderbird will try to use POP CRAM-MD5 authentication even if not advertised
+      by server
+    tag: changed
+    bugs: [1789975]
 
-    # Fixed
-- note: Emails received via SMS could not display images
-  tag: fixed
-  bugs: [1774805]
-- note: Spell Check dialog did not open when selected text included a line break or new
-    paragraph
-  tag: fixed
-  bugs: [1779846]
-- note: Links for FileLink attachments were not added when attachment filename contained
-    Unicode characters
-  tag: fixed
-  bugs: [1789589]
-- note: Loss of messages would occur if messages were moved from POP/Local to IMAP while
-    offline, followed by going online
-  tag: fixed
-  bugs: [1787963]
-- note: Thunderbird text branding did not always match locale of localized build
-  tag: fixed
-  bugs: [1786199]
-- note: Thunderbird installer and Thunderbird updater created Windows shortcuts with different
-    names
-  tag: fixed
-  bugs: [1787264]
-- note: Nickname column was not available in horizontal view of Address Book
-  tag: fixed
-  bugs: [1778000]
-- note: Chat account input now accepts URIs for supported chat protocols
-  tag: fixed
-  bugs: [1776706]
-- note: CardDAV server sync silently failed if sync token expired
-  tag: fixed
-  bugs: [1791183]
-- note: Contacts from LDAP or macOS address books were not displayed
-  tag: fixed
-  bugs: [1791347]
-- note: ScreenName field was not migrated to new address book
-  tag: fixed
-  bugs: [1789990]
-- note: Thunderbird would hang if calendar event exceeded the year 2035
-  tag: fixed
-  bugs: [1789999]
-- note: Creating a New Event from the Today Pane used the currently selected day from the
-    main calendar instead of from the Today Pane
-  tag: fixed
-  bugs: [1791203]
-- note: Startup performance improvements
-  tag: fixed
-  bugs: [1783585]
-- note: Various App Menu improvements
-  tag: fixed
-  bugs: [1786417, 1786422, 1786421, 1786420, 1786414, 1790175, 1790266, 1790636, 1790799,
-    1786176, 1787252]
-- note: Various visual and UX improvements
-  tag: fixed
-  bugs: [1785851, 1783903, 1787960, 1788151, 1755623, 1789161, 1787286, 1699207, 1790324,
-    1790712, 1774081, 1790499, 1784525, 1786083, 1786434, 1786524, 1789728]
+  # Fixed
+  - note: Emails received via SMS could not display images
+    tag: fixed
+    bugs: [1774805]
+  - note: Spell Check dialog did not open when selected text included a line break or new
+      paragraph
+    tag: fixed
+    bugs: [1779846]
+  - note: Links for FileLink attachments were not added when attachment filename contained
+      Unicode characters
+    tag: fixed
+    bugs: [1789589]
+  - note: Loss of messages would occur if messages were moved from POP/Local to IMAP while
+      offline, followed by going online
+    tag: fixed
+    bugs: [1787963]
+  - note: Thunderbird text branding did not always match locale of localized build
+    tag: fixed
+    bugs: [1786199]
+  - note: Thunderbird installer and Thunderbird updater created Windows shortcuts with
+      different names
+    tag: fixed
+    bugs: [1787264]
+  - note: Nickname column was not available in horizontal view of Address Book
+    tag: fixed
+    bugs: [1778000]
+  - note: Chat account input now accepts URIs for supported chat protocols
+    tag: fixed
+    bugs: [1776706]
+  - note: CardDAV server sync silently failed if sync token expired
+    tag: fixed
+    bugs: [1791183]
+  - note: Contacts from LDAP or macOS address books were not displayed
+    tag: fixed
+    bugs: [1791347]
+  - note: ScreenName field was not migrated to new address book
+    tag: fixed
+    bugs: [1789990]
+  - note: Thunderbird would hang if calendar event exceeded the year 2035
+    tag: fixed
+    bugs: [1789999]
+  - note: Creating a New Event from the Today Pane used the currently selected day from
+      the main calendar instead of from the Today Pane
+    tag: fixed
+    bugs: [1791203]
+  - note: Startup performance improvements
+    tag: fixed
+    bugs: [1783585]
+  - note: Various App Menu improvements
+    tag: fixed
+    bugs: [1786417, 1786422, 1786421, 1786420, 1786414, 1790175, 1790266, 1790636, 1790799,
+      1786176, 1787252]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1785851, 1783903, 1787960, 1788151, 1755623, 1789161, 1787286, 1699207, 1790324,
+      1790712, 1774081, 1790499, 1784525, 1786083, 1786434, 1786524, 1789728]
 
-    # Beta 2
-- note: Printing address book did not include all contact details
-  tag: fixed
-  bugs: [1782076]
-  group: 2
-- note: Calendar event corruption sometimes occurred when upgrading from Thunderbird 91 to 102
-  tag: fixed
-  bugs: [1790339]
-  group: 2
-- note: Event reminder windows did not close after being dismissed or snoozed
-  tag: fixed
-  bugs: [1791228]
-  group: 2
-- note: Menu items for dark-themed alarm dialog were invisible on Windows 7
-  tag: fixed
-  bugs: [1791738]
-  group: 2
+  # Beta 2
+  - note: Printing address book did not include all contact details
+    tag: fixed
+    bugs: [1782076]
+    group: 2
+  - note: Calendar event corruption sometimes occurred when upgrading from Thunderbird
+      91 to 102
+    tag: fixed
+    bugs: [1790339]
+    group: 2
+  - note: Event reminder windows did not close after being dismissed or snoozed
+    tag: fixed
+    bugs: [1791228]
+    group: 2
+  - note: Menu items for dark-themed alarm dialog were invisible on Windows 7
+    tag: fixed
+    bugs: [1791738]
+    group: 2
 
-
-
-
+  # beta 3
+  - note: '`Quit` was removed from AppMenu'
+    tag: fixed
+    bugs: [1792239]
+    group: 3
