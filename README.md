@@ -48,7 +48,7 @@ release:
 * `import_system_requirements`: Version string to import system requirements from, to avoid copy pasting sysreqs for minor versions.
 * `groups`: This can be used to add subheadings to the Known Issues list. Groups are numbered starting from 1, to n. Usually the first group is unlabeled.
 
-**Important: To ensure the YAML loader imports version numbers as strings, they should always be quoted like `"52.0"`.
+**Important: To ensure the YAML loader imports version numbers as strings, they should always be quoted like `"52.0"`.**
 
 ## Notes List
 
@@ -83,6 +83,21 @@ Each string variable in the YAML file can be defined with quotes, without quotes
 * `>` operator: All following single-indented lines are part of the text, but **single newlines are replaced by a space, and blank lines are converted to a newline character**. More than one level of indentation is preserved.
 * `|` operator: All following single-indented lines are part of the text, but **all white space is preserved**.
 * Control Characters: :, {, }, [, ], ,, &, *, #, ?, |, -, <, >, =, !, %, @, `
+
+# Consistency in YAML formatting
+
+See [Tools README](tools/README.md) for descriptions of `sort_notes.py` and `yamlfmt.py`.
+
+`sort_notes.py` will sort notes (sort of) by Bugzilla component into the desired order. Note
+you still need to double check the order.
+
+`yamlfmt.py` formats a YAML file and should be run so styles are consistent.
+
+Also, see .githoooks/pre-commit.sh for setting up a pre-commit hook to verify that
+changed YAML files validate with yamllint. (yamllint binary must be in your $PATH.)
+
+Future work in this area will likely involve auto-running `yamlfmt.py` and verifying
+that YAML files load in the previewer.
 
 # Getting notes on the website
 

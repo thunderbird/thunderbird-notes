@@ -3,7 +3,7 @@
 # A git commit hook to validate the YAML files when committing and
 # will fail the commit if it doesn't parse correctly.
 #
-# To enable this hook, run `ls -s ../../.githooks/pre-commit.sh .git/hooks/pre-commit`.
+# To enable this hook, run `ln -s ../../.githooks/pre-commit.sh .git/hooks/pre-commit`.
 
 # Redirect output to stderr.
 exec 1>&2

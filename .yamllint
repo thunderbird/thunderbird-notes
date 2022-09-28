@@ -3,12 +3,15 @@
 extends: default
 
 rules:
+  document-start: disable
   commas:
     level: warning
   empty-lines: disable
   indentation:
     level: warning
+    check-multi-line-strings: false
   line-length:
+    max: 95
     level: warning
   trailing-spaces:
     level: warning
