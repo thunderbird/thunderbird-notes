@@ -1,7 +1,7 @@
 release:
-  release_date: '2022-09-21'
+  release_date: '2022-10-03'
   text: |
-    **These notes apply to Thunderbird version 106 beta 3 released September 28, 2022.**
+    **These notes apply to Thunderbird version 106 beta 4 released October 3, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - 
     - "Fixed in beta 2"
     - "Fixed in beta 3"
+    - "Fixed in beta 4"
 
 notes:
   # New
@@ -120,8 +121,49 @@ notes:
     bugs: [1791738]
     group: 2
 
-  # beta 3
+  # Beta 3
   - note: '`Quit` menu item restored to AppMenu (was not present in 106.0beta1, 106.0beta2)'
     tag: changed
     bugs: [1792239]
     group: 3
+
+  # Beta 4
+  - note: Thunderbird now detects and repairs OpenPGP key storage corruption caused by Thunderbird 102 key import
+    tag: fixed
+    bugs: [1790610]
+    group: 4
+
+  - note: Checking messages on POP3 accounts caused Thunderbird to hang if the mail server was slow or non-responsive
+    tag: fixed
+    bugs: [1792451]
+    group: 4
+
+  - note: Receiving messages from large POP3 folders (around 13,000 messages) caused Thunderbird to temporarily freeze
+    tag: fixed
+    bugs: [1792675]
+    group: 4
+
+  - note: Multiline organization values were displayed across two columns in horizontal view of Address Book
+    tag: fixed
+    bugs: [1777780]
+    group: 4
+
+  - note: '`CATEGORIES` field of vCards were truncated'
+    tag: fixed
+    bugs: [1792399]
+    group: 4
+
+  - note: New CardDAV address books failed to upload to Google servers
+    tag: fixed
+    bugs: [1792058]
+    group: 4
+
+  - note: Incorrectly handled error responses from CalDAV servers sometimes caused events to disappear from calendar
+    tag: fixed
+    bugs: [1792923]
+    group: 4
+
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1792506, 1792876]
+    group: 4
