@@ -107,7 +107,7 @@ notes:
     tag: fixed
     bugs: [1782076]
     group: 2
-  - note: Calendar event corruption sometimes occurred when upgrading from Thunderbird
+  - note: Whitespace in calendar events was incorrectly handled when upgrading from Thunderbird
       91 to 102
     tag: fixed
     bugs: [1790339]
