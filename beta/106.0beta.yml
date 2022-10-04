@@ -1,5 +1,5 @@
 release:
-  release_date: '2022-10-03'
+  release_date: '2022-09-21'
   text: |
     **These notes apply to Thunderbird version 106 beta 4 released October 3, 2022.**
 
@@ -128,9 +128,14 @@ notes:
     group: 3
 
   # Beta 4
-  - note: Thunderbird now detects and repairs OpenPGP key storage corruption caused by Thunderbird 102 key import
-    tag: fixed
+  - note: Thunderbird will automatically detect and repair OpenPGP key storage corruption caused by using the profile import tool in Thunderbird 102
+    tag: changed
     bugs: [1790610]
+    group: 4
+
+  - note: An empty dialog message was displayed when sending an OpenPGP signed email with a key that could not be found
+    tag: fixed
+    bugs: [1792691]
     group: 4
 
   - note: Checking messages on POP3 accounts caused Thunderbird to hang if the mail server was slow or non-responsive
@@ -148,14 +153,19 @@ notes:
     bugs: [1777780]
     group: 4
 
-  - note: '`CATEGORIES` field of vCards were truncated'
+  - note: Contact vCard fields with multiple values such as Categories were truncated when saved
     tag: fixed
     bugs: [1792399]
     group: 4
 
-  - note: New CardDAV address books failed to upload to Google servers
+  - note: '`New Event` button in Today Pane was incorrectly disabled sometimes'
     tag: fixed
     bugs: [1792058]
+    group: 4
+
+  - note: CardDAV contacts without a Name property did not save to Google Contacts
+    tag: fixed
+    bugs: [1792101]
     group: 4
 
   - note: Incorrectly handled error responses from CalDAV servers sometimes caused events to disappear from calendar
