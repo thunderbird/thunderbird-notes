@@ -138,12 +138,12 @@ notes:
     bugs: [1792691]
     group: 4
 
-  - note: Checking messages on POP3 accounts caused Thunderbird to hang if the mail server was slow or non-responsive
+  - note: Checking messages on POP3 accounts caused POP folder to lock if mail server was slow or non-responsive
     tag: fixed
     bugs: [1792451]
     group: 4
 
-  - note: Receiving messages from large POP3 folders (around 13,000 messages) caused Thunderbird to temporarily freeze
+  - note: POP message download into a large folder (~13000 messages) caused Thunderbird to temporarily freeze
     tag: fixed
     bugs: [1792675]
     group: 4
