@@ -196,7 +196,7 @@ notes:
     tag: fixed
     bugs: [1787614]
     group: 4
-  - note: Improved performance of calendar date calculation
+  - note: Improved performance of recurring event date calculation
     tag: fixed
     bugs: [1787677]
     group: 4

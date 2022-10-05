@@ -77,10 +77,10 @@ notes:
   - note: CardDAV server sync silently failed if sync token expired
     tag: fixed
     bugs: [1791183]
-  - note: Contacts from LDAP or macOS address books were not displayed
+  - note: Contacts from LDAP on macOS address books were not displayed
     tag: fixed
     bugs: [1791347]
-  - note: ScreenName field was not migrated to new address book
+  - note: Chat ScreenName field was not migrated to new address book
     tag: fixed
     bugs: [1789990]
   - note: Thunderbird would hang if calendar event exceeded the year 2035
