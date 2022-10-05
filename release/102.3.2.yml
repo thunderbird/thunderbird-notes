@@ -1,0 +1,70 @@
+release:
+  release_date: '2022-10-07'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Changed
+  - note: Thunderbird will try to use POP CRAM-MD5 authentication even if not advertised
+      by server
+    tag: changed
+    bugs: [1789975]
+  # Fixed
+  - note: Checking messages on POP3 accounts caused POP folder to lock if mail server was
+      slow or non-responsive
+    tag: fixed
+    bugs: [1792451]
+  - note: Newsgroups named with consecutive dots would not appear when refreshing list
+      of newsgroups
+    tag: fixed
+    bugs: [1787789]
+  - note: Sending news articles containing lines starting with dot were sometimes clipped
+    tag: fixed
+    bugs: [1787955]
+  - note: CardDAV server sync silently failed if sync token expired
+    tag: fixed
+    bugs: [1791183]
+  - note: Contacts from LDAP on macOS address books were not displayed
+    tag: fixed
+    bugs: [1791347]
+  - note: Chat account input now accepts URIs for supported chat protocols
+    tag: fixed
+    bugs: [1776706]
+  - note: Chat ScreenName field was not migrated to new address book
+    tag: fixed
+    bugs: [1789990]
+  - note: Creating a New Event from the Today Pane used the currently selected day from
+      the main calendar instead of from the Today Pane
+    tag: fixed
+    bugs: [1791203]
+  - note: '`New Event` button in Today Pane was incorrectly disabled sometimes'
+    tag: fixed
+    bugs: [1792058]
+  - note: Event reminder windows did not close after being dismissed or snoozed
+    tag: fixed
+    bugs: [1791228]
+  - note: Improved performance of recurring event date calculation
+    tag: fixed
+    bugs: [1787677]
+  - note: Quarterly calendar events on the last day of the month repeated one month early
+    tag: fixed
+    bugs: [1789362]
+  - note: Thunderbird would hang if calendar event exceeded the year 2035
+    tag: fixed
+    bugs: [1789999]
+  - note: Whitespace in calendar events was incorrectly handled when upgrading from Thunderbird
+      91 to 102
+    tag: fixed
+    bugs: [1790339]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1755623, 1783903, 1785851, 1786434, 1787286, 1788151, 1789728, 1790499]
