@@ -1,7 +1,7 @@
 release:
   release_date: '2022-09-21'
   text: |
-    **These notes apply to Thunderbird version 106 beta 4 released October 3, 2022.**
+    **These notes apply to Thunderbird version 106 beta 5 released October 10, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - "Fixed in beta 2"
     - "Fixed in beta 3"
     - "Fixed in beta 4"
+    - "Fixed in beta 5"
 
 notes:
   # New
@@ -177,3 +178,14 @@ notes:
     tag: fixed
     bugs: [1792506, 1792876]
     group: 4
+
+  # Beta 5
+  - note: Thunderbird will try to use POP NTLM authentication even if not advertised by server
+    tag: changed
+    bugs: [1793349]
+    group: 5
+
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1792872, 1793543, 1793466]
+    group: 5
