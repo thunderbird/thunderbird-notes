@@ -148,8 +148,8 @@ def sort_notes(orig_yaml_file):
 
     doc["notes"] = notes_seq
 
-    print("Writing sorted notes file to sorted.yml.")
-    with open("sorted.yml", "w") as fp:
+    print(f"Writing sorted notes file to {orig_yaml_file}.")
+    with open(orig_yaml_file, "w") as fp:
         yaml.dump(doc, fp)
 
 

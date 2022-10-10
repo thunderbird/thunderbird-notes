@@ -68,7 +68,7 @@ Bugzilla for the Product and Categories. Product and Category are combined
 and a weight is assigned. Then for each note tag (new, changed, fixed), the
 notes are sorted based on weight.
 
-Output is written to "sorted.yml".
+Output is written to the original input file.
 
 ### yamlfmt.py
 
