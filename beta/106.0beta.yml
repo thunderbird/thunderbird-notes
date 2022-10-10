@@ -149,7 +149,7 @@ notes:
     bugs: [1792675]
     group: 4
 
-  - note: Multiline organization values were displayed across two columns in horizontal view of Address Book
+  - note: Multiline organization values were displayed across two columns in horizontal view of Address Book - see notes for beta 5 below
     tag: fixed
     bugs: [1777780]
     group: 4
@@ -183,6 +183,11 @@ notes:
   - note: Thunderbird will try to use POP NTLM authentication even if not advertised by server
     tag: changed
     bugs: [1793349]
+    group: 5
+
+  - note: Patch incorrectly applied in beta 4 and fixed in beta 5
+    tag: fixed
+    bugs: [1777780]
     group: 5
 
   - note: Various visual and UX improvements
