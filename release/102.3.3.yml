@@ -1,0 +1,49 @@
+release:
+  release_date: '2022-10-12'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+  - note: Option added to show containing address book for a contact when using `All Address
+      Books` in vertical mode
+    tag: new
+    bugs: [1778871]
+  # Changed
+  - note: Thunderbird will try to use POP NTLM authentication even if not advertised by
+      server
+    tag: changed
+    bugs: [1793349]
+  - note: Task List and Today Pane sidebars will no longer load when not visible
+    tag: changed
+    bugs: [1788549]
+  # Fixed
+  - note: Sending a message while a recipient pill was being modified did not save changes
+    tag: fixed
+    bugs: [1779785]
+  - note: Nickname column was not available in horizontal view of Address Book
+    tag: fixed
+    bugs: [1778000]
+  - note: Multiline organization values were displayed across two columns in horizontal
+      view of Address Book
+    tag: fixed
+    bugs: [1777780]
+  - note: Contact vCard fields with multiple values such as Categories were truncated when
+      saved
+    tag: fixed
+    bugs: [1792399]
+  - note: ICS calendar files with a `FREEBUSY` property could not be imported
+    tag: fixed
+    bugs: [1783441]
+  - note: Thunderbird would hang if calendar event exceeded the year 2035
+    tag: fixed
+    bugs: [1789999]
