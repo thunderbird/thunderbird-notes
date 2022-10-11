@@ -185,7 +185,7 @@ notes:
     bugs: [1793349]
     group: 5
 
-  - note: Patch incorrectly applied in beta 4 and fixed in beta 5
+  - note: Fix for bug 1777780 (multiline organization values in horizontal address book view) in beta 4 was incomplete
     tag: fixed
     bugs: [1777780]
     group: 5
