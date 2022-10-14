@@ -198,9 +198,9 @@ def get_buglist(previous_esr):
     unique_bugs, unique_backout_bugs = get_bugs_in_changeset(data)
 
     print("Fixed bugs:")
-    print(" ".join([str(bug) for bug in unique_bugs]))
+    print(" ".join([str(bug) for bug in sorted(unique_bugs)]))
     print("Backout bugs:")
-    print(" ".join([str(bug) for bug in unique_backout_bugs]))
+    print(" ".join([str(bug) for bug in sorted(unique_backout_bugs)]))
     return unique_bugs, unique_backout_bugs
 
 

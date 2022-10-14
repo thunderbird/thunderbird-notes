@@ -1,0 +1,58 @@
+release:
+  release_date: '2022-10-18'
+  text: |
+    <div style="color: magenta;"><strong>Google Calendar Update:</strong><br>
+    Google <i>still</i> has not changed the rate limit. We have received no information
+    from them aside from an apology from their obviously powerless support staff.
+    </div>
+    
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  - note: Thunderbird will automatically detect and repair OpenPGP key storage corruption
+      caused by using the profile import tool in Thunderbird 102
+    tag: changed
+    bugs: [1790610]
+  # Fixed
+  - note: POP message download into a large folder (~13000 messages) caused Thunderbird
+      to temporarily freeze
+    tag: fixed
+    bugs: [1792675]
+  - note: Forwarding messages with special characters in Subject failed on Windows
+    tag: fixed
+    bugs: [1782173]
+  - note: Links for FileLink attachments were not added when attachment filename contained
+      Unicode characters
+    tag: fixed
+    bugs: [1789589]
+  - note: Address Book display pane continued to show contacts after deletion
+    tag: fixed
+    bugs: [1777808]
+  - note: Printing address book did not include all contact details
+    tag: fixed
+    bugs: [1782076]
+  - note: CardDAV contacts without a Name property did not save to Google Contacts
+    tag: fixed
+    bugs: [1792101]
+  - note: '"Publish Calendar" did not work'
+    tag: fixed
+    bugs: [1794471]
+  - note: Calendar database storage improvements
+    tag: fixed
+    bugs: [1792124]
+  - note: Incorrectly handled error responses from CalDAV servers sometimes caused events
+      to disappear from calendar
+    tag: fixed
+    bugs: [1792923]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1776093, 1780040, 1780425, 1792876, 1792872, 1793466, 1793543]
