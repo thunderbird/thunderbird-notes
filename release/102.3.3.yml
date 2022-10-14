@@ -1,6 +1,6 @@
 release:
   release_date: '2022-10-12'
-  text: >
+  text: |
     <div style="color: magenta;"><strong>Google Calendar Update:</strong><br>
     Google <i>still</i> has not changed the rate limit. We have received no information
     from them aside from an apology from their obviously powerless support staff.
