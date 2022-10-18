@@ -1,0 +1,130 @@
+release:
+  release_date: '2022-10-18'
+  text: |
+    **These notes apply to Thunderbird version 107 beta 1 released October 18, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+  groups:
+    - 
+
+notes:
+  # New
+  - note: Enterprise policies now support Thunderbird-specific preferences
+    tag: new
+    bugs: [1791637]
+  - note: Thunderbird will now catch and report errors parsing vCards that contain incorrectly
+      formatted dates
+    tag: new
+    bugs: [1793415]
+
+  # Changed
+  - note: Updated OpenPGP RNP library to 0.16.2
+    tag: changed
+    bugs: [1790116, 1791195]
+  - note: Disabled dot-stuffing for POP3 servers that do not dot-stuff
+    tag: changed
+    bugs: [196584]
+  - note: Converted chat modules to ES modules
+    tag: changed
+    bugs: [1793275]
+  - note: Updated timezones to 2022d
+    tag: changed
+    bugs: [1792287]
+
+  # Fixed
+  - note: Dynamic language switching did not update interface when switched to right-to-left
+      languages
+    tag: fixed
+    bugs: [1794289]
+  - note: Non-thunderbird.net web pages linked from Release Notes page displayed as blank
+    tag: fixed
+    bugs: [1794180]
+  - note: Forwarding message with special characters in subject as an attachment failed
+      on Windows
+    tag: fixed
+    bugs: [1782173]
+  - note: HTML signature containing image hosted on a web server changed source URL of
+      image to local filename
+    tag: fixed
+    bugs: [1676825]
+  - note: Thunderbird Daily overwrote OpenPGP personal keys in encrypted-openpgp-passphrase.txt
+    tag: fixed
+    bugs: [1792450]
+  - note: Messages with custom header set lost custom header when saved as draft
+    tag: fixed
+    bugs: [195716]
+  - note: NNTP servers with username set caused Thunderbird to ask user to re-enter username
+      on every startup
+    tag: fixed
+    bugs: [1770594]
+  - note: Messages fetched from POP server in `Fetch headers only` mode disappeared when
+      moved to different folder by filter action
+    tag: fixed
+    bugs: [1793374]
+  - note: Added back keyboard shortcut Ctrl+N for creating new contacts
+    tag: fixed
+    bugs: [1751288]
+  - note: VCards with nickname field set could not be edited
+    tag: fixed
+    bugs: [1793877]
+  - note: LDAP search filters unable to work with non-ASCII characters
+    tag: fixed
+    bugs: [1794306]
+  - note: Attaching files to messages did not work from command line
+    tag: fixed
+    bugs: [1793323]
+  - note: IMAP authentication failed on next startup if ImapMail folder was deleted by
+      user
+    tag: fixed
+    bugs: [1793599]
+  - note: Get Next n Messages did not consistently fetch all messages requested from NNTP
+      server
+    tag: fixed
+    bugs: [1794185]
+  - note: Get Messages button unable to fetch messages from NNTP server if root folder
+      not selected
+    tag: fixed
+    bugs: [1792362]
+  - note: Error responses received in greeting header from NNTP servers did not display
+      error message
+    tag: fixed
+    bugs: [1792281]
+  - note: Corrected help text for part command in Matrix conversations
+    tag: fixed
+    bugs: [1795578]
+  - note: Creating security exceptions for messages sent using a self-signed certificate
+      failed if hostname contained uppercase letters
+    tag: fixed
+    bugs: [1735803]
+  - note: Publishing calendar caused Thunderbird to freeze
+    tag: fixed
+    bugs: [1794471]
+  - note: Thunderbird incorrectly requested calendar files from servers as XML, not ICS
+      files, causing calendars to not download from some servers
+    tag: fixed
+    bugs: [1793757]
+  - note: Monthly events created on the 31st of a month with <30 days placed first occurence
+      1-2 days after the beginning of the following month
+    tag: fixed
+    bugs: [1266797]
+  - note: Local calendars with custom timezone definitions unable to sync with CalDAV servers
+    tag: fixed
+    bugs: [1791038]
+  - note: Various Invitation Display improvements
+    tag: fixed
+    bugs: [1791220, 1792487, 1795309]
+  - note: Various App Menu improvements
+    tag: fixed
+    bugs: [1786175, 1786424, 1790148, 1789048, 1789681]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1791942, 1792664, 1792884, 1364659, 1794139, 1794399, 1781437, 1794682, 1713876,
+      1794656, 1795366, 1766578, 1791217, 1785314, 1792612, 1794155, 1791642, 118050, 1778447,
+      1793903, 1790946]
