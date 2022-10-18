@@ -25,27 +25,20 @@ notes:
     bugs: [1793415]
 
   # Changed
-  - note: Updated OpenPGP RNP library to 0.16.2
+  - note: Release notes opened from Thunderbird's about: dialog will now open in the default web browser
     tag: changed
-    bugs: [1790116, 1791195]
-  - note: Disabled dot-stuffing for POP3 servers that do not dot-stuff
+    bugs: [1794180]
+  - note: `Ctrl+N` shortcut to create new contacts from address book restored
     tag: changed
-    bugs: [196584]
-  - note: Converted chat modules to ES modules
+    bugs: [1751288]
+  - note: Various App Menu improvements
     tag: changed
-    bugs: [1793275]
-  - note: Updated timezones to 2022d
-    tag: changed
-    bugs: [1792287]
+    bugs: [1786175, 1786424, 1790148, 1789048, 1789681]
 
   # Fixed
-  - note: Dynamic language switching did not update interface when switched to right-to-left
-      languages
+  - note: Dynamic language switching did not update interface when switched to right-to-left languages
     tag: fixed
     bugs: [1794289]
-  - note: Non-thunderbird.net web pages linked from Release Notes page displayed as blank
-    tag: fixed
-    bugs: [1794180]
   - note: Forwarding message with special characters in subject as an attachment failed
       on Windows
     tag: fixed
@@ -54,41 +47,29 @@ notes:
       image to local filename
     tag: fixed
     bugs: [1676825]
-  - note: Thunderbird Daily overwrote OpenPGP personal keys in encrypted-openpgp-passphrase.txt
-    tag: fixed
-    bugs: [1792450]
-  - note: Messages with custom header set lost custom header when saved as draft
-    tag: fixed
-    bugs: [195716]
-  - note: NNTP servers with username set caused Thunderbird to ask user to re-enter username
-      on every startup
-    tag: fixed
-    bugs: [1770594]
-  - note: Messages fetched from POP server in `Fetch headers only` mode disappeared when
-      moved to different folder by filter action
-    tag: fixed
-    bugs: [1793374]
-  - note: Added back keyboard shortcut Ctrl+N for creating new contacts
-    tag: fixed
-    bugs: [1751288]
-  - note: VCards with nickname field set could not be edited
-    tag: fixed
-    bugs: [1793877]
-  - note: LDAP search filters unable to work with non-ASCII characters
-    tag: fixed
-    bugs: [1794306]
-  - note: Attaching files to messages did not work from command line
+  - note: `-remote` command line argument did not work, affecting integration with various applications such as LibreOffice
     tag: fixed
     bugs: [1793323]
+  - note: Messages with custom headers were when saved as draft and reopened in composer
+    tag: fixed
+    bugs: [195716]
   - note: IMAP authentication failed on next startup if ImapMail folder was deleted by
       user
     tag: fixed
     bugs: [1793599]
-  - note: Get Next n Messages did not consistently fetch all messages requested from NNTP
+  - note: Messages fetched from POP server in `Fetch headers only` mode disappeared when
+      moved to different folder by filter action
+    tag: fixed
+    bugs: [1793374]
+  - note: Retrieving passwords for authenticated NNTP accounts could fail due to obsolete preferences in a users profile
+      on every startup
+    tag: fixed
+    bugs: [1770594]
+  - note: `Get Next n Messages` did not consistently fetch all messages requested from NNTP
       server
     tag: fixed
     bugs: [1794185]
-  - note: Get Messages button unable to fetch messages from NNTP server if root folder
+  - note: `Get Messages` button unable to fetch messages from NNTP server if root folder
       not selected
     tag: fixed
     bugs: [1792362]
@@ -96,18 +77,23 @@ notes:
       error message
     tag: fixed
     bugs: [1792281]
-  - note: Corrected help text for part command in Matrix conversations
-    tag: fixed
-    bugs: [1795578]
   - note: Creating security exceptions for messages sent using a self-signed certificate
       failed if hostname contained uppercase letters
     tag: fixed
     bugs: [1735803]
+  - note: VCards with nickname field set could not be edited
+    tag: fixed
+    bugs: [1793877]
+  - note: LDAP search filters unable to work with non-ASCII characters
+    tag: fixed
+    bugs: [1794306]
+  - note: Help text for `/part` Matrix command was incorrect
+    tag: fixed
+    bugs: [1795578]
   - note: Publishing calendar caused Thunderbird to freeze
     tag: fixed
     bugs: [1794471]
-  - note: Thunderbird incorrectly requested calendar files from servers as XML, not ICS
-      files, causing calendars to not download from some servers
+  - note: Download requests for remote ICS calendars incorrectly set "Accept" header to text/xml
     tag: fixed
     bugs: [1793757]
   - note: Monthly events created on the 31st of a month with <30 days placed first occurence
@@ -120,9 +106,6 @@ notes:
   - note: Various Invitation Display improvements
     tag: fixed
     bugs: [1791220, 1792487, 1795309]
-  - note: Various App Menu improvements
-    tag: fixed
-    bugs: [1786175, 1786424, 1790148, 1789048, 1789681]
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1791942, 1792664, 1792884, 1364659, 1794139, 1794399, 1781437, 1794682, 1713876,
