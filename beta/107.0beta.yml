@@ -25,10 +25,10 @@ notes:
     bugs: [1793415]
 
   # Changed
-  - note: Release notes opened from Thunderbird's about: dialog will now open in the default web browser
+  - note: "Release notes opened from Thunderbird's about: dialog will now open in the default web browser"
     tag: changed
     bugs: [1794180]
-  - note: `Ctrl+N` shortcut to create new contacts from address book restored
+  - note: '`Ctrl+N` shortcut to create new contacts from address book restored'
     tag: changed
     bugs: [1751288]
   - note: Various App Menu improvements
@@ -47,7 +47,7 @@ notes:
       image to local filename
     tag: fixed
     bugs: [1676825]
-  - note: `-remote` command line argument did not work, affecting integration with various applications such as LibreOffice
+  - note: '`-remote` command line argument did not work, affecting integration with various applications such as LibreOffice'
     tag: fixed
     bugs: [1793323]
   - note: Messages with custom headers were when saved as draft and reopened in composer
@@ -65,12 +65,11 @@ notes:
       on every startup
     tag: fixed
     bugs: [1770594]
-  - note: `Get Next n Messages` did not consistently fetch all messages requested from NNTP
-      server
+  - note: '`Get Next n Messages` did not consistently fetch all messages requested from NNTP server'
     tag: fixed
     bugs: [1794185]
-  - note: `Get Messages` button unable to fetch messages from NNTP server if root folder
-      not selected
+  - note: '`Get Messages` button unable to fetch messages from NNTP server if root folder
+      not selected'
     tag: fixed
     bugs: [1792362]
   - note: Error responses received in greeting header from NNTP servers did not display
