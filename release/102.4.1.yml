@@ -1,0 +1,53 @@
+release:
+  release_date: '2022-10-26'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+  - note: Thunderbird will now catch and report errors parsing vCards that contain incorrectly
+      formatted dates
+    tag: new
+    bugs: [1793415]
+  # Changed
+  # Fixed
+  - note: Dynamic language switching did not update interface when switched to right-to-left
+      languages
+    tag: fixed
+    bugs: [1794289]
+  - note: Custom header data was discarded after messages were saved as draft and reopened
+    tag: fixed
+    bugs: [195716]
+  - note: '`-remote` command line argument did not work, affecting integration with various
+      applications such as LibreOffice'
+    tag: fixed
+    bugs: [1793323]
+  - note: Messages received via some SMS-to-email services could not display images
+    tag: fixed
+    bugs: [1774805]
+  - note: VCards with nickname field set could not be edited
+    tag: fixed
+    bugs: [1793877]
+  - note: Some recurring events were missing from Agenda on first load
+    tag: fixed
+    bugs: [1771168]
+  - note: Download requests for remote ICS calendars incorrectly set "Accept" header to
+      text/xml
+    tag: fixed
+    bugs: [1793757]
+  - note: Monthly events created on the 31st of a month with <30 days placed first occurrence
+      1-2 days after the beginning of the following month
+    tag: fixed
+    bugs: [1266797]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1781437, 1785314, 1794139, 1794155, 1794399]
