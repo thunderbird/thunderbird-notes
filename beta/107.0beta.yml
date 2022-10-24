@@ -51,7 +51,7 @@ notes:
   - note: '`-remote` command line argument did not work, affecting integration with various applications such as LibreOffice'
     tag: fixed
     bugs: [1793323]
-  - note: Messages with custom headers were when saved as draft and reopened in composer
+  - note: Custom header data was discarded after messages were saved as draft and reopened
     tag: fixed
     bugs: [195716]
   - note: IMAP authentication failed on next startup if ImapMail folder was deleted by
