@@ -47,7 +47,7 @@ notes:
     bugs: [1789975]
 
   # Fixed
-  - note: Emails received via SMS could not display images
+  - note: Messages received via some SMS-to-email services could not display images
     tag: fixed
     bugs: [1774805]
   - note: Spell Check dialog did not open when selected text included a line break or new

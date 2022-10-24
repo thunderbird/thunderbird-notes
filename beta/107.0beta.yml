@@ -96,7 +96,7 @@ notes:
   - note: Download requests for remote ICS calendars incorrectly set "Accept" header to text/xml
     tag: fixed
     bugs: [1793757]
-  - note: Monthly events created on the 31st of a month with <30 days placed first occurence
+  - note: Monthly events created on the 31st of a month with <30 days placed first occurrence
       1-2 days after the beginning of the following month
     tag: fixed
     bugs: [1266797]
