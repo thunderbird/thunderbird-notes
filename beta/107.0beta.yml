@@ -1,7 +1,7 @@
 release:
   release_date: '2022-10-19'
   text: |
-    **These notes apply to Thunderbird version 107 beta 1 released October 19, 2022.**
+    **These notes apply to Thunderbird version 107 beta 2 released October 25, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
 
@@ -12,7 +12,8 @@ release:
   import_system_requirements: 97.0beta
 
   groups:
-    - 
+    -
+    - Fixed in Beta 2
 
 notes:
   # New
@@ -110,3 +111,14 @@ notes:
     bugs: [1791942, 1792664, 1792884, 1364659, 1794139, 1794399, 1781437, 1794682, 1713876,
       1794656, 1795366, 1766578, 1791217, 1785314, 1792612, 1794155, 1791642, 118050, 1778447,
       1793903, 1790946]
+
+# Beta 2
+  - note: Thunderbird re-downloaded locally deleted messages from a POP server when "Leave messages on server" and 
+            "Until I delete them" were enabled
+    tag: fixed
+    bugs: [1796903]
+    group: 2
+  - note: '"Today" highlighting in Calendar Month view did not update after date change at midnight'
+    tag: fixed
+    bugs: [1795176]
+    group: 2
