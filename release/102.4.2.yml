@@ -1,0 +1,53 @@
+release:
+  release_date: '2022-11-02'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  - note: Messages fetched from POP server in `Fetch headers only` mode disappeared when
+      moved to different folder by filter action
+    tag: fixed
+    bugs: [1793374]
+  - note: Thunderbird re-downloaded locally deleted messages from a POP server when "Leave
+      messages on server" and "Until I delete them" were enabled
+    tag: fixed
+    bugs: [1796903]
+  - note: IMAP authentication failed on next startup if ImapMail folder was deleted by
+      user
+    tag: fixed
+    bugs: [1793599]
+  - note: Retrieving passwords for authenticated NNTP accounts could fail due to obsolete
+      preferences in a users profile on every startup
+    tag: fixed
+    bugs: [1770594]
+  - note: '`Get Next n Messages` did not consistently fetch all messages requested from
+      NNTP server'
+    tag: fixed
+    bugs: [1794185]
+  - note: '`Get Messages` button unable to fetch messages from NNTP server if root folder
+      not selected'
+    tag: fixed
+    bugs: [1792362]
+  - note: Thunderbird text branding did not always match locale of localized build
+    tag: fixed
+    bugs: [1786199]
+  - note: Thunderbird installer and Thunderbird updater created Windows shortcuts with
+      different names
+    tag: fixed
+    bugs: [1787264]
+  - note: LDAP search filters unable to work with non-ASCII characters
+    tag: fixed
+    bugs: [1794306]
+  - note: '"Today" highlighting in Calendar Month view did not update after date change
+      at midnight'
+    tag: fixed
+    bugs: [1795176]
