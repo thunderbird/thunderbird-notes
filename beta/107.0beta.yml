@@ -125,12 +125,17 @@ notes:
     group: 2
 
 # Beta 3
-  - note: Thunderbird can now fetch RSS channel feeds with incomplete channel URL
-    tag: new
-    bugs: [1794775]
+  - note: Users using Microsoft business email services may not be able to login due to deprecation of basic auth for Exchange
+    tag: fixed
+    bugs: [1685414]
     group: 3
 
   - note: Importing secret OpenPGP keys failed when public key with public subkey was already present
     tag: fixed
     bugs: [1795698]
+    group: 3
+
+  - note: Thunderbird can now fetch RSS channel feeds with incomplete channel URL
+    tag: fixed
+    bugs: [1794775]
     group: 3
