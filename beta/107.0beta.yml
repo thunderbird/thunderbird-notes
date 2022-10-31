@@ -1,9 +1,9 @@
 release:
   release_date: '2022-10-19'
   text: |
-    **These notes apply to Thunderbird version 107 beta 2 released October 25, 2022.**
+    **These notes apply to Thunderbird version 107 beta 3 released October 31, 2022.**
 
-    **System Requirements:** [Details](/en-US/thunderbird/106.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/107.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - Fixed in Beta 2
+    - Fixed in Beta 3
 
 notes:
   # New
@@ -122,3 +123,14 @@ notes:
     tag: fixed
     bugs: [1795176]
     group: 2
+
+# Beta 3
+  - note: Thunderbird can now fetch RSS channel feeds with incomplete channel URL
+    tag: new
+    bugs: [1794775]
+    group: 3
+
+  - note: Importing secret OpenPGP keys failed when public key with public subkey was already present
+    tag: fixed
+    bugs: [1795698]
+    group: 3
