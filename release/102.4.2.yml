@@ -13,6 +13,9 @@ release:
   import_system_requirements: '102.0'
 
 notes:
+  - note: '"Address Book" button in Account Central will now create a CardDAV address book instead of a local address book'
+    tag: changed
+    bugs: [1793903]
   - note: Messages fetched from POP server in `Fetch headers only` mode disappeared when
       moved to different folder by filter action
     tag: fixed
@@ -21,6 +24,9 @@ notes:
       messages on server" and "Until I delete them" were enabled
     tag: fixed
     bugs: [1796903]
+  - note: Multiple password prompts for the same POP account could be displayed
+    tag: fixed
+    bugs: [1786920]
   - note: IMAP authentication failed on next startup if ImapMail folder was deleted by
       user
     tag: fixed

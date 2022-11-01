@@ -33,6 +33,9 @@ notes:
   - note: '`Ctrl+N` shortcut to create new contacts from address book restored'
     tag: changed
     bugs: [1751288]
+  - note: '"Address Book" button in Account Central will now create a CardDAV address book instead of a local address book'
+    tag: changed
+    bugs: [1793903]
   - note: Various App Menu improvements
     tag: changed
     bugs: [1786175, 1786424, 1790148, 1789048, 1789681]
@@ -111,7 +114,7 @@ notes:
     tag: fixed
     bugs: [1791942, 1792664, 1792884, 1364659, 1794139, 1794399, 1781437, 1794682, 1713876,
       1794656, 1795366, 1766578, 1791217, 1785314, 1792612, 1794155, 1791642, 118050, 1778447,
-      1793903, 1790946]
+      1790946]
 
 # Beta 2
   - note: Thunderbird re-downloaded locally deleted messages from a POP server when "Leave messages on server" and 
