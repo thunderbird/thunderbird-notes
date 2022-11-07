@@ -145,7 +145,7 @@ notes:
     group: 3
 
 # Beta 4
-  - note: POP new mail notification did not ignore mail marked as read or junk by message filters
+  - note: New POP mail notifications were shown for messages marked by filters as read or junk
     tag: fixed
     bugs: [1787531]
     group: 4
@@ -170,7 +170,7 @@ notes:
     bugs: [1797927]
     group: 4
 
-  - note: '"Contribute" button in Add-ons Manager did not work'
+  - note: Add-on "Contribute" button in Add-ons Manager did not work
     tag: fixed
     bugs: [1795751]
     group: 4
