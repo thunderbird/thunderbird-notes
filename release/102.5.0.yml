@@ -1,0 +1,55 @@
+release:
+  release_date: '2022-11-15'
+  text: |
+    **After upgrading to Thunderbird 102.5.0, a one-time full resync of cached
+    Google Calendars (using CalDAV) will trigger.**
+    
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Account Settings UI did not update to reflect default identity changes
+    tag: fixed
+    bugs: [1782646]
+  - note: New POP mail notifications were incorrectly shown for messages marked by filters as read
+      or junk
+    tag: fixed
+    bugs: [1787531]
+  - note: Connecting to an IMAP server configured to use `PREAUTH` caused Thunderbird to hang
+    tag: fixed
+    bugs: [1798161]
+  - note: Error responses received in greeting header from NNTP servers did not display
+      error message
+    tag: fixed
+    bugs: [1792281]
+  - note: News messages sent using "Send Later" failed to send after going back online
+    tag: fixed
+    bugs: [1794997]
+  - note: '"Download/Sync Now..." did not completely sync all newsgroups before going offline'
+    tag: fixed
+    bugs: [1795547]
+  - note: Username was missing from error dialog on failed login to news server
+    tag: fixed
+    bugs: [1796964]
+  - note: Thunderbird can now fetch RSS channel feeds with incomplete channel URL
+    tag: fixed
+    bugs: [1794775]
+  - note: Add-on "Contribute" button in Add-ons Manager did not work
+    tag: fixed
+    bugs: [1795751]
+  - note: Help text for `/part` Matrix command was incorrect
+    tag: fixed
+    bugs: [1795578]
+  - note: Invite Attendees dialog did not fetch free/busy info for attendees with encoded
+      characters in their name
+    tag: fixed
+    bugs: [1797927]
