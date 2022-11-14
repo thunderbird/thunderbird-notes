@@ -1,0 +1,62 @@
+release:
+  release_date: '2022-11-15'
+  text: |
+    **These notes apply to Thunderbird version 108 beta 1 released November 15, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/108.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+  groups:
+    - 
+
+notes:
+  # New
+  - note: Thunderbird for Windows now has MSIX packaging support
+    tag: new
+    bugs: [1724159, 1795740]
+  - note: Account Hub now supports lazy loading
+    tag: new
+    bugs: [1798738]
+
+  # Changed
+  - note: Office365 accounts migrated to OAuth2 (password-only apps can no longer connect to Office365 as of October 1st, 2022)
+    tag: changed
+    bugs: [1798875]
+  - note: Localized room names for unnamed Matrix rooms
+    tag: changed
+    bugs: [1795304]
+
+  # Fixed
+  - note: When reopening OpenPGP-encrypted drafts/templates after closing the compose window, Thunderbird did not restore the subject line
+    tag: fixed
+    bugs: [1666005]
+  - note: Thunderbird sometimes did not synchronize offline folders after a restart
+    tag: fixed
+    bugs: [1776823]
+  - note: Thunderbird opened SMTP connections for each message when sending multiple messages
+    tag: fixed
+    bugs: [136871]
+  - note: '"Copy to <folder> again" menu item was not present after copying message to
+      folder with Unicode name on Unicode-enabled IMAP server'
+    tag: fixed
+    bugs: [1798172]
+  - note: Opening internal document links in PDF files opened a new tab with a copy of the document instead of scrolling to the linked location
+    tag: fixed
+    bugs: [1791854]
+  - note: Events were not shown in the correct week if week start was not set to Monday
+    tag: fixed
+    bugs: [1511638]
+  - note: Calendar date picker was displayed behind "Send Later" window
+    tag: fixed
+    bugs: [1791537]
+  - note: Various AppMenu improvements
+    tag: fixed
+    bugs: [1798315, 1797126, 1798701]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1772891, 1773352, 1789968, 1790278, 1795912, 1796385, 1796387, 1797107, 1797416, 1798380, 1798900, 1799352, 1800072]
