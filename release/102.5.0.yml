@@ -57,3 +57,7 @@ notes:
       characters in their name
     tag: fixed
     bugs: [1797927]
+
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.5)
+    tag: fixed
