@@ -16,31 +16,40 @@ release:
 
 notes:
   # New
-  - note: Thunderbird for Windows now has MSIX packaging support
+  - note: Search Engines Enterprise Policy added
     tag: new
-    bugs: [1724159, 1795740]
-  - note: Account Hub now supports lazy loading
-    tag: new
-    bugs: [1798738]
+    bugs: [1796403]
 
   # Changed
-  - note: Office365 accounts migrated to OAuth2 (password-only apps can no longer connect to Office365 as of October 1st, 2022)
+  - note: Office365 accounts using password authentication will auto-migrate to OAuth2
     tag: changed
     bugs: [1798875]
-  - note: Localized room names for unnamed Matrix rooms
+  - note: Thunderbird will reuse SMTP connections when sending multiple messages
+    tag: changed
+    bugs: [136871]
+  - note: Names for empty Matrix rooms can now be localized
     tag: changed
     bugs: [1795304]
+  - note: Updated Thunderbird color palette
+    tag: changed
+    bugs: [1796387]
 
   # Fixed
   - note: When reopening OpenPGP-encrypted drafts/templates after closing the compose window, Thunderbird did not restore the subject line
     tag: fixed
     bugs: [1666005]
-  - note: Thunderbird sometimes did not synchronize offline folders after a restart
+  - note: OpenPGP key verification only used first From field for emails with multiple From fields
+    tag: fixed
+    bugs: [1752273]
+  - note: Encrypted attachment was displayed on OpenPGP encrypted messages, even if no attachment was available
+    tag: fixed
+    bugs: [1795237]
+  - note: Thunderbird sometimes did not synchronize offline IMAP folders after a restart
     tag: fixed
     bugs: [1776823]
-  - note: Thunderbird opened SMTP connections for each message when sending multiple messages
+  - note: When disk is full, partial data left behind by IMAP/News folder compaction was not deleted
     tag: fixed
-    bugs: [136871]
+    bugs: [1795237]
   - note: '"Copy to <folder> again" menu item was not present after copying message to
       folder with Unicode name on Unicode-enabled IMAP server'
     tag: fixed
@@ -56,7 +65,7 @@ notes:
     bugs: [1791537]
   - note: Various AppMenu improvements
     tag: fixed
-    bugs: [1798315, 1797126, 1798701]
+    bugs: [1798701]
   - note: Various visual and UX improvements
     tag: fixed
-    bugs: [1772891, 1773352, 1789968, 1790278, 1795912, 1796385, 1796387, 1797107, 1797416, 1798380, 1798900, 1799352, 1800072]
+    bugs: [1772891, 1790278, 1796385, 1797416, 1799352]
