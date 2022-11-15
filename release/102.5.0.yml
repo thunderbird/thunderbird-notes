@@ -16,6 +16,10 @@ release:
   import_system_requirements: '102.0'
 
 notes:
+  # Changed
+  - note: '`Ctrl+N` shortcut to create new contacts from address book restored'
+    tag: changed
+    bugs: [1751288]
   # Fixed
   - note: Account Settings UI did not update to reflect default identity changes
     tag: fixed
