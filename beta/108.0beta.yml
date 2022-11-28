@@ -69,3 +69,20 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1772891, 1790278, 1796385, 1797416, 1799352]
+
+    # Beta 2
+  - note: Message index files were incorrectly deleted when too many folders were opened
+    tag: fixed
+    bugs: [1787609]
+  - note: Reused SMTP connections would sometimes silently disconnect, causing timeouts
+    tag: fixed
+    bugs: [1766382]
+  - note: Thunderbird sometimes incorrectly formatted synced vCards
+    tag: fixed
+    bugs: [1792542]
+  - note: Recurring events did not display past a certain number of repetitions
+    tag: fixed
+    bugs: [1789437]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1801080, 1800189, 1800537]
