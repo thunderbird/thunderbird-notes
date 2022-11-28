@@ -76,7 +76,7 @@ notes:
     tag: fixed
     bugs: [1787609]
     group: 2
-  - note: Reused SMTP connections would sometimes silently disconnect, causing timeouts
+  - note: Reused SMTP connections sometimes silently disconnected, causing timeouts
     tag: fixed
     bugs: [1766382]
     group: 2
