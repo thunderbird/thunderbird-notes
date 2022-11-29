@@ -92,7 +92,7 @@ notes:
     tag: fixed
     bugs: [1801080, 1800189, 1800537]
     group: 2
-  - note: Add support for comm-strings split when building installers and langpacks using mach
+  - note: Add support for comm-strings split when building installers and langpacks
     tag: unresolved
     bugs: [1766080]
     group: 2
