@@ -80,6 +80,10 @@ notes:
     tag: fixed
     bugs: [1766382]
     group: 2
+  - note: 'Localized builds and langpacks now use "comm-l10n" repository; downstream builds using official langpacks should not need to make changes'
+    tag: fixed
+    bugs: [1765629, 1801150]
+    group: 2
   - note: Thunderbird sometimes incorrectly formatted synced vCards
     tag: fixed
     bugs: [1792542]
@@ -92,7 +96,7 @@ notes:
     tag: fixed
     bugs: [1801080, 1800189, 1800537]
     group: 2
-  - note: Add support for comm-strings split when building installers and langpacks
+  - note: Add support for comm-strings repository split for local development of installers and langpacks
     tag: unresolved
     bugs: [1766080]
     group: 2
