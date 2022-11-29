@@ -1,0 +1,29 @@
+release:
+  release_date: '2022-12-01'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Changed
+  - note: Mail extension API updates. See [Mail Extension API Docs](https://webextension-api.thunderbird.net/en/stable/changes/esr102.5.1.html).
+    tag: changed
+  # Fixed
+  - note: '"Copy to <folder> again" menu item was not present after copying message to
+      folder with Unicode name on Unicode-enabled IMAP server'
+    tag: fixed
+    bugs: [1798172]
+  - note: Calendar date picker was displayed behind "Send Later" window
+    tag: fixed
+    bugs: [1791537]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.5.1)
+    tag: fixed
