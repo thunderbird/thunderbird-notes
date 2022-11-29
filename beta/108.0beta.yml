@@ -92,7 +92,7 @@ notes:
     tag: fixed
     bugs: [1801080, 1800189, 1800537]
     group: 2
-  - note: IN PROGRESS: Langpack breakout
+  - note: 'IN PROGRESS: Langpack breakout'
     tag: fixed
     bugs: [1766080]
     group: 2
