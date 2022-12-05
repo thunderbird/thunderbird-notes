@@ -111,7 +111,7 @@ notes:
     tag: fixed
     bugs: [1789120]
     group: 3
-  - note: Chat conversation sidebar was too wide under certain conditions, making scrollbar unusable
+  - note: Chat conversation sidebar was too wide under certain circumstances, making scrollbar unusable
     tag: fixed
     bugs: [1801645]
     group: 3
