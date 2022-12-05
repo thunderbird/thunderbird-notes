@@ -102,6 +102,7 @@ notes:
     bugs: [1766080]
     group: 2
 
+    # Beta 3
   - note: Cookies deleted from the "Show Cookies" dialog were not actually deleted
     tag: fixed
     bugs: [1803795]
@@ -110,7 +111,7 @@ notes:
     tag: fixed
     bugs: [1789120]
     group: 3
-  - note: Chat conversation sidebar was too wide, making scrollbar unusable
+  - note: Chat conversation sidebar was too wide under certain conditions, making scrollbar unusable
     tag: fixed
     bugs: [1801645]
     group: 3
