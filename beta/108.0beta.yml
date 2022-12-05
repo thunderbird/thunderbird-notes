@@ -1,7 +1,7 @@
 release:
   release_date: '2022-11-15'
   text: |
-    **These notes apply to Thunderbird version 108 beta 1 released November 29, 2022.**
+    **These notes apply to Thunderbird version 108 beta 3 released December 5, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/108.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - 
     - "Fixed in beta 2"
+    - "Fixed in beta 3"
 
 notes:
   # New
@@ -100,3 +101,16 @@ notes:
     tag: unresolved
     bugs: [1766080]
     group: 2
+
+  - note: Cookies deleted from the "Show Cookies" dialog were not actually deleted
+    tag: fixed
+    bugs: [1803795]
+    group: 3
+  - note: Paused RSS feeds did not actually pause updates
+    tag: fixed
+    bugs: [1789120]
+    group: 3
+  - note: Chat conversation sidebar was too wide, making scrollbar unusable
+    tag: fixed
+    bugs: [1801645]
+    group: 3
