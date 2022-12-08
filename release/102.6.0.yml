@@ -1,0 +1,37 @@
+release:
+  release_date: '2022-12-13'
+  text: |
+    **A _huge_ THANK YOU to everyone who donated! You're amazing! 🤩**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Importing secret OpenPGP keys failed when public key with public subkey was already
+      present
+    tag: fixed
+    bugs: [1795698]
+  - note: Message index files were incorrectly deleted when too many folders were opened
+    tag: fixed
+    bugs: [1787609]
+  - note: Thunderbird sometimes incorrectly formatted synced vCards
+    tag: fixed
+    bugs: [1792542]
+  - note: Recurring events did not display past a certain number of repetitions
+    tag: fixed
+    bugs: [1789437]
+  - note: Cookies deleted from the "Show Cookies" dialog were not actually deleted
+    tag: fixed
+    bugs: [1803795]
+  - note: Paused RSS feeds did not actually pause updates
+    tag: fixed
+    bugs: [1789120]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1800189, 1800537, 1801080]
