@@ -1,0 +1,76 @@
+release:
+  release_date: '2022-12-13'
+  text: |
+    **These notes apply to Thunderbird version 109 beta 1 released December 13, 2022.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/109.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+  groups:
+    -
+
+notes:
+    # New
+  - note: Thunderbird now supports OAuth2 for Fastmail
+    tag: new
+    bugs: [1785240]
+  - note: Thunderbird now supports HKP keyservers that return one key per email address
+    tag: new
+    bugs: [1640511]
+  - note: Added option to build RNP library with OpenSSL backend (use "--with-librnp-backend=openssl" configure option)
+    tag: new
+    bugs: [1799123]
+
+    # Changed
+  - note: Thunderbird now warns the user that OpenPGP is disabled if RNP library is outdated or missing
+    tag: changed
+    bugs: [1799874]
+
+    # Fixed
+  - note: Having too many folders open at startup caused loss of MSF files
+    tag: fixed
+    bugs: [1800202]
+  - note: Going offline closed connection to POP3 server before processing QUIT command, causing locally-synced messages to also remain on the server
+    tag: fixed
+    bugs: [1801286]
+  - note: Copying an email from one local folder to another local folder sometimes caused "Another Operation is using the folder" error on Windows 7
+    tag: fixed
+    bugs: [1792071]
+  - note: Email address pill allowed for incorrectly formatted email addresses
+    tag: fixed
+    bugs: [1799390]
+  - note: Remote content did not load in user-defined signatures
+    tag: fixed
+    bugs: [1803942]
+  - note: Some emojis displayed incorrectly when added to a message; added angry face emoji
+    tag: fixed
+    bugs: [1801679]
+  - note: S/MIME certificate verification was prohibitively slow
+    tag: fixed
+    bugs: [1791130]
+  - note: OpenPGP key import failed for key blocks with comments that contain Unicode characters
+    tag: fixed
+    bugs: [1721668]
+  - note: Search on Server only returned results for articles on the server that had already been downloaded
+    tag: fixed
+    bugs: [1802685]
+  - note: Identity dialog was blank on some smaller screens
+    tag: fixed
+    bugs: [1803372]
+  - note: Thunderbird failed to import vCards that contained "\r\r\n" line endings
+    tag: fixed
+    bugs: [1800305]
+  - note: CardDAV discovery now uses preset location if MX records point to Google
+    tag: fixed
+    bugs: [1803470]
+  - note: Start page displayed in default web browser instead of in a Thunderbird tab
+    tag: fixed
+    bugs: [1695529]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1800747, 1798597, 1606116, 1802945, 1802899, 1802917, 1770852, 1803729, 1801669, 1797650, 1804484, 1755564, 1804729, 1804880]
