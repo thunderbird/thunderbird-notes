@@ -27,7 +27,7 @@ notes:
     bugs: [1799123]
 
     # Changed
-  - note: Thunderbird now warns the user that OpenPGP is disabled if RNP library is outdated or missing
+  - note: Thunderbird now warns user that OpenPGP is disabled if RNP library is outdated or missing
     tag: changed
     bugs: [1799874]
 
