@@ -35,3 +35,6 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1800189, 1800537, 1801080]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.6)
+    tag: fixed
