@@ -1,7 +1,7 @@
 release:
   release_date: '2022-12-14'
   text: |
-    **These notes apply to Thunderbird version 109 beta 1 released December 14, 2022.**
+    **These notes apply to Thunderbird version 109 beta 2 released December 19, 2022.**
 
     **System Requirements:** [Details](/en-US/thunderbird/109.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     -
+    - 'Fixed in beta 2'
 
 notes:
     # New
@@ -74,3 +75,22 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1800747, 1798597, 1606116, 1802945, 1802899, 1802917, 1770852, 1803729, 1801669, 1797650, 1804484, 1755564, 1804729, 1804880]
+
+    # Beta 2
+  - note: Thunderbird can now upload OpenPGP public keys to VKS and HKP keyservers
+    tag: new
+    bugs: [1731232]
+    group: 2
+
+  - note: Events and vCards containing Unicode characters became garbled when synced with server
+    tag: fixed
+    bugs: [1805338]
+    group: 2
+  - note: Contribution button for add-ons opened Contribution page in a Thunderbird tab, instead of the external browser
+    tag: fixed
+    bugs: [1805808]
+    group: 2
+  - note: Visual improvements
+    tag: fixed
+    bugs: [1805680]
+    group: 2
