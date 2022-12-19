@@ -1,0 +1,28 @@
+release:
+  release_date: '2022-12-20'
+  text: |
+    **Best wishes for Happy Holidays 🔔 and a magnificent New Year! 🎉 
+    Life is short, eat more holiday cookies. 🍪**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Remote content did not load in user-defined signatures
+    tag: fixed
+    bugs: [1803942]
+  - note: Addons that added new action buttons were not shown for addon upgrades, requiring removal and reinstall
+    tag: fixed
+    bugs: [1793430]
+  - note: Various stability improvements
+    tag: fixed
+    bugs: [1798181, 1797616]
+
+  - note: '[Security fix](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.6.1)'
+    tag: fixed
