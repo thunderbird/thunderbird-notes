@@ -97,7 +97,7 @@ notes:
     group: 2
 
     # Beta 3
-  - note: Thunderbird sometimes crashed on startup due to read access violation
+  - note: Fix for top crash bug applied
     tag: fixed
     bugs: [1806078]
     group: 3
