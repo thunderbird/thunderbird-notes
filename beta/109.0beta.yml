@@ -1,7 +1,7 @@
 release:
   release_date: '2022-12-14'
   text: |
-    **These notes apply to Thunderbird version 109 beta 3 released January 3, 2023.**
+    **These notes apply to Thunderbird version 109 beta 4 released January 9, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/109.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
     # New
@@ -71,7 +72,7 @@ notes:
     tag: fixed
     bugs: [1803470]
   - note: Start page displayed in default web browser instead of in a Thunderbird tab
-    tag: fixed
+    tag: fixeM
     bugs: [1695529]
   - note: Various visual and UX improvements
     tag: fixed
@@ -101,3 +102,17 @@ notes:
     tag: fixed
     bugs: [1806078]
     group: 3
+
+    # Beta 4
+  - note: XMPP did not respond to unrecognized IQ queries, causing some servers to close the connection
+    tag: fixed
+    bugs: [1806630]
+    group: 4
+  - note: On Mac, deleting events from Today Pane with "Backspace" key deleted selected messages instead
+    tag: fixed
+    bugs: [1763468]
+    group: 4
+  - note: Various crash fixes
+    tag: fixed
+    bugs: [1806245, 1806247]
+    group: 4
