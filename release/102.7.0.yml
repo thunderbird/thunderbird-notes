@@ -1,0 +1,38 @@
+release:
+  release_date: '2023-01-18'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+  - note: Enterprise policies now support Thunderbird-specific preferences
+    tag: new
+    bugs: [1791637]
+  # Fixed
+  - note: Creating security exceptions for messages sent using a self-signed certificate
+      failed if hostname contained uppercase letters
+    tag: fixed
+    bugs: [1735803]
+  - note: Having too many folders open at startup caused loss of MSF files
+    tag: fixed
+    bugs: [1800202]
+  - note: Copying an email from one local folder to another local folder sometimes caused
+      "Another Operation is using the folder" error on Windows 7
+    tag: fixed
+    bugs: [1792071]
+  - note: Email address pill allowed for incorrectly formatted email addresses
+    tag: fixed
+    bugs: [1799390]
+  - note: Chat conversation sidebar was too wide under certain circumstances, making scrollbar
+      unusable
+    tag: fixed
+    bugs: [1801645]
