@@ -18,10 +18,14 @@ notes:
     tag: new
     bugs: [1791637]
   # Fixed
-  - note: Creating security exceptions for messages sent using a self-signed certificate
-      failed if hostname contained uppercase letters
+  - note: Users using Microsoft business email services may not be able to log in due to
+      deprecation of basic auth for Exchange
     tag: fixed
-    bugs: [1735803]
+    bugs: [1685414]
+  - note: 'Localized builds and langpacks now use "comm-l10n" repository; downstream builds
+      using official langpacks should not need to make changes'
+    tag: fixed
+    bugs: [1765629, 1766080, 1801150, 1807161]
   - note: Having too many folders open at startup caused loss of MSF files
     tag: fixed
     bugs: [1800202]
@@ -32,7 +36,21 @@ notes:
   - note: Email address pill allowed for incorrectly formatted email addresses
     tag: fixed
     bugs: [1799390]
+  - note: Creating security exceptions for messages sent using a self-signed certificate
+      failed if hostname contained uppercase letters
+    tag: fixed
+    bugs: [1735803]
+  - note: S/MIME certificate verification was prohibitively slow
+    tag: fixed
+    bugs: [1791130]
+  - note: OpenPGP key import failed for key blocks with comments that contain Unicode characters
+    tag: fixed
+    bugs: [1721668]
   - note: Chat conversation sidebar was too wide under certain circumstances, making scrollbar
       unusable
     tag: fixed
     bugs: [1801645]
+  - note: On Mac, deleting events from Today Pane with "Backspace" key deleted selected
+      messages instead
+    tag: fixed
+    bugs: [1763468]
