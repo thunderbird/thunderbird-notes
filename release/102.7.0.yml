@@ -21,7 +21,7 @@ notes:
   - note: |
        **Microsoft hosted email users may have re-authenticate with OAuth2; Admin approval may be required
        depending on local policies.**
-       _[Blog post - updated 2023-Jan-18](https://blog.thunderbird.net/2022/11/important-message-for-microsoft-office-365-enterprise-users/)_
+       _[Blog post - updated 2023-Jan-17](https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/)_
     tag: fixed
     bugs: [1685414]
   - note: 'Localized builds and langpacks now use "comm-l10n" repository; downstream builds
