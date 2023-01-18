@@ -1,0 +1,70 @@
+release:
+  release_date: '2023-01-18'
+  text: |
+    **These notes apply to Thunderbird version 110 beta 1 released January 18, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/110.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+  groups:
+    -
+
+notes:
+    # New
+  - note: Thunderbird now includes the option to send a minimal user agent header, or no header at all
+    tag: new
+    bugs: [1114475]
+  - note: Thunderbird now notifies the user if a message includes nested encryption, and allows viewing each encrypted part of the message
+    tag: new
+    bugs: [1746579]
+  - note: OpenPGP signature dates are now shown for signed messages
+    tag: new
+    bugs: [1775628]
+  - note: Thunderbird can now individually reload remote calendars
+    tag: new
+    bugs: [729407]
+  - note: Added option to always show system tray icon on Windows
+    tag: new
+    bugs: [1727874]
+
+    # Changed
+  - note: S/MIME encryption reminder re-enabled
+    tag: changed
+    bugs: [1808295]
+
+    # Fixed
+  - note: IMAP autosync sometimes stopped after restoring computer from sleep or hibernation
+    tag: fixed
+    bugs: [1804374]
+  - note: POP3 messages were deleted from server when attachments were detached from the message in Thunderbird
+    tag: fixed
+    bugs: [1528297]
+  - note: Thunderbird did not decrypt OpenPGP messages with an additional outer signature layer
+    tag: fixed
+    bugs: [1594253]
+  - note: '"Get Messages" did not retrieve messages from Gmail accounts using a local folder as a deferred inbox'
+    tag: fixed
+    bugs: [1799106]
+  - note: Switching identities caused remote images in HTML signatures to not be shown (since Thunderbird 102.6.1)
+    tag: fixed
+    bugs: [1807200]
+  - note: Changing the default search engine did not persist after closing "Settings" tab
+    tag: fixed
+    bugs: [1807990]
+  - note: Thunderbird incorrectly addressed all XMPP pings to the connected XMPP server, rather than the originator of the ping
+    tag: fixed
+    bugs: [1806631]
+  - note: Task previews did not show HTML formatting
+    tag: fixed
+    bugs: [1739877]
+  - note: Tooltips for "Show/Hide" calendar toggle did not display
+    tag: fixed
+    bugs: [1809557]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1777788,1790619,1791334,1798133,1799934,1799946,1803402,1803403,1805862,1808944,1807786,1804524,1805458,1809491,1805520,1805763]
