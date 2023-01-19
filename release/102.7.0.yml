@@ -1,6 +1,9 @@
 release:
   release_date: '2023-01-18'
   text: |
+    **The rollout of Thunderbird 102.7.0 is on hold pending a fix for a critical OAuth issue.**
+    _[Blog post - updated 2023-Jan-19](https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/)_
+    
     **For more on all the new features in Thunderbird 102, see
     [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
 
@@ -21,7 +24,6 @@ notes:
   - note: |
        **Microsoft hosted email users may have re-authenticate with OAuth2; Admin approval may be required
        depending on local policies.**
-       _[Blog post - updated 2023-Jan-17](https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/)_
     tag: fixed
     bugs: [1685414]
   - note: 'Localized builds and langpacks now use "comm-l10n" repository; downstream builds
@@ -56,3 +58,12 @@ notes:
       messages instead
     tag: fixed
     bugs: [1763468]
+
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.7)
+    tag: fixed
+
+
+  - note: OAuth2 authentication not working for Microsoft 365 Enterprise accounts
+    tag: unresolved
+    bugs: [1810760]
