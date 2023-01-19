@@ -3,7 +3,7 @@ release:
   text: |
     <strong style="color: #ba160c">Thunderbird 102.7.0 will not automatically update due to a critical authentication
     issue with Microsoft 365 Business accounts. Affected users should not update until Thunderbird 102.7.1 is
-    released with a fix. See unresolved issues below.</strong> Opening the "About Mozilla Thunderbird" dialog will
+    released with a fix. See <a href="#known-issues">Known Issues</a> below.</strong> Opening the "About Mozilla Thunderbird" dialog will
     allow an update to 102.7.0.
     
     **For more on all the new features in Thunderbird 102, see
