@@ -1,5 +1,5 @@
 release:
-  release_date: '2023-01-18'
+  release_date: '2023-01-19'
   text: |
     <strong style="color: #ba160c">Thunderbird 102.7.0 will not automatically update due to a critical authentication
     issue with Microsoft 365 Business accounts. Affected users should not update until Thunderbird 102.7.1 is
