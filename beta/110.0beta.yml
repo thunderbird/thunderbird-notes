@@ -1,7 +1,7 @@
 release:
   release_date: '2023-01-19'
   text: |
-    **These notes apply to Thunderbird version 110 beta 1 released January 18, 2023.**
+    **These notes apply to Thunderbird version 110 beta 2 released January 23, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/110.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     -
+    - "Fixed in beta 2"
 
 notes:
     # New
@@ -68,3 +69,17 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1777788,1790619,1791334,1798133,1799934,1799946,1803402,1803403,1805862,1808944,1807786,1804524,1805458,1809491,1805520,1805763]
+
+    # Beta 2
+  - note: Microsoft Office 365 accounts were unable to authenticate
+    tag: fixed
+    bugs: [1810760]
+    group: 2
+  - note: Messages signed with revoked S/MIME certificates were displayed as correctly signed
+    tag: fixed
+    bugs: [1769000]
+    group: 2
+  - note: Window titlebar buttons (minimize/maximize/close) were not displayed in Windows 10 "Dark" color mode
+    tag: fixed
+    bugs: [1810961]
+    group: 2
