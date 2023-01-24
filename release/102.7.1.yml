@@ -13,12 +13,12 @@ release:
   import_system_requirements: '102.0'
 
 notes:
-  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.7)
-    tag: fixed
-
   - note: |
       OAuth2 authentication now working for Microsoft 365 Enterprise accounts. See the
       [Blog post](https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/) for
       additional information. [Bug 1810760](https://bugzilla.mozilla.org/show_bug.cgi?id=1810760)
     tag: fixed
     bugs: [1810760]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.7)
+    tag: fixed
