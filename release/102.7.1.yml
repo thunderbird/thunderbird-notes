@@ -1,0 +1,21 @@
+release:
+  release_date: '2023-01-25'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  - note: |
+      OAuth2 authentication not working for Microsoft 365 Enterprise accounts. See the
+      [Blog post](https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/) for
+      additional information. [Bug 1810760](https://bugzilla.mozilla.org/show_bug.cgi?id=1810760)
+    tag: fixed
+    bugs: [1810760]
