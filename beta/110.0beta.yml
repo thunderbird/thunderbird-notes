@@ -14,6 +14,7 @@ release:
   groups:
     -
     - "Fixed in beta 2"
+    - "No patches applied in beta 3"
 
 notes:
     # New
