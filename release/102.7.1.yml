@@ -1,5 +1,5 @@
 release:
-  release_date: '2023-01-25'
+  release_date: '2023-02-01'
   text: |
     **For more on all the new features in Thunderbird 102, see
     [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
@@ -13,12 +13,29 @@ release:
   import_system_requirements: '102.0'
 
 notes:
-  - note: |
-      OAuth2 authentication now working for Microsoft 365 Enterprise accounts. See the
-      [Blog post](https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/) for
-      additional information. [Bug 1810760](https://bugzilla.mozilla.org/show_bug.cgi?id=1810760)
+  # Fixed
+  - note: Microsoft Office 365 accounts were unable to authenticate
     tag: fixed
     bugs: [1810760]
+  - note: Switching identities caused remote images in HTML signatures to not be shown
+    tag: fixed
+    bugs: [1807200]
+  - note: Thunderbird failed to import vCards that contained "\r\r\n" line endings
+    tag: fixed
+    bugs: [1800305]
+  - note: Contribution button for add-ons opened Contribution page in a Thunderbird tab,
+      instead of the external browser
+    tag: fixed
+    bugs: [1805808]
+  - note: XMPP did not respond to unrecognized IQ queries, causing some servers to close
+      the connection
+    tag: fixed
+    bugs: [1806630]
 
-  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.7)
+  - note: Window titlebar buttons (minimize/maximize/close) were not displayed in Windows
+      10 "Dark" color mode
+    tag: fixed
+    bugs: [1810961]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.7.1)
     tag: fixed
