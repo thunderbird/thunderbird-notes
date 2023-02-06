@@ -1,7 +1,7 @@
 release:
   release_date: '2023-01-19'
   text: |
-    **These notes apply to Thunderbird version 110 beta 3 released January 31, 2023.**
+    **These notes apply to Thunderbird version 110 beta 4 released February 6, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/110.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - "Fixed in beta 2"
     - "No patches applied in beta 3"
+    - "Fixed in beta 4"
 
 notes:
     # New
@@ -84,3 +85,9 @@ notes:
     tag: fixed
     bugs: [1810961]
     group: 2
+
+    # Beta 4
+  - note: Unread message count and folder name formatting did not display correctly due to autosync
+    tag: fixed
+    bugs: [1802295]
+    group: 4
