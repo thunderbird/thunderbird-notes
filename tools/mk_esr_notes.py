@@ -3,7 +3,7 @@
 Copy notes from previous beta releases to make notes for an ESR
 """
 
-import sys
+import argparse
 import os
 import re
 import json
@@ -21,13 +21,16 @@ beta_dir = Path(os.path.join(topdir, "beta"))
 release_dir = Path(os.path.join(topdir, "release"))
 ver_notes_yaml = "{this_esr}.yml"
 
-MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr102/json-tags"
+MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr{major}/json-tags"
+RELEASE_TAG_RE = re.compile(r"THUNDERBIRD_([\d_b]+)_RELEASE")
 CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr102/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
 BUG_NUMBER_REGEX = re.compile(r"bug \d+", re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r"back(\s?)out|backed out|backing out", re.IGNORECASE)
 
 PD_VERSIONS = "https://product-details.mozilla.org/1.0/thunderbird_versions.json"
-CUR_VERSION_URL = "https://hg.mozilla.org/releases/{repo}/raw-file/tip/mail/config/version.txt"
+CUR_VERSION_URL = "https://hg.mozilla.org/releases/{repo}/raw-file/{rev}/mail/config/version.txt"
+
+ESR_VERSIONS = ("102", "115")
 
 
 class RelNote:
@@ -44,24 +47,22 @@ class RelNote:
                 "bugs": self.bugs}
 
 
-def load_notes(this_esr, previous_esr, this_beta):
+def load_notes(this_esr, previous_esr, previous_esr_rev):
     beta_notes = {}
     new_notes = []
     rel_notes = []
 
     esr_major = previous_esr.split(".")[0]
     min_version = Version("{}.0.0".format(esr_major))
-    max_version = Version("{}.0".format(this_beta))
 
     print("""Generating notes for Thunderbird {this_esr}
 Previous esr: {previous_esr}
-Using betas: {min_version} -> {max_version}
-    """.format(this_esr=this_esr, previous_esr=previous_esr, min_version=min_version, max_version=max_version))
+    """.format(this_esr=this_esr, previous_esr=previous_esr, min_version=min_version))
 
-    bug_list, backout_list = get_buglist(previous_esr)
+    bug_list, backout_list = get_buglist(previous_esr_rev)
     bugs_fixed = set.union(bug_list, backout_list)
 
-    note_files = os.listdir(beta_dir)
+    note_files = os.listdir(str(beta_dir))
     for _file in note_files:
         if not _file.endswith("beta.yml"):
             continue
@@ -69,8 +70,6 @@ Using betas: {min_version} -> {max_version}
         # Exclude versions lower than the beta for the previous esr
         # anything newer than the current beta
         if version < min_version:
-            continue
-        if version > max_version:
             continue
 
         with open(os.path.join(beta_dir, _file), "r") as fp:
@@ -93,7 +92,7 @@ Using betas: {min_version} -> {max_version}
 
     noted_bugs = set()
     for note in new_notes:
-        # Only add this note if it is for bugs that are new/cnanged/fixed in this release
+        # Only add this note if it is for bugs that are new/changed/fixed in this release
         if any([b for b in note.bugs if b in bugs_fixed]):
             # Remove references to other bugs that might be on the note
             for b2 in note.bugs:
@@ -172,27 +171,9 @@ def is_backout_bug(changeset_description):
     return bool(BACKOUT_REGEX.search(changeset_description))
 
 
-def get_buglist(previous_esr):
+def get_buglist(from_rev):
     """Retrieve the list of bugs since the last release"""
-    from_rev = None
-    with urlopen(MERCURIAL_TAGS_URL) as response:
-        data = json.load(response)
-
-    e_major, e_minor, e_patch = previous_esr.split(".")
-    previous_esr_tag = "THUNDERBIRD_{}_{}_{}_RELEASE".format(e_major, e_minor, e_patch)
-    to_rev = data["node"]  # Rev of tip
-
-    for tag in data["tags"][:10]:
-        if tag["tag"] == previous_esr_tag:
-            print("Using tag {} at rev {}.".format(tag["tag"], tag["node"]))
-            from_rev = tag["node"]
-            break
-        else:
-            continue
-
-    if from_rev is None:
-        raise Exception("Did not find a RELEASE tag in the first 10 tags")
-
+    to_rev = "tip"
     changeset_url = CHANGESET_URL_TEMPLATE.format(from_version=from_rev, to_version=to_rev)
     with urlopen(changeset_url) as response:
         data = json.load(response)
@@ -221,36 +202,51 @@ def guess_release_date():
     return guess.isoformat()
 
 
-def get_versions():
+def fetch(url, data_type="text"):
+    with urlopen(url) as response:
+        if data_type == "json":
+            data = json.load(response)
+        else:
+            data = response.read().strip().decode("utf-8")
+    return data
+
+
+def get_prev_release_rev(tags):
+    for tag in tags[:10]:
+        match = RELEASE_TAG_RE.match(tag["tag"])
+        if match:
+            print("Using tag {} at rev {}.".format(tag["tag"], tag["node"]))
+            return tag["node"]
+    raise Exception("Did not find a RELEASE tag in the first 10 tags")
+
+
+def get_version_from_rev(repo, rev):
+    return fetch(CUR_VERSION_URL.format(repo=repo, rev=rev))
+
+
+def get_versions(major_version):
     versions = {}
-    with urlopen(PD_VERSIONS) as response:
-        data = json.load(response)
-        versions["previous_esr"] = data["LATEST_THUNDERBIRD_VERSION"]
-        beta = data["LATEST_THUNDERBIRD_DEVEL_VERSION"]
-        index = beta.find(".")
-        versions["this_beta"] = beta[:index]
 
-    with urlopen(CUR_VERSION_URL.format(repo="comm-esr102")) as response:
-        data = response.read()
-        versions["this_esr"] = data.strip().decode("utf-8")
+    esr_tags = fetch(MERCURIAL_TAGS_URL.format(major=major_version), data_type="json")
+    prev_esr_rev = get_prev_release_rev(esr_tags["tags"])
+    versions["prev_esr_rev"] = prev_esr_rev
+    prev_esr_version = get_version_from_rev(f"comm-esr{major_version}", prev_esr_rev)
+    versions["previous_esr"] = prev_esr_version
 
-    try:
-        esr_patch = versions["this_esr"].split(".")[2]
-    except IndexError:
-        esr_patch = 0
-
-    if int(esr_patch) == 0:
-        # Need to bump the beta version
-        beta = int(versions["this_beta"]) + 1
-        versions["this_beta"] = str(beta)
+    this_esr_version = get_version_from_rev(f"comm-esr{major_version}", "tip")
+    versions["this_esr"] = this_esr_version
 
     return versions
 
 
 def main():
-    versions = get_versions()
+    parser = argparse.ArgumentParser(description="Make ESR notes")
+    parser.add_argument("major_ver", metavar="major_version", choices=ESR_VERSIONS, help="Major ESR version")
+    args = parser.parse_args()
 
-    load_notes(versions["this_esr"], versions["previous_esr"], versions["this_beta"])
+    versions = get_versions(args.major_ver)
+
+    load_notes(versions["this_esr"], versions["previous_esr"], versions["prev_esr_rev"])
 
 
 if __name__ == "__main__":
