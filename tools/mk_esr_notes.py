@@ -16,9 +16,9 @@ from tools_lib import yaml, notes_template
 from ruamel.yaml.comments import CommentedSeq as CS
 
 
-here = os.getcwd()
-beta_dir = Path(os.path.join(here, "beta"))
-release_dir = Path(os.path.join(here, "release"))
+topdir = Path(os.path.dirname(__file__)) / ".."
+beta_dir = Path(os.path.join(topdir, "beta"))
+release_dir = Path(os.path.join(topdir, "release"))
 ver_notes_yaml = "{this_esr}.yml"
 
 MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr102/json-tags"
@@ -124,18 +124,19 @@ Using betas: {min_version} -> {max_version}
         
     print("Wrote notes to {}.".format(out_yaml))
 
-    # Print out bugs where no note is available
-    print("")
-    print("Bugs that do not have an associated note:")
     no_note_bugs = sorted(bugs_fixed - noted_bugs)
+    if no_note_bugs:
+        # Print out bugs where no note is available
+        print("")
+        print("Bugs that do not have an associated note:")
 
-    bugzilla_url = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary&id={}".format(
-        ",".join([str(b) for b in no_note_bugs]))
-    with urlopen(bugzilla_url) as response:
-        data = json.load(response)
+        bugzilla_url = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary&id={}".format(
+            ",".join([str(b) for b in no_note_bugs]))
+        with urlopen(bugzilla_url) as response:
+            data = json.load(response)
 
-    for note in data["bugs"]:
-        print("{} - {}".format(note["id"], note["summary"]))
+        for note in data["bugs"]:
+            print("{} - {}".format(note["id"], note["summary"]))
 
 
 def get_bugs_in_changeset(changeset_data):
@@ -197,10 +198,14 @@ def get_buglist(previous_esr):
         data = json.load(response)
     unique_bugs, unique_backout_bugs = get_bugs_in_changeset(data)
 
-    print("Fixed bugs:")
-    print(" ".join([str(bug) for bug in sorted(unique_bugs)]))
-    print("Backout bugs:")
-    print(" ".join([str(bug) for bug in sorted(unique_backout_bugs)]))
+    if unique_bugs:
+        print("Fixed bugs:")
+        print(" ".join([str(bug) for bug in sorted(unique_bugs)]))
+        print("")
+    if unique_backout_bugs:
+        print("Backout bugs:")
+        print(" ".join([str(bug) for bug in sorted(unique_backout_bugs)]))
+
     return unique_bugs, unique_backout_bugs
 
 
