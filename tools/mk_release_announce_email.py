@@ -56,14 +56,26 @@ SOURCE_URL = "https://hg.mozilla.org/releases/{repo}/file/{hash}"
 REV_MD_TMPL = "[{link_text}]({link_url})"
 
 RELEASE_EMAIL_SUBJECT = "Thunderbird {release_version} - build {build}"
-RELEASE_EMAIL_HTML = """**Thunderbird {release_version}** - build {build}
+RELEASE_EMAIL_HTML = """**Thunderbird {release_version}** - build {build} - **{release_date}**
 
 {repo}: {comm_link}
 {moz_repo}: {moz_link}
 
+Releases are planned to be complete on the day listed in the notes, during the US work day.
 """
 
 ReleaseRevs = namedtuple("ReleaseRevs", ["comm_rev", "gecko_ref", "gecko_rev"])
+
+
+def get_release_date(yaml_file):
+    if "beta" in yaml_file:
+        yaml_dir = "beta"
+    else:
+        yaml_dir = "release"
+    yaml_path = os.path.join(yaml_dir, f"{yaml_file}.yml")
+
+    release_info = yaml.load(open(yaml_path).read())
+    return release_info["release"]["release_date"]
 
 
 def get_revs(c_repo):
@@ -121,6 +133,7 @@ def main(comm_repo, build):
     if (comm_repo == 'comm-beta'):
         notes_suffix = 'beta'
     notes_version = "{}{}".format(release_version,notes_suffix)
+    release_date = get_release_date(notes_version)
 
     email_subject = RELEASE_EMAIL_SUBJECT.format(
         release_version=release_display_version, build=build
@@ -128,6 +141,7 @@ def main(comm_repo, build):
     email_body_html = markdown_render(
         RELEASE_EMAIL_HTML.format(
             release_version=release_display_version,
+            release_date=release_date,
             build=build,
             repo=comm_repo,
             moz_repo=moz_repo,
