@@ -1,0 +1,36 @@
+release:
+  release_date: '2023-02-14'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # New
+  - note: Added option to build RNP library with OpenSSL backend (use "--with-librnp-backend=openssl"
+      configure option)
+    tag: new
+    bugs: [1799123, 1805215]
+  - note: Source strings for localized builds now uploaded with source code to Mozilla FTP server
+    tag: new
+    bugs: [1810727]
+  # Changed
+  - note: Thunderbird now warns user that OpenPGP is disabled if RNP library is outdated
+      or missing
+    tag: changed
+    bugs: [1799874]
+  # Fixed
+  - note: '"Get Messages" did not retrieve messages from Gmail accounts using a local folder
+      as a deferred inbox'
+    tag: fixed
+    bugs: [1799106]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.8)
+    tag: fixed
