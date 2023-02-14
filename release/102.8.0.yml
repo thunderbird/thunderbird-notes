@@ -1,5 +1,5 @@
 release:
-  release_date: '2023-02-14'
+  release_date: '2023-02-15'
   text: |
     **For more on all the new features in Thunderbird 102, see
     [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
@@ -31,6 +31,9 @@ notes:
       as a deferred inbox'
     tag: fixed
     bugs: [1799106]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1777788, 1790278]
 
   - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.8)
     tag: fixed
