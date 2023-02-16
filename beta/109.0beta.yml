@@ -25,14 +25,12 @@ notes:
   - note: Thunderbird now supports HKP keyservers that return one key per email address
     tag: new
     bugs: [1640511]
+  - note: The Troubleshooting Information page now displays version of the OpenPGP backend library used by Thunderbird.
+    tag: new
+    bugs: [1799874]
   - note: Added option to build RNP library with OpenSSL backend (use "--with-librnp-backend=openssl" configure option)
     tag: new
     bugs: [1799123]
-
-    # Changed
-  - note: Thunderbird now warns user that OpenPGP is disabled if RNP library is outdated or missing
-    tag: changed
-    bugs: [1799874]
 
     # Fixed
   - note: Having too many folders open at startup caused loss of MSF files

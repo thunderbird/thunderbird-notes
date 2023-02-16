@@ -14,17 +14,14 @@ release:
 
 notes:
   # New
+  - note: The Troubleshooting Information page now displays version of the OpenPGP backend library used by Thunderbird.
+    tag: new
+    bugs: [1799874]
   - note: Added option to build RNP library with OpenSSL backend (use "--with-librnp-backend=openssl"
       configure option)
     tag: new
     bugs: [1799123, 1805215]
 
-  # Changed
-  - note: Thunderbird now warns user that OpenPGP is disabled if RNP library is outdated
-      or missing
-    tag: changed
-    bugs: [1799874]
-    
   # Fixed
   - note: '"Get Messages" did not retrieve messages from Gmail accounts using a local folder
       as a deferred inbox'
