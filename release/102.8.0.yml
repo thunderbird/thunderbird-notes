@@ -18,14 +18,13 @@ notes:
       configure option)
     tag: new
     bugs: [1799123, 1805215]
-  - note: Source strings for localized builds now uploaded with source code to Mozilla FTP server
-    tag: new
-    bugs: [1810727]
+
   # Changed
   - note: Thunderbird now warns user that OpenPGP is disabled if RNP library is outdated
       or missing
     tag: changed
     bugs: [1799874]
+    
   # Fixed
   - note: '"Get Messages" did not retrieve messages from Gmail accounts using a local folder
       as a deferred inbox'
@@ -37,3 +36,7 @@ notes:
 
   - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.8)
     tag: fixed
+
+  - note: Source strings for localized builds not uploaded to FTP as expected
+    tag: unresolved
+    bugs: [1817086]
