@@ -38,9 +38,6 @@ notes:
     bugs: [1814089]
 
     # Fixed
-  - note:
-    tag: fixed
-    bugs: []
   - note: Messages with nested S/MIME signatures did not show innermost signed message
     tag: fixed
     bugs: [1630688]
