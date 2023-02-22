@@ -21,10 +21,10 @@ notes:
     bugs: [1762834]
   - note: Introduced new Unified Toolbar for Thunderbird Supernova
     tag: new
-    bugs: [1747291, 1784289, 1788630, 1788640, 1788641, 1789653, 1795278, 1798509, 1799669, 1803567, 1803568, 1803857, 1803569, 1803570, 1803571, 1805890, 1805902, 1805912, 1806376, 1814664, 1815024, 1809312, 1810713, 1811503, 1813490, 1814393, 1814470, 1810521, 1810512, 1811838, 1812292, 1811705, 1814326, 1813372, 1811508]
+    bugs: [1747291, 1784289, 1788630, 1788640, 1788641, 1789653, 1795278, 1798509, 1799669, 1803567, 1803568, 1803857, 1803569, 1803570, 1803571, 1805890, 1805902, 1805912, 1806376, 1814664, 1815024, 1809312, 1810713, 1811503, 1813490, 1814393, 1814470, 1810521, 1810512, 1811838, 1812292, 1811705, 1814326, 1813372, 1811508, 1810751]
   - note: Introduced new 3-pane window for Thunderbird Supernova
     tag: new
-    bugs: [1787094, 1789774, 1803255, 1803705, 1801566, 1799764, 1805807, 1806567, 1815619, 1814788, 1809544, 1811394, 1811400, 1811408, 1813425, 1812093, 1811988, 1814303, 1814327, 1814846, 1806922, 1812531, 1811139, 1811412, 1811500, 1812084, 1815027, 1812383, 1813967, 1811660, 1814322, 1814370, 1812494, 1813285, 1812453, 1812248]
+    bugs: [1787094, 1789774, 1803255, 1803705, 1801566, 1799764, 1805807, 1806567, 1815619, 1814788, 1809544, 1811394, 1811400, 1811408, 1813425, 1812093, 1811988, 1814303, 1814327, 1814846, 1806922, 1812531, 1811139, 1811412, 1811500, 1812084, 1815027, 1812383, 1813967, 1811660, 1814322, 1814370, 1812494, 1813285, 1812453, 1812248, 1814320, 1815291, 1815607, 1816741, 1813367, 1815645]
 
     # Changed
   - note: OpenPGP key change notification now displays immediately when a key change is accepted, instead of behind the "OpenPGP" label
@@ -38,9 +38,15 @@ notes:
     bugs: [1814089]
 
     # Fixed
+  - note:
+    tag: fixed
+    bugs: []
   - note: Messages with nested S/MIME signatures did not show innermost signed message
     tag: fixed
     bugs: [1630688]
+  - note: Certificate override dialog did not appear sometimes
+    tag: fixed
+    bugs: [1816596]
   - note: Thunderbird stopped checking for new POP3 messages due to unreleased folder lock
     tag: fixed
     bugs: [1798785]
@@ -50,18 +56,18 @@ notes:
   - note: Messages missing "From:" header did not display message header buttons
     tag: fixed
     bugs: [1793918]
-  - note: Opening links in external browser failed
-    tag: fixed
-    bugs: [1813075]
   - note: Status bar did not update when NNTP server connected/disconnected
     tag: fixed
     bugs: [1794117]
+  - note: Opening links in external browser failed
+    tag: fixed
+    bugs: [1813075]
   - note: Add-ons page loaded a blank page
     tag: fixed
     bugs: [1812519]
   - note: Various visual and UX enhancements for Thunderbird Supernova
     tag: fixed
-    bugs: [1805745, 1805746, 1816235, 1815645, 1808240, 1811392, 1814300]
+    bugs: [1805745, 1805746, 1816235, 1815645, 1808240, 1811392, 1814300, 1817151, 1817292, 1816816]
   - note: Various visual and UX enhancements for Calendar
     tag: fixed
     bugs: [1805938, 1805929, 1806882, 1816010, 1814979, 1807517, 1810835, 1811077, 1811143, 1811642, 1811704, 1812435, 1812651]
