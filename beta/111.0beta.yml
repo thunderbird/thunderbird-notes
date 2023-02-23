@@ -3,6 +3,13 @@ release:
   text: |
     **These notes apply to Thunderbird version 111 beta 1 released February 22, 2023.**
 
+    <div style="color: #d70022; font-weight: bold">Thunderbird 115 "Supernova" will feature a new user interface designed from the
+    ground up to be modern and extremely customizable. Thunderbird 111 beta is the first beta version to incorporate features
+    slated for release in Thunderbird 115 "Supernova," and may contain a few more bugs than usual.
+
+    <a href="https://blog.thunderbird.net/2023/02/the-future-of-thunderbird-why-were-rebuilding-from-the-ground-up/">
+    Learn more about Thunderbird 115 "Supernova"</a></div>
+
     **System Requirements:** [Details](/en-US/thunderbird/111.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
