@@ -81,6 +81,6 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1692265, 1799943, 1806586, 1816221, 1814717, 1811410, 1813025, 1813346, 1813368, 1812472, 1816218, 1816072, 1815995, 1813964, 1817875, 1817964]
-  - note: Thunderbird "Supernova" features are still under development and may contain bugs or be incomplete
+  - note: Thunderbird "Supernova" features are still under development and may be incomplete or contain unresolved bugs
     tag: unresolved
     bugs: [1816577, 1811366, 1729379, 1811367, 1811375, 1811379, 1811380]
