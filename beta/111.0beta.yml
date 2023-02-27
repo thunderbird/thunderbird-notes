@@ -1,14 +1,17 @@
 release:
-  release_date: '2023-02-25'
+  release_date: '2023-02-28'
   text: |
-    **These notes apply to Thunderbird version 111 beta 1 released February 25, 2023.**
+    **These notes apply to Thunderbird version 111 beta 1 released February 28, 2023.**
 
-    <div style="color: #d70022; font-weight: bold">Thunderbird 115 "Supernova" will feature a new user interface designed from the
-    ground up to be modern and extremely customizable. Thunderbird 111 beta is the first beta version to enable features
-    slated for release in Thunderbird 115 "Supernova," and may contain a few more bugs than usual.
+    <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enables the UI features of "Supernova". "Supernova" has an updated user interface, designed from the ground up to be modern, extremely customizable, with code that is easier to maintain and improve. "Supernova" release Thunderbird 115 is slated to ship in July.
 
-    <a href="https://blog.thunderbird.net/2023/02/the-future-of-thunderbird-why-were-rebuilding-from-the-ground-up/">
-    Learn more about Thunderbird 115 "Supernova"</a></div>
+    <a href="https://blog.thunderbird.net/tag/supernova/">
+    Learn more about "Supernova"</a></p>
+
+    <p style="color: #d70022; font-weight: bold">Betas 111 and 112 may contain more bugs than normal, but with your help will quickly improve over time. The "Supernova" UI is planned to be mostly complete around the initial release of beta 114.
+
+    <a href="https://thunderbird.topicbox.com/groups/beta">
+    Follow the details in the Thunderbird beta topicbox group.</a></p>
 
     **System Requirements:** [Details](/en-US/thunderbird/111.0beta/system-requirements/)
 
@@ -23,15 +26,27 @@ release:
 
 notes:
     # New
+  - note: Introduced new Unified Toolbar for Thunderbird "Supernova"
+    tag: new
+    bugs: [1747291, 1784289, 1788630, 1788640, 1788641, 1789653, 1795278, 1798509, 1799669, 1803567, 1803568, 1803857, 1803569, 1803570, 1803571, 1805890, 1805902, 1805912, 1806376, 1814664, 1815024, 1809312, 1810713, 1811503, 1813490, 1814393, 1814470, 1810521, 1810512, 1811838, 1812292, 1811705, 1814326, 1813372, 1811508, 1810751, 1814370, 1818330, 1815210]
+  - note: Introduced new 3-pane window for Thunderbird "Supernova"
+    tag: new
+    bugs: [1787094, 1789774, 1803255, 1803705, 1801566, 1799764, 1805807, 1806567, 1814788, 1809544, 1814303, 1811139, 1811412, 1812084, 1813967, 1814322, 1815645]
+  - note: Introduced new Folder Pane for Thunderbird "Supernova"
+    tag: new
+    bugs: [1817624, 1811500, 1806922, 1812531, 1814846, 1813425, 1812248]
+  - note: Introduced new Message List for Thunderbird "Supernova"
+    tag: new
+    bugs: [1815027, 1815607, 1817687, 1816741, 1812383, 1813367, 1812494, 1815291, 1815619, 1811660, 1815944, 1811408, 1816295, 1816807, 1817871, 1811394, 1811400, 1812093, 1814320, 1813285, 1817870]
+  - note: Introduced new Message Reader for Thunderbird "Supernova"
+    tag: new
+    bugs: [1811988, 1812453, 1817099]
+  - note: Introduced new Calendar for Thunderbird "Supernova"
+    tag: new
+    bugs: [1805938, 1805929, 1806882, 1807517, 1811143, 1811642, 1812435]
   - note: OpenPGP candidate keys can now be discovered and imported from GnuPG keyring, if external GnuPG is enabled
     tag: new
     bugs: [1762834]
-  - note: Introduced new Unified Toolbar for Thunderbird Supernova
-    tag: new
-    bugs: [1747291, 1784289, 1788630, 1788640, 1788641, 1789653, 1795278, 1798509, 1799669, 1803567, 1803568, 1803857, 1803569, 1803570, 1803571, 1805890, 1805902, 1805912, 1806376, 1814664, 1815024, 1809312, 1810713, 1811503, 1813490, 1814393, 1814470, 1810521, 1810512, 1811838, 1812292, 1811705, 1814326, 1813372, 1811508, 1810751]
-  - note: Introduced new 3-pane window for Thunderbird Supernova
-    tag: new
-    bugs: [1787094, 1789774, 1803255, 1803705, 1801566, 1799764, 1805807, 1806567, 1815619, 1814788, 1809544, 1811394, 1811400, 1811408, 1813425, 1812093, 1811988, 1814303, 1814327, 1814846, 1806922, 1812531, 1811139, 1811412, 1811500, 1812084, 1815027, 1812383, 1813967, 1811660, 1814322, 1814370, 1812494, 1813285, 1812453, 1812248, 1814320, 1815291, 1815607, 1816741, 1813367, 1815645, 1817624, 1817099, 1817687, 1816295, 1816807, 1815944, 1817871]
 
     # Changed
   - note: OpenPGP key change notification now displays immediately when a key change is accepted, instead of behind the "OpenPGP" label
@@ -72,15 +87,41 @@ notes:
   - note: Add-ons page loaded a blank page
     tag: fixed
     bugs: [1812519]
-  - note: Various visual and UX enhancements for Thunderbird Supernova
+  - note: Various visual and UX enhancements for Thunderbird "Supernova"
     tag: fixed
-    bugs: [1805745, 1805746, 1816235, 1815645, 1808240, 1811392, 1814300, 1817151, 1817292, 1816816]
-  - note: Various visual and UX enhancements for Calendar
-    tag: fixed
-    bugs: [1805938, 1805929, 1806882, 1816010, 1814979, 1807517, 1810835, 1811077, 1811143, 1811642, 1811704, 1812435, 1812651]
+    bugs: [1805745, 1805746, 1816235, 1815645, 1808240, 1811392, 1814300, 1817151, 1817292, 1816816, 1814327]
   - note: Various visual and UX improvements
     tag: fixed
-    bugs: [1692265, 1799943, 1806586, 1816221, 1814717, 1811410, 1813025, 1813346, 1813368, 1812472, 1816218, 1816072, 1815995, 1813964, 1817875, 1817964]
-  - note: Thunderbird "Supernova" features are still under development and may be incomplete or contain unresolved bugs
+    bugs: [1692265, 1799943, 1806586, 1816221, 1814717, 1811410, 1813025, 1813346, 1813368, 1812472, 1816218, 1816072, 1815995, 1813964, 1817875, 1817964, 1816010, 1814979, 1811077, 1811704, 1812651, 1817876]
+
+    # Unresolved
+  - note: Screen reader accessibility is broken for message list and message bodies
+    tag: unresolved
+    bugs: [1813492, 1817083, 1817085, 1817095]
+  - note: Message selection behaves inconsistently
+    tag: unresolved
+    bugs: [1818060, 1818118, 1818191]
+  - note: Performance issues while navigating message list
+    tag: unresolved
+    bugs: [1815026]
+  - note: Message list/message preview does not update after message delete and other actions in certain views
+    tag: unresolved
+    bugs: [1816801]
+  - note: Printing is not working
+    tag: unresolved
+    bugs: [1816294]
+  - note: Mail Toolbar settings have not yet been migrated to new Unified Toolbar
+    tag: unresolved
+    bugs: [1811380]
+  - note: Keyboard message navigation is not working
+    tag: unresolved
+    bugs: []
+  - note: Density not consistently applied across UI
+    tag: unresolved
+    bugs: [1815144, 1815407, 1818333]
+  - note: WebExtension APIs are currently broken
+    tag: unresolved
+    bugs: [1817872, 1817682]
+  - note: Various other Thunderbird "Supernova" features
     tag: unresolved
     bugs: [1816577, 1811366, 1729379, 1811367, 1811375, 1811379, 1811380]
