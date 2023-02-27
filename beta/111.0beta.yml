@@ -1,7 +1,7 @@
 release:
-  release_date: '2023-02-28'
+  release_date: '2023-02-27'
   text: |
-    **These notes apply to Thunderbird version 111 beta 1 released February 28, 2023.**
+    **These notes apply to Thunderbird version 111 beta 1 released February 27, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enables the UI features of "Supernova". "Supernova" has an updated user interface, designed from the ground up to be modern, extremely customizable, with code that is easier to maintain and improve. "Supernova" release Thunderbird 115 is slated to ship in July.
 
@@ -115,7 +115,7 @@ notes:
     bugs: [1811380]
   - note: Keyboard message navigation is not working
     tag: unresolved
-    bugs: []
+    bugs: [1816814]
   - note: Density not consistently applied across UI
     tag: unresolved
     bugs: [1815144, 1815407, 1818333]
