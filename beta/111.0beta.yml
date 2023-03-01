@@ -1,7 +1,7 @@
 release:
   release_date: '2023-02-27'
   text: |
-    **These notes apply to Thunderbird version 111 beta 1 released February 27, 2023.**
+    **These notes apply to Thunderbird version 111 beta 2 released March 1, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enables the UI features of "Supernova". "Supernova" has an updated user interface, designed from the ground up to be modern, extremely customizable, with code that is easier to maintain and improve. "Supernova" release Thunderbird 115 is slated to ship in July.
 
@@ -23,6 +23,7 @@ release:
 
   groups:
     -
+    - "Fixed in beta 2"
 
 notes:
     # New
@@ -93,6 +94,44 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1692265, 1799943, 1806586, 1816221, 1814717, 1811410, 1813025, 1813346, 1813368, 1812472, 1816218, 1816072, 1815995, 1813964, 1817875, 1817964, 1816010, 1814979, 1811077, 1811704, 1812651, 1817876]
+
+    # Beta 2
+  - note: '"Copy to Folder" button was disabled when opening .eml files'
+    tag: fixed
+    bugs: [1816817]
+    group: 2
+  - note: '"Restore Column Order" button did not restore columns after adding/removing columns from Message List'
+    tag: fixed
+    bugs: [1817867]
+    group: 2
+  - note: '"Not Junk" button in notifications did not mark messages as junk'
+    tag: fixed
+    bugs: [1816811]
+    group: 2
+  - note: Unified Toolbar improvements for Thunderbird "Supernova"
+    tag: fixed
+    bugs: [1817907]
+    group: 2
+  - note: Folder Pane improvements for Thunderbird "Supernova"
+    tag: fixed
+    bugs: [1817916, 1816797]
+    group: 2
+  - note: Message List improvements for Thunderbird "Supernova"
+    tag: fixed
+    bugs: [1803272, 1817879]
+    group: 2
+  - note: Message Reader improvements for Thunderbird "Supernova"
+    tag: fixed
+    bugs: [1816809]
+    group: 2
+  - note: Calendar improvements for Thunderbird "Supernova"
+    tag: fixed
+    bugs: [1811358]
+    group: 2
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1818885, 1817374]
+    group: 2
 
     # Unresolved
   - note: Screen reader accessibility is broken for message list and message bodies
