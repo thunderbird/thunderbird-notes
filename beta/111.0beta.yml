@@ -110,7 +110,7 @@ notes:
     group: 2
   - note: Unified Toolbar improvements for Thunderbird "Supernova"
     tag: fixed
-    bugs: [1817907]
+    bugs: [1817907, 1810751, 1817402, 1817414]
     group: 2
   - note: Folder Pane improvements for Thunderbird "Supernova"
     tag: fixed
@@ -118,7 +118,7 @@ notes:
     group: 2
   - note: Message List improvements for Thunderbird "Supernova"
     tag: fixed
-    bugs: [1803272, 1817879]
+    bugs: [1803272, 1817879, 1816804]
     group: 2
   - note: Message Reader improvements for Thunderbird "Supernova"
     tag: fixed
@@ -130,7 +130,7 @@ notes:
     group: 2
   - note: Various visual and UX improvements
     tag: fixed
-    bugs: [1818885, 1817374]
+    bugs: [1818885, 1817374, 1814272]
     group: 2
 
     # Unresolved
@@ -146,9 +146,6 @@ notes:
   - note: Message list/message preview does not update after message delete and other actions in certain views
     tag: unresolved
     bugs: [1816801]
-  - note: Printing is not working
-    tag: unresolved
-    bugs: [1816294]
   - note: Mail Toolbar settings have not yet been migrated to new Unified Toolbar
     tag: unresolved
     bugs: [1811380]
