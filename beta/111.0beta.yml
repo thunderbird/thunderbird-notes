@@ -1,7 +1,7 @@
 release:
   release_date: '2023-02-27'
   text: |
-    **These notes apply to Thunderbird version 111 beta 2 released March 1, 2023.**
+    **These notes apply to Thunderbird version 111 beta 3 released March 6, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enables the UI features of "Supernova". "Supernova" has an updated user interface, designed from the ground up to be modern, extremely customizable, with code that is easier to maintain and improve. "Supernova" release Thunderbird 115 is slated to ship in July.
 
@@ -24,6 +24,7 @@ release:
   groups:
     -
     - "Fixed in beta 2"
+    - "Fixed in beta 3"
 
 notes:
     # New
@@ -133,6 +134,36 @@ notes:
     bugs: [1818885, 1817374, 1814272]
     group: 2
 
+    # Beta 3
+  - note: Thunderbird was unable to open file URLs from command line (URLs beginning with "file://")
+    tag: fixed
+    bugs: [1816343]
+    group: 3
+  - note: Right-clicking on search bar did not trigger context menu
+    tag: fixed
+    bugs: [1817909]
+    group: 3
+  - note: Drag-and-drop of messages and folders did not work
+    tag: fixed
+    bugs: [1815645]
+    group: 3
+  - note: Message list intermittently did not match message reader when navigating to next unread message
+    tag: fixed
+    bugs: [1816807]
+    group: 3
+  - note: Selections in sorted-by-date message list displayed incorrectly when new messages arrived in unselected threads
+    tag: fixed
+    bugs: [1819795]
+    group: 3
+  - note: Event invitations could not be accepted from invitation summary dialog
+    tag: fixed
+    bugs: [1819759]
+    group: 3
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1818333, 1818165, 1819195, 1819856, 1819201, 1819544, 1819604, 1813955]
+    group: 3
+
     # Unresolved
   - note: Screen reader accessibility is broken for message list and message bodies
     tag: unresolved
@@ -154,7 +185,7 @@ notes:
     bugs: [1816814]
   - note: Density not consistently applied across UI
     tag: unresolved
-    bugs: [1815144, 1815407, 1818333]
+    bugs: [1815144, 1815407]
   - note: WebExtension APIs are currently broken
     tag: unresolved
     bugs: [1817872, 1817682]
