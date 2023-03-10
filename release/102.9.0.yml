@@ -1,0 +1,28 @@
+release:
+  release_date: '2023-03-14'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: French dictionary was missing from non-US English versions of Thunderbird
+    tag: fixed
+    bugs: [1818257]
+  - note: Certificate Override dialog for self-signed certificates did not appear when retrieving messages over IMAP using "Get Messages" in context menu
+    tag: fixed
+    bugs: [1809557]
+  - note: Show/hide calendar toggle buttons did not show tooltip when hovered over
+    tag: fixed
+    bugs: [1809557]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1814003]
