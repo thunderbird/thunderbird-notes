@@ -52,7 +52,7 @@ notes:
     bugs: [1762834]
 
     # Changed
-  - note: OpenPGP key change notification now displays immediately when a key change is accepted, instead of behind the "OpenPGP" label
+  - note: Notification about a sender's changed OpenPGP key was not immediately visible
     tag: changed
     bugs: [1814003]
   - note: Thunderbird now opens all external links from 3-pane window in the user's browser
@@ -66,7 +66,7 @@ notes:
   - note: Messages with nested S/MIME signatures did not show innermost signed message
     tag: fixed
     bugs: [1630688]
-  - note: Certificate override dialog did not appear sometimes
+  - note: TLS Certificate Override dialog did not appear when retrieving messages via IMAP using "Get Messages" context menu
     tag: fixed
     bugs: [1816596]
   - note: Thunderbird stopped checking for new POP3 messages due to unreleased folder lock
@@ -78,7 +78,7 @@ notes:
   - note: Messages missing "From:" header did not display message header buttons
     tag: fixed
     bugs: [1793918]
-  - note: French dictionary was missing from non-US English versions of Thunderbird
+  - note: Spellcheck dictionaries were missing from localized Thunderbird builds that should have included them
     tag: fixed
     bugs: [1818257]
   - note: Status bar did not update when NNTP server connected/disconnected

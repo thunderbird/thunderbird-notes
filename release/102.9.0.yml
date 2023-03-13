@@ -14,15 +14,15 @@ release:
 
 notes:
   # Fixed
-  - note: French dictionary was missing from non-US English versions of Thunderbird
-    tag: fixed
-    bugs: [1818257]
-  - note: Certificate Override dialog for self-signed certificates did not appear when retrieving messages over IMAP using "Get Messages" in context menu
-    tag: fixed
-    bugs: [1809557]
-  - note: Show/hide calendar toggle buttons did not show tooltip when hovered over
-    tag: fixed
-    bugs: [1809557]
-  - note: Various visual and UX improvements
+  - note: Notification about a sender's changed OpenPGP key was not immediately visible
     tag: fixed
     bugs: [1814003]
+  - note: TLS Certificate Override dialog did not appear when retrieving messages via IMAP using "Get Messages" context menu
+    tag: fixed
+    bugs: [1816596]
+  - note: Spellcheck dictionaries were missing from localized Thunderbird builds that should have included them
+    tag: fixed
+    bugs: [1818257]
+  - note: Tooltips for "Show/Hide" calendar toggle did not display
+    tag: fixed
+    bugs: [1809557]
