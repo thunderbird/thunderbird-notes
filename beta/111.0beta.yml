@@ -1,7 +1,7 @@
 release:
   release_date: '2023-02-27'
   text: |
-    **These notes apply to Thunderbird version 111 beta 4 released March 9, 2023.**
+    **These notes apply to Thunderbird version 111 beta 3 released March 6, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enables the UI features of "Supernova". "Supernova" has an updated user interface, designed from the ground up to be modern, extremely customizable, with code that is easier to maintain and improve. "Supernova" release Thunderbird 115 is slated to ship in July.
 
@@ -25,7 +25,7 @@ release:
     -
     - "Fixed in beta 2"
     - "Fixed in beta 3"
-    - "Fixed in beta 4"
+    - "Beta 4 not released"
 
 notes:
     # New
@@ -166,13 +166,8 @@ notes:
     group: 3
 
     # Beta 4
-  - note: Collapsing the root node of the Folder Pane using the left arrow key caused keyboard navigation of the Folder Pane to stop working
-    tag: fixed
-    bugs: [1819344]
-    group: 4
-  - note: Various visual and UX improvements
-    tag: fixed
-    bugs: [1819309, 1820080]
+  - note: Thunderbird 111.0b4 was pulled due to build infrastructure problems
+    tag: changed
     group: 4
 
     # Unresolved
