@@ -1,0 +1,97 @@
+release:
+  release_date: '2023-03-15'
+  text: |
+    **These notes apply to Thunderbird version 112 beta 1 released March 15, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/111.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+  groups:
+    -
+
+notes:
+    # New
+  - note: Thunderbird will now send a minimal user-agent header by default
+    tag: new
+    bugs: [1809356]
+  - note: Thunderbird can now open external .eml files in a tab
+    tag: new
+    bugs: [499922]
+  - note: Thunderbird now includes a "app.update.log.file" preference to enable logging of updates
+    tag: new
+    bugs: [1796652]
+  - note: Thunderbird now uses a non-private browser for OAuth login, allowing login to Microsoft Office 365 with Conditional Access Policies enabled
+    tag: new
+    bugs: [1697805]
+  - note: Thunderbird can now open OpenPGP Key Manager dialog from commandline using "-keymanager" option
+    tag: new
+    bugs: [1818961]
+  - note: Candidate OpenPGP keys are now automatically discovered from GnuPG keyring, if external GnuPG is enabled
+    tag: new
+    bugs: [1762834]
+  - note: Thunderbird now supports option to always send public key with autocrypt header
+    tag: new
+    bugs: [1688495]
+
+    # Changed
+  - note: S/MIME signatures using the MD5 hash algorithm are now rejected
+    tag: changed
+    bugs: [1531735]
+
+    # Fixed
+  - note: Messages with missing or corrupt "From:" header did not display message header buttons
+    tag: fixed
+    bugs: [1793918]
+  - note: Automatic POP3 message retrieval did not release folder lock after network error until "Get Messages" was manually clicked
+    tag: fixed
+    bugs: [1798785]
+  - note: Automatic detection of SSL/TLS connections during account creation was broken
+    tag: fixed
+    bugs: [1520283]
+  - note: Automatic detection of character set when quoting a message did not work
+    tag: fixed
+    bugs: [1820716]
+  - note: S/MIME signatures were not displayed correctly in nested messages
+    tag: fixed
+    bugs: [1630688]
+  - note: Thunderbird will now check to see if "UTF8=ACCEPT" is supported by IMAP server before enabling it
+    tag: fixed
+    bugs: [1673158]
+  - note: Address Book integration did not work with macOS 11.4 Bug Sur
+    tag: fixed
+    bugs: [1720257]
+  - note: Message List no longer fired focus events for screen reader users while navigating
+    tag: fixed
+    bugs: [1820604]
+  - note: Collapsing the root node of the Folder Pane using the left arrow key caused keyboard navigation of the Folder Pane to stop working
+    tag: fixed
+    bugs: [1819344]
+  - note: Various Unified Toolbar improvements
+    tag: fixed
+    bugs: [1784289, 1788640, 1788641, 1789653, 1795278, 1798509, 1799669, 1817948, 1817949, 1817908, 1818201, 1819338, 1820167, 1821341, 1821642, 1821808, 1819552]
+  - note: Various 3-pane improvements
+    tag: fixed
+    bugs: [1787094, 1788630, 1789774, 1815407, 1818009, 1819236, 1820262, 1819840, 1819214, 1818117]
+  - note: Various Folder Pane improvements
+    tag: fixed
+    bugs: [1815144, 1818169]
+  - note: Various Message List improvements
+    tag: fixed
+    bugs: [213945, 1812868, 1820721, 1821804]
+  - note: Various Message Reader improvements
+    tag: fixed
+    bugs: [1821611]
+  - note: Various Message Compose window improvements
+    tag: fixed
+    bugs: [1692265, 1813364]
+  - note: Various Calendar improvements
+    tag: fixed
+    bugs: [1804488, 1805759, 1806871, 1811096, 1812140, 1816485, 1817039, 1816008, 1815605, 1818055, 1818066, 1818878, 1819116, 1819547, 1819564, 1820033, 1820297, 1820300, 1820463]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1747291, 1794117, 1779774, 1816696, 1821122, 1816593, 1817836, 1818253, 1818683, 1818759, 1818801, 1819337, 1820166, 1820220, 1820395, 1821014, 1821018, 1821382, 1821405, 1821551, 1821554, 1821557, 1821558, 1821597, 1819089, 1816282, 1816353, 1816764, 1819309, 1820080]
