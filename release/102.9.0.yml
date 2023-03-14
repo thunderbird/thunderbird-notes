@@ -26,3 +26,6 @@ notes:
   - note: Tooltips for "Show/Hide" calendar toggle did not display
     tag: fixed
     bugs: [1809557]
+
+  - note: Various [security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.9)
+    tag: fixed
