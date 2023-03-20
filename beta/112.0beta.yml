@@ -1,7 +1,7 @@
 release:
   release_date: '2023-03-15'
   text: |
-    **These notes apply to Thunderbird version 112 beta 1 released March 15, 2023.**
+    **These notes apply to Thunderbird version 112 beta 2 released March 20, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enables the UI features of "Supernova". "Supernova" has an updated user interface, designed from the ground up to be modern, extremely customizable, with code that is easier to maintain and improve. "Supernova" release Thunderbird 115 is slated to ship in July.
 
@@ -23,6 +23,7 @@ release:
 
   groups:
     -
+    - 'Fixed in beta 2'
 
 notes:
     # New
@@ -105,3 +106,13 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1747291, 1794117, 1779774, 1816696, 1821122, 1816593, 1817836, 1818253, 1818683, 1818759, 1818801, 1819337, 1820166, 1820220, 1820395, 1821014, 1821018, 1821382, 1821405, 1821551, 1821554, 1821557, 1821558, 1821597, 1819089, 1816282, 1816353, 1816764, 1819309, 1820080]
+
+    # Beta 2
+  - note: Clicking "Copy text to clipboard" on "Troubleshooting Information" page did not copy anything to the clipboard
+    tag: fixed
+    bugs: [1820596]
+    group: 2
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1821808, 1822286, 1821358, 1823127]
+    group: 2
