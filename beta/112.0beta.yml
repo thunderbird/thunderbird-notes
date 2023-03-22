@@ -1,19 +1,20 @@
 release:
   release_date: '2023-03-15'
   text: |
-    **These notes apply to Thunderbird version 112 beta 2 released March 20, 2023.**
+    **These notes apply to Thunderbird version 112 beta 3 released March 23, 2023.**
 
-    <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enables the UI features of "Supernova". "Supernova" has an updated user interface, designed from the ground up to be modern, extremely customizable, with code that is easier to maintain and improve. "Supernova" release Thunderbird 115 is slated to ship in July.
+    <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
+    "Supernova" has an updated user interface, designed to be more modern, customizable, and
+    with code that is easier to maintain and improve. "Supernova" is slated to ship with Thunderbird 115 in July.</p>
 
-    <a href="https://blog.thunderbird.net/tag/supernova/">
-    Learn more about "Supernova"</a></p>
+    **[Learn more about "Supernova"](https://blog.thunderbird.net/tag/supernova/)**
 
-    <p style="color: #d70022; font-weight: bold">Betas 111 and 112 may contain more bugs than normal, but with your help will quickly improve over time. The "Supernova" UI is planned to be mostly complete around the initial release of beta 114.
+    **Betas 111 and 112 may contain more bugs than normal, but with your help it will quickly improve over time. The
+    "Supernova" UI is planned to be complete for initial release of beta 114.**
 
-    <a href="https://thunderbird.topicbox.com/groups/beta">
-    Follow the details in the Thunderbird beta topicbox group.</a></p>
+    [Follow the details in the Thunderbird beta topicbox group.](https://thunderbird.topicbox.com/groups/beta)
 
-    **System Requirements:** [Details](/en-US/thunderbird/111.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/112.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
@@ -24,6 +25,7 @@ release:
   groups:
     -
     - 'Fixed in beta 2'
+    - New, Changed, and Fixed in beta 3
 
 notes:
     # New
@@ -116,3 +118,36 @@ notes:
     tag: fixed
     bugs: [1821808, 1822286, 1821358, 1823127]
     group: 2
+
+
+  # Beta 3
+  - note: Additional Folder modes added to Folder Pane options meatball menu
+    tag: new
+    bugs: [1817109]
+    group: 3
+
+  - note: New messages will automatically select S/MIME if configured and OpenPGP is not
+    tag: changed
+    bugs: [1793278]
+    group: 3
+
+  - note: '"Read Messages" button in Account Central did not work'
+    tag: fixed
+    bugs: [1819993]
+    group: 3
+  - note: Converting an email to an event with "Convert To > Event" did not work
+    tag: fixed
+    bugs: [1821902]
+    group: 3
+  - note: Message context menus in synthetic view results were incomplete
+    tag: fixed
+    bugs: [1820057]
+    group: 3
+  - note: Message lists in Vertical view were missing message status and attachment indicators
+    tag: fixed
+    bugs: [1823138, 1823601]
+    group: 3
+  - note: Many visual and UX fixes and improvements
+    tag: fixed
+    bugs: [1819611, 1820794, 1821915, 1822422, 1823737, 1822868, 1822981, 1821711, 1823672, 1823628]
+    group: 3
