@@ -1,7 +1,7 @@
 release:
   release_date: '2023-03-15'
   text: |
-    **These notes apply to Thunderbird version 112 beta 3 released March 23, 2023.**
+    **These notes apply to Thunderbird version 112 beta 4 released March 27, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -26,6 +26,7 @@ release:
     -
     - 'Fixed in beta 2'
     - New, Changed, and Fixed in beta 3
+    - New, Changed, and Fixed in beta 4
 
 notes:
     # New
@@ -120,7 +121,7 @@ notes:
     group: 2
 
 
-  # Beta 3
+    # Beta 3
   - note: Additional Folder modes added to Folder Pane options meatball menu
     tag: new
     bugs: [1817109]
@@ -151,3 +152,27 @@ notes:
     tag: fixed
     bugs: [1819611, 1820794, 1821915, 1822422, 1823737, 1822868, 1822981, 1821711, 1823672, 1823628]
     group: 3
+
+    # Beta 4
+  - note: Added compact mode to Unread Folders and Favorite Folders modes
+    tag: new
+    bugs: [1823830]
+    group: 4
+  - note: Added "New" indicator to vertical view of Message Reader
+    tag: new
+    bugs: [1824378]
+    group: 4
+
+  - note: Updated third-party chat library licenses in about:license
+    tag: changed
+    bugs: [1823916]
+    group: 4
+
+  - note: Folder hierarchy and account separation did not work under Unread Folders and Favorite Folders modes
+    tag: fixed
+    bugs: [1822523]
+    group: 4
+  - note: Many visual and UX fixes and improvements
+    tag: fixed
+    bugs: [1822960, 1815028, 1820077, 1820201, 1818592, 1819963, 1824144]
+    group: 4
