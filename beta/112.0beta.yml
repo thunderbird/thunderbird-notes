@@ -154,25 +154,33 @@ notes:
     group: 3
 
     # Beta 4
-  - note: Added compact mode to Unread Folders and Favorite Folders modes
-    tag: new
-    bugs: [1823830]
-    group: 4
   - note: Added "New" indicator to vertical view of Message Reader
     tag: new
     bugs: [1824378]
     group: 4
 
-  - note: Updated third-party chat library licenses in about:license
+  - note: '"Unread" and "Favorite"  folder tree mode improvements'
     tag: changed
-    bugs: [1823916]
     group: 4
+    bugs: [1823830, 1822523]
 
-  - note: Folder hierarchy and account separation did not work under Unread Folders and Favorite Folders modes
+  - note: Creating a saved search added the virtual folder twice
     tag: fixed
-    bugs: [1822523]
+    bugs: [1815028]
     group: 4
-  - note: Many visual and UX fixes and improvements
+  - note: Unselectable GMail folders were not always hidden from the folder tree
     tag: fixed
-    bugs: [1822960, 1815028, 1820077, 1820201, 1818592, 1819963, 1824144]
+    group: 4
+    bugs: [1818592]
+  - note: Mail accounts in Folder Pane were not displayed in same order as in Account Settings
+    tag: fixed
+    group: 4
+    bugs: [1819963]
+  - note: Keyboard accessibility improvements
+    tag: fixed
+    group: 4
+    bugs: [1820077, 1820201]
+  - note: Visual and theme improvements
+    tag: fixed
+    bugs: [1822960, 1824144]
     group: 4
