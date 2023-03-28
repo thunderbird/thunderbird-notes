@@ -1,0 +1,31 @@
+release:
+  release_date: '2023-03-28'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Thunderbird was unable to open file URLs from command line (URLs beginning with
+      "file://")
+    tag: fixed
+    bugs: [1816343]
+
+  - note: Source strings for localized builds not uploaded to FTP as expected
+    tag: fixed
+    bugs: [1817086]
+
+  - note: Visual and theme improvements
+    tag: fixed
+    bugs: [1821358, 1822286]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.9.1)'
+    tag: fixed
