@@ -237,4 +237,16 @@ notes:
     group: 5
     bugs: [1819606]
 
-
+    # Unresolved
+  - note: Screen reader accessibility is broken for message list and message bodies
+    tag: unresolved
+    bugs: [1817083]
+  - note: Message selection behaves inconsistently
+    tag: unresolved
+    bugs: [1818060, 1818191]
+  - note: WebExtension APIs are currently broken
+    tag: unresolved
+    bugs: [1817872, 1817682]
+  - note: Various other Thunderbird "Supernova" features
+    tag: unresolved
+    bugs: [1816577, 1811366, 1729379, 1811367, 1811375, 1811379, 1811380]
