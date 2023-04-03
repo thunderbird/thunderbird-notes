@@ -1,7 +1,7 @@
 release:
   release_date: '2023-03-15'
   text: |
-    **These notes apply to Thunderbird version 112 beta 5 released March 29, 2023.**
+    **These notes apply to Thunderbird version 112 beta 6 released April 3, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -28,6 +28,7 @@ release:
     - New, Changed, and Fixed in beta 3
     - New, Changed, and Fixed in beta 4
     - Fixed in beta 5
+    - Changed and fixed in beta 6
 
 notes:
     # New
@@ -186,8 +187,7 @@ notes:
     bugs: [1822960, 1824144]
     group: 4
 
-
-  # beta 5
+    # Beta 5
   - note: Message "Back" and "Forward" buttons were not available in Unified Toolbar; Access keys in Go menu did not work
     tag: fixed
     group: 5
@@ -236,6 +236,29 @@ notes:
     tag: fixed
     group: 5
     bugs: [1819606]
+
+    # Beta 6
+  - note: Visual density is now consistent between folder pane and message list
+    tag: changed
+    bugs: [1822807]
+    group: 6
+
+  - note: Deleting a message in Unified View did not select the next message in the message list
+    tag: fixed
+    bugs: [1825184]
+    group: 6
+  - note: Messages selected in "Unread Folders" view disappeared immediately after being selected due to being marked as read
+    tag: fixed
+    bugs: [1822537]
+    group: 6
+  - note: '"Mark a message as deleted" did not properly mark IMAP messages as deleted'
+    tag: fixed
+    bugs: [1816041]
+    group: 6
+  - note: '"Location" column in message list was blank for saved search folders'
+    tag: fixed
+    bugs: [1821999]
+    group: 6
 
     # Unresolved
   - note: Screen reader accessibility is broken for message list and message bodies
