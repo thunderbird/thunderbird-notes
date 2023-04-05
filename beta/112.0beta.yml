@@ -1,7 +1,7 @@
 release:
   release_date: '2023-03-15'
   text: |
-    **These notes apply to Thunderbird version 112 beta 6 released April 3, 2023.**
+    **These notes apply to Thunderbird version 112 beta 7 released April 5, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -29,6 +29,7 @@ release:
     - New, Changed, and Fixed in beta 4
     - Fixed in beta 5
     - Changed and fixed in beta 6
+    - Fixed in beta 7
 
 notes:
     # New
@@ -259,6 +260,28 @@ notes:
     tag: fixed
     bugs: [1821999]
     group: 6
+
+  # beta 7
+  - note: Message List spacing in compact mode had increased in beta 6, now restored
+    tag: fixed
+    bugs: [1825150]
+    group: 7
+  - note: Drag and Drop .eml file onto message list did not work
+    tag: fixed
+    bugs: [1821205]
+    group: 7
+  - note: Drag and Drop message to re-order list columns did not work
+    tag: fixed
+    bugs: [1819104]
+    group: 7
+  - note: Additional message list improvements
+    tag: fixed
+    bugs: [1825227, 1825685, 1824555]
+    group: 7
+  - note: Buttons in message header (Reply, Forward, etc) were not keyboard accessible
+    tag: fixed
+    bugs: [1816784]
+    group: 7
 
     # Unresolved
   - note: Screen reader accessibility is broken for message list and message bodies
