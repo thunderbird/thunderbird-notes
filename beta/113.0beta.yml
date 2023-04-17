@@ -1,7 +1,7 @@
 release:
   release_date: '2023-04-11'
   text: |
-    **These notes apply to Thunderbird version 113 beta 1 released April 11, 2023.**
+    **These notes apply to Thunderbird version 113 beta 2 released April 17, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -23,6 +23,7 @@ release:
 
   groups:
     - 
+    - New and fixed in beta 2
 
 notes:
   # New
@@ -96,3 +97,38 @@ notes:
     bugs: [1822252, 1822661, 1822871, 1823656, 1822053, 1824303, 1825506, 1822638, 1821667,
       1817302, 1823825, 1822967, 1824756, 1824767, 1825369, 1825499, 1825013, 1826022,
       1825914, 1823292, 1825166, 1820607, 1821435, 1823309, 1821451, 1819479]
+
+  # Beta 2
+  - note: '"Get messages" and "New messages" buttons can now be individually hidden from the Folder Pane'
+    tag: new
+    bugs: [1826626]
+    group: 2
+
+  - note: Drop-down buttons in message header could not be activated using Enter or Space
+    tag: fixed
+    bugs: [1826659]
+    group: 2
+  - note: Drop-down button of "Reply All" button was not available in message header
+    tag: fixed
+    bugs: [1827246]
+    group: 2
+  - note: Creating too many filters in the Filter Editor caused the list view to overflow without scrolling, making overflowed filters inaccessible
+    tag: fixed
+    bugs: [1826700]
+    group: 2
+  - note: Archive button did not work on collapsed threads
+    tag: fixed
+    bugs: [1824880]
+    group: 2
+  - note: News reader did not always issue GROUP command after authentication with remote server, preventing Thundebird from displaying or refreshing news from the server
+    tag: fixed
+    bugs: [1824377]
+    group: 2
+  - note: Adding too many terms to an Advanced Address Book Search caused the list view to overflow without scrolling, making overflowed terms inaccessible
+    tag: fixed
+    bugs: [1826722]
+    group: 2
+  - note: Various visual and UX fixes and improvements
+    tag: fixed
+    bugs: [1827070, 1826996, 1827579, 1827700, 1826627, 1827930, 1826443]
+    group: 2
