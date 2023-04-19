@@ -1,7 +1,7 @@
 release:
   release_date: '2023-04-11'
   text: |
-    **These notes apply to Thunderbird version 113 beta 2 released April 17, 2023.**
+    **These notes apply to Thunderbird version 113 beta 3 released April 19, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -24,6 +24,7 @@ release:
   groups:
     - 
     - New and fixed in beta 2
+    - Fixed in beta 3
 
 notes:
   # New
@@ -132,3 +133,30 @@ notes:
     tag: fixed
     bugs: [1827070, 1826996, 1827579, 1827700, 1826627, 1827930, 1826443]
     group: 2
+
+  # beta 3
+  - note: Moving or renaming a mail folder caused sub-folders to disappear
+    tag: fixed
+    bugs: [1825430]
+    group: 3
+  - note: Incorrect message was used for reply/forward if a new message arrived while reading a message
+    tag: fixed
+    bugs: [1823637]
+    group: 3
+  - note: Folder Tree performance improvements
+    tag: fixed
+    bugs: [1827755]
+    group: 3
+  - note: Previously hidden folders were visible in Unified Folders mode
+    tag: fixed
+    bugs: [1817508]
+    group: 3
+  - note: RSS and News accounts were not included in Unified Folders mode
+    tag: fixed
+    bugs: [1825513]
+    group: 3
+  - note: Columns in some list displays could not be resized
+    tag: fixed
+    bugs: [1827580, 1828093]
+    group: 3
+
