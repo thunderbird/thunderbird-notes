@@ -1,0 +1,26 @@
+release:
+  release_date: '2023-04-24'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Messages with missing or corrupt "From:" header did not display message header
+      buttons
+    tag: fixed
+    bugs: [1793918]
+  - note: Composer repeatedly prompted for S/MIME smartcard signing/encryption password
+    tag: fixed
+    bugs: [1828366]
+  - note: Address Book integration did not work with macOS 11.4 Bug Sur
+    tag: fixed
+    bugs: [1720257]
+  - note: Mexico City DST fix in Thunderbird 102.10.0 (bug 1826146) was incomplete
+    tag: fixed
+    bugs: [1827503]
