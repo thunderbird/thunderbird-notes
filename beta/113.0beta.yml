@@ -1,7 +1,7 @@
 release:
   release_date: '2023-04-11'
   text: |
-    **These notes apply to Thunderbird version 113 beta 3 released April 19, 2023.**
+    **These notes apply to Thunderbird version 113 beta 4 released April 24, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -25,6 +25,7 @@ release:
     - 
     - New and fixed in beta 2
     - Fixed in beta 3
+    - Fixed in beta 4
 
 notes:
   # New
@@ -134,7 +135,7 @@ notes:
     bugs: [1827070, 1826996, 1827579, 1827700, 1826627, 1827930, 1826443]
     group: 2
 
-  # beta 3
+  # Beta 3
   - note: Moving or renaming a mail folder caused sub-folders to disappear
     tag: fixed
     bugs: [1825430]
@@ -159,4 +160,38 @@ notes:
     tag: fixed
     bugs: [1827580, 1828093]
     group: 3
+
+  # Beta 4
+  - note: Switching to Unified Folder Inbox with larger profiles caused high memory usage and considerable delay
+    tag: fixed
+    bugs: [1817367]
+    group: 4
+  - note: Mail tabs did not immediately update to reflect new contact display name preferences
+    tag: fixed
+    bugs: [1827743]
+    group: 4
+  - note: OpenPGP status in message reader did not update to reflect new message when switching to new message
+    tag: fixed
+    bugs: [1828136]
+    group: 4
+  - note: Thunderbird did not check for recipient S/MIME certificates in some cases while encryption was enabled
+    tag: fixed
+    bugs: [1828475]
+    group: 4
+  - note: Attachment icon incorrectly displayed for multipart emails
+    tag: fixed
+    bugs: [1825963]
+    group: 4
+  - note: '"Insert Image" dialog box did not resize to accomodate preview image, hiding dialog buttons'
+    tag: fixed
+    bugs: [1828298]
+    group: 4
+  - note: Screen readers did not consistently communicate the selected message when navigating message list with "Page Up", "Page Down", "Home", or "End"
+    tag: fixed
+    bugs: [1819276]
+    group: 4
+  - note: Splitter between Today Pane and Tasks Pane could not be moved
+    tag: fixed
+    bugs: [1828991]
+    group: 4
 
