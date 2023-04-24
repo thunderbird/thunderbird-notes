@@ -170,7 +170,7 @@ notes:
     tag: fixed
     bugs: [1827743]
     group: 4
-  - note: OpenPGP status in message reader did not update to reflect new message when switching to new message
+  - note: OpenPGP status in message reader did not update when switching to new messages
     tag: fixed
     bugs: [1828136]
     group: 4
