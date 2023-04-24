@@ -190,7 +190,7 @@ notes:
     tag: fixed
     bugs: [1819276]
     group: 4
-  - note: Splitter between Today Pane and Tasks Pane could not be moved
+  - note: Events and Tasks views in Today Pane could not be resized when using split mode
     tag: fixed
     bugs: [1828991]
     group: 4
