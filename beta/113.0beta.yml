@@ -1,7 +1,7 @@
 release:
   release_date: '2023-04-11'
   text: |
-    **These notes apply to Thunderbird version 113 beta 4 released April 24, 2023.**
+    **These notes apply to Thunderbird version 113 beta 5 released April 26, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -26,6 +26,7 @@ release:
     - New and fixed in beta 2
     - Fixed in beta 3
     - Fixed in beta 4
+    - Fixed in beta 5
 
 notes:
   # New
@@ -195,3 +196,36 @@ notes:
     bugs: [1828991]
     group: 4
 
+# beta 5
+  - note: Encrypted Subjects on OpenPGP messages were not displayed until the message was displayed
+    tag: fixed
+    bugs: [1819499]
+    group: 5
+  - note: '"Compact Folders" menu item was not enabled when the account itself was selected in the folder pane'
+    tag: fixed
+    bugs: [1823546]
+    group: 5
+  - note: Context menu items (copy/cut/paste) were missing from Quick Filter bar
+    tag: fixed
+    bugs: [1824313]
+    group: 5
+  - note: '"Copy to Folder" menu item was not enabled when viewing an opened .eml file in a standalone window'
+    tag: fixed
+    bugs: [1826744]
+    group: 5
+  - note: Subfolders did not expand when dragging messages to folder pane
+    tag: fixed
+    bugs: [1825372]
+    group: 5
+  - note: A "Learn More" link was missing from the "Do not track" option in "Privacy & Security" Settings
+    tag: fixed
+    bugs: [1827891]
+    group: 5
+  - note: Window control buttons (minimize, maximize/restore, close) were displayed out of order on Linux configured to use reversed placement
+    tag: fixed
+    bugs: [1828530]
+    group: 5
+  - note: Folder pane header buttons were spaced too far apart with a wide folder pane
+    tag: fixed
+    bugs: [1823378]
+    group: 5
