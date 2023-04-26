@@ -33,6 +33,7 @@ import json
 import subprocess
 import shutil
 
+from datetime import datetime
 from urllib.request import urlopen
 from collections import namedtuple
 
@@ -47,9 +48,7 @@ MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/{repo}/json-tags"
 CUR_VERSION_URL = (
     "https://hg.mozilla.org/releases/{repo}/raw-file/tip/mail/config/version.txt"
 )
-CUR_VERSION_DISPLAY_URL = (
-    "https://hg.mozilla.org/releases/{repo}/raw-file/tip/mail/config/version_display.txt"
-)
+CUR_VERSION_DISPLAY_URL = "https://hg.mozilla.org/releases/{repo}/raw-file/tip/mail/config/version_display.txt"
 
 SOURCE_URL = "https://hg.mozilla.org/releases/{repo}/file/{hash}"
 
@@ -67,6 +66,24 @@ Releases are planned to be complete on the day listed in the notes, during the U
 ReleaseRevs = namedtuple("ReleaseRevs", ["comm_rev", "gecko_ref", "gecko_rev"])
 
 
+def beta_release_date(release_info):
+    release = release_info["release"]
+    # Assume if there's no "groups" section, or there's exactly one group item it's beta 1
+    if "groups" in release and len(release["groups"]) > 1:
+        # This code relies on the format of the date being found in the first line of "text"
+        # and the content of that line not changing very much. The date starts after the word release, and
+        # ends at the ".**" at the end of the line.
+        date_line = release["text"].split("\n")[0]
+        match = re.search(r"released (?P<date>[A-Za-z, 0-9]+)\.\*\*", date_line)
+        if match:
+            release_date = datetime.strptime(match.group("date"), "%B %d, %Y")
+            return release_date.strftime("%Y-%m-%d")
+        raise Exception(f"Unable to find Beta release date in '{date_line}'.")
+
+    # Fallback for beta 1
+    return release["release_date"]
+
+
 def get_release_date(yaml_file):
     if "beta" in yaml_file:
         yaml_dir = "beta"
@@ -75,6 +92,8 @@ def get_release_date(yaml_file):
     yaml_path = os.path.join(yaml_dir, f"{yaml_file}.yml")
 
     release_info = yaml.load(open(yaml_path).read())
+    if yaml_dir == "beta":
+        return beta_release_date(release_info)
     return release_info["release"]["release_date"]
 
 
@@ -130,9 +149,9 @@ def main(comm_repo, build):
     moz_link = REV_MD_TMPL.format(link_text=moz_source_text, link_url=moz_source_url)
 
     notes_suffix = ""
-    if (comm_repo == 'comm-beta'):
-        notes_suffix = 'beta'
-    notes_version = "{}{}".format(release_version,notes_suffix)
+    if comm_repo == "comm-beta":
+        notes_suffix = "beta"
+    notes_version = "{}{}".format(release_version, notes_suffix)
     release_date = get_release_date(notes_version)
 
     email_subject = RELEASE_EMAIL_SUBJECT.format(
@@ -156,11 +175,16 @@ def main(comm_repo, build):
     cc = "Thunderbird Support <support-crew@discuss.thunderbird.net>"
     if comm_repo == "comm-beta":
         cc += ";TB Beta <beta@discuss.thunderbird.net>"
-    subprocess.run("thunderbird -compose 'format=html','attachment={}','to={}','cc={}','subject={}','body={}'"
-                   .format(os.path.abspath(attach_fn),
-                           "Thunderbird Drivers <thunderbird-drivers@mozilla.org>",
-                           cc,
-                           email_subject, email_body_html), shell=True)
+    subprocess.run(
+        "thunderbird -compose 'format=html','attachment={}','to={}','cc={}','subject={}','body={}'".format(
+            os.path.abspath(attach_fn),
+            "Thunderbird Drivers <thunderbird-drivers@mozilla.org>",
+            cc,
+            email_subject,
+            email_body_html,
+        ),
+        shell=True,
+    )
 
 
 def do_builderr(build_str):
