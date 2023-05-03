@@ -1,7 +1,7 @@
 release:
   release_date: '2023-04-11'
   text: |
-    **These notes apply to Thunderbird version 113 beta 5 released April 26, 2023.**
+    **These notes apply to Thunderbird version 113 beta 6 released May 3, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
     "Supernova" has an updated user interface, designed to be more modern, customizable, and
@@ -27,6 +27,7 @@ release:
     - Fixed in beta 3
     - Fixed in beta 4
     - Fixed in beta 5
+    - Fixed in beta 6
 
 notes:
   # New
@@ -229,3 +230,37 @@ notes:
     tag: fixed
     bugs: [1823378]
     group: 5
+
+# beta 6
+  - note: Unified Toolbar "Compact" button did not work
+    tag: fixed
+    bugs: [1829632]
+    group: 6
+  - note: Quick Filter bar visibility and performance improvements
+    tag: fixed
+    bugs: [1819291, 1818166, 1827003]
+    group: 6
+  - note: "Unified Folders view fixes: Missing folders restored, searched folders did not refresh when subfolders were added"
+    tag: fixed
+    bugs: [1822815, 1829565]
+    group: 6
+  - note: Some new/unread messages were erroneously marked as read
+    tag: fixed
+    bugs: [1825924]
+    group: 6
+  - note: Send Progress dialog only displayed as a title bar
+    tag: fixed
+    bugs: [1823157]
+    group: 6
+  - note: Creating OpenPGP keys with no expiration was not possible
+    tag: fixed
+    bugs: [1830094]
+    group: 6
+  - note: About dialog layout fixes; restored display of distribution.ini information
+    tag: fixed
+    bugs: [1828340, 1825841]
+    group: 6
+  - note: Extra linebreaks in Google Calendar event descriptions removed
+    tag: fixed
+    bugs: [1792078]
+    group: 6
