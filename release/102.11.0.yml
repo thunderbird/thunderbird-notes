@@ -1,0 +1,22 @@
+release:
+  release_date: '2023-05-09'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: During Account Setup, the "Checking password..." message was not removed after a failure
+    tag: fixed
+    bugs: [1826022]
+  - note: Miscellaneous UI fixes
+    tag: fixed
+    bugs: [1827070]
