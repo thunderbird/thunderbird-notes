@@ -1,0 +1,132 @@
+release:
+  release_date: '2023-05-10'
+  text: |
+    **These notes apply to Thunderbird version 114 beta 1 released May 10, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/112.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 97.0beta
+
+  groups:
+    - 
+
+notes:
+  # New
+  - note: New folders are now added to virtual parent folders and saved searches automatically
+    tag: new
+    bugs: [378833]
+  - note: '"Total message count" can now be enabled/disabled for folders in Folder Pane'
+    tag: new
+    bugs: [1817917]
+  - note: Automatic enabling/disabling of encryption can now be enabled through UI
+    tag: new
+    bugs: [1796631]
+  - note: Searching for "about:config" in Settings now finds "about:config"
+    tag: new
+    bugs: [1755788]
+  - note: Cards now support phone and fax number links
+    tag: new
+    bugs: [119165]
+
+  # Fixed
+  - note: Canceling account setup during verification prevents account from being added
+      again
+    tag: fixed
+    bugs: [1788086]
+  - note: 'Holding "Shift" did not switch to non-default composition mode'
+    tag: fixed
+    bugs: [1829536]
+  - note: Displaying a message with Unified Inbox enabled changed the folder selected in
+      the Folder Pane to the actual inbox containing the message
+    tag: fixed
+    bugs: [1831208]
+  - note: Unified Toolbar customization indicated keyboard focus on multiple elements simultaneously
+    tag: fixed
+    bugs: [1825268]
+  - note: '"Mark thread as read" was only available when a single message in a thread was
+      selected'
+    tag: fixed
+    bugs: [1830306]
+  - note: Selecting a folder in the Folder Pane sometimes re-selected the folder under
+      a different folder mode
+    tag: fixed
+    bugs: [1830819]
+  - note: Quick Filters took up to several seconds to filter larger folders
+    tag: fixed
+    bugs: [1827003]
+  - note: '"Run Junk Mail Controls" did not work'
+    tag: fixed
+    bugs: [1647227]
+  - note: Opening Message-ID in message header by clicking on the ID or selecting "Open
+      Browser With Message-ID" did not work
+    tag: fixed
+    bugs: [1829491]
+  - note: Pressing "Enter" on focused column header incorrectly opens selected message
+    tag: fixed
+    bugs: [1829099]
+  - note: '"Location" column was not shown when displaying global search results as list,
+      and was not populated when enabled manually'
+    tag: fixed
+    bugs: [1822441]
+  - note: Drag-and-drop did not work for moving messages to a new folder in vertical view
+    tag: fixed
+    bugs: [1826167]
+  - note: Drag-and-drop did not work for adding .eml files to mailbox
+    tag: fixed
+    bugs: [1828359]
+  - note: Double-clicking on any button in a message list row incorrectly opened the message
+      in a tab
+    tag: fixed
+    bugs: [1828339]
+  - note: Message list option "Copy as decrypted to" was unavailable in context menu
+    tag: fixed
+    bugs: [1827654]
+  - note: Structure table in "Key Properties" dialog did not expand to fit contents, making
+      the structure table unusable
+    tag: fixed
+    bugs: [1831566]
+  - note: Messages could not be sent through some SMTP servers due to unhandled formatting
+      of username prompt
+    tag: fixed
+    bugs: [1824060]
+  - note: '[OpenBSD] Links could not be opened in browser'
+    tag: fixed
+    bugs: [1817945]
+  - note: '"NNTP Cancel Message" option did not work'
+    tag: fixed
+    bugs: [1830468]
+  - note: '"Article not found" page was not displayed for news articles unavailable on
+      the server'
+    tag: fixed
+    bugs: [1828331]
+  - note: Addressbook contact context menu could not be opened via keyboard
+    tag: fixed
+    bugs: [1826546]
+  - note: Long lists of chat conversations could not be fully viewed or scrolled
+    tag: fixed
+    bugs: [1828157]
+  - note: When creating a new event, the organizer was not automatically added to the event
+    tag: fixed
+    bugs: [459683]
+  - note: '"Invitations" dialog was incorrect size and could not scroll'
+    tag: fixed
+    bugs: [1829695]
+  - note: Calendars with a name containing a slash could not be exported without first
+      being renamed
+    tag: fixed
+    bugs: [1827567]
+  - note: Modifying events in locally-hosted ICS calendars sometimes led to data loss
+    tag: fixed
+    bugs: [1747610]
+  - note: Disabled ICS calendars were incorrectly refreshed during startup
+    tag: fixed
+    bugs: [1830412]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1821573, 1717908, 1822994, 1831159, 1830055, 1831459, 1829005, 1828453, 1824454,
+      1829808, 1823252, 1830619, 1827946, 1828341, 1830594, 1817030, 1829974, 1830557,
+      1829633, 1813371, 1830830, 1825158]
