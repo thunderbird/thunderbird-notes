@@ -1,9 +1,6 @@
 release:
-  release_date: '2023-05-09'
+  release_date: '2023-05-10'
   text: |
-    **For more on all the new features in Thunderbird 102, see
-    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
-
     **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
 
     - Windows: Windows 7 or later
@@ -20,3 +17,6 @@ notes:
   - note: Miscellaneous UI fixes
     tag: fixed
     bugs: [1827070]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.11)'
+    tag: fixed
