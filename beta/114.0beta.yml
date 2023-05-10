@@ -1,7 +1,17 @@
 release:
-  release_date: '2023-05-10'
+  release_date: '2023-05-11'
   text: |
-    **These notes apply to Thunderbird version 114 beta 1 released May 10, 2023.**
+    **These notes apply to Thunderbird version 114 beta 1 released May 11, 2023.**
+
+    <p style="color: #d70022; font-weight: bold">Thunderbird 111 beta enabled the UI features of "Supernova".
+    "Supernova" has an updated user interface, designed to be more modern, customizable, and
+    with code that is easier to maintain and improve. "Supernova" is slated to ship with Thunderbird 115 in July.</p>
+
+    <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provides an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
+
+    **[Learn more about "Supernova"](https://blog.thunderbird.net/tag/supernova/)**
+
+    [Follow the details in the Thunderbird beta topicbox group.](https://thunderbird.topicbox.com/groups/beta)
 
     **System Requirements:** [Details](/en-US/thunderbird/112.0beta/system-requirements/)
 
