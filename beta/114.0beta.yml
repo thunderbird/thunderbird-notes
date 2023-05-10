@@ -72,6 +72,9 @@ notes:
       and was not populated when enabled manually'
     tag: fixed
     bugs: [1822441]
+  - note: Message tag colors were not shown in vertical view
+    tag: fixed
+    bugs: [1822994]
   - note: Drag-and-drop did not work for moving messages to a new folder in vertical view
     tag: fixed
     bugs: [1826167]
@@ -103,6 +106,9 @@ notes:
       the server'
     tag: fixed
     bugs: [1828331]
+  - note: Newsgroup names were not abbreviated in folder list
+    tag: fixed
+    bugs: [1813371]
   - note: Addressbook contact context menu could not be opened via keyboard
     tag: fixed
     bugs: [1826546]
@@ -127,6 +133,21 @@ notes:
     bugs: [1830412]
   - note: Various visual and UX improvements
     tag: fixed
-    bugs: [1821573, 1717908, 1822994, 1831159, 1830055, 1831459, 1829005, 1828453, 1824454,
+    bugs: [1821573, 1717908, 1831159, 1830055, 1831459, 1829005, 1828453, 1824454,
       1829808, 1823252, 1830619, 1827946, 1828341, 1830594, 1817030, 1829974, 1830557,
-      1829633, 1813371, 1830830, 1825158]
+      1829633, 1830830, 1825158]
+
+
+# Unresolved
+  - note: Screen reader accessibility is broken for message list and message bodies
+    tag: unresolved
+    bugs: [1817083]
+  - note: Message selection behaves inconsistently
+    tag: unresolved
+    bugs: [1818191]
+  - note: WebExtension APIs are currently broken
+    tag: unresolved
+    bugs: [1817682]
+  - note: Thunderbird "Supernova" related bugs
+    tag: unresolved
+    bugs: [1816577, 1811366, 1811367, 1811375, 1811379, 1811380]
