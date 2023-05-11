@@ -144,16 +144,25 @@ notes:
       1829633, 1830830, 1825158]
 
 
-# Unresolved
+  # Unresolved
   - note: Screen reader accessibility is broken for message list and message bodies
     tag: unresolved
     bugs: [1817083]
   - note: Message selection behaves inconsistently
     tag: unresolved
     bugs: [1818191]
+  - note: Quick Filter
+    tag: unresolved
+    bugs: [1820423,1832277]
+  - note: Vertical view
+    tag: unresolved
+    bugs: [1828499,1830262,1830518,1828353]
+  - note: Mail Toolbar settings have not yet been migrated to new Unified Toolbar
+    tag: unresolved
+    bugs: [1811380]
   - note: WebExtension APIs are currently broken
     tag: unresolved
     bugs: [1817682]
   - note: Thunderbird "Supernova" related bugs
     tag: unresolved
-    bugs: [1816577, 1811366, 1811367, 1811375, 1811379, 1811380]
+    bugs: [1816577, 1811366, 1811367, 1811375, 1811379]
