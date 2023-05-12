@@ -1,7 +1,7 @@
 release:
-  release_date: '2023-05-12'
+  release_date: '2023-05-11'
   text: |
-    **These notes apply to Thunderbird version 114 beta 1 released May 12, 2023.**
+    **These notes apply to Thunderbird version 114 beta 1 released May 11, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
 
@@ -28,9 +28,6 @@ notes:
   - note: '"Total message count" can now be enabled/disabled for folders in Folder Pane'
     tag: new
     bugs: [1817917]
-  - note: Message Pane "Table View" when using Vertical Layout
-    tag: new
-    bugs: [1823019]
   - note: Automatic enabling/disabling of encryption can now be enabled through UI
     tag: new
     bugs: [1796631]
@@ -40,11 +37,6 @@ notes:
   - note: Cards now support phone and fax number links
     tag: new
     bugs: [119165]
-
-  # Changed
-  - note: '"Get Messages" icon updated to be visually distinct from "New Message" icon'
-    tag: changed
-    bugs: [1830559]
 
   # Fixed
   - note: Canceling account setup during verification prevents account from being added
