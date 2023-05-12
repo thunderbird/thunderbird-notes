@@ -1,7 +1,7 @@
 release:
-  release_date: '2023-05-11'
+  release_date: '2023-05-12'
   text: |
-    **These notes apply to Thunderbird version 114 beta 1 released May 11, 2023.**
+    **These notes apply to Thunderbird version 114 beta 1 released May 12, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
 
