@@ -1,9 +1,10 @@
 release:
   release_date: '2023-05-12'
   text: |
-    **These notes apply to Thunderbird version 114 beta 1 released May 12, 2023.**
+    **These notes apply to Thunderbird version 114 beta 1 released May 15, 2023.**
 
-    <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
+    <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide
+    an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
 
     **[Learn more about "Supernova"](https://blog.thunderbird.net/tag/supernova/)**
 
@@ -18,7 +19,8 @@ release:
   import_system_requirements: 97.0beta
 
   groups:
-    - 
+    -
+    - New, Changed, & Fixed in beta 2
 
 notes:
   # New
@@ -143,6 +145,70 @@ notes:
       1829808, 1823252, 1830619, 1827946, 1828341, 1830594, 1817030, 1829974, 1830557,
       1829633, 1830830, 1825158]
 
+
+  # beta 2
+  - note: Message Pane "Table View" when using Vertical Layout
+    tag: new
+    group: 2
+    bugs: [1823019]
+
+  - note: Unified Toolbar drag space improvements
+    tag: changed
+    group: 2
+    bugs: [1831716]
+  - note: '"Get Messages" icon updated to be visually distinct from "New Message" icon'
+    tag: changed
+    group: 2
+    bugs: [1830559]
+
+  - note: '"Attachments" menu item was not enabled when a message with attachments was selected'
+    tag: fixed
+    group: 2
+    bugs: [1819005]
+  - note: Menu items for special views were enabled when using a Virtual Folder
+    tag: fixed
+    group: 2
+    bugs: [1830224]
+  - note: Incorrect localized labels were applied to some "Delete" menu items, depending on what was in focus
+    tag: fixed
+    group: 2
+    bugs: [1731837]
+  - note: '"Delete" and "Junk" Unified Toolbar buttons were always disabled'
+    tag: fixed
+    group: 2
+    bugs: [1824018]
+  - note: '"Tags" submenu in standalone window did not populate tags'
+    tag: fixed
+    group: 2
+    bugs: [1822227]
+  - note: Tag-related actions in message header did not work
+    tag: fixed
+    group: 2
+    bugs: [1827198]
+  - note: '"Empty Trash" menu item was not always enabled'
+    tag: fixed
+    group: 2
+    bugs: [1826148, 1832545]
+  - note: Context menu "Copy email address" link in a message body did not work
+    tag: fixed
+    group: 2
+    bugs: [1821241]
+  - note: Actions not relevant for messages opened from a file were enabled
+    tag: fixed
+    group: 2
+    bugs: [1816352]
+  - note: No context menu was shown for RSS items displayed as a web page
+    tag: fixed
+    group: 2
+    bugs: [1832051]
+  - note: '"Zoom" feature was not available on web pages displayed within Thunderbird'
+    tag: fixed
+    group: 2
+    bugs: [1825627, 1825089]
+  - note: Various visual improvements
+    tag: fixed
+    group: 2
+    bugs: [1828342, 1832476, 1812413]
 
   # Unresolved
   - note: Screen reader accessibility is broken for message list and message bodies
