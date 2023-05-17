@@ -1,7 +1,7 @@
 release:
   release_date: '2023-05-12'
   text: |
-    **These notes apply to Thunderbird version 114 beta 2 released May 15, 2023.**
+    **These notes apply to Thunderbird version 114 beta 3 released May 17, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide
     an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
@@ -21,6 +21,7 @@ release:
   groups:
     -
     - New, Changed, & Fixed in beta 2
+    - Fixed in beta 3
 
 notes:
   # New
@@ -210,19 +211,42 @@ notes:
     group: 2
     bugs: [1828342, 1832476, 1812413]
 
+  # beta 3
+  - note: Message list performance improvements
+    tag: fixed
+    group: 3
+    bugs: [1830979]
+  - note: Collapsed folders did not display unread message count in sub-folders
+    tag: fixed
+    group: 3
+    bugs: [1814956]
+  - note: Dragging messages from Advanced Search dialog to desktop did not work
+    tag: fixed
+    group: 3
+    bugs: [1831224]
+  - note: '(was: old subject) was not removed from message subject on reply with OpenPGP enabled'
+    tag: fixed
+    group: 3
+    bugs: [1680425]
+  - note: Printing failures
+    tag: fixed
+    group: 3
+    bugs: [1822655]
+  - note: Visual and theme improvements
+    tag: fixed
+    group: 3
+    bugs: [1832943, 1832990, 1831000]
+
   # Unresolved
-  - note: Screen reader accessibility is broken for message list and message bodies
-    tag: unresolved
-    bugs: [1817083]
   - note: Message selection behaves inconsistently
     tag: unresolved
     bugs: [1818191]
   - note: Quick Filter
     tag: unresolved
-    bugs: [1820423,1832277]
+    bugs: [1820423, 1832277]
   - note: Vertical view
     tag: unresolved
-    bugs: [1828499,1830262,1830518,1828353]
+    bugs: [1828499, 1830262, 1830518, 1828353]
   - note: Mail Toolbar settings have not yet been migrated to new Unified Toolbar
     tag: unresolved
     bugs: [1811380]
