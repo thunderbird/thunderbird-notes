@@ -19,7 +19,7 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
-  import_system_requirements: 97.0beta
+  import_system_requirements: 102.0beta
 
   groups:
     - 

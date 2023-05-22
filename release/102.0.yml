@@ -23,7 +23,7 @@ release:
     ### Windows Recommended Hardware
     - Pentium 4 or newer processor that supports SSE2
     - 1GB RAM / 2GB of RAM for the 64-bit version
-    - 200 MB hard drive space
+    - 250 MB hard drive space
     - additional hard drive space for mail storage
 
     ---
@@ -41,9 +41,9 @@ release:
 
     ###  Recommended Hardware
 
-    - Mac computer with an Intel x86 processor
-    - 512 MB RAM
-    - 200 MB hard drive space
+    - Mac computer with an Intel x86 or Apple Silicon processor
+    - 1GB RAM
+    - 500 MB hard drive space
     - additional hard drive space for mail storage
 
     ---
