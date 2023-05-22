@@ -1,7 +1,7 @@
 release:
   release_date: '2023-05-12'
   text: |
-    **These notes apply to Thunderbird version 114 beta 3 released May 17, 2023.**
+    **These notes apply to Thunderbird version 114 beta 4 released May 22, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide
     an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
@@ -22,6 +22,7 @@ release:
     -
     - New, Changed, & Fixed in beta 2
     - Fixed in beta 3
+    - New and fixed in beta 4
 
 notes:
   # New
@@ -146,8 +147,7 @@ notes:
       1829808, 1823252, 1830619, 1827946, 1828341, 1830594, 1817030, 1829974, 1830557,
       1829633, 1830830, 1825158]
 
-
-  # beta 2
+  # Beta 2
   - note: Message Pane "Table View" when using Vertical Layout
     tag: new
     group: 2
@@ -211,7 +211,7 @@ notes:
     group: 2
     bugs: [1828342, 1832476, 1812413]
 
-  # beta 3
+  # Beta 3
   - note: Message list performance improvements
     tag: fixed
     group: 3
@@ -236,6 +236,53 @@ notes:
     tag: fixed
     group: 3
     bugs: [1832943, 1832990, 1831000]
+
+  # Beta 4
+  - note: Added right-click context menu to "Get Messages" button in folder pane
+    tag: new
+    group: 4
+    bugs: [1817915]
+
+  - note: Task bar notification icon for Unread messages did not always disappear after reading messages
+    tag: fixed
+    group: 4
+    bugs: [1831969]
+  - note: Deleting messages reset scroll position in message list
+    tag: fixed
+    group: 4
+    bugs: [1833845]
+  - note: Marking message as deleted did not advance message list to next message when focus was on message reader
+    tag: fixed
+    group: 4
+    bugs: [1815096]
+  - note: Screen reader did not announce nesting level of nested messages in message list
+    tag: fixed
+    group: 4
+    bugs: [1822057]
+  - note: '"Read" and "Unread" message states were not announced by screen reader'
+    tag: fixed
+    group: 4
+    bugs: [1825864]
+  - note: Multi-message summaries in message pane could not be scrolled with keyboard
+    tag: fixed
+    group: 4
+    bugs: [1823130]
+  - note: '"Previous", "Next", and "Delete" buttons in message window did not work'
+    tag: fixed
+    group: 4
+    bugs: [1829343]
+  - note: Navigating messages with keyboard in message window did not display the correct previous/next message
+    tag: fixed
+    group: 4
+    bugs: [1827218]
+  - note: Some elements still used animations with "prefers-reduced-motion" set
+    tag: fixed
+    group: 4
+    bugs: [1833353]
+  - note: Visual and theme improvements
+    tag: fixed
+    group: 4
+    bugs: [1823577, 1831766, 1832011, 1832940, 1833684]
 
   # Unresolved
   - note: Message selection behaves inconsistently
