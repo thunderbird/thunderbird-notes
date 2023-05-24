@@ -1,5 +1,5 @@
 release:
-  release_date: '2023-05-23'
+  release_date: '2023-05-25'
   text: |
     **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
 
@@ -11,13 +11,15 @@ release:
 
 notes:
   # Fixed
-  - note: POP message retrieval stopped after a network error occurred and connectivity was
-    restored
+  - note: POP message retrieval stopped after a network error occurred and connectivity was restored
     tag: fixed
     bugs: [1798785]
   - note: Reused SMTP connections sometimes silently disconnected, causing timeouts
     tag: fixed
     bugs: [1766382]
+  - note: Thunderbird could freeze if saving a sent message to IMAP failed
+    tag: fixed
+    bugs: [1745130]
   - note: Creating OpenPGP keys with no expiration was not possible
     tag: fixed
     bugs: [1830094]
@@ -25,5 +27,3 @@ notes:
     tag: fixed
     bugs: [1824377]
 
-  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.11)'
-    tag: fixed
