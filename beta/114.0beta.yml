@@ -1,7 +1,7 @@
 release:
   release_date: '2023-05-12'
   text: |
-    **These notes apply to Thunderbird version 114 beta 4 released May 23, 2023.**
+    **These notes apply to Thunderbird version 114 beta 4 released May 24, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide
     an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
@@ -23,6 +23,7 @@ release:
     - New, Changed, & Fixed in beta 2
     - Fixed in beta 3
     - New and fixed in beta 4
+    - Changed & Fixed in beta 5
 
 notes:
   # New
@@ -283,6 +284,24 @@ notes:
     tag: fixed
     group: 4
     bugs: [1823577, 1831766, 1832011, 1832940, 1833684]
+
+  # beta 5
+  - note: Non-default mail tab toolbar items are now migrated to Unified Toolbar
+    tag: changed
+    group: 5
+    bugs: [1824156]
+  - note: Removing items from message lists failed when only item remained in list
+    tag: fixed
+    group: 5
+    bugs: [1833797]
+  - note: Printing failed in Thunderbird 114.0b3 & b4.
+    tag: fixed
+    group: 5
+    bugs: [1833764]
+  - note: With "encrypt if possible" enabled and using an external OpenPGP key, the UI was slow to respond when adding message recipients in a compose window
+    tag: fixed
+    group: 5
+    bugs: [1833358]
 
   # Unresolved
   - note: Message selection behaves inconsistently
