@@ -1,0 +1,18 @@
+release:
+  release_date: '2023-05-27'
+  text: |
+    **Thunderbird 102.11.2 contains fixes for POP3 client regressions first present in version 102.11.1.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Thunderbird 102.11.1 contained POP3 client regressions with offline mode and TLS certificate overrides
+    tag: fixed
+    bugs: [1801286, 1816596, 1798785]
