@@ -1,7 +1,7 @@
 release:
   release_date: '2023-05-12'
   text: |
-    **These notes apply to Thunderbird version 114 beta 4 released May 24, 2023.**
+    **These notes apply to Thunderbird version 114 beta 6 released May 31, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide
     an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
@@ -23,7 +23,8 @@ release:
     - New, Changed, & Fixed in beta 2
     - Fixed in beta 3
     - New and fixed in beta 4
-    - Changed & Fixed in beta 5
+    - Changed and fixed in beta 5
+    - New and fixed in beta 6
 
 notes:
   # New
@@ -303,13 +304,69 @@ notes:
     group: 5
     bugs: [1833358]
 
+  # beta 6
+  - note: '"Show Size" toggle added to Folder Header menu'
+    tag: new
+    group: 6
+    bugs: [1817918]
+
+
+  - note: Top level folders were not visible in "Unified" view
+    tag: fixed
+    group: 6
+    bugs: [1833145]
+  - note: Descendants of search folders were not included in Unified Folders view
+    tag: fixed
+    group: 6
+    bugs: [1834709]
+  - note: Right-clicking a message to open in a new tab opened the message in the current tab as well
+    tag: fixed
+    group: 6
+    bugs: [1817731]
+  - note: 'Clicking "This is a threaded message" icon did not select the thread'
+    tag: fixed
+    group: 6
+    bugs: [1820700]
+  - note: Mail quota information and selected message count were not displayed in status bar
+    tag: fixed
+    group: 6
+    bugs: [1830004, 1821235]
+  - note: Enable/disable display compact mode was not available in folder mode context menu
+    tag: fixed
+    group: 6
+    bugs: [1827261, 1833675]
+  - note: Ancestors of Favorite Folders were not displayed
+    tag: fixed
+    group: 6
+    bugs: [1824078]
+  - note: Customization pane did not close when `Esc` key was pressed
+    tag: fixed
+    group: 6
+    bugs: [1825258]
+  - note: Creating a new contact was possible while editing an existing contact, with data loss of unsaved changes possible
+    tag: fixed
+    group: 6
+    bugs: [1833262]
+  - note: Focus not always restored after switching tabs
+    tag: fixed
+    group: 6
+    bugs: [1833134]
+  - note: Accessibility and screen reader fixes
+    tag: fixed
+    group: 6
+    bugs: [1822048, 1825993, 1819281, 1825870, 1835499]
+  - note: Visual and theme fixes
+    tag: fixed
+    group: 6
+    bugs: [1829194, 1834193, 1829785, 1821894]
+
   # Unresolved
   - note: Message selection behaves inconsistently
     tag: unresolved
     bugs: [1818191]
   - note: Quick Filter
     tag: unresolved
-    bugs: [1820423, 1832277]
+    bugs: [1820423]
   - note: Vertical view
     tag: unresolved
     bugs: [1828499, 1830262, 1830518, 1828353]
