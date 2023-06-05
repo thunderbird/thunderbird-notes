@@ -1,0 +1,29 @@
+release:
+  release_date: '2023-06-07'
+  text: |
+    **For more on all the new features in Thunderbird 102, see
+    [What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: '"Searching the directory for recipients certificates" popup could block compose window when "S/MIME reminder" was enabled and using an LDAP address book'
+    tag: fixed
+    bugs: [1833651]
+  - note: Some elements still used animations with "prefers-reduced-motion" set
+    tag: fixed
+    bugs: [1833353]
+  - note: Visual and theme improvements
+    tag: fixed
+    bugs: [1832943, 1832990]
+
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.12)'
+    tag: fixed
