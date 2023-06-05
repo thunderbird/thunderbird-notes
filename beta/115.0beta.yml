@@ -1,0 +1,136 @@
+release:
+  release_date: '2023-06-07'
+  text: |
+    **These notes apply to Thunderbird version 115 beta 1 released June 7, 2023.**
+
+    <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide
+    an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
+
+    **[Learn more about "Supernova"](https://blog.thunderbird.net/tag/supernova/)**
+
+    [Follow the details in the Thunderbird beta topicbox group.](https://thunderbird.topicbox.com/groups/beta)
+
+    **System Requirements:** [Details](/en-US/thunderbird/112.0beta/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 102.0beta
+
+  groups:
+    - 
+
+notes:
+  # New
+  - note: Added support for user-defined OpenPGP passphrases
+    tag: new
+    bugs: [1679278]
+  - note: Items can now be removed from Unified Toolbar by dragged item out of toolbar
+      during customization
+    tag: new
+    bugs: [1825281, 1836463]
+  - note: Folder Pane meatball menu now includes the option to show Tags in Folder Pane
+    tag: new
+    bugs: [1817914]
+  - note: Folder context menu now includes "Move To" and "Copy To" actions
+    tag: new
+    bugs: [1831759]
+  - note: Quick Filter buttons are now more easily accessible via keyboard navigation
+    tag: new
+    bugs: [1827251]
+  - note: Added new icon for display options
+    tag: new
+    bugs: [1834221]
+
+  # Changed
+  - note: OpenPHP messages now default to using combined signing and encryption
+    tag: changed
+    bugs: [1688863]
+  - note: Updated icons for "Calendar", "Tasks New", and "Edit" tabs
+    tag: changed
+    bugs: [1836370]
+
+  # Fixed
+  - note: Double-clicking on draft messages in global search did not open compose window
+    tag: fixed
+    bugs: [1831584]
+  - note: '"Install Add-On" link did not work in install confirmation pop-up'
+    tag: fixed
+    bugs: [1836238]
+  - note: IMAP messages already marked as deleted showed "Delete Message" instead of "Undelete
+      Message" in context menu
+    tag: fixed
+    bugs: [1826441]
+  - note: Message List was incorrectly announced as "tree view" to screenreaders when in
+      unthreaded mode
+    tag: fixed
+    bugs: [1833709]
+  - note: Incorrect context menu was displayed when right-clicking on column headers in
+      Message List
+    tag: fixed
+    bugs: [1835602]
+  - note: Restored ability to right-click on unselected messages in Message List
+    tag: fixed
+    bugs: [1834664]
+  - note: Selected text from unrelated message was quoted when replying to another message
+      via context menu
+    tag: fixed
+    bugs: [1835026]
+  - note: Message Reader sometimes did not correctly reflect selected/deselected messages
+      when using "Grouped by sort"
+    tag: fixed
+    bugs: [1818191]
+  - note: Unicode character set information was not included in message header when composing
+      message via "Forward" or "Edit as new message"
+    tag: fixed
+    bugs: [1737245]
+  - note: Embedded images now include filename and extension in header if none is included
+    tag: fixed
+    bugs: [1760365]
+  - note: Adding extension spaces during Unified Toolbar customization did not work correctly
+    tag: fixed
+    bugs: [1834987]
+  - note: '"Move To" button on Unified Toolbar moved both selected message and message
+      adjacent to selected message to chosen folder'
+    tag: fixed
+    bugs: [1832662]
+  - note: '[macOS] Drag-and-drop did not work for attachments when dropping into OS file
+      folder'
+    tag: fixed
+    bugs: [1827685]
+  - note: Context menu could not be opened in OpenPGP key manager using keyboard
+    tag: fixed
+    bugs: [1695953]
+  - note: User's public encryption key was not sent in autocrypt header under certain circumstances
+    tag: fixed
+    bugs: [1836601]
+  - note: '"Passphrase" tab of Key Manager was incorrectly shown for public keys'
+    tag: fixed
+    bugs: [1836681]
+  - note: Newsgroups could not be reorganized using drag-and-drop
+    tag: fixed
+    bugs: [1822224]
+  - note: Duplicate Matrix clients were created under certain circumstances, resulting
+      in duplicate messages under the same account
+    tag: fixed
+    bugs: [1801145]
+  - note: Calendar time-of-day indicator increasingly drifted ahead of current time when
+      staying on calendar tab without switching to other tabs
+    tag: fixed
+    bugs: [1690620]
+  - note: Clicking "Details..." button on invite in calendar did not show details
+    tag: fixed
+    bugs: [1834952]
+  - note: Unfocused notifications could incorrectly move focus around UI when navigating
+      Thunderbird with keyboard
+    tag: fixed
+    bugs: [1819780]
+  - note: Pausing updates on "Blog & News Feed" account did not dim account name after
+      restarting Thunderbird
+    tag: fixed
+    bugs: [1833472]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1832999, 1836291, 1834893, 1834375, 1835736, 1833284, 1831790, 1835288, 1835309,
+      1835905, 1830550, 1835619, 1834705, 1824289]
