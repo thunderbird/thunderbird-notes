@@ -10,7 +10,7 @@ release:
 
     [Follow the details in the Thunderbird beta topicbox group.](https://thunderbird.topicbox.com/groups/beta)
 
-    **System Requirements:** [Details](/en-US/thunderbird/112.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/115.0beta/system-requirements/)
 
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
@@ -23,17 +23,17 @@ release:
 
 notes:
   # New
-  - note: Added support for user-defined OpenPGP passphrases
+  - note: User-defined OpenPGP passphrases now supported
     tag: new
     bugs: [1679278]
   - note: Items can now be removed from Unified Toolbar by dragged item out of toolbar
       during customization
     tag: new
     bugs: [1825281, 1836463]
-  - note: Folder Pane meatball menu now includes the option to show Tags in Folder Pane
+  - note: Option to show Tags in Folder Pane added to Folder Pane meatball menu
     tag: new
     bugs: [1817914]
-  - note: Folder context menu now includes "Move To" and "Copy To" actions
+  - note: '"Move To" and "Copy To" actions added to Folder context menu'
     tag: new
     bugs: [1831759]
   - note: Quick Filter buttons are now more easily accessible via keyboard navigation
@@ -44,7 +44,7 @@ notes:
     bugs: [1834221]
 
   # Changed
-  - note: OpenPHP messages now default to using combined signing and encryption
+  - note: OpenPGP messages now default to using combined signing and encryption
     tag: changed
     bugs: [1688863]
   - note: Updated icons for "Calendar", "Tasks New", and "Edit" tabs
@@ -55,22 +55,11 @@ notes:
   - note: Double-clicking on draft messages in global search did not open compose window
     tag: fixed
     bugs: [1831584]
-  - note: '"Install Add-On" link did not work in install confirmation pop-up'
-    tag: fixed
-    bugs: [1836238]
-  - note: IMAP messages already marked as deleted showed "Delete Message" instead of "Undelete
-      Message" in context menu
-    tag: fixed
-    bugs: [1826441]
-  - note: Message List was incorrectly announced as "tree view" to screenreaders when in
-      unthreaded mode
-    tag: fixed
-    bugs: [1833709]
   - note: Incorrect context menu was displayed when right-clicking on column headers in
       Message List
     tag: fixed
     bugs: [1835602]
-  - note: Restored ability to right-click on unselected messages in Message List
+  - note: Right-clicking on unselected messages in Message List did not work
     tag: fixed
     bugs: [1834664]
   - note: Selected text from unrelated message was quoted when replying to another message
@@ -88,15 +77,11 @@ notes:
   - note: Embedded images now include filename and extension in header if none is included
     tag: fixed
     bugs: [1760365]
-  - note: Adding extension spaces during Unified Toolbar customization did not work correctly
-    tag: fixed
-    bugs: [1834987]
   - note: '"Move To" button on Unified Toolbar moved both selected message and message
       adjacent to selected message to chosen folder'
     tag: fixed
     bugs: [1832662]
-  - note: '[macOS] Drag-and-drop did not work for attachments when dropping into OS file
-      folder'
+  - note: Drag-and-drop did not work for attachments when dropping into macOS Finder
     tag: fixed
     bugs: [1827685]
   - note: Context menu could not be opened in OpenPGP key manager using keyboard
@@ -108,9 +93,20 @@ notes:
   - note: '"Passphrase" tab of Key Manager was incorrectly shown for public keys'
     tag: fixed
     bugs: [1836681]
+  - note: IMAP messages marked as deleted showed "Delete Message" instead of "Undelete
+      Message" in context menu
+    tag: fixed
+    bugs: [1826441]
   - note: Newsgroups could not be reorganized using drag-and-drop
     tag: fixed
     bugs: [1822224]
+  - note: Pausing updates on "Blog & News Feed" account did not dim account name after
+      restarting Thunderbird
+    tag: fixed
+    bugs: [1833472]
+  - note: '"Install Add-On" link did not work in install confirmation pop-up'
+    tag: fixed
+    bugs: [1836238]
   - note: Duplicate Matrix clients were created under certain circumstances, resulting
       in duplicate messages under the same account
     tag: fixed
@@ -126,10 +122,10 @@ notes:
       Thunderbird with keyboard
     tag: fixed
     bugs: [1819780]
-  - note: Pausing updates on "Blog & News Feed" account did not dim account name after
-      restarting Thunderbird
+  - note: Message List was incorrectly announced as "tree view" to screenreaders when in
+      unthreaded mode
     tag: fixed
-    bugs: [1833472]
+    bugs: [1833709]
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1832999, 1836291, 1834893, 1834375, 1835736, 1833284, 1831790, 1835288, 1835309,
