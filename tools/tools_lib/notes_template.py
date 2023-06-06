@@ -14,7 +14,7 @@ notes:
 """
 
 REQUIREMENTS_IMPORT = {"release": "102.0",
-                       "beta": "97.0beta",
+                       "beta": "116.0beta",
                        }
 
 TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 102, see
