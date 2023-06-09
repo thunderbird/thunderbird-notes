@@ -88,15 +88,15 @@ notes:
   - note: OpenPGP messages now default to using combined signing and encryption
     tag: changed
     bugs: [1688863]
-  - note: Improved experience removing items from Unified Toolbar by dragged item out of toolbar
-      during customization
-    tag: changed
-    bugs: [1825281, 1836463]
   - note: Updated icons for "Calendar", "Tasks New", and "Edit" tabs
     tag: changed
     bugs: [1836370]
 
   # Fixed
+  - note: Removing items from Unified Toolbar by dragged outside of toolbar
+      during customization now behaves more intuitively
+    tag: changed
+    bugs: [1825281, 1836463]
   - note: Double-clicking on draft messages in global search did not open compose window
     tag: fixed
     bugs: [1831584]
