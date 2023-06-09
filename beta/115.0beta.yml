@@ -88,7 +88,7 @@ notes:
   - note: OpenPGP messages now default to using combined signing and encryption
     tag: changed
     bugs: [1688863]
-  - note: Improved experience when removing items from Unified Toolbar by dragged item out of toolbar
+  - note: Improved experience removing items from Unified Toolbar by dragged item out of toolbar
       during customization
     tag: changed
     bugs: [1825281, 1836463]
