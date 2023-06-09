@@ -71,10 +71,6 @@ notes:
   - note: User-defined OpenPGP passphrases now supported
     tag: new
     bugs: [1679278]
-  - note: Items can now be removed from Unified Toolbar by dragged item out of toolbar
-      during customization
-    tag: new
-    bugs: [1825281, 1836463]
   - note: Option to show Tags in Folder Pane added to Folder Pane meatball menu
     tag: new
     bugs: [1817914]
@@ -92,6 +88,10 @@ notes:
   - note: OpenPGP messages now default to using combined signing and encryption
     tag: changed
     bugs: [1688863]
+  - note: Improved experience when removing items from Unified Toolbar by dragged item out of toolbar
+      during customization
+    tag: changed
+    bugs: [1825281, 1836463]
   - note: Updated icons for "Calendar", "Tasks New", and "Edit" tabs
     tag: changed
     bugs: [1836370]
