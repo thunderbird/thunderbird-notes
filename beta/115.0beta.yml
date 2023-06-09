@@ -95,7 +95,7 @@ notes:
   # Fixed
   - note: Removing items from Unified Toolbar by dragged outside of toolbar
       during customization now behaves more intuitively
-    tag: changed
+    tag: fixed
     bugs: [1825281, 1836463]
   - note: Double-clicking on draft messages in global search did not open compose window
     tag: fixed
