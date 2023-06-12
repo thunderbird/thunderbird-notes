@@ -1,10 +1,11 @@
 release:
   release_date: '2023-06-08'
   text: |
-    **These notes apply to Thunderbird version 115 beta 1 released June 8, 2023.**
+    **These notes apply to Thunderbird version 115 beta 2 released June 12, 2023.**
 
-    <p style="color: #d70022; font-weight: bold">Thunderbird Beta includes "Supernova" UI features, which provide
-    an updated user interface, designed to be more modern, customizable, and with code that is easier to maintain and improve.</p>
+    <p style="color: #d70022; font-weight: bold">Thunderbird 115 (aka SuperNova) release is approaching fast!
+    The Supernova UI features an updated user interface, designed to be more modern, customizable, and 
+    with code that is easier to maintain and improve.</p>
 
     **[Learn more about "Supernova"](https://blog.thunderbird.net/tag/supernova/)**
 
@@ -64,7 +65,8 @@ release:
         - PulseAudio
 
   groups:
-    - 
+    -
+    - Changed & Fixed in beta 2
 
 notes:
   # New
@@ -175,3 +177,84 @@ notes:
     tag: fixed
     bugs: [1832999, 1836291, 1834893, 1834375, 1835736, 1833284, 1831790, 1835288, 1835309,
       1835905, 1830550, 1835619, 1834705, 1824289]
+
+# beta 2
+  - note: Unified Toolbar customization now disabled until Spaces Toolbar has finished initializing
+    tag: changed
+    group: 2
+    bugs: [1836222]
+  - note: Mail, Calendar, and Task toolbar items migrated to Unified Toolbar; Old toolbars removed.
+    tag: changed
+    group: 2
+    bugs: [1836217, 1824290, 1837088]
+  - note: Quick Filter toolbar buttons now collapsed into a single "Filters" dropdown for small window sizes
+    tag: changed
+    group: 2
+    bugs: [1835683]
+
+  - note: HTML messages that set a favicon were able to change the mail tab icon
+    tag: fixed
+    group: 2
+    bugs: [1826009]
+  - note: '"Gentle smile" plain text ;) emoticons were incorrectly rendered as "Strong smile"/"Laugh"'
+    tag: fixed
+    group: 2
+    bugs: [1817796]
+  - note: Menu items in "View" toolbar did not work
+    tag: fixed
+    group: 2
+    bugs: [1823182]
+  - note: Clicking "Junk" icon of non-Junk message in the Junk folder moved the message to the Inbox
+    tag: fixed
+    group: 2
+    bugs: [1836102]
+  - note: Thread pane selection updated unnecessarily
+    tag: fixed
+    group: 2
+    bugs: [1832383]
+  - note: Unified Folders improvements
+    tag: fixed
+    group: 2
+    bugs: [1837141, 1837145, 1837151]
+  - note: Quick Filter improvements
+    tag: fixed
+    group: 2
+    bugs: [1820423, 1824692, 1830518]
+  - note: Unified Toolbar button label styles improved
+    tag: fixed
+    group: 2
+    bugs: [1832942, 1837133, 1837441, 1837243]
+  - note: Folder context menus were shown on mode header lines
+    tag: fixed
+    group: 2
+    bugs: [1834826]
+  - note: Upstream RNP version numbers now recognized as official in about:support
+    tag: fixed
+    group: 2
+    bugs: [1836634]
+  - note: Screen readers did not automatically read the next message after deletion
+    tag: fixed
+    group: 2
+    bugs: [1825588]
+  - note: Missing icon for non-secure mail accounts in "Get Messages" menu added
+    tag: fixed
+    group: 2
+    bugs: [1837438]
+  - note: Changing Today Pane date with mini-month or mini-day display did not change the agenda date
+    tag: fixed
+    group: 2
+    bugs: [1836424]
+
+  # Unresolved
+  - note: Vertical view
+    tag: unresolved
+    bugs: [1828499, 1830262, 1828353]
+  - note: Mail Toolbar settings have not yet been migrated to new Unified Toolbar
+    tag: unresolved
+    bugs: [1811380]
+  - note: WebExtension APIs are currently broken
+    tag: unresolved
+    bugs: [1817682]
+  - note: Thunderbird "Supernova" related bugs
+    tag: unresolved
+    bugs: [1816577, 1811366, 1811367, 1811375, 1811379]
