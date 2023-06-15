@@ -1,7 +1,7 @@
 release:
   release_date: '2023-06-08'
   text: |
-    **These notes apply to Thunderbird version 115 beta 2 released June 14, 2023.**
+    **These notes apply to Thunderbird version 115 beta 3 released June 15, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 115 (aka SuperNova) release is approaching fast!
     The Supernova UI features an updated user interface, designed to be more modern, customizable, and 
@@ -67,6 +67,7 @@ release:
   groups:
     -
     - Changed & Fixed in beta 2
+    - New, Changed & Fixed in beta 3
 
 notes:
   # New
@@ -178,7 +179,7 @@ notes:
     bugs: [1832999, 1836291, 1834893, 1834375, 1835736, 1833284, 1831790, 1835288, 1835309,
       1835905, 1830550, 1835619, 1834705, 1824289]
 
-# beta 2
+  # Beta 2
   - note: Unified Toolbar customization now disabled until Spaces Toolbar has finished initializing
     tag: changed
     group: 2
@@ -244,6 +245,46 @@ notes:
     tag: fixed
     group: 2
     bugs: [1836424]
+    
+  # Beta 3
+  - note: OpenPGP signature filenames now always end in ".asc"
+    tag: new
+    group: 3
+    bugs: [1837892]
+  
+  - note: Added "Move Up" and "Move Down" options to Folder Mode context menu
+    tag: changed
+    group: 3
+    bugs: [1827257]
+  - note: Updated various strings for easier localization
+    tag: changed
+    group: 3
+    bugs: [1834598, 1835150, 1835152]
+  
+  - note: RSS feed subscriptions could not be added via drag-and-drop
+    tag: fixed
+    group: 3
+    bugs: [1822226]
+  - note: RSS feeds did not update unless "Remember websites and links I've visited" was checked
+    tag: fixed
+    group: 3
+    bugs: [1837831]
+  - note: NNTP message streaming did not work, resulting in uncaught errors
+    tag: fixed
+    group: 3
+    bugs: [545365]
+  - note: Moving events by drag-and-drop in day view or week view did not display dragbox on drop target
+    tag: fixed
+    group: 3
+    bugs: [1836736]
+  - note: When opening .ics file, "Import Calendar Events and Tasks" window could not be resized and window buttons were inaccessible outside border of window
+    tag: fixed
+    group: 3
+    bugs: [1836058]
+  - note: Various UX improvements
+    tag: fixed
+    group: 3
+    bugs: [1837594, 1838341]
 
   # Unresolved
   - note: Vertical view

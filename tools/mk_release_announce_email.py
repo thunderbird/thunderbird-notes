@@ -176,7 +176,7 @@ def main(comm_repo, build):
     if comm_repo == "comm-beta":
         cc += ";TB Beta <beta@discuss.thunderbird.net>"
     subprocess.run(
-        "thunderbird -compose 'format=html','attachment={}','to={}','cc={}','subject={}','body={}'".format(
+        "/home/daniel/.local/share/flatpak/app/org.mozilla.Thunderbird/current/active/export/bin/org.mozilla.Thunderbird -compose 'format=html','attachment={}','to={}','cc={}','subject={}','body={}'".format(
             os.path.abspath(attach_fn),
             "Thunderbird Drivers <thunderbird-drivers@mozilla.org>",
             cc,
