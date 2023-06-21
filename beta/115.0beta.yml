@@ -1,7 +1,7 @@
 release:
   release_date: '2023-06-08'
   text: |
-    **These notes apply to Thunderbird version 115 beta 3 released June 15, 2023.**
+    **These notes apply to Thunderbird version 115 beta 4 released June 21, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 115 (aka SuperNova) release is approaching fast!
     The Supernova UI features an updated user interface, designed to be more modern, customizable, and 
@@ -68,6 +68,7 @@ release:
     -
     - Changed & Fixed in beta 2
     - New, Changed & Fixed in beta 3
+    - Fixed in beta 4
 
 notes:
   # New
@@ -285,6 +286,52 @@ notes:
     tag: fixed
     group: 3
     bugs: [1837594, 1838341]
+    
+  # Beta 4
+  - note: '"Tray icon always on" option did not work'
+    tag: fixed
+    group: 4
+    bugs: [1832395]
+  - note: Manually-configured accounts were silently deleted after pressing "Finish" on Account Setup page
+    tag: fixed
+    group: 4
+    bugs: [1838758]
+  - note: Repairing local folders made messages in folder temporarily disappear
+    tag: fixed
+    group: 4
+    bugs: [1831190]
+  - note: Loss of connection while moving multiple messages to an IMAP server could result in duplicate messages on source and destination servers
+    tag: fixed
+    group: 4
+    bugs: [1828372]
+  - note: Star button did not appear as yellow when message was selected in card view
+    tag: fixed
+    group: 4
+    bugs: [1838449]
+  - note: Incorrect context menu was shown for links in messages
+    tag: fixed
+    group: 4
+    bugs: [1831303]
+  - note: Email attachments could be opened before being completely saved to disk
+    tag: fixed
+    group: 4
+    bugs: [1838347]
+  - note: Expired OpenPGP keys were shown as "Not found" in Account Settings
+    tag: fixed
+    group: 4
+    bugs: [1838189]
+  - note: Thunderbird now checks index page of news feeds for favicon if feed itself does not have favicon
+    tag: fixed
+    group: 4
+    bugs: [1838190]
+  - note: Layout and styling issues with OpenPGP dialogs
+    tag: fixed
+    group: 4
+    bugs: [1838109, 1793708]
+  - note: Various UX improvements
+    tag: fixed
+    group: 4
+    bugs: [1839059, 1839236, 1819610, 1838609]
 
   # Unresolved
   - note: Vertical view
