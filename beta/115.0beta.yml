@@ -1,7 +1,7 @@
 release:
   release_date: '2023-06-08'
   text: |
-    **These notes apply to Thunderbird version 115 beta 4 released June 21, 2023.**
+    **These notes apply to Thunderbird version 115 beta 5 released June 26, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 115 (aka SuperNova) release is approaching fast!
     The Supernova UI features an updated user interface, designed to be more modern, customizable, and 
@@ -69,6 +69,7 @@ release:
     - Changed & Fixed in beta 2
     - New, Changed & Fixed in beta 3
     - Fixed in beta 4
+    - Fixed in beta 5
 
 notes:
   # New
@@ -332,6 +333,48 @@ notes:
     tag: fixed
     group: 4
     bugs: [1839059, 1839236, 1819610, 1838609]
+    
+  # Beta 5
+  - note: Filter field of quick filter bar was not cleared when switching folders
+    tag: fixed
+    group: 5
+    bugs: [1838520]
+  - note: Folders did not always populate in Folder Pane when switching to Unified Folders
+    tag: fixed
+    group: 5
+    bugs: [1834479]
+  - note: Folder "Properties" and "Favorite Folder" context menu items did not work 
+    tag: fixed
+    group: 5
+    bugs: [1838770]
+  - note: Thunderbird sometimes crashed when deleting folders
+    tag: fixed
+    group: 5
+    bugs: [1839106]
+  - note: Message list did not always populate when selecting Unified Folders
+    tag: fixed
+    group: 5
+    bugs: [1832698]
+  - note: Search folder message list did not update after modifying the folder
+    tag: fixed
+    group: 5
+    bugs: [1836423]
+  - note: Quickly toggling columns in Message List opened the selected message
+    tag: fixed
+    group: 5
+    bugs: [1839472]
+  - note: Subject lines longer than the available title bar width in "New Message" window displaced title bar buttons on macOS
+    tag: fixed
+    group: 5
+    bugs: [1839687]
+  - note: Deleting or moving a contact from one address book to another did not update the list of cards
+    tag: fixed
+    group: 5
+    bugs: [1835025]
+  - note: Various UX improvements
+    tag: fixed
+    group: 5
+    bugs: [1830609, 1838483]
 
   # Unresolved
   - note: Vertical view
