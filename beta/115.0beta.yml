@@ -361,7 +361,7 @@ notes:
     group: 5
     bugs: [1832698]
   - note: Message list context menu could not consistently be opened using keyboard
-    tag: new
+    tag: fixed
     group: 5
     bugs: [1828830]
   - note: Search folder message list did not update after modifying the folder
@@ -377,7 +377,7 @@ notes:
     group: 5
     bugs: [1839687]
   - note: Encrypted messages could not be decrypted using revoked OpenPGP key
-    tag: new
+    tag: fixed
     group: 5
     bugs: [1837883]
   - note: Deleting or moving a contact from one address book to another did not update the list of cards
