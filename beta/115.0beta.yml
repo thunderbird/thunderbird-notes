@@ -1,7 +1,7 @@
 release:
   release_date: '2023-06-08'
   text: |
-    **These notes apply to Thunderbird version 115 beta 5 released June 26, 2023.**
+    **These notes apply to Thunderbird version 115 beta 5 released June 27, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 115 (aka SuperNova) release is approaching fast!
     The Supernova UI features an updated user interface, designed to be more modern, customizable, and 
@@ -69,7 +69,7 @@ release:
     - Changed & Fixed in beta 2
     - New, Changed & Fixed in beta 3
     - Fixed in beta 4
-    - Fixed in beta 5
+    - New & Fixed in beta 5
 
 notes:
   # New
@@ -335,6 +335,11 @@ notes:
     bugs: [1839059, 1839236, 1819610, 1838609]
     
   # Beta 5
+  - note: Local keyboard navigation of Unified Toolbar is now possible
+    tag: new
+    group: 5
+    bugs: [1817911]
+  
   - note: Filter field of quick filter bar was not cleared when switching folders
     tag: fixed
     group: 5
@@ -355,6 +360,10 @@ notes:
     tag: fixed
     group: 5
     bugs: [1832698]
+  - note: Message list context menu could not consistently be opened using keyboard
+    tag: new
+    group: 5
+    bugs: [1828830]
   - note: Search folder message list did not update after modifying the folder
     tag: fixed
     group: 5
@@ -367,6 +376,10 @@ notes:
     tag: fixed
     group: 5
     bugs: [1839687]
+  - note: Encrypted messages could not be decrypted using revoked OpenPGP key
+    tag: new
+    group: 5
+    bugs: [1837883]
   - note: Deleting or moving a contact from one address book to another did not update the list of cards
     tag: fixed
     group: 5
