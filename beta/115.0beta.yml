@@ -1,7 +1,7 @@
 release:
   release_date: '2023-06-08'
   text: |
-    **These notes apply to Thunderbird version 115 beta 5 released June 27, 2023.**
+    **These notes apply to Thunderbird version 115 beta 6 released June 29, 2023.**
 
     <p style="color: #d70022; font-weight: bold">Thunderbird 115 (aka SuperNova) release is approaching fast!
     The Supernova UI features an updated user interface, designed to be more modern, customizable, and 
@@ -70,6 +70,7 @@ release:
     - New, Changed & Fixed in beta 3
     - Fixed in beta 4
     - New & Fixed in beta 5
+    - Fixed in beta 6
 
 notes:
   # New
@@ -388,6 +389,69 @@ notes:
     tag: fixed
     group: 5
     bugs: [1830609, 1838483]
+    
+  # Beta 6
+  - note: Copy, Move, and Move Again options in folder context menu are now positioned before Properties
+    tag: changed
+    group: 6
+    bugs: [1838844]
+  - note: Thunderbird now displays a warning when trying to send a message if the current OpenPGP key is expired
+    tag: changed
+    group: 6
+    bugs: [1834869]
+  
+  - note: Unified Toolbar customizations could not be saved when only changing button style
+    tag: fixed
+    group: 6
+    bugs: [1833042]
+  - note: Copying IMAP folders between servers failed when source folder was previously copied and deleted from destination server, and destination server is set to only mark items as deleted
+    tag: fixed
+    group: 6
+    bugs: [1831462]
+  - note: Forwarding messages as attachment via drag-and-drop did not follow preference to add file extension to attachment file names
+    tag: fixed
+    group: 6
+    bugs: [1698103]
+  - note: Message header was not displayed in message preview intermittently
+    tag: fixed
+    group: 6
+    bugs: [1819916]
+  - note: Files saved via Save Attachment did not appear under Saved Files
+    tag: fixed
+    group: 6
+    bugs: [1744709]
+  - note: Multi-part messages could not be converted to tasks
+    tag: fixed
+    group: 6
+    bugs: [1808557]
+  - note: Thunderbird no longer requires a primary secret key to be available when signing messages
+    tag: fixed
+    group: 6
+    bugs: [1838734]
+  - note: Thunderbird was unable to send signed messages with OpenPGP subkey
+    tag: fixed
+    group: 6
+    bugs: [1837861]
+  - note: NNTP message headers were not shown
+    tag: fixed
+    group: 6
+    bugs: [1840087]
+  - note: Encryption of new Matrix direct messages was not detected correctly
+    tag: fixed
+    group: 6
+    bugs: [1838927]
+  - note: Matrix direct message rooms were duplicated under certain circumstances
+    tag: fixed
+    group: 6
+    bugs: [1834270]
+  - note: OpenPGP Message Security dialog was sometimes positioned incorrectly
+    tag: fixed
+    group: 6
+    bugs: [1834883]
+  - note: Various UX improvements
+    tag: fixed
+    group: 6
+    bugs: [1838509, 1832369, 1840407, 1821574]
 
   # Unresolved
   - note: Vertical view
