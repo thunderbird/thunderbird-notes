@@ -196,7 +196,7 @@ if __name__ == "__main__":
     if not sys.argv[1]:
         print("Provide a repository name: comm-beta/comm-esr78/comm-esr91")
         sys.exit(1)
-    if sys.argv[1] not in ("comm-beta", "comm-esr91", "comm-esr102"):
+    if sys.argv[1] not in ("comm-beta", "comm-esr91", "comm-esr102", "comm-esr115"):
         print("Invalid repository: {}".format(sys.argv[1]))
         sys.exit(2)
 

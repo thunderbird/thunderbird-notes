@@ -23,7 +23,7 @@ ver_notes_yaml = "{this_esr}.yml"
 
 MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr{major}/json-tags"
 RELEASE_TAG_RE = re.compile(r"THUNDERBIRD_([\d_b]+)_RELEASE")
-CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr102/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
+CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr115/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
 BUG_NUMBER_REGEX = re.compile(r"bug \d+", re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r"back(\s?)out|backed out|backing out", re.IGNORECASE)
 
