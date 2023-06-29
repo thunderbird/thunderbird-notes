@@ -13,14 +13,14 @@ release:
 notes:
 """
 
-REQUIREMENTS_IMPORT = {"release": "102.0",
+REQUIREMENTS_IMPORT = {"release": "115.0",
                        "beta": "116.0beta",
                        }
 
-TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 102, see
-[What’s New in Thunderbird 102](https://www.thunderbird.net/thunderbird/102.0/whatsnew/).**
+TMPL_RELEASE_TEXT = """**For more on all the new features in Thunderbird 115, see
+[What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
 
-**System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+**System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
 
 - Windows: Windows 7 or later
 - Mac: macOS 10.12 or later

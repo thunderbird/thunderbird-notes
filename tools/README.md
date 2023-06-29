@@ -11,17 +11,17 @@ additional requirements that need to be installed (tools/requirements.txt).
 
 **Usage:** `./tools/major_esr_notes.py <previous esr> <new esr>`
 
-**Example:** `./tools/major_esr_notes.py 91 102`
+**Example:** `./tools/major_esr_notes.py 102 115`
 
 When a new major version of Thunderbird is released, such as Thunderbird
-102.0.0, the release notes include everything from the beta releases over
+115.0.0, the release notes include everything from the beta releases over
 the past year excluding bugs that were uplifted to the old stable release.
 
 `major_esr_notes.py` will produce a YAML file that's a decent starting
 point. The header will come from `tools_lib/notes_template.py:TMPL_RELEASE_TEXT`.
 For a new major version, replace `import_system_requirements` will a full
 `system_requirements` field. The requirements themselves are based on
-what [Firefox publishes](https://www.mozilla.org/en-US/firefox/102.0a1/system-requirements/).
+what [Firefox publishes](https://www.mozilla.org/en-US/firefox/115.0a1/system-requirements/).
 
 The notes file will be written to the repository root and needs to be
 reviewed and cleaned up prior to publishing. The `sort_notes` script can
@@ -53,7 +53,7 @@ no automatic way to produce beta notes unfortunately.
 
 **Usage:** `./tools/sort_notes.py <yaml_file>`
 
-**Example:** `./tools/sort_notes.py 102.0.yml`
+**Example:** `./tools/sort_notes.py 115.0.yml`
 
 Reviewing and cleaning up the output of `major_esr_notes.py` for major version
 release is not fun. The notes in the produced file are jumbled up in no
@@ -74,7 +74,7 @@ Output is written to the original input file.
 
 **Usage:** `./tools/yamlfmt.py <yaml_file> [-w]`
 
-**Example:** `./tools/yamlfmt.py release/102.0.yml [-w]`
+**Example:** `./tools/yamlfmt.py release/115.0.yml [-w]`
 
 Formats a YAML file consistently enough that yamllint should not complain
 too much.
