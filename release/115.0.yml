@@ -1,0 +1,529 @@
+release:
+  release_date: '2023-07-11'
+  text: |
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  system_requirements: |
+    ## Windows
+    - Windows 7 or later
+
+    ### Windows Recommended Hardware
+    - 1GHz or faster Intel/AMD compatible processor
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 250 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## Mac
+    - macOS 10.12 or later
+
+    ###  Recommended Hardware
+
+    - Mac computer with an Intel x86 or Apple Silicon processor
+    - 1GB RAM
+    - 500 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - glibc 2.17 or higher
+        - GTK+ 3.14 or higher
+        - libdbus-glib 0.6.0 or higher
+        - libglib 2.42 or higher
+        - libstdc++ 4.8.1 or higher
+        - libxtst 1.2.3 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+
+    - For optimal functionality, we recommend the following libraries or packages:
+        - DBus 1.0 or higher
+        - NetworkManager 0.7 or higher
+        - PulseAudio
+
+
+notes:
+  # New
+  - note: Supernova UI with updated 3-Pane window with updated folder, message list, and message display panes; updated
+      Quick Filter, Calendar and Address Book with new Vertical View, Unified Toolbar.
+    tag: new
+  - note: New folders are now added to virtual parent folders and saved searches automatically
+    tag: new
+    bugs: [378833]
+  - note: Thunderbird can now open external .eml files in a tab
+    tag: new
+    bugs: [499922]
+  - note: '"Move To" and "Copy To" actions added to Folder context menu'
+    tag: new
+    bugs: [1831759, 1838844]
+  - note: Thunderbird now supports HKP keyservers that return one key per email address
+    tag: new
+    bugs: [1640511]
+  - note: Thunderbird can now upload OpenPGP public keys to VKS and HKP keyservers
+    tag: new
+    bugs: [1731232]
+  - note: Thunderbird now notifies the user if a message includes nested encryption, and
+      allows viewing each encrypted part of the message
+    tag: new
+    bugs: [1746579]
+  - note: OpenPGP signature dates are now shown for signed messages
+    tag: new
+    bugs: [1775628]
+  - note: OpenPGP candidate keys can now be discovered and imported from GnuPG keyring,
+      if external GnuPG is enabled
+    tag: new
+    bugs: [1762834]
+  - note: Candidate OpenPGP keys are now automatically discovered from GnuPG keyring, if
+      external GnuPG is enabled
+    tag: new
+    bugs: [1762834]
+  - note: Thunderbird now supports option to always send public key with autocrypt header
+    tag: new
+    bugs: [1688495]
+  - note: Automatic enabling/disabling of encryption can now be enabled through UI
+    tag: new
+    bugs: [1796631]
+  - note: User-defined OpenPGP passphrases now supported
+    tag: new
+    bugs: [1679278]
+  - note: OpenPGP signature filenames now always end in ".asc"
+    tag: new
+    bugs: [1837892]
+  - note: Thunderbird can now open OpenPGP Key Manager dialog from commandline using "-keymanager"
+      option
+    tag: new
+    bugs: [1818961]
+  - note: Using CSS styles in composer enabled; set `editor.use_css` to true
+    tag: new
+    bugs: [1790725]
+  - note: Support selecting multiple dictionaries in composition settings
+    tag: new
+    bugs: [1766604]
+  - note: Thunderbird now supports OAuth2 for Fastmail
+    tag: new
+    bugs: [1785240]
+  - note: Thunderbird now includes the option to send a minimal user agent header, or no
+      header at all
+    tag: new
+    bugs: [1114475]
+  - note: Thunderbird will now send a minimal user-agent header by default
+    tag: new
+    bugs: [1809356]
+  - note: Searching for "about:config" in Settings now finds "about:config"
+    tag: new
+    bugs: [1755788]
+  - note: Added option to always show system tray icon on Windows
+    tag: new
+    bugs: [1727874]
+  - note: Added "Remove" button to remove contact fields
+    tag: new
+    bugs: [1774702]
+  - note: Address book cards now support phone and fax number links
+    tag: new
+    bugs: [119165]
+  - note: Thunderbird now includes a "app.update.log.file" preference to enable logging
+      of updates
+    tag: new
+    bugs: [1796652]
+  - note: Search Engines Enterprise Policy added
+    tag: new
+    bugs: [1796403]
+  - note: Thunderbird can now individually reload remote calendars
+    tag: new
+    bugs: [729407]
+  - note: Added "Show tasks in calendar" option to Calendar Control menu
+    tag: new
+    bugs: [1819177]
+  - note: Setting to use OS-configure timezone added
+    tag: new
+    bugs: [1606357]
+
+  # Changed
+  - note: Office365 accounts using password authentication will auto-migrate to OAuth2
+    tag: changed
+    bugs: [1798875]
+  - note: Thunderbird now uses a non-private browser for OAuth login, allowing login to
+      Microsoft Office 365 with Conditional Access Policies enabled
+    tag: changed
+    bugs: [1697805]
+  - note: 'Release notes opened from about: dialog will now open in the default web browser'
+    tag: changed
+    bugs: [1794180]
+  - note: Thunderbird now opens all external links from 3-pane window in the user's browser
+    tag: changed
+    bugs: [1813317]
+  - note: HTML emails are now rendered in Standards mode
+    tag: changed
+    bugs: [1429491]
+  - note: Link to "introduction to e2e encryption" article updated
+    tag: changed
+    bugs: [1776306]
+  - note: OpenPGP messages now default to using combined signing and encryption
+    tag: changed
+    bugs: [1688863]
+  - note: Thunderbird now displays a warning when trying to send a message if the current
+      OpenPGP key is expired
+    tag: changed
+    bugs: [1834869]
+  - note: S/MIME signatures using the MD5 or SHA1 hash algorithms are now rejected
+    tag: changed
+    bugs: [1531735, 1532292]
+  - note: Extension "Options" button now disabled rather than hidden when an extension
+      is disabled or has no options
+    tag: changed
+    bugs: [1776181]
+  - note: Support for additional fields added to Address Book
+    tag: changed
+    bugs: [1774765]
+  - note: Search box in horizontal Address book layout moved to the left
+    tag: changed
+    bugs: [1779809]
+  - note: Updated Thunderbird color palette
+    tag: changed
+    bugs: [1796387]
+  - note: C++ NNTP implementation removed
+    tag: changed
+    bugs: [1781720]
+  - note: POP C++ implementation removed
+    tag: changed
+    bugs: [1781721]
+  - note: Thunderbird will reuse SMTP connections when sending multiple messages
+    tag: changed
+    bugs: [136871]
+  - note: Names for empty Matrix rooms can now be localized
+    tag: changed
+    bugs: [1795304]
+  - note: Next and Previous Calendar menu items in Go menu now hidden until Calendar is
+      activated
+    tag: changed
+    bugs: [1708320]
+  # Fixed
+  - note: Users using Microsoft business email services may not be able to login due to
+      deprecation of basic auth for Exchange
+    tag: fixed
+    bugs: [1685414]
+  - note: Performance Profiler did not work on Thunderbird
+    tag: fixed
+    bugs: [1771304]
+  - note: Spell Check dialog did not open when selected text included a line break or new
+      paragraph
+    tag: fixed
+    bugs: [1779846]
+  - note: Autocomplete functionality in the composer failed under some circumstances
+    tag: fixed
+    bugs: [1782486]
+  - note: Some emojis displayed incorrectly when added to a message; added angry face emoji
+    tag: fixed
+    bugs: [1801679]
+  - note: Unicode character set information was not included in message header when composing
+      message via "Forward" or "Edit as new message"
+    tag: fixed
+    bugs: [1737245]
+  - note: Forwarding messages as attachment via drag-and-drop did not follow preference
+      to add file extension to attachment file names
+    tag: fixed
+    bugs: [1698103]
+  - note: Subject lines longer than the available title bar width in "New Message" window
+      displaced title bar buttons on macOS
+    tag: fixed
+    bugs: [1839687]
+  - note: Opening internal document links in PDF files opened a new tab with a copy of
+      the document instead of scrolling to the linked location
+    tag: fixed
+    bugs: [1791854]
+  - note: '"Gentle smile" plain text ;) emoticons were incorrectly rendered as "Strong
+      smile"/"Laugh"'
+    tag: fixed
+    bugs: [1817796]
+  - note: Thunderbird sometimes crashed when deleting folders
+    tag: fixed
+    bugs: [1839106]
+  - note: Incorrect localized labels were applied to some "Delete" menu items, depending
+      on what was in focus
+    tag: fixed
+    bugs: [1731837]
+  - note: Files saved via Save Attachment did not appear under Saved Files
+    tag: fixed
+    bugs: [1744709]
+  - note: Buttons in message header (Reply, Forward, etc) were not keyboard accessible
+    tag: fixed
+    bugs: [1816784]
+  - note: Drop-down buttons in message header could not be activated using Enter or Space
+    tag: fixed
+    bugs: [1826659]
+  - note: A "Learn More" link was missing from the "Do not track" option in "Privacy &
+      Security" Settings
+    tag: fixed
+    bugs: [1827891]
+  - note: '"Empty Trash on Exit" was not always triggered when message quarantine was enabled'
+    tag: fixed
+    bugs: [1777953]
+  - note: Emails in Yahoo and AOL accounts were incorrectly classified as Junk
+    tag: fixed
+    bugs: [1782719]
+  - note: '"Run Junk Mail Controls" did not work'
+    tag: fixed
+    bugs: [1647227]
+  - note: HTML signature containing image hosted on a web server changed source URL of
+      image to local filename
+    tag: fixed
+    bugs: [1676825]
+  - note: Changing the default search engine did not persist after closing "Settings" tab
+    tag: fixed
+    bugs: [1807990]
+  - note: About dialog display of distribution.ini information restored
+    tag: fixed
+    bugs: [1825841, 1828340]
+
+
+  - note: An empty dialog message was displayed when sending an OpenPGP signed email with
+      a key that could not be found
+    tag: fixed
+    bugs: [1792691]
+  - note: When reopening OpenPGP-encrypted drafts/templates after closing the compose window,
+      Thunderbird did not restore the subject line
+    tag: fixed
+    bugs: [1666005]
+  - note: OpenPGP key verification only used first From field for emails with multiple
+      From fields
+    tag: fixed
+    bugs: [1752273]
+  - note: Encrypted attachment was displayed on OpenPGP encrypted messages, even if no
+      attachment was available
+    tag: fixed
+    bugs: [1795237]
+  - note: When disk is full, partial data left behind by IMAP/News folder compaction was
+      not deleted
+    tag: fixed
+    bugs: [1795237]
+  - note: Thunderbird did not decrypt OpenPGP messages with an additional outer signature
+      layer
+    tag: fixed
+    bugs: [1594253]
+
+  - note: '(was: old subject) was not removed from message subject on reply with OpenPGP
+      enabled'
+    tag: fixed
+    bugs: [1680425]
+  - note: Context menu could not be opened in OpenPGP key manager using keyboard
+    tag: fixed
+    bugs: [1695953]
+  - note: '"Passphrase" tab of Key Manager was incorrectly shown for public keys'
+    tag: fixed
+    bugs: [1836681]
+  - note: Upstream RNP version numbers now recognized as official in about:support
+    tag: fixed
+    bugs: [1836634]
+  - note: Expired OpenPGP keys were shown as "Not found" in Account Settings
+    tag: fixed
+    bugs: [1838189]
+  - note: Layout and styling issues with OpenPGP dialogs
+    tag: fixed
+    bugs: [1793708, 1838109]
+  - note: Encrypted messages could not be decrypted using revoked OpenPGP key
+    tag: fixed
+    bugs: [1837883]
+  - note: Thunderbird no longer requires a primary secret key to be available when signing
+      messages
+    tag: fixed
+    bugs: [1838734]
+  - note: Thunderbird was unable to send signed messages with OpenPGP subkey
+    tag: fixed
+    bugs: [1837861]
+  - note: OpenPGP Message Security dialog was sometimes positioned incorrectly
+    tag: fixed
+    bugs: [1834883]
+  - note: Messages signed with revoked S/MIME certificates were displayed as correctly
+      signed
+    tag: fixed
+    bugs: [1769000]
+  - note: Auto-enabling and auto-disabling of E2E encryption did not behave as expected
+      under certain circumstances
+    tag: fixed
+    bugs: [135636, 1825626, 1826109, 1826182, 1828475]
+
+  - note: Automatic detection of SSL/TLS connections during account creation was broken
+    tag: fixed
+    bugs: [1520283]
+  - note: Canceling account setup during verification prevents account from being added
+      again
+    tag: fixed
+    bugs: [1788086]
+  - note: Manually-configured accounts were silently deleted after pressing "Finish" on
+      Account Setup page
+    tag: fixed
+    bugs: [1838758]
+
+  - note: Loss of messages would occur if messages were moved from POP/Local to IMAP while
+      offline, followed by going online
+    tag: fixed
+    bugs: [1787963]
+  - note: POP3 messages were deleted from server when attachments were detached from the
+      message in Thunderbird
+    tag: fixed
+    bugs: [1528297]
+  - note: Thunderbird sometimes did not synchronize offline IMAP folders after a restart
+    tag: fixed
+    bugs: [1776823]
+  - note: IMAP autosync sometimes stopped after restoring computer from sleep or hibernation
+    tag: fixed
+    bugs: [1804374]
+  - note: Loss of connection while moving multiple messages to an IMAP server could result
+      in duplicate messages on source and destination servers
+    tag: fixed
+    bugs: [1828372]
+
+  - note: Thunderbird did not check to see if "UTF8=ACCEPT" is supported by IMAP server
+      before enabling it
+    tag: fixed
+    bugs: [1673158]
+  - note: Copying IMAP folders between servers failed when source folder was previously
+      copied and deleted from destination server, and destination server is set to only
+      mark items as deleted
+    tag: fixed
+    bugs: [1831462]
+  - note: IMAP folder "Compact" action did not wait for expunge operation to complete prior
+      to compaction
+    tag: fixed
+    bugs: [1782374]
+  - note: Progress dialog did not appear for manual retry of saving IMAP messages to Sent,
+      Draft, or Template folders
+    tag: fixed
+    bugs: [1824624]
+  - note: Embedded images now include filename and extension in header if none is included
+    tag: fixed
+    bugs: [1760365]
+  - note: Messages could not be sent through some SMTP servers due to unhandled formatting
+      of username prompt
+    tag: fixed
+    bugs: [1824060]
+  - note: NNTP message streaming did not work, resulting in uncaught errors
+    tag: fixed
+    bugs: [545365]
+  - note: NNTP connection was not closed immediately if authentication dialog was canceled
+    tag: fixed
+    bugs: [1783517]
+  - note: Search on Server only returned results for articles on the server that had already
+      been downloaded
+    tag: fixed
+    bugs: [1802685]
+  - note: Status bar did not update when NNTP server connected/disconnected
+    tag: fixed
+    bugs: [1794117]
+
+  - note: Adding too many terms to an Advanced Address Book Search caused the list view
+      to overflow without scrolling, making overflowed terms inaccessible
+    tag: fixed
+    bugs: [1826722]
+  - note: Mailing lists in Address Book were not editable
+    tag: fixed
+    bugs: [1774096]
+  - note: Address Book Accessibility improvements
+    tag: fixed
+    bugs: [1738942, 1751978, 1751986, 1771829]
+  - note: Contact pane was not resizable when editing a contact
+    tag: fixed
+    bugs: [1815953]
+  - note: Creating a new contact was possible while editing an existing contact, with data
+      loss of unsaved changes possible
+    tag: fixed
+    bugs: [1833262]
+  - note: Deleting or moving a contact from one address book to another did not update
+      the list of cards
+    tag: fixed
+    bugs: [1835025]
+  - note: CardDAV discovery now uses preset location if MX records point to Google
+    tag: fixed
+    bugs: [1803470]
+
+  - note: Long lists of chat conversations could not be fully viewed or scrolled
+    tag: fixed
+    bugs: [1828157]
+  - note: Chat conversation names were not shown
+    tag: fixed
+    bugs: [1823879]
+  - note: Thunderbird incorrectly addressed all XMPP pings to the connected XMPP server,
+      rather than the originator of the ping
+    tag: fixed
+    bugs: [1806631]
+  - note: Duplicate Matrix clients were created under certain circumstances, resulting
+      in duplicate messages under the same account
+    tag: fixed
+    bugs: [1801145]
+  - note: Encryption of new Matrix direct messages was not detected correctly
+    tag: fixed
+    bugs: [1838927]
+  - note: Matrix direct message rooms were duplicated under certain circumstances
+    tag: fixed
+    bugs: [1834270]
+
+  - note: Events were not shown in the correct week if week start was not set to Monday
+    tag: fixed
+    bugs: [1511638]
+  - note: Events and vCards containing Unicode characters became garbled when synced with
+      server
+    tag: fixed
+    bugs: [1805338]
+
+  - note: When creating a new event, the organizer was not automatically added to the event
+    tag: fixed
+    bugs: [459683]
+  - note: Calendar time-of-day indicator increasingly drifted ahead of current time when
+      staying on calendar tab without switching to other tabs
+    tag: fixed
+    bugs: [1690620]
+  - note: Multi-part messages could not be converted to tasks
+    tag: fixed
+    bugs: [1808557]
+  - note: Editing events via right click menu failed to save changes
+    tag: fixed
+    bugs: [1776792]
+  - note: Task previews did not show HTML formatting
+    tag: fixed
+    bugs: [1739877]
+
+  - note: Attendees in Event Summary dialog were not selectable
+    tag: fixed
+    bugs: [1771526]
+
+  - note: After restarting Thunderbird, all-day to-do tasks changed to tasks set at midnight
+      of the same day
+    tag: fixed
+    bugs: [1825950]
+  - note: Various Invitation Display improvements
+    tag: fixed
+    bugs: [1791220, 1792487, 1795309]
+  - note: Event invitations could not be accepted from invitation summary dialog
+    tag: fixed
+    bugs: [1819759]
+
+  - note: Calendars with a name containing a slash could not be exported without first
+      being renamed
+    tag: fixed
+    bugs: [1827567]
+  - note: Extra linebreaks in Google Calendar event descriptions removed
+    tag: fixed
+    bugs: [1792078]
+  - note: Modifying events in locally-hosted ICS calendars sometimes led to data loss
+    tag: fixed
+    bugs: [1747610]
+  - note: Disabled ICS calendars were incorrectly refreshed during startup
+    tag: fixed
+    bugs: [1830412]
+  - note: Local calendars with custom timezone definitions unable to sync with CalDAV servers
+    tag: fixed
+    bugs: [1791038]
+
