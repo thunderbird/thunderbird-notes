@@ -16,6 +16,10 @@ release:
   import_system_requirements: '102.0'
 
 notes:
+  # Changed
+  - note: 'Release notes opened from about: dialog will now open in the default web browser'
+    tag: changed
+    bugs: [1794180]
   # Fixed
   - note: Upstream RNP version numbers now recognized as official in about:support
     tag: fixed
