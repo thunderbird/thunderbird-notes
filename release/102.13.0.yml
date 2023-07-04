@@ -1,0 +1,25 @@
+release:
+  release_date: '2023-07-05'
+  text: |
+    <p style="color: #d70022; font-weight: bold">Thunderbird 115.0 is right around the corner! The "Supernova" UI features
+    provide an updated user interface and is designed to be more modern, customizable, and with code that is easier to
+    maintain and improve.</p>
+
+    **[Learn more about "Supernova"](https://blog.thunderbird.net/tag/supernova/)**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Upstream RNP version numbers now recognized as official in about:support
+    tag: fixed
+    bugs: [1836634]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.13)'
+    tag: fixed
