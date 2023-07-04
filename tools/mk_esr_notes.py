@@ -23,7 +23,7 @@ ver_notes_yaml = "{this_esr}.yml"
 
 MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr{major}/json-tags"
 RELEASE_TAG_RE = re.compile(r"THUNDERBIRD_([\d_b]+)_RELEASE")
-CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr115/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
+CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr{major}/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
 BUG_NUMBER_REGEX = re.compile(r"bug \d+", re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r"back(\s?)out|backed out|backing out", re.IGNORECASE)
 
@@ -59,7 +59,7 @@ def load_notes(this_esr, previous_esr, previous_esr_rev):
 Previous esr: {previous_esr}
     """.format(this_esr=this_esr, previous_esr=previous_esr, min_version=min_version))
 
-    bug_list, backout_list = get_buglist(previous_esr_rev)
+    bug_list, backout_list = get_buglist(esr_major, previous_esr_rev)
     bugs_fixed = set.union(bug_list, backout_list)
 
     note_files = os.listdir(str(beta_dir))
@@ -171,10 +171,11 @@ def is_backout_bug(changeset_description):
     return bool(BACKOUT_REGEX.search(changeset_description))
 
 
-def get_buglist(from_rev):
+def get_buglist(esr_major, from_rev):
     """Retrieve the list of bugs since the last release"""
     to_rev = "tip"
-    changeset_url = CHANGESET_URL_TEMPLATE.format(from_version=from_rev, to_version=to_rev)
+    changeset_url = CHANGESET_URL_TEMPLATE.format(major=esr_major, from_version=from_rev, to_version=to_rev)
+    print(changeset_url)
     with urlopen(changeset_url) as response:
         data = json.load(response)
     unique_bugs, unique_backout_bugs = get_bugs_in_changeset(data)
