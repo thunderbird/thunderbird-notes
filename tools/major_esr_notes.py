@@ -49,6 +49,9 @@ def load_notes(previous, current):
     # Get the list of bugs that were uplifted during the previous cycle.
     previous_glob = "{}.*.yml".format(previous)
     previous_notes_files = list(release_dir.glob(previous_glob))
+    prev_file_names = sorted([os.path.basename(p) for p in previous_notes_files])
+    print(f"Using files for finding uplifts: {prev_file_names}")
+
     for _file in previous_notes_files:
         with _file.open() as fp:
             doc = yaml.load(fp)

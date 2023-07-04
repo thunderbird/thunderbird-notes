@@ -109,9 +109,6 @@ notes:
   - note: Using CSS styles in composer enabled; set `editor.use_css` to true
     tag: new
     bugs: [1790725]
-  - note: Support selecting multiple dictionaries in composition settings
-    tag: new
-    bugs: [1766604]
   - note: Thunderbird now supports OAuth2 for Fastmail
     tag: new
     bugs: [1785240]
@@ -128,9 +125,6 @@ notes:
   - note: Added option to always show system tray icon on Windows
     tag: new
     bugs: [1727874]
-  - note: Added "Remove" button to remove contact fields
-    tag: new
-    bugs: [1774702]
   - note: Address book cards now support phone and fax number links
     tag: new
     bugs: [119165]
@@ -159,9 +153,6 @@ notes:
       Microsoft Office 365 with Conditional Access Policies enabled
     tag: changed
     bugs: [1697805]
-  - note: 'Release notes opened from about: dialog will now open in the default web browser'
-    tag: changed
-    bugs: [1794180]
   - note: Thunderbird now opens all external links from 3-pane window in the user's browser
     tag: changed
     bugs: [1813317]
@@ -215,9 +206,6 @@ notes:
       deprecation of basic auth for Exchange
     tag: fixed
     bugs: [1685414]
-  - note: Performance Profiler did not work on Thunderbird
-    tag: fixed
-    bugs: [1771304]
   - note: Spell Check dialog did not open when selected text included a line break or new
       paragraph
     tag: fixed
@@ -248,13 +236,6 @@ notes:
       smile"/"Laugh"'
     tag: fixed
     bugs: [1817796]
-  - note: Thunderbird sometimes crashed when deleting folders
-    tag: fixed
-    bugs: [1839106]
-  - note: Incorrect localized labels were applied to some "Delete" menu items, depending
-      on what was in focus
-    tag: fixed
-    bugs: [1731837]
   - note: Files saved via Save Attachment did not appear under Saved Files
     tag: fixed
     bugs: [1744709]
@@ -428,12 +409,6 @@ notes:
       to overflow without scrolling, making overflowed terms inaccessible
     tag: fixed
     bugs: [1826722]
-  - note: Mailing lists in Address Book were not editable
-    tag: fixed
-    bugs: [1774096]
-  - note: Address Book Accessibility improvements
-    tag: fixed
-    bugs: [1738942, 1751978, 1751986, 1771829]
   - note: Contact pane was not resizable when editing a contact
     tag: fixed
     bugs: [1815953]
@@ -452,9 +427,6 @@ notes:
   - note: Long lists of chat conversations could not be fully viewed or scrolled
     tag: fixed
     bugs: [1828157]
-  - note: Chat conversation names were not shown
-    tag: fixed
-    bugs: [1823879]
   - note: Thunderbird incorrectly addressed all XMPP pings to the connected XMPP server,
       rather than the originator of the ping
     tag: fixed
@@ -473,10 +445,6 @@ notes:
   - note: Events were not shown in the correct week if week start was not set to Monday
     tag: fixed
     bugs: [1511638]
-  - note: Events and vCards containing Unicode characters became garbled when synced with
-      server
-    tag: fixed
-    bugs: [1805338]
 
   - note: When creating a new event, the organizer was not automatically added to the event
     tag: fixed
@@ -503,12 +471,6 @@ notes:
       of the same day
     tag: fixed
     bugs: [1825950]
-  - note: Various Invitation Display improvements
-    tag: fixed
-    bugs: [1791220, 1792487, 1795309]
-  - note: Event invitations could not be accepted from invitation summary dialog
-    tag: fixed
-    bugs: [1819759]
 
   - note: Calendars with a name containing a slash could not be exported without first
       being renamed
@@ -520,9 +482,6 @@ notes:
   - note: Modifying events in locally-hosted ICS calendars sometimes led to data loss
     tag: fixed
     bugs: [1747610]
-  - note: Disabled ICS calendars were incorrectly refreshed during startup
-    tag: fixed
-    bugs: [1830412]
   - note: Local calendars with custom timezone definitions unable to sync with CalDAV servers
     tag: fixed
     bugs: [1791038]
