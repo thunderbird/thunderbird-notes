@@ -96,7 +96,7 @@ notes:
   - note: Improved localization of OpenPGP strings
     tag: fixed
     bugs: [1831909]
-  - note: '"OK" and "Cancel" buttons were mostly hidden in Address Book's Edit List dialog'
+  - note: '"OK" and "Cancel" buttons were mostly hidden in address book Edit List dialog'
     tag: fixed
     bugs: [1841336]
   - note: Various visual and UX improvements
