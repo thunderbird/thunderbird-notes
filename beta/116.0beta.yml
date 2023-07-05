@@ -5,14 +5,14 @@ release:
 
     **System Requirements:** [Details](/en-US/thunderbird/115.0beta/system-requirements/)
 
-    - Windows: Windows 10 or later
+    - Windows: Windows 7 or later
     - Mac: macOS 10.15 or later
     - Linux: GTK+ 3.14 or higher
 
   system_requirements: |
     ## Windows
     ### Operating Systems
-    - Windows 10 or later
+    - Windows 7 or later
 
     ### Windows Recommended Hardware
     - 1GHz or faster Intel/AMD compatible processor
@@ -56,4 +56,49 @@ release:
         - NetworkManager 0.7 or higher
         - PulseAudio
 
-notes: []
+  groups:
+    -
+
+notes:
+  # Changed
+  - note: Updated message pane customization defaults for new profiles
+    tag: changed
+    bugs: [1840891]
+
+  # Fixed
+  - note: All menu items in "Help" menu were disabled after sending a message
+    tag: fixed
+    bugs: [1786988]
+  - note: Pane splitter was still enabled for hidden folder pane
+    tag: fixed
+    bugs: [1821802]
+  - note: Folder tree expanded under drag-and-drop did not re-collapse when item was dropped
+    tag: fixed
+    bugs: [1838489]
+  - note: Deleting messages from message list sometimes scrolled list to bottom, selecting bottommost message
+    tag: fixed
+    bugs: [1835173]
+  - note: Ascending/descending message sorting was not available in vertical view
+    tag: fixed
+    bugs: [1828499]
+  - note: Message list was not updated when message was deleted from server outside of Thunderbird
+    tag: fixed
+    bugs: [1837041]
+  - note: Message header was occasionally missing in message preview
+    tag: fixed
+    bugs: [1840943]
+  - note: Message composer title was not visible on macOS when theme was enabled
+    tag: fixed
+    bugs: [1840637]
+  - note: 'Context menu with "Copy link" option was not available in calendar event descriptions'
+    tag: fixed
+    bugs: [1804643]
+  - note: Improved localization of OpenPGP strings
+    tag: fixed
+    bugs: [1831909]
+  - note: '"OK" and "Cancel" buttons were mostly hidden in Address Book's Edit List dialog'
+    tag: fixed
+    bugs: [1841336]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1835601, 1841376, 1840613]
