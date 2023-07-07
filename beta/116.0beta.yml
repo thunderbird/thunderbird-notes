@@ -5,14 +5,13 @@ release:
 
     **System Requirements:** [Details](/en-US/thunderbird/115.0beta/system-requirements/)
 
-    - Windows: Windows 7 or later
+    - Windows: Windows 10 or later
     - Mac: macOS 10.15 or later
     - Linux: GTK+ 3.14 or higher
 
   system_requirements: |
     ## Windows
-    ### Operating Systems
-    - Windows 7 or later
+    - Windows 10 or later
 
     ### Windows Recommended Hardware
     - 1GHz or faster Intel/AMD compatible processor
@@ -23,8 +22,6 @@ release:
     ---
 
     ## Mac
-    ### Operating Systems
-
     - macOS 10.15 or later
 
     ###  Recommended Hardware
@@ -61,6 +58,11 @@ release:
 
 notes:
   # Changed
+  - note: Thunderbird on Windows now requires Windows 10 or higher
+    tag: changed
+  - note: Thunderbird on macOS now requires macOS 10.15 or higher
+    tag: changed
+
   - note: Updated message pane customization defaults for new profiles
     tag: changed
     bugs: [1840891]
