@@ -66,7 +66,7 @@ notes:
     bugs: [1840891]
 
   # Fixed
-  - note: All menu items in "Help" menu were disabled after sending a message
+  - note: All menu items in "Help" menu were disabled after sending a message on macOS
     tag: fixed
     bugs: [1786988]
   - note: Pane splitter was still enabled for hidden folder pane
