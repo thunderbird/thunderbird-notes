@@ -201,6 +201,8 @@ notes:
       activated
     tag: changed
     bugs: [1708320]
+
+
   # Fixed
   - note: Users using Microsoft business email services may not be able to login due to
       deprecation of basic auth for Exchange
@@ -268,7 +270,9 @@ notes:
   - note: About dialog display of distribution.ini information restored
     tag: fixed
     bugs: [1825841, 1828340]
-
+  - note: All menu items in "Help" menu were disabled after sending a message on macOS
+    tag: fixed
+    bugs: [1786988]
 
   - note: An empty dialog message was displayed when sending an OpenPGP signed email with
       a key that could not be found
