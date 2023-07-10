@@ -1,7 +1,7 @@
 release:
   release_date: '2023-07-05'
   text: |
-    **These notes apply to Thunderbird version 116 beta 1 released July 5, 2023.**
+    **These notes apply to Thunderbird version 116 beta 2 released July 10, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/115.0beta/system-requirements/)
 
@@ -55,6 +55,7 @@ release:
 
   groups:
     -
+    - Fixed in beta 2
 
 notes:
   # Changed
@@ -104,3 +105,21 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1835601, 1841376, 1840613]
+    
+  # Beta 2
+  - note: Added option to enable Menu Bar in Unified Toolbar context menu
+    tag: fixed
+    bugs: [1834745]
+    group: 2
+  - note: Unified Toolbar could not be customized under certain tabs
+    tag: fixed
+    bugs: [1841480]
+    group: 2
+  - note: Selecting a folder with one or more subfolders and pressing enter did not expand folder
+    tag: fixed
+    bugs: [1841200]
+    group: 2
+  - note: LDAP addressbook did not work
+    tag: fixed
+    bugs: [1841348]
+    group: 2
