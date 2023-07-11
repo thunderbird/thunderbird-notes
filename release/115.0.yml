@@ -1,6 +1,10 @@
 release:
   release_date: '2023-07-11'
   text: |
+    **Thunderbird version 115.0 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+    
     **For more on all the new features in Thunderbird 115, see
     [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
 
