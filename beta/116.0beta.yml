@@ -1,9 +1,9 @@
 release:
   release_date: '2023-07-05'
   text: |
-    **These notes apply to Thunderbird version 116 beta 2 released July 10, 2023.**
+    **These notes apply to Thunderbird version 116 beta 3 released July 12, 2023.**
 
-    **System Requirements:** [Details](/en-US/thunderbird/115.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/116.0beta/system-requirements/)
 
     - Windows: Windows 10 or later
     - Mac: macOS 10.15 or later
@@ -56,6 +56,7 @@ release:
   groups:
     -
     - Fixed in beta 2
+    - Fixed in beta 3
 
 notes:
   # Changed
@@ -123,3 +124,21 @@ notes:
     tag: fixed
     bugs: [1841348]
     group: 2
+    
+  # Beta 3
+  - note: Tooltips did not appear when hovering over folders
+    tag: fixed
+    bugs: [1839780]
+    group: 3
+  - note: Message Summary header buttons were not keyboard accessible
+    tag: fixed
+    bugs: [1827199]
+    group: 3
+  - note: '"New" button in Message Filters dialog was not keyboard accessible'
+    tag: fixed
+    bugs: [1841477]
+    group: 3
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1842319, 1842330, 1838360]
+    group: 3
