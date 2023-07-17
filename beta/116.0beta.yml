@@ -1,7 +1,7 @@
 release:
   release_date: '2023-07-05'
   text: |
-    **These notes apply to Thunderbird version 116 beta 3 released July 12, 2023.**
+    **These notes apply to Thunderbird version 116 beta 4 released July 17, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/116.0beta/system-requirements/)
 
@@ -57,6 +57,7 @@ release:
     -
     - Fixed in beta 2
     - Fixed in beta 3
+    - Changed & fixed in beta 4
 
 notes:
   # Changed
@@ -142,3 +143,42 @@ notes:
     tag: fixed
     bugs: [1842319, 1842330, 1838360]
     group: 3
+    
+  # Beta 4
+  - note: Added Thunderbird Supernova branding to about:dialog
+    tag: changed
+    bugs: [1842102]
+    group: 4
+  
+  - note: Thunderbird Flatpak could not be executed from terminal using command "thunderbird"
+    tag: fixed
+    bugs: [1843051]
+    group: 4
+  - note: Old OpenPGP secret keys could not be used to decrypt messages under certain circumstances
+    tag: fixed
+    bugs: [1835786]
+    group: 4
+  - note: Deleting large amounts of messages from Trash folder consumed excessive time and memory
+    tag: fixed
+    bugs: [1833665]
+    group: 4
+  - note: When multiple folder modes were active, tab focus navigated through all folder mode options before reaching message list
+    tag: fixed
+    bugs: [1842060]
+    group: 4
+  - note: Scrolling behaved unexpectedly when moving to next message unread message in another folder
+    tag: fixed
+    bugs: [1841711]
+    group: 4
+  - note: Scrolling animation was unnecessarily used when switching or toggling the sort column in message list
+    tag: fixed
+    bugs: [1838522]
+    group: 4
+  - note: Attempting to delete a message and then cancelling the action still marked the message as read
+    tag: fixed
+    bugs: [793353]
+    group: 4
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1842089, 1843172, 1838519]
+    group: 4
