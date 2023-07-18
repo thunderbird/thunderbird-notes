@@ -1,0 +1,69 @@
+release:
+  release_date: '2023-07-19'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Changed
+  - note: Added Thunderbird Supernova branding to about:dialog
+    tag: changed
+    bugs: [1842102]
+  # Fixed
+  - note: Message list was not updated when message was deleted from server outside of
+      Thunderbird
+    tag: fixed
+    bugs: [1837041]
+  - note: Scrolling behaved unexpectedly when moving to next message unread message in
+      another folder
+    tag: fixed
+    bugs: [1841711]
+  - note: Scrolling animation was unnecessarily used when switching or toggling the sort
+      column in message list
+    tag: fixed
+    bugs: [1838522]
+  - note: Attempting to delete a message and then cancelling the action still marked the
+      message as read
+    tag: fixed
+    bugs: [793353]
+  - note: Unified Toolbar could not be customized under certain tabs
+    tag: fixed
+    bugs: [1841480]
+  - note: Selecting a folder with one or more subfolders and pressing enter did not expand
+      folder
+    tag: fixed
+    bugs: [1841200]
+  - note: Tooltips did not appear when hovering over folders
+    tag: fixed
+    bugs: [1839780]
+  - note: Deleting large amounts of messages from Trash folder consumed excessive time
+      and memory
+    tag: fixed
+    bugs: [1833665]
+  - note: Message Summary header buttons were not keyboard accessible
+    tag: fixed
+    bugs: [1827199]
+  - note: '"New" button in Message Filters dialog was not keyboard accessible'
+    tag: fixed
+    bugs: [1841477]
+  - note: Backing up secret keys from OpenPGP Key Manager dialog silently failed
+    tag: fixed
+    bugs: [1839415]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1843172, 1831422, 1838360, 1842319]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.0.1)'
+    tag: fixed
