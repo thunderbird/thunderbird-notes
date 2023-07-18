@@ -28,7 +28,9 @@ BUG_NUMBER_REGEX = re.compile(r"bug \d+", re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r"back(\s?)out|backed out|backing out", re.IGNORECASE)
 
 PD_VERSIONS = "https://product-details.mozilla.org/1.0/thunderbird_versions.json"
-CUR_VERSION_URL = "https://hg.mozilla.org/releases/{repo}/raw-file/{rev}/mail/config/version.txt"
+CUR_VERSION_URL = (
+    "https://hg.mozilla.org/releases/{repo}/raw-file/{rev}/mail/config/version.txt"
+)
 
 ESR_VERSIONS = ("102", "115")
 
@@ -42,9 +44,7 @@ class RelNote:
 
     @property
     def output(self):
-        return {"note": self.note,
-                "tag": self.tag,
-                "bugs": self.bugs}
+        return {"note": self.note, "tag": self.tag, "bugs": self.bugs}
 
 
 def load_notes(this_esr, previous_esr, previous_esr_rev):
@@ -55,9 +55,13 @@ def load_notes(this_esr, previous_esr, previous_esr_rev):
     esr_major = previous_esr.split(".")[0]
     min_version = Version("{}.0.0".format(esr_major))
 
-    print("""Generating notes for Thunderbird {this_esr}
+    print(
+        """Generating notes for Thunderbird {this_esr}
 Previous esr: {previous_esr}
-    """.format(this_esr=this_esr, previous_esr=previous_esr, min_version=min_version))
+    """.format(
+            this_esr=this_esr, previous_esr=previous_esr
+        )
+    )
 
     bug_list, backout_list = get_buglist(esr_major, previous_esr_rev)
     bugs_fixed = set.union(bug_list, backout_list)
@@ -102,9 +106,12 @@ Previous esr: {previous_esr}
                     noted_bugs.add(b2)
             rel_notes.append(note.output)
 
+    RELEASE_TEMPLATE = f"TMPL_{esr_major}_TEXT"
     new_yaml = yaml.load(notes_template.TMPL_HEADER)
-    new_yaml["release"]["text"] = notes_template.TMPL_RELEASE_TEXT
-    new_yaml["release"]["import_system_requirements"] = notes_template.REQUIREMENTS_IMPORT["release"]
+    new_yaml["release"]["text"] = getattr(notes_template, RELEASE_TEMPLATE)
+    new_yaml["release"][
+        "import_system_requirements"
+    ] = notes_template.REQUIREMENTS_IMPORT[esr_major]
     new_yaml["release"]["release_date"] = guess_release_date()
 
     notes_sequence = CS()
@@ -113,14 +120,16 @@ Previous esr: {previous_esr}
         tag_notes = [n for n in rel_notes if n["tag"] == tag_name]
         if tag_notes:
             notes_sequence.extend(tag_notes)
-            notes_sequence.yaml_set_comment_before_after_key(note_counter, "{}\n".format(tag_name.capitalize()), 2)
+            notes_sequence.yaml_set_comment_before_after_key(
+                note_counter, "{}\n".format(tag_name.capitalize()), 2
+            )
             note_counter += len(tag_notes)
     new_yaml["notes"] = notes_sequence
 
     out_yaml = ver_notes_yaml.format(this_esr=this_esr)
     with open(release_dir / out_yaml, "w") as fp:
         yaml.dump(new_yaml, fp)
-        
+
     print("Wrote notes to {}.".format(out_yaml))
 
     no_note_bugs = sorted(bugs_fixed - noted_bugs)
@@ -130,7 +139,8 @@ Previous esr: {previous_esr}
         print("Bugs that do not have an associated note:")
 
         bugzilla_url = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary&id={}".format(
-            ",".join([str(b) for b in no_note_bugs]))
+            ",".join([str(b) for b in no_note_bugs])
+        )
         with urlopen(bugzilla_url) as response:
             data = json.load(response)
 
@@ -174,7 +184,9 @@ def is_backout_bug(changeset_description):
 def get_buglist(esr_major, from_rev):
     """Retrieve the list of bugs since the last release"""
     to_rev = "tip"
-    changeset_url = CHANGESET_URL_TEMPLATE.format(major=esr_major, from_version=from_rev, to_version=to_rev)
+    changeset_url = CHANGESET_URL_TEMPLATE.format(
+        major=esr_major, from_version=from_rev, to_version=to_rev
+    )
     print(changeset_url)
     with urlopen(changeset_url) as response:
         data = json.load(response)
@@ -242,7 +254,12 @@ def get_versions(major_version):
 
 def main():
     parser = argparse.ArgumentParser(description="Make ESR notes")
-    parser.add_argument("major_ver", metavar="major_version", choices=ESR_VERSIONS, help="Major ESR version")
+    parser.add_argument(
+        "major_ver",
+        metavar="major_version",
+        choices=ESR_VERSIONS,
+        help="Major ESR version",
+    )
     args = parser.parse_args()
 
     versions = get_versions(args.major_ver)
