@@ -1,7 +1,7 @@
 release:
   release_date: '2023-07-05'
   text: |
-    **These notes apply to Thunderbird version 116 beta 4 released July 17, 2023.**
+    **These notes apply to Thunderbird version 116 beta 5 released July 19, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/116.0beta/system-requirements/)
 
@@ -58,6 +58,7 @@ release:
     - Fixed in beta 2
     - Fixed in beta 3
     - Changed & fixed in beta 4
+    - Changed & fixed in beta 5
 
 notes:
   # Changed
@@ -182,3 +183,22 @@ notes:
     tag: fixed
     bugs: [1842089, 1843172, 1838519]
     group: 4
+    
+  # Beta 5
+  - note: Quick Filter bar is now hidden by default
+    tag: changed
+    bugs: [1835685]
+    group: 5
+  
+  - note: Message-ID header used account domain instead of "From" field domain
+    tag: fixed
+    bugs: [1727181]
+    group: 5
+  - note: Zooming did not work in multi-message view
+    tag: fixed
+    bugs: [1839006]
+    group: 5
+  - note: '"Clear Recent History" dialog did not resize correctly to fit content'
+    tag: fixed
+    bugs: [1843233]
+    group: 5
