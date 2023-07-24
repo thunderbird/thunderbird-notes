@@ -1,7 +1,7 @@
 release:
   release_date: '2023-07-05'
   text: |
-    **These notes apply to Thunderbird version 116 beta 5 released July 19, 2023.**
+    **These notes apply to Thunderbird version 116 beta 6 released July 24, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/116.0beta/system-requirements/)
 
@@ -59,6 +59,7 @@ release:
     - Fixed in beta 3
     - Changed & fixed in beta 4
     - Changed & fixed in beta 5
+    - Fixed in beta 6
 
 notes:
   # Changed
@@ -202,3 +203,17 @@ notes:
     tag: fixed
     bugs: [1843233]
     group: 5
+    
+  # Beta 6
+  - note: Tooltip containing full message title did not appear when hovering over message in card view
+    tag: fixed
+    bugs: [1843188]
+    group: 6
+  - note: Message List column headers became transparent in increased contrast mode
+    tag: fixed
+    bugs: [1842893]
+    group: 6
+  - note: Message List card padding was incorrect in compact view
+    tag: fixed
+    bugs: [1843480]
+    group: 6
