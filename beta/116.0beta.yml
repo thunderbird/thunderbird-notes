@@ -1,7 +1,7 @@
 release:
   release_date: '2023-07-05'
   text: |
-    **These notes apply to Thunderbird version 116 beta 6 released July 24, 2023.**
+    **These notes apply to Thunderbird version 116 beta 7 released July 27, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/116.0beta/system-requirements/)
 
@@ -60,6 +60,7 @@ release:
     - Changed & fixed in beta 4
     - Changed & fixed in beta 5
     - Fixed in beta 6
+    - Changed & Fixed in beta 7
 
 notes:
   # Changed
@@ -217,3 +218,26 @@ notes:
     tag: fixed
     bugs: [1843480]
     group: 6
+
+  # Beta 7
+  - note: Mail tab toolbar and Unified toolbar heights adjusted to be more consistent
+    tag: changed
+    bugs: [1843804]
+    group: 7
+  - note: Messages in deeply nested IMAP folders were inaccessible
+    tag: fixed
+    bugs: [1843637]
+    group: 7
+  - note: Total message counts and folder sizes were also hidden when "Hide Local Folders" was selected in Folder Pane options
+    tag: fixed
+    bugs: [1843135]
+    group: 7
+  - note: Various visual and style fixes
+    tag: fixed
+    bugs: [1843459, 1844763]
+    group: 7
+  - note: CardDAV address book dialog did not resize properly to show all available address books
+    tag: fixed
+    bugs: [1836214]
+    group: 7
+
