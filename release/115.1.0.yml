@@ -1,0 +1,61 @@
+release:
+  release_date: '2023-08-01'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Changed
+  - note: Quick Filter bar is now hidden by default
+    tag: changed
+    bugs: [1835685]
+  - note: Mail tab toolbar and Unified toolbar heights adjusted to be more consistent
+    tag: changed
+    bugs: [1843804]
+  # Fixed
+  - note: Message-ID header used account domain instead of "From" field domain
+    tag: fixed
+    bugs: [1727181]
+  - note: Zooming did not work in multi-message view
+    tag: fixed
+    bugs: [1839006]
+  - note: '"Clear Recent History" dialog did not resize correctly to fit content'
+    tag: fixed
+    bugs: [1843233]
+  - note: Tooltip containing full message title did not appear when hovering over message
+      in card view
+    tag: fixed
+    bugs: [1843188]
+  - note: Message List column headers became transparent in increased contrast mode
+    tag: fixed
+    bugs: [1842893]
+  - note: Message List card padding was incorrect in compact view
+    tag: fixed
+    bugs: [1843480]
+  - note: Total message counts and folder sizes were also hidden when "Hide Local Folders"
+      was selected in Folder Pane options
+    tag: fixed
+    bugs: [1843135]
+  - note: Thunderbird Flatpak could not be executed from terminal using command "thunderbird"
+    tag: fixed
+    bugs: [1843051]
+  - note: CardDAV address book dialog did not resize properly to show all available address
+      books
+    tag: fixed
+    bugs: [1836214]
+  - note: Various visual and style fixes
+    tag: fixed
+    bugs: [1843459, 1844763, 1838519]
+
