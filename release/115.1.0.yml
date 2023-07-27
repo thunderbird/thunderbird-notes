@@ -48,6 +48,9 @@ notes:
       was selected in Folder Pane options
     tag: fixed
     bugs: [1843135]
+  - note: Messages in deeply nested IMAP folders were inaccessible
+    tag: fixed
+    bugs: [1843637]
   - note: Thunderbird Flatpak could not be executed from terminal using command "thunderbird"
     tag: fixed
     bugs: [1843051]
