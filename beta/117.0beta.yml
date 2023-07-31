@@ -1,0 +1,74 @@
+release:
+  release_date: '2023-07-31'
+  text: |
+    **These notes apply to Thunderbird version 117 beta 1 released July 31, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/117.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  system_requirements: |
+    ## Windows
+    - Windows 10 or later
+
+    ### Windows Recommended Hardware
+    - 1GHz or faster Intel/AMD compatible processor
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 250 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## Mac
+    - macOS 10.15 or later
+
+    ###  Recommended Hardware
+
+    - Mac computer with an Intel x86 or Apple Silicon processor
+    - 1GB RAM
+    - 500 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - glibc 2.17 or higher
+        - GTK+ 3.14 or higher
+        - libdbus-glib 0.6.0 or higher
+        - libglib 2.42 or higher
+        - libstdc++ 4.8.1 or higher
+        - libxtst 1.2.3 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+
+    - For optimal functionality, we recommend the following libraries or packages:
+        - DBus 1.0 or higher
+        - NetworkManager 0.7 or higher
+        - PulseAudio
+
+  groups:
+    -
+
+notes:
+  # Changed
+  - note: Unencrypted HTTP URLs (URLs beginning with http:// instead of https://) can no longer be used to link to a contact photo
+    tag: changed
+    bugs: [1843989]
+
+  # Fixed
+  - note: Unread message count badge was not displayed on parent folders of subfolder containing unread messages
+    tag: fixed
+    bugs: [1844534]
+  - note: "Undo archive" (via Ctrl-Z) did not un-archive previously archived messages
+    tag: fixed
+    bugs: [1829340]
+  - note: Unified Toolbar buttons sometimes displayed inconsistent margins
+    tag: fixed
+    bugs: [1845500]
