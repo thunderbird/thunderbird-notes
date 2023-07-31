@@ -23,7 +23,7 @@ notes:
     bugs: [1835685]
   - note: Mail tab toolbar and Unified toolbar heights adjusted to be more consistent
     tag: changed
-    bugs: [1843804]
+    bugs: [1843804, 1845500]
   # Fixed
   - note: Message-ID header used account domain instead of "From" field domain
     tag: fixed
