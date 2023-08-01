@@ -24,7 +24,7 @@ notes:
   - note: Unread message count badge was not displayed on parent folders of subfolder containing unread messages
     tag: fixed
     bugs: [1844534]
-  - note: "Undo archive" (via Ctrl-Z) did not un-archive previously archived messages
+  - note: '"Undo archive" (via Ctrl-Z) did not un-archive previously archived messages'
     tag: fixed
     bugs: [1829340]
   - note: Message compose window did not apply theme colors to menus
