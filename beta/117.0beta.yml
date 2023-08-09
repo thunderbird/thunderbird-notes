@@ -1,7 +1,7 @@
 release:
   release_date: '2023-08-02'
   text: |
-    **These notes apply to Thunderbird version 117 beta 2 released August 7, 2023.**
+    **These notes apply to Thunderbird version 117 beta 3 released August 9, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/117.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - Fixed in beta 2
+    - Fixed in beta 3
 
 notes:
   # Changed
@@ -68,3 +69,25 @@ notes:
     tag: fixed
     bugs: [1843014, 1844244, 1846262, 1845645]
     group: 2
+    
+  # Beta 3
+  - note: Remote content exceptions could not be added
+    tag: fixed
+    bugs: [1847576]
+    group: 3
+  - note: Deleting a message from the context menu with messages sorted in chronological order and smooth scroll enabled caused message list to scroll to top
+    tag: fixed
+    bugs: [1843462]
+    group: 3
+  - note: Newsgroup list file did not get updated after adding a new NNTP server
+    tag: fixed
+    bugs: [1845464]
+    group: 3
+  - note: Repeatedly switching accounts in Subscribe dialog caused tree view to stop updating
+    tag: fixed
+    bugs: [1845593]
+    group: 3
+  - note: Link Properties and Image Properties dialogs were too wide
+    tag: fixed
+    bugs: [1816850]
+    group: 3
