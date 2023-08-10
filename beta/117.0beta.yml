@@ -87,7 +87,7 @@ notes:
     tag: fixed
     bugs: [1845593]
     group: 3
-  - note: Link Properties and Image Properties dialogs were too wide
+  - note: Link Properties and Image Properties dialogs in the composer were too wide
     tag: fixed
     bugs: [1816850]
     group: 3
