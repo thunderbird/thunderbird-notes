@@ -1,0 +1,63 @@
+release:
+  release_date: '2023-08-14'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Some HTML emails printed headers on first page and message on subsequent pages
+    tag: fixed
+    bugs: [1843628]
+  - note: Deleting messages from message list sometimes scrolled list to bottom, selecting
+      bottommost message
+    tag: fixed
+    bugs: [1835173]
+  - note: Old OpenPGP secret keys could not be used to decrypt messages under certain circumstances
+    tag: fixed
+    bugs: [1835786]
+  - note: When multiple folder modes were active, tab focus navigated through all folder
+      mode options before reaching message list
+    tag: fixed
+    bugs: [1842060]
+  - note: Unread message count badge was not displayed on parent folders of subfolder containing
+      unread messages
+    tag: fixed
+    bugs: [1844534]
+  - note: '"Undo archive" (via Ctrl-Z) did not un-archive previously archived messages'
+    tag: fixed
+    bugs: [1829340]
+  - note: '"New" button dropdown menu in "Message Filters" dialog could not be opened via
+      keyboard navigation'
+    tag: fixed
+    bugs: [1843511]
+  - note: '"Show New Mail Alert for" input field in "Customize New Mail Alert" dialog had
+      zero width when using certain language packs'
+    tag: fixed
+    bugs: [1845832]
+  - note: '"Account Wizard" dialog was too narrow when adding a news server, partially
+      hiding confirmation buttons'
+    tag: fixed
+    bugs: [1846588]
+  - note: Link Properties and Image Properties dialogs in the composer were too wide
+    tag: fixed
+    bugs: [1816850]
+  - note: Thunderbird version number and details in "About" dialog were not automatically
+      read by screen readers when first opening dialog
+    tag: fixed
+    bugs: [1847078]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1846262]
