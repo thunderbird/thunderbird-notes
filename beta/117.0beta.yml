@@ -41,6 +41,9 @@ notes:
     tag: fixed
     bugs: [1847078]
     group: 2
+  - note: Width of icon columns (like Junk or Starred) in message list did not adjust when UI density was changed
+    tag: fixed
+    bugs: [1843014]
   - note: Reading the second new message in a folder cleared the unread indicator of all other new messages
     tag: fixed
     bugs: [1839805]
@@ -67,7 +70,7 @@ notes:
     group: 2
   - note: Various visual and UX improvements
     tag: fixed
-    bugs: [1843014, 1844244, 1846262, 1845645]
+    bugs: [1844244, 1846262, 1845645]
     group: 2
     
   # Beta 3
