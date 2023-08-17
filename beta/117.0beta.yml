@@ -15,6 +15,8 @@ release:
     -
     - Fixed in beta 2
     - Fixed in beta 3
+    - Changed and fixed in beta 4
+    - New, changed, and fixed in beta 5
 
 notes:
   # Changed
@@ -109,3 +111,35 @@ notes:
     tag: fixed
     bugs: [1847966]
     group: 4
+    
+  # Beta 5
+  - note: Current and previous Thunderbird MSIX packages are now published on archive.mozilla.org
+    tag: new
+    bugs: [1817657]
+    group: 5
+  
+  - note: Size, Unread, and Total columns are now right-aligned
+    tag: changed
+    bugs: [1848604]
+    group: 5
+  
+  - note: Account Manager did not resize to fit content, causing "Close" button to become hidden outside bounds of dialog when too many accounts were listed
+    tag: fixed
+    bugs: [1847555]
+    group: 5
+  - note: New mail notification always opened message in message pane, even if pane was disabled
+    tag: fixed
+    bugs: [1840092]
+    group: 5
+  - note: Cross-folder navigation using F and N did not work
+    tag: fixed
+    bugs: [1845011]
+    group: 5
+  - note: Incorrect message was selected under certain circumstances
+    tag: fixed
+    bugs: [1846885]
+    group: 5
+  - note: '"Convert to event/task" was missing from mail context menu'
+    tag: fixed
+    bugs: [1817705]
+    group: 5
