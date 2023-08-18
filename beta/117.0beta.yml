@@ -1,7 +1,7 @@
 release:
   release_date: '2023-08-02'
   text: |
-    **These notes apply to Thunderbird version 117 beta 5 released August 16, 2023.**
+    **These notes apply to Thunderbird version 117 beta 5 released August 18, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/117.0beta/system-requirements/)
 
@@ -113,7 +113,7 @@ notes:
     group: 4
     
   # Beta 5
-  - note: Current and previous Thunderbird MSIX packages are now published on archive.mozilla.org
+  - note: Thunderbird MSIX packages are now published on archive.mozilla.org
     tag: new
     bugs: [1817657]
     group: 5
@@ -131,6 +131,10 @@ notes:
     tag: fixed
     bugs: [1840092]
     group: 5
+  - note: Creating tags from unified toolbar failed
+    tag: fixed
+    bugs: [1846336]
+    group: 5
   - note: Cross-folder navigation using F and N did not work
     tag: fixed
     bugs: [1845011]
@@ -142,4 +146,8 @@ notes:
   - note: '"Convert to event/task" was missing from mail context menu'
     tag: fixed
     bugs: [1817705]
+    group: 5
+  - note: Events and tasks were not shown in some cases despite being present on remote server
+    tag: fixed
+    bugs: [1827100]
     group: 5
