@@ -81,3 +81,5 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1844244, 1845645]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.2)'
+    tag: fixed
