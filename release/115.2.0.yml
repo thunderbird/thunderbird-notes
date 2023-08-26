@@ -1,0 +1,83 @@
+release:
+  release_date: '2023-08-30'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # New
+  - note: Thunderbird MSIX packages are now published on archive.mozilla.org
+    tag: new
+    bugs: [1817657]
+
+  # Changed
+  - note: Size, Unread, and Total columns are now right-aligned
+    tag: changed
+    bugs: [1848604]
+  - note: Newsgroup names in message list header are now abbreviated
+    tag: changed
+    bugs: [1833298]
+
+  # Fixed
+  - note: Message compose window did not apply theme colors to menus
+    tag: fixed
+    bugs: [1845699]
+  - note: Reading the second new message in a folder cleared the unread indicator of all
+      other new messages
+    tag: fixed
+    bugs: [1839805]
+  - note: Displayed counts of unread or flagged messages could become out-of-sync
+    tag: fixed
+    bugs: [1846860]
+  - note: Deleting a message from the context menu with messages sorted in chronological
+      order and smooth scroll enabled caused message list to scroll to top
+    tag: fixed
+    bugs: [1843462]
+  - note: Repeatedly switching accounts in Subscribe dialog caused tree view to stop updating
+    tag: fixed
+    bugs: [1845593]
+  - note: '"Ignore thread" caused message cards to display incorrectly in message list'
+    tag: fixed
+    bugs: [1847966]
+  - note: Creating tags from unified toolbar failed
+    tag: fixed
+    bugs: [1846336]
+  - note: Cross-folder navigation using F and N did not work
+    tag: fixed
+    bugs: [1845011]
+  - note: Account Manager did not resize to fit content, causing "Close" button to become
+      hidden outside bounds of dialog when too many accounts were listed
+    tag: fixed
+    bugs: [1847555]
+  - note: Remote content exceptions could not be added in Settings
+    tag: fixed
+    bugs: [1847576]
+  - note: Newsgroup list file did not get updated after adding a new NNTP server
+    tag: fixed
+    bugs: [1845464]
+  - note: '"Download all headers" option in NNTP "Download Headers" dialog was incorrectly
+      selected by default'
+    tag: fixed
+    bugs: [1845457]
+  - note: '"Convert to event/task" was missing from mail context menu'
+    tag: fixed
+    bugs: [1817705]
+  - note: Events and tasks were not shown in some cases despite being present on remote
+      server
+    tag: fixed
+    bugs: [1827100]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1844244, 1845645]
