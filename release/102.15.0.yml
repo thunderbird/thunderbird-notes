@@ -1,0 +1,27 @@
+release:
+  release_date: '2023-08-30'
+  text: |
+    <p style="color: #d70022; font-weight: bold">Thunderbird 102.15.0, is the final release of Thunderbird 102.</p>
+
+    **Thunderbird 115 is now available! The "Supernova" UI features
+    provide an updated user interface and is designed to be more modern, customizable, and with code that is easier to
+    maintain and improve.**
+
+    **[Learn more about "Supernova"](https://blog.thunderbird.net/tag/supernova/)**
+
+    **System Requirements:** [Details](/en-US/thunderbird/102.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '102.0'
+
+notes:
+  # Fixed
+  - note: Old OpenPGP secret keys could not be used to decrypt messages under certain circumstances
+    tag: fixed
+    bugs: [1835786]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird102.15)'
+    tag: fixed
