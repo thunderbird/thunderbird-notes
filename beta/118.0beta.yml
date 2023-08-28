@@ -1,0 +1,60 @@
+release:
+  release_date: '2023-08-30'
+  text: |
+    **These notes apply to Thunderbird version 118 beta 1 released August 30, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/118.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    -
+
+notes:
+  - note: Date range intervals in "Find Events" panel updated
+    tag: changed
+    bugs: [1844408]
+
+  - note: Deleting an attachment from a message on an IMAP server corrupted the local copy when configured with "mark as deleted"
+    tag: fixed
+    bugs: [1135434]
+  - note: After moving an IMAP message to another folder, the incorrect message was selected in the message list
+    tag: fixed
+    bugs: [1845376]
+  - note: Adding a tag to an IMAP message opened in a tab failed
+    tag: fixed
+    bugs: [1844452]
+  - note: Manually entered passwords were not remembered for OAuth-authenticated accounts such as Yahoo mail
+    tag: fixed
+    bugs: [1673446]
+  - note: Junk/Spam folders were not always shown in Unified Folders mode
+    tag: fixed
+    bugs: [1838672]
+  - note: Setting an existing folder's type flag did not add descendant folders to the Unified Folders view
+    tag: fixed
+    bugs: [1848904]
+  - note: Middle-clicking a folder or message did not open it in a background tab, as in previous versions
+    tag: fixed
+    bugs: [1842482]
+
+  - note: Quick Filter's "Keep filters applied" did not persist after restarting Thunderbird
+    tag: fixed
+    bugs: [1846880, 1849221]
+  - note: Notifications for new messages with non-ascii characters in the subject were garbled
+    tag: fixed
+    bugs: [1842384]
+  - note: 'Settings tab visual improvements: Advanced Fonts dialog, Section headers hidden behind search box'
+    tag: fixed
+    bugs: [1717382, 1846751]
+
+  - note: New Groups tab in NNTP subscribe dialog id not work as expected
+    tag: fixed
+    bugs: [1848366]
+
+  - note: Various visual and style fixes
+    tag: fixed
+    bugs: [1846611, 1843707, 1848834, 1848507]
