@@ -10,9 +10,8 @@ import json
 from pathlib import Path
 from urllib.request import urlopen
 from packaging.version import Version
-from datetime import date, timedelta
 
-from tools_lib import yaml, notes_template
+from tools_lib import guess_release_date, yaml, notes_template
 from ruamel.yaml.comments import CommentedSeq as CS
 
 
@@ -112,7 +111,8 @@ Previous esr: {previous_esr}
     new_yaml["release"][
         "import_system_requirements"
     ] = notes_template.REQUIREMENTS_IMPORT[esr_major]
-    new_yaml["release"]["release_date"] = guess_release_date()
+    release_date, human_date = guess_release_date()
+    new_yaml["release"]["release_date"] = release_date
 
     notes_sequence = CS()
     note_counter = 0
@@ -201,18 +201,6 @@ def get_buglist(esr_major, from_rev):
         print(" ".join([str(bug) for bug in sorted(unique_backout_bugs)]))
 
     return unique_bugs, unique_backout_bugs
-
-
-def guess_release_date():
-    today = date.today()
-    guess = today + timedelta(days=2)
-    if guess.weekday() == 5:  # Saturday
-        guess = guess + timedelta(days=2)  # Shift to Monday
-    if guess.weekday() == 6:  # Sunday
-        guess = guess + timedelta(days=1)  # Shift to Monday
-    assert guess.weekday() < 5
-
-    return guess.isoformat()
 
 
 def fetch(url, data_type="text"):
