@@ -1,7 +1,7 @@
 release:
   release_date: '2023-08-30'
   text: |
-    **These notes apply to Thunderbird version 118 beta 1 released August 30, 2023.**
+    **These notes apply to Thunderbird version 118 beta 2 released September 6, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/118.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     -
+    - New, changed, & fixed in beta 2
 
 notes:
   - note: Date range intervals in "Find Events" panel updated
@@ -58,3 +59,39 @@ notes:
   - note: Various visual and style fixes
     tag: fixed
     bugs: [1846611, 1843707, 1848834, 1848507]
+    
+  # Beta 2
+  - note: Column separators are now shown between all columns in tree view
+    tag: new
+    bugs: [1847441]
+    group: 2
+  
+  - note: Card view and vertical layout are now default for new profiles
+    tag: changed
+    bugs: [1849000]
+    group: 2
+
+  - note: '"Mark Thread As Read" did not work when some messages in thread were already read'
+    tag: fixed
+    bugs: [1850850]
+    group: 2
+  - note: '"Tools" menu was blank when opened from compose window on macOS'
+    tag: fixed
+    bugs: [1848155]
+    group: 2
+  - note: Negative values were allowed in "Share for files larger than" field
+    tag: fixed
+    bugs: [1850281]
+    group: 2
+  - note: Newsgroup field in compose window did not autocomplete with suggested newsgroup names
+    tag: fixed
+    bugs: [1670457]
+    group: 2
+  - note: Canceling newsgroup messages did not check if sender matched user's own identity
+    tag: fixed
+    bugs: [1823274]
+    group: 2
+  - note: Event dialog with several invitees expanded beyond screen height
+    tag: fixed
+    bugs: [1848261]
+    group: 2
