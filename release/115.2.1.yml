@@ -1,0 +1,53 @@
+release:
+  release_date: '2023-09-11'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # New
+  - note: Column separators are now shown between all columns in tree view
+    tag: new
+    bugs: [1847441]
+    
+  # Fixed
+  - note: Crash reporter did not work in Thunderbird Flatpak
+    tag: fixed
+    bugs: [1843102]
+  - note: New mail notification always opened message in message pane, even if pane was
+      disabled
+    tag: fixed
+    bugs: [1840092]
+  - note: After moving an IMAP message to another folder, the incorrect message was selected
+      in the message list
+    tag: fixed
+    bugs: [1845376]
+  - note: Adding a tag to an IMAP message opened in a tab failed
+    tag: fixed
+    bugs: [1844452]
+  - note: Junk/Spam folders were not always shown in Unified Folders mode
+    tag: fixed
+    bugs: [1838672]
+  - note: Middle-clicking a folder or message did not open it in a background tab, as in
+      previous versions
+    tag: fixed
+    bugs: [1842482]
+  - note: 'Settings tab visual improvements: Advanced Fonts dialog, Section headers hidden
+      behind search box'
+    tag: fixed
+    bugs: [1717382, 1846751]
+  - note: Various visual and style fixes
+    tag: fixed
+    bugs: [1843707, 1848507, 1849823]
