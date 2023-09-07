@@ -50,4 +50,4 @@ notes:
     bugs: [1717382, 1846751]
   - note: Various visual and style fixes
     tag: fixed
-    bugs: [1843707, 1848507, 1849823]
+    bugs: [1843707, 1849823]
