@@ -1,7 +1,7 @@
 release:
   release_date: '2023-08-30'
   text: |
-    **These notes apply to Thunderbird version 118 beta 2 released September 6, 2023.**
+    **These notes apply to Thunderbird version 118 beta 3 released September 11, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/118.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - New, changed, & fixed in beta 2
+    - Fixed in beta 3
 
 notes:
   - note: Date range intervals in "Find Events" panel updated
@@ -95,3 +96,29 @@ notes:
     tag: fixed
     bugs: [1848261]
     group: 2
+    
+  # Beta 3
+  - note: Thunderbird sometimes crashed when deleting a parent folder with subfolders
+    tag: fixed
+    bugs: [1851293]
+    group: 3
+  - note: '"Send Message Error" appeared intermittently while Thunderbird was idle'
+    tag: fixed
+    bugs: [1801668]
+    group: 3
+  - note: Go > Folder menu was disabled
+    tag: fixed
+    bugs: [1849919]
+    group: 3
+  - note: Top-level Quick Filter settings did not persist after restart
+    tag: fixed
+    bugs: [1849249]
+    group: 3
+  - note: Focused but not selected messages were missing visual indication of focus in card view
+    tag: fixed
+    bugs: [1844263]
+    group: 3
+  - note: Message check boxes were partially obstructed in message list
+    tag: fixed
+    bugs: [1850760]
+    group: 3
