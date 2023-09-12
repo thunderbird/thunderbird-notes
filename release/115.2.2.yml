@@ -1,0 +1,21 @@
+release:
+  release_date: '2023-09-12'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.2.2)'
+    tag: fixed
