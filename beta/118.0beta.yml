@@ -1,7 +1,7 @@
 release:
   release_date: '2023-08-30'
   text: |
-    **These notes apply to Thunderbird version 118 beta 3 released September 11, 2023.**
+    **These notes apply to Thunderbird version 118 beta 3 released September 13, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/118.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - New, changed, & fixed in beta 2
     - Fixed in beta 3
+    - New and fixed in beta 4
 
 notes:
   - note: Date range intervals in "Find Events" panel updated
@@ -122,3 +123,30 @@ notes:
     tag: fixed
     bugs: [1850760]
     group: 3
+    
+  # Beta 4
+  - note: OpenPGP no longer attempts to re-initialize secret key storage if individual OpenPGP secret key passphrases have been enabled
+    tag: new
+    bugs: [1842629]
+    group: 4
+
+  - note: Notification dot did not disappear from taskbar icon on Windows after messages had already been read
+    tag: fixed
+    bugs: [1824889]
+    group: 4
+  - note: Multiple selected messages could not be opened simultaneously if selection included more than 19 messages
+    tag: fixed
+    bugs: [1851563]
+    group: 4
+  - note: Email replies received via BCC incorrectly populated From field with default identity
+    tag: fixed
+    bugs: [1851512]
+    group: 4
+  - note: Thunderbird did not always delete all temporary mail files, sometimes preventing messages from being sent
+    tag: fixed
+    bugs: [673703]
+    group: 4
+  - note: Status bar in Message Compose window could not be hidden
+    tag: fixed
+    bugs: [1806860]
+    group: 4
