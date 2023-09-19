@@ -161,10 +161,6 @@ notes:
     tag: fixed
     bugs: [1814823]
     group: 5
-  - note: Subfolders of IMAP inbox were not displayed in Unified Folders mode
-    tag: fixed
-    bugs: [1847401]
-    group: 5
   - note: Opening folder in new tab by clicking scroll wheel/middle mouse button did not work in Folder Pane
     tag: fixed
     bugs: [1836853]
@@ -197,3 +193,7 @@ notes:
     tag: fixed
     bugs: [1852732]
     group: 5
+
+  - note: Subfolders of IMAP inbox are not displayed in Unified Folders mode
+    tag: unresolved
+    bugs: [1847401]
