@@ -194,6 +194,7 @@ notes:
     bugs: [1852732]
     group: 5
 
-  - note: Subfolders of IMAP inbox are not displayed in Unified Folders mode
+  # Unresolved
+  - note: Some folders missing from Unified Folders
     tag: unresolved
-    bugs: [1847401]
+    bugs: []

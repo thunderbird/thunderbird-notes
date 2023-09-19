@@ -1,10 +1,6 @@
 release:
   release_date: '2023-09-20'
   text: |
-    **Thunderbird version 115 is only offered as direct download from
-    thunderbird.net and not as an upgrade from Thunderbird version 102 or
-    earlier. A future release will provide updates from earlier versions.**
-
     **For more on all the new features in Thunderbird 115, see
     [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
 
@@ -100,6 +96,6 @@ notes:
     bugs: [1850760]
 
   # Unresolved
-  - note: Subfolders of IMAP inbox are not displayed in Unified Folders mode
+  - note: Some folders missing from Unified Folders
     tag: unresolved
-    bugs: [1847401]
+    bugs: []
