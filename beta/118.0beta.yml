@@ -1,7 +1,7 @@
 release:
   release_date: '2023-08-30'
   text: |
-    **These notes apply to Thunderbird version 118 beta 3 released September 13, 2023.**
+    **These notes apply to Thunderbird version 118 beta 3 released September 19, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/118.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - New, changed, & fixed in beta 2
     - Fixed in beta 3
     - New and fixed in beta 4
+    - New and fixed in beta 5
 
 notes:
   - note: Date range intervals in "Find Events" panel updated
@@ -150,3 +151,49 @@ notes:
     tag: fixed
     bugs: [1806860]
     group: 4
+    
+  # Beta 5
+  - note: Message header was intermittently missing from message preview
+    tag: fixed
+    bugs: [1840943]
+    group: 5
+  - note: OAuth2 did not work on some profiles created in Thunderbird 102.6.1 or earlier
+    tag: fixed
+    bugs: [1814823]
+    group: 5
+  - note: Subfolders of IMAP inbox were not displayed in Unified Folders mode
+    tag: fixed
+    bugs: [1847401]
+    group: 5
+  - note: Opening folder in new tab by clicking scroll wheel/middle mouse button did not work in Folder Pane
+    tag: fixed
+    bugs: [1836853]
+    group: 5
+  - note: In Vertical View, decrypted subject lines were displayed as ellipsis ("...") in message list
+    tag: fixed
+    bugs: [1831764]
+    group: 5
+  - note: Condensed address preference (mail.showCondensedAddresses) did not show condensed addresses in message list
+    tag: fixed
+    bugs: [1831280]
+    group: 5
+  - note: User was not always notified of message send failures in outbox
+    tag: fixed
+    bugs: [1851542]
+    group: 5
+  - note: Spam folder could not be assigned non-ASCII names with IMAP UTF-8 enabled
+    tag: fixed
+    bugs: [1816332]
+    group: 5
+  - note: Tag dialog did not close properly after editing tag
+    tag: fixed
+    bugs: [1852414]
+    group: 5
+  - note: Importing some CalDAV calendars with yearly recurrence events caused Thunderbird to freeze
+    tag: fixed
+    bugs: [1850732]
+    group: 5
+  - note: Context menu items did not display a hover background color
+    tag: fixed
+    bugs: [1852732]
+    group: 5
