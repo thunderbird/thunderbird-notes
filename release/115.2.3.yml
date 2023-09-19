@@ -98,3 +98,8 @@ notes:
   - note: Message check boxes were partially obstructed in message list
     tag: fixed
     bugs: [1850760]
+
+  # Unresolved
+  - note: Subfolders of IMAP inbox are not displayed in Unified Folders mode
+    tag: unresolved
+    bugs: [1847401]
