@@ -1,0 +1,100 @@
+release:
+  release_date: '2023-09-20'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Changed
+  - note: Card view and vertical layout are now default for new profiles
+    tag: changed
+    bugs: [1849000]
+    
+  # Fixed
+  - note: Go > Folder menu was disabled
+    tag: fixed
+    bugs: [1849919]
+  - note: '"Tools" menu was blank when opened from compose window on macOS'
+    tag: fixed
+    bugs: [1848155]
+  - note: Deleting an attachment from a message on an IMAP server corrupted the local copy
+      when configured with "mark as deleted"
+    tag: fixed
+    bugs: [1135434]
+  - note: Manually entered passwords were not remembered for OAuth-authenticated accounts
+      such as Yahoo mail
+    tag: fixed
+    bugs: [1673446]
+  - note: Quick Filter's "Keep filters applied" did not persist after restarting Thunderbird
+    tag: fixed
+    bugs: [1846880, 1849221]
+  - note: Notifications for new messages with non-ASCII characters in the subject were
+      garbled
+    tag: fixed
+    bugs: [1842384]
+  - note: '"Mark Thread As Read" did not work when some messages in thread were already
+      read'
+    tag: fixed
+    bugs: [1850850]
+  - note: New Groups tab in NNTP subscribe dialog id not work as expected
+    tag: fixed
+    bugs: [1848366]
+  - note: Negative values were allowed in "Share for files larger than" field
+    tag: fixed
+    bugs: [1850281]
+  - note: Thunderbird sometimes crashed when deleting a parent folder with subfolders
+    tag: fixed
+    bugs: [1851293]
+  - note: '"Send Message Error" appeared intermittently while Thunderbird was idle'
+    tag: fixed
+    bugs: [1801668]
+  - note: Top-level Quick Filter settings did not persist after restart
+    tag: fixed
+    bugs: [1849249]
+  - note: Focused but not selected messages were missing visual indication of focus in
+      card view
+    tag: fixed
+    bugs: [1844263]
+  - note: Notification dot did not disappear from taskbar icon on Windows after messages
+      had already been read
+    tag: fixed
+    bugs: [1824889]
+  - note: Multiple selected messages could not be opened simultaneously if selection included
+      more than 19 messages
+    tag: fixed
+    bugs: [1851563]
+  - note: Email replies received via BCC incorrectly populated From field with default
+      identity
+    tag: fixed
+    bugs: [1851512]
+  - note: User was not always notified of message send failures in outbox
+    tag: fixed
+    bugs: [1851542]
+  - note: Tag dialog did not close properly after editing tag
+    tag: fixed
+    bugs: [1852414]
+  - note: Newsgroup field in compose window did not autocomplete with suggested newsgroup
+      names
+    tag: fixed
+    bugs: [1670457]
+  - note: Canceling newsgroup messages did not check if sender matched user's own identity
+    tag: fixed
+    bugs: [1823274]
+  - note: Event dialog with several invitees expanded beyond screen height
+    tag: fixed
+    bugs: [1848261]
+  - note: Message check boxes were partially obstructed in message list
+    tag: fixed
+    bugs: [1850760]
