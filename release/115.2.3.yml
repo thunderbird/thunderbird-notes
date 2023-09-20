@@ -1,6 +1,8 @@
 release:
   release_date: '2023-09-20'
   text: |
+    **For help and a quick start on Thunderbird 115, see [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq)**
+  
     **For more on all the new features in Thunderbird 115, see
     [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
 
@@ -36,6 +38,9 @@ notes:
   - note: Quick Filter's "Keep filters applied" did not persist after restarting Thunderbird
     tag: fixed
     bugs: [1846880, 1849221]
+  - note: Top-level Quick Filter settings did not persist after restart
+    tag: fixed
+    bugs: [1849249]
   - note: Notifications for new messages with non-ASCII characters in the subject were
       garbled
     tag: fixed
@@ -56,9 +61,6 @@ notes:
   - note: '"Send Message Error" appeared intermittently while Thunderbird was idle'
     tag: fixed
     bugs: [1801668]
-  - note: Top-level Quick Filter settings did not persist after restart
-    tag: fixed
-    bugs: [1849249]
   - note: Focused but not selected messages were missing visual indication of focus in
       card view
     tag: fixed
