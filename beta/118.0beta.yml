@@ -17,6 +17,7 @@ release:
     - Fixed in beta 3
     - New and fixed in beta 4
     - Fixed in beta 5
+    - Fixed in beta 6
 
 notes:
   - note: Date range intervals in "Find Events" panel updated
@@ -193,6 +194,12 @@ notes:
     tag: fixed
     bugs: [1852732]
     group: 5
+    
+  # Beta 6
+  - note: Message header was not displayed until images finished loading, causing noticeable delay for messages containing large images
+    tag: fixed
+    bugs: [1851871]
+    group: 6
 
   # Unresolved
   - note: Some folders missing from Unified Folders
