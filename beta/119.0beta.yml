@@ -1,0 +1,51 @@
+release:
+  release_date: '2023-09-27'
+  text: |
+    **These notes apply to Thunderbird version 119 beta 1 released September 27, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/119.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ''
+    
+notes:
+  - note: Thunderbird could not import profiles with hostname ending in dot (".")
+    tag: fixed
+    bugs: [1825374]
+  - note: Broken folders were excluded from folder tree
+    tag: fixed
+    bugs: [1853824]
+  - note: In Unified Folders view, some folders had incorrect unified folder parent
+    tag: fixed
+    bugs: [1852525]
+  - note: '"Open in conversation" did not open messages in a thread view'
+    tag: fixed
+    bugs: [1849374]
+  - note: '"Edit message as new" did not restore encrypted subject from selected message'
+    tag: fixed
+    bugs: [1788534]
+  - note: Default reply identity did not use "Delivered-To" address when catch-all was active
+    tag: fixed
+    bugs: [1815559]
+  - note: Large SVG favicons did not display on RSS feeds
+    tag: fixed
+    bugs: [1853895]
+  - note: News messsage with non-ASCII author name were incorrectly canceled
+    tag: fixed
+    bugs: [1854023]
+  - note: Localized "Re: " prefix was not stripped from news messsages
+    tag: fixed
+    bugs: [1845155]
+  - note: '"Followup-To" label was incorrectly labeled as "Newsgroups"'
+    tag: fixed
+    bugs: [1854801]
+  - note: Various UX and visual improvements
+    tag: fixed
+    bugs: [1852733, 1852682]
+
