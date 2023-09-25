@@ -39,7 +39,7 @@ notes:
   - note: News messsage with non-ASCII author name were incorrectly canceled
     tag: fixed
     bugs: [1854023]
-  - note: Localized "Re: " prefix was not stripped from news messsages
+  - note: 'Localized "Re: " prefix was not stripped from news messsages'
     tag: fixed
     bugs: [1845155]
   - note: '"Followup-To" label was incorrectly labeled as "Newsgroups"'
