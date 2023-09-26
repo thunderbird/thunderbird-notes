@@ -1,0 +1,64 @@
+release:
+  release_date: '2023-09-28'
+  text: |
+    **Thunderbird version 115 is only offered as direct download from
+    thunderbird.net and not as an upgrade from Thunderbird version 102 or
+    earlier. A future release will provide updates from earlier versions.**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Thunderbird could not import profiles with hostname ending in dot (".")
+    tag: fixed
+    bugs: [1825374]
+  - note: Message header was occasionally missing in message preview
+    tag: fixed
+    bugs: [1840943]
+  - note: Setting an existing folder's type flag did not add descendant folders to the
+      Unified Folders view
+    tag: fixed
+    bugs: [1848904]
+  - note: Thunderbird did not always delete all temporary mail files, sometimes preventing
+      messages from being sent
+    tag: fixed
+    bugs: [673703]
+  - note: Status bar in Message Compose window could not be hidden
+    tag: fixed
+    bugs: [1806860]
+  - note: Message header was intermittently missing from message preview
+    tag: fixed
+    bugs: [1840943]
+  - note: OAuth2 did not work on some profiles created in Thunderbird 102.6.1 or earlier
+    tag: fixed
+    bugs: [1814823]
+  - note: In Vertical View, decrypted subject lines were displayed as ellipsis ("...")
+      in message list
+    tag: fixed
+    bugs: [1831764]
+  - note: Condensed address preference (mail.showCondensedAddresses) did not show condensed
+      addresses in message list
+    tag: fixed
+    bugs: [1831280]
+  - note: Spam folder could not be assigned non-ASCII names with IMAP UTF-8 enabled
+    tag: fixed
+    bugs: [1816332]
+  - note: Message header was not displayed until images finished loading, causing noticeable
+      delay for messages containing large images
+    tag: fixed
+    bugs: [1851871]
+  - note: Large SVG favicons did not display on RSS feeds
+    tag: fixed
+    bugs: [1853895]
+  - note: Context menu items did not display a hover background color
+    tag: fixed
+    bugs: [1852732]
