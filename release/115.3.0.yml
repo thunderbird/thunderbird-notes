@@ -60,3 +60,6 @@ notes:
   - note: Context menu items did not display a hover background color
     tag: fixed
     bugs: [1852732]
+    
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.3)'
+    tag: fixed
