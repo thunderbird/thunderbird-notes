@@ -1,7 +1,7 @@
 release:
   release_date: '2023-09-27'
   text: |
-    **These notes apply to Thunderbird version 119 beta 1 released September 27, 2023.**
+    **These notes apply to Thunderbird version 119 beta 2 released October 2, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/119.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ''
+    - 'Fixed in beta 2'
     
 notes:
   - note: Thunderbird could not import profiles with hostname ending in dot (".")
@@ -48,4 +49,38 @@ notes:
   - note: Various UX and visual improvements
     tag: fixed
     bugs: [1852733, 1852682]
+    
+  # Beta 2
+  - note: 'Thunderbird attempted to load accounts missing server hostname, causing blank 3-pane window'
+    tag: fixed
+    bugs: [1854064]
+    group: 2
+  - note: 'Permission description strings were missing from Add-Ons Manager'
+    tag: fixed
+    bugs: [1842490]
+    group: 2
+  - note: 'Modifier keys did not work as expected when dragging a message over the folder tree on macOS'
+    tag: fixed
+    bugs: [1847791]
+    group: 2
+  - note: 'Card View displayed incorrect recipient name for mail and news accounts, depending on folder'
+    tag: fixed
+    bugs: [1851955]
+    group: 2
+  - note: '"View Headers All" did not work when selected in standalone message window'
+    tag: fixed
+    bugs: [1855316]
+    group: 2
+  - note: 'Importing calendars from iCal files did not work under certain circumstances'
+    tag: fixed
+    bugs: [1854422]
+    group: 2
+  - note: 'Calendar invitations were not sent to event participants, only organizer'
+    tag: fixed
+    bugs: [1847658]
+    group: 2
+  - note: 'Printing dialog could be opened, even with no messages selected'
+    tag: fixed
+    bugs: [1846190]
+    group: 2
 
