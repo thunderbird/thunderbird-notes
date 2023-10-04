@@ -1,7 +1,7 @@
 release:
   release_date: '2023-09-27'
   text: |
-    **These notes apply to Thunderbird version 119 beta 2 released October 2, 2023.**
+    **These notes apply to Thunderbird version 119 beta 3 released October 5, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/119.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ''
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
     
 notes:
   - note: Thunderbird could not import profiles with hostname ending in dot (".")
@@ -83,4 +84,14 @@ notes:
     tag: fixed
     bugs: [1846190]
     group: 2
+    
+  # Beta 3
+  - note: 'Spell check dictionary dialog sometimes pushed Close button out of view'
+    tag: fixed
+    bugs: [1856152]
+    group: 3
+  - note: 'Various visual fixes'
+    tag: fixed
+    bugs: [1855033, 1854836]
+    group: 3
 
