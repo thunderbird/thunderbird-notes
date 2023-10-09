@@ -41,15 +41,18 @@ notes:
   - note: News messsage with non-ASCII author name were incorrectly canceled
     tag: fixed
     bugs: [1854023]
-  - note: 'Localized "Re: " prefix was not stripped from news messsages'
+  - note: 'Localized "Re: " prefix was not stripped from news messages'
     tag: fixed
     bugs: [1845155]
   - note: '"Followup-To" label was incorrectly labeled as "Newsgroups"'
     tag: fixed
     bugs: [1854801]
+  - note: Calendar alarm dialogs with lengthy descriptions pushed buttons out of view
+    tag: fixed
+    bugs: [1852682]
   - note: Various UX and visual improvements
     tag: fixed
-    bugs: [1852733, 1852682]
+    bugs: [1852733]
     
   # Beta 2
   - note: 'Thunderbird attempted to load accounts missing server hostname, causing blank 3-pane window'
