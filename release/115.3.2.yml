@@ -1,0 +1,51 @@
+release:
+  release_date: '2023-10-11'
+  text: |
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: '"Open in conversation" did not open messages in a thread view'
+    tag: fixed
+    bugs: [1849374]
+  - note: News messsage with non-ASCII author name were incorrectly canceled
+    tag: fixed
+    bugs: [1854023]
+  - note: 'Localized "Re: " prefix was not stripped from news messages'
+    tag: fixed
+    bugs: [1845155]
+  - note: 'Thunderbird attempted to load accounts missing server hostname, causing blank
+      3-pane window'
+    tag: fixed
+    bugs: [1854064]
+  - note: 'Permission description strings were missing from Add-Ons Manager'
+    tag: fixed
+    bugs: [1842490]
+  - note: 'Card View displayed incorrect recipient name for mail and news accounts, depending
+      on folder'
+    tag: fixed
+    bugs: [1851955]
+  - note: 'Spell check dictionary dialog sometimes pushed Close button out of view'
+    tag: fixed
+    bugs: [1856152]
+  - note: 'Importing calendars from iCal files did not work under certain circumstances'
+    tag: fixed
+    bugs: [1854422]
+  - note: 'Calendar invitations were not sent to event participants, only organizer'
+    tag: fixed
+    bugs: [1847658]
+  - note: Calendar alarm dialogs with lengthy descriptions pushed buttons out of view
+    tag: fixed
+    bugs: [1852682]
+  - note: 'Various visual fixes'
+    tag: fixed
+    bugs: [1854836]
