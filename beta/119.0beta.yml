@@ -1,7 +1,7 @@
 release:
   release_date: '2023-09-27'
   text: |
-    **These notes apply to Thunderbird version 119 beta 3 released October 5, 2023.**
+    **These notes apply to Thunderbird version 119 beta 4 released October 10, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/119.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ''
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - New and fixed in beta 4
     
 notes:
   - note: Thunderbird could not import profiles with hostname ending in dot (".")
@@ -97,4 +98,36 @@ notes:
     tag: fixed
     bugs: [1855033, 1854836]
     group: 3
+
+# beta 4
+  - note: '"Manage Newsgroups Subscription" now displayed on Account Central when using newsgroups'
+    tag: new
+    bugs: [1847428]
+    group: 4
+
+  - note: Manually configured authentication methods on accounts did no always persist
+    tag: fixed
+    bugs: [1855515]
+    group: 4
+
+  - note: '"From" address was editable when creating a new message from a template if the account identity contained Unicode characters'
+    tag: fixed
+    bugs: [1850055]
+    group: 4
+  - note: '"Move/Copy to &lt;folder&gt; again" was sometimes displayed in the folder context menu when it should not have been'
+    tag: fixed
+    bugs: [1855160]
+    group: 4
+  - note: Viewing the mail filter log displayed an error if no log file was present
+    tag: fixed
+    bugs: [1789244]
+    group: 4
+  - note: '"Folder Location" toolbar button did not work for local folders'
+    tag: fixed
+    bugs: [1843979]
+    group: 4
+  - note: Calendar ICS parser improvements for more reliable event import
+    tag: fixed
+    bugs: [1857196]
+    group: 4
 
