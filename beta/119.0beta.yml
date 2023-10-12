@@ -1,7 +1,7 @@
 release:
   release_date: '2023-09-27'
   text: |
-    **These notes apply to Thunderbird version 119 beta 4 released October 10, 2023.**
+    **These notes apply to Thunderbird version 119 beta 5 released October 12, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/119.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - New and fixed in beta 4
+    - Fixed in beta 5
     
 notes:
   - note: Thunderbird could not import profiles with hostname ending in dot (".")
@@ -99,7 +100,7 @@ notes:
     bugs: [1855033, 1854836]
     group: 3
 
-# beta 4
+  # Beta 4
   - note: '"Manage Newsgroups Subscription" now displayed on Account Central when using newsgroups'
     tag: new
     bugs: [1847428]
@@ -130,4 +131,46 @@ notes:
     tag: fixed
     bugs: [1857196]
     group: 4
+    
+  # Beta 5
+  - note: '"Reply to List" option was always enabled, even with no list to reply to'
+    tag: fixed
+    bugs: [1851971]
+    group: 5
+  - note: '"Archive" button in message pane was enabled on messages that could not be archived'
+    tag: fixed
+    bugs: [1856315]
+    group: 5
+  - note: Multiple message drafts or message templates could not be opened simultaneously for editing
+    tag: fixed
+    bugs: [1853558]
+    group: 5
+  - note: Opening a saved .eml file in compose window did not preserve message subject from file
+    tag: fixed
+    bugs: [1856166]
+    group: 5
+  - note: "Edit as New", "Reply", and "Redirect" could not be used on multiple messages simultaneously
+    tag: fixed
+    bugs: [1855065]
+    group: 5
+  - note: '"Copy to <folder name> again" option disappeared from context menu after copying to Gmail folder with non-ASCII name'
+    tag: fixed
+    bugs: [1856712]
+    group: 5
+  - note: '"Send Autocrypt key in header" preference was available on accounts with no encryption key'
+    tag: fixed
+    bugs: [1857541]
+    group: 5
+  - note: Tools > Filters dialog did not open in Unified Folder view if no messages were selected
+    tag: fixed
+    bugs: [1844341]
+    group: 5
+  - note: "Save image as" option did not work for RSS feed items displayed as a webpage
+    tag: fixed
+    bugs: [1853498]
+    group: 5
+  - note: OTR verification dialog was blank, preventing verification of OTR chat sessions
+    tag: fixed
+    bugs: [1852030]
+    group: 5
 
