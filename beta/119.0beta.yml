@@ -149,7 +149,7 @@ notes:
     tag: fixed
     bugs: [1856166]
     group: 5
-  - note: "Edit as New", "Reply", and "Redirect" could not be used on multiple messages simultaneously
+  - note: '"Edit as New", "Reply", and "Redirect" could not be used on multiple messages simultaneously'
     tag: fixed
     bugs: [1855065]
     group: 5
@@ -165,7 +165,7 @@ notes:
     tag: fixed
     bugs: [1844341]
     group: 5
-  - note: "Save image as" option did not work for RSS feed items displayed as a webpage
+  - note: '"Save image as" option did not work for RSS feed items displayed as a webpage'
     tag: fixed
     bugs: [1853498]
     group: 5
