@@ -1,0 +1,38 @@
+release:
+  release_date: '2023-10-18'
+  text: |
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: 'Modifier keys did not work as expected when dragging a message over the folder
+      tree on macOS'
+    tag: fixed
+    bugs: [1847791]
+  - note: '"Folder Location" toolbar button did not work for local folders'
+    tag: fixed
+    bugs: [1843979]
+  - note: '"Copy to <folder name> again" option disappeared from context menu after copying
+      to Gmail folder with non-ASCII name'
+    tag: fixed
+    bugs: [1856712]
+  - note: Default reply identity did not use "Delivered-To" address when catch-all was
+      active
+    tag: fixed
+    bugs: [1815559]
+  - note: '"View Headers All" did not work when selected in standalone message window'
+    tag: fixed
+    bugs: [1855316]
+  - note: Viewing the mail filter log displayed an error if no log file was present
+    tag: fixed
+    bugs: [1789244]
