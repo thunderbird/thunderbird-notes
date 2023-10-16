@@ -1,7 +1,7 @@
 release:
   release_date: '2023-09-27'
   text: |
-    **These notes apply to Thunderbird version 119 beta 5 released October 12, 2023.**
+    **These notes apply to Thunderbird version 119 beta 6 released October 16, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/119.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - 'Fixed in beta 3'
     - New and fixed in beta 4
     - Fixed in beta 5
+    - New and fixed in beta 6
     
 notes:
   - note: Thunderbird could not import profiles with hostname ending in dot (".")
@@ -173,4 +174,35 @@ notes:
     tag: fixed
     bugs: [1852030]
     group: 5
+    
+  # Beta 6
+  - note: Added account context menu to Unified Toolbar "Get Messages" button, creating quick access option to retrieve new messages for individual accounts
+    tag: new
+    bugs: [1837152]
+    group: 6
+  
+  - note: '"Compact" option was missing from folder context menu for IMAP accounts using maildir'
+    tag: fixed
+    bugs: [1827973]
+    group: 6
+  - note: Message list could not be properly read by screen readers in table view
+    tag: fixed
+    bugs: [1856396]
+    group: 6
+  - note: NVDA keyboard table navigation of message list did not work in table view
+    tag: fixed
+    bugs: [1843486]
+    group: 6
+  - note: Message list did not automatically scroll to new messages when switching folders
+    tag: fixed
+    bugs: [1850190]
+    group: 6
+  - note: Replying to some plaintext messages with desired quote selected in original message did not preserve formatting of quote
+    tag: fixed
+    bugs: [1839226]
+    group: 6
+  - note: Various UX and visual improvements
+    tag: fixed
+    bugs: [263114, 1857463, 1857753, 1858461]
+    group: 6
 
