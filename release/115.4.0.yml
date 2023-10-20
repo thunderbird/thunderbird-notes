@@ -37,7 +37,7 @@ notes:
     tag: fixed
     bugs: [1854592]
   - note: 'Various Flatpak enhancements'
-    tag: new
+    tag: fixed
     bugs: [1843110, 1845495, 1850013]
   - note: Opening folder in new tab by clicking scroll wheel/middle mouse button did not
       work in Folder Pane
