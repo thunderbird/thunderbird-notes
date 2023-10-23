@@ -4,6 +4,7 @@ Set up notes for a beta
 """
 
 import os
+import sys
 from pathlib import Path
 from urllib.request import urlopen
 from tools_lib import guess_release_date, yaml, notes_template
@@ -57,7 +58,10 @@ def get_version():
 
 
 def main():
-    version = get_version()
+    if sys.argv[1]:
+        version = sys.argv[1]
+    else:
+        version = get_version()
 
     gen_notes(version)
 
