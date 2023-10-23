@@ -1,0 +1,63 @@
+release:
+  release_date: '2023-10-25'
+  text: |
+    **These notes apply to Thunderbird version 120 beta 1 released October 25, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/120.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ' '
+
+notes:
+  - note: Default sort order of messages in message list changed to descending (newest at top)
+    tag: changed
+    bugs: [481143]
+
+
+  - note: Forwarding multiple messages as attachments failed
+    tag: fixed
+    bugs: [1859938]
+  - note: Messages with slow-loading images were delayed being marked as read
+    tag: fixed
+    bugs: [1855758]
+  - note: Cards View UX improvements
+    tag: fixed
+    bugs: [1856623, 1857613, 1857627, 1855821, 1855823, 1859036]
+  - note: Toolbar View widget fixes
+    tag: fixed
+    bugs: [1838589, 1858750]
+  - note: Search Folders dialog improvements
+    tag: fixed
+    bugs: [1855112, 1859050]
+
+  - note: Vcard photos were not imported when using opening the file with Thunderbird
+    tag: fixed
+    bugs: [1859114]
+
+  - note: RSS feeds with lengthy attachment filenames cut off visible content
+    tag: fixed
+    bugs: [1858114]
+  - note: RSS feeds with no favicon displayed default icon in the folder color
+    tag: fixed
+    bugs: [1858178]
+
+  - note: Calendar startup performance improvements
+    tag: fixed
+    bugs: [1856509]
+  - note: Publishing calendar events via authenticated WebDAV failed
+    tag: fixed
+    bugs: [1857033]
+
+  - note: Various accessibility improvements
+    tag: fixed
+    bugs: [1856396]
+  - note: Visual and Theme improvements
+    tag: fixed
+    bugs: [1854830, 1857789, 1858381, 1844729, 1858942, 1859894, 1860043, 1860218]
+
