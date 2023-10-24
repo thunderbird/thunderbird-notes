@@ -55,3 +55,5 @@ TMPL_BETA_TEXT = """**These notes apply to Thunderbird version {ver_major} beta 
 - Mac: macOS 10.15 or later
 - Linux: GTK+ 3.14 or higher
 """
+
+TMPL_SEC_NOTE = "'[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#{thunderbird_version}'"

@@ -46,6 +46,16 @@ class RelNote:
         return {"note": self.note, "tag": self.tag, "bugs": self.bugs}
 
 
+def sec_version(this_esr):
+    if this_esr.endswith("esr"):
+        this_esr = this_esr[:-3]
+    version = Version(this_esr)
+
+    if version.micro == 0:
+        return f"thunderbird{version.major}.{version.minor}"
+    return f"thunderbird{version.major}.{version.minor}.{version.micro}"
+
+
 def load_notes(this_esr, previous_esr, previous_esr_rev):
     beta_notes = {}
     new_notes = []
@@ -124,6 +134,12 @@ Previous esr: {previous_esr}
                 note_counter, "{}\n".format(tag_name.capitalize()), 2
             )
             note_counter += len(tag_notes)
+
+    sec_v = sec_version(this_esr)
+    sec_url = notes_template.TMPL_SEC_NOTE.format(thunderbird_version=sec_v)
+    sec_note = RelNote([], "fixed", sec_url)
+    notes_sequence.append(sec_note)
+
     new_yaml["notes"] = notes_sequence
 
     out_yaml = ver_notes_yaml.format(this_esr=this_esr)
