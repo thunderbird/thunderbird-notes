@@ -101,3 +101,6 @@ notes:
   - note: 'Various visual fixes'
     tag: fixed
     bugs: [1855033, 1855204, 1858942, 1857504]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.4)'
+    tag: fixed
