@@ -21,7 +21,7 @@ notes:
     bugs: [1847428]
   
   # Fixed
-  - note: Manually configured authentication methods on accounts did no always persist
+  - note: Manually configured authentication methods on accounts did not always persist
     tag: fixed
     bugs: [1855515]
   - note: '"Send Autocrypt key in header" preference was available on accounts with no
@@ -87,7 +87,7 @@ notes:
   - note: OTR verification dialog was blank, preventing verification of OTR chat sessions
     tag: fixed
     bugs: [1852030]
-  - note: Calendar ICS parser improvements for more reliable event import
+  - note: Calendar event import failed for some ICS files
     tag: fixed
     bugs: [1857196]
   - note: 'Permission description strings were missing from Add-Ons Manager'
