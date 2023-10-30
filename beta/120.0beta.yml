@@ -1,7 +1,7 @@
 release:
   release_date: '2023-10-25'
   text: |
-    **These notes apply to Thunderbird version 120 beta 1 released October 25, 2023.**
+    **These notes apply to Thunderbird version 120 beta 2 released October 30, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/120.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - New & Fixed in beta 2
 
 notes:
   - note: Default sort order of messages in message list changed to descending (newest at top)
@@ -61,3 +62,40 @@ notes:
     tag: fixed
     bugs: [1854830, 1857789, 1858381, 1844729, 1858942, 1859894, 1860043, 1860218]
 
+# beta 2
+  - note: Beta releases now use "beta" logo variants
+    tag: new
+    group: 2
+    bugs: [1845794]
+  - note: No messages or calendar items were displayed on startup
+    tag: fixed
+    group: 2
+    bugs: [1860885]
+  - note: Message list scrolling fixes
+    tag: fixed
+    group: 2
+    bugs: [1845391, 1827042]
+  - note: Insert image dialog was not properly sized on some localized builds
+    tag: fixed
+    group: 2
+    bugs: [1860503]
+  - note: The "unencrypted subject" icon was always briefly displayed when replying to a message
+    tag: fixed
+    group: 2
+    bugs: [1828591]
+  - note: Publishing calendars to invalid URLs did not display a helpful error
+    tag: fixed
+    group: 2
+    bugs: [1841547]
+  - note: Converting a message to an event failed when the message pane was not displayed
+    tag: fixed
+    group: 2
+    bugs: [1857835]
+  - note: Redirect dialog displayed for WebDAV calendars was too small
+    tag: fixed
+    group: 2
+    bugs: [1856340]
+  - note: Visual and theme fixes
+    tag: fixed
+    group: 2
+    bugs: [1691138, 1860272]
