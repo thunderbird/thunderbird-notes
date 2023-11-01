@@ -1,7 +1,7 @@
 release:
   release_date: '2023-10-25'
   text: |
-    **These notes apply to Thunderbird version 120 beta 2 released 🎃 October 31, 2023.**
+    **These notes apply to Thunderbird version 120 beta 3 released November 2, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/120.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - Fixed in beta 2
+    - New & fixed in beta 3
 
 notes:
   - note: Default sort order of messages in message list changed to descending (newest at top)
@@ -95,3 +96,22 @@ notes:
     tag: fixed
     group: 2
     bugs: [1691138, 1860272]
+
+# beta 3
+  - note: Beta branded logos for Thunderbird beta releases
+    tag: new
+    group: 3
+    bugs: [1845794]
+  - note: Autocrypt Gossip key distribution added
+    tag: new
+    group: 3
+    bugs: [1853674]
+
+  - note: Advanced GnuPG keys may be protected with an unexpected passphrase
+    tag: fixed
+    group: 3
+    bugs: [1859978]
+  - note: Some text remained incorrectly visible in the message list when using "Grouped By" sorting
+    tag: fixed
+    group: 3
+    bugs: [1839035]
