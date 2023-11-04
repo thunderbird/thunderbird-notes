@@ -23,7 +23,9 @@ NO_AUTO_UPDATES = """**Thunderbird version 115 is only offered as direct downloa
 thunderbird.net and not as an upgrade from Thunderbird version 102 or
 earlier. A future release will provide updates from earlier versions.**"""
 
-TMPL_115_TEXT = """
+TMPL_115_TEXT = """**For help and a quick start on Thunderbird 115, see
+[Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
 **For more on all the new features in Thunderbird 115, see
 [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
 

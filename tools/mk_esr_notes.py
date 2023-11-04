@@ -43,7 +43,10 @@ class RelNote:
 
     @property
     def output(self):
-        return {"note": self.note, "tag": self.tag, "bugs": self.bugs}
+        rv = {"note": self.note, "tag": self.tag}
+        if self.bugs:
+            rv["bugs"] = self.bugs
+        return rv
 
 
 def sec_version(this_esr):
@@ -53,7 +56,7 @@ def sec_version(this_esr):
 
     if version.micro == 0:
         return f"thunderbird{version.major}.{version.minor}"
-    return f"thunderbird{version.major}.{version.minor}.{version.micro}"
+    return False
 
 
 def load_notes(this_esr, previous_esr, previous_esr_rev):
@@ -115,6 +118,12 @@ Previous esr: {previous_esr}
                     noted_bugs.add(b2)
             rel_notes.append(note.output)
 
+    sec_v = sec_version(this_esr)
+    if sec_v:  # sec_version returns False for non-.0 esrs (like 115.5.1)
+        sec_url = notes_template.TMPL_SEC_NOTE.format(thunderbird_version=sec_v)
+        sec_note = RelNote([], "fixed", sec_url)
+        rel_notes.append(sec_note)
+
     RELEASE_TEMPLATE = f"TMPL_{esr_major}_TEXT"
     new_yaml = yaml.load(notes_template.TMPL_HEADER)
     new_yaml["release"]["text"] = getattr(notes_template, RELEASE_TEMPLATE)
@@ -134,11 +143,6 @@ Previous esr: {previous_esr}
                 note_counter, "{}\n".format(tag_name.capitalize()), 2
             )
             note_counter += len(tag_notes)
-
-    sec_v = sec_version(this_esr)
-    sec_url = notes_template.TMPL_SEC_NOTE.format(thunderbird_version=sec_v)
-    sec_note = RelNote([], "fixed", sec_url)
-    notes_sequence.append(sec_note)
 
     new_yaml["notes"] = notes_sequence
 
