@@ -1,0 +1,64 @@
+release:
+  release_date: '2023-11-06'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: No messages or calendar items were displayed on startup
+    tag: fixed
+    bugs: [1860885]
+  - note: Toolbar & Folder View widget fixes
+    tag: fixed
+    bugs: [1858750]
+  - note: Insert image dialog was not properly sized on some localized builds
+    tag: fixed
+    bugs: [1860503]
+  - note: The "unencrypted subject" icon was always briefly displayed when replying to
+      a message
+    tag: fixed
+    bugs: [1828591]
+
+  - note: RSS feeds with lengthy attachment filenames cut off visible content
+    tag: fixed
+    bugs: [1858114]
+  - note: RSS feeds with no favicon displayed default icon in the folder color
+    tag: fixed
+    bugs: [1858178]
+
+  - note: NNTP messages that were previously downloaded were not displayed if the server went offline
+    tag: fixed
+    bugs: [1859522]
+
+  - note: Vcard photos were not imported when using opening the file with Thunderbird
+    tag: fixed
+    bugs: [1859114]
+
+  - note: Publishing calendars to invalid URLs did not display a helpful error
+    tag: fixed
+    bugs: [1841547]
+  - note: Publishing calendar events via authenticated WebDAV failed
+    tag: fixed
+    bugs: [1857033]
+  - note: Converting a message to an event failed when the message pane was not displayed
+    tag: fixed
+    bugs: [1857835]
+  - note: Redirect dialog displayed for WebDAV calendars was too small
+    tag: fixed
+    bugs: [1856340]
+
+  - note: Visual and Theme improvements
+    tag: fixed
+    bugs: [1844729, 1860218, 1860272]
