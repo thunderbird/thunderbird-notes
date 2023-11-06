@@ -1,7 +1,7 @@
 release:
   release_date: '2023-10-25'
   text: |
-    **These notes apply to Thunderbird version 120 beta 3 released November 2, 2023.**
+    **These notes apply to Thunderbird version 120 beta 4 released November 6, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/120.0beta/system-requirements/)
 
@@ -63,7 +63,7 @@ notes:
     tag: fixed
     bugs: [1854830, 1857789, 1858381, 1844729, 1858942, 1859894, 1860043, 1860218]
 
-# beta 2
+  # Beta 2
   - note: No messages or calendar items were displayed on startup
     tag: fixed
     group: 2
@@ -97,7 +97,7 @@ notes:
     group: 2
     bugs: [1691138, 1860272]
 
-# beta 3
+  # Beta 3
   - note: Beta branded logos for Thunderbird beta releases
     tag: new
     group: 3
@@ -115,3 +115,29 @@ notes:
     tag: fixed
     group: 3
     bugs: [1839035]
+    
+  # Beta 4
+  - note: '"Read Messages" button in Account Central did not retrieve mail from POP accounts'
+    tag: fixed
+    group: 4
+    bugs: [1858733]
+  - note: States of collapsed and expanded threads were not maintained when switching folders
+    tag: fixed
+    group: 4
+    bugs: [1807063]
+  - note: Pressing "n" to move to the next unread message on an unread, collapsed thread opened the thread and selected the second message instead of the first
+    tag: fixed
+    group: 4
+    bugs: [1847792]
+  - note: '"Open Message in Conversation" was incorrectly enabled for selections of multiple messages'
+    tag: fixed
+    group: 4
+    bugs: [1860539]
+  - note: Initial message was not automatically selected when opened in conversation
+    tag: fixed
+    group: 4
+    bugs: [1856266]
+  - note: Subject lines were excessively indented in "Grouped by" views
+    tag: fixed
+    group: 4
+    bugs: [1841256]
