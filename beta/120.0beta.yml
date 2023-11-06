@@ -15,6 +15,7 @@ release:
     - ' '
     - Fixed in beta 2
     - New & fixed in beta 3
+    - Fixed in beta 4
 
 notes:
   - note: Default sort order of messages in message list changed to descending (newest at top)
