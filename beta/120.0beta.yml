@@ -1,7 +1,7 @@
 release:
   release_date: '2023-10-25'
   text: |
-    **These notes apply to Thunderbird version 120 beta 5 released November 8, 2023.**
+    **These notes apply to Thunderbird version 120 beta 6 released November 13, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/120.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - New & fixed in beta 3
     - Fixed in beta 4
     - Fixed in beta 5
+    - Fixed in beta 6
 
 notes:
   - note: Default sort order of messages in message list changed to descending (newest at top)
@@ -144,8 +145,26 @@ notes:
     group: 4
     bugs: [1841256]
 
-  # beta 5
-  - note: Events canceled by the organizer were incorrectly sent cancelation message
+  # Beta 5
+  - note: Events canceled by the organizer incorrectly sent cancelation message
     tag: fixed
     group: 5
     bugs: [1861355]
+    
+  # Beta 6
+  - note: If started offline, Thunderbird did not download some IMAP messages after going back online
+    tag: fixed
+    group: 6
+    bugs: [1854586]
+  - note: Newsgroup users using FQDN identity generated message ID headers with incorrect domain name
+    tag: fixed
+    group: 6
+    bugs: [1846837]
+  - note: Matrix messages did not display
+    tag: fixed
+    group: 6
+    bugs: [1862208]
+  - note: Link previews had poor legibility in dark mode
+    tag: fixed
+    group: 6
+    bugs: [1820244]
