@@ -1,0 +1,52 @@
+release:
+  release_date: '2023-11-16'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Forwarding multiple messages as attachments failed
+    tag: fixed
+    bugs: [1859938]
+  - note: Message list scrolling fixes
+    tag: fixed
+    bugs: [1827042, 1845391]
+  - note: Some text remained incorrectly visible in the message list when using "Grouped
+      By" sorting
+    tag: fixed
+    bugs: [1839035]
+  - note: Subject lines were excessively indented in "Grouped by" views
+    tag: fixed
+    bugs: [1841256]
+  - note: '"Open Message in Conversation" was incorrectly enabled for selections of multiple
+      messages'
+    tag: fixed
+    bugs: [1860539]
+  - note: States of collapsed and expanded threads were not maintained when switching folders
+    tag: fixed
+    bugs: [1807063]
+  - note: Pressing "n" to move to the next unread message on an unread, collapsed thread
+      opened the thread and selected the second message instead of the first
+    tag: fixed
+    bugs: [1847792]
+  - note: Search Folders dialog improvements
+    tag: fixed
+    bugs: [1859050]
+  - note: '"Read Messages" button in Account Central did not retrieve mail from POP accounts'
+    tag: fixed
+    bugs: [1858733]
+  - note: Events canceled by the organizer were incorrectly sent cancelation message
+    tag: fixed
+    bugs: [1861355]
