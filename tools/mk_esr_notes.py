@@ -122,7 +122,7 @@ Previous esr: {previous_esr}
     if sec_v:  # sec_version returns False for non-.0 esrs (like 115.5.1)
         sec_url = notes_template.TMPL_SEC_NOTE.format(thunderbird_version=sec_v)
         sec_note = RelNote([], "fixed", sec_url)
-        rel_notes.append(sec_note)
+        rel_notes.append(sec_note.output)
 
     RELEASE_TEMPLATE = f"TMPL_{esr_major}_TEXT"
     new_yaml = yaml.load(notes_template.TMPL_HEADER)
