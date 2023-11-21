@@ -1,0 +1,68 @@
+release:
+  release_date: '2023-11-22'
+  text: |
+    **These notes apply to Thunderbird version 121 beta 1 released November 22, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/121.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    -
+    
+notes:
+  - note: Messages opened in background tab were incorrectly marked as read
+    tag: fixed
+    bugs: [1862822]
+  - note: Thunderbird now attempts to reconnect on a new connection after SMTP 4xx errors
+    tag: fixed
+    bugs: [1854567]
+  - note: IMAP messages deleted in Thunderbird still appeared in other email clients that don't respect messages marked "\deleted"
+    tag: fixed
+    bugs: [1857881]
+  - note: Mark All Read did not work for virtual folders
+    tag: fixed
+    bugs: [519687]
+  - note: Unified folders were missing "Mark Folder Read" option in context menu
+    tag: fixed
+    bugs: [1842420]
+  - note: Add tooltip displaying full folder path when hovering over location column of thread pane
+    tag: fixed
+    bugs: [522768]
+  - note: '"Reply to List" was incorrectly disabled in Unified Toolbar since Thunderbird 115.4.1'
+    tag: fixed
+    bugs: [1862232]
+  - note: Sorting by column with "Grouped By" enabled then performing a quick filter search caused blank message pane
+    tag: fixed
+    bugs: [1860322]
+  - note: Star and junk icons showed incorrect state for selected-focused messages in table view
+    tag: fixed
+    bugs: [1863812]
+  - note: View menu in message window did not initialize correctly
+    tag: fixed
+    bugs: [1862665]
+  - note: Links with IP address as link text and destination incorrectly warned user that link text and destination did not match
+    tag: fixed
+    bugs: [1804628]
+  - note: Attachment list did not always appear if remote message content loaded slowly
+    tag: fixed
+    bugs: [1856929]
+  - note: OpenPGP signatures rejected due to mismatched signature timestamp now display signature timestamp and clarifying message
+    tag: fixed
+    bugs: [1863705, 1863707]
+  - note: Advanced address book search did not return results if display name was left blank
+    tag: fixed
+    bugs: [1864124]
+  - note: Clicking on attendee when inviting attendees added the attendee twice
+    tag: fixed
+    bugs: [1858629]
+  - note: Various Cards View UX improvements
+    tag: fixed
+    bugs: [1858578, 1860141, 1860148, 1860599, 1864064, 1865433, 1855824, 1857120, 1858302]
+  - note: Various UX and visual improvements
+    tag: fixed
+    bugs: [1860757, 1824288, 1835687, 1861383, 1832149, 1856495, 1864338, 1861286, 1864979, 1863296, 1861210]
