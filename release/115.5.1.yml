@@ -1,0 +1,33 @@
+release:
+  release_date: '2023-11-27'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Advanced GnuPG keys may be protected with an unexpected passphrase
+    tag: fixed
+    bugs: [1859978]
+  - note: OpenPGP signatures rejected due to mismatched signature timestamp now display
+      signature timestamp and clarifying message
+    tag: fixed
+    bugs: [1863705]
+  - note: Advanced address book search did not return results if display name was left
+      blank
+    tag: fixed
+    bugs: [1864124]
+  - note: Clicking on attendee when inviting attendees added the attendee twice
+    tag: fixed
+    bugs: [1858629]
