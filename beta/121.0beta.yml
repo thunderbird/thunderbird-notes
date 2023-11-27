@@ -13,6 +13,7 @@ release:
 
   groups:
     -
+    - Fixed in beta 2
     
 notes:
   - note: Messages opened in background tab were incorrectly marked as read
@@ -71,27 +72,36 @@ notes:
   - note: 3-pane view was blank after starting Thunderbird with unsent messages in outbox
     tag: fixed
     bugs: [1865806]
+    group: 2
   - note: Messages in outbox were not shown as unread by default
     tag: fixed
     bugs: [1852428]
-  - note: Troubleshooting page (about:support) did not work on profiles with no outgoing email server, such as news-only profiles
-    tag: fixed
-    bugs: [1858028]
+    group: 2
   - note: '"Apply columns to" sometimes failed to apply columns to a root folder and its descendants'
     tag: fixed
     bugs: [1846127]
+    group: 2
   - note: Global search results displayed as a list did not allow threads to be collapsed
     tag: fixed
     bugs: [1846127]
+    group: 2
   - note: '"Quick Filter" button on toolbar was disabled when viewing search results as a list'
     tag: fixed
     bugs: [1862247]
+    group: 2
   - note: Images could not be copied and pasted from one message into another
     tag: fixed
     bugs: [1862674]
+    group: 2
   - note: Undoing deletion of local messages required using "Undo" (Ctrl-Z) twice
     tag: fixed
     bugs: [1856427]
+    group: 2
   - note: Some labels were missing from Add-ons Manager
     tag: fixed
     bugs: [1865787]
+    group: 2
+  - note: Troubleshooting page (about:support) did not work on profiles with no outgoing email server, such as news-only profiles
+    tag: fixed
+    bugs: [1858028]
+    group: 2
