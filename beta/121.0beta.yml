@@ -1,7 +1,7 @@
 release:
   release_date: '2023-11-22'
   text: |
-    **These notes apply to Thunderbird version 121 beta 1 released November 22, 2023.**
+    **These notes apply to Thunderbird version 121 beta 1 released November 27, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/121.0beta/system-requirements/)
 
@@ -66,3 +66,32 @@ notes:
   - note: Various UX and visual improvements
     tag: fixed
     bugs: [1860757, 1824288, 1835687, 1861383, 1832149, 1856495, 1864338, 1861286, 1864979, 1863296, 1861210]
+    
+  # Beta 2
+  - note: 3-pane view was blank after starting Thunderbird with unsent messages in outbox
+    tag: fixed
+    bugs: [1865806]
+  - note: Messages in outbox were not shown as unread by default
+    tag: fixed
+    bugs: [1852428]
+  - note: Troubleshooting page (about:support) did not work on profiles with no outgoing email server, such as news-only profiles
+    tag: fixed
+    bugs: [1858028]
+  - note: '"Apply columns to" sometimes failed to apply columns to a root folder and its descendants'
+    tag: fixed
+    bugs: [1846127]
+  - note: Global search results displayed as a list did not allow threads to be collapsed
+    tag: fixed
+    bugs: [1846127]
+  - note: '"Quick Filter" button on toolbar was disabled when viewing search results as a list'
+    tag: fixed
+    bugs: [1862247]
+  - note: Images could not be copied and pasted from one message into another
+    tag: fixed
+    bugs: [1862674]
+  - note: Undoing deletion of local messages required using "Undo" (Ctrl-Z) twice
+    tag: fixed
+    bugs: [1856427]
+  - note: Some labels were missing from Add-ons Manager
+    tag: fixed
+    bugs: [1865787]
