@@ -1,7 +1,7 @@
 release:
   release_date: '2023-11-22'
   text: |
-    **These notes apply to Thunderbird version 121 beta 1 released November 27, 2023.**
+    **These notes apply to Thunderbird version 121 beta 3 released November 29, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/121.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     -
     - Fixed in beta 2
+    - Fixed in beta 3
     
 notes:
   - note: Messages opened in background tab were incorrectly marked as read
@@ -105,3 +106,18 @@ notes:
     tag: fixed
     bugs: [1858028]
     group: 2
+
+# beta 3
+  - note: Windows taskbar icon did not have the "Beta" label
+    tag: fixed
+    bugs: [1866730]
+    group: 3
+  - note: HTML FileLink attachments used the wrong encoding
+    tag: fixed
+    bugs: [1865269]
+    group: 3
+  - note: IMAP folder discovery was slowed by status bar message updates
+    tag: fixed
+    bugs: [1864776]
+    group: 3
+
