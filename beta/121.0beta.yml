@@ -1,7 +1,7 @@
 release:
   release_date: '2023-11-22'
   text: |
-    **These notes apply to Thunderbird version 121 beta 3 released November 29, 2023.**
+    **These notes apply to Thunderbird version 121 beta 4 released December 4, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/121.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - Fixed in beta 2
     - Fixed in beta 3
+    - Fixed in beta 4
     
 notes:
   - note: Messages opened in background tab were incorrectly marked as read
@@ -107,7 +108,7 @@ notes:
     bugs: [1858028]
     group: 2
 
-# beta 3
+  # Beta 3
   - note: Windows taskbar icon did not have the "Beta" label
     tag: fixed
     bugs: [1866730]
@@ -120,4 +121,30 @@ notes:
     tag: fixed
     bugs: [1864776]
     group: 3
+    
+  # Beta 4
+  - note: Servers with non-LDH (letters-digits-hyphens) hostnames, such as those containing non-ASCII Unicode characters, could not be found
+    tag: fixed
+    bugs: [1857824]
+    group: 4
+  - note: High CPU usage sometimes occurred with IMAP CONDSTORE (conditional STORE) enabled
+    tag: fixed
+    bugs: [1839256]
+    group: 4
+  - note: Replying to a collapsed thread via keyboard shortcut (Ctrl+R/Cmd+R) opened a reply for every message in the thread
+    tag: fixed
+    bugs: [1866819]
+    group: 4
+  - note: Folder open hover delay was too short when using drag-and-drop
+    tag: fixed
+    bugs: [1863845]
+    group: 4
+  - note: Parent folders with collapsed subfolders did not consistently display new mail indicator or message count for subfolders
+    tag: fixed
+    bugs: [1854377]
+    group: 4
+  - note: Minimize/maximize button order was incorrect when placing window titlebar buttons on left-hand side
+    tag: fixed
+    bugs: [1867780]
+    group: 4
 
