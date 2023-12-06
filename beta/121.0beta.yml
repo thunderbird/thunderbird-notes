@@ -1,7 +1,7 @@
 release:
   release_date: '2023-11-22'
   text: |
-    **These notes apply to Thunderbird version 121 beta 4 released December 4, 2023.**
+    **These notes apply to Thunderbird version 121 beta 5 released December 6, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/121.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - Fixed in beta 2
     - Fixed in beta 3
     - Fixed in beta 4
+    - Fixed in beta 5
     
 notes:
   - note: Messages opened in background tab were incorrectly marked as read
@@ -148,3 +149,16 @@ notes:
     bugs: [1867780]
     group: 4
 
+  # beta 5
+  - note: OpenPGP integraton with smartcard using latest version of Gpg4Win failed
+    tag: fixed
+    bugs: [1868225]
+    group: 5
+  - note: Message list scroll position could move randomly when switching folders
+    tag: fixed
+    bugs: [1866553]
+    group: 5
+  - note: macOS Contacts integration with Thunderbird address book did not work
+    tag: fixed
+    bugs: [1864521]
+    group: 5
