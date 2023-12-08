@@ -1,0 +1,114 @@
+release:
+  release_date: '2023-12-11'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: '"Compact" option was missing from folder context menu for IMAP accounts using
+      maildir'
+    tag: fixed
+    bugs: [1827973]
+  - note: Message list could not be properly read by screen readers in table view
+    tag: fixed
+    bugs: [1856396]
+  - note: Messages with slow-loading images were delayed being marked as read
+    tag: fixed
+    bugs: [1855758]
+  - note: Messages opened in background tab were incorrectly marked as read
+    tag: fixed
+    bugs: [1862822]
+  - note: Mark All Read did not work for virtual folders
+    tag: fixed
+    bugs: [519687]
+  - note: Delete (trash icon) in message display did not work in Unified folders
+    tag: fixed
+    bugs: [1844664115]
+  - note: Unified folders were missing "Mark Folder Read" option in context menu
+    tag: fixed
+    bugs: [1842420]
+  - note: '"Reply to List" was incorrectly disabled in Unified Toolbar since Thunderbird
+      115.4.1'
+    tag: fixed
+    bugs: [1862232]
+  - note: Sorting by column with "Grouped By" enabled then performing a quick filter search
+      caused blank message pane
+    tag: fixed
+    bugs: [1860322]
+  - note: Attachment list did not always appear if remote message content loaded slowly
+    tag: fixed
+    bugs: [1856929]
+  - note: Messages in outbox were not shown as unread by default
+    tag: fixed
+    bugs: [1852428]
+  - note: '"Apply columns to" sometimes failed to apply columns to a root folder and its
+      descendants'
+    tag: fixed
+    bugs: [1846127]
+  - note: Global search results displayed as a list did not allow threads to be collapsed
+    tag: fixed
+    bugs: [1846127]
+  - note: '"Quick Filter" button on toolbar was disabled when viewing search results as
+      a list'
+    tag: fixed
+    bugs: [1862247]
+  - note: Folder open hover delay was too short when using drag-and-drop
+    tag: fixed
+    bugs: [1863845]
+  - note: Parent folders with collapsed subfolders did not consistently display new mail
+      indicator or message count for subfolders
+    tag: fixed
+    bugs: [1854377]
+  - note: Message list scroll position could move randomly when switching folders
+    tag: fixed
+    bugs: [1866553]
+  - note: Undoing deletion of local messages required using "Undo" (Ctrl-Z) twice
+    tag: fixed
+    bugs: [1856427]
+  - note: IMAP messages deleted in Thunderbird still appeared in other email clients that
+      don't respect messages marked "\deleted"
+    tag: fixed
+    bugs: [1857881]
+  - note: If started offline, Thunderbird did not download some IMAP messages after going back online
+    tag: fixed
+    group: 6
+    bugs: [1854586]
+  - note: IMAP folder discovery was slowed by status bar message updates
+    tag: fixed
+    bugs: [1864776]
+  - note: Servers with non-LDH (letters-digits-hyphens) hostnames, such as those containing
+      non-ASCII Unicode characters, could not be found
+    tag: fixed
+    bugs: [1857824]
+  - note: Images could not be copied and pasted from one message into another
+    tag: fixed
+    bugs: [1862674]
+  - note: Troubleshooting page (about:support) did not work on profiles with no outgoing
+      email server, such as news-only profiles
+    tag: fixed
+    bugs: [1858028]
+  - note: Minimize/maximize button order was incorrect when placing window titlebar buttons
+      on left-hand side
+    tag: fixed
+    bugs: [1867780]
+  - note: OpenPGP integraton with smartcard using latest version of Gpg4Win failed
+    tag: fixed
+    bugs: [1868225]
+  - note: Various accessibility improvements
+    tag: fixed
+    bugs: [1856396]
+  - note: Various UX and visual improvements
+    tag: fixed
+    bugs: [1832149, 1856495, 1861210, 1861383, 263114, 1857753, 1858461, 1691138]
