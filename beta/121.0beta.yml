@@ -1,7 +1,7 @@
 release:
   release_date: '2023-11-22'
   text: |
-    **These notes apply to Thunderbird version 121 beta 5 released December 6, 2023.**
+    **These notes apply to Thunderbird version 121 beta 6 released December 11, 2023.**
 
     **System Requirements:** [Details](/en-US/thunderbird/121.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - Fixed in beta 3
     - Fixed in beta 4
     - Fixed in beta 5
+    - Fixed in beta 6
     
 notes:
   - note: Messages opened in background tab were incorrectly marked as read
@@ -149,7 +150,7 @@ notes:
     bugs: [1867780]
     group: 4
 
-  # beta 5
+  # Beta 5
   - note: OpenPGP integraton with smartcard using latest version of Gpg4Win failed
     tag: fixed
     bugs: [1868225]
@@ -162,3 +163,10 @@ notes:
     tag: fixed
     bugs: [1864521]
     group: 5
+
+  # Beta 6
+  - note: Message selection misbehaved after selecting a sub-message in an expanded thread, collapsing the thread, then pressing up/down to move selection
+    tag: fixed
+    bugs: [1865548]
+    group: 6
+
