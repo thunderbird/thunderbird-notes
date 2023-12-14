@@ -1,0 +1,23 @@
+release:
+  release_date: '2023-12-19'
+  text: |
+    <span style="color: #991b1b; font-weight: bold;">Happy Holidays from the Thunderbird team. Thank you for a spectacular year!</span>
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Thunderbird now attempts to reconnect on a new connection after SMTP 4xx errors
+    tag: fixed
+    bugs: [1854567]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.6)'
+    tag: fixed
