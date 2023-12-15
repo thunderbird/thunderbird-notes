@@ -16,8 +16,14 @@ release:
 
 notes:
   # Fixed
+  - note: Message selection misbehaved after selecting a sub-message in an expanded thread, collapsing the thread, then pressing up/down to move selection
+    tag: fixed
+    bugs: [1865548]
   - note: Thunderbird now attempts to reconnect on a new connection after SMTP 4xx errors
     tag: fixed
     bugs: [1854567]
+  - note: HTML FileLink attachments used the wrong encoding
+    tag: fixed
+    bugs: [1865269]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.6)'
     tag: fixed
