@@ -1,0 +1,87 @@
+release:
+  release_date: '2023-12-20'
+  text: |
+    **These notes apply to Thunderbird version 122 beta 1 released December 20, 2023.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/122.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - 
+    
+notes:
+  - note: Removed "mail.openpgp.key_assistant.enable" preference
+    tag: changed
+    bugs: [1868214]
+  - note: Activity Manager now shows account and full folder path when indexing
+    tag: changed
+    bugs: [1823024]
+
+  - note: When starting Thunderbird, unread message count did not appear on collapsed accounts
+    tag: fixed
+    bugs: [1862774]
+  - note: Thunderbird "--chrome" flag incorrectly opened extra messenger.xhtml
+    tag: fixed
+    bugs: [1866915]
+  - note: Thunderbird "--migration" flag opened empty window
+    tag: fixed
+    bugs: [1867860]
+  - note: Some menu bar items did not work with all Thunderbird windows closed on macOS
+    tag: fixed
+    bugs: [1868718]
+  - note: Add-ons did not start correctly when opening Thunderbird from other programs
+    tag: fixed
+    bugs: [1800423]
+  - note: Thread tree did not update when live language switching
+    tag: fixed
+    bugs: [1842585]
+  - note: Double-clicking empty space in message pane incorrectly opened the currently selected message
+    tag: fixed
+    bugs: [1867407]
+  - note: Card View behavioral and visual improvements
+    tag: fixed
+    bugs: [1863614, 1865616, 1867078, 1860867]
+  - note: Sort order was sometimes incorrect in Grouped By views
+    tag: fixed
+    bugs: [1866951]
+  - note: Enabling Grouped By view after reversing sort order of column header caused messages to be grouped incorrectly
+    tag: fixed
+    bugs: [1868794]
+  - note: Contacts deleted from mailing list view still visible in Details view
+    tag: fixed
+    bugs: [1799362]
+  - note: Adding duplicate mail addresses in "New/Edit mailing list" dialog, pressing OK, then removing one of the duplicate addresses causes both addresses to be removed
+    tag: fixed
+    bugs: [1799368]
+  - note: Canceling SMTP send before progress reached 100% did not stop message from sending
+    tag: fixed
+    bugs: [1816540]
+  - note: Various S/MIME improvements
+    tag: fixed
+    bugs: [1805558, 1864149]
+  - note: PDF attachments open in a separate tab did not always restore correctly after restarting Thunderbird
+    tag: fixed
+    bugs: [1846054]
+  - note: Drag-and-drop installation of add-ons did not work if Add-ons Manager was opened from Unified Toolbar
+    tag: fixed
+    bugs: [1862978]
+  - note: Opening thread pane context menu via keyboard did not always scroll view to selection
+    tag: fixed
+    bugs: [1867532]
+  - note: After selecting contacts in Address Book and starting a new search, the search results list did not update
+    tag: fixed
+    bugs: [1812726]
+  - note: Message List display options were hidden outside of Thunderbird window
+    tag: fixed
+    bugs: [1854393]
+  - note: Chat Account Settings did not allow scrolling to view overflowed window contents
+    tag: fixed
+    bugs: [1868796]
+  - note: Various visual improvements
+    tag: fixed
+    bugs: [1865989, 1866580, 1867169, 1867169, 1868799, 1867728, 1869991, 1866061, 1869519, 1868079]
