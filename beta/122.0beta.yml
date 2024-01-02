@@ -1,7 +1,7 @@
 release:
   release_date: '2023-12-20'
   text: |
-    **These notes apply to Thunderbird version 122 beta 1 released December 20, 2023.**
+    **These notes apply to Thunderbird version 122 beta 2 released January 2, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/122.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - 
+    - Fixed in beta 2
     
 notes:
   - note: Removed "mail.openpgp.key_assistant.enable" preference
@@ -85,3 +86,17 @@ notes:
   - note: Various visual improvements
     tag: fixed
     bugs: [1865989, 1866580, 1867169, 1867169, 1868799, 1867728, 1869991, 1866061, 1869519, 1868079]
+
+  # Beta 2
+  - note: Newsgroups did not always prompt for password, preventing download of list of groups
+    tag: fixed
+    bugs: [1870724]
+    group: 2
+  - note: New mail indicator for POP3 accounts did not indicate new messages ready to be downloaded
+    tag: fixed
+    bugs: [1870619]
+    group: 2
+  - note: Messages could not be moved to folders using Message > Move To if text or a link in the message had been clicked on first
+    tag: fixed
+    bugs: [1868474]
+    group: 2
