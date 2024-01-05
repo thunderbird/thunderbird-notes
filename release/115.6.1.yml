@@ -1,0 +1,48 @@
+release:
+  release_date: '2024-01-08'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  - note: OAuth2 now supported for comcast.net
+    tag: new
+    bugs: [1844810]
+  # Fixed
+  - note: High CPU usage sometimes occurred with IMAP CONDSTORE (conditional STORE) enabled
+    tag: fixed
+    bugs: [1839256]
+  - note: Replying to a collapsed thread via keyboard shortcut (Ctrl+R/Cmd+R) opened a
+      reply for every message in the thread
+    tag: fixed
+    bugs: [1866819]
+  - note: Enabling Grouped By view after reversing sort order of column header caused messages
+      to be grouped incorrectly
+    tag: fixed
+    bugs: [1868794]
+  - note: Opening thread pane context menu via keyboard did not always scroll view to selection
+    tag: fixed
+    bugs: [1867532]
+  - note: New mail indicator for POP3 accounts did not indicate new messages ready to be
+      downloaded
+    tag: fixed
+    bugs: [1870619]
+  - note: Messages could not be moved to folders using Message > Move To if text or a link
+      in the message had been clicked on first
+    tag: fixed
+    bugs: [1868474]
+  - note: MIME part boundaries were not properly terminated
+    tag: fixed
+    bugs: [1805558]
+
