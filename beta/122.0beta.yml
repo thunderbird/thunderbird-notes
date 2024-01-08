@@ -1,7 +1,7 @@
 release:
   release_date: '2023-12-20'
   text: |
-    **These notes apply to Thunderbird version 122 beta 2 released January 2, 2024.**
+    **These notes apply to Thunderbird version 122 beta 3 released January 8, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/122.0beta/system-requirements/)
 
@@ -12,9 +12,10 @@ release:
   import_system_requirements: 116.0beta
 
   groups:
-    - 
+    -
     - Fixed in beta 2
-    
+    - Fixed in beta 3
+
 notes:
   - note: Removed "mail.openpgp.key_assistant.enable" preference
     tag: changed
@@ -100,3 +101,17 @@ notes:
     tag: fixed
     bugs: [1868474]
     group: 2
+
+  # Beta 3
+  - note: Some OpenPGP dialogs were too small for their contents
+    tag: fixed
+    bugs: [1870809]
+    group: 3
+  - note: Account Manager did not work with hostnames entered as punycode
+    tag: fixed
+    bugs: [1870720, 1872632]
+    group: 3
+  - note: Blank window was sometimes displayed when starting Thunderbird
+    tag: fixed
+    bugs: [1870817]
+    group: 3
