@@ -1,7 +1,7 @@
 release:
   release_date: '2023-12-20'
   text: |
-    **These notes apply to Thunderbird version 122 beta 3 released January 8, 2024.**
+    **These notes apply to Thunderbird version 122 beta 4 released January 10, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/122.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     -
     - Fixed in beta 2
     - Fixed in beta 3
+    - Fixed in beta 4
 
 notes:
   - note: Removed "mail.openpgp.key_assistant.enable" preference
@@ -115,3 +116,25 @@ notes:
     tag: fixed
     bugs: [1870817]
     group: 3
+
+  # Beta 4
+  - note: Reversing sort order of Grouped By views in quick search did not reverse
+    tag: fixed
+    bugs: [1868816]
+    group: 4
+  - note: Size of collapsed folders in folder pane did not include size of subfolders
+    tag: fixed
+    bugs: [1870641]
+    group: 4
+  - note: Switching to thread pane of a folder using keyboard navigation did not focus top message
+    tag: fixed
+    bugs: [1869557]
+    group: 4
+  - note: Removing threaded messages in a unified folder sometimes resulted in an incorrect number of levels in the thread
+    tag: fixed
+    bugs: [1871992]
+    group: 4
+  - note: Inbox view intermittently reverted to default view after moving or deleting messages
+    tag: fixed
+    bugs: [1725127]
+    group: 4
