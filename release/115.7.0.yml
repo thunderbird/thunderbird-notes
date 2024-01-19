@@ -1,0 +1,74 @@
+release:
+  release_date: '2024-01-22'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # New
+  - note: Autocrypt Gossip key distribution added
+    tag: new
+    bugs: [1853674]
+  # Fixed
+  - note: When starting Thunderbird, unread message count did not appear on collapsed accounts
+    tag: fixed
+    bugs: [1862774]
+  - note: Blank window was sometimes displayed when starting Thunderbird
+    tag: fixed
+    bugs: [1870817]
+  - note: Thunderbird "--chrome" flag incorrectly opened extra messenger.xhtml
+    tag: fixed
+    bugs: [1866915]
+  - note: Add-ons did not start correctly when opening Thunderbird from other programs
+    tag: fixed
+    bugs: [1800423]
+  - note: Drag-and-drop installation of add-ons did not work if Add-ons Manager was opened
+      from Unified Toolbar
+    tag: fixed
+    bugs: [1862978]
+  - note: Double-clicking empty space in message pane incorrectly opened the currently
+      selected message
+    tag: fixed
+    bugs: [1867407]
+  - note: Canceling SMTP send before progress reached 100% did not stop message from sending
+    tag: fixed
+    bugs: [1816540]
+  - note: PDF attachments open in a separate tab did not always restore correctly after
+      restarting Thunderbird
+    tag: fixed
+    bugs: [1846054]
+  - note: Some OpenPGP dialogs were too small for their contents
+    tag: fixed
+    bugs: [1870809]
+  - note: Account Manager did not work with hostnames entered as punycode
+    tag: fixed
+    bugs: [1870720, 1872632]
+  - note: Downloading complete message from POP3 headers caused message tab/window to close when "Close message window/tab on move or delete" was enabled
+    tag: fixed
+    bugs: [1861886]
+  - note: Some ECC GPG keys could not be exported
+    tag: fixed
+    bugs: [1867765]
+  - note: Contacts deleted from mailing list view still visible in Details view
+    tag: fixed
+    bugs: [1799362]
+  - note: After selecting contacts in Address Book and starting a new search, the search
+      results list did not update
+    tag: fixed
+    bugs: [1812726]
+  - note: Various UX and visual improvements
+    tag: fixed
+    bugs: [1866061, 1867169, 1867728, 1868079, 1869519, 1832149, 1856495, 1861210, 1861286, 1863296, 1864979]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.7)'
+    tag: fixed
