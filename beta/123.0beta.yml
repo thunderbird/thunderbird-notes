@@ -1,0 +1,108 @@
+release:
+  release_date: '2024-01-25'
+  text: |
+    **These notes apply to Thunderbird version 123 beta 1 released January 25, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/123.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ' '
+    
+notes:
+  # New
+  - note: Added support for OS-specific accent colors
+    tag: new
+    bugs: [1869893]
+  - note: Manual account configuration now implements form validation
+    tag: new
+    bugs: [1863264]
+  - note: Added option to show packet dump when OpenPGP fails to decrypt
+    tag: new
+    bugs: [1874504]
+  - note: UI density now affects multi-message view
+    tag: new
+    bugs: [1868863]
+    
+  # Changed
+  - note: Added Show more/less buttons to notifications in Account Hub
+    tag: changed
+    bugs: [1863265]
+  - note: Folder alerts now display full path of affected folder
+    tag: changed
+    bugs: [988792]
+  - note: IMAP "Too Many Connections" alerts now display IMAP server name
+    tag: changed
+    bugs: [561055]
+  - note: Disabled support for LibrePGP v5 AEAD/OCB decryption
+    tag: changed
+    bugs: [1872833]
+
+  # Fixed
+  - note: OpenPGP Key Manager filtering did not work
+    tag: fixed
+    bugs: [1873655]
+  - note: OpenPGP sometimes attempted to decrypt message with incorrect key
+    tag: fixed
+    bugs: [1865620]
+  - note: Autoconfig failed on servers that did not support OAuth2
+    tag: fixed
+    bugs: [1869122]
+  - note: Network settings window was blank
+    tag: fixed
+    bugs: [1871983]
+  - note: Selected row in folder pane did not always remain visible when using keyboard navigation
+    tag: fixed
+    bugs: [1868094]
+  - note: Hovering over folder does not always expand subfolders
+    tag: fixed
+    bugs: [1873101]
+  - note: Yahoo! and AOL account message filters only filtered most recent message match
+    tag: fixed
+    bugs: [1865598]
+  - note: Quick Filter settings did not persist when Quick Filter bar was turned off
+    tag: fixed
+    bugs: [1850266]
+  - note: Mail tab-specific Unified Toolbar buttons received focus incorrectly
+    tag: fixed
+    bugs: [1872239]
+  - note: Clicking "Sent unsent messages" in Outbox context menu while in offline mode did not prompt user to go online
+    tag: fixed
+    bugs: [1873487]
+  - note: '"Confirm Deletion" prompt was incorrectly shown when deleting messages with Grouped By header also selected'
+    tag: fixed
+    bugs: [1873313]
+  - note: Thread collapsing did not behave correctly when copying thread messages in multi-folder view
+    tag: fixed
+    bugs: [1872253]
+  - note: Opened ignored messages in a message thread/subthread were not marked as read in IMAP folders
+    tag: fixed
+    bugs: [448876]
+  - note: Opening different attachments with the same name in different messages could cause attachment files to become conflated
+    tag: fixed
+    bugs: [1873023]
+  - note: Address Book scrolling did not work when using keyboard navigation
+    tag: fixed
+    bugs: [1870873]
+  - note: When creating new calendar, password prompt showed "rememberPassword" instead of "Use Password Manager to remember this password."
+    tag: fixed
+    bugs: [1872559]
+  - note: Overflowed attachment list could not be scrolled
+    tag: fixed
+    bugs: [1871343]
+  - note: Thread styling appeared on Grouped by Sort messages
+    tag: fixed
+    bugs: [1865362]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1871001, 1872873, 1870331, 1870323, 1869294, 1870705, 1855611, 1873236]
+    
+  # Unresolved
+  - note: Blocked remote content alert is shown twice when opening emails that contain remote content
+    tag: unresolved
+    bugs: [1875536]
