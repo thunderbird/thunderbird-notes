@@ -1,7 +1,7 @@
 release:
   release_date: '2024-01-25'
   text: |
-    **These notes apply to Thunderbird version 123 beta 1 released January 25, 2024.**
+    **These notes apply to Thunderbird version 123 beta 2 released January 29, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/123.0beta/system-requirements/)
 
@@ -101,8 +101,8 @@ notes:
   - note: Various visual and UX improvements
     tag: fixed
     bugs: [1871001, 1872873, 1870331, 1870323, 1869294, 1870705, 1855611, 1873236]
-    
-  # Unresolved
-  - note: Blocked remote content alert is shown twice when opening emails that contain remote content
-    tag: unresolved
+
+  # Beta 2
+  - note: Remote content warning was shown multiple times for the same message
+    tag: fixed
     bugs: [1875536]
