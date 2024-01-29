@@ -175,7 +175,7 @@ def main(comm_repo, build):
     cc = "Thunderbird Support <support-crew@discuss.thunderbird.net>"
     if comm_repo == "comm-beta":
         cc += ";TB Beta <beta@discuss.thunderbird.net>"
-    print(#subprocess.run(
+    subprocess.run(
         "thunderbird -compose 'format=html','attachment={}','to={}','cc={}','subject={}','body={}'".format(
             os.path.abspath(attach_fn),
             "Thunderbird Drivers <thunderbird-drivers@mozilla.org>",
@@ -183,7 +183,7 @@ def main(comm_repo, build):
             email_subject,
             email_body_html,
         ),
-        #shell=True,
+        shell=True,
     )
 
 
