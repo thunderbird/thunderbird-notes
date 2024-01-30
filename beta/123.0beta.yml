@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - Fixed in beta 2
     
 notes:
   # New
@@ -106,3 +107,4 @@ notes:
   - note: Remote content warning was shown multiple times for the same message
     tag: fixed
     bugs: [1875536]
+    group: 2
