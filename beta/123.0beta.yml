@@ -1,7 +1,7 @@
 release:
   release_date: '2024-01-25'
   text: |
-    **These notes apply to Thunderbird version 123 beta 2 released January 29, 2024.**
+    **These notes apply to Thunderbird version 123 beta 3 released February 5, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/123.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - Fixed in beta 2
+    - Fixed in beta 3
     
 notes:
   # New
@@ -108,3 +109,17 @@ notes:
     tag: fixed
     bugs: [1875536]
     group: 2
+    
+  # Beta 3
+  - note: Thunderbird slowed down significantly when opening email files (.eml)
+    tag: fixed
+    bugs: [1863957]
+    group: 3
+  - note: Passwords disappeared from password manager list after applying and clearing filters
+    tag: fixed
+    bugs: [1874646]
+    group: 3
+  - note: Cookies in cookie manager list disappeared after applying and then clearing filters
+    tag: fixed
+    bugs: [1876733]
+    group: 3
