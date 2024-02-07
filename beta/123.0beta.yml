@@ -1,7 +1,7 @@
 release:
   release_date: '2024-01-25'
   text: |
-    **These notes apply to Thunderbird version 123 beta 3 released February 5, 2024.**
+    **These notes apply to Thunderbird version 123 beta 4 released February 7, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/123.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - Fixed in beta 2
     - Fixed in beta 3
+    - Fixed in beta 4
     
 notes:
   # New
@@ -123,3 +124,9 @@ notes:
     tag: fixed
     bugs: [1876733]
     group: 3
+
+  # Beta 4
+  - note: A selected attachment's filename in the mail reader was not visible
+    tag: fixed
+    bugs: [1878414]
+    group: 4
