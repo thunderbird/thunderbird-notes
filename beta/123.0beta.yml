@@ -133,7 +133,7 @@ notes:
     group: 4
     
   # Beta 5
-  - note: S/MIME encryption failed when encountering unsupported certificate types
+  - note: S/MIME encryption failed to encrypt if unsupported certificate type was encountered
     tag: fixed
     bugs: [1876931]
     group: 5
