@@ -1,7 +1,7 @@
 release:
   release_date: '2024-01-25'
   text: |
-    **These notes apply to Thunderbird version 123 beta 4 released February 7, 2024.**
+    **These notes apply to Thunderbird version 123 beta 5 released February 12, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/123.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - Fixed in beta 2
     - Fixed in beta 3
     - Fixed in beta 4
+    - Fixed in beta 5
     
 notes:
   # New
@@ -130,3 +131,9 @@ notes:
     tag: fixed
     bugs: [1878414]
     group: 4
+    
+  # Beta 5
+  - note: S/MIME encryption failed when encountering unsupported certificate types
+    tag: fixed
+    bugs: [1876931]
+    group: 5
