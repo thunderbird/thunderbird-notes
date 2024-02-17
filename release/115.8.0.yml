@@ -1,0 +1,75 @@
+release:
+  release_date: '2024-02-20'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # New
+  - note: Added option to show packet dump when OpenPGP fails to decrypt
+    tag: new
+    bugs: [1874504]
+    
+  # Fixed
+  - note: Thunderbird slowed down significantly when opening email files (.eml)
+    tag: fixed
+    bugs: [1863957]
+  - note: Inbox view intermittently reverted to default view after moving or deleting messages
+    tag: fixed
+    bugs: [1725127]
+  - note: Size of collapsed folders in folder pane did not include size of subfolders
+    tag: fixed
+    bugs: [1870641]
+  - note: Hovering over folder does not always expand subfolders
+    tag: fixed
+    bugs: [1873101]
+  - note: Switching to thread pane of a folder using keyboard navigation did not focus
+      top message
+    tag: fixed
+    bugs: [1869557]
+  - note: Clicking "Sent unsent messages" in Outbox context menu while in offline mode
+      did not prompt user to go online
+    tag: fixed
+    bugs: [1873487]
+  - note: Mail tab-specific Unified Toolbar buttons received focus incorrectly
+    tag: fixed
+    bugs: [1872239]
+  - note: Quick Filter settings did not persist when Quick Filter bar was turned off
+    tag: fixed
+    bugs: [1850266]
+  - note: OpenPGP Key Manager filtering did not work
+    tag: fixed
+    bugs: [1873655]
+  - note: OpenPGP sometimes attempted to decrypt message with incorrect key
+    tag: fixed
+    bugs: [1865620]
+  - note: Autoconfig failed on servers that did not support OAuth2
+    tag: fixed
+    bugs: [1869122]
+  - note: Opening different attachments with the same name in different messages could
+      cause attachment files to become conflated
+    tag: fixed
+    bugs: [1873023]
+  - note: Overflowed attachment list could not be scrolled
+    tag: fixed
+    bugs: [1871343]
+  - note: Passwords disappeared from password manager list after applying and clearing
+      filters
+    tag: fixed
+    bugs: [1874646]
+  - note: Cookies in cookie manager list disappeared after applying and then clearing filters
+    tag: fixed
+    bugs: [1876733]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.8)'
+    tag: fixed
