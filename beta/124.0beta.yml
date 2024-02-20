@@ -1,0 +1,83 @@
+release:
+  release_date: '2024-02-21'
+  text: |
+    **These notes apply to Thunderbird version 124 beta 1 released February 21, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/124.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ' '
+notes:
+  # beta 1
+  - note: Cards UI styling of expand and collapse for threads
+    tag: changed
+    bugs: [1860868]
+  - note: Spam and Junk message styling in Card UI adjusted to be less distracting
+    tag: changed
+    bugs: [1880163]
+  - note: Using middle-mouse click on a message (open in background tab) did not work
+    tag: fixed
+    bugs: [1853923]
+  - note: Group-by-sort Unified folders were slow to open when expanded-all
+    tag: fixed
+    bugs: [1875577]
+  - note: References and Reply-To headers were not set if they were included in `mail.compose.other.header`
+    tag: fixed
+    bugs: [1800759]
+  - note: Header pane was not shown when pref `mailnews.headers.showUserAgent` was set
+    tag: fixed
+    bugs: [1876770]
+  - note: '"Open message in conversation" and "Open message in containing folder" from a standalone window failed'
+    tag: fixed
+    bugs: [531319, 1877962, 1851975]
+  - note: '"Get Messages" toolbar button was initially disabled after opening a message from a file in a new window'
+    tag: fixed
+    bugs: [1876662]
+  - note: '"Get selected messages" menu items did not work'
+    tag: fixed
+    bugs: [1867091]
+  - note: Sender in multimesage view was right aligned when the text wrapped to multiple lines
+    tag: fixed
+    bugs: [1880252]
+  - note: '"Quote message" menu item in compose window did not work when replying to message opened in separate tab'
+    tag: fixed
+    bugs: [1868626]
+  - note: POP error messages from server were not displayed
+    tag: fixed
+    bugs: [1876431]
+  - note: After changing password on an IMAP account, the account could become locked due to too many failed login attempts
+    tag: fixed
+    bugs: [1862111]
+  - note: 'Settings: Checkbox to enable underlined links was missing'
+    tag: fixed
+    bugs: [1878566]
+  - note: 'Settings: Updating tags failed if Automatic Updates were disabled'
+    tag: fixed
+    bugs: [1874557]
+  - note: Selecting "Match all messages" in Filter Rules dialog did not disable all search criteria
+    tag: fixed
+    bugs: [1879735]
+  - note: Toolbar customization window contents overflowed the window width
+    tag: fixed
+    bugs: [1852744]
+  - note: New mail notifications in Windows 11 stole focua from current window
+    tag: fixed
+    bugs: [1876325]
+  - note: '"Copy/Cut" context menus did not work in extension options pages'
+    tag: fixed
+    bugs: [1678057]
+  - note: Performance improvements and code cleanup
+    tag: fixed
+    bugs: [1877886, 1878257, 1878597]
+  - note: Keyboard navigation within search toolbar did not work
+    tag: fixed
+    bugs: [1878543]
+  - note: Cards UI style fixes
+    tag: fixed
+    bugs: [1876354]
