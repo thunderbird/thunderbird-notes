@@ -1,6 +1,8 @@
 # These requirements apply only to the tools directory. Python 3 is required.
-ruamel.yaml>=0.16.12
-packaging>=21.0
-requests>=2.27.1
-markupsafe
-markdown
+ruamel.yaml>=0.18.6
+packaging>=23.2
+requests>=2.31.0
+markupsafe>=2.1.5
+markdown>=3.5.2
+jinja2>=3.1.3
+pyyaml>=6.0.1

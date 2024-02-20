@@ -58,7 +58,7 @@ def get_version():
 
 
 def main():
-    if sys.argv[1]:
+    if len(sys.argv) > 1:
         version = sys.argv[1]
     else:
         version = get_version()
