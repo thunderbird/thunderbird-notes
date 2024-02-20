@@ -48,6 +48,9 @@ notes:
   - note: Quick Filter settings did not persist when Quick Filter bar was turned off
     tag: fixed
     bugs: [1850266]
+  - note: Quick Filters were slow
+    tag: fixed
+    bugs: [1849650]
   - note: OpenPGP Key Manager filtering did not work
     tag: fixed
     bugs: [1873655]
