@@ -66,7 +66,7 @@ notes:
   - note: Toolbar customization window contents overflowed the window width
     tag: fixed
     bugs: [1852744]
-  - note: New mail notifications in Windows 11 stole focua from current window
+  - note: New mail notifications in Windows 11 stole focus from current window
     tag: fixed
     bugs: [1876325]
   - note: '"Copy/Cut" context menus did not work in extension options pages'
