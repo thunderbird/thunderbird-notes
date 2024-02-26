@@ -88,6 +88,8 @@ notes:
   - note: Threaded view was slow to load
     tag: fixed
     bugs: [1881100]
+    group: 2
   - note: Multi-language spellcheck sometimes skipped languages 
     tag: fixed
     bugs: [1790746]
+    group: 2
