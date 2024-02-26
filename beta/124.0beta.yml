@@ -1,7 +1,7 @@
 release:
   release_date: '2024-02-21'
   text: |
-    **These notes apply to Thunderbird version 124 beta 1 released February 21, 2024.**
+    **These notes apply to Thunderbird version 124 beta 2 released February 26, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/124.0beta/system-requirements/)
 
@@ -13,8 +13,10 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'    
+
 notes:
-  # beta 1
+  # Beta 1
   - note: Cards UI styling of expand and collapse for threads
     tag: changed
     bugs: [1860868]
@@ -81,3 +83,11 @@ notes:
   - note: Cards UI style fixes
     tag: fixed
     bugs: [1876354]
+
+  # Beta 2
+  - note: Threaded view was slow to load
+    tag: fixed
+    bugs: [1881100]
+  - note: Multi-language spellcheck sometimes skipped languages 
+    tag: fixed
+    bugs: [1790746]
