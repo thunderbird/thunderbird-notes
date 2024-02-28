@@ -1,7 +1,7 @@
 release:
   release_date: '2024-02-21'
   text: |
-    **These notes apply to Thunderbird version 124 beta 2 released February 26, 2024.**
+    **These notes apply to Thunderbird version 124 beta 3 released February 28, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/124.0beta/system-requirements/)
 
@@ -13,7 +13,8 @@ release:
 
   groups:
     - ' '
-    - 'Fixed in beta 2'    
+    - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # Beta 1
@@ -93,3 +94,9 @@ notes:
     tag: fixed
     bugs: [1790746]
     group: 2
+
+  # Beta 3
+  - note: Visual improvements to "Reorder Attachments" popup
+    tag: fixed
+    bugs: [1881945]
+    group: 3
