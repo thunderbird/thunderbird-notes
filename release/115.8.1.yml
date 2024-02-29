@@ -40,7 +40,7 @@ notes:
   - note: Decrypting a copy of an S/MIME encrypted, opaque-signed message created an unreadable message
     tag: fixed
     bugs: [1878053]
-  - note: Thunderbird sometimes changed the subject of other selected messages when decrypting a large PGP-encrypted message
+  - note: Thunderbird sometimes changed the subject of messages selected while simultaneously decrypting a large PGP-encrypted message
     tag: fixed
     bugs: [1860977]
   - note: '"Quote message" menu item in compose window did not work when replying to message
