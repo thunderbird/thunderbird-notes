@@ -50,3 +50,5 @@ notes:
   - note: Toolbar customization window contents overflowed the window width
     tag: fixed
     bugs: [1852744]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.8.1)'
+    tag: fixed
