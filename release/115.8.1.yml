@@ -1,0 +1,52 @@
+release:
+  release_date: '2024-03-01'
+  text: |
+    **For help and a quick start on Thunderbird 115, see
+    [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
+
+    **For more on all the new features in Thunderbird 115, see
+    [What’s New in Thunderbird 115](https://www.thunderbird.net/thunderbird/115.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: 'Settings: Updating tags failed if Automatic Updates were disabled'
+    tag: fixed
+    bugs: [1874557]
+  - note: Size of collapsed folders in folder pane did not include size of subfolders
+    tag: fixed
+    bugs: [1870641]
+  - note: Reversing sort order of Grouped By views in quick search did not reverse
+    tag: fixed
+    bugs: [1868816]
+  - note: Removing threaded messages in a unified folder sometimes resulted in an incorrect
+      number of levels in the thread
+    tag: fixed
+    bugs: [1871992]
+  - note: Thread collapsing did not behave correctly when copying thread messages in multi-folder
+      view
+    tag: fixed
+    bugs: [1872253]
+  - note: S/MIME encryption failed to encrypt if unsupported certificate type was encountered
+    tag: fixed
+    bugs: [1876931]
+  - note: Decrypting a copy of an S/MIME encrypted, opaque-signed message created an unreadable message
+    tag: fixed
+    bugs: [1878053]
+  - note: Thunderbird sometimes changed the subject of other selected messages when decrypting a large PGP-encrypted message
+    tag: fixed
+    bugs: [1860977]
+  - note: '"Quote message" menu item in compose window did not work when replying to message
+      opened in separate tab'
+    tag: fixed
+    bugs: [1868626]
+  - note: Toolbar customization window contents overflowed the window width
+    tag: fixed
+    bugs: [1852744]
