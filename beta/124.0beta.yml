@@ -1,7 +1,7 @@
 release:
   release_date: '2024-02-21'
   text: |
-    **These notes apply to Thunderbird version 124 beta 4 released March 4, 2024.**
+    **These notes apply to Thunderbird version 124 beta 5 released March 11, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/124.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # Beta 1
@@ -107,3 +108,19 @@ notes:
     tag: fixed
     bugs: [1741362]
     group: 4
+
+  # Beta 5
+  - note: IMAP folders containing other folders could not be deleted due to Thunderbird using "unsubscribe" IMAP command
+    tag: fixed
+    bugs: [1856536]
+    group: 5
+  - note: Draft messages were not replaced when saved to an IMAP server without UIDPLUS support
+    tag: fixed
+    bugs: [1882013]
+    group: 5
+  - note: Flatpak builds only had the en-US spell check dictionary available
+    tag: fixed
+    bugs: [1882352]
+    group: 5
+
+
