@@ -1,0 +1,48 @@
+release:
+  release_date: '2024-03-19'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Opened ignored messages in a message thread/subthread were not marked as read
+      in IMAP folders
+    tag: fixed
+    bugs: [448876]
+  - note: Multi-language spellcheck sometimes skipped languages
+    tag: fixed
+    bugs: [1790746]
+  - note: Thread tree did not update when live language switching
+    tag: fixed
+    bugs: [1842585]
+  - note: Visual improvements to "Reorder Attachments" popup
+    tag: fixed
+    bugs: [1881945]
+  - note: Sort order was sometimes incorrect in Grouped By views
+    tag: fixed
+    bugs: [1866951]
+  - note: Selecting "Match all messages" in Filter Rules dialog did not disable all search
+      criteria
+    tag: fixed
+    bugs: [1879735]
+  - note: S/MIME-only signed messages sometimes incorrectly displayed signature as invalid
+    tag: fixed
+    bugs: [1741362]
+  - note: OpenPGP keys uploaded to an HKP keyserver were sent with the wrong `Content-Type` header
+    tag: fixed
+    bugs: [1879822]
+  - note: Keyboard navigation within search toolbar did not work
+    tag: fixed
+    bugs: [1878543]
+  - note: Flatpak builds only had the en-US spell check dictionary available
+    tag: fixed
+    bugs: [1882352]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.9)'
+    tag: fixed
