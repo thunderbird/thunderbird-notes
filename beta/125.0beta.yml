@@ -1,0 +1,122 @@
+release:
+  release_date: '2024-03-19'
+  text: |
+    **These notes apply to Thunderbird version 125 beta 1 released March 19, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/125.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ' '
+    
+notes:
+  # New
+  - note: OpenPGP Key Manager can now create revocation statements for any secret key
+    tag: new
+    bugs: [1852565]
+  - note: '"Archived-At" message header field is now displayed as a link, and Message Permalink option is now available in List-Id menu'
+    tag: new
+    bugs: [512385]
+  - note: Thunderbird now decodes messages nested in attachments even if "decodeSubMessages" preference is set to "true"
+    tag: new
+    bugs: [1881560]
+  - note: Threaded message views now include "New Message" count
+    tag: new
+    bugs: [1883506]
+  - note: Improved Cards View UI
+    tag: fixed
+    bugs: [1877324, 1882369]
+
+  # Fixed
+  - note: IMAP, POP3, and SMTP Exchange autoconfiguration did not support autoconfiguration of encryption
+    tag: fixed
+    bugs: [1876992]
+  - note: Creating a tag in General Settings with a number as the tag name did not work
+    tag: fixed
+    bugs: [1881124]
+  - note: Password Manager did not remember the last selected item when changing sorting or showing/hiding passwords in unfiltered view
+    tag: fixed
+    bugs: [1301248]
+  - note: Entries removed from Password Manager left behind blank entries
+    tag: fixed
+    bugs: [1884661]
+  - note: Quick Filter button selections did not persist after restart
+    tag: fixed
+    bugs: [1847265]
+  - note: Messages moved to junk folder from message context menu were marked as read, regardless of whether "Mark messages determined to be junk as read" was checked/unchecked in settings
+    tag: fixed
+    bugs: [1860444]
+  - note: IMAP accounts with missing or incorrect OAuth credentials sometimes caused duplicate dialogs to appear, requesting a new OAuth token
+    tag: fixed
+    bugs: [1880211]
+  - note: Retrieving multiline POP3 message from server failed if message chunk ended in newline instead of carriage return and newline
+    tag: fixed
+    bugs: [1883760]
+  - note: Connection sometimes timed out when a large number of POP3 messages were left on server
+    tag: fixed
+    bugs: [1875633]
+  - note: Collapsing and expanding message list headers sometimes caused header to scroll out of view
+    tag: fixed
+    bugs: [1862197]
+  - note: Holding Shift key while selecting "Delete" from message context menu did not permanently delete message
+    tag: fixed
+    bugs: [956446]
+  - note: Holding Shift and middle-clicking a message with "loadInBackground" preference set to "false" did not open new tab in background as expected
+    tag: fixed
+    bugs: [1876883]
+  - note: Single message with no children inside a parent thread sometimes displayed incorrectly as a thread with a duplicate of itself as its child
+    tag: fixed
+    bugs: [1427546]
+  - note: '"Watch Thread" command was incorrectly available on multi-folder and search views'
+    tag: fixed
+    bugs: [1368011]
+  - note: '"Ignore Thread" did not work on multi-folder and search views'
+    tag: fixed
+    bugs: [1861200]
+  - note: Tooltip did not appear when hovering over subject line of messages in Table View
+    tag: fixed
+    bugs: [1861204]
+  - note: Message compose window was not fully disabled while message was sending
+    tag: fixed
+    bugs: [1758469]
+  - note: Delivery Status Notification did not work when sending message using "Send Later"
+    tag: fixed
+    bugs: [815638]
+  - note: Thunderbird did not remove temporary directory created from adding attachment to message via drag-and-drop
+    tag: fixed
+    bugs: [1873950]
+  - note: Creating a new key from the OpenPGP Key Manager erroneously displayed a "Go Back" button on the first page of the wizard
+    tag: fixed
+    bugs: [1788962]
+  - note: Thunderbird sometimes changed the subject of messages selected while simultaneously decrypting a large PGP-encrypted message
+    tag: fixed
+    bugs: [1860977]
+  - note: New posts retrieved from RSS feeds incorrectly played mail alert sound
+    tag: fixed
+    bugs: [1871493]
+  - note: Non-empty address book search bar interfered with displaying/editing contacts
+    tag: fixed
+    bugs: [1833031]
+  - note: Deleting attendees from "Invite Attendees" view removed attendees from view, but not from invite
+    tag: fixed
+    bugs: [1874450]
+  - note: '"Close" button in Cookie Manager is now more discoverable on macOS'
+    tag: fixed
+    bugs: [1042344]
+  - note: Date column of "Grouped By" message views now refreshes at midnight, preventing incorrect dates from being displayed
+    tag: fixed
+    bugs: [1520435]
+  - note: '"Download and Sync Messages" dialog was too short when using Russian locale, obscuring OK button'
+    tag: fixed
+    bugs: [1881795]
+  - note: Changing message view density did not behave as expected
+    tag: fixed
+    bugs: [1881170]
+  - note: Various visual improvements
+    tag: fixed
+    bugs: [1877289, 1881698]
