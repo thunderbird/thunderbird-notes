@@ -13,6 +13,8 @@ release:
 
   groups:
     - ' '
+    - ' '
+    - 'Fixed in beta 3'
     
 notes:
   # New
@@ -29,7 +31,7 @@ notes:
     tag: new
     bugs: [1883506]
   - note: Improved Cards View UI
-    tag: fixed
+    tag: new
     bugs: [1877324, 1882369]
 
   # Fixed
@@ -120,3 +122,13 @@ notes:
   - note: Various visual improvements
     tag: fixed
     bugs: [1877289, 1881698]
+  
+  # Beta 3
+  - note: SMTP messages using GSSAPI authentication failed to send
+    tag: fixed
+    bugs: [1883529]
+    group: 3
+  - note: Hardware key multi-factor authentication did not in Thunderbird Flatpak
+    tag: fixed
+    bugs: [1882985]
+    group: 3
