@@ -1,7 +1,7 @@
 release:
   release_date: '2024-03-19'
   text: |
-    **These notes apply to Thunderbird version 125 beta 3 released April 1, 2024.**
+    **These notes apply to Thunderbird version 125 beta 4 released April 3, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/125.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - ' '
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
     
 notes:
   # New
@@ -132,3 +133,13 @@ notes:
     tag: fixed
     bugs: [1882985]
     group: 3
+    
+  # Beta 3
+  - note: GPG smartcards did not work in Thunderbird for macOS
+    tag: fixed
+    bugs: [1887743]
+    group: 4
+  - note: Status of IMAP message download progress was incorrect in some locales
+    tag: fixed
+    bugs: [1880043]
+    group: 4
