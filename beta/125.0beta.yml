@@ -1,7 +1,7 @@
 release:
   release_date: '2024-03-19'
   text: |
-    **These notes apply to Thunderbird version 125 beta 4 released April 3, 2024.**
+    **These notes apply to Thunderbird version 125 beta 5 released April 8, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/125.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - ' '
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
     
 notes:
   # New
@@ -134,7 +135,7 @@ notes:
     bugs: [1882985]
     group: 3
     
-  # Beta 3
+  # Beta 4
   - note: GPG smartcards did not work in Thunderbird for macOS
     tag: fixed
     bugs: [1887743]
@@ -143,3 +144,13 @@ notes:
     tag: fixed
     bugs: [1880043]
     group: 4
+    
+  # Beta 5
+  - note: Splitter arrow between task list and task description did not behave as expected
+    tag: fixed
+    bugs: [1888879, 1889562]
+    group: 5
+  - note: Dropmarker in Today Pane was not centered
+    tag: fixed
+    bugs: [1846095]
+    group: 5
