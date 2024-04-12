@@ -1,0 +1,61 @@
+release:
+  release_date: '2024-04-16'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Creating a tag in General Settings with a number as the tag name did not work
+    tag: fixed
+    bugs: [1881124]
+  - note: Quick Filter button selections did not persist after restart
+    tag: fixed
+    bugs: [1847265]
+  - note: Collapsing and expanding message list headers sometimes caused header to scroll
+      out of view
+    tag: fixed
+    bugs: [1862197]
+  - note: Single message with no children inside a parent thread sometimes displayed incorrectly
+      as a thread with a duplicate of itself as its child
+    tag: fixed
+    bugs: [1427546]
+  - note: '"Get selected messages" menu items did not work'
+    tag: fixed
+    bugs: [1867091]
+  - note: '"Download and Sync Messages" dialog was too short when using Russian locale,
+      obscuring OK button'
+    tag: fixed
+    bugs: [1881795]
+  - note: After changing password on an IMAP account, the account could become locked due
+      to too many failed login attempts
+    tag: fixed
+    bugs: [1862111]
+  - note: Retrieving multiline POP3 message from server failed if message chunk ended in
+      newline instead of carriage return and newline
+    tag: fixed
+    bugs: [1883760]
+  - note: IMAP, POP3, and SMTP Exchange autoconfiguration did not support encryption configuration
+    tag: fixed
+    bugs: [1876992]
+  - note: Non-empty address book search bar interfered with displaying/editing contacts
+    tag: fixed
+    bugs: [1833031]
+  - note: Deleting attendees from "Invite Attendees" view removed attendees from view,
+      but not from invite
+    tag: fixed
+    bugs: [1874450]
+  - note: Splitter arrow between task list and task description did not behave as expected
+    tag: fixed
+    bugs: [1889562]
+  - note: Performance improvements and code cleanup
+    tag: fixed
+    bugs: [1878257, 1883550]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.10)'
+    tag: fixed
