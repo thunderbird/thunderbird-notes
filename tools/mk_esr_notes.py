@@ -75,8 +75,8 @@ Previous esr: {previous_esr}
         )
     )
 
-    bug_list, backout_list = get_buglist(esr_major, previous_esr_rev)
-    bugs_fixed = set.union(bug_list, backout_list)
+    bug_list, prev_backout_list, backout_list = get_buglist(esr_major, previous_esr_rev)
+    bugs_fixed = set.union(bug_list, prev_backout_list)
 
     note_files = os.listdir(str(beta_dir))
     for _file in note_files:
@@ -111,11 +111,10 @@ Previous esr: {previous_esr}
         # Only add this note if it is for bugs that are new/changed/fixed in this release
         if any([b for b in note.bugs if b in bugs_fixed]):
             # Remove references to other bugs that might be on the note
-            for b2 in note.bugs:
-                if b2 not in bugs_fixed:
-                    note.bugs.remove(b2)
-                else:
-                    noted_bugs.add(b2)
+            kept_bugs = set(note.bugs) & set(bugs_fixed)
+            note.bugs = CS(kept_bugs)
+            note.bugs.fa.set_flow_style()
+            noted_bugs |= kept_bugs
             rel_notes.append(note.output)
 
     sec_v = sec_version(this_esr)
@@ -168,9 +167,9 @@ Previous esr: {previous_esr}
             print("{} - {}".format(note["id"], note["summary"]))
 
 
-def get_bugs_in_changeset(changeset_data):
-    unique_bugs, unique_backout_bugs = set(), set()
-    for data in changeset_data.values():
+def get_bugs_in_pushrange(push_data):
+    unique_bugs, backout_bugs, backedout_bugs = set(), set(), set()
+    for data in push_data.values():
         for changeset in data["changesets"]:
             if is_excluded_change(changeset):
                 continue
@@ -179,14 +178,19 @@ def get_bugs_in_changeset(changeset_data):
             bug_re = BUG_NUMBER_REGEX.search(changeset_desc)
 
             if bug_re:
-                bug_number = bug_re.group().split(" ")[1]
+                bug_number = int(bug_re.group().split(" ")[1])
 
                 if is_backout_bug(changeset_desc):
-                    unique_backout_bugs.add(int(bug_number))
+                    try:
+                        unique_bugs.remove(bug_number)
+                        backedout_bugs.add(bug_number)
+                    except KeyError:
+                        if bug_number not in backedout_bugs:
+                            backout_bugs.add(bug_number)
                 else:
-                    unique_bugs.add(int(bug_number))
+                    unique_bugs.add(bug_number)
 
-    return unique_bugs, unique_backout_bugs
+    return unique_bugs, backout_bugs, backedout_bugs
 
 
 def is_excluded_change(changeset):
@@ -210,17 +214,20 @@ def get_buglist(esr_major, from_rev):
     print(changeset_url)
     with urlopen(changeset_url) as response:
         data = json.load(response)
-    unique_bugs, unique_backout_bugs = get_bugs_in_changeset(data)
+    unique_bugs, outside_backout_bugs, backedout_bugs = get_bugs_in_pushrange(data)
 
     if unique_bugs:
         print("Fixed bugs:")
         print(" ".join([str(bug) for bug in sorted(unique_bugs)]))
         print("")
-    if unique_backout_bugs:
-        print("Backout bugs:")
-        print(" ".join([str(bug) for bug in sorted(unique_backout_bugs)]))
+    if outside_backout_bugs:
+        print("Backout Bugs from previous releases:")
+        print(" ".join([str(bug) for bug in sorted(outside_backout_bugs)]))
+    if backedout_bugs:
+        print("Backout bugs from this push:")
+        print(" ".join([str(bug) for bug in sorted(backedout_bugs)]))
 
-    return unique_bugs, unique_backout_bugs
+    return unique_bugs, outside_backout_bugs, backedout_bugs
 
 
 def fetch(url, data_type="text"):
