@@ -1,0 +1,101 @@
+release:
+  release_date: '2024-04-17'
+  text: |
+    **These notes apply to Thunderbird version 126 beta 1 released April 17, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/126.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # beta 1
+  # New
+  - note: '"Cards View" now shows a "new" icon when there is a new message in a thread'
+    tag: new
+    bugs: [1870376]
+  - note: A nested OpenPGP messages' signature status is now viewable
+    tag: new
+    bugs: [1861703]
+  - note: iCloud contacts and calendar discovery now supported when using a dedicated app password
+    tag: new
+    bugs: [1854779]
+
+  # Changed
+  - note: '"Cards View" Grouped By Sort style improvements'
+    tag: changed
+    bugs: [1863403]
+  - note: '"Permissive" importing of problematic OpenPGP keys now disabled by default; Set `mail.openpgp.allow_permissive_import` to allow'
+    tag: changed
+    bugs: [1829881]
+
+  # Fixed
+  - note: '"Find in this message" did not work in multi-message view'
+    tag: fixed
+    bugs: [1839005]
+  - note: Print dialog opened in Compose window did not prevent window interaction
+    tag: fixed
+    bugs: [1758470]
+  - note: Some OpenPGP messages were incorrectly reported as being partially signed or encrypted
+    tag: fixed
+    bugs: [1886396]
+  - note: Deleting a mail folder failed silently when disk space was low
+    tag: fixed
+    bugs: [1886360]
+  - note: Compacting an empty POP mail folder did not shrink the on-disk file size
+    tag: fixed
+    bugs: [1890135]
+  - note: Undoing deletion of an email from standalone window was not possible
+    tag: fixed
+    bugs: [1855643]
+  - note: 'Non-compliant "References" headers were not handled gracefully when `mailnews.headers.showReferences` was set'
+    tag: fixed
+    bugs: [1888116]
+  - note: '"Open Browser With Message-ID" failed for Google Groups due to URL change'
+    tag: fixed
+    bugs: [1887334]
+  - note: '"List Archive" button failed to open archive URL for Google Groups'
+    tag: fixed
+    bugs: [1889322]
+  - note: Some OpenPGP dialogs' buttons were inaccessible off screen
+    tag: fixed
+    bugs: [1733086]
+  - note: Account setup triggered a second OAuth when looking for calendars
+    tag: fixed
+    bugs: [1880646]
+  - note: 'NNTP "Cancel Messages" menu item had moved to a submenu'
+    tag: fixed
+    bugs: [1889971]
+  - note: '"news:// URIs no longer opened as links or from the commandline'
+    tag: fixed
+    bugs: [1886132]
+  - note: Posting to news groups was not possible when the profile had message encryption configured
+    tag: fixed
+    bugs: [1890632]
+  - note: Google Calendar account detection failed for Google hosted domains when the DNS entry had Upper-cased characters
+    tag: fixed
+    bugs: [1864203]
+  - note: '"Item changed on server" Calendar dialog did not have a scrollbar for lengthy content, causing action buttons to be off screen'
+    tag: fixed
+    bugs: [1889383]
+  - note: macOS performance improvements
+    tag: fixed
+    bugs: [1877142]
+  - note: Pressing <kbd style="border-radius:4px;padding:1px 2px 0;border:1px solid black;">Esc</kbd> did not close the Cookie Manager dialog
+    tag: fixed
+    bugs: [1891311]
+  - note: High Contrast theme improvements
+    tag: fixed
+    bugs: [1890682]
+  - note: Various Cards View improvements
+    tag: fixed
+    bugs: [1890388, 1890674, 1882592, 1890387]
+  - note: Various style and UI fixes
+    tag: fixed
+    bugs: [1849315, 1845204, 1888812, 1888750, 1889519, 1889021, 1890129, 1890345, 1865615, 1890044]
