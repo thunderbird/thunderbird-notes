@@ -31,7 +31,7 @@ parser = argparse.ArgumentParser(
     """, formatter_class=argparse.RawTextHelpFormatter)
 
 parser.add_argument("notesfile", help="version number of the release notes to preview")
-parser.add_argument("download_template", help="whether to download the template from the thunderbird-website repo", action='store_true')
+parser.add_argument("-r", "--refresh_template", help="whether to download the template from the thunderbird-website repo", action='store_true')
 
 if len(sys.argv) == 1:
     parser.print_help()
@@ -184,7 +184,7 @@ class Handler(FileSystemEventHandler):
         self.throttle_updates(datetime.datetime.now())
 
 
-if args.download_template:
+if args.refresh_template or not pathlib.Path('_template/release-notes.html').exists():
     download_template()
     stub_templates()
 
