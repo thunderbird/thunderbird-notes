@@ -1,0 +1,20 @@
+release:
+  release_date: '2024-04-18'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  - note: Thunderbird processes did not exit cleanly; user intervention was required via task manager
+    tag: fixed
+    bugs: [1891889]
+
+  - note: After changing password on an IMAP account, the account could become locked due
+      to too many failed login attempts
+    tag: unresolved
+    bugs: [1862111]
