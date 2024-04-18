@@ -1,6 +1,10 @@
 release:
   release_date: '2024-04-16'
   text: |
+    <div class="text-red">Thunderbird 115.10.0 is flawed with <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1891889">
+    Bug 1891889</a>.
+    Thunderbird 115.10.1 will address this bug and will be available once testing has completed.</div>
+
     **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
 
     - Windows: Windows 7 or later
@@ -59,3 +63,7 @@ notes:
 
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.10)'
     tag: fixed
+
+  - note: Thunderbird processes did not exit cleanly; user intervention was required via task manager
+    tag: unresolved
+    bugs: [1891889]
