@@ -1,7 +1,7 @@
 release:
   release_date: '2024-04-24'
   text: |
-    **These notes apply to Thunderbird version 126 beta 1 released April 24, 2024.**
+    **These notes apply to Thunderbird version 126 beta 2 released April 30, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/126.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - Fixed on Beta 2
 
 notes:
   # beta 1
@@ -99,3 +100,18 @@ notes:
   - note: Various style and UI fixes
     tag: fixed
     bugs: [1849315, 1845204, 1888812, 1888750, 1889519, 1889021, 1890129, 1890345, 1865615, 1890044]
+
+  # beta 2
+  - note: Backing up OpenPGP key to a file from Account Settings did not work
+    tag: fixed
+    bugs: [1891689]
+    group: 2
+  - note: Compose window toolbar items were unreadable on macOS in dark mode
+    tag: fixed
+    bugs: [1893249]
+    group: 2
+  - note: Calendar Event Attendees dialog had incorrectly sized rows
+    tag: fixed
+    bugs: [1852304]
+    group: 2
+
