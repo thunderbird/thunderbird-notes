@@ -1,7 +1,7 @@
 release:
   release_date: '2024-04-24'
   text: |
-    **These notes apply to Thunderbird version 126 beta 2 released April 30, 2024.**
+    **These notes apply to Thunderbird version 126 beta 3 released May 6, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/126.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - Fixed on Beta 2
+    - Fixed on Beta 3
 
 notes:
   # beta 1
@@ -115,3 +116,12 @@ notes:
     bugs: [1852304]
     group: 2
 
+  # Beta 3
+  - note: Focus did not transfer to a mail message opened in a new tab
+    tag: fixed
+    bugs: [1886653]
+    group: 3
+  - note: Thread state in Cards view was not updated after toggling Group By sort order.
+    tag: fixed
+    bugs: [1892074]
+    group: 3
