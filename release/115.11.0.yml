@@ -1,0 +1,22 @@
+release:
+  release_date: '2024-05-14'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Splitter arrow between task list and task description did not behave as expected
+    tag: fixed
+    bugs: [1888879]
+  - note: Calendar Event Attendees dialog had incorrectly sized rows
+    tag: fixed
+    bugs: [1852304]
+
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.11)'
+    tag: fixed
