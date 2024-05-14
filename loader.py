@@ -48,7 +48,11 @@ class ReleaseNotes(object):
                 if import_version:
                     n["release"]["system_requirements"] = notelist[import_version]["release"]["system_requirements"]
                 else:
-                    n["release"]["system_requirements"] = ""
+                    n["release"]["system_requirements"] = None
+
+            if n["release"]["system_requirements"] and isinstance(n["release"]["system_requirements"], str):
+                n["release"]["system_requirements"] = None
+
             # Push unresolved tags to separate "Known Issues" list.
             for note in n["notes"]:
                 if "bugs" in note:

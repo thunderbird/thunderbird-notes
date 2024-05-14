@@ -9,61 +9,62 @@ release:
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
 
-  system_requirements: |
-    ## Windows
+  system_requirements:
+    windows: |
+      ## Windows
+  
+      ### Operating Systems
+      - Windows 7
+      - Windows 8
+      - Windows 10
+      - Windows 11
+  
+      ### Windows Recommended Hardware
+      - Pentium 4 or newer processor that supports SSE2
+      - 1GB RAM / 2GB of RAM for the 64-bit version
+      - 250 MB hard drive space
+      - additional hard drive space for mail storage
 
-    ### Operating Systems
-    - Windows 7
-    - Windows 8
-    - Windows 10
-    - Windows 11
 
-    ### Windows Recommended Hardware
-    - Pentium 4 or newer processor that supports SSE2
-    - 1GB RAM / 2GB of RAM for the 64-bit version
-    - 250 MB hard drive space
-    - additional hard drive space for mail storage
+    mac: |
+      ## Mac
+  
+      ### Operating Systems
+  
+      - macOS 10.12
+      - macOS 10.13
+      - macOS 10.14
+      - macOS 10.15
+      - macOS 11
+      - macOS 12
+  
+      ###  Recommended Hardware
+  
+      - Mac computer with an Intel x86 or Apple Silicon processor
+      - 1GB RAM
+      - 500 MB hard drive space
+      - additional hard drive space for mail storage
 
-    ---
-
-    ## Mac
-
-    ### Operating Systems
-
-    - macOS 10.12
-    - macOS 10.13
-    - macOS 10.14
-    - macOS 10.15
-    - macOS 11
-    - macOS 12
-
-    ###  Recommended Hardware
-
-    - Mac computer with an Intel x86 or Apple Silicon processor
-    - 1GB RAM
-    - 500 MB hard drive space
-    - additional hard drive space for mail storage
-
-    ---
-
-    ## GNU/Linux
-    ### Software Requirements
-
-    *Please note that GNU/Linux distributors may provide packages for your distribution which have
-    different requirements.*
-
-    - Thunderbird will not run at all without the following libraries or packages:
-        - glibc 2.17 or higher
-        - GTK+ 3.14 or higher
-        - libstdc++ 4.8.1 or higher
-        - X.Org 1.0 or higher (1.7 or higher is recommended)
-
-    - For optimal functionality, we recommend the following libraries or packages:
-        - DBus 1.0 or higher
-        - GNOME 2.16 or higher
-        - libxtst 1.2.3 or higher
-        - NetworkManager 0.7 or higher
-        - PulseAudio
+    linux: |
+      ## GNU/Linux
+      
+      ### Software Requirements
+  
+      *Please note that GNU/Linux distributors may provide packages for your distribution which have
+      different requirements.*
+  
+      #### Thunderbird will not run at all without the following libraries or packages:
+          - glibc 2.17 or higher
+          - GTK+ 3.14 or higher
+          - libstdc++ 4.8.1 or higher
+          - X.Org 1.0 or higher (1.7 or higher is recommended)
+  
+      #### For optimal functionality, we recommend the following libraries or packages:
+          - DBus 1.0 or higher
+          - GNOME 2.16 or higher
+          - libxtst 1.2.3 or higher
+          - NetworkManager 0.7 or higher
+          - PulseAudio
 
   groups:
     -
