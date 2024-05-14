@@ -1,0 +1,106 @@
+release:
+  release_date: '2024-05-15'
+  text: |
+    **These notes apply to Thunderbird version 127 beta 1 released May 15, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/127.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Enabled ECDH encryption and decryption for S/MIME messages
+    tag: new
+    bugs: [1892223]
+  - note: Added new preference (mail.addressDisplayFormat) to always display full name and email address of all recipients in message list
+    tag: new
+    bugs: [243258]
+  - note: Improved layout of LDAP address book properties dialog
+    tag: new
+    bugs: [1895826]
+  - note: Added some CSS transitions to Cards View
+    tag: new
+    bugs: [1890691]
+  - note: Added system accent color support to some elements
+    tag: new
+    bugs: [1891289, 1890993]
+
+  # Changed
+  - note: Removed account provisioner
+    tag: changed
+    bugs: [1893331]
+
+  # Fixed
+  - note: Thunderbird notifications on Windows did not respond for 10 seconds after being clicked
+    tag: fixed
+    bugs: [1893349]
+  - note: Modifying Thunderbird UI font size outside of Thunderbird caused App Menu > Font Size option to be disabled
+    tag: fixed
+    bugs: [1872490]
+  - note: Sort type in Quick Filtered and Grouped By unified folders was not preserved after search was modified or cleared
+    tag: fixed
+    bugs: [1893799, 1894896]
+  - note: Focus behavior for opening messages in a new tab changed depending on state of "mail.tabs.loadInBackground" preference
+    tag: fixed
+    bugs: [1894831]
+  - note: S/MIME messages did not display MIME message if MIME header was missing
+    tag: fixed
+    bugs: [1893039]
+  - note: Certificate errors silently failed when fetching new messages
+    tag: fixed
+    bugs: [1893899]
+  - note: Unified Folders did not preserve sort setting when switching to unthreaded view
+    tag: fixed
+    bugs: [1893793]
+  - note: Thunderbird did not always display message deletion confirmation when using Shift+Delete keyboard shortcut
+    tag: fixed
+    bugs: [958088]
+  - note: Deleting collapsed group in Grouped By Sort did not update the message list to reflect the change
+    tag: fixed
+    bugs: [1878047]
+  - note: Text cursor did not move to beginning of line after clicking left margin of "To:" field
+    tag: fixed
+    bugs: [281299]
+  - note: Accepting/declining appointments did not always send confirmation
+    tag: fixed
+    bugs: [1878944]
+  - note: Thunderbird did not have a preference to enable archiving inbox as a folder
+    tag: fixed
+    bugs: [697706]
+  - note: Tooltip did not display full newsgroup name when hovering over newsgroups
+    tag: fixed
+    bugs: [1891365]
+  - note: Newsgroup messages were sometimes incorrectly interleaved when using offline cache
+    tag: fixed
+    bugs: [1857450]
+  - note: CardDAV addressbooks could not be used as an import target
+    tag: fixed
+    bugs: [1893876]
+  - note: IRC SASL authentication was enabled by default for all IRC servers
+    tag: fixed
+    bugs: [1618061]
+  - note: Convert To > Event did not save events on some CalDAV servers
+    tag: fixed
+    bugs: [1738611]
+  - note: Calendar day headings did not switch between short and long form when resizing calendar view
+    tag: fixed
+    bugs: [1891739]
+  - note: Task categories menu did not display category colors
+    tag: fixed
+    bugs: [1892673]
+  - note: Clear button was missing from Unified toolbar customization search bar
+    tag: fixed
+    bugs: [1891498]
+  - note: Visual and UX Quick Filter improvements
+    tag: fixed
+    bugs: [1892436, 1866717, 1892560]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1895118, 1895119, 1894589, 1893148, 1894360, 1893114, 1891372, 1892437, 1894903, 1895172, 1892849, 1869167]
