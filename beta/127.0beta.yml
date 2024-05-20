@@ -1,7 +1,7 @@
 release:
   release_date: '2024-05-15'
   text: |
-    **These notes apply to Thunderbird version 127 beta 1 released May 15, 2024.**
+    **These notes apply to Thunderbird version 127 beta 2 released May 20, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/127.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -104,3 +105,8 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1895118, 1895119, 1894589, 1893148, 1894360, 1893114, 1891372, 1892437, 1894903, 1895172, 1892849, 1869167]
+    
+  # Beta 2
+  - note: Autocrypt header was missing from some encrypted messages due to case-sensitive email address matching
+    tag: fixed
+    bugs: [1896876]
