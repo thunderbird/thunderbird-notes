@@ -110,3 +110,4 @@ notes:
   - note: Autocrypt header was missing from some encrypted messages due to case-sensitive email address matching
     tag: fixed
     bugs: [1896876]
+    group: 2
