@@ -1,7 +1,7 @@
 release:
   release_date: '2024-05-15'
   text: |
-    **These notes apply to Thunderbird version 127 beta 2 released May 20, 2024.**
+    **These notes apply to Thunderbird version 127 beta 3 released May 22, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/127.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -111,3 +112,9 @@ notes:
     tag: fixed
     bugs: [1896876]
     group: 2
+    
+  # Beta 3
+  - note: After starting Thunderbird, the message list position was sometimes set to an incorrect position
+    tag: fixed
+    bugs: [1896009]
+    group: 3
