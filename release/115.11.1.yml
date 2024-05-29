@@ -15,4 +15,7 @@ release:
 
   import_system_requirements: '115.0'
 
-notes: []
+notes:
+  - note: Added a short anonymous survey that a small number of users will be randomly asked to complete
+    tag: new
+    bugs: [1898086]
