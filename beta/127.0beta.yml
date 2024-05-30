@@ -1,7 +1,7 @@
 release:
   release_date: '2024-05-15'
   text: |
-    **These notes apply to Thunderbird version 127 beta 3 released May 22, 2024.**
+    **These notes apply to Thunderbird version 127 beta 4 released May 29, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/127.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -118,3 +119,25 @@ notes:
     tag: fixed
     bugs: [1896009]
     group: 3
+
+  # Beta 4
+  - note: Thunderbird sometimes froze when checking for new messages on multiple POP3 accounts simultaneously
+    tag: fixed
+    bugs: [1847137]
+    group: 4
+  - note: POP3 tried using USERPASS first (plaintext credentials), before attempting AUTH PLAIN and AUTH LOGIN (obfuscated credentials)
+    tag: fixed
+    bugs: [1897045]
+    group: 4
+  - note: POP3 server connection sometimes timed out when processing LIST and UIDL responses
+    tag: fixed
+    bugs: [1893307]
+    group: 4
+  - note: Global search sometimes loaded slowly when opening "Show results as lists" and other synthetic views
+    tag: fixed
+    bugs: [1896913]
+    group: 4
+  - note: Focus changes in 3-pane occassionally caused keyboard shortcuts to stop working
+    tag: fixed
+    bugs: [1853442]
+    group: 4
