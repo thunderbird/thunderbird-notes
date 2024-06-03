@@ -1,7 +1,7 @@
 release:
   release_date: '2024-05-15'
   text: |
-    **These notes apply to Thunderbird version 127 beta 4 released May 29, 2024.**
+    **These notes apply to Thunderbird version 127 beta 5 released June 3, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/127.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'New and Fixed in beta 5'
 
 notes:
   # New
@@ -141,3 +142,18 @@ notes:
     tag: fixed
     bugs: [1853442]
     group: 4
+    
+  # Beta 5
+  - note: Thunderbird now uses native Windows notifications
+    tag: new
+    bugs: [1192615]
+    group: 5
+  
+  - note: Clicking on native Windows notifications did not bring Thunderbird to the foreground
+    tag: fixed
+    bugs: [1863798]
+    group: 5
+  - note: Secondary sort was discarded when sorting threaded unified folders
+    tag: fixed
+    bugs: [1897781]
+    group: 5
