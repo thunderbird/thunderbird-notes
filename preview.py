@@ -20,8 +20,8 @@ from loader import ReleaseNotes
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-TEMPLATE_DOWNLOAD_URL = 'https://raw.githubusercontent.com/thunderbird/thunderbird-website/new/sites/www.thunderbird.net'
-THUNDERBIRD_URL = 'https://new.thunderbird.net'
+TEMPLATE_DOWNLOAD_URL = 'https://raw.githubusercontent.com/thunderbird/thunderbird-website/master/sites/www.thunderbird.net'
+THUNDERBIRD_URL = 'https://www.thunderbird.net'
 TEMPLATE_OUT_DIR = '_template'
 
 parser = argparse.ArgumentParser(
@@ -58,6 +58,7 @@ def download_template():
     print("Downloading latest templates from thunderbird-website")
 
     for file in files:
+        print(f'{base_url}/{file}')
         response = requests.get(f'{base_url}/{file}')
         response.raise_for_status()
 
@@ -125,6 +126,10 @@ def thunderbird_url(*args, **kwargs):
     return ''
 
 
+def is_system_requirements_dict(*args, **kwargs):
+    return False
+
+
 def f(s, *args, **kwargs):
     return s.format(*args, **kwargs)
 
@@ -152,6 +157,8 @@ class Handler(FileSystemEventHandler):
         self.jinja_env.globals.update(download_thunderbird=download_thunderbird)
         self.jinja_env.globals.update(thunderbird_url=thunderbird_url)
         self.jinja_env.globals.update(donate_url=donate_url)
+        self.jinja_env.globals.update(is_system_requirements_dict=is_system_requirements_dict)
+        self.jinja_env.globals.update(NOW=datetime.datetime.now())
         self.jinja_env.filters['markdown'] = safe_markdown
         self.jinja_env.filters['f'] = f
         self.jinja_env.filters['l10n_format_date'] = l10n_format_date
