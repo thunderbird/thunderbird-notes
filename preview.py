@@ -32,6 +32,7 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument("notesfile", help="version number of the release notes to preview")
 parser.add_argument("-r", "--refresh_template", help="whether to download the template from the thunderbird-website repo", action='store_true')
+parser.add_argument("-s", "--simple_html", help="use simplified html output", action="store_true")
 
 if len(sys.argv) == 1:
     parser.print_help()
@@ -53,7 +54,8 @@ def download_template():
              'includes/base/nav.html',
              'includes/base/page.html',
              'includes/components/page-separator-cover.html',
-             'includes/_enonly/release-notes.html')
+             'includes/_enonly/release-notes.html',
+             'includes/release-notes-feed.html')
 
     print("Downloading latest templates from thunderbird-website")
 
@@ -62,14 +64,15 @@ def download_template():
         response = requests.get(f'{base_url}/{file}')
         response.raise_for_status()
 
-        out_file = file
-        if 'release-notes' in file:
-            out_file = 'release-notes.html'
+        out_file = pathlib.Path(file)
+        if file.endswith('release-notes.html'):
+            out_file = out_file.name
+        out_path = pathlib.Path(TEMPLATE_OUT_DIR) / out_file
 
         # Ensure we have the folder
-        pathlib.Path(f'{TEMPLATE_OUT_DIR}/{out_file}').parent.mkdir(parents=True, exist_ok=True)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
 
-        with open(f'{TEMPLATE_OUT_DIR}/{out_file}', 'wb') as fh:
+        with open(out_path, 'wb') as fh:
             fh.write(response.content)
 
     print("Finished downloading latest templates")
@@ -143,7 +146,7 @@ class Translation(object):
 
 
 class Handler(FileSystemEventHandler):
-    def __init__(self, version):
+    def __init__(self, version, preview_template):
         translator = Translation()
 
         self.jinja_env = jinja2.Environment(
@@ -163,7 +166,9 @@ class Handler(FileSystemEventHandler):
         self.jinja_env.filters['f'] = f
         self.jinja_env.filters['l10n_format_date'] = l10n_format_date
         self.jinja_env.install_gettext_translations(translator)
-        self.template = self.jinja_env.get_template('release-notes.html')
+        self.jinja_env.trim_blocks = True
+        self.jinja_env.lstrip_blocks = True
+        self.template = self.jinja_env.get_template(preview_template)
         self.version = version
         self.updatetime = datetime.datetime.fromtimestamp(0)
         self.updatepreview()
@@ -191,11 +196,17 @@ class Handler(FileSystemEventHandler):
         self.throttle_updates(datetime.datetime.now())
 
 
+
+
 if args.refresh_template or not pathlib.Path('_template/release-notes.html').exists():
     download_template()
     stub_templates()
 
-handler = Handler(args.notesfile)
+preview_template = pathlib.Path('_template/release-notes.html')
+if args.simple_html or is_email:
+    preview_template = pathlib.Path("simple_html.html")
+
+handler = Handler(args.notesfile, preview_template.name)
 observer = Observer()
 for notedir in notes_dirs:
     observer.schedule(handler, path=notedir, recursive=False)
