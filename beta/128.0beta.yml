@@ -1,0 +1,137 @@
+release:
+  release_date: '2024-06-12'
+  text: |
+    **These notes apply to Thunderbird version 128 beta 1 released June 12, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/128.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  system_requirements: |
+    ## Windows
+    - Windows 10 or later
+
+    ### Windows Recommended Hardware
+    - 1GHz or faster Intel/AMD compatible processor
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 500 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## Mac
+    - macOS 10.15 or later
+
+    ###  Recommended Hardware
+
+    - Mac computer with an Intel x86 or Apple Silicon processor
+    - 1GB RAM
+    - 500 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - glibc 2.17 or higher
+        - GTK+ 3.14 or higher
+        - libglib 2.42 or higher
+        - libstdc++ 4.8.1 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+
+    - For optimal functionality, we recommend the following libraries or packages:
+        - DBus 1.0 or higher
+        - NetworkManager 0.7 or higher
+        - PulseAudio
+
+  groups:
+    - ' '
+
+notes:
+  # new
+  - note: Changing expiration of OpenPGP keys with a "complex" structure now supported
+    tag: new
+    bugs: [1666507]
+
+  # changed
+  - note: A warning is now displayed when importing OpenPGP keys that advertise unsupported features
+    tag: changed
+    bugs: [1874715]
+  - note: Search bars in Thunderbird now use a common custom element for more consistency
+    tag: changed
+    bugs: [1898130]
+  - note: Importer for "Becky! Internet Mail" removed
+    tag: changed
+    bugs: [1810915]
+  - note: '"Prefer Display Name" option removed from individual contacts'
+    tag: changed
+    bugs: [1894048]
+  - note: Address book updated to new card design
+    tag: changed
+    bugs: [1894280, 1898851, 1847427]
+  - note: Addressbook toolbar updated
+    tag: changed
+    bugs: [1899666]
+  - note: Calendar ICS file import now always uses new importer
+    tag: changed
+    bugs: [1896844]
+
+  # fixed
+  - note: Thunderbird sometimes displayed a blank screen on startup
+    tag: fixed
+    bugs: [1869685]
+  - note: Selecting multiple folders in folder tree was not possible
+    tag: fixed
+    bugs: [1817605]
+  - note: Accidental deletion of multiple messages occurred when <kbd>Delete</kbd> was pressed and held
+    tag: fixed
+    bugs: [1675212]
+  - note: Message count for synthetic folder views was sometimes incorrect
+    tag: fixed
+    bugs: [1896899]
+  - note: Count of message in a thread was not refreshed when a message was deleted externally
+    tag: fixed
+    bugs: [1893180]
+  - note: Headers for messages in POP accounts could be parsed incorrectly causing display issues
+    tag: fixed
+    bugs: [1888790]
+  - note: Resetting the global search bar content loses focus
+    tag: fixed
+    bugs: [1892896]
+  - note: Autodiscover HTTP requests did not include Basic Authentication headers
+    tag: fixed
+    bugs: [1895809]
+  - note: OpenPGP decoding of Base64 data did not allow for spaces and tabs before footer
+    tag: fixed
+    bugs: [1883855]
+  - note: Context menu cleanup
+    tag: fixed
+    bugs: [1890374, 1890375]
+  - note: Querying DNS TXT records that return multiple records failed
+    tag: fixed
+    bugs: [1571076]
+  - note: CardDAV contacts synced to server when no changes were made
+    tag: fixed
+    bugs: [1898136]
+  - note: Thunderbird incorrectly rejected some valid RSS feeds
+    tag: fixed
+    bugs: [1900280]
+  - note: Updating times of recurring events also modified the event exception times
+    tag: fixed
+    bugs: [1890975]
+  - note: Keyboard accessibility fixes
+    tag: fixed
+    bugs: [1898199]
+  - note: Dark mode colors were inconsistent throughout application
+    tag: fixed
+    bugs: [1819232]
+  - note: Various visual and theme updates
+    tag: fixed
+    bugs: [1896565, 1897638, 1894806, 1894761, 1846323, 1880835, 1899235, 1901145, 1901147]
