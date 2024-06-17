@@ -53,8 +53,10 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
+  # beta 1
   # new
   - note: Changing expiration of OpenPGP keys with a "complex" structure now supported
     tag: new
@@ -135,3 +137,42 @@ notes:
   - note: Various visual and theme updates
     tag: fixed
     bugs: [1896565, 1897638, 1894806, 1894761, 1846323, 1880835, 1899235, 1901145, 1901147]
+
+  # beta 2
+  # new
+  - note: Re-enable support for decrypting LibrePGP messages that use AEAD/OCB decryption
+    tag: new
+    bugs: [1896918]
+    group: 2
+  - note: Selection indicator added to folder pane and address book pane
+    tag: new
+    bugs: [1899842]
+    group: 2
+
+  # changed
+  - note: Implemented shared containers.css and removed button-icon class from address book
+    tag: changed
+    bugs: [1901402]
+    group: 2
+  - note: Update codename badge in about dialog from supernova to nebula
+    tag: changed
+    bugs: [1901607]
+    group: 2
+
+  # fixed
+  - note: Message subject no longer used as window title on macOS
+    tag: fixed
+    bugs: [1847622]
+    group: 2
+  - note: Extension menu entries were not showing icon
+    tag: fixed
+    bugs: [1902283]
+    group: 2
+  - note: Currently selected address book menu item was solid color
+    tag: fixed
+    bugs: [1901547]
+    group: 2
+  - note: Removal of contact organization field did not remove title and role fields
+    tag: fixed
+    bugs: [1901739]
+    group: 2
