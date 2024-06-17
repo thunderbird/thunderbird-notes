@@ -1,7 +1,7 @@
 release:
   release_date: '2024-06-12'
   text: |
-    **These notes apply to Thunderbird version 128 beta 1 released June 12, 2024.**
+    **These notes apply to Thunderbird version 128 beta 2 released June 18, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/128.0beta/system-requirements/)
 
@@ -53,8 +53,10 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
+  # beta 1
   # new
   - note: Changing expiration of OpenPGP keys with a "complex" structure now supported
     tag: new
@@ -135,3 +137,30 @@ notes:
   - note: Various visual and theme updates
     tag: fixed
     bugs: [1896565, 1897638, 1894806, 1894761, 1846323, 1880835, 1899235, 1901145, 1901147]
+
+  # beta 2
+  # new
+  - note: Selection indicator added to folder pane and address book pane
+    tag: new
+    bugs: [1899842]
+    group: 2
+
+  # changed
+  - note: Decryption of PGP messages using AEAD/OCB mechanism re-enabled
+    tag: changed
+    bugs: [1896918]
+    group: 2
+
+  # fixed
+  - note: Standalone window titles no longer included message subject on macOS
+    tag: fixed
+    bugs: [1847622]
+    group: 2
+  - note: Currently selected address book icon was solid color when creating a new contact
+    tag: fixed
+    bugs: [1901547]
+    group: 2
+  - note: Removing Organizational Properties from a contact did not clear all organization related fields
+    tag: fixed
+    bugs: [1901739]
+    group: 2
