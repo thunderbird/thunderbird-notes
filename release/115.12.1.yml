@@ -1,0 +1,32 @@
+release:
+  release_date: '2024-06-19'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: POP error messages from server were not displayed
+    tag: fixed
+    bugs: [1876431]
+  - note: Some OpenPGP messages were incorrectly reported as being partially signed or
+      encrypted
+    tag: fixed
+    bugs: [1886396]
+  - note: Autocrypt header was missing from some encrypted messages due to case-sensitive
+      email address matching
+    tag: fixed
+    bugs: [1896876]
+  - note: '"Convert to Table" dialog content was formatted incorrectly'
+    tag: fixed
+    bugs: [1896252]
+  - note: Opening Theme Settings reverted the current theme to the startup theme
+    tag: fixed
+    bugs: [1859271]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.12)'
+    tag: fixed
