@@ -1,7 +1,7 @@
 release:
   release_date: '2024-06-12'
   text: |
-    **These notes apply to Thunderbird version 128 beta 2 released June 18, 2024.**
+    **These notes apply to Thunderbird version 128 beta 3 released June 20, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/128.0beta/system-requirements/)
 
@@ -54,6 +54,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # beta 1
@@ -138,20 +139,20 @@ notes:
     tag: fixed
     bugs: [1896565, 1897638, 1894806, 1894761, 1846323, 1880835, 1899235, 1901145, 1901147]
 
-  # beta 2
-  # new
+  # Beta 2
+  # New
   - note: Selection indicator added to folder pane and address book pane
     tag: new
     bugs: [1899842]
     group: 2
 
-  # changed
+  # Changed
   - note: Decryption of PGP messages using AEAD/OCB mechanism re-enabled
     tag: changed
     bugs: [1896918]
     group: 2
 
-  # fixed
+  # Fixed
   - note: Standalone window titles no longer included message subject on macOS
     tag: fixed
     bugs: [1847622]
@@ -164,3 +165,46 @@ notes:
     tag: fixed
     bugs: [1901739]
     group: 2
+  
+  # Beta 3
+  # New
+  - note: Custom account colors are now shown in the "From" field when composing a message
+    tag: new
+    bugs: [355520]
+    group: 3
+  
+  # Changed
+  - note: Updated donation link from "give.thunderbird.net" to "www.thunderbird.net/donate/"
+    tag: changed
+    bugs: [1820676]
+    group: 3
+  
+  # Fixed
+  - note: Commandline "--migration" option did not work
+    tag: fixed
+    bugs: [1901912]
+    group: 3
+  - note: All Thunderbird notifications on Windows are now removed when Thunderbird is closed
+    tag: fixed
+    bugs: [1900047]
+    group: 3
+  - note: Tag folders with non-alphanumeric characters did not work correctly
+    tag: fixed
+    bugs: [1901926]
+    group: 3
+  - note: When using an external installation of GnuPG, Thunderbird occassionally sent/received corrupted messages
+    tag: fixed
+    bugs: [1898832]
+    group: 3
+  - note: S/MIME status (encryption and signature) was not shown when opening an email from a file
+    tag: fixed
+    bugs: [1902991]
+    group: 3
+  - note: Profile migrations from Thunderbird 35 or below to a newer version sometimes failed to determine the protocol of the outgoing server
+    tag: fixed
+    bugs: [1897924]
+    group: 3
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1891203, 1902817, 1903093, 1902818]
+    group: 3
