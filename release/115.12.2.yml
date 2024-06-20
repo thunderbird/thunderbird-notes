@@ -1,0 +1,16 @@
+release:
+  release_date: '2024-06-20'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/115.0/system-requirements/)
+
+    - Windows: Windows 7 or later
+    - Mac: macOS 10.12 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '115.0'
+
+notes:
+  # Fixed
+  - note: Appeal for ESR users to try Thunderbird Beta
+    tag: fixed
+    bugs: [1898084]
