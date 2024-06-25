@@ -1,7 +1,7 @@
 release:
   release_date: '2024-06-12'
   text: |
-    **These notes apply to Thunderbird version 128 beta 3 released June 20, 2024.**
+    **These notes apply to Thunderbird version 128 beta 4 released June 24, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/128.0beta/system-requirements/)
 
@@ -55,6 +55,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'New and Fixed in beta 4'
 
 notes:
   # beta 1
@@ -165,20 +166,20 @@ notes:
     tag: fixed
     bugs: [1901739]
     group: 2
-  
+
   # Beta 3
   # New
   - note: Custom account colors are now shown in the "From" field when composing a message
     tag: new
     bugs: [355520]
     group: 3
-  
+
   # Changed
   - note: Updated donation link from "give.thunderbird.net" to "www.thunderbird.net/donate/"
     tag: changed
     bugs: [1820676]
     group: 3
-  
+
   # Fixed
   - note: Commandline "--migration" option did not work
     tag: fixed
@@ -208,3 +209,44 @@ notes:
     tag: fixed
     bugs: [1891203, 1902817, 1903093, 1902818]
     group: 3
+
+  # Beta 4
+  # New
+  - note: Help menu now includes additional information for Beta and Daily users
+    tag: new
+    bugs: [1899765]
+    group: 4
+
+  # Fixed
+  - note: Compacting did not correctly report the amount of space saved on Windows
+    tag: fixed
+    bugs: [1900172]
+    group: 4
+  - note: Scrolling to an unread message in an expanded thread did not show as much of the thread as possible
+    tag: fixed
+    bugs: [1900916]
+    group: 4
+  - note: In a synthetic view, right-clicking an unselected message incorrectly selected the message
+    tag: fixed
+    bugs: [1902549]
+    group: 4
+  - note: In cards view, when all child messages of a thread were read, the replies button incorrectly displayed the unread icon
+    tag: fixed
+    bugs: [1903090]
+    group: 4
+  - note: Messages could not be sorted by columns that were not visible
+    tag: fixed
+    bugs: [1830262]
+    group: 4
+  - note: Source of 'news:' links were incorrectly attached to messages by default
+    tag: fixed
+    bugs: [1787143]
+    group: 4
+  - note: Account manager and about:support could break if the chat buddy list became corrupted
+    tag: fixed
+    bugs: [1902611]
+    group: 4
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1903741, 1903215]
+    group: 4
