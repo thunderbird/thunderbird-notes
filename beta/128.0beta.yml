@@ -1,7 +1,7 @@
 release:
   release_date: '2024-06-12'
   text: |
-    **These notes apply to Thunderbird version 128 beta 4 released June 24, 2024.**
+    **These notes apply to Thunderbird version 128 beta 5 released June 27, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/128.0beta/system-requirements/)
 
@@ -56,6 +56,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'New and Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # beta 1
@@ -250,3 +251,15 @@ notes:
     tag: fixed
     bugs: [1903741, 1903215]
     group: 4
+
+  # Beta 5
+  # Fixed
+  - note: Restart was necessary to read an NNTP message if a network error occured during message retrieval
+    tag: fixed
+    bugs: [1876261]
+    group: 5
+
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1903742, 1904072, 1904316]
+    group: 5
