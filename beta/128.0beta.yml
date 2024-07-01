@@ -1,7 +1,7 @@
 release:
   release_date: '2024-06-12'
   text: |
-    **These notes apply to Thunderbird version 128 beta 5 released June 27, 2024.**
+    **These notes apply to Thunderbird version 128 beta 6 released July 1, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/128.0beta/system-requirements/)
 
@@ -57,6 +57,7 @@ release:
     - 'Fixed in beta 3'
     - 'New and Fixed in beta 4'
     - 'Fixed in beta 5'
+    - 'Fixed in beta 6'
 
 notes:
   # beta 1
@@ -263,3 +264,40 @@ notes:
     tag: fixed
     bugs: [1903742, 1904072, 1904316]
     group: 5
+
+  # Beta 6
+  # Fixed
+  - note: Display columns reverted to default columns after an IMAP folder was repaired
+    tag: fixed
+    bugs: [550286]
+    group: 6
+
+  - note: Mark as "Read By Date" was not available when a folder with unread messages was selected
+    tag: fixed
+    bugs: [1904191]
+    group: 6
+
+  - note: Drag-and-drop moved a previously selected folder when dragging and dropping another unselected folder
+    tag: fixed
+    bugs: [1901386]
+    group: 6
+
+  - note: Parsing an email address with a comment caused a failure for OpenPGP
+    tag: fixed
+    bugs: [1905014]
+    group: 6
+
+  - note: Thunderbird defaulted to insecure connection when Exchange Autodiscover configuration was misconfigured
+    tag: fixed
+    bugs: [1900178]
+    group: 6
+
+  - note: Calendar 'Find Events Pane' did not match search terms if they included uppercase letters
+    tag: fixed
+    bugs: [1898856]
+    group: 6
+
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1904300, 1904305, 1904365]
+    group: 6
