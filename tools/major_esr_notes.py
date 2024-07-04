@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 import os
@@ -23,6 +23,9 @@ This is for generating release notes for a new major ESR-based release (aka 91.0
 Notes will need to be rearranged into the proper order. They also need to be checked
 to make sure that they actually apply. For example, for ESR91, regression fixes that
 were caused by the change to js-smtp/js-mime and such are not included.
+
+Example:
+    ./tools/major_esr_notes.py 115 128 2024-07-09
 """
 
 
@@ -38,7 +41,7 @@ class RelNote:
         return {"note": self.note, "tag": self.tag, "bugs": self.bugs}
 
 
-def load_notes(previous, current):
+def load_notes(previous, current, release_date):
     uplift_bugs = []
     beta_notes = {}
     new_notes = []
@@ -172,11 +175,11 @@ def load_notes(previous, current):
                 new_notes.append(rel_note)
 
     new_yaml = yaml.load(notes_template.TMPL_HEADER)
-    new_yaml["release"]["text"] = notes_template.TMPL_RELEASE_TEXT
+    new_yaml["release"]["text"] = notes_template.TMPL_RELEASE_TEXT[current]
     new_yaml["release"][
         "import_system_requirements"
-    ] = notes_template.REQUIREMENTS_IMPORT["release"]
-    new_yaml["release"]["release_date"] = "2021-08-11"
+    ] = notes_template.REQUIREMENTS_IMPORT[current]
+    new_yaml["release"]["release_date"] = release_date
 
     notes_sequence = CS()
     note_counter = 0
@@ -203,4 +206,5 @@ def load_notes(previous, current):
 if __name__ == "__main__":
     previous_esr = sys.argv[1]
     current_esr = sys.argv[2]
-    load_notes(previous_esr, current_esr)
+    release_date = sys.argv[3]
+    load_notes(previous_esr, current_esr, release_date)
