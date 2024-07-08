@@ -83,6 +83,9 @@ notes:
   - note: 'Cards View now shows a "new" icon when there is a new message in a thread'
     tag: new
     bugs: [1870376]
+  - note: Cards View now shows an "unread" icon when there are unread messages in a thread
+    tag: new
+    bugs: [1860868]
   - note: Added some CSS transitions to Cards View
     tag: new
     bugs: [1890691]
@@ -151,9 +154,6 @@ notes:
   - note: Updated message pane customization defaults for new profiles
     tag: changed
     bugs: [1840891]
-  - note: Cards UI styling of expand and collapse for threads
-    tag: changed
-    bugs: [1860868]
   - note: Spam and Junk message styling in Card UI adjusted to be less distracting
     tag: changed
     bugs: [1880163]
