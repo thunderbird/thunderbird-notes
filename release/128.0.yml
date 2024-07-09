@@ -17,7 +17,7 @@ release:
     ### Windows Recommended Hardware
     - 1GHz or faster Intel/AMD compatible processor
     - 1GB RAM / 2GB of RAM for the 64-bit version
-    - 250 MB hard drive space
+    - 500 MB hard drive space
     - additional hard drive space for mail storage
 
     ---
@@ -27,8 +27,8 @@ release:
 
     ### Mac Recommended Hardware
     - Mac computer with an Intel x86 or Apple Silicon processor
-    - 1GB RAM
-    - 500 MB hard drive space
+    - 512 MB RAM
+    - 200 MB hard drive space
     - additional hard drive space for mail storage
 
     ---
@@ -57,7 +57,7 @@ release:
 
 notes:
   # New
-  - note: Added new preference (mail.addressDisplayFormat) to always display full name
+  - note: Added new preference `mail.addressDisplayFormat` to always display full name
       and email address of all recipients in message list
     tag: new
     bugs: [243258]
@@ -72,12 +72,6 @@ notes:
       themes and accent colors
     tag: new
     bugs: [1857120, 1863614]
-  - note: Improved Cards View readability and accessibility
-    tag: new
-    bugs: [1855821, 1856623, 1858578, 1882369, 1864064, 1877324, 1860867, 1877324, 1860141]
-  - note: Better threading and unread/new indicators for Cards View threaded messages
-    tag: new
-    bugs: [1860868, 1855823, 1855824, 1870376, 1867078, 1865433, 1860599]
   - note: Added account context menu to Unified Toolbar "Get Messages" button, creating
       quick access option to retrieve new messages for individual accounts
     tag: new
@@ -123,12 +117,18 @@ notes:
   - note: Selection indicator added to folder pane and address book pane
     tag: new
     bugs: [1899842]
-  - note: Thunderbird now decodes messages nested in attachments even if "decodeSubMessages"
+  - note: Thunderbird now decodes messages nested in attachments even if `decodeSubMessages`
       preference is set to "false"
     tag: new
     bugs: [1881560]
   # Changed
-  - note: The Account Provisioner was removed
+  - note: Improved Cards View readability and accessibility
+    tag: changed
+    bugs: [1855821, 1856623, 1858578, 1882369, 1864064, 1877324, 1860867, 1877324, 1860141]
+  - note: Better threading and unread/new indicators for Cards View threaded messages
+    tag: changed
+    bugs: [1860868, 1855823, 1855824, 1870376, 1867078, 1865433, 1860599]
+  - note: Removed Account Provisioner
     tag: changed
     bugs: [1893331]
   - note: Search bars in Thunderbird now use a common custom element for more consistency
@@ -143,7 +143,7 @@ notes:
   - note: Spam and Junk message styling in Card UI adjusted to be less distracting
     tag: changed
     bugs: [1880163]
-  - note: The "mail.openpgp.key_assistant.enable" preference was removed
+  - note: Removed `mail.openpgp.key_assistant.enable` preference
     tag: changed
     bugs: [1868214]
   - note: Disabled support for LibrePGP v5 AEAD/OCB decryption
@@ -213,7 +213,7 @@ notes:
   - note: '"Find in this message" did not work in multi-message view'
     tag: fixed
     bugs: [1839005]
-  - note: '"news:// URIs failed opening as links or from the commandline'
+  - note: '"news://" URIs failed opening as links or from the commandline'
     tag: fixed
     bugs: [1886132]
   - note: Thunderbird sometimes displayed a blank screen on startup
@@ -238,7 +238,7 @@ notes:
     tag: fixed
     bugs: [1887334]
   - note: Focus behavior for opening messages in a new tab changed depending on state of
-      "mail.tabs.loadInBackground" preference
+      `mail.tabs.loadInBackground` preference
     tag: fixed
     bugs: [1894831]
   - note: Focus changes in 3-pane view occassionally caused keyboard shortcuts to stop
@@ -259,7 +259,7 @@ notes:
       permanently delete message
     tag: fixed
     bugs: [956446]
-  - note: Holding Shift and middle-clicking a message with "loadInBackground" preference
+  - note: Holding Shift and middle-clicking a message with `loadInBackground` preference
       set to "false" did not open new tab in background as expected
     tag: fixed
     bugs: [1876883]
