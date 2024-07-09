@@ -57,19 +57,10 @@ release:
 
 notes:
   # New
-  - note: Beta branded logos for Thunderbird beta releases
-    tag: new
-    bugs: [1845794]
-  - note: UI density now affects multi-message view
-    tag: new
-    bugs: [1868863]
   - note: Added new preference (mail.addressDisplayFormat) to always display full name
       and email address of all recipients in message list
     tag: new
     bugs: [243258]
-  - note: Help menu now includes additional information for Beta and Daily users
-    tag: new
-    bugs: [1899765]
   - note: '"Archived-At" message header field is now displayed as a link, and Message Permalink
       option is now available in List-Id menu'
     tag: new
@@ -77,18 +68,16 @@ notes:
   - note: Threaded message views now include "New Message" count
     tag: new
     bugs: [1883506]
-  - note: Improved Cards View UI
+  - note: Cards View hover and selection paradigms introduced to better support custom
+      themes and accent colors
     tag: new
-    bugs: [1877324, 1882369]
-  - note: Cards View now shows a "new" icon when there is a new message in a thread
+    bugs: [1857120, 1863614]
+  - note: Improved Cards View readability and accessibility
     tag: new
-    bugs: [1870376]
-  - note: Cards View now shows an "unread" icon when there are unread messages in a thread
+    bugs: [1855821, 1856623, 1858578, 1882369, 1864064, 1877324, 1860867, 1877324, 1860141]
+  - note: Better threading and unread/new indicators for Cards View threaded messages
     tag: new
-    bugs: [1860868]
-  - note: Added some CSS transitions to Cards View
-    tag: new
-    bugs: [1890691]
+    bugs: [1860868, 1855823, 1855824, 1870376, 1867078, 1865433, 1860599]
   - note: Added account context menu to Unified Toolbar "Get Messages" button, creating
       quick access option to retrieve new messages for individual accounts
     tag: new
@@ -128,18 +117,18 @@ notes:
   - note: Added support for OS-specific accent colors
     tag: new
     bugs: [1869893]
-  - note: Added system accent color support to some elements
+  - note: Added system accent color support for various elements
     tag: new
     bugs: [1890993, 1891289]
   - note: Selection indicator added to folder pane and address book pane
     tag: new
     bugs: [1899842]
   - note: Thunderbird now decodes messages nested in attachments even if "decodeSubMessages"
-      preference is set to "true"
+      preference is set to "false"
     tag: new
     bugs: [1881560]
   # Changed
-  - note: Removed account provisioner
+  - note: The Account Provisioner was removed
     tag: changed
     bugs: [1893331]
   - note: Search bars in Thunderbird now use a common custom element for more consistency
@@ -154,10 +143,7 @@ notes:
   - note: Spam and Junk message styling in Card UI adjusted to be less distracting
     tag: changed
     bugs: [1880163]
-  - note: 'Cards View Grouped By Sort style improvements'
-    tag: changed
-    bugs: [1863403]
-  - note: Removed "mail.openpgp.key_assistant.enable" preference
+  - note: The "mail.openpgp.key_assistant.enable" preference was removed
     tag: changed
     bugs: [1868214]
   - note: Disabled support for LibrePGP v5 AEAD/OCB decryption
@@ -178,13 +164,14 @@ notes:
   - note: Added Show more/less buttons to notifications in Account Hub
     tag: changed
     bugs: [1863265]
-  - note: Importer for "Becky! Internet Mail" removed
+  - note: The "prefer display name" preference for individual contacts was removed in favor
+      of the global preference
     tag: changed
-    bugs: [1810915]
+    bugs: [1894048]
   - note: Address book updated to new card design
     tag: changed
     bugs: [1847427, 1894280, 1898851]
-  - note: Addressbook toolbar updated
+  - note: Addressbook toolbar updated with the same UI/UX paradigms of the folder pane
     tag: changed
     bugs: [1899666]
   - note: Folder alerts now display full path of affected folder
@@ -199,6 +186,7 @@ notes:
   - note: Calendar ICS file import now always uses new importer
     tag: changed
     bugs: [1896844]
+  # Fixed
   - note: Thunderbird "--migration" flag opened empty window
     tag: fixed
     bugs: [1867860]
@@ -206,31 +194,18 @@ notes:
       Grouped By header also selected'
     tag: fixed
     bugs: [1873313]
-  - note: Thunderbird did not remove temporary directory created from adding attachment
-      to message via drag-and-drop
-    tag: fixed
-    bugs: [1873950]
   - note: Certificate errors silently failed when fetching new messages
     tag: fixed
     bugs: [1893899]
   - note: Clicking on native Windows notifications did not bring Thunderbird to the foreground
     tag: fixed
     bugs: [1863798]
-  - note: Commandline "--migration" option did not work
-    tag: fixed
-    bugs: [1901912]
   - note: 3-pane view was blank after starting Thunderbird with unsent messages in outbox
     tag: fixed
     bugs: [1865806]
-  - note: Windows taskbar icon did not have the "Beta" label
-    tag: fixed
-    bugs: [1866730]
   - note: Some menu bar items did not work with all Thunderbird windows closed on macOS
     tag: fixed
     bugs: [1868718]
-  - note: Various visual and UX improvements
-    tag: fixed
-    bugs: [1855611, 1870323, 1870331, 1870705, 1871001, 1872873]
   - note: Sender in multi-message view was right aligned when the text wrapped to multiple
       lines
     tag: fixed
@@ -238,10 +213,6 @@ notes:
   - note: '"Find in this message" did not work in multi-message view'
     tag: fixed
     bugs: [1839005]
-  - note: 'Non-compliant "References" headers were not handled gracefully when `mailnews.headers.showReferences`
-      was set'
-    tag: fixed
-    bugs: [1888116]
   - note: '"news:// URIs failed opening as links or from the commandline'
     tag: fixed
     bugs: [1886132]
@@ -251,16 +222,10 @@ notes:
   - note: Standalone window titles no longer included message subject on macOS
     tag: fixed
     bugs: [1847622]
-  - note: Various visual and UX improvements
-    tag: fixed
-    bugs: [1903742, 1904072, 1904316]
   - note: Links with IP address as link text and destination incorrectly warned user that
       link text and destination did not match
     tag: fixed
     bugs: [1804628]
-  - note: A selected attachment's filename in the mail reader was not visible
-    tag: fixed
-    bugs: [1878414]
   - note: '"Open message in conversation" and "Open message in containing folder" from
       a standalone window failed'
     tag: fixed
@@ -272,35 +237,18 @@ notes:
   - note: '"Open Browser With Message-ID" failed for Google Groups due to URL change'
     tag: fixed
     bugs: [1887334]
-  - note: 'NNTP "Cancel Messages" menu item had moved to a submenu'
-    tag: fixed
-    bugs: [1889971]
   - note: Focus behavior for opening messages in a new tab changed depending on state of
       "mail.tabs.loadInBackground" preference
     tag: fixed
     bugs: [1894831]
-  - note: Focus changes in 3-pane view occassionally caused keyboard shortcuts to stop working
+  - note: Focus changes in 3-pane view occassionally caused keyboard shortcuts to stop
+      working
     tag: fixed
     bugs: [1853442]
-  - note: Context menu cleanup
-    tag: fixed
-    bugs: [1890374, 1890375]
-  - note: Cards View UX improvements
-    tag: fixed
-    bugs: [1855821, 1855823, 1856623, 1859036]
-  - note: Various Cards View UX improvements
-    tag: fixed
-    bugs: [1855824, 1857120, 1858302, 1858578, 1860141, 1860148, 1860599, 1864064, 1865433]
-  - note: Card View behavioral and visual improvements
-    tag: fixed
-    bugs: [1860867, 1863614, 1865616, 1867078]
   - note: Selected row in folder pane did not always remain visible when using keyboard
       navigation
     tag: fixed
     bugs: [1868094]
-  - note: Thread styling appeared on Grouped by Sort messages
-    tag: fixed
-    bugs: [1865362]
   - note: Using middle-mouse click on a message (open in background tab) did not work
     tag: fixed
     bugs: [1853923]
@@ -315,10 +263,6 @@ notes:
       set to "false" did not open new tab in background as expected
     tag: fixed
     bugs: [1876883]
-  - note: '"Watch Thread" command was incorrectly available on multi-folder and search
-      views'
-    tag: fixed
-    bugs: [1368011]
   - note: '"Ignore Thread" did not work on multi-folder and search views'
     tag: fixed
     bugs: [1861200]
@@ -326,21 +270,9 @@ notes:
       incorrect dates from being displayed
     tag: fixed
     bugs: [1520435]
-  - note: Various visual improvements
-    tag: fixed
-    bugs: [1881698]
-  - note: Deleting a mail folder failed silently when disk space was low
-    tag: fixed
-    bugs: [1886360]
   - note: Undoing deletion of an email from standalone window was not possible
     tag: fixed
     bugs: [1855643]
-  - note: Various Cards View improvements
-    tag: fixed
-    bugs: [1882592, 1890387, 1890674]
-  - note: Various style and UI fixes
-    tag: fixed
-    bugs: [1845204, 1849315, 1865615, 1888750, 1889519, 1890044, 1890129, 1890345]
   - note: Sort type in Quick Filtered and Grouped By unified folders was not preserved
       after search was modified or cleared
     tag: fixed
@@ -356,9 +288,6 @@ notes:
       reflect the change
     tag: fixed
     bugs: [1878047]
-  - note: Tooltip did not display full newsgroup name when hovering over newsgroups
-    tag: fixed
-    bugs: [1891365]
   - note: Secondary sort was discarded when sorting threaded unified folders
     tag: fixed
     bugs: [1897781]
@@ -369,12 +298,9 @@ notes:
   - note: Message count for synthetic folder views was sometimes incorrect
     tag: fixed
     bugs: [1896899]
-  - note: Count of message in a thread was not refreshed when a message was deleted externally
+  - note: Count of messages in a thread was not refreshed when a message was deleted externally
     tag: fixed
     bugs: [1893180]
-  - note: Tag folders with non-alphanumeric characters did not work correctly
-    tag: fixed
-    bugs: [1901926]
   - note: Scrolling to an unread message in an expanded thread did not show as much of
       the thread as possible
     tag: fixed
@@ -383,10 +309,6 @@ notes:
       the message
     tag: fixed
     bugs: [1902549]
-  - note: In Cards View, when all child messages of a thread were read, the replies button
-      incorrectly displayed the unread icon
-    tag: fixed
-    bugs: [1903090]
   - note: Messages could not be sorted by columns that were not visible
     tag: fixed
     bugs: [1830262]
@@ -397,22 +319,18 @@ notes:
       selected
     tag: fixed
     bugs: [1904191]
+  - note: Dynamic height calculation for Cards View based on density and font-size
+    tag: fixed
+    bugs: [1865616]
   - note: Message List display options were hidden outside of Thunderbird window
     tag: fixed
     bugs: [1854393]
-  - note: Quick Filter visual and UX improvements
+  - note: Compact icon on Unified Toolbar was updated with a compact folder icon
     tag: fixed
-    bugs: [1892560]
-  - note: Various visual and theme updates
-    tag: fixed
-    bugs: [1846323, 1880835, 1894806, 1896565, 1897638, 1899235, 1901145, 1901147]
+    bugs: [1846323]
   - note: Improved localization of OpenPGP strings
     tag: fixed
     bugs: [1831909]
-  - note: Creating a new key from the OpenPGP Key Manager erroneously displayed a "Go Back"
-      button on the first page of the wizard
-    tag: fixed
-    bugs: [1788962]
   - note: Some OpenPGP dialogs' buttons were inaccessible off screen
     tag: fixed
     bugs: [1733086]
@@ -423,9 +341,6 @@ notes:
       corrupted messages
     tag: fixed
     bugs: [1898832]
-  - note: Parsing an email address with a comment caused a failure for OpenPGP
-    tag: fixed
-    bugs: [1905014]
   - note: S/MIME messages did not display MIME message if MIME header was missing
     tag: fixed
     bugs: [1893039]
@@ -456,19 +371,9 @@ notes:
   - note: Print dialog opened in Message compose window did not prevent window interaction
     tag: fixed
     bugs: [1758470]
-  - note: Text cursor did not move to beginning of line after clicking left margin of "To:"
-      field
-    tag: fixed
-    bugs: [281299]
-  - note: Various visual and UX improvements
-    tag: fixed
-    bugs: [1891203, 1902817, 1902818, 1903093]
   - note: Source of 'news:' links were incorrectly attached to messages by default
     tag: fixed
     bugs: [1787143]
-  - note: Various visual and UX improvements
-    tag: fixed
-    bugs: [1903215, 1903741]
   - note: Password Manager did not remember the last selected item when changing sorting
       or showing/hiding passwords in unfiltered view
     tag: fixed
@@ -508,12 +413,6 @@ notes:
   - note: Thunderbird did not have a preference to enable archiving inbox as a folder
     tag: fixed
     bugs: [697706]
-  - note: Various visual and UX improvements
-    tag: fixed
-    bugs: [1904300, 1904365]
-  - note: Querying DNS TXT records that return multiple records failed
-    tag: fixed
-    bugs: [1571076]
   - note: Yahoo! and AOL account message filters only filtered most recent message match
     tag: fixed
     bugs: [1865598]
@@ -524,22 +423,13 @@ notes:
       then removing one of the duplicate addresses caused both addresses to be removed
     tag: fixed
     bugs: [1799368]
-  - note: Address Book scrolling did not work when using keyboard navigation
-    tag: fixed
-    bugs: [1870873]
   - note: CardDAV addressbooks could not be used as an import target
     tag: fixed
     bugs: [1893876]
-  - note: Currently selected address book icon was solid color when creating a new contact
-    tag: fixed
-    bugs: [1901547]
-  - note: Removing Organizational Properties from a contact did not clear all
-      organization-related fields
+  - note: Removing Organizational Properties from a contact did not clear all organization-related
+      fields
     tag: fixed
     bugs: [1901739]
-  - note: CardDAV contacts were synced to server when no changes were made
-    tag: fixed
-    bugs: [1898136]
   - note: Compose window toolbar items were unreadable on macOS in dark mode
     tag: fixed
     bugs: [1893249]
@@ -549,9 +439,6 @@ notes:
   - note: NVDA keyboard table navigation of message list did not work in table view
     tag: fixed
     bugs: [1843486]
-  - note: Tooltip did not appear when hovering over subject line of messages in Table View
-    tag: fixed
-    bugs: [1861204]
   - note: IMAP folders containing other folders could not be deleted due to Thunderbird
       using "unsubscribe" IMAP command
     tag: fixed
@@ -592,9 +479,6 @@ notes:
   - note: Account manager and about:support could break if the chat buddy list became corrupted
     tag: fixed
     bugs: [1902611]
-  - note: IRC SASL authentication was enabled by default for all IRC servers
-    tag: fixed
-    bugs: [1618061]
   - note: IMAP accounts with missing or incorrect OAuth credentials sometimes caused duplicate
       dialogs to appear, requesting a new OAuth token
     tag: fixed
@@ -619,9 +503,6 @@ notes:
       letters
     tag: fixed
     bugs: [1898856]
-  - note: Drop-down icon in Today Pane was misaligned
-    tag: fixed
-    bugs: [1846095]
   - note: Calendar day headings did not switch between short and long form when resizing
       calendar view
     tag: fixed
@@ -629,17 +510,13 @@ notes:
   - note: Task categories menu did not display category colors
     tag: fixed
     bugs: [1892673]
-  - note: Keyboard accessibility fixes
+  - note: Today Pane was not Keyboard accessible
     tag: fixed
     bugs: [1898199]
-  - note: '"Item changed on server" calendar dialog did not have a scrollbar for long
-      content, causing action buttons to be off screen'
+  - note: '"Item changed on server" calendar dialog did not have a scrollbar for long content,
+      causing action buttons to be off screen'
     tag: fixed
     bugs: [1889383]
-  - note: Visual and UX improvements
-    tag: fixed
-    bugs: [1869167, 1892437, 1892849, 1893114, 1893148, 1894903,
-      1895118, 1895119, 1895172]
   - note: Accepting/declining appointments did not always send confirmation
     tag: fixed
     bugs: [1878944]
