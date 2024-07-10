@@ -57,6 +57,9 @@ release:
 
 notes:
   # New
+  - note: UI density now affects multi-message view
+    tag: new
+    bugs: [1868863]
   - note: Added new preference `mail.addressDisplayFormat` to always display full name
       and email address of all recipients in message list
     tag: new
@@ -164,6 +167,9 @@ notes:
   - note: Added Show more/less buttons to notifications in Account Hub
     tag: changed
     bugs: [1863265]
+  - note: Removed "Becky! Internet Mail" importer
+    tag: changed
+    bugs: [1810915]
   - note: The "prefer display name" preference for individual contacts was removed in favor
       of the global preference
     tag: changed
@@ -194,6 +200,10 @@ notes:
       Grouped By header also selected'
     tag: fixed
     bugs: [1873313]
+  - note: Thunderbird did not remove temporary directory created from adding attachment
+      to message via drag-and-drop
+    tag: fixed
+    bugs: [1873950]
   - note: Certificate errors silently failed when fetching new messages
     tag: fixed
     bugs: [1893899]
@@ -213,6 +223,10 @@ notes:
   - note: '"Find in this message" did not work in multi-message view'
     tag: fixed
     bugs: [1839005]
+  - note: 'Non-compliant "References" headers were not handled gracefully when `mailnews.headers.showReferences`
+      was set'
+    tag: fixed
+    bugs: [1888116]
   - note: '"news://" URIs failed opening as links or from the commandline'
     tag: fixed
     bugs: [1886132]
@@ -263,6 +277,10 @@ notes:
       set to "false" did not open new tab in background as expected
     tag: fixed
     bugs: [1876883]
+  - note: '"Watch Thread" command was incorrectly available on multi-folder and search
+      views'
+    tag: fixed
+    bugs: [1368011]
   - note: '"Ignore Thread" did not work on multi-folder and search views'
     tag: fixed
     bugs: [1861200]
@@ -270,6 +288,9 @@ notes:
       incorrect dates from being displayed
     tag: fixed
     bugs: [1520435]
+  - note: Deleting a mail folder failed silently when disk space was low
+    tag: fixed
+    bugs: [1886360]
   - note: Undoing deletion of an email from standalone window was not possible
     tag: fixed
     bugs: [1855643]
@@ -301,6 +322,9 @@ notes:
   - note: Count of messages in a thread was not refreshed when a message was deleted externally
     tag: fixed
     bugs: [1893180]
+  - note: Tag folders with non-alphanumeric characters did not work correctly
+    tag: fixed
+    bugs: [1901926]
   - note: Scrolling to an unread message in an expanded thread did not show as much of
       the thread as possible
     tag: fixed
@@ -331,6 +355,10 @@ notes:
   - note: Improved localization of OpenPGP strings
     tag: fixed
     bugs: [1831909]
+  - note: Creating a new key from the OpenPGP Key Manager erroneously displayed a "Go Back"
+      button on the first page of the wizard
+    tag: fixed
+    bugs: [1788962]
   - note: Some OpenPGP dialogs' buttons were inaccessible off screen
     tag: fixed
     bugs: [1733086]
@@ -341,6 +369,9 @@ notes:
       corrupted messages
     tag: fixed
     bugs: [1898832]
+  - note: Parsing an email address with a comment caused a failure for OpenPGP
+    tag: fixed
+    bugs: [1905014]
   - note: S/MIME messages did not display MIME message if MIME header was missing
     tag: fixed
     bugs: [1893039]
@@ -416,6 +447,12 @@ notes:
   - note: Yahoo! and AOL account message filters only filtered most recent message match
     tag: fixed
     bugs: [1865598]
+  - note: Querying DNS TXT records that return multiple records failed
+    tag: fixed
+    bugs: [1571076]
+  - note: Yahoo! and AOL account message filters only filtered most recent message match
+    tag: fixed
+    bugs: [1865598]
   - note: '"Copy/Cut" context menus did not work in extension options pages'
     tag: fixed
     bugs: [1678057]
@@ -423,6 +460,9 @@ notes:
       then removing one of the duplicate addresses caused both addresses to be removed
     tag: fixed
     bugs: [1799368]
+  - note: Address Book scrolling did not work when using keyboard navigation
+    tag: fixed
+    bugs: [1870873]
   - note: CardDAV addressbooks could not be used as an import target
     tag: fixed
     bugs: [1893876]
@@ -430,6 +470,9 @@ notes:
       fields
     tag: fixed
     bugs: [1901739]
+  - note: CardDAV contacts were synced to server when no changes were made
+    tag: fixed
+    bugs: [1898136]
   - note: Compose window toolbar items were unreadable on macOS in dark mode
     tag: fixed
     bugs: [1893249]
@@ -479,6 +522,9 @@ notes:
   - note: Account manager and about:support could break if the chat buddy list became corrupted
     tag: fixed
     bugs: [1902611]
+  - note: IRC SASL authentication was enabled by default for all IRC servers
+    tag: fixed
+    bugs: [1618061]
   - note: IMAP accounts with missing or incorrect OAuth credentials sometimes caused duplicate
       dialogs to appear, requesting a new OAuth token
     tag: fixed
@@ -523,3 +569,20 @@ notes:
   - note: Convert To > Event did not save events on some CalDAV servers
     tag: fixed
     bugs: [1738611]
+  - note: Context menu cleanup
+    tag: fixed
+    bugs: [1890374, 1890375]
+  - note: Various Cards View UX improvements
+    tag: fixed
+    bugs: [1855821, 1855823, 1856623, 1859036, 1855824, 1857120,
+      1858302, 1858578, 1860141, 1860148, 1860599, 1864064, 1865433,
+      1860867, 1863614, 1865616, 1867078, 1882592, 1890691, 1863403]
+  - note: Various visual and UX improvements
+    tag: fixed
+    bugs: [1855611, 1870705, 1871001, 1872873, 1869167, 1892849,
+      1893114, 1893148, 1894903, 1895118, 1895119, 1895172, 1904365,
+      1903741, 1891203, 1902817, 1902818, 1903093, 1903742, 1904072,
+      1904316, 1892560, 1845204, 1849315, 1865615, 1888750, 1889519,
+      1890044, 1890129, 1890345, 1880835, 1894806, 1899235, 1901145,
+      1901147, 1878414, 1891365, 1901547, 1846095, 1861204, 1892560,
+      1281299]
