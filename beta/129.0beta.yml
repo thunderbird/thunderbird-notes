@@ -1,0 +1,59 @@
+release:
+  release_date: '2024-07-10'
+  text: |
+    **These notes apply to Thunderbird version 129 beta 1 released July 10, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/129.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 116.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Message filters are now available in the Folder Pane context menu
+    tag: new
+    bugs: [1845206]
+  - note: Added in-tree documentation for custom element conventions
+    tag: new
+    bugs: [1904357]
+  - note: Added Thunderbird-specific loading symbol
+    tag: new
+    bugs: [1905839]
+
+  # Fixed
+  - note: Importing profiles from SeaMonkey did not work in certain circumstances
+    tag: fixed
+    bugs: [1825995]
+  - note: Display columns reverted to default columns after an IMAP folder was repaired
+    tag: fixed
+    bugs: [550286]
+  - note: UTF-8 encoded messages became garbled when encrypted using inline OpenPGP
+    tag: fixed
+    bugs: [1899110]
+  - note: '"Unread" and "Total" columns did not display message count when using "Grouped by" sorting'
+    tag: fixed
+    bugs: [1901439, 1902255]
+  - note: Selecting messages and then switching to a new folder with no selected messages did not clear selected messages count
+    tag: fixed
+    bugs: [1905542]
+  - note: Opening profile import tab then restarting Thunderbird caused import tab to malfunction
+    tag: fixed
+    bugs: [1905708]
+  - note: Quick Filter did not display loading symbol when search was in progress
+    tag: fixed
+    bugs: [1874419]
+  - note: Could not add events to CalDAV calendar when UID contained special characters
+    tag: fixed
+    bugs: [1716745]
+  - note: Height of Find Events panel did not persist after restart of Thunderbird
+    tag: fixed
+    bugs: [1846509]
+  - note: Long message headers sometimes overflowed with "Show Headers" enabled, causing layout issues
+    tag: fixed
+    bugs: [1906107]
