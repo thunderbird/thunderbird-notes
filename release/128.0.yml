@@ -42,10 +42,8 @@ release:
     - Thunderbird will not run at all without the following libraries or packages:
         - glibc 2.17 or higher
         - GTK+ 3.14 or higher
-        - libdbus-glib 0.6.0 or higher
         - libglib 2.42 or higher
         - libstdc++ 4.8.1 or higher
-        - libxtst 1.2.3 or higher
         - X.Org 1.0 or higher (1.7 or higher is recommended)
 
     - For optimal functionality, we recommend the following libraries or packages:
