@@ -584,3 +584,7 @@ notes:
       1890044, 1890129, 1890345, 1880835, 1894806, 1899235, 1901145,
       1901147, 1878414, 1891365, 1901547, 1846095, 1861204, 1892560,
       1281299]
+  # Unresolved
+  - note: '"latest" download bouncer aliases are not available for 128.0esr at this time'
+    tag: unresolved
+    bugs: [1907317]
