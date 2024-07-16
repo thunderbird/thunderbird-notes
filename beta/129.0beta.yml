@@ -1,7 +1,7 @@
 release:
   release_date: '2024-07-11'
   text: |
-    **These notes apply to Thunderbird version 129 beta 1 released July 11, 2024.**
+    **These notes apply to Thunderbird version 129 beta 2 released July 15, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/129.0beta/system-requirements/)
 
@@ -57,3 +57,8 @@ notes:
   - note: Long message headers sometimes overflowed with "Show Headers" enabled, causing layout issues
     tag: fixed
     bugs: [1906107]
+  
+  # Beta 2
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1906432, 1906499, 1906498]
