@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -62,3 +63,4 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1906432, 1906499, 1906498]
+    group: 2
