@@ -74,6 +74,10 @@ notes:
     group: 3
 
   # Beta 4
+  - note: Users of external GnuPG could send signed encrypted messages that were corrupted
+    tag: fixed
+    bugs: [1898832]
+    group: 4
   - note: Users of external GnuPG were unable to decrypt incorrectly encoded messages
     tag: fixed
     bugs: [1906903]
