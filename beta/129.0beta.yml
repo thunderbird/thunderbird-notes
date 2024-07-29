@@ -1,7 +1,7 @@
 release:
   release_date: '2024-07-11'
   text: |
-    **These notes apply to Thunderbird version 129 beta 5 released July 25, 2024.**
+    **These notes apply to Thunderbird version 129 beta 6 released July 29, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/129.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
+    - 'Fixed in beta 6'
 
 notes:
   # New
@@ -109,3 +110,13 @@ notes:
     tag: fixed
     bugs: [1906087]
     group: 5
+
+  # Beta 6
+  - note: Could not add override for a certificate with the wrong hostname
+    tag: fixed
+    bugs: [1903135]
+    group: 6
+  - note: Spell checker dictionary was not available for Flatpak install
+    tag: fixed
+    bugs: [1908046]
+    group: 6
