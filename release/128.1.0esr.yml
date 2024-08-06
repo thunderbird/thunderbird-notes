@@ -66,6 +66,6 @@ notes:
     bugs: [1875054, 1906497, 1906758, 1907761]
 
   # Unresolved
-  - note: '"latest" download bouncer aliases are not available for 128.0esr at this time'
+  - note: '"latest" download bouncer aliases are not available for 128.1.0esr at this time'
     tag: unresolved
     bugs: [1907317]
