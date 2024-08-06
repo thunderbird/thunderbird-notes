@@ -52,9 +52,6 @@ notes:
   - note: Flatpak created a duplicate unpinned icon in Linux dock after launching Thunderbird
     tag: fixed
     bugs: [1904390]
-  - note: '"latest" download bouncer aliases were not available'
-    tag: fixed
-    bugs: [1907317]
   - note: Flatpak release notes URL was incorrect
     tag: fixed
     bugs: [1907397]
@@ -67,3 +64,8 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1875054, 1906497, 1906758, 1907761]
+
+  # Unresolved
+  - note: '"latest" download bouncer aliases are not available for 128.0esr at this time'
+    tag: unresolved
+    bugs: [1907317]
