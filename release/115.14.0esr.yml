@@ -27,3 +27,5 @@ notes:
   - note: Flatpak install of 128.0esr was incorrectly downgraded to 115.13.0esr
     tag: fixed
     bugs: [1908299]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.14)'
+    tag: fixed
