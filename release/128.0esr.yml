@@ -586,3 +586,5 @@ notes:
   - note: '"latest" download bouncer aliases are not available for 128.0esr at this time'
     tag: unresolved
     bugs: [1907317]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128)'
+    tag: fixed
