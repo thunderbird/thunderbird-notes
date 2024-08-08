@@ -1,0 +1,72 @@
+release:
+  release_date: '2024-08-08'
+  text: |
+    **These notes apply to Thunderbird version 130 beta 1 released August, 8, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Added the outgoing server interface to send messages from EWS
+    tag: new
+    bugs: [1896171]
+  - note: Added ability to display EWS messages in interface
+    tag: new
+    bugs: [1860334]
+  - note: Added Linux system tray icon
+    tag: new
+    bugs: [18732]
+
+  # Changed
+  - note: Removed `rss.message.loadWebPageOnSelect` preference due to inconsistent behavior
+    tag: changed
+    bugs: [1909302]
+  - note: Removed `browser.preferences.search` as there is no reason to disable search
+    tag: changed
+    bugs: [1909084]
+  - note: Exporting a calendar to .ics did not include the calendar name
+    tag: changed
+    bugs: [1901384]
+
+  # Fixed
+  - note: What's New page was not displayed after updating Thunderbird
+    tag: fixed
+    bugs: [1906983]
+  - note: Chrome URLs were opened in an external browser
+    tag: fixed
+    bugs: [1909585]
+  - note: Duplicate message headers could be created for EWS messages
+    tag: fixed
+    bugs: [1906757]
+  - note: Feed body was not rendered when "Message Body As" formatting option selected
+    tag: fixed
+    bugs: [1906705, 1906830]
+  - note: Ctrl+Drag moved messages instead of copying them when running on Wayland
+    tag: fixed
+    bugs: [1822463]
+  - note: '"Grouped By Sort" state was not preserved for unified and virtual folders'
+    tag: fixed
+    bugs: [1905912]
+  - note: In a cross-folder virtual folder, right-clicking an unselected message incorrectly
+      selected the message
+    tag: fixed
+    bugs: [1903910]
+  - note: Files left over from failed folder compactions could use up disk space
+    tag: fixed
+    bugs: [1878541]
+  - note: Flathub manifest link was not correct
+    tag: fixed
+    bugs: [1907695]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1856252, 1875325, 1883041, 1894591, 1904188,
+      1906439, 1907191, 1907249, 1908013, 1908054, 1909743]
