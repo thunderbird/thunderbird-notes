@@ -77,14 +77,18 @@ notes:
   - note: Account setup is updated to support OAuth2 granular permissions
     tag: new
     bugs: [1909789]
+    group: 2
 
   # Fixed
   - note: Compaction of folders greater than 4GB were truncated to 4GB on 32-bit installations of Thunderbird 128esr
     tag: fixed
     bugs: [1911076]
+    group: 2
   - note: Some UTF-8 characters were corrupted when using OpenPGP signing with OpenPGP encryption
     tag: fixed
     bugs: [1911227]
+    group: 2
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1911629, 1912420]
+    group: 2
