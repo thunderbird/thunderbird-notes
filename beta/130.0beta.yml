@@ -1,7 +1,7 @@
 release:
   release_date: '2024-08-09'
   text: |
-    **These notes apply to Thunderbird version 130 beta 1 released August, 9, 2024.**
+    **These notes apply to Thunderbird version 130 beta 2 released August, 16, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'New and Fixed in beta 2'
 
 notes:
   # New
@@ -70,3 +71,20 @@ notes:
     tag: fixed
     bugs: [1856252, 1875325, 1883041, 1894591, 1904188,
       1906439, 1907191, 1907249, 1908013, 1908054, 1909743]
+
+  # Beta 2
+  # New
+  - note: Account setup is updated to support OAuth2 granular permissions
+    tag: new
+    bugs: [1909789]
+
+  # Fixed
+  - note: Compaction of folders greater than 4GB were truncated to 4GB on 32-bit installations of Thunderbird 128esr
+    tag: fixed
+    bugs: [1911076]
+  - note: Some UTF-8 characters were corrupted when using OpenPGP signing with OpenPGP encryption
+    tag: fixed
+    bugs: [1911227]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1911629, 1912420]
