@@ -20,7 +20,7 @@ notes:
   - note: Performance could be degraded when sorting with Quick Filter or Grouped By Sort
     tag: fixed
     bugs: [1908761]
-  - note: '"Mark All Read" on Quick Filter results marked all emails in folder as read.'
+  - note: '"Mark All Read" on Quick Filter results marked all emails in folder as read'
     tag: fixed
     bugs: [1894214]
   - note: '"latest" download bouncer aliases were not available for 128 releases prior
