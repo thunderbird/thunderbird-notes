@@ -1,6 +1,9 @@
 release:
   release_date: '2024-09-05'
   text: |
+
+    **Thunderbird 115.15.0esr is the final release of Thunderbird 115.**
+
     **For help and a quick start on Thunderbird 115, see
     [Thunderbird 115 Supernova FAQ](https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq).**
 
@@ -12,6 +15,8 @@ release:
     - Windows: Windows 7 or later
     - Mac: macOS 10.12 or later
     - Linux: GTK+ 3.14 or higher
+
+    **Note that Thunderbird 115 is the final release to support Windows 7 and Windows 8.**
 
   import_system_requirements: '115.0'
 
