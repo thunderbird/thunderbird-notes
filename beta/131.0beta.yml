@@ -1,7 +1,7 @@
 release:
   release_date: '2024-09-05'
   text: |
-    **These notes apply to Thunderbird version 131 beta 1 released September, 5, 2024.**
+    **These notes apply to Thunderbird version 131 beta 2 released September, 10, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # Fixed
@@ -68,3 +69,10 @@ notes:
     bugs: [1691301, 1904229, 1909247, 1909668, 1911603,
       1911775, 1912655, 1912727, 1912733, 1913329, 1913741,
       1913807, 1913889]
+
+  # Beta 2
+  # Fixed
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1915826, 1916089]
+    group: 2
