@@ -27,5 +27,5 @@ notes:
       to 128.2.0esr'
     tag: fixed
     bugs: [1907317]
-  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.2.0)'
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.2)'
     tag: fixed
