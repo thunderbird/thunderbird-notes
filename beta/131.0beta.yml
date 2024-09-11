@@ -1,7 +1,7 @@
 release:
   release_date: '2024-09-05'
   text: |
-    **These notes apply to Thunderbird version 131 beta 2 released September, 10, 2024.**
+    **These notes apply to Thunderbird version 131 beta 3 released September, 12, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # Fixed
@@ -75,4 +76,23 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1915826, 1916089]
+    group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Thunderbird could crash when using return receipt with OWL add-on
+    tag: fixed
+    bugs: [1917218]
+    group: 3
+  - note: Matrix end-to-end encryption tab in account settings could be shown for XMPP account
+    tag: fixed
+    bugs: [1915199]
+    group: 3
+  - note: Some users were not able to log in to Microsoft 365 due to Thunderbird asking for EWS permissions
+    tag: fixed
+    bugs: [1908866]
+    group: 3
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1910474]
     group: 2
