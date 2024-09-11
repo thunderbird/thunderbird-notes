@@ -16,11 +16,6 @@ release:
   import_system_requirements: '128.0esr'
 
 notes:
-  # Changed
-  - note: Exporting a calendar to .ics did not include the calendar name
-    tag: changed
-    bugs: [1901384]
-
   # Fixed
   - note: Message window froze after clicking 'mailto:' link containing child elements
     tag: fixed
