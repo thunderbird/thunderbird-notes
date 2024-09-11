@@ -1,0 +1,54 @@
+release:
+  release_date: '2024-09-12'
+  text: |
+    **For help and a quick start on Thunderbird 128, see
+    [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
+
+    **For more on all the new features in Thunderbird 128, see
+    [What’s New in Thunderbird 128](https://www.thunderbird.net/thunderbird/128.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/128.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '128.0esr'
+
+notes:
+  # Changed
+  - note: Exporting a calendar to .ics did not include the calendar name
+    tag: changed
+    bugs: [1901384]
+
+  # Fixed
+  - note: Message window froze after clicking 'mailto:' link containing child elements
+    tag: fixed
+    bugs: [1914250]
+  - note: '"Grouped By Sort" state was not preserved for unified and virtual folders'
+    tag: fixed
+    bugs: [1905912]
+  - note: Repairing local folders caused messages in folder to temporarily disappear
+    tag: fixed
+    bugs: [1910168]
+  - note: Repairing an IMAP folder resulted in incorrect total and unread message counts
+    tag: fixed
+    bugs: [1913224]
+  - note: 'Quick Filter reset sort type in threaded views sorted by "Order Received" ascending'
+    tag: fixed
+    bugs: [1774455]
+  - note: Display names for SMTP servers could be incorrectly formatted as a date
+    tag: fixed
+    bugs: [1902742]
+  - note: Importing profiles from SeaMonkey did not work in certain circumstances
+    tag: fixed
+    bugs: [1825995]
+  - note: Calendar events filter no longer allowed searching past or all events
+    tag: fixed
+    bugs: [1855900]
+  - note: Calendar updates were not added to cache when Thunderbird was offline
+    tag: fixed
+    bugs: [1908530]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1691301, 1911603, 1911775, 1912655, 1913251, 1913889, 1914751]
