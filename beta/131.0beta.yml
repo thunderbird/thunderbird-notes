@@ -84,15 +84,17 @@ notes:
     tag: fixed
     bugs: [1917218]
     group: 3
-  - note: Matrix end-to-end encryption tab in account settings could be shown for XMPP account
-    tag: fixed
-    bugs: [1915199]
-    group: 3
-  - note: Some users were not able to log in to Microsoft 365 due to Thunderbird asking for EWS permissions
+  - note: Some users were not able to log in to Microsoft 365 due to Thunderbird asking
+      for EWS permissions
     tag: fixed
     bugs: [1908866]
+    group: 3
+  - note: Matrix end-to-end encryption tab in account settings could be shown for XMPP
+      account
+    tag: fixed
+    bugs: [1915199]
     group: 3
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1910474]
-    group: 2
+    group: 3
