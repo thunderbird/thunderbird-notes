@@ -1,0 +1,44 @@
+release:
+  release_date: '2024-09-18'
+  text: |
+    **For help and a quick start on Thunderbird 128, see
+    [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
+
+    **For more on all the new features in Thunderbird 128, see
+    [What’s New in Thunderbird 128](https://www.thunderbird.net/thunderbird/128.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/128.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '128.0esr'
+
+notes:
+  # New
+  - note: Account setup is updated to support OAuth2 granular permissions
+    tag: new
+    bugs: [1909789]
+
+  # Fixed
+  - note: Thunderbird could crash when using return receipt with OWL add-on
+    tag: fixed
+    bugs: [1917218]
+  - note: Folder pane display was blank due to invalid mail server hostname
+    tag: fixed
+    bugs: [1911951]
+  - note: Some users were not able to log in to Microsoft 365 due to Thunderbird asking
+      for EWS permissions
+    tag: fixed
+    bugs: [1908866]
+  - note: Matrix end-to-end encryption tab in account settings could be shown for XMPP
+      account
+    tag: fixed
+    bugs: [1915199]
+  - note: Participant and message were not populated when user left the room using XMPP
+    tag: fixed
+    bugs: [1914633]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1910474, 1913329, 1913741, 1915826, 1916089]
