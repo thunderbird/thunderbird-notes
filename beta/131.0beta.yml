@@ -1,7 +1,7 @@
 release:
   release_date: '2024-09-05'
   text: |
-    **These notes apply to Thunderbird version 131 beta 3 released September, 12, 2024.**
+    **These notes apply to Thunderbird version 131 beta 4 released September, 17, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # Fixed
@@ -98,3 +99,18 @@ notes:
     tag: fixed
     bugs: [1910474]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Unable to "Decrypt and Open" an attached OpenPGP key file
+    tag: fixed
+    bugs: [1917577]
+    group: 4
+  - note: Thunderbird crashed when run from flatpak installation
+    tag: fixed
+    bugs: [1909879]
+    group: 4
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1917787]
+    group: 4
