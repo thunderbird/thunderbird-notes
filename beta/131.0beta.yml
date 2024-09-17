@@ -85,8 +85,7 @@ notes:
     tag: fixed
     bugs: [1917218]
     group: 3
-  - note: Some users were not able to log in to Microsoft 365 due to Thunderbird asking
-      for EWS permissions
+  - note: Some users were unable to log in to Microsoft 365
     tag: fixed
     bugs: [1908866]
     group: 3

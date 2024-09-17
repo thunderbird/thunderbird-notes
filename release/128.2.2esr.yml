@@ -28,8 +28,7 @@ notes:
   - note: Folder pane display was blank due to invalid mail server hostname
     tag: fixed
     bugs: [1911951]
-  - note: Some users were not able to log in to Microsoft 365 due to Thunderbird asking
-      for EWS permissions
+  - note: Some users were unable to log in to Microsoft 365
     tag: fixed
     bugs: [1908866]
   - note: Matrix end-to-end encryption tab in account settings could be shown for XMPP
