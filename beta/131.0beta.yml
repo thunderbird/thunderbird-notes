@@ -1,7 +1,7 @@
 release:
   release_date: '2024-09-05'
   text: |
-    **These notes apply to Thunderbird version 131 beta 4 released September, 17, 2024.**
+    **These notes apply to Thunderbird version 131 beta 5 released September, 18, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # Fixed
@@ -113,3 +114,22 @@ notes:
     tag: fixed
     bugs: [1917787]
     group: 4
+
+  # Beta 5
+  # Fixed
+  - note: OAuth2 authentication method was not available when adding SMTP server
+    tag: fixed
+    bugs: [1917472]
+    group: 5
+  - note: Unable to open/view attached OpenPGP encrypted messages
+    tag: fixed
+    bugs: [1837247]
+    group: 5
+  - note: Thunderbird could crash on startup
+    tag: fixed
+    bugs: [1907691]
+    group: 5
+  - note: Unable to subscribe to .ics calendars in some situations
+    tag: fixed
+    bugs: [1906077]
+    group: 5
