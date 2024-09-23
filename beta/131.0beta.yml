@@ -1,7 +1,7 @@
 release:
   release_date: '2024-09-05'
   text: |
-    **These notes apply to Thunderbird version 131 beta 5 released September, 18, 2024.**
+    **These notes apply to Thunderbird version 131 beta 6 released September, 24, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
+    - 'Fixed in beta 6'
 
 notes:
   # Fixed
@@ -133,3 +134,28 @@ notes:
     tag: fixed
     bugs: [1906077]
     group: 5
+
+  # Beta 6
+  # Fixed
+  - note: Saving an EML file that was opened from a file did not work
+    tag: fixed
+    bugs: [1402550]
+    group: 6
+  - note: Delete confirmation appeared twice when using shift+delete with focus on the
+      message body pane
+    tag: fixed
+    bugs: [1915255]
+    group: 6
+  - note: Performance could be degraded when using cards view with tags
+    tag: fixed
+    bugs: [1917993]
+    group: 6
+  - note: Stored draft messages were not encrypted when recipients were not specified
+    tag: fixed
+    bugs: [1919194]
+    group: 6
+  - note: '"Attach this image to the message" checkbox not checked when inserting image
+      into compose window'
+    tag: fixed
+    bugs: [1917461, 1918774]
+    group: 6
