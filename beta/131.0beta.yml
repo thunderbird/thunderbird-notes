@@ -141,8 +141,7 @@ notes:
     tag: fixed
     bugs: [1402550]
     group: 6
-  - note: Delete confirmation appeared twice when using shift+delete with focus on the
-      message body pane
+  - note: Delete confirmation could appear twice when using shift+delete
     tag: fixed
     bugs: [1915255]
     group: 6
@@ -154,8 +153,7 @@ notes:
     tag: fixed
     bugs: [1919194]
     group: 6
-  - note: '"Attach this image to the message" checkbox not checked when inserting image
-      into compose window'
+  - note: '"Attach this image to the message" checkbox not checked when inserting image'
     tag: fixed
     bugs: [1917461, 1918774]
     group: 6
