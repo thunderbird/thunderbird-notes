@@ -33,14 +33,13 @@ notes:
   - note: '"Mark All Read" on Quick Filter results marked all underlying folder emails read'
     tag: fixed
     bugs: [1894214]
-  - note: Collapsed state of folder for POP3 account was expanded after emptying trash
-      on exit
+  - note: Collapsed POP3 account folder was expanded after emptying trash on exit
     tag: fixed
     bugs: [1897412]
   - note: Messages deleted from a cross-folder search view could not be undeleted
     tag: fixed
     bugs: [1902597]
-  - note: '"Mark Folder Read" on a cross-folder search marked all underlying folders as read'
+  - note: '"Mark Folder Read" on a cross-folder search marked all underlying folders read'
     tag: fixed
     bugs: [1909617]
   - note: Repairing local folders caused messages in folder to temporarily disappear
@@ -55,8 +54,7 @@ notes:
   - note: Changing a saved draft's send identity did not prompt to save the modified message
     tag: fixed
     bugs: [1850192]
-  - note: Subject could disappear when replying to a message with a large header in an
-      EML file
+  - note: Subject could disappear when replying to a message saved in an EML file
     tag: fixed
     bugs: [1910477]
   - note: Display names for SMTP servers could be incorrectly formatted as a date

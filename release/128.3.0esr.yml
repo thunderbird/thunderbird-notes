@@ -1,0 +1,51 @@
+release:
+  release_date: '2024-10-01'
+  text: |
+    **For help and a quick start on Thunderbird 128, see
+    [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
+
+    **For more on all the new features in Thunderbird 128, see
+    [What’s New in Thunderbird 128](https://www.thunderbird.net/thunderbird/128.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/128.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '128.0esr'
+
+notes:
+  # Fixed
+  - note: Thunderbird could crash on startup
+    tag: fixed
+    bugs: [1907691]
+  - note: Opening an EML file with a 'mailto:' link did not work
+    tag: fixed
+    bugs: [1914887]
+  - note: Collapsed POP3 account folder was expanded after emptying trash on exit
+    tag: fixed
+    bugs: [1897412]
+  - note: '"Mark Folder Read" on a cross-folder search marked all underlying folders read'
+    tag: fixed
+    bugs: [1909617]
+  - note: Unable to open/view attached OpenPGP encrypted messages
+    tag: fixed
+    bugs: [1837247]
+  - note: Unable to "Decrypt and Open" an attached OpenPGP key file
+    tag: fixed
+    bugs: [1917577]
+  - note: Subject could disappear when replying to a message saved in an EML file
+    tag: fixed
+    bugs: [1910477]
+  - note: OAuth2 authentication method was not available when adding SMTP server
+    tag: fixed
+    bugs: [1917472]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1917787, 1912733]
+  - note: Unable to subscribe to .ics calendars in some situations
+    tag: fixed
+    bugs: [1906077]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.3)'
+    tag: fixed
