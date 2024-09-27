@@ -41,11 +41,11 @@ notes:
   - note: OAuth2 authentication method was not available when adding SMTP server
     tag: fixed
     bugs: [1917472]
-  - note: Visual and UX improvements
-    tag: fixed
-    bugs: [1917787, 1912733]
   - note: Unable to subscribe to .ics calendars in some situations
     tag: fixed
     bugs: [1906077]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1917787, 1912733]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.3)'
     tag: fixed
