@@ -1,7 +1,8 @@
 # Thunderbird Release Notes
 
 This repo contains release notes for Thunderbird, as displayed on [thunderbird.net](https://stage.thunderbird.net/en-US/thunderbird/releases/).
-Notes are in a [YAML format](https://learnxinyminutes.com/docs/yaml/), with release versions under the 'release' directory and beta versions in the 'beta' directory.
+Notes are in a [YAML format](https://learnxinyminutes.com/docs/yaml/), with esr versions in the 'esr' directory, monthly versions in the
+'release' directory, and beta versions in the 'beta' directory.
 
 To aid in editing these notes, you can preview changes to any of the .yml files with preview.py:
 
