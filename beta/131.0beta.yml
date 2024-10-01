@@ -30,7 +30,7 @@ notes:
   - note: Message window froze after clicking 'mailto:' link containing child elements
     tag: fixed
     bugs: [1914250]
-  - note: '"Mark All Read" on Quick Filter results marked all underlying folder emails read'
+  - note: '"Mark All Read" on Quick Filter results marked all emails in folder as read'
     tag: fixed
     bugs: [1894214]
   - note: Collapsed POP3 account folder was expanded after emptying trash on exit
@@ -89,8 +89,7 @@ notes:
     tag: fixed
     bugs: [1908866]
     group: 3
-  - note: Matrix end-to-end encryption tab in account settings could be shown for XMPP
-      account
+  - note: Matrix end-to-end encryption tab in account settings could show for XMPP account
     tag: fixed
     bugs: [1915199]
     group: 3
