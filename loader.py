@@ -2,6 +2,7 @@ import os
 import yaml
 
 notes_dirs = [
+    os.path.join(os.path.dirname(__file__), 'esr'),
     os.path.join(os.path.dirname(__file__), 'release'),
     os.path.join(os.path.dirname(__file__), 'beta'),
     os.path.join(os.path.dirname(__file__), 'archive'),
