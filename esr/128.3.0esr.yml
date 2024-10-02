@@ -17,9 +17,6 @@ release:
 
 notes:
   # Fixed
-  - note: Thunderbird could crash on startup
-    tag: fixed
-    bugs: [1907691]
   - note: Opening an EML file with a 'mailto:' link did not work
     tag: fixed
     bugs: [1914887]
