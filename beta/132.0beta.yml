@@ -58,7 +58,7 @@ notes:
   - note: New Account creation could fail to add SMTP server
     tag: fixed
     bugs: [1917074]
-  - note: OAuth2 did not show in "Authentication method" menulist for setup Exchange account
+  - note: OAuth2 not shown in "Authentication method" menulist for existing Exchange account
     tag: fixed
     bugs: [1915208]
   - note: Could not drag and drop multiple contacts from address book to destination fields
