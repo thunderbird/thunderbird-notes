@@ -16,7 +16,7 @@ release:
 
 notes:
   # New
-  - note: Added `mail.threadpane.table.horizontal_scroll` to allow horizontal table scrolling
+  - note: Added `mail.threadpane.table.horizontal_scroll` for horizontal threadpane scrolling
     tag: new
     bugs: [381821]
   - note: Added checkbox to select/unselect all calendars in the calendar setup wizard
