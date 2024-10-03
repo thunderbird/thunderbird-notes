@@ -16,10 +16,6 @@ release:
 
 notes:
   # New
-  - note: Added inital support for in-app notifications
-    tag: new
-    bugs: [1903230, 1904308, 1909631, 1909677, 1910944, 1916948, 1916951, 1917624, 1918062,
-      1918168, 1918335, 1918699, 1918727, 1918831, 1918832, 1919751, 1920725]
   - note: Added `mail.threadpane.table.horizontal_scroll` to allow horizontal table scrolling
     tag: new
     bugs: [381821]
