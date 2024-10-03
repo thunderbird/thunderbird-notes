@@ -30,6 +30,9 @@ notes:
   - note: Message window froze after clicking 'mailto:' link containing child elements
     tag: fixed
     bugs: [1914250]
+  - note: Folder pane display was blank due to invalid mail server hostname
+    tag: fixed
+    bugs: [1911951]
   - note: '"Mark All Read" on Quick Filter results marked all emails in folder as read'
     tag: fixed
     bugs: [1894214]
@@ -66,6 +69,9 @@ notes:
   - note: Flatpak release notes URL was incorrect
     tag: fixed
     bugs: [1907397]
+  - note: Calendar events filter no longer allowed searching past or all events
+    tag: fixed
+    bugs: [1855900]
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1691301, 1904229, 1909247, 1909668, 1911603,
