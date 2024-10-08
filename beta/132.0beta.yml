@@ -1,5 +1,5 @@
 release:
-  release_date: '2024-10-07'
+  release_date: '2024-10-02'
   text: |
     **These notes apply to Thunderbird version 132 beta 3 released October, 9, 2024.**
 
@@ -104,7 +104,7 @@ notes:
 
   # Beta 2
   # Fixed
-  - note: Could not import binary OpenPGP key file ending with whitespace 
+  - note: Could not import binary OpenPGP key file ending with whitespace
     tag: fixed
     bugs: [1921728]
     group: 2
