@@ -1,7 +1,7 @@
 release:
   release_date: '2024-10-07'
   text: |
-    **These notes apply to Thunderbird version 132 beta 2 released October, 7, 2024.**
+    **These notes apply to Thunderbird version 132 beta 3 released October, 9, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Changed and fixed in beta 3'
 
 notes:
   # New
@@ -111,3 +112,20 @@ notes:
     tag: fixed
     bugs: [1879355]
     group: 2
+
+  # Beta 3
+  # Changed
+  - note: Reinstated "All future events" to the calendar event filtering
+    tag: changed
+    bugs: [1919830]
+    group: 3
+
+  # Fixed
+  - note: Thunderbird could crash on startup
+    tag: fixed
+    bugs: [1922994]
+    group: 3
+  - note: Messages could not be selected for dragging
+    tag: fixed
+    bugs: [1887518]
+    group: 3
