@@ -12,5 +12,6 @@ release:
   import_system_requirements: 128.0beta
 
 notes:
+  # Fixed
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird131.0.1)'
     tag: fixed
