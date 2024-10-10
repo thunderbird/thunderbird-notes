@@ -1,0 +1,16 @@
+release:
+  release_date: '2024-10-10'
+  text: |
+    **Thunderbird version 131.0.1 is available for testing purposes only.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/131.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird131.0.1)'
+    tag: fixed
