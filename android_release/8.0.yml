@@ -1,0 +1,25 @@
+release:
+  release_date: '2024-10-14'
+  text: |
+    **These notes apply to Thunderbird for Android version 8.0 released October, 14, 2024.**
+
+  releases:
+    - version: '8.0'
+      release_date: '2024-10-14'
+
+notes:
+  - note: Beta 1 new feature
+    tag: new
+    issues: [111111]
+  - note: Beta 1 bug fix
+    tag: fixed
+    issues: [111111]
+  - note: Beta 2 bug fix
+    tag: fixed
+    issues: [111111]
+  - note: Beta 3 changed
+    tag: changed
+    issues: [111111]
+  - note: Beta 3 bug fix
+    tag: fixed
+    issues: [111111]

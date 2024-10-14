@@ -1,0 +1,50 @@
+release:
+  release_date: '2024-09-30'
+  text: |
+    **These notes apply to Thunderbird for Android version 8.0 beta 3 released October, 14, 2024.**
+
+  groups:
+    - ' '
+    - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
+
+  releases:
+    - version: '8.0b1'
+      release_date: '2024-09-30'
+    - version: '8.0b2'
+      release_date: '2024-10-07'
+    - version: '8.0b3'
+      release_date: '2024-10-14'
+
+notes:
+  # New
+  - note: Beta 1 new feature
+    tag: new
+    issues: [111111]
+    group: 1
+
+  # Fixed
+  - note: Beta 1 bug fix
+    tag: fixed
+    issues: [111111]
+    group: 1
+
+  # Beta 2
+  # Fixed
+  - note: Beta 2 bug fix
+    tag: fixed
+    issues: [111111]
+    group: 2
+
+  # Beta 3
+  # Changed
+  - note: Beta 3 changed
+    tag: changed
+    issues: [111111]
+    group: 3
+
+  # Fixed
+  - note: Beta 3 bug fix
+    tag: fixed
+    issues: [111111]
+    group: 3
