@@ -1,7 +1,7 @@
 release:
   release_date: '2024-10-02'
   text: |
-    **These notes apply to Thunderbird version 132 beta 3 released October, 9, 2024.**
+    **These notes apply to Thunderbird version 132 beta 4 released October, 15, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Changed and fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -129,3 +130,22 @@ notes:
     tag: fixed
     bugs: [1887518]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Cards view "replies" button remained styled without new messages in thread
+    tag: fixed
+    bugs: [1920747]
+    group: 4
+  - note: Some faulty messages were downloaded and never stored
+    tag: fixed
+    bugs: [1923765]
+    group: 4
+  - note: Messages could become corrupted during folder compaction
+    tag: fixed
+    bugs: [1720047, 1923541, 1923747]
+    group: 4
+  - note: Calendar invitation could be missing dropdown icon on buttons
+    tag: fixed
+    bugs: [1922998]
+    group: 4
