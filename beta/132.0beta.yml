@@ -1,7 +1,7 @@
 release:
   release_date: '2024-10-02'
   text: |
-    **These notes apply to Thunderbird version 132 beta 4 released October, 15, 2024.**
+    **These notes apply to Thunderbird version 132 beta 5 released October 17, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Changed and fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'New and fixed in beta 5'
 
 notes:
   # New
@@ -149,3 +150,14 @@ notes:
     tag: fixed
     bugs: [1922998]
     group: 4
+
+  # Beta 5
+  - note: Export Thunderbird account settings to Thunderbird Mobile via QRCode
+    tag: new
+    group: 5
+    bugs: [1919791, 1919798, 1919793, 1922683, 1922687, 1919799, 1919800, 1919805, 1922554, 1923668, 1923669]
+
+  - note: Searching events by Location, Description, or URL failed
+    tag: fixed
+    group: 5
+    bugs: [1912710]
