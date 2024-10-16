@@ -17,11 +17,11 @@ from ruamel.yaml.comments import CommentedSeq as CS
 
 topdir = Path(os.path.dirname(__file__)) / ".."
 beta_dir = Path(os.path.join(topdir, "beta"))
-release_dir = Path(os.path.join(topdir, "release"))
-ver_notes_yaml = "{this_esr}.yml"
+esr_dir = Path(os.path.join(topdir, "esr"))
+ver_notes_yaml = "{this_esr}esr.yml"
 
 MERCURIAL_TAGS_URL = "https://hg.mozilla.org/releases/comm-esr{major}/json-tags"
-RELEASE_TAG_RE = re.compile(r"THUNDERBIRD_([\d_b]+)_RELEASE")
+RELEASE_TAG_RE = re.compile(r"THUNDERBIRD_([\d_b]+)esr_RELEASE")
 CHANGESET_URL_TEMPLATE = "https://hg.mozilla.org/releases/comm-esr{major}/json-pushes?fromchange={from_version}&tochange={to_version}&full=1"
 BUG_NUMBER_REGEX = re.compile(r"bug \d+", re.IGNORECASE)
 BACKOUT_REGEX = re.compile(r"back(\s?)out|backed out|backing out", re.IGNORECASE)
@@ -31,7 +31,7 @@ CUR_VERSION_URL = (
     "https://hg.mozilla.org/releases/{repo}/raw-file/{rev}/mail/config/version.txt"
 )
 
-ESR_VERSIONS = ("102", "115")
+ESR_VERSIONS = ("115", "128")
 
 
 class RelNote:
@@ -146,7 +146,7 @@ Previous esr: {previous_esr}
     new_yaml["notes"] = notes_sequence
 
     out_yaml = ver_notes_yaml.format(this_esr=this_esr)
-    with open(release_dir / out_yaml, "w") as fp:
+    with open(esr_dir / out_yaml, "w") as fp:
         yaml.dump(new_yaml, fp)
 
     print("Wrote notes to {}.".format(out_yaml))
