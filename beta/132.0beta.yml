@@ -1,7 +1,7 @@
 release:
   release_date: '2024-10-02'
   text: |
-    **These notes apply to Thunderbird version 132 beta 5 released October 17, 2024.**
+    **These notes apply to Thunderbird version 132 beta 6 released October 21, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - 'Changed and fixed in beta 3'
     - 'Fixed in beta 4'
     - 'New and fixed in beta 5'
+    - 'Fixed in beta 6'
 
 notes:
   # New
@@ -161,3 +162,22 @@ notes:
     tag: fixed
     group: 5
     bugs: [1912710]
+
+  # Beta 6
+  # Fixed
+  - note: New profile creation caused console errors
+    tag: fixed
+    bugs: [1912675]
+    group: 6
+  - note: Images inside links could zoom when clicked instead of opening the link
+    tag: fixed
+    bugs: [1917278]
+    group: 6
+  - note: Long email addresses required horizontal scrolling to export accounts for mobile
+    tag: fixed
+    bugs: [1922859]
+    group: 6
+  - note: Global indexing failed when processing email with invalid calendar data
+    tag: fixed
+    bugs: [1916063]
+    group: 6
