@@ -13,7 +13,7 @@ release:
     - Mac: macOS 10.15 or later
     - Linux: GTK+ 3.14 or higher
 
-  import_system_requirements: '128.0'
+  import_system_requirements: '128.0esr'
 
 notes:
   # Fixed
