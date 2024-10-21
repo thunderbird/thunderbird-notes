@@ -1,12 +1,13 @@
 release:
   release_date: '2024-09-30'
   text: |
-    **These notes apply to Thunderbird for Android version 8.0 beta 3 released October, 14, 2024.**
+    **These notes apply to Thunderbird for Android version 8.0 betas**
 
   groups:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
   releases:
     - version: '8.0b1'
@@ -15,30 +16,194 @@ release:
       release_date: '2024-10-07'
     - version: '8.0b3'
       release_date: '2024-10-15'
+    - version: '8.0b4'
+      release_date: '2024-10-21'
 
 notes:
   # New
-  - note: Beta 1 new feature
+  - note: Thunderbird for Android branding is now available
+    thunderbird_only: true
     tag: new
-    issues: [111111]
+    group: 1
+
+  - note: Material 3 Navigation drawer
+    tag: new
+    group: 1
+
+  - note: Updated color scheme
+    tag: new
+    group: 1
+
+  - note: >
+      Allow migrating settings directly from an existing K-9 or Thunderbird for Android install
+    thunderbird_only: true
+    tag: new
+    group: 1
+
+  - note: Make use of Glean SDK
+    thunderbird_only: true
+    tag: new
+    group: 1
+
+  - note: >
+      Add basic feature setup for funding via Google Play subscriptions (we'll use this for
+      financial contributions)
+    thunderbird_only: true
+    tag: new
+    group: 1
+
+  - note: "Use [...] for outer subject when encrypting the subject"
+    tag: new
+    group: 1
+
+  - note: "Remove 'Move/copy destination folders' setting"
+    tag: new
+    group: 1
+
+  - note: "Remove 'Folders to search' setting"
+    tag: new
+    group: 1
+
+  - note: Remove folder push class to simplify folder notifications
+    tag: new
+    group: 1
+
+  - note: Signing configuration now works for both Thunderbird for Android and K-9 Mail
+    tag: new
+    group: 1
+
+  - note: >
+      We've added some more documentation on translations and other areas, check out the docs/
+      folder!
+    tag: new
+    group: 1
+
+  - note: Removed the user documentation link, as we're not currently maintaining it.
+    tag: new
+    group: 1
+
+  - note: Updated OAuth configuration for various providers
+    tag: new
     group: 1
 
   # Fixed
-  - note: Beta 1 bug fix
+  - note: >
+      Various refactoring for message list, accounts, folders, and other critical areas for
+      better maintainability
     tag: fixed
-    issues: [111111]
     group: 1
+
+  - note: Add domain validation to UserInputEmailAddressParser
+    tag: fixed
+    group: 1
+
+  - note: Fix crash when unmasking password field with TalkBack enabled
+    tag: fixed
+    group: 1
+
+  - note: Fix crashes in crypto provider selection dialogs
+    tag: fixed
+    group: 1
+
 
   # Beta 2
+  # New
+  - note: >
+      The initial implementation for funding has landed and is available on Github Releases
+      builds (and in the future also the f-droid version)
+    thunderbird_only: true
+    tag: new
+    group: 2
+
+  - note: Always show all folders in the manage folders screen
+    tag: new
+    group: 2
+
+  - note: Import accounts from Desktop via QR codes
+    tag: new
+    group: 2
+
+  - note: Removed folder display classes
+    tag: new
+    group: 2
+
+  - note: Added initial release build automation
+    tag: new
+    group: 2
+
+  - note: Temporarily removed telemetry while we improve user choice
+    thunderbird_only: true
+    tag: new
+    group: 2
+
   # Fixed
-  - note: Beta 2 bug fix
+  - note: Fixed a topcrash occurring with when removing accounts
     tag: fixed
-    issues: [111111]
+    group: 2
+
+  - note: Improve robustness of XML settings files, missing elements will be skipped
+    tag: fixed
+    group: 2
+
+  - note: Welcome text is now properly aligned
+    tag: fixed
+    group: 2
+
+  - note: Update support link to point to support.mozilla.org
+    tag: fixed
+    group: 2
+
+  - note: Resolve a few accessibility warnings from the pre-launch report
+    tag: fixed
+    group: 2
+
+  - note: Star button now has an accessible name
+    tag: fixed
+    group: 2
+
+  - note: Replaced deprecated kotlinOptions with compilerOptions
+    tag: fixed
+    group: 2
+
+  - note: Cleanup of gradle and build plugin
+    tag: fixed
+    group: 2
+
+  - note: Updated translations
+    tag: fixed
+    group: 2
+
+  # Unresolved
+  - note: >
+      The settings import will also show apps that do not yet support the settings import and
+      fail reading the settings
+    thunderbird_only: true
+    tag: unresolved
+    group: 2
+
+  - note: The drawer will not update when you change starred accounts
+    thunderbird_only: true
+    tag: unresolved
+    group: 2
+
+  - note: >
+      There are some issues importing more than one account which we will address for beta 3
+      (#8260). You'll notice this if you import from K-9 or use the new QR code import feature.
+    thunderbird_only: true
+    tag: unresolved
+    group: 2
+
+  - note: >
+      Thunderbird Desktop is not quite ready yet with the QR code feature. It will land in
+      Thunderbird Desktop Daily in the next few days.
+    thunderbird_only: true
+    tag: unresolved
     group: 2
 
   # Beta 3
   # New
-  - note: Support Thunderbird with our new in-app financial contribution feature (work in progress)
+  - note: >
+      Support Thunderbird with our new in-app financial contribution feature (work in progress)
     tag: new
     group: 3
 
@@ -58,3 +223,72 @@ notes:
   - note: Enforced email validation for better identity management
     tag: fixed
     group: 3
+
+  # Beta 4
+  # New
+  - note: >
+      Monthly financial contributions are now possible in the Google Play variant of this app.
+      Help us find out if it works today!
+      https://play.google.com/store/apps/details?id=net.thunderbird.android.beta
+    short_note: Monthly financial contributions are now possible—try it today!
+    tag: new
+    group: 4
+
+  - note: >
+      We've improved various parts of the release automation in order to get builds to you
+      faster
+    tag: new
+    group: 4
+
+  - note: >
+      The account selector is now shown by default, making it more apparent where the settings
+      can be found
+    short_note: Accounts shown by default for better access to settings
+    tag: new
+    group: 4
+
+  - note: Added translations for Norsk Nynorsk (thanks @niedzwiedz63 and @Baardi)
+    short_note: Added Norsk Nynorsk translations
+    tag: new
+    group: 4
+
+  - note: Added unread count to new folder drawer
+    short_note: Added unread count to new folder drawer
+    tag: new
+    group: 4
+
+  - note: Upgrade to new folder drawer from Thunderbird
+    tag: new
+    k9mail_only: true
+    group: 4
+
+  - note: First time user experience adjustments to make the new import settings more apparent
+    short_note: Improved first-time user experience for importing settings
+    tag: new
+    group: 4
+
+
+  # Fixed
+  - note: Shorten headers in onboarding and account setup screens to avoid wrapping
+    short_note: Shortened headers to prevent wrapping
+    tag: fixed
+    group: 4
+
+  - note: "The 'Bcc all messages to' setting value is correctly saved"
+    short_note: Correct saving of 'Bcc all messages' setting
+    tag: fixed
+    group: 4
+
+  - note: Better instructions when using the QR code import
+    short_note: Better QR code import instructions
+    thunderbird_only: true
+    tag: fixed
+    group: 4
+
+  - note: >
+      Cross-device and cross-app import is now limited to Thunderbird, as it was intended for a
+      way to migrate K-9 and Thunderbir Desktop users to Thunderbird for Android.
+    short_note: Cross-device import limited to Thunderbird
+    k9mail_only: true
+    tag: fixed
+    group: 4
