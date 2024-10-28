@@ -1,13 +1,14 @@
 release:
   release_date: '2024-09-30'
   text: |
-    **These notes apply to Thunderbird for Android version 8.0 betas**
+    **These notes apply to Thunderbird for Android version 8.0 betas, first released September 30th, 2024.**
 
   groups:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
   releases:
     - version: '8.0b1'
@@ -18,8 +19,11 @@ release:
       release_date: '2024-10-15'
     - version: '8.0b4'
       release_date: '2024-10-21'
+    - version: '8.0b5'
+      release_date: '2024-10-28'
 
 notes:
+  ## Beta 1
   # New
   - note: Thunderbird for Android branding is now available
     thunderbird_only: true
@@ -106,7 +110,7 @@ notes:
     group: 1
 
 
-  # Beta 2
+  ## Beta 2
   # New
   - note: >
       The initial implementation for funding has landed and is available on Github Releases
@@ -200,7 +204,7 @@ notes:
     tag: unresolved
     group: 2
 
-  # Beta 3
+  ## Beta 3
   # New
   - note: >
       Support Thunderbird with our new in-app financial contribution feature (work in progress)
@@ -224,7 +228,7 @@ notes:
     tag: fixed
     group: 3
 
-  # Beta 4
+  ## Beta 4
   # New
   - note: >
       Monthly financial contributions are now possible in the Google Play variant of this app.
@@ -232,6 +236,7 @@ notes:
       https://play.google.com/store/apps/details?id=net.thunderbird.android.beta
     short_note: Monthly financial contributions are now possible—try it today!
     tag: new
+    thunderbird_only: true
     group: 4
 
   - note: >
@@ -287,8 +292,97 @@ notes:
 
   - note: >
       Cross-device and cross-app import is now limited to Thunderbird, as it was intended for a
-      way to migrate K-9 and Thunderbir Desktop users to Thunderbird for Android.
+      way to migrate K-9 and Thunderbird Desktop users to Thunderbird for Android.
     short_note: Cross-device import limited to Thunderbird
     k9mail_only: true
     tag: fixed
     group: 4
+
+  ## Beta 5
+  # New
+  - note: >
+      The unread message colors have been updated to make it more apparent when a message is
+      unread.
+    short_note: Unread message colors are updated for better visibility
+    tag: new
+    group: 5
+
+  - note: >
+      We're now including a prompt to encourage users to make financial contributions. On beta,
+      the timing of the prompt is lower than it will be on release, so you have a chance to
+      test it.
+    short_note: >
+      You will be asked for a financial contribution once you've used the app for a while. Help
+      us continue active development on Thunderbird for Android!
+    thunderbird_only: true
+    tag: new
+    group: 5
+
+  - note: >
+      Added a thank you message to the funding experience, making it more obvious we are
+      thankful.
+    tag: new
+    group: 5
+
+  - note: >
+      When using the QR code import, encourage users to upgrade Thunderbird Desktop where the
+      feature has just landed.
+    short_note: QR code import now suggests upgrading Thunderbird Desktop
+    tag: new
+    group: 5
+
+  - note: >
+      A big thank you to @aindriu80 who took the Irish translation to 100% very quickly. Irish
+      is now available to all users.
+    short_note: Irish translation included and 100% complete
+    tag: new
+    group: 5
+
+
+  # Fixed
+  - note: Folder drawer is no longer too wide on some devices
+    short_note: Folder drawer is no longer too wide on some devices
+    tag: fixed
+    group: 5
+
+  - note: Non-system languages will properly apply in the language switcher.
+    tag: fixed
+    thunderbird_only: true
+    group: 5
+
+  - note: Updated Gmail OAuth client ids to make a future transition more seamless.
+    tag: fixed
+    group: 5
+
+  - note: Fixed a visual glitch in the account images in the sidebar.
+    tag: fixed
+    group: 5
+
+  - note: When exporting settings, the correct brand name is used in the filename.
+    tag: fixed
+    group: 5
+
+  - note: Make the "Support Thunderbird" menu item more consistent across applications.
+    tag: fixed
+    group: 5
+
+  - note: With a new icon, it is now more apparent how to initiate a server-side email search.
+    short_note: New icon clarifies how to start a server-side email search
+    tag: fixed
+    group: 5
+
+  - note: A few different developer efficiency and release automation changes.
+    tag: fixed
+    group: 5
+
+  - note: Lifecycle listener changes in hopes of reducing our user perceived crash rate.
+    tag: fixed
+    group: 5
+
+  - note: The website link has been updated to point to the new mobile landing page.
+    tag: fixed
+    group: 5
+
+  - note: Accessibility improvements for the save attachment button.
+    tag: fixed
+    group: 5
