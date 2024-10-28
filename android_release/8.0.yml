@@ -50,7 +50,7 @@ notes:
     tag: new
 
 
-  # Fixed
+  # Changed
   - note: Updated text color of read messages in the message list for better visibility.
     tag: changed
 
