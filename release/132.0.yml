@@ -1,0 +1,146 @@
+release:
+  release_date: '2024-10-29'
+  text: |
+    **Thunderbird version 132.0 is available for testing purposes only.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/132.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # New
+  - note: Added `mail.threadpane.table.horizontal_scroll` for horizontal threadpane scrolling
+    tag: new
+    bugs: [381821]
+  - note: Added checkbox to select/unselect all calendars in the calendar setup wizard
+    tag: new
+    bugs: [1733959]
+  - note: Export Thunderbird account settings to Thunderbird Mobile via QRCode
+    tag: new
+    bugs: [1919791, 1919798, 1919793, 1922683, 1922687, 1919799, 1919800, 1919805, 1922554,
+      1923668, 1923669]
+  - note: Packaged Thunderbird as a Debian package
+    tag: new
+    bugs: [1893603, 1911095]
+
+  # Changed
+  - note: Reinstated "All future events" to the calendar event filtering
+    tag: changed
+    bugs: [1919830]
+
+  # Fixed
+  - note: Repair folder could result in older messages showing wrong date and time
+    tag: fixed
+    bugs: [1911916]
+  - note: Thunderbird could crash on startup when syncing folder changes
+    tag: fixed
+    bugs: [1914794]
+  - note: Thunderbird could crash on startup
+    tag: fixed
+    bugs: [1922994]
+  - note: New profile creation caused console errors
+    tag: fixed
+    bugs: [1912675]
+  - note: Some faulty messages were downloaded and never stored
+    tag: fixed
+    bugs: [1923765]
+  - note: Clicking on an HTML button could cause Thunderbird to freeze
+    tag: fixed
+    bugs: [1879355]
+  - note: Images inside links could zoom when clicked instead of opening the link
+    tag: fixed
+    bugs: [1917278]
+  - note: Quick filter state was not reset when a special view was chosen
+    tag: fixed
+    bugs: [1918309]
+  - note: Applying column view to folder and children could break if folder error occurred
+    tag: fixed
+    bugs: [1872595]
+  - note: Drag and drop to collapsed folders resulted in incorrect collapsed state
+    tag: fixed
+    bugs: [1840484]
+  - note: Message list returned to selected message after action on another message
+    tag: fixed
+    bugs: [1917485]
+  - note: Messages could not be selected for dragging
+    tag: fixed
+    bugs: [1887518]
+  - note: Cards view "replies" button remained styled without new messages in thread
+    tag: fixed
+    bugs: [1920747]
+  - note: Could not import binary OpenPGP key file ending with whitespace
+    tag: fixed
+    bugs: [1921728]
+  - note: '"Remove All Shown" saved passwords deleted all logins if filtered without results'
+    tag: fixed
+    bugs: [601447]
+  - note: RSS feed with invalid hostname broke the RSS feed folder
+    tag: fixed
+    bugs: [1920339]
+  - note: New Account creation could fail to add SMTP server
+    tag: fixed
+    bugs: [1917074]
+  - note: OAuth2 not shown in "Authentication method" menulist for existing Exchange account
+    tag: fixed
+    bugs: [1915208]
+  - note: Long email addresses required horizontal scrolling to export accounts for mobile
+    tag: fixed
+    bugs: [1922859]
+  - note: Could not drag and drop multiple contacts from address book to destination fields
+    tag: fixed
+    bugs: [1913600]
+  - note: Thunderbird could crash when renaming a local folder while copying from IMAP
+    tag: fixed
+    bugs: [1581079]
+  - note: Messages could become corrupted during folder compaction
+    tag: fixed
+    bugs: [1720047, 1923541, 1923747]
+  - note: Delayed sending of message could fail with "DSN & Return Receipt" enabled
+    tag: fixed
+    bugs: [1914662]
+  - note: Delayed sending of message could fail when retrying copy to Sent folder
+    tag: fixed
+    bugs: [1898488]
+  - note: Thunderbird Flatpak install did not use a branded symbolic icon
+    tag: fixed
+    bugs: [1914381]
+  - note: Thunderbird update did not update language pack version until another restart
+    tag: fixed
+    bugs: [1911887]
+  - note: Removed the `webchannel.allowObject.urlWhitelist` preference
+    tag: fixed
+    bugs: [1916451]
+  - note: ICS calendar import could fail if it contained non-UTF-8 data
+    tag: fixed
+    bugs: [334657]
+  - note: Searching with "Find Events Pane" failed if an event did not have a title
+    tag: fixed
+    bugs: [1915153]
+  - note: Organizer email address for CalDAV calendar events could be incorrect
+    tag: fixed
+    bugs: [1587736]
+  - note: Global indexing failed when processing email with invalid calendar data
+    tag: fixed
+    bugs: [1916063]
+  - note: Changing `calendar.week.start` preference did not update calendar views
+    tag: fixed
+    bugs: [1918010]
+  - note: Calendar invitation could be missing dropdown icon on buttons
+    tag: fixed
+    bugs: [1922998]
+  - note: Searching events by Location, Description, or URL failed
+    tag: fixed
+    bugs: [1912710]
+  - note: Calendar event updates were not always sent to attendees
+    tag: fixed
+    bugs: [1877640]
+  - note: Calendar printing displayed a blank page
+    tag: fixed
+    bugs: [1916854]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1906593, 1909460, 1911119, 1914081, 1917034, 1918145, 1919471, 1919919]
