@@ -1,25 +1,67 @@
 release:
-  release_date: '2024-10-14'
+  release_date: '2024-10-30'
   text: |
-    **These notes apply to Thunderbird for Android version 8.0 released October, 14, 2024.**
+    **These notes apply to Thunderbird for Android version 8.0 released October 30th, 2024.**
 
   releases:
     - version: '8.0'
-      release_date: '2024-10-14'
+      release_date: '2024-10-30'
 
 notes:
-  - note: Beta 1 new feature
+  ## 8.0 release
+  # New
+  - note: Thunderbird for Android now looks like a Thunderbird!
+    short_note: Thunderbird for Android now looks like a Thunderbird!
+    thunderbird_only: true
     tag: new
-    issues: [111111]
-  - note: Beta 1 bug fix
-    tag: fixed
-    issues: [111111]
-  - note: Beta 2 bug fix
-    tag: fixed
-    issues: [111111]
-  - note: Beta 3 changed
+
+  - note: New Material 3 folder drawer gives Thunderbird a fresh new look.
+    short_note: New folder drawer design.
+    tag: new
+
+  - note: >
+      Migrate your settings from K-9 Mail to Thunderbird using an in-app settings import.
+    thunderbird_only: true
+    short_note: Migrate settings from K-9 Mail and Thunderbird Desktop within the app.
+    tag: new
+
+  - note: >
+      Migrate your settings from Thunderbird Desktop to Thunderbird for Android using QR codes.
+    thunderbird_only: true
+    tag: new
+
+  - note: >
+      You can make financial contributions via Google Play in-app purchases (play store
+      variant), or opening our fundraising page (foss variant). Support Thunderbird today!
+    short_note: >
+      Thunderbird is funded by users just like you. Contribute today, find the link in the
+      settings.
+    thunderbird_only: true
+    tag: new
+
+  - note: Updated OAuth support for Fastmail and various other providers.
+    tag: new
+
+  - note: Enhanced folder management, removed folder display and push classes.
+    short_note: Simplified folder management by revising display and push classes.
+    tag: new
+
+  - note: Updated translations for multiple languages, including Norsk Nynorsk and Irish.
+    tag: new
+
+
+  # Changed
+  - note: Updated text color of read messages in the message list for better visibility.
     tag: changed
-    issues: [111111]
-  - note: Beta 3 bug fix
-    tag: fixed
-    issues: [111111]
+
+  - note: A number of accessibility improvements when using Talkback.
+    tag: changed
+
+  - note: Addressed crashes in account management, crypto provider dialogs, and QR code import.
+    tag: changed
+
+  # Unresolved
+  - note: >
+      We are aware of user feedback from the beta list on the new folder drawer and seek to
+      make improvements in upcoming releases.
+    tag: unresolved
