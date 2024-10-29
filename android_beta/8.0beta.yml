@@ -9,6 +9,7 @@ release:
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
+    - 'Fixed in beta 6'
 
   releases:
     - version: '8.0b1'
@@ -20,6 +21,8 @@ release:
     - version: '8.0b4'
       release_date: '2024-10-21'
     - version: '8.0b5'
+      release_date: '2024-10-28'
+    - version: '8.0b6'
       release_date: '2024-10-28'
 
 notes:
@@ -387,3 +390,7 @@ notes:
   - note: Accessibility improvements for the save attachment button.
     tag: fixed
     group: 5
+
+  - note: Test
+    tag: fixed
+    group: 6
