@@ -328,6 +328,7 @@ notes:
       When using the QR code import, encourage users to upgrade Thunderbird Desktop where the
       feature has just landed.
     short_note: QR code import now suggests upgrading Thunderbird Desktop
+    thunderbird_only: true
     tag: new
     group: 5
 
