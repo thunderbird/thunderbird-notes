@@ -144,3 +144,5 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1906593, 1909460, 1911119, 1914081, 1917034, 1918145, 1919471, 1919919]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird132)'
+    tag: fixed
