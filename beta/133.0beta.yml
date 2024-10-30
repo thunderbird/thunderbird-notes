@@ -1,0 +1,109 @@
+release:
+  release_date: '2024-10-30'
+  text: |
+    **These notes apply to Thunderbird version 133 beta 1 released October 30, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Support dark reader for the message pane
+    tag: new
+    bugs: [1715361]
+
+  # Changed
+  - note: Display junk state and allow toggling it from top of message context menu
+    tag: changed
+    bugs: [1923391]
+  - note: Subscribe/Unsubscribe buttons were removed from the IMAP subscribe dialog
+    tag: changed
+    bugs: [1710319]
+  - note: Removed obsolete preference `extensions.overlayloader.loglevel`
+    tag: changed
+    bugs: [1901705]
+
+  # Fixed
+  - note: Fixed startup crash related to mailbox parsing
+    tag: fixed
+    bugs: [1907691, 1921739]
+  - note: Enabling "Show Folder Size" on Maildir profile could render Thunderbird unusable
+    tag: fixed
+    bugs: [1926279]
+  - note: Folder compaction was not abandoned on shutdown
+    tag: fixed
+    bugs: [1924918]
+  - note: Recently deleted messages could become undeleted if message compaction failed
+    tag: fixed
+    bugs: [1924927]
+  - note: Total message count for favorite folders did not work consistently
+    tag: fixed
+    bugs: [1924356]
+  - note: Collapsed NNTP thread incorrectly indicated there were unread messages
+    tag: fixed
+    bugs: [520582]
+  - note: Disabling "Grouped by sort" while group header selected could break message pane
+    tag: fixed
+    bugs: [1924728]
+  - note: Switching from "All", "Unread", and "Threads with unread" did not work
+    tag: fixed
+    bugs: [1921618]
+  - note: Navigating to next unread message did not wait for all messages to be loaded
+    tag: fixed
+    bugs: [1842419]
+  - note: Could not open attached file in a MIME encrypted message
+    tag: fixed
+    bugs: [1924637]
+  - note: Unable to send an unencrypted response to an OpenPGP encrypted message
+    tag: fixed
+    bugs: [1911080]
+  - note: Updating criteria of a saved search resulted in poor search performance
+    tag: fixed
+    bugs: [1923585]
+  - note: Drag and drop of OS folders as attachments was not prevented
+    tag: fixed
+    bugs: [188598]
+  - note: Opening the Account Manager produced console error
+    tag: fixed
+    bugs: [1923867]
+  - note: Account creation "Setup Documentation" link was broken
+    tag: fixed
+    bugs: [1925493]
+  - note: New mail notification was not hidden after reading the new message
+    tag: fixed
+    bugs: [1920077]
+  - note: Windows "Notifications & actions" did not display the Thunderbird icon
+    tag: fixed
+    bugs: [1922961]
+  - note: '"Empty trash on exit" and "Expunge inbox on exit" did not always work'
+    tag: fixed
+    bugs: [1896545]
+  - note: Message could disappear after moving from IMAP folder followed by Undo and Redo
+    tag: fixed
+    bugs: [1898706]
+  - note: Calendar display times could be incorrect
+    tag: fixed
+    bugs: [1926836]
+  - note: Selected calendar day did not move forward at midnight
+    tag: fixed
+    bugs: [1757341]
+  - note: Could not drag all-day events from one day to another in week view
+    tag: fixed
+    bugs: [1922944]
+  - note: Calendar could show mixed languages in month display
+    tag: fixed
+    bugs: [1917411]
+  - note: Calendar displayed incorrect first day of the week
+    tag: fixed
+    bugs: [1921658]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1857413, 1919782, 1922934, 1924437]
