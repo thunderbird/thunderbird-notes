@@ -21,15 +21,15 @@ notes:
     bugs: [1715361]
 
   # Changed
+  - note: Removed obsolete preference `extensions.overlayloader.loglevel`
+    tag: changed
+    bugs: [1901705]
   - note: Display junk state and allow toggling it from top of message context menu
     tag: changed
     bugs: [1923391]
   - note: Subscribe/Unsubscribe buttons were removed from the IMAP subscribe dialog
     tag: changed
     bugs: [1710319]
-  - note: Removed obsolete preference `extensions.overlayloader.loglevel`
-    tag: changed
-    bugs: [1901705]
 
   # Fixed
   - note: Fixed startup crash related to mailbox parsing
@@ -71,6 +71,9 @@ notes:
   - note: Drag and drop of OS folders as attachments was not prevented
     tag: fixed
     bugs: [188598]
+  - note: Unable to generate QR codes when exporting to mobile in some cases
+    tag: fixed
+    bugs: [1928114]
   - note: Opening the Account Manager produced console error
     tag: fixed
     bugs: [1923867]
@@ -89,6 +92,9 @@ notes:
   - note: Message could disappear after moving from IMAP folder followed by Undo and Redo
     tag: fixed
     bugs: [1898706]
+  - note: Global database did not work immediately after update to Thunderbird 133
+    tag: fixed
+    bugs: [1928058]
   - note: Calendar display times could be incorrect
     tag: fixed
     bugs: [1926836]
