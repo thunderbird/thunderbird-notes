@@ -1,7 +1,7 @@
 release:
   release_date: '2024-11-04'
   text: |
-    **These notes apply to Thunderbird version 133 beta 1 released November, 4, 2024.**
+    **These notes apply to Thunderbird version 133 beta 2 released November, 6, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Changed and fixed in beta 2'
 
 notes:
   # New
@@ -113,3 +114,20 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1857413, 1919782, 1922934, 1924437]
+
+  # Beta 2
+  # Changed
+  - note: Increased the auto-compaction threshold to reduce the frequency of compaction
+    tag: changed
+    bugs: [1927656]
+    group: 2
+
+  # Fixed
+  - note: QR codes were not scannable by Android app when using most high-contrast themes
+    tag: fixed
+    bugs: [1928234]
+    group: 2
+  - note: Operating system reauthentication was missing when exporting QR codes for mobile
+    tag: fixed
+    bugs: [1928232]
+    group: 2
