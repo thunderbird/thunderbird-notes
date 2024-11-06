@@ -1,0 +1,31 @@
+release:
+  release_date: '2024-10-30'
+  text: |
+    **These notes apply to Thunderbird for Android version 8.1 released November 6th, 2024.**
+
+  releases:
+    - version: '8.1'
+      release_date: '2024-11-06'
+
+notes:
+  ## 8.1 release
+  # New
+  - note: >
+      Thunderbird's active development is fully funded by financial contributions from our users. If
+      you're enjoying Thunderbird or believe in our mission, please help support it. In this version
+      we will ask you for your support once you've had the chance to actively use Thunderbird for a
+      while. We're doing our best not to interrupt your work, but it won't be avoidable in all
+      situations. If you don't want to wait,
+      [head over to our contributions page](https://www.thunderbird.net/?form=tfa&utm_campaign=android_release_notes_appeal&utm_medium=web&utm_source=thunderbird_android_github)
+    short_note: >
+      Thunderbird's active development is fully funded by financial contributions from our users. If
+      you're enjoying Thunderbird or believe in our mission, please help support it. In this version
+      we will ask you for your support once you've had the chance to actively use Thunderbird for a
+      while.
+    thunderbird_only: true
+    tag: new
+
+  # Fixed
+  - note: We've fixed one of our top crashes to give you a more stable experience
+    short_note: We've fixed one of our top crashes to give you a more stable experience
+    tag: fixed
