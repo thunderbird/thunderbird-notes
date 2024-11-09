@@ -47,3 +47,5 @@ notes:
   - note: Drop-downs may not work in some places
     tag: fixed
     bugs: [1928252]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.4.3)'
+    tag: fixed
