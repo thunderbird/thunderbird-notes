@@ -17,7 +17,7 @@ release:
 
 notes:
   # Changed
-  - note: Increased the auto-compaction threshold to reduce the frequency of compaction
+  - note: Increased the auto-compaction threshold to reduce frequency of compaction
     tag: changed
     bugs: [1927656]
 

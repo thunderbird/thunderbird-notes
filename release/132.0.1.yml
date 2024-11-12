@@ -1,7 +1,7 @@
 release:
   release_date: '2024-11-12'
   text: |
-    **Thunderbird version 132.0 is available for testing purposes only.**
+    **Thunderbird version 132.0.1 is available for testing purposes only.**
 
     **System Requirements:** [Details](/en-US/thunderbird/132.0/system-requirements/)
 
@@ -13,7 +13,7 @@ release:
 
 notes:
   # Changed
-  - note: Increased the auto-compaction threshold to reduce the frequency of compaction
+  - note: Increased the auto-compaction threshold to reduce frequency of compaction
     tag: changed
     bugs: [1927656]
 
