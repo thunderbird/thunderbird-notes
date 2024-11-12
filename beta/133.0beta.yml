@@ -161,9 +161,9 @@ notes:
   # Fixed
   - note: View -> Folders had duplicate F access keys
     tag: fixed
-    bugs: [1924291]
+    bugs: [1929925]
     group: 4
   - note: Primary password prompt cancellation during mobile export was confusing
     tag: fixed
-    bugs: [1928114]
+    bugs: [1928950]
     group: 4
