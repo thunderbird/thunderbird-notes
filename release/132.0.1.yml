@@ -1,0 +1,46 @@
+release:
+  release_date: '2024-11-12'
+  text: |
+    **Thunderbird version 132.0 is available for testing purposes only.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/132.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # Changed
+  - note: Increased the auto-compaction threshold to reduce the frequency of compaction
+    tag: changed
+    bugs: [1927656]
+
+  # Fixed
+  - note: Folder corruption could cause Thunderbird to freeze and become unusable
+    tag: fixed
+    bugs: [1924291]
+  - note: Folder compaction was not abandoned on shutdown
+    tag: fixed
+    bugs: [1924918]
+  - note: Message corruption could be propagated when reading mbox
+    tag: fixed
+    bugs: [1926810]
+  - note: Recently deleted messages could become undeleted if message compaction failed
+    tag: fixed
+    bugs: [1924927]
+  - note: Folder compaction did not clean up on failure
+    tag: fixed
+    bugs: [1923526]
+  - note: Unable to generate QR codes when exporting to mobile in some cases
+    tag: fixed
+    bugs: [1928114]
+  - note: Operating system reauthentication was missing when exporting QR codes for mobile
+    tag: fixed
+    bugs: [1928232]
+  - note: Could not drag all-day events from one day to another in week view
+    tag: fixed
+    bugs: [1922944]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird132.0.1)'
+    tag: fixed
