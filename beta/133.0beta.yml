@@ -1,7 +1,7 @@
 release:
   release_date: '2024-11-04'
   text: |
-    **These notes apply to Thunderbird version 133 beta 3 released November, 8, 2024.**
+    **These notes apply to Thunderbird version 133 beta 4 released November, 13, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Changed and fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -155,3 +156,14 @@ notes:
     tag: fixed
     bugs: [1928252]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: View -> Folders had duplicate F access keys
+    tag: fixed
+    bugs: [1924291]
+    group: 4
+  - note: Primary password prompt cancellation during mobile export was confusing
+    tag: fixed
+    bugs: [1928114]
+    group: 4
