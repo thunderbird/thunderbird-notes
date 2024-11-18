@@ -1,7 +1,7 @@
 release:
   release_date: '2024-11-04'
   text: |
-    **These notes apply to Thunderbird version 133 beta 5 released November, 18, 2024.**
+    **These notes apply to Thunderbird version 133 beta 5 released November, 19, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -171,6 +171,18 @@ notes:
 
   # Beta 5
   # Fixed
+  - note: IMAP could crash when reading cached messages
+    tag: fixed
+    bugs: [1931508]
+    group: 5
+  - note: Messages corrupted by folder compaction were only fixed by user intervention
+    tag: fixed
+    bugs: [1929105]
+    group: 5
+  - note: Reading a message from past the end of an mbox file did not cause an error
+    tag: fixed
+    bugs: [1931258]
+    group: 5
   - note: Add-ons adding columns to the message list could fail and cause display issue
     tag: fixed
     bugs: [1909621]
