@@ -1,0 +1,100 @@
+release:
+  release_date: '2024-11-19'
+  text: >
+    **These notes apply to Thunderbird for Android version 9.0 betas,
+    first released November 19th, 2024**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '9.0b1'
+      release_date: '2024-11-19'
+
+notes:
+  ## Beta 1
+  # New
+  - note: Account initials now use the display name, improving customizability
+    short_note: Account initials now use the display name, improving customizability
+    tag: new
+    group: 1
+
+  - note: Account icons remain in the same position when selected
+    short_note: Account icons remain in the same position when selected
+    tag: new
+    group: 1
+
+  - note: Funding enabled in K-9 Mail (string changes to follow in the next beta)
+    tag: new
+    k9mail_only: true
+    group: 1
+
+  # Changed
+  - note: >
+      The IMAP ID command uses "Thunderbird for Android" for better distinction from
+      Thunderbird Desktop
+    tag: changed
+    group: 1
+
+  - note: Unified inbox enabled only when multiple accounts are configured
+    short_note: Unified inbox enabled only when multiple accounts are configured
+    tag: changed
+    group: 1
+
+  - note: Listing screenshots updated to remove calendar icon from mockup
+    tag: changed
+    group: 1
+
+  - note: Listing icon sizes standardized across beta and release versions
+    tag: changed
+    group: 1
+
+
+  # Fixed
+  - note: Push service now starts reliably when expected
+    short_note: Push service now starts reliably when expected
+    tag: fixed
+    group: 1
+
+  - note: >
+      Correct default delete message action for QR-imported accounts. Please check your fetch
+      mail settings!
+    short_note: >
+      Correct default delete message action for QR-imported accounts. Please check your fetch
+      mail settings!
+    tag: fixed
+    group: 1
+
+  - note: Release infrastructure and repository README improved
+    tag: fixed
+    group: 1
+
+  - note: Text in all button variants now center-aligned
+    tag: fixed
+    group: 1
+
+  - note: Clarify for localizers that the 99+ or 1k+ text should be very short
+    tag: fixed
+    group: 1
+
+  - note: Multiple crashes addressed
+    tag: fixed
+    group: 1
+
+  - note: Ignore invalid DNS repsonses while searching for server settings during account setup
+    tag: fixed
+    group: 1
+
+  - note: >
+      Retrying after a failure to fetch folders during account setup no longer crashes the app
+    tag: fixed
+    group: 1
+
+  - note: Folder drawer updates properly on account configuration changes
+    short_note: Folder drawer updates properly on account configuration changes
+    tag: fixed
+    group: 1
+
+  - note: Startup differentiates between light and dark themes
+    tag: fixed
+    group: 1
