@@ -24,7 +24,7 @@ notes:
     bugs: [1925389]
 
   # Fixed
-  - note: New mail notification could show for the wrong the wrong folder, causing repeated alerts
+  - note: New mail notification could show for the wrong folder, causing repeated alerts
     tag: fixed
     bugs: [1926462]
   - note: Subscribe window "Show items that contain" should not have been shown for IMAP
