@@ -1,0 +1,68 @@
+release:
+  release_date: '2024-11-26'
+  text: |
+    **These notes apply to Thunderbird version 134 beta 1 released November, 26, 2024.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Thunderbird now has a notification system for real-time desktop alerts
+    tag: new
+    bugs: [1922551]
+  - note: Add end of year donation appeal
+    tag: new
+    bugs: [1925389]
+
+  # Fixed
+  - note: New mail notification could show for the wrong the wrong folder, causing repeated alerts
+    tag: fixed
+    bugs: [1926462]
+  - note: Subscribe window "Show items that contain" should not have been shown for IMAP
+    tag: fixed
+    bugs: [1630286]
+  - note: Downloading message headers from a newsgroup could cause a hang
+    tag: fixed
+    bugs: [1931661]
+  - note: POP3 inbox could show new mail with no subject, no sender, and date 1970-01-01
+    tag: fixed
+    bugs: [1911477]
+  - note: '"mailto:" links did not apply the compose format of the current identity'
+    tag: fixed
+    bugs: [550414]
+  - note: Dragging embedded images from a message to a compose window was not possible
+    tag: fixed
+    bugs: [1930447]
+  - note: Authentication failure of AUTH PLAIN or AUTH LOGIN did not fall back to USERPASS
+    tag: fixed
+    bugs: [1928026]
+  - note: APOP authenication for POP3 did not prompt for corrected password
+    tag: fixed
+    bugs: [1928803]
+  - note: XMPP chat did not display messages sent inside a CDATA element
+    tag: fixed
+    bugs: [1929011]
+  - note: Release channel incorrectly opened whatsnew page
+    tag: fixed
+    bugs: [1928399]
+  - note: Today pane agenda sometimes scrolled for no apparent reason
+    tag: fixed
+    bugs: [1930588]
+  - note: Selecting a display option in View -> Tasks did not apply in the Task interface
+    tag: fixed
+    bugs: [1927760]
+  - note: CalDAV calendars without offline support could degrade start-up performance
+    tag: fixed
+    bugs: [1933099]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1924047, 1927871, 1927379, 1930589, 1930363]
