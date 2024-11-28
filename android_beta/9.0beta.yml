@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '9.0b1'
       release_date: '2024-11-19'
+    - version: '9.0b2'
+      release_date: '2024-11-28'
 
 notes:
   ## Beta 1
@@ -98,3 +101,30 @@ notes:
   - note: Startup differentiates between light and dark themes
     tag: fixed
     group: 1
+
+  ## Beta 2
+  # New
+  - note: >
+      K-9 Mail Needs Your Support! You can now support development with financial contributions
+      via in-app purchases (Google Play variant) or through our fundraising page (FOSS
+      variant).
+    short_note: >
+      K-9 Mail Needs Your Support! You can now support development with financial contributions
+      via in-app purchases (Google Play variant) or through our fundraising page (FOSS
+      variant).
+    tag: new
+    k9mail_only: true
+    group: 2
+
+  - note: Help text linking to support page added for Gmail login issues
+    short_note: Help text linking to support page added for Gmail login issues
+    tag: new
+    group: 2
+
+  # Changed
+  - note: Funding text updated to be more engaging and appealing
+    short_note: Funding text updated to be more engaging and appealing
+    tag: changed
+    group: 2
+
+
