@@ -1,7 +1,7 @@
 release:
   release_date: '2024-11-26'
   text: |
-    **These notes apply to Thunderbird version 134 beta 1 released November, 26, 2024.**
+    **These notes apply to Thunderbird version 134 beta 2 released December, 2, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -66,3 +67,10 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1924047, 1927871, 1927379, 1930589, 1930363]
+
+  # Beta 2
+  # Fixed
+  - note: In-app notification messages did not display correctly in dark mode
+    tag: fixed
+    bugs: [1933509]
+    group: 2
