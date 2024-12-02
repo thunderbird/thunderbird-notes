@@ -18,7 +18,7 @@ release:
 notes:
   # New
   - note: Add end of year donation appeal
-    tag: fixed
+    tag: new
     bugs: [1925389]
 
   # Fixed
