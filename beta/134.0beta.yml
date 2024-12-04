@@ -1,7 +1,7 @@
 release:
   release_date: '2024-11-26'
   text: |
-    **These notes apply to Thunderbird version 134 beta 2 released December, 2, 2024.**
+    **These notes apply to Thunderbird version 134 beta 3 released December, 4, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -74,3 +75,18 @@ notes:
     tag: fixed
     bugs: [1933509]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: In-app notification close button alignment not consistent across platforms
+    tag: fixed
+    bugs: [1934756]
+    group: 3
+  - note: Message list performance slow when many updates happened at once
+    tag: fixed
+    bugs: [1933104]
+    group: 3
+  - note: Large virtual folders could be very slow
+    tag: fixed
+    bugs: [1830145]
+    group: 3
