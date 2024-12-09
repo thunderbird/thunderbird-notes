@@ -15,14 +15,12 @@ notes:
       via in-app purchases (Google Play variant) or through our fundraising page (FOSS
       variant).
     short_note: >
-      K-9 Mail Needs Your Support! You can now support development with financial contributions
-      via in-app purchases (Google Play variant) or through our fundraising page (FOSS
-      variant).
+      You can now support K-9 Mail development with financial contributions.
     tag: new
     k9mail_only: true
 
   - note: Account initials now use the display name, improving customizability
-    short_note: Account initials now use the display name, improving customizability
+    short_note: Account initials now use the display name
     tag: new
 
   - note: Account icons remain in the same position when selected
@@ -47,10 +45,6 @@ notes:
     short_note: Unified inbox enabled only when multiple accounts are configured
     tag: changed
 
-  - note: Funding text updated to be more engaging and appealing
-    short_note: Funding text updated to be more engaging and appealing
-    tag: changed
-
   # Fixed
   - note: Push service now starts reliably when expected
     short_note: Push service now starts reliably when expected
@@ -60,8 +54,7 @@ notes:
       Correct default delete message action for QR-imported accounts. Please check your fetch
       mail settings!
     short_note: >
-      Correct default delete message action for QR-imported accounts. Please check your fetch
-      mail settings!
+      Correct default delete message action for QR-imported accounts.
     tag: fixed
 
   - note: Multiple crashes addressed
