@@ -1,0 +1,75 @@
+release:
+  release_date: '2024-12-09'
+  text: |
+    **These notes apply to Thunderbird for Android version 8.2 released December 9th, 2024.**
+
+  releases:
+    - version: '8.2'
+      release_date: '2024-12-09'
+
+notes:
+  ## 8.2 release
+  # New
+  - note: >
+      K-9 Mail Needs Your Support! You can now support development with financial contributions
+      via in-app purchases (Google Play variant) or through our fundraising page (FOSS
+      variant).
+    short_note: >
+      K-9 Mail Needs Your Support! You can now support development with financial contributions
+      via in-app purchases (Google Play variant) or through our fundraising page (FOSS
+      variant).
+    tag: new
+    k9mail_only: true
+
+  - note: Account initials now use the display name, improving customizability
+    short_note: Account initials now use the display name, improving customizability
+    tag: new
+
+  - note: Account icons remain in the same position when selected
+    short_note: Account icons remain in the same position when selected
+    tag: new
+
+  - note: Funding enabled in K-9 Mail (string changes to follow in the next beta)
+    tag: new
+    k9mail_only: true
+
+  - note: Help text linking to support page added for Gmail login issues
+    short_note: Help text linking to support page added for Gmail login issues
+    tag: new
+
+  # Changed
+  - note: >
+      The IMAP ID command uses "Thunderbird for Android" for better distinction from
+      Thunderbird Desktop
+    tag: changed
+
+  - note: Unified inbox enabled only when multiple accounts are configured
+    short_note: Unified inbox enabled only when multiple accounts are configured
+    tag: changed
+
+  - note: Funding text updated to be more engaging and appealing
+    short_note: Funding text updated to be more engaging and appealing
+    tag: changed
+
+  # Fixed
+  - note: Push service now starts reliably when expected
+    short_note: Push service now starts reliably when expected
+    tag: fixed
+
+  - note: >
+      Correct default delete message action for QR-imported accounts. Please check your fetch
+      mail settings!
+    short_note: >
+      Correct default delete message action for QR-imported accounts. Please check your fetch
+      mail settings!
+    tag: fixed
+
+  - note: Multiple crashes addressed
+    tag: fixed
+
+  - note: Folder drawer updates properly on account configuration changes
+    short_note: Folder drawer updates properly on account configuration changes
+    tag: fixed
+
+  - note: Startup differentiates between light and dark themes
+    tag: fixed
