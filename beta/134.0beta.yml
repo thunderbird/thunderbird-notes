@@ -1,7 +1,7 @@
 release:
   release_date: '2024-11-26'
   text: |
-    **These notes apply to Thunderbird version 134 beta 3 released December, 4, 2024.**
+    **These notes apply to Thunderbird version 134 beta 4 released December, 11, 2024.**
 
     **System Requirements:** [Details](/en-US/thunderbird/130.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -90,3 +91,18 @@ notes:
     tag: fixed
     bugs: [1830145]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Clicking the context menu "Reply" button resulted in "Reply-All"
+    tag: fixed
+    bugs: [1935883]
+    group: 4
+  - note: macOS shortcut CMD+1 did not restore the main window when it was minimized
+    tag: fixed
+    bugs: [1857953]
+    group: 4
+  - note: Thunderbird could crash on startup when using POP3
+    tag: fixed
+    bugs: [1934417]
+    group: 4
