@@ -1,5 +1,5 @@
 release:
-  release_date: '2024-12-10'
+  release_date: '2024-12-11'
   text: |
     **For help and a quick start on Thunderbird 128, see
     [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
@@ -17,5 +17,26 @@ release:
 
 notes:
   # Fixed
+  - note: Large virtual folders could be very slow
+    tag: fixed
+    bugs: [1830145]
+  - note: Message could disappear after moving from IMAP folder followed by Undo and Redo
+    tag: fixed
+    bugs: [1898706]
+  - note: XMPP chat did not display messages sent inside a CDATA element
+    tag: fixed
+    bugs: [1929011]
+  - note: Selected calendar day did not move forward at midnight
+    tag: fixed
+    bugs: [1757341]
+  - note: Today pane agenda sometimes scrolled for no apparent reason
+    tag: fixed
+    bugs: [1930588]
+  - note: CalDAV calendars without offline support could degrade start-up performance
+    tag: fixed
+    bugs: [1933099]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1913807, 1930589]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.5.2)'
     tag: fixed
