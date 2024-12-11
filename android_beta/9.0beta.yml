@@ -13,6 +13,8 @@ release:
       release_date: '2024-11-19'
     - version: '9.0b2'
       release_date: '2024-11-28'
+    - version: '9.0b3'
+      release_date: '2024-12-11'
 
 notes:
   ## Beta 1
@@ -127,4 +129,21 @@ notes:
     tag: changed
     group: 2
 
+  ## Beta 3
+  # New
+  - note: Hyperlink added to Thunderbird website on funding page
+    short_note: Hyperlink added to Thunderbird website on funding page
+    tag: new
+    group: 3
 
+  # Changed
+  - note: Use autoconfig server after MX lookup for email providers
+    short_note: Use autoconfig server after MX lookup for email providers
+    tag: changed
+    group: 3
+
+  - note: Messages are now always marked as read during archiving
+    short_note: Messages are now always marked as read during archiving
+    tag: changed
+    thunderbird_only: true
+    group: 3
