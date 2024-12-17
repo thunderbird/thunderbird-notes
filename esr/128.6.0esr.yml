@@ -1,0 +1,42 @@
+release:
+  release_date: '2025-01-07'
+  text: |
+    **For help and a quick start on Thunderbird 128, see
+    [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
+
+    **For more on all the new features in Thunderbird 128, see
+    [What’s New in Thunderbird 128](https://www.thunderbird.net/thunderbird/128.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/128.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0esr
+
+notes:
+  # Fixed
+  - note: macOS shortcut CMD+1 did not restore the main window when it was minimized
+    tag: fixed
+    bugs: [1857953]
+  - note: Clicking the context menu "Reply" button resulted in "Reply-All"
+    tag: fixed
+    bugs: [1935883]
+  - note: Switching from "All", "Unread", and "Threads with unread" did not work
+    tag: fixed
+    bugs: [1921618]
+  - note: Downloading message headers from a newsgroup could cause a hang
+    tag: fixed
+    bugs: [1931661]
+  - note: Message list performance slow when many updates happened at once
+    tag: fixed
+    bugs: [1933104]
+  - note: '"mailto:" links did not apply the compose format of the current identity'
+    tag: fixed
+    bugs: [550414]
+  - note: Authentication failure of AUTH PLAIN or AUTH LOGIN did not fall back to USERPASS
+    tag: fixed
+    bugs: [1928026]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.6)'
+    tag: fixed
