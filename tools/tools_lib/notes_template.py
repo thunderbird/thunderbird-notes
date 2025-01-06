@@ -72,7 +72,7 @@ TMPL_BETA_TEXT = """**These notes apply to Thunderbird version {ver_major} beta 
 - Linux: GTK+ 3.14 or higher
 """
 
-TMPL_RELEASE_TEXT = """**These notes apply to Thunderbird version {ver_major}.0 released {human_date}.**
+TMPL_RELEASE_TEXT = """**Thunderbird version {ver_major}.0 is available for testing purposes only.**
 
 **System Requirements:** [Details](/en-US/thunderbird/{ver_major}.0/system-requirements/)
 

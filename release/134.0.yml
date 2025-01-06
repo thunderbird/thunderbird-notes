@@ -1,7 +1,6 @@
 release:
   release_date: '2025-01-07'
   text: |
-    **These notes apply to Thunderbird version 134.0 released January 7, 2025.**
     **Thunderbird version 134.0 is available for testing purposes only.**
 
     **System Requirements:** [Details](/en-US/thunderbird/134.0/system-requirements/)
