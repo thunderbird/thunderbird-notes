@@ -18,7 +18,7 @@ When a new major version of Thunderbird is released, such as Thunderbird
 the past year excluding bugs that were uplifted to the old stable release.
 
 `major_esr_notes.py` will produce a YAML file that's a decent starting
-point. The header will come from `tools_lib/notes_template.py:TMPL_RELEASE_TEXT`.
+point. The header will come from `tools_lib/notes_template.py:TMPL_RELEASES_TEXT`.
 For a new major version, replace `import_system_requirements` will a full
 `system_requirements` field. The requirements themselves are based on
 what [Firefox publishes](https://www.mozilla.org/en-US/firefox/115.0a1/system-requirements/).

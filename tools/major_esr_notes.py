@@ -175,7 +175,7 @@ def load_notes(previous, current, release_date):
                 new_notes.append(rel_note)
 
     new_yaml = yaml.load(notes_template.TMPL_HEADER)
-    new_yaml["release"]["text"] = notes_template.TMPL_RELEASE_TEXT[current]
+    new_yaml["release"]["text"] = notes_template.TMPL_RELEASES_TEXT[current]
     new_yaml["release"][
         "import_system_requirements"
     ] = notes_template.REQUIREMENTS_IMPORT[current]

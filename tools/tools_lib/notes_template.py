@@ -72,10 +72,20 @@ TMPL_BETA_TEXT = """**These notes apply to Thunderbird version {ver_major} beta 
 - Linux: GTK+ 3.14 or higher
 """
 
-TMPL_RELEASE_TEXT = {
+TMPL_RELEASE_TEXT = """**These notes apply to Thunderbird version {ver_major}.0 released {human_date}.**
+
+**System Requirements:** [Details](/en-US/thunderbird/{ver_major}.0/system-requirements/)
+
+- Windows: Windows 10 or later
+- Mac: macOS 10.15 or later
+- Linux: GTK+ 3.14 or higher
+"""
+
+TMPL_RELEASES_TEXT = {
     "102": TMPL_102_TEXT,
     "115": TMPL_115_TEXT,
     "128": TMPL_128_TEXT,
+    "release": TMPL_RELEASE_TEXT,
     "beta": TMPL_BETA_TEXT,
 }
 
