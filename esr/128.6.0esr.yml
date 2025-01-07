@@ -17,6 +17,12 @@ release:
 
 notes:
   # Fixed
+  - note: New mail notification was not hidden after reading the new message
+    tag: fixed
+    bugs: [1920077]
+  - note: New mail notification could show for the wrong folder, causing repeated alerts
+    tag: fixed
+    bugs: [1926462]
   - note: macOS shortcut CMD+1 did not restore the main window when it was minimized
     tag: fixed
     bugs: [1857953]
