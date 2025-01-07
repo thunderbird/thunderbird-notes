@@ -17,18 +17,6 @@ jobs:
           fetch-depth: 0
           path: notes
 
-      - name: Checkout render-notes.py
-        uses: actions/checkout@v4
-        with:
-          repository: thunderbird/thunderbird-android
-          sparse-checkout: |
-            scripts/render-notes.py
-            scripts/templates/changelog_master.xml
-            scripts/templates/changelog.txt
-            scripts/templates/changelog_long.txt
-          sparse-checkout-cone-mode: false
-          path: render
-
       - name: Python requirements
         run: |
           pip install requests pyyaml jinja2
@@ -44,18 +32,12 @@ jobs:
           for file in $BETA_FILES
           do
             echo "## $file" | tee -a $GITHUB_STEP_SUMMARY
-            echo "### net.thunderbird.android.beta" | tee -a $GITHUB_STEP_SUMMARY
 
             BETA_NUMBER=$(yq '.release.groups | length' $file)
             RELEASE_NUMBER=$(echo $file | sed -E 's/[^0-9]*([0-9]+\.[0-9]+).*/\1/')
 
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p net.thunderbird.android.beta ${RELEASE_NUMBER}b${BETA_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
-            echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-
-            echo "### com.fsck.k9" | tee -a $GITHUB_STEP_SUMMARY
-            echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p com.fsck.k9 ${RELEASE_NUMBER}b${BETA_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
+            python ./tools/android_notes_length.py ${RELEASE_NUMBER}b${BETA_NUMBER} | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
           done
 
@@ -64,14 +46,8 @@ jobs:
           for file in $RELEASE_FILES
           do
             echo "## $file" | tee -a $GITHUB_STEP_SUMMARY
-            echo "### net.thunderbird.android" | tee -a $GITHUB_STEP_SUMMARY
             RELEASE_NUMBER=$(echo $file | sed -E 's/[^0-9]*([0-9]+\.[0-9]+).*/\1/')
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p net.thunderbird.android.beta ${RELEASE_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
-            echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-
-            echo "### com.fsck.k9" | tee -a $GITHUB_STEP_SUMMARY
-            echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p com.fsck.k9 ${RELEASE_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
+            python ./tools/android_notes_length.py ${RELEASE_NUMBER} | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
           done
