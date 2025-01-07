@@ -41,10 +41,10 @@ notes:
   - note: Dragging threaded emails to another folder left a summary in the message panel
     tag: fixed
     bugs: [1933821]
-  - note: POP3 status message showed incorrect download count when messages are deleted
+  - note: POP3 status message showed incorrect download count when messages were deleted
     tag: fixed
     bugs: [1935800]
-  - note: Thunderbird may show incorrect 'From' and 'To' fields for mailing list emails
+  - note: Thunderbird could show incorrect 'From' and 'To' fields for mailing list emails
     tag: fixed
     bugs: [1900211]
   - note: "`mail.compose.other.header` wrongly added fields to message preview pane headers"
@@ -83,7 +83,7 @@ notes:
   - note: POP3 'fetch headers only' and 'get selected messages' could skip some messages
     tag: fixed
     bugs: [1937069]
-  - note: Thunderbird logs network errors in console when used in offline mode
+  - note: Thunderbird logged network errors in console when used in offline mode
     tag: fixed
     bugs: [1802300]
   - note: "'Prefer client-side email scheduling' needed to be selected twice"
