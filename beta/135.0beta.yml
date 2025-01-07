@@ -1,0 +1,104 @@
+release:
+  release_date: '2025-01-08'
+  text: |
+    **These notes apply to Thunderbird version 135 beta 1 released January 8, 2025.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/135.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Ignore unsupported subkeys/signatures when importing compliant OpenPGP keys
+    tag: new
+    bugs: [1884337]
+
+  # Changed
+  - note: Set show missed reminders preference to false by default
+    tag: changed
+    bugs: [1934069]
+
+  # Fixed
+  - note: Compacting an empty folder failed with write error
+    tag: fixed
+    bugs: [1935124]
+  - note: Compacting of IMAP folder with corrupted local storage failed with write error
+    tag: fixed
+    bugs: [1935331]
+  - note: "POP3 'fetch headers only' and 'get selected messages' could delete messages"
+    tag: fixed
+    bugs: [1930847]
+  - note: "'Search Online' checkbox in saved search properties was incorrectly disabled"
+    tag: fixed
+    bugs: [1937642]
+  - note: Dragging threaded emails to another folder left a summary in the message panel
+    tag: fixed
+    bugs: [1933821]
+  - note: POP3 status message showed incorrect download count when messages are deleted
+    tag: fixed
+    bugs: [1935800]
+  - note: Thunderbird may show incorrect 'From' and 'To' fields for mailing list emails
+    tag: fixed
+    bugs: [1900211]
+  - note: "`mail.compose.other.header` wrongly added fields to message preview pane headers"
+    tag: fixed
+    bugs: [1802793]
+  - note: Space bar did not always advance to the next unread message
+    tag: fixed
+    bugs: [1468925]
+  - note: Folder creation or renaming failed due to incorrect preference settings
+    tag: fixed
+    bugs: [1911225]
+  - note: After restart, all restored tabs with opened PDFs showed the same attachment
+    tag: fixed
+    bugs: [1858157]
+  - note: Shutdown could hang due to unterminated search execution
+    tag: fixed
+    bugs: [1934491]
+  - note: Sort order in 'Search Messages' panel reset after search or on first launch
+    tag: fixed
+    bugs: [1935073]
+  - note: Reply window added an unnecessary third blank line at the top
+    tag: fixed
+    bugs: [1935938]
+  - note: Thunderbird spell check box did not allow ENTER to accept suggested changes
+    tag: fixed
+    bugs: [1935401]
+  - note: "Thunderbird did not warn when replying to a 'noreply' address containing a '+'"
+    tag: fixed
+    bugs: [1904005]
+  - note: "'Please fill out this field' in account setup always appeared in English"
+    tag: fixed
+    bugs: [1931693]
+  - note: Double clicking a new contact icon added the contact to the address book twice
+    tag: fixed
+    bugs: [1938281]
+  - note: POP3 'fetch headers only' and 'get selected messages' could skip some messages
+    tag: fixed
+    bugs: [1937069]
+  - note: Thunderbird logs network errors in console when used in offline mode
+    tag: fixed
+    bugs: [1802300]
+  - note: "'Prefer client-side email scheduling' needed to be selected twice"
+    tag: fixed
+    bugs: [1862400]
+  - note: Calendar print misaligned days (Mon-Sun) with their correct dates
+    tag: fixed
+    bugs: [1936706]
+  - note: Duplicate invitations were sent if CALDAV calendar email case did not match
+    tag: fixed
+    bugs: [1889607]
+  - note: Thunderbird calendar failed to show attendee as busy when added to an event
+    tag: fixed
+    bugs: [1931475]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1855276, 1929186, 1933509, 1934756, 1934872, 1935661, 1935883, 1936485, 1936498,
+      1939603]
