@@ -21,7 +21,7 @@ notes:
     bugs: [1884337]
 
   # Changed
-  - note: CardDAV address books and CalDAV calendars now use the same OAuth2 code as mail
+  - note: CardDAV address books and calendars now use the same OAuth2 code as mail
     tag: changed
     bugs: [1927998]
   - note: Set show missed reminders preference to false by default
