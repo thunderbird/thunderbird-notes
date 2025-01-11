@@ -15,15 +15,13 @@ release:
     - ' '
 
 notes:
-  # New
-  - note: Ignore unsupported subkeys/signatures when importing compliant OpenPGP keys
-    tag: new
-    bugs: [1884337]
-
   # Changed
   - note: CardDAV address books and calendars now use the same OAuth2 code as mail
     tag: changed
     bugs: [1927998]
+  - note: Ignore unsupported subkeys/signatures when importing compliant OpenPGP keys
+    tag: changed
+    bugs: [1884337]
   - note: Set show missed reminders preference to false by default
     tag: changed
     bugs: [1934069]
