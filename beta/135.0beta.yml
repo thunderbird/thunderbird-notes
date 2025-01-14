@@ -17,7 +17,7 @@ release:
 notes:
   # New
   # New
-  - note: 'Add-on: Added support for specifying a cookieStoreId when creating a space'
+  - note: 'Add-ons: Added support for specifying a cookieStoreId when creating a space'
     tag: new
     bugs: [1913580]
   # Changed
@@ -27,7 +27,7 @@ notes:
   - note: Ignore unsupported subkeys/signatures when importing compliant OpenPGP keys
     tag: changed
     bugs: [1884337]
-  - note: 'Add-on: browser.messages.listAttachments() now returns attachment headers'
+  - note: 'Add-ons: browser.messages.listAttachments() now returns attachment headers'
     tag: changed
     bugs: [1937649]
   - note: Set show missed reminders preference to false by default
@@ -85,7 +85,7 @@ notes:
   - note: "'Please fill out this field' in account setup always appeared in English"
     tag: fixed
     bugs: [1931693]
-  - note: 'Add-on: Links in content pages with a target attribute loaded a blank page'
+  - note: 'Add-ons: Links in content pages with a target attribute loaded a blank page'
     tag: fixed
     bugs: [1905616]
   - note: Double clicking a new contact icon added the contact to the address book twice
