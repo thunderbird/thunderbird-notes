@@ -15,6 +15,11 @@ release:
     - ' '
 
 notes:
+  # New
+  - note: 'Add-on: Added support for specifying a cookieStoreId when creating a space'
+    tag: new
+    bugs: [1913580]
+
   # Changed
   - note: CardDAV address books and calendars now use the same OAuth2 code as mail
     tag: changed
@@ -22,6 +27,12 @@ notes:
   - note: Ignore unsupported subkeys/signatures when importing compliant OpenPGP keys
     tag: changed
     bugs: [1884337]
+  - note: 'Add-on: browser.messages.listAttachments() now returns attachment headers'
+    tag: changed
+    bugs: [1937649]
+  - note: 'Add-on: Links in content pages with a target attribute loaded a blank page'
+    tag: changed
+    bugs: [1905616]
   - note: Set show missed reminders preference to false by default
     tag: changed
     bugs: [1934069]
