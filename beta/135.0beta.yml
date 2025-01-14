@@ -16,10 +16,10 @@ release:
 
 notes:
   # New
+  # New
   - note: 'Add-on: Added support for specifying a cookieStoreId when creating a space'
     tag: new
     bugs: [1913580]
-
   # Changed
   - note: CardDAV address books and calendars now use the same OAuth2 code as mail
     tag: changed
@@ -30,13 +30,9 @@ notes:
   - note: 'Add-on: browser.messages.listAttachments() now returns attachment headers'
     tag: changed
     bugs: [1937649]
-  - note: 'Add-on: Links in content pages with a target attribute loaded a blank page'
-    tag: changed
-    bugs: [1905616]
   - note: Set show missed reminders preference to false by default
     tag: changed
     bugs: [1934069]
-
   # Fixed
   - note: Compacting an empty folder failed with write error
     tag: fixed
@@ -89,6 +85,9 @@ notes:
   - note: "'Please fill out this field' in account setup always appeared in English"
     tag: fixed
     bugs: [1931693]
+  - note: 'Add-on: Links in content pages with a target attribute loaded a blank page'
+    tag: fixed
+    bugs: [1905616]
   - note: Double clicking a new contact icon added the contact to the address book twice
     tag: fixed
     bugs: [1938281]
