@@ -1,7 +1,7 @@
 release:
   release_date: '2025-01-13'
   text: |
-    **These notes apply to Thunderbird version 135 beta 1 released January 13, 2025.**
+    **These notes apply to Thunderbird version 135 beta 1 released January 16, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/135.0beta/system-requirements/)
 
@@ -13,13 +13,14 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
-  # New
   # New
   - note: 'Add-ons: Added support for specifying a cookieStoreId when creating a space'
     tag: new
     bugs: [1913580]
+
   # Changed
   - note: CardDAV address books and calendars now use the same OAuth2 code as mail
     tag: changed
@@ -33,6 +34,7 @@ notes:
   - note: Set show missed reminders preference to false by default
     tag: changed
     bugs: [1934069]
+
   # Fixed
   - note: Compacting an empty folder failed with write error
     tag: fixed
@@ -113,3 +115,22 @@ notes:
     tag: fixed
     bugs: [1855276, 1929186, 1933509, 1934756, 1934872, 1935661, 1935883, 1936485, 1936498,
       1939603]
+
+  # Beta 2
+  # Fixed
+  - note: Race condition in folder compaction could cause unexpected behavior
+    tag: fixed
+    bugs: [1931863]
+    group: 2
+  - note: Data corruption occurred when compacting IMAP Drafts folder after saving a message
+    tag: fixed
+    bugs: [1909111]
+    group: 2
+  - note: Long email subject lines could overlap window control buttons on macOS
+    tag: fixed
+    bugs: [1940201]
+    group: 2
+  - note: Exceptions during CalDAV item processing would halt subsequent item handling
+    tag: fixed
+    bugs: [1940193]
+    group: 2
