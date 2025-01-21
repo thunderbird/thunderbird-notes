@@ -1,7 +1,7 @@
 release:
   release_date: '2025-01-13'
   text: |
-    **These notes apply to Thunderbird version 135 beta 1 released January 16, 2025.**
+    **These notes apply to Thunderbird version 135 beta 3 released January 22, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/135.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -134,3 +135,22 @@ notes:
     tag: fixed
     bugs: [1940193]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's
+    tag: fixed
+    bugs: [1941998]
+    group: 3
+  - Note: On Windows, the Restart button in the About dialog failed to update Thunderbird
+    tag: fixed
+    bugs: [1941531]
+    group: 3
+  - note: Forwarding/editing S/MIME drafts/templates unusable due to regression
+    tag: fixed
+    bugs: [1940605]
+    group: 3
+  - Note: Context menu was unable to move email address to a different field
+    tag: fixed
+    bugs: [1857469]
+    group: 3
