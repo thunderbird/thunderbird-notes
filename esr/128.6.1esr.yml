@@ -1,0 +1,67 @@
+release:
+  release_date: '2025-01-22'
+  text: |
+    **For help and a quick start on Thunderbird 128, see
+    [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
+
+    **For more on all the new features in Thunderbird 128, see
+    [What’s New in Thunderbird 128](https://www.thunderbird.net/thunderbird/128.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/128.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0esr
+
+notes:
+  # Fixed
+  - note: Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's
+    tag: fixed
+    bugs: [1941998]
+  - note: "POP3 'fetch headers only' and 'get selected messages' could delete messages"
+    tag: fixed
+    bugs: [1930847]
+  - note: "'Search Online' checkbox in saved search properties was incorrectly disabled"
+    tag: fixed
+    bugs: [1937642]
+  - note: POP3 status message showed incorrect download count when messages were deleted
+    tag: fixed
+    bugs: [1935800]
+  - note: Thunderbird could show incorrect 'From' and 'To' fields for mailing list emails
+    tag: fixed
+    bugs: [1900211]
+  - note: Space bar did not always advance to the next unread message
+    tag: fixed
+    bugs: [1468925]
+  - note: Folder creation or renaming failed due to incorrect preference settings
+    tag: fixed
+    bugs: [1911225]
+  - note: Forwarding/editing S/MIME drafts/templates unusable due to regression
+    tag: fixed
+    bugs: [1940605]
+  - note: Sort order in 'Search Messages' panel reset after search or on first launch
+    tag: fixed
+    bugs: [1935073]
+  - note: Reply window added an unnecessary third blank line at the top
+    tag: fixed
+    bugs: [1935938]
+  - note: Thunderbird spell check box did not allow ENTER to accept suggested changes
+    tag: fixed
+    bugs: [1935401]
+  - note: Long email subject lines could overlap window control buttons on macOS
+    tag: fixed
+    bugs: [1940201]
+  - note: Flathub manifest link was not correct
+    tag: fixed
+    bugs: [1907695]
+  - note: "'Prefer client-side email scheduling' needed to be selected twice"
+    tag: fixed
+    bugs: [1862400]
+  - note: Duplicate invitations were sent if CALDAV calendar email case did not match
+    tag: fixed
+    bugs: [1889607]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1875325, 1901846, 1939603, 1855276]
