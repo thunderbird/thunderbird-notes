@@ -138,7 +138,7 @@ notes:
 
   # Beta 3
   # Fixed
-  - note: Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's
+  - note: "Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's"
     tag: fixed
     bugs: [1941998]
     group: 3
