@@ -138,11 +138,11 @@ notes:
 
   # Beta 3
   # Fixed
-  - note: "Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's"
+  - note: Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's
     tag: fixed
     bugs: [1941998]
     group: 3
-  - Note: On Windows, the Restart button in the About dialog failed to update Thunderbird
+  - note: On Windows, the Restart button in the About dialog failed to update Thunderbird
     tag: fixed
     bugs: [1941531]
     group: 3
@@ -150,7 +150,7 @@ notes:
     tag: fixed
     bugs: [1940605]
     group: 3
-  - Note: Context menu was unable to move email address to a different field
+  - note: Context menu was unable to move email address to a different field
     tag: fixed
     bugs: [1857469]
     group: 3
