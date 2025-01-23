@@ -144,6 +144,15 @@ class Translation(object):
     ugettext = gettext
     ngettext = gettext
 
+def get_latest_build(default_channel):
+    return
+
+def get_channels():
+    return {}
+
+def get_mobile_platforms():
+    return {}
+
 
 class Handler(FileSystemEventHandler):
     def __init__(self, version, preview_template):
@@ -162,6 +171,12 @@ class Handler(FileSystemEventHandler):
         self.jinja_env.globals.update(donate_url=donate_url)
         self.jinja_env.globals.update(is_system_requirements_dict=is_system_requirements_dict)
         self.jinja_env.globals.update(NOW=datetime.datetime.now())
+        self.jinja_env.globals.update(settings={'FRU_FORM_IDS': {'support': 'support'}})
+        self.jinja_env.globals.update(override_nav_donate_form_id="")
+        self.jinja_env.globals.update(get_latest_build=get_latest_build)
+        self.jinja_env.globals.update(get_channels=get_channels)
+        self.jinja_env.globals.update(get_mobile_platforms=get_mobile_platforms)
+        self.jinja_env.globals.update(default_channel='release')
         self.jinja_env.filters['markdown'] = safe_markdown
         self.jinja_env.filters['f'] = f
         self.jinja_env.filters['l10n_format_date'] = l10n_format_date
