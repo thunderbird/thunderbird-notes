@@ -29,9 +29,6 @@ notes:
   - note: POP3 status message showed incorrect download count when messages were deleted
     tag: fixed
     bugs: [1935800]
-  - note: Thunderbird could show incorrect 'From' and 'To' fields for mailing list emails
-    tag: fixed
-    bugs: [1900211]
   - note: Space bar did not always advance to the next unread message
     tag: fixed
     bugs: [1468925]
