@@ -16,9 +16,6 @@ notes:
   - note: Thunderbird now has a notification system for real-time desktop alerts
     tag: new
     bugs: [1922551]
-  - note: Add end of year donation appeal
-    tag: new
-    bugs: [1925389]
 
   # Fixed
   - note: In-app notification messages did not display correctly in dark mode
