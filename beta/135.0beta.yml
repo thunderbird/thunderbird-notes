@@ -1,7 +1,7 @@
 release:
   release_date: '2025-01-13'
   text: |
-    **These notes apply to Thunderbird version 135 beta 3 released January 23, 2025.**
+    **These notes apply to Thunderbird version 135 beta 4 released January 28, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/135.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -154,3 +155,18 @@ notes:
     tag: fixed
     bugs: [1857469]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Users may not have been notified if messages arrived in multiple folders at once
+    tag: fixed
+    bugs: [1941911]
+    group: 4
+  - note: Message list scrolled to the wrong place on start-up
+    tag: fixed
+    bugs: [1917465]
+    group: 4
+  - note: All-day event dates were displayed with times when they should not have times
+    tag: fixed
+    bugs: [1940169]
+    group: 4
