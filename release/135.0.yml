@@ -1,0 +1,148 @@
+release:
+  release_date: '2025-02-04'
+  text: |
+    **Thunderbird version 135.0 is available for testing purposes only.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/135.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # New
+  - note: 'Add-ons: Added support for specifying a cookieStoreId when creating a space'
+    tag: new
+    bugs: [1913580]
+
+  # Changed
+  - note: CardDAV address books and calendars now use the same OAuth2 code as mail
+    tag: changed
+    bugs: [1927998]
+  - note: Ignore unsupported subkeys/signatures when importing compliant OpenPGP keys
+    tag: changed
+    bugs: [1884337]
+  - note: 'Add-ons: browser.messages.listAttachments() now returns attachment headers'
+    tag: changed
+    bugs: [1937649]
+  - note: Set show missed reminders preference to false by default
+    tag: changed
+    bugs: [1934069]
+
+  # Fixed
+  - note: Race condition in folder compaction could cause unexpected behavior
+    tag: fixed
+    bugs: [1931863]
+  - note: Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's
+    tag: fixed
+    bugs: [1941998]
+  - note: On Windows, the Restart button in the About dialog failed to update Thunderbird
+    tag: fixed
+    bugs: [1941531]
+  - note: Compacting an empty folder failed with write error
+    tag: fixed
+    bugs: [1935124]
+  - note: Compacting of IMAP folder with corrupted local storage failed with write error
+    tag: fixed
+    bugs: [1935331]
+  - note: "POP3 'fetch headers only' and 'get selected messages' could delete messages"
+    tag: fixed
+    bugs: [1930847]
+  - note: Data corruption occurred when compacting IMAP Drafts folder after saving a message
+    tag: fixed
+    bugs: [1909111]
+  - note: Users may not have been notified if messages arrived in multiple folders at once
+    tag: fixed
+    bugs: [1941911]
+  - note: "'Search Online' checkbox in saved search properties was incorrectly disabled"
+    tag: fixed
+    bugs: [1937642]
+  - note: Dragging threaded emails to another folder left a summary in the message panel
+    tag: fixed
+    bugs: [1933821]
+  - note: POP3 status message showed incorrect download count when messages were deleted
+    tag: fixed
+    bugs: [1935800]
+  - note: Thunderbird could show incorrect 'From' and 'To' fields for mailing list emails
+    tag: fixed
+    bugs: [1900211]
+  - note: "`mail.compose.other.header` wrongly added fields to message preview pane headers"
+    tag: fixed
+    bugs: [1802793]
+  - note: Space bar did not always advance to the next unread message
+    tag: fixed
+    bugs: [1468925]
+  - note: Folder creation or renaming failed due to incorrect preference settings
+    tag: fixed
+    bugs: [1911225]
+  - note: Message list scrolled to the wrong place on start-up
+    tag: fixed
+    bugs: [1917465]
+  - note: After restart, all restored tabs with opened PDFs showed the same attachment
+    tag: fixed
+    bugs: [1858157]
+  - note: Forwarding/editing S/MIME drafts/templates unusable due to regression
+    tag: fixed
+    bugs: [1940605]
+  - note: Shutdown could hang due to unterminated search execution
+    tag: fixed
+    bugs: [1934491]
+  - note: Sort order in 'Search Messages' panel reset after search or on first launch
+    tag: fixed
+    bugs: [1935073]
+  - note: Reply window added an unnecessary third blank line at the top
+    tag: fixed
+    bugs: [1935938]
+  - note: Thunderbird spell check box did not allow ENTER to accept suggested changes
+    tag: fixed
+    bugs: [1935401]
+  - note: "Thunderbird did not warn when replying to a 'noreply' address containing a '+'"
+    tag: fixed
+    bugs: [1904005]
+  - note: Context menu was unable to move email address to a different field
+    tag: fixed
+    bugs: [1857469]
+  - note: "'Please fill out this field' in account setup always appeared in English"
+    tag: fixed
+    bugs: [1931693]
+  - note: 'Add-ons: Links in content pages with a target attribute loaded a blank page'
+    tag: fixed
+    bugs: [1905616]
+  - note: Double clicking a new contact icon added the contact to the address book twice
+    tag: fixed
+    bugs: [1938281]
+  - note: Long email subject lines could overlap window control buttons on macOS
+    tag: fixed
+    bugs: [1940201]
+  - note: POP3 'fetch headers only' and 'get selected messages' could skip some messages
+    tag: fixed
+    bugs: [1937069]
+  - note: Thunderbird logged network errors in console when used in offline mode
+    tag: fixed
+    bugs: [1802300]
+  - note: "'Prefer client-side email scheduling' needed to be selected twice"
+    tag: fixed
+    bugs: [1862400]
+  - note: Calendar print misaligned days (Mon-Sun) with their correct dates
+    tag: fixed
+    bugs: [1936706]
+  - note: All-day event dates were displayed with times when they should not have times
+    tag: fixed
+    bugs: [1940169]
+  - note: Duplicate invitations were sent if CALDAV calendar email case did not match
+    tag: fixed
+    bugs: [1889607]
+  - note: Thunderbird calendar failed to show attendee as busy when added to an event
+    tag: fixed
+    bugs: [1931475]
+  - note: Exceptions during CalDAV item processing would halt subsequent item handling
+    tag: fixed
+    bugs: [1940193]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1855276, 1929186, 1933509, 1934756, 1934872, 1935661, 1935883, 1936485, 1936498,
+      1939603]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird135)'
+    tag: fixed
