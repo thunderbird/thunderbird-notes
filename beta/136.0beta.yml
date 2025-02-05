@@ -1,0 +1,88 @@
+release:
+  release_date: '2025-02-06'
+  text: |
+    **These notes apply to Thunderbird version 136 beta 1 released February 6, 2025.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/136.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Messages are automatically adapted to dark mode with a quick toggle in the header.
+    tag: new
+    bugs: [1942206]
+  - note: New "Appearance" Settings UI to globally control message threading/sorting order.
+    tag: new
+    bugs: [1829737, 1943724]
+
+  # Changed
+  - note: Criteria for closing idle message databases.
+    tag: changed
+    bugs: [1942554]
+
+  # Fixed
+  - note: Thunderbird Release channel was not displayed in "About Thunderbird".
+    tag: fixed
+    bugs: [1922684]
+  - note: Crash could occur when shutting down during MAPI send.
+    tag: fixed
+    bugs: [1944274]
+  - note: The error message for compacting a corrupted local folder was not useful.
+    tag: fixed
+    bugs: [1941770]
+  - note: Deleting or detaching attachments in a saved .eml file appeared to work but failed.
+    tag: fixed
+    bugs: [1940528]
+  - note: Some messages may have been threaded incorrectly in unified folders.
+    tag: fixed
+    bugs: [1939725]
+  - note: Unified folders could become unusable instead of being automatically rebuilt.
+    tag: fixed
+    bugs: [1927048]
+  - note: Folders at level 3+ were not auto-discovered when IMAP subscriptions were ignored.
+    tag: fixed
+    bugs: [1902236]
+  - note: New subfolder did not inherit parent view, sort order, sort type, or columns.
+    tag: fixed
+    bugs: [1933529]
+  - note: With "Fetch headers only" enabled, messages could not be sorted by size.
+    tag: fixed
+    bugs: [1939852]
+  - note: Selecting starred messages did not update immediately.
+    tag: fixed
+    bugs: [1942348]
+  - note: Marking a unified folder as favorite did not show it in favorite folders.
+    tag: fixed
+    bugs: [537342]
+  - note: The UI could falsely report a message as encrypted when a null cipher was used.
+    tag: fixed
+    bugs: [1943620]
+  - note: Search messages dialog list could not be sorted by clicking the header icon.
+    tag: fixed
+    bugs: [1942751]
+  - note: Sending to multiple SMTPs could fail silently due to missing address book.
+    tag: fixed
+    bugs: [1943639]
+  - note: Changing the UI font size did not apply to some dialogs.
+    tag: fixed
+    bugs: [1916066]
+  - note: Deleted Gmail messages stayed visible until compact/expunge, despite settings.
+    tag: fixed
+    bugs: [399475]
+  - note: 'Add-ons: Context menu entries were incorrectly aligned.'
+    tag: fixed
+    bugs: [1933970]
+  - note: Some functionality was missing for newsgroup messages opened from a file or URI.
+    tag: fixed
+    bugs: [11076]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1935652]
