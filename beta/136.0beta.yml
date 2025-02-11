@@ -1,7 +1,7 @@
 release:
   release_date: '2025-02-06'
   text: |
-    **These notes apply to Thunderbird version 136 beta 1 released February 6, 2025.**
+    **These notes apply to Thunderbird version 136 beta 2 released February 12, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/136.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -86,3 +87,14 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1935652]
+
+  # Beta 2
+  # Fixed
+  - note: Middle-click autoscroll cursor appeared without arrows instead of expected design.
+    tag: fixed
+    bugs: [1946189]
+    group: 2
+  - note: "Release channel incorrectly showed What's New page after update."
+    tag: fixed
+    bugs: [1946189]
+    group: 2
