@@ -98,3 +98,11 @@ notes:
     tag: fixed
     bugs: [1946189]
     group: 2
+  - note: Notifications for new mail were not showing for IMAP.
+    tag: fixed
+    bugs: [1947554]
+    group: 2
+  - note: Message and folder lists could display incorrect line spacing after restart.
+    tag: fixed
+    bugs: [1947554]
+    group: 2
