@@ -17,10 +17,10 @@ release:
 
 notes:
   # Fixed
-  - note: Users may not have been notified if messages arrived in multiple folders at once
+  - note: Users may not have been notified if messages arrived in multiple folders at once.
     tag: fixed
     bugs: [1941911]
-  - note: Message list scrolled to the wrong place on start-up
+  - note: Message list scrolled to the wrong place on start-up.
     tag: fixed
     bugs: [1917465]
   - note: Unified folders could become unusable instead of being automatically rebuilt.
