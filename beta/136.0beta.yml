@@ -96,7 +96,7 @@ notes:
     group: 2
   - note: "Release channel incorrectly showed What's New page after update."
     tag: fixed
-    bugs: [1946189]
+    bugs: [1946534]
     group: 2
   - note: Notifications for new mail were not showing for IMAP.
     tag: fixed
