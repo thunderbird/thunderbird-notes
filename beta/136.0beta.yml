@@ -1,7 +1,7 @@
 release:
   release_date: '2025-02-06'
   text: |
-    **These notes apply to Thunderbird version 136 beta 2 released February 13, 2025.**
+    **These notes apply to Thunderbird version 136 beta 3 released February 19, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/136.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -106,3 +107,18 @@ notes:
     tag: fixed
     bugs: [1947554]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Export to mobile did not work when "Use default server" was selected.
+    tag: fixed
+    bugs: [1930728]
+    group: 3
+  - note: Users with many folders experienced poor performance when resizing message panes.
+    tag: fixed
+    bugs: [1860094]
+    group: 3
+  - note: Sort indicators were missing on the calendar events list.
+    tag: fixed
+    bugs: [1914085]
+    group: 3
