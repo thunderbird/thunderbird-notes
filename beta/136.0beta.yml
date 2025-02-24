@@ -110,13 +110,21 @@ notes:
 
   # Beta 3
   # Fixed
+  - note: Users with many folders experienced poor performance when resizing message panes.
+    tag: fixed
+    bugs: [1860094]
+    group: 3
+  - note: '"Replace" button in compose window was overwritten when the window was narrow.'
+    tag: fixed
+    bugs: [1948427]
+    group: 3
   - note: Export to mobile did not work when "Use default server" was selected.
     tag: fixed
     bugs: [1930728]
     group: 3
-  - note: Users with many folders experienced poor performance when resizing message panes.
+  - note: '"Save Link As" was not working in feed web content.'
     tag: fixed
-    bugs: [1860094]
+    bugs: [1948532]
     group: 3
   - note: Sort indicators were missing on the calendar events list.
     tag: fixed
