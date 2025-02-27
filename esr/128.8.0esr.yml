@@ -17,6 +17,9 @@ release:
 
 notes:
   # Fixed
+  - note: Opening an .EML file in profiles with many folders could take a long time.
+    tag: fixed
+    bugs: [1948678]
   - note: Users with many folders experienced poor performance when resizing message panes.
     tag: fixed
     bugs: [1860094]
