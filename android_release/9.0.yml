@@ -1,0 +1,38 @@
+release:
+  release_date: '2025-03-03'
+  text: |
+    **These notes apply to Thunderbird for Android version 9.0 released March 3rd, 2025.**
+
+  releases:
+    - version: '9.0'
+      release_date: '2025-03-03'
+
+notes:
+  ## 9.0 release
+  # New
+  - note: Basic support for Android 15
+    tag: new
+
+  - note: Add a link to the support article when signing in with Google
+    tag: new
+
+  - note: Account setup attempts email provider's autoconfig first, then falls back to ISPDB
+    tag: new
+
+  # Changed
+  - note: Updated translations for multiple languages
+    tag: changed
+
+  # Fixed
+  - note: The changelog now properly displays release versions
+    tag: fixed
+
+  - note: A wrong translation of the app name has been fixed
+    tag: fixed
+
+  - note: Dependencies have been updated to fix a couple of bugs
+    tag: fixed
+
+  - note: Camera provider uses new api to avoid crashes while reading QR codes
+    tag: fixed
+    thunderbird_only: true
