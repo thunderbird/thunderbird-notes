@@ -11,28 +11,36 @@ notes:
   ## 9.0 release
   # New
   - note: Basic support for Android 15
+    short_note: Basic support for Android 15
     tag: new
 
   - note: Add a link to the support article when signing in with Google
+    short_note: Add a link to the support article when signing in with Google
     tag: new
 
   - note: Account setup attempts email provider's autoconfig first, then falls back to ISPDB
+    short_note: Account setup attempts email provider's autoconfig first, then falls back to ISPDB
     tag: new
 
   # Changed
   - note: Updated translations for multiple languages
+    short_note: Updated translations for multiple languages
     tag: changed
 
   # Fixed
   - note: The changelog now properly displays release versions
+    short_note: The changelog now properly displays release versions
     tag: fixed
 
   - note: A wrong translation of the app name has been fixed
+    short_note: A wrong translation of the app name has been fixed
     tag: fixed
 
   - note: Dependencies have been updated to fix a couple of bugs
+    short_note: Dependencies have been updated to fix a couple of bugs
     tag: fixed
 
   - note: Camera provider uses new api to avoid crashes while reading QR codes
+    short_note: Camera provider uses new api to avoid crashes while reading QR codes
     tag: fixed
     thunderbird_only: true
