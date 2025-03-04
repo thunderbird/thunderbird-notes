@@ -15,75 +15,93 @@ notes:
   ## Beta 1
   # New
   - note: Account setup prefills server field automatically
+    short_note: Account setup prefills server field automatically
     tag: new
     group: 1
 
   - note: Add a menu enty to empty the Spam folder
+    short_note: Add a menu enty to empty the Spam folder
     tag: new
     group: 1
 
   - note: Provide Slovak translation
+    short_note: Provide Slovak translation
     tag: new
     group: 1
 
   - note: Introduce an option to use the system theme on Android 10 and older
+    short_note: Introduce an option to use the system theme on Android 10 and older
     tag: new
     group: 1
 
   # Changed
   - note: Update PushService to run as a specialUse foreground service for Android 15
+    short_note: Update PushService to run as a specialUse foreground service for Android 15
     tag: changed
     group: 1
 
   - note: Update Gmail OAuth client IDs to Thunderbird for Android
+    short_note: Update Gmail OAuth client IDs to Thunderbird for Android
     tag: changed
     group: 1
 
   - note: Updated translations for multiple languages
+    short_note: Updated translations for multiple languages
     tag: changed
     group: 1
 
   - note: Preserve the <s> tag when sanitizing HTML content
+    short_note: Preserve the <s> tag when sanitizing HTML content
     tag: changed
     group: 1
 
   # Fixed
   - note: Messages and star counts in the drawer update instantly
+    short_note: Messages and star counts in the drawer update instantly
     tag: fixed
     group: 1
 
   - note: Folder names in the drawer are limited to two lines
+    short_note: Folder names in the drawer are limited to two lines
     tag: fixed
     group: 1
 
   - note: The drawer remembers the state of hide accounts
+    short_note: The drawer remembers the state of hide accounts
     tag: fixed
     group: 1
 
   - note: Account names in the drawer display as single lines when not set
+    short_note: Account names in the drawer display as single lines when not set
     tag: fixed
     group: 1
 
   - note: Text selection options respected during message composition
+    short_note: Text selection options respected during message composition
     tag: fixed
     group: 1
 
   - note: Change focus on the next empty field correctly during message composition
+    short_note: Change focus on the next empty field correctly during message composition
     tag: fixed
     group: 1
 
   - note: Display the recipient's address instead of +1 and fix its size
+    short_note: Display the recipient's address instead of +1 and fix its size
     tag: fixed
     group: 1
 
   - note: Correct MIME type for .pkpass files
+    short_note: Correct MIME type for .pkpass files
     tag: fixed
     group: 1
 
   - note: Accessibility improvements
+    short_note: Accessibility improvements
     tag: fixed
     group: 1
 
   - note: Restart PushService after app update
+    short_note: Restart PushService after app update
     tag: fixed
     group: 1
