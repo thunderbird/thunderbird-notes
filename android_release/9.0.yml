@@ -41,6 +41,5 @@ notes:
     tag: fixed
 
   - note: Camera provider uses new api to avoid crashes while reading QR codes
-    short_note: Camera provider uses new api to avoid crashes while reading QR codes
     tag: fixed
     thunderbird_only: true
