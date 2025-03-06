@@ -75,7 +75,7 @@ notes:
   - note: Account settings menu could be loaded twice.
     tag: fixed
     bugs: [1948154]
-  - note: Unable to autodiscover Address Book on Radicale server.
+  - note: Unable to auto-discover Address Book on Radicale server.
     tag: fixed
     bugs: [1925006]
   - note: Mark-Of-The-Web was not applied to attachments saved via drag and drop.
