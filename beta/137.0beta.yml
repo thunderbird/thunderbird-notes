@@ -1,0 +1,104 @@
+release:
+  release_date: '2025-03-06'
+  text: |
+    **These notes apply to Thunderbird version 137 beta 1 released March, 6, 2025.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/137.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # Changed
+  - note: File names are now used when storing mail folders (Windows only).
+    tag: changed
+    bugs: [1947954]
+
+  # Fixed
+  - note: In-app notifications did not display correctly in high contrast mode.
+    tag: fixed
+    bugs: [1933579]
+  - note: Repair folder did not fix mbox files produced on MacOS before Thunderbird 1.0.
+    tag: fixed
+    bugs: [1942540]
+  - note: Edit menu entries missing when group header selected in "Grouped by sort" view.
+    tag: fixed
+    bugs: [1924977]
+  - note: IMAP folder "Undelete" performed "Delete" when mixed messages were selected.
+    tag: fixed
+    bugs: [393523]
+  - note: In RSS feeds, the space bar did not scroll the message like it did in emails.
+    tag: fixed
+    bugs: [1830755]
+  - note: Slow performance opening an .eml file in a profile with many folders.
+    tag: fixed
+    bugs: [1948678]
+  - note: Threaded search view was not updated correctly when sorted by date received.
+    tag: fixed
+    bugs: [1257826]
+  - note: Line spacing changed unexpectedly in the message list with the default font size.
+    tag: fixed
+    bugs: [1946548]
+  - note: Saved message list selection was discarded when user made a new selection.
+    tag: fixed
+    bugs: [1949593]
+  - note: Message security panel strings were used in the wrong places.
+    tag: fixed
+    bugs: [1941457]
+  - note: Importing an OpenPGP public key with whitespace failed.
+    tag: fixed
+    bugs: [1941700]
+  - note: Unable to open attached signed OpenPGP .eml message.
+    tag: fixed
+    bugs: [1943021]
+  - note: Searching during shutdown could cause crash.
+    tag: fixed
+    bugs: [1950621]
+  - note: Failed news message sending could close the compose window unexpectedly.
+    tag: fixed
+    bugs: [1946398]
+  - note: Having a corrupt address book database prevented sending mail.
+    tag: fixed
+    bugs: [1949059]
+  - note: Forwarding messages as attachments could use the wrong MIME type.
+    tag: fixed
+    bugs: [1839010]
+  - note: Two-factor auth via text or email did not work with Office 365 using Oauth2.
+    tag: fixed
+    bugs: [1907115]
+  - note: Account settings menu could be loaded twice.
+    tag: fixed
+    bugs: [1948154]
+  - note: Unable to autodiscover Address Book on Radicale server.
+    tag: fixed
+    bugs: [1925006]
+  - note: Mark-Of-The-Web was not applied to attachments saved via drag and drop.
+    tag: fixed
+    bugs: [1805986]
+  - note: Clicking a 'mid:' link could clear the thread pane and cause errors.
+    tag: fixed
+    bugs: [1950021]
+  - note: Automatic compact did not attempt to compact all folders when error encountered.
+    tag: fixed
+    bugs: [1903174]
+  - note: Slow performance when moving bulk messages from IMAP to local.
+    tag: fixed
+    bugs: [1945062]
+  - note: Crossposting news article was not possible if newsgroups on different servers.
+    tag: fixed
+    bugs: [230899]
+  - note: IRC channel was not visible after restart.
+    tag: fixed
+    bugs: [1941386]
+  - note: Unable to view full certificate chain from the "View Signature" button.
+    tag: fixed
+    bugs: [1716998]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1945710, 1949305, 1949890]
