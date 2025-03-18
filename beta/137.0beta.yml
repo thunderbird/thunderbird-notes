@@ -1,7 +1,7 @@
 release:
   release_date: '2025-03-12'
   text: |
-    **These notes apply to Thunderbird version 137 beta 1 released March, 12, 2025.**
+    **These notes apply to Thunderbird version 137 beta 2 released March, 19, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/137.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # Changed
@@ -105,3 +106,18 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1945710, 1949305, 1949828, 1949890]
+
+  # Beta 2
+  # Fixed
+  - note: Replying from local or unified folders failed when the message pane was hidden.
+    tag: fixed
+    bugs: [1953288]
+    group: 2
+  - note: Right-clicking "Decrypt and Save As..." on an attachment file failed.
+    tag: fixed
+    bugs: [1952823]
+    group: 2
+  - note: No gap existed between Back and Forward buttons in the Feed Account Wizard dialog.
+    tag: fixed
+    bugs: [1947643]
+    group: 2
