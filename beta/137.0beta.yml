@@ -1,7 +1,7 @@
 release:
   release_date: '2025-03-12'
   text: |
-    **These notes apply to Thunderbird version 137 beta 2 released March, 19, 2025.**
+    **These notes apply to Thunderbird version 137 beta 3 released March, 24, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/137.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # Changed
@@ -121,3 +122,10 @@ notes:
     tag: fixed
     bugs: [1947643]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Thunderbird could crash when importing mail
+    tag: fixed
+    bugs: [1953574, 1953576]
+    group: 3
