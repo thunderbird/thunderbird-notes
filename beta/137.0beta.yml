@@ -129,3 +129,7 @@ notes:
     tag: fixed
     bugs: [1953574, 1953576]
     group: 3
+  - note: Performance regressed when moving/copying messages on Windows.
+    tag: fixed
+    bugs: [1953504]
+    group: 3
