@@ -124,6 +124,12 @@ notes:
     group: 2
 
   # Beta 3
+  # Changed
+  - note: Disable Linux system tray icon until it gains functionality
+    tag: changed
+    bugs: [1955299]
+    group: 3
+
   # Fixed
   - note: Thunderbird could crash when importing mail
     tag: fixed
