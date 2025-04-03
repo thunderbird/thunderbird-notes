@@ -50,6 +50,9 @@ notes:
 - note: Message preview truncation in notifications improved
   tag: fixed
   bugs: [1953692]
+- note: Added delay to built-in notifications when new profile is created in offline mode
+  tag: fixed
+  bugs: [1957923]
 
 - note: OpenPGP key was not updated when an accepted key was reimported with new identities
   tag: fixed
