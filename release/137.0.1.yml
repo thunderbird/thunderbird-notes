@@ -1,0 +1,15 @@
+release:
+  release_date: '2025-04-04'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/137.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+- note: Added delay to built-in notifications when new profile is created in offline mode
+  tag: fixed
+  bugs: [1957923]
