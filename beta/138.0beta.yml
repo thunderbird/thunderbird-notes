@@ -81,13 +81,13 @@ notes:
 
   # Beta 2
   # Changed
-  - note: Changed default color override behavior with high contrast mode on macOS and Linux.
+  - note: Changed color override defaults with high contrast mode on macOS and Linux.
     tag: changed
     bugs: [1940220]
     group: 2
 
   # Fixed
-  - note: In dark system mode with light Thunderbird theme, message reader stayed in dark mode.
+  - note: In dark mode with light theme, message reader still displayed in dark mode.
     tag: fixed
     bugs: [1958728]
     group: 2
