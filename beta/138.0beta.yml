@@ -17,12 +17,12 @@ release:
 
 notes:
   # New
-  - note: New mail notification customization added to macOS Settings
-    tag: new
-    bugs: [1955192]
   - note: New mail alert now includes message disposition buttons
     tag: new
     bugs: [410338]
+  - note: New mail notification customization added to macOS Settings
+    tag: new
+    bugs: [1955192]
 
   # Changed
   - note: Calendar UI improvements
@@ -30,21 +30,6 @@ notes:
     bugs: [1951419, 1951013, 1951214, 1949828, 1944880, 1944870, 1944871]
 
   # Fixed
-  - note: Menu items to manage folders were not disabled in offline mode
-    tag: fixed
-    bugs: [1881087]
-  - note: Unchecking "Show all headers" in Message Header Settings closes dialog
-    tag: fixed
-    bugs: [1881788]
-  - note: Wrong day of week displayed for some emails
-    tag: fixed
-    bugs: [1796042]
-  - note: Using `Delete` column in "Search Messages..." window may delete other messages
-    tag: fixed
-    bugs: [1951680, 1951368]
-  - note: Preference to show notifications for _x_ seconds was not disabled when system notifications were disabled
-    tag: fixed
-    bugs: [1953322]
   - note: macOS notifications displayed two logos
     tag: fixed
     bugs: [1955205]
@@ -54,15 +39,36 @@ notes:
   - note: Added delay to built-in notifications when new profile is created in offline mode
     tag: fixed
     bugs: [1957923]
+  - note: Wrong day of week displayed for some emails
+    tag: fixed
+    bugs: [1796042]
+  - note: Unchecking "Show all headers" in Message Header Settings closes dialog
+    tag: fixed
+    bugs: [1881788]
+  - note: Menu items to manage folders were not disabled in offline mode
+    tag: fixed
+    bugs: [1881087]
+  - note: Using `Delete` column in "Search Messages..." window may delete other messages
+    tag: fixed
+    bugs: [1951680, 1951368]
   - note: OpenPGP key was not updated when an accepted key was reimported with new identities
     tag: fixed
     bugs: [1948831]
   - note: Dual signed (PGP and S/MIME) emails were not displayed
     tag: fixed
     bugs: [1878664]
+  - note: Preference to show notifications for _x_ seconds was not disabled when system notifications were disabled
+    tag: fixed
+    bugs: [1953322]
   - note: CardDAV synchronization to Zimbra server failed
     tag: fixed
     bugs: [1903549]
+  - note: Thunderbird could crash on startup when creating Linux system tray icon
+    tag: fixed
+    bugs: [1955834]
+  - note: Keyboard navigation was not possible when first header button was disabled
+    tag: fixed
+    bugs: [1953483]
   - note: Nickserv messages appeared during successful auth
     tag: fixed
     bugs: [1951485]
@@ -72,12 +78,6 @@ notes:
   - note: Some calendar requests were blocked due to opaque responnse blocking
     tag: fixed
     bugs: [1920710]
-  - note: Keyboard navigation was not possible when first header button was disabled
-    tag: fixed
-    bugs: [1953483]
-  - note: Thunderbird could crash on startup when creating Linux system tray icon
-    tag: fixed
-    bugs: [1955834]
   - note: Various theme, accessibility, and UX improvements
     tag: fixed
     bugs: [1952481, 1955860, 1941139]
