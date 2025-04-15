@@ -26,5 +26,5 @@ notes:
   - note: Global indexing failed when processing email with invalid calendar data
     tag: fixed
     bugs: [1916063]
-  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.9)'
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.9.2)'
     tag: fixed
