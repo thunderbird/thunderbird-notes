@@ -1,7 +1,7 @@
 release:
   release_date: '2025-04-02'
   text: |
-    **These notes apply to Thunderbird version 138 beta 2 released April 10, 2025.**
+    **These notes apply to Thunderbird version 138 beta 3 released April 16, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/138.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -98,3 +99,13 @@ notes:
     tag: fixed
     bugs: [1957508]
     group: 2
+
+  # Beta 3
+  - note: Address book did not match users when case differed in some instances.
+    tag: fixed
+    bugs: [1958030]
+    group: 3
+  - note: Newsgroups could no longer be re-ordered in the folder tree via drag and drop.
+    tag: fixed
+    bugs: [1958790]
+    group: 3
