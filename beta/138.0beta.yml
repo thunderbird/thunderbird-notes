@@ -25,11 +25,6 @@ notes:
     tag: new
     bugs: [1955192]
 
-  # Changed
-  - note: Calendar UI improvements
-    tag: changed
-    bugs: [1951419, 1951013, 1951214, 1949828, 1944880, 1944870, 1944871]
-
   # Fixed
   - note: macOS notifications displayed two logos
     tag: fixed
@@ -37,28 +32,28 @@ notes:
   - note: Message preview truncation in notifications improved
     tag: fixed
     bugs: [1953692]
-  - note: Added delay to built-in notifications when new profile is created in offline mode
-    tag: fixed
-    bugs: [1957923]
   - note: Wrong day of week displayed for some emails
     tag: fixed
     bugs: [1796042]
-  - note: Unchecking "Show all headers" in Message Header Settings closes dialog
+  - note: Unchecking "Show all headers" in Message Header Settings closed dialog
     tag: fixed
     bugs: [1881788]
   - note: Menu items to manage folders were not disabled in offline mode
     tag: fixed
     bugs: [1881087]
-  - note: Using `Delete` column in "Search Messages..." window may delete other messages
+  - note: Using `Delete` column in "Search Messages..." window could delete other messages
     tag: fixed
     bugs: [1951680, 1951368]
+  - note: Ctrl or Shift selecting multiple messages reset when dragging across a message
+    tag: fixed
+    bugs: [1941171]
   - note: OpenPGP key was not updated when an accepted key was reimported with new identities
     tag: fixed
     bugs: [1948831]
   - note: Dual signed (PGP and S/MIME) emails were not displayed
     tag: fixed
     bugs: [1878664]
-  - note: Preference to show notifications for _x_ seconds was not disabled when system notifications were disabled
+  - note: Notification duration preference enabled when system notifications were enabled
     tag: fixed
     bugs: [1953322]
   - note: CardDAV synchronization to Zimbra server failed
@@ -70,42 +65,49 @@ notes:
   - note: Keyboard navigation was not possible when first header button was disabled
     tag: fixed
     bugs: [1953483]
-  - note: Nickserv messages appeared during successful auth
+  - note: Nickserv messages appeared during successful authentication
     tag: fixed
     bugs: [1951485]
-  - note: Clicking a `mid:` link in Calendar opens two copies of the message
+  - note: Global indexing failed when processing email with invalid calendar data
+    tag: fixed
+    bugs: [1916063]
+  - note: Clicking a `mid:` link in Calendar opened two copies of the message
     tag: fixed
     bugs: [1955840]
-  - note: Some calendar requests were blocked due to opaque responnse blocking
+  - note: Some calendar requests were blocked due to opaque response blocking
     tag: fixed
     bugs: [1920710]
-  - note: Various theme, accessibility, and UX improvements
+  - note: Visual and UX improvements
     tag: fixed
     bugs: [1952481, 1955860, 1941139]
 
   # Beta 2
   # Changed
-  - note: Changed color override defaults with high contrast mode on macOS and Linux.
+  - note: Changed color override defaults with high contrast mode on macOS and Linux
     tag: changed
     bugs: [1940220]
     group: 2
 
   # Fixed
-  - note: In dark mode with light theme, message reader still displayed in dark mode.
+  - note: In dark mode with light theme, message reader still displayed in dark mode
     tag: fixed
     bugs: [1958728]
     group: 2
-  - note: Message link and text colors were incorrect when using Dark Reader.
+  - note: Message link and text colors were incorrect when using Dark Reader
     tag: fixed
     bugs: [1957508]
     group: 2
 
   # Beta 3
-  - note: Address book did not match users when case differed in some instances.
+  - note: Address book did not match users when case differed in some instances
     tag: fixed
     bugs: [1958030]
     group: 3
-  - note: Newsgroups could no longer be re-ordered in the folder tree via drag and drop.
+  - note: Newsgroups could no longer be re-ordered in the folder tree via drag and drop
+    tag: fixed
+    bugs: [1958790]
+    group: 3
+  - note: Windows users with non-ASCII folder names and profile paths could not view emails
     tag: fixed
     bugs: [1958790]
     group: 3

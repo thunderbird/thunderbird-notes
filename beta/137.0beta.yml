@@ -127,7 +127,7 @@ notes:
   # Changed
   - note: Disable Linux system tray icon until it gains functionality
     tag: changed
-    bugs: [1955299]
+    bugs: [1918035, 1955299]
     group: 3
 
   # Fixed
