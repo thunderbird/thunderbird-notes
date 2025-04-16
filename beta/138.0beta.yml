@@ -47,7 +47,7 @@ notes:
   - note: Ctrl or Shift selecting multiple messages reset when dragging across a message
     tag: fixed
     bugs: [1941171]
-  - note: OpenPGP key was not updated when an accepted key was reimported with new identities
+  - note: OpenPGP key was not updated when accepted key was reimported with new identities
     tag: fixed
     bugs: [1948831]
   - note: Dual signed (PGP and S/MIME) emails were not displayed
