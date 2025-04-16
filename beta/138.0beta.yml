@@ -109,5 +109,5 @@ notes:
     group: 3
   - note: Windows users with non-ASCII folder names and profile paths could not view emails
     tag: fixed
-    bugs: [1958790]
+    bugs: [1960372]
     group: 3
