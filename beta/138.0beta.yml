@@ -119,7 +119,7 @@ notes:
     tag: fixed
     bugs: [1954683]
     group: 4
-  - note: Thunderbird could crash when adaptive message filtering was enabled.
+  - note: Thunderbird could crash when adaptive message filtering was enabled
     tag: fixed
     bugs: [1961413]
     group: 4
