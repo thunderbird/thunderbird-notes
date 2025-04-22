@@ -115,6 +115,11 @@ notes:
 
   # Beta 4
   # Fixed
-  - note: This release did not include any Thunderbird-specific fixes.
+  - note: Folders missing from view when "Show only subscribed folders" was not selected
     tag: fixed
+    bugs: [1954683]
+    group: 4
+  - note: Thunderbird could crash when adaptive message filtering was enabled.
+    tag: fixed
+    bugs: [1961413]
     group: 4
