@@ -1,7 +1,7 @@
 release:
   release_date: '2025-04-02'
   text: |
-    **These notes apply to Thunderbird version 138 beta 3 released April 16, 2025.**
+    **These notes apply to Thunderbird version 138 beta 4 released April 22, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/138.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -111,3 +112,9 @@ notes:
     tag: fixed
     bugs: [1960372]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: This release did not include any Thunderbird-specific fixes.
+    tag: fixed
+    group: 4
