@@ -75,9 +75,6 @@ notes:
   - note: CardDAV synchronization to Zimbra server failed
     tag: fixed
     bugs: [1903549]
-  - note: Thunderbird could crash on startup when creating Linux system tray icon
-    tag: fixed
-    bugs: [1955834]
   - note: Keyboard navigation was not possible when first header button was disabled
     tag: fixed
     bugs: [1953483]
