@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '10.0b1'
       release_date: '2025-03-19'
+    - version: '10.0b2'
+      release_date: '2025-04-29'
 
 notes:
   ## Beta 1
@@ -95,3 +98,10 @@ notes:
     short_note: Restart PushService after app update
     tag: fixed
     group: 1
+
+  ## Beta 2
+  # Fixed
+  - note: Restrict displaying message search results to internal and system usages
+    short_note: Restrict displaying message search results to internal and system usages
+    tag: fixed
+    group: 2
