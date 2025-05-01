@@ -60,7 +60,7 @@ notes:
   - note: Selected folder was not refreshed when applying 'Appearance' Threading settings
     tag: fixed
     bugs: [1960978]
-  - note: 'Grouped by Sort' for all folders in 'Appearance' settings did not work properly
+  - note: "'Grouped by Sort' for all folders in 'Appearance' settings did not work properly"
     tag: fixed
     bugs: [1962278]
   - note: Thunderbird could crash when importing Outlook messages
