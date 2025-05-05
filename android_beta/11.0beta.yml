@@ -15,22 +15,22 @@ notes:
   ## Beta 1
   # New
   - note: Testing drawer improvements in this beta, feedback on bugs is welcome
-    short_note: Testing drawer improvements in this beta
+    short_note: Testing drawer improvements
     tag: new
     group: 1
 
   - note: Option added to attach images directly from Camera
-    short_note: Option added to attach images directly from Camera
+    short_note: Allow attach of images from Camera
     tag: new
     group: 1
 
   - note: Improve dark mode emails with algorithmic darkening
-    short_note: Improve dark mode emails with algorithmic darkening
+    short_note: Improve dark mode emails
     tag: new
     group: 1
 
   - note: Welcome screen logo layout improved
-    short_note: Welcome screen logo layout improved
+    short_note: Welcome screen layout improved
     tag: new
     group: 1
 
@@ -41,12 +41,12 @@ notes:
     group: 1
 
   - note: Folder settings now use switches instead of checkboxes
-    short_note: Folder settings now use switches instead of checkboxes
+    short_note: Folder settings now use switches
     tag: changed
     group: 1
 
   - note: Message list colors updated for better contrast
-    short_note: Message list colors updated for better contrast
+    short_note: Message list colors updated
     tag: changed
     group: 1
 
@@ -72,7 +72,7 @@ notes:
     group: 1
 
   - note: Back button now returns to Drafts folder when editing a draft
-    short_note: Back button now returns to Drafts folder when editing a draft
+    short_note: Back button returns to Drafts folder when editing draft
     tag: fixed
     group: 1
 
@@ -87,6 +87,6 @@ notes:
     group: 1
 
   - note: Scroll indicator removed following review feedback
-    short_note: Scroll indicator removed following review feedback
+    short_note: Scroll indicator removed
     tag: fixed
     group: 1
