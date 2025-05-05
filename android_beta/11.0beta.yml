@@ -1,0 +1,92 @@
+release:
+  release_date: '2025-05-05'
+  text: >
+    **These notes apply to Thunderbird for Android version 11.0 betas,
+    first released May 5th, 2025**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '11.0b1'
+      release_date: '2025-05-05'
+
+notes:
+  ## Beta 1
+  # New
+  - note: We're testing some drawer improvements in this beta. Please keep an eye out for bugs!
+    short_note: We're testing some drawer improvements in this beta. Please keep an eye out for bugs!
+    tag: new
+    group: 1
+
+  - note: Add option to attach image from Camera
+    short_note: Add option to attach image from Camera
+    tag: new
+    group: 1
+
+  - note: Improve dark mode emails with algorithmic darkening
+    short_note:
+    tag: new
+    group: 1
+
+  - note: Improve welcome screen logo layout
+    short_note: Improve welcome screen logo layout
+    tag: new
+    group: 1
+
+  # Changed
+  - note: Change color priority to show selection also on active items
+    short_note: Change color priority to show selection also on active items
+    tag: changed
+    group: 1
+
+  - note: Make use of switches instead of checkboxes in folder settings
+    short_note: Make use of switches instead of checkboxes in folder settings
+    tag: changed
+    group: 1
+
+  # Fixed
+  - note: Issues setting up accounts on outlook.com/hotmail.com have been resolved
+    short_note: Issues setting up accounts on outlook.com/hotmail.com have been resolved
+    tag: fixed
+    group: 1
+
+  - note: Resolve some keyboard navigation bugs
+    short_note: Resolve some keyboard navigation bugs
+    tag: fixed
+    group: 1
+
+  - note: Fix star and attachment icon colors
+    short_note: Fix star and attachment icon colors
+    tag: fixed
+    group: 1
+
+  - note: Fix MessageList colors for better contrast
+    short_note: Fix MessageList colors for better contrast
+    tag: fixed
+    group: 1
+
+  - note: Support parsing list of recipients when pasting into compose field
+    short_note: Support parsing list of recipients when pasting into compose field
+    tag: fixed
+    group: 1
+
+  - note: Ensure UI back button navigates to Drafts folder when editing a draft
+    short_note: Ensure UI back button navigates to Drafts folder when editing a draft
+    tag: fixed
+    group: 1
+
+  - note: Fixed an issue where the Unified inbox doesn't show up
+    short_note: Fixed an issue where the Unified inbox doesn't show up
+    tag: fixed
+    group: 1
+
+  - note: Resolve issues when switching between dark and light mode
+    short_note: Resolve issues when switching between dark and light mode
+    tag: fixed
+    group: 1
+
+  - note: Removed scroll indicator based on review feedback
+    short_note: Removed scroll indicator based on review feedback
+    tag: fixed
+    group: 1
