@@ -25,7 +25,7 @@ notes:
     group: 1
 
   - note: Improve dark mode emails with algorithmic darkening
-    short_note:
+    short_note: Improve dark mode emails with algorithmic darkening
     tag: new
     group: 1
 
