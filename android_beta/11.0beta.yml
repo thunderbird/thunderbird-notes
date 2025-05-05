@@ -14,13 +14,13 @@ release:
 notes:
   ## Beta 1
   # New
-  - note: We're testing some drawer improvements in this beta. Please keep an eye out for bugs!
-    short_note: We're testing some drawer improvements in this beta. Please keep an eye out for bugs!
+  - note: Testing drawer improvements in this beta, feedback on bugs is welcome
+    short_note: Testing drawer improvements in this beta, feedback on bugs is welcome
     tag: new
     group: 1
 
-  - note: Add option to attach image from Camera
-    short_note: Add option to attach image from Camera
+  - note: Option added to attach images directly from Camera
+    short_note: Option added to attach images directly from Camera
     tag: new
     group: 1
 
@@ -29,64 +29,64 @@ notes:
     tag: new
     group: 1
 
-  - note: Improve welcome screen logo layout
-    short_note: Improve welcome screen logo layout
+  - note: Welcome screen logo layout improved
+    short_note: Welcome screen logo layout improved
     tag: new
     group: 1
 
   # Changed
-  - note: Change color priority to show selection also on active items
-    short_note: Change color priority to show selection also on active items
+  - note: Selection now shown on active items by adjusting color priority
+    short_note: Selection now shown on active items by adjusting color priority
     tag: changed
     group: 1
 
-  - note: Make use of switches instead of checkboxes in folder settings
-    short_note: Make use of switches instead of checkboxes in folder settings
+  - note: Folder settings now use switches instead of checkboxes
+    short_note: Folder settings now use switches instead of checkboxes
+    tag: changed
+    group: 1
+
+  - note: Message list colors updated for better contrast
+    short_note: Message list colors updated for better contrast
     tag: changed
     group: 1
 
   # Fixed
-  - note: Issues setting up accounts on outlook.com/hotmail.com have been resolved
-    short_note: Issues setting up accounts on outlook.com/hotmail.com have been resolved
+  - note: Account setup issues with outlook.com and hotmail.com resolved
+    short_note: Account setup issues with outlook.com and hotmail.com resolved
     tag: fixed
     group: 1
 
-  - note: Resolve some keyboard navigation bugs
-    short_note: Resolve some keyboard navigation bugs
+  - note: Keyboard navigation bugs resolved
+    short_note: Keyboard navigation bugs resolved
     tag: fixed
     group: 1
 
-  - note: Fix star and attachment icon colors
-    short_note: Fix star and attachment icon colors
+  - note: Star and attachment icon colors corrected
+    short_note: Star and attachment icon colors corrected
     tag: fixed
     group: 1
 
-  - note: Fix MessageList colors for better contrast
-    short_note: Fix MessageList colors for better contrast
+  - note: Paste of recipient lists into compose field now correctly parsed
+    short_note: Paste of recipient lists into compose field now correctly parsed
     tag: fixed
     group: 1
 
-  - note: Support parsing list of recipients when pasting into compose field
-    short_note: Support parsing list of recipients when pasting into compose field
+  - note: Back button now returns to Drafts folder when editing a draft
+    short_note: Back button now returns to Drafts folder when editing a draft
     tag: fixed
     group: 1
 
-  - note: Ensure UI back button navigates to Drafts folder when editing a draft
-    short_note: Ensure UI back button navigates to Drafts folder when editing a draft
+  - note: Unified Inbox now appears as expected
+    short_note: Unified Inbox now appears as expected
     tag: fixed
     group: 1
 
-  - note: Fixed an issue where the Unified inbox doesn't show up
-    short_note: Fixed an issue where the Unified inbox doesn't show up
+  - note: Dark and light mode switching issues resolved
+    short_note: Dark and light mode switching issues resolved
     tag: fixed
     group: 1
 
-  - note: Resolve issues when switching between dark and light mode
-    short_note: Resolve issues when switching between dark and light mode
-    tag: fixed
-    group: 1
-
-  - note: Removed scroll indicator based on review feedback
-    short_note: Removed scroll indicator based on review feedback
+  - note: Scroll indicator removed following review feedback
+    short_note: Scroll indicator removed following review feedback
     tag: fixed
     group: 1
