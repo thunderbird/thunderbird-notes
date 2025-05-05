@@ -67,7 +67,7 @@ notes:
     group: 1
 
   - note: Paste of recipient lists into compose field now correctly parsed
-    short_note: Paste of recipient lists now correctly parsed
+    short_note: Paste of recipient lists correctly parsed
     tag: fixed
     group: 1
 
