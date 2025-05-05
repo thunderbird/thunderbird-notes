@@ -72,21 +72,17 @@ notes:
     group: 1
 
   - note: Back button now returns to Drafts folder when editing a draft
-    short_note: Back button returns to Drafts folder when editing draft
     tag: fixed
     group: 1
 
   - note: Unified Inbox now appears as expected
-    short_note: Unified Inbox now appears as expected
     tag: fixed
     group: 1
 
   - note: Dark and light mode switching issues resolved
-    short_note: Dark and light mode switching issues resolved
     tag: fixed
     group: 1
 
   - note: Scroll indicator removed following review feedback
-    short_note: Scroll indicator removed
     tag: fixed
     group: 1
