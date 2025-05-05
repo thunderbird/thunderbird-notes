@@ -15,7 +15,7 @@ notes:
   ## Beta 1
   # New
   - note: Testing drawer improvements in this beta, feedback on bugs is welcome
-    short_note: Testing drawer improvements in this beta, feedback on bugs is welcome
+    short_note: Testing drawer improvements in this beta
     tag: new
     group: 1
 
@@ -36,7 +36,7 @@ notes:
 
   # Changed
   - note: Selection now shown on active items by adjusting color priority
-    short_note: Selection now shown on active items by adjusting color priority
+    short_note: Selection now shown by adjusting color priority
     tag: changed
     group: 1
 
@@ -52,7 +52,7 @@ notes:
 
   # Fixed
   - note: Account setup issues with outlook.com and hotmail.com resolved
-    short_note: Account setup issues with outlook.com and hotmail.com resolved
+    short_note: Account setup issues with outlook and hotmail resolved
     tag: fixed
     group: 1
 
@@ -67,7 +67,7 @@ notes:
     group: 1
 
   - note: Paste of recipient lists into compose field now correctly parsed
-    short_note: Paste of recipient lists into compose field now correctly parsed
+    short_note: Paste of recipient lists now correctly parsed
     tag: fixed
     group: 1
 
