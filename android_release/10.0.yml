@@ -1,0 +1,77 @@
+release:
+  release_date: '2025-05-05'
+  text: |
+    **These notes apply to Thunderbird for Android version 10.0 released May 5th, 2025.**
+
+  releases:
+    - version: '10.0'
+      release_date: '2025-05-05'
+
+notes:
+  ## 10.0 release
+  # New
+  - note: Server field pre-filled in manual account setup
+    short_note: Server field pre-filled in manual account setup
+    tag: new
+
+  - note: Add a menu entry to empty the Spam folder
+    short_note: Add a menu entry to empty the Spam folder
+    tag: new
+
+  - note: Introduce an option to use the system theme on Android 10 and older
+    tag: new
+
+  # Changed
+  - note: Update PushService to run as a specialUse foreground service for Android 15
+    tag: changed
+
+  - note: Update Gmail OAuth client IDs to Thunderbird for Android
+    short_note: Update Gmail OAuth client IDs to Thunderbird for Android
+    tag: changed
+
+  - note: Preserve the <s> tag when sanitizing HTML content
+    short_note: Preserve the <s> tag when sanitizing HTML content
+    tag: changed
+
+  # Fixed
+  - note: Messages and star counts in the drawer update instantly
+    short_note: Messages and star counts in the drawer update instantly
+    tag: fixed
+
+  - note: Folder names in the drawer are limited to two lines
+    tag: fixed
+
+  - note: Hide accounts setting now remembered across restarts
+    short_note: Hide accounts setting now remembered across restarts
+    tag: fixed
+
+  - note: Account names in the drawer display as single lines when not set
+    tag: fixed
+
+  - note: Option to use text processing apps (like Translate) when selecting text
+    tag: fixed
+
+  - note: Recipient field now focused automatically when composing
+    tag: fixed
+
+  - note: Display the recipient's address instead of +1 and fix its size
+    tag: fixed
+
+  - note: Correct MIME type for .pkpass files
+    tag: fixed
+
+  - note: Accessibility improvements
+    tag: fixed
+
+  - note: Restart PushService after app update
+    short_note: Restart PushService after app update
+    tag: fixed
+
+  - note: Restrict displaying message search results to internal and system usages
+    tag: fixed
+
+  - note: Messages with one correspondent no longer showed "+1" incorrectly
+    tag: fixed
+
+  - note: Account email no longer duplicated in drawer header
+    tag: fixed
