@@ -57,7 +57,6 @@ notes:
     group: 1
 
   - note: Keyboard navigation bugs resolved
-    short_note: Keyboard navigation bugs resolved
     tag: fixed
     group: 1
 
@@ -67,7 +66,6 @@ notes:
     group: 1
 
   - note: Paste of recipient lists into compose field now correctly parsed
-    short_note: Paste of recipient lists correctly parsed
     tag: fixed
     group: 1
 
@@ -85,4 +83,10 @@ notes:
 
   - note: Scroll indicator removed following review feedback
     tag: fixed
+    group: 1
+
+  # Unresolved
+  - note: Incomplete input in recipient field. Remove space to work around.
+    short_note: Incomplete input in recipient field. Remove space to work around.
+    tag: unresolved
     group: 1
