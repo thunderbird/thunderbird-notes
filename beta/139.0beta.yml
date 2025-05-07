@@ -115,3 +115,7 @@ notes:
     tag: fixed
     bugs: [1960105]
     group: 2
+  - note: Access to multiple CalDAV calendars was not possible
+    tag: fixed
+    bugs: [1964473]
+    group: 2
