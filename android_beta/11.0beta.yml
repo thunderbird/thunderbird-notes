@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '11.0b1'
       release_date: '2025-05-05'
+    - version: '11.0b2'
+      release_date: '2025-05-13'
 
 notes:
   ## Beta 1
@@ -90,3 +93,22 @@ notes:
     short_note: Incomplete input in recipient field. Remove space to work around.
     tag: unresolved
     group: 1
+
+  ## Beta 2
+  # Fixed
+  - note: System navigation bar did not correctly blend with message content
+    short_note: System navigation bar did not correctly blend with message content
+    tag: fixed
+    group: 2
+  - note: '"New Mail Notifications" setting did not persist'
+    short_note: '"New Mail Notifications" setting did not persist'
+    tag: fixed
+    group: 2
+  - note: Trailing whitespace in recipient fields caused "Incomplete input" error
+    short_note: Trailing whitespace in recipient fields caused "Incomplete input" error
+    tag: fixed
+    group: 2
+  - note: Navigation drawer "Show Unified inbox" setting did not work
+    short_note: Navigation drawer "Show Unified inbox" setting did not work
+    tag: fixed
+    group: 2
