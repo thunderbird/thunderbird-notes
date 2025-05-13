@@ -22,10 +22,10 @@ jobs:
         with:
           repository: thunderbird/thunderbird-android
           sparse-checkout: |
-            scripts/render-notes.py
-            scripts/templates/changelog_master.xml
-            scripts/templates/changelog.txt
-            scripts/templates/changelog_long.txt
+            scripts/ci/render-notes.py
+            scripts/ci/templates/changelog_master.xml
+            scripts/ci/templates/changelog.txt
+            scripts/ci/templates/changelog_long.txt
           sparse-checkout-cone-mode: false
           path: render
 
@@ -50,12 +50,12 @@ jobs:
             RELEASE_NUMBER=$(echo $file | sed -E 's/[^0-9]*([0-9]+\.[0-9]+).*/\1/')
 
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p net.thunderbird.android.beta ${RELEASE_NUMBER}b${BETA_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
+            python ../render/scripts/ci/render-notes.py -p net.thunderbird.android.beta ${RELEASE_NUMBER}b${BETA_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
 
             echo "### com.fsck.k9" | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p com.fsck.k9 ${RELEASE_NUMBER}b${BETA_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
+            python ../render/scripts/ci/render-notes.py -p com.fsck.k9 ${RELEASE_NUMBER}b${BETA_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
           done
 
@@ -67,11 +67,11 @@ jobs:
             echo "### net.thunderbird.android" | tee -a $GITHUB_STEP_SUMMARY
             RELEASE_NUMBER=$(echo $file | sed -E 's/[^0-9]*([0-9]+\.[0-9]+).*/\1/')
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p net.thunderbird.android.beta ${RELEASE_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
+            python ../render/scripts/ci/render-notes.py -p net.thunderbird.android.beta ${RELEASE_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
 
             echo "### com.fsck.k9" | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
-            python ../render/scripts/render-notes.py -p com.fsck.k9 ${RELEASE_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
+            python ../render/scripts/ci/render-notes.py -p com.fsck.k9 ${RELEASE_NUMBER} -r . | tee -a $GITHUB_STEP_SUMMARY
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
           done
