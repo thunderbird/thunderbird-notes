@@ -1,0 +1,24 @@
+release:
+  release_date: '2025-05-13'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/138.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # Fixed
+  - note: Thunderbird could crash when importing Outlook messages
+    tag: fixed
+    bugs: [1851297]
+  - note: Messages were permanently deleted if Trash folder had non-ASCII Unicode characters
+    tag: fixed
+    bugs: [1958781]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1960861, 1961049, 1961691]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird138.0.1)'
+    tag: fixed
