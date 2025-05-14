@@ -112,3 +112,7 @@ notes:
     short_note: Navigation drawer "Show Unified inbox" setting did not work
     tag: fixed
     group: 2
+  - note: Application could crash after deleting accounts and continuing to use the app
+    short_note: Application could crash after deleting accounts and continuing to use the app
+    tag: fixed
+    group: 2
