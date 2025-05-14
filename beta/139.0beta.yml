@@ -1,7 +1,7 @@
 release:
   release_date: '2025-04-30'
   text: |
-    **These notes apply to Thunderbird version 139 beta 2 released May 7, 2025.**
+    **These notes apply to Thunderbird version 139 beta 3 released May 14, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/138.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -99,7 +100,7 @@ notes:
     bugs: [1954358]
   - note: Visual and UX improvements
     tag: fixed
-    bugs: [1949810, 1958757, 1960861, 1961049, 1961691]
+    bugs: [1949810, 1960861, 1961049, 1961691]
 
   # Beta 2
   # Fixed
@@ -119,3 +120,14 @@ notes:
     tag: fixed
     bugs: [1964473]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Access was not allowed to attachments at specific UNC hosts
+    tag: fixed
+    bugs: [1964145]
+    group: 3
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1964156]
+    group: 3
