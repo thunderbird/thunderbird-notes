@@ -1,0 +1,24 @@
+release:
+  release_date: '2025-05-20'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/138.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # Fixed
+  - note: Messages could not be viewed if the profile used a UNC path
+    tag: fixed
+    bugs: [1966256]
+  - note: Standalone message windows/tabs no longer responded after folder compaction
+    tag: fixed
+    bugs: [1960349]
+  - note: Compacting folders with certain pending operations caused unnecessary warnings
+    tag: fixed
+    bugs: [1960105]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird138.0.2)'
+    tag: fixed
