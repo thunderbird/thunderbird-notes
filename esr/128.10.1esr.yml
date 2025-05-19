@@ -28,3 +28,8 @@ notes:
     bugs: [1960861]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.10.1)'
     tag: fixed
+
+  # Unresolved
+  - note: Messages cannot not be viewed if the profile uses a UNC path
+    tag: unresolved
+    bugs: [1966256]
