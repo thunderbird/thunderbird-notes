@@ -1,7 +1,7 @@
 release:
   release_date: '2025-04-30'
   text: |
-    **These notes apply to Thunderbird version 139 beta 3 released May 14, 2025.**
+    **These notes apply to Thunderbird version 139 beta 4 released May 19, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/138.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -131,3 +132,22 @@ notes:
     tag: fixed
     bugs: [1964156]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Messages could not be viewed if the profile used a UNC path
+    tag: fixed
+    bugs: [1966256]
+    group: 4
+  - note: Mail window could stop functioning during and after folder compaction
+    tag: fixed
+    bugs: [1952311]
+    group: 4
+  - note: "`mail.compose.other.header` headers were not shown in Show All Headers mode"
+    tag: fixed
+    bugs: [1961642]
+    group: 4
+  - note: Compact View users had all folders expanded after restart
+    tag: fixed
+    bugs: [1964265]
+    group: 4
