@@ -31,9 +31,6 @@ notes:
   - note: Links in the OAuth authentication window did not open when clicked
     tag: fixed
     bugs: [1956988]
-  - note: Mail window could stop functioning during and after folder compaction
-    tag: fixed
-    bugs: [1952311]
   - note: Access was not allowed to attachments at specific UNC hosts
     tag: fixed
     bugs: [1964145]
