@@ -1,5 +1,5 @@
 release:
-  release_date: '2025-05-20'
+  release_date: '2025-05-27'
   text: |
     **For help and a quick start on Thunderbird 128, see
     [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
@@ -17,14 +17,8 @@ release:
 
 notes:
   # Fixed
-  - note: Messages could not be viewed if the profile used a UNC path
+  - note: Thunderbird could crash if message copying to Sent folder was interrupted
     tag: fixed
-    bugs: [1966256]
-  - note: Access was not allowed to attachments at specific UNC hosts
-    tag: fixed
-    bugs: [1964145]
-  - note: Visual and UX improvements
-    tag: fixed
-    bugs: [1964156]
-  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.10.2)'
+    bugs: [1965304]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.11)'
     tag: fixed
