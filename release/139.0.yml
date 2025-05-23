@@ -1,0 +1,128 @@
+release:
+  release_date: '2025-05-27'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/138.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # New
+  - note: Implemented enterprise policy to allow granular in-app notification control
+    tag: new
+    bugs: [1950887]
+  - note: Added 'Mark as Read' and 'Delete' actions to mail notifications
+    tag: new
+    bugs: [1953662]
+  - note: Implemented customizable row count for Cards View in 'Appearance' settings
+    tag: new
+    bugs: [1865057]
+  - note: Implemented ability to manually sort folders in the folder pane
+    tag: new
+    bugs: [1846550]
+
+  # Fixed
+  - note: Thunderbird could crash when setting message compose headers
+    tag: fixed
+    bugs: [1803006]
+  - note: Links in the OAuth authentication window did not open when clicked
+    tag: fixed
+    bugs: [1956988]
+  - note: Mail window could stop functioning during and after folder compaction
+    tag: fixed
+    bugs: [1952311]
+  - note: Access was not allowed to attachments at specific UNC hosts
+    tag: fixed
+    bugs: [1964145]
+  - note: Messages could not be viewed if the profile used a UNC path
+    tag: fixed
+    bugs: [1966256]
+  - note: Mail window could stop functioning during and after folder compaction
+    tag: fixed
+    bugs: [1952311]
+  - note: Full folder sorting logic was not used when inserting folders after move
+    tag: fixed
+    bugs: [1960343]
+  - note: Standalone message windows/tabs no longer responded after folder compaction
+    tag: fixed
+    bugs: [1960349]
+  - note: "`mail.compose.other.header` headers were not shown in Show All Headers mode"
+    tag: fixed
+    bugs: [1961642]
+  - note: Folder was hidden from Favorite when a subfolder was removed
+    tag: fixed
+    bugs: [1857315]
+  - note: Folder tree message counts displayed incorrectly under certain conditions
+    tag: fixed
+    bugs: [1957878]
+  - note: Selection was not restored after manual folder sorting
+    tag: fixed
+    bugs: [1958585]
+  - note: Dragging a folder to a new parent did not insert it correctly for IMAP folders
+    tag: fixed
+    bugs: [1959545]
+  - note: Compact View users had all folders expanded after restart
+    tag: fixed
+    bugs: [1964265]
+  - note: Invite attachments without a name were forwarded as 'Attached Message Part'
+    tag: fixed
+    bugs: [1822978]
+  - note: Chat settings tab remained visible when `mail.chat.enabled` was false
+    tag: fixed
+    bugs: [1671747]
+  - note: Selected folder was not refreshed when applying 'Appearance' Threading settings
+    tag: fixed
+    bugs: [1960978]
+  - note: "'Grouped by Sort' for all folders in 'Appearance' settings did not work properly"
+    tag: fixed
+    bugs: [1962278]
+  - note: Thunderbird could crash if message copying to Sent folder was interrupted
+    tag: fixed
+    bugs: [1965304]
+  - note: Thunderbird could crash when importing Outlook messages
+    tag: fixed
+    bugs: [1851297]
+  - note: System search toggle did not properly reflect and control integration state
+    tag: fixed
+    bugs: [553048]
+  - note: Dragging attachments to desktop from Thunderbird did not work on macOS
+    tag: fixed
+    bugs: [1958549]
+  - note: Dark mode messages displayed in light mode due to preference setting conflict
+    tag: fixed
+    bugs: [1959691]
+  - note: Compacting folders with certain pending operations caused unnecessary warnings
+    tag: fixed
+    bugs: [1960105]
+  - note: Cancelling a post to a news server could fail and remove the article
+    tag: fixed
+    bugs: [250216]
+  - note: Messages were permanently deleted if Trash folder had non-ASCII Unicode characters
+    tag: fixed
+    bugs: [1958781]
+  - note: Thunderbird could crash in NNTP subscription dialog
+    tag: fixed
+    bugs: [1961659]
+  - note: Newsgroup searches with slashes were not supported with XPAT-enabled servers
+    tag: fixed
+    bugs: [530193]
+  - note: Offline newsgroup use lacked functionality needed for effective offline access
+    tag: fixed
+    bugs: [288120]
+  - note: Chat accounts could not be deleted
+    tag: fixed
+    bugs: [1959848]
+  - note: Reminders missed for all-day events when `calendar.alarms.showmissed` was false
+    tag: fixed
+    bugs: [1954358]
+  - note: Access to multiple CalDAV calendars was not possible
+    tag: fixed
+    bugs: [1964473]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1949810, 1960861, 1961049, 1961691, 1964156]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird139)'
+    tag: fixed
