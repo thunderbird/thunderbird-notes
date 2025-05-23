@@ -37,18 +37,12 @@ notes:
   - note: Access was not allowed to attachments at specific UNC hosts
     tag: fixed
     bugs: [1964145]
-  - note: Messages could not be viewed if the profile used a UNC path
-    tag: fixed
-    bugs: [1966256]
   - note: Mail window could stop functioning during and after folder compaction
     tag: fixed
     bugs: [1952311]
   - note: Full folder sorting logic was not used when inserting folders after move
     tag: fixed
     bugs: [1960343]
-  - note: Standalone message windows/tabs no longer responded after folder compaction
-    tag: fixed
-    bugs: [1960349]
   - note: "`mail.compose.other.header` headers were not shown in Show All Headers mode"
     tag: fixed
     bugs: [1961642]
@@ -82,9 +76,6 @@ notes:
   - note: Thunderbird could crash if message copying to Sent folder was interrupted
     tag: fixed
     bugs: [1965304]
-  - note: Thunderbird could crash when importing Outlook messages
-    tag: fixed
-    bugs: [1851297]
   - note: System search toggle did not properly reflect and control integration state
     tag: fixed
     bugs: [553048]
@@ -94,15 +85,9 @@ notes:
   - note: Dark mode messages displayed in light mode due to preference setting conflict
     tag: fixed
     bugs: [1959691]
-  - note: Compacting folders with certain pending operations caused unnecessary warnings
-    tag: fixed
-    bugs: [1960105]
   - note: Cancelling a post to a news server could fail and remove the article
     tag: fixed
     bugs: [250216]
-  - note: Messages were permanently deleted if Trash folder had non-ASCII Unicode characters
-    tag: fixed
-    bugs: [1958781]
   - note: Thunderbird could crash in NNTP subscription dialog
     tag: fixed
     bugs: [1961659]
@@ -123,6 +108,6 @@ notes:
     bugs: [1964473]
   - note: Visual and UX improvements
     tag: fixed
-    bugs: [1949810, 1960861, 1961049, 1961691, 1964156]
+    bugs: [1949810, 1964156]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird139)'
     tag: fixed
