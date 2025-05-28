@@ -1,0 +1,97 @@
+release:
+  release_date: '2025-05-29'
+  text: |
+    **These notes apply to Thunderbird version 140 beta 1 released May 29, 2025.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/138.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: "Added 'Mark as Spam' and 'Mark as Starred' actions to mail notifications"
+    tag: new
+    bugs: [1953661]
+  - note: Account Hub enabled by default for second email setup
+    tag: new
+    bugs: [1968292]
+
+  # Changed
+  - note: Some generic appearance settings were moved from General to Appearance section
+    tag: changed
+    bugs: [1944986]
+
+  # Fixed
+  - note: Folder cache entries were not cleared when an account was removed
+    tag: fixed
+    bugs: [1897303]
+  - note: Selecting a folder could fail due to an underlying error
+    tag: fixed
+    bugs: [1961165]
+  - note: '"File > Save As > Template" and "Reply With Template" filter actions failed'
+    tag: fixed
+    bugs: [1968403]
+  - note: View Message Source no longer worked for multiple selected messages
+    tag: fixed
+    bugs: [1962791]
+  - note: Creating a new mail account from the menu bar in a message window failed
+    tag: fixed
+    bugs: [1964067]
+  - note: List-ID contents could be selected but not copied via context menu
+    tag: fixed
+    bugs: [1965716]
+  - note: Some webpage links could be forced to open in Thunderbird
+    tag: fixed
+    bugs: [700979]
+  - note: Thunderbird could crash when scrolling folders using up/down arrow keys
+    tag: fixed
+    bugs: [1967012]
+  - note: '"Secret Key ID" field did not sanitize input, causing draft encryption to fail'
+    tag: fixed
+    bugs: [1670174]
+  - note: Repaired folders were not reindexed for search after repair
+    tag: fixed
+    bugs: [1348662]
+  - note: macOS system notifications worked but email alerts could not be disabled separately
+    tag: fixed
+    bugs: [1964362]
+  - note: Thunderbird could crash in debug build when adding a news account
+    tag: fixed
+    bugs: [1963467]
+  - note: Thunderbird could crash if message copying to Sent folder was interrupted
+    tag: fixed
+    bugs: [1965304]
+  - note: Moving back in the calendar import dialog could break the Continue button
+    tag: fixed
+    bugs: [1967965]
+  - note: "Add-ons: Optional permission prompts for WebExtensions displayed wrong permissions"
+    tag: fixed
+    bugs: [1879689]
+  - note: Density and Font Size menu item buttons used incorrect icons
+    tag: fixed
+    bugs: [1967198]
+  - note: Auto-unsubscribed dialog was intrusive, reappeared, and could not be ignored
+    tag: fixed
+    bugs: [1967835]
+  - note: Thunderbird could show a misleading error message on IMAP login failure
+    tag: fixed
+    bugs: [803994]
+  - note: Modal alerts shown for expired articles when downloading news for offline use
+    tag: fixed
+    bugs: [805095]
+  - note: Status bar message did not include newsgroup name along with the account name
+    tag: fixed
+    bugs: [946643]
+  - note: Links in calendar event description were unreadable in dark mode
+    tag: fixed
+    bugs: [1963293]
+  - note: Unable to subscribe to more than one network calendar
+    tag: fixed
+    bugs: [1964295]
