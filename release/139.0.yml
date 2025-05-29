@@ -108,3 +108,8 @@ notes:
     bugs: [1949810, 1964156]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird139)'
     tag: fixed
+
+  # Unresolved
+  - note: Message list switched to Cards View instead of keeping Table View preference
+    tag: unresolved
+    bugs: [1968963]
