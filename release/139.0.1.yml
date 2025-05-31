@@ -1,0 +1,19 @@
+release:
+  release_date: '2025-06-02'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/139.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # Fixed
+  - note: Thunderbird could crash when copying a local folder to IMAP
+    tag: fixed
+    bugs: [1969272]
+  - note: Upgrade to 139.0 incorrectly switched Table View to Cards View
+    tag: fixed
+    bugs: [1968963]
