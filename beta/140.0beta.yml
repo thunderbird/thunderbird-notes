@@ -95,3 +95,6 @@ notes:
   - note: Unable to subscribe to more than one network calendar
     tag: fixed
     bugs: [1964295]
+  - note: Thunderbird could crash when copying a local folder to IMAP
+    tag: fixed
+    bugs: [1969272]
