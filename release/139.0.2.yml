@@ -1,0 +1,15 @@
+release:
+  release_date: '2025-06-10'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/139.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 128.0beta
+
+notes:
+  # Fixed
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird139.0.2)'
+    tag: fixed
