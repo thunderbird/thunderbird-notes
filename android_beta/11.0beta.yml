@@ -13,6 +13,8 @@ release:
       release_date: '2025-05-05'
     - version: '11.0b2'
       release_date: '2025-05-13'
+    - version: '11.0b3'
+      release_date: '2025-06-10'
 
 notes:
   ## Beta 1
@@ -116,3 +118,18 @@ notes:
     short_note: Application could crash after deleting accounts and continuing to use the app
     tag: fixed
     group: 2
+
+  ## Beta 3
+  # Fixed
+  - note: Sharing multiple selected images from gallery only selected last image
+    short_note: Sharing multiple selected images from gallery only selected last image
+    tag: fixed
+    group: 3
+  - note: Account drawer could crash when folder was selected
+    short_note: Account drawer could crash when folder was selected
+    tag: fixed
+    group: 3
+  - note: Application could crash when fetching emails
+    short_note: Application could crash when fetching emails
+    tag: fixed
+    group: 3
