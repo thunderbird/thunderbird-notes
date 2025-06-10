@@ -1,7 +1,7 @@
 release:
   release_date: '2025-06-09'
   text: |
-    **These notes apply to Thunderbird version 140 beta 1 released June 9, 2025.**
+    **These notes apply to Thunderbird version 140 beta 2 released June 11, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/138.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -98,3 +99,10 @@ notes:
   - note: Thunderbird could crash when copying a local folder to IMAP
     tag: fixed
     bugs: [1969272]
+
+  # Beta 2
+  # Fixed
+  - note: '"About" dialog incorrectly displayed "Daily" rather than "Beta"'
+    tag: fixed
+    bugs: [1971146]
+    group: 2
