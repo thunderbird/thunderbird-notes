@@ -17,12 +17,26 @@ REQUIREMENTS_IMPORT = {
     "102": "102.0",
     "115": "115.0",
     "128": "128.0esr",
+    "140": "140.0esr",
     "beta": "116.0beta",
 }
 
 NO_AUTO_UPDATES = """**Thunderbird version 115 is only offered as direct download from
 thunderbird.net and not as an upgrade from Thunderbird version 102 or
 earlier. A future release will provide updates from earlier versions.**"""
+
+TMPL_140_TEXT = """**For help and a quick start on Thunderbird 140, see
+[Thunderbird 140 Eclipse FAQ](https://support.mozilla.org/en-US/kb/thunderbird-140-eclipse-faq)**
+
+**For more on all the new features in Thunderbird 140, see
+[What’s New in Thunderbird 140](https://www.thunderbird.net/thunderbird/140.0/whatsnew/).**
+
+**System Requirements:** [Details](/en-US/thunderbird/140.0esr/system-requirements/)
+
+- Windows: Windows 10 or later
+- Mac: macOS 10.15 or later
+- Linux: GTK+ 3.14 or higher
+"""
 
 TMPL_128_TEXT = """**For help and a quick start on Thunderbird 128, see
 [Thunderbird 128 Nebula FAQ](https://support.mozilla.org/en-US/kb/thunderbird-128-nebula-faq)**
@@ -83,6 +97,7 @@ TMPL_RELEASES_TEXT = {
     "102": TMPL_102_TEXT,
     "115": TMPL_115_TEXT,
     "128": TMPL_128_TEXT,
+    "140": TMPL_140_TEXT,
     "release": TMPL_RELEASE_TEXT,
     "beta": TMPL_BETA_TEXT,
 }
