@@ -1,0 +1,412 @@
+release:
+  release_date: '2025-06-24'
+  text: |
+    **For help and a quick start on Thunderbird 140, see
+    [Thunderbird 140 Eclipse FAQ](https://support.mozilla.org/en-US/kb/thunderbird-140-eclipse-faq)**
+
+    **For more on all the new features in Thunderbird 140, see
+    [What’s New in Thunderbird 140](https://www.thunderbird.net/thunderbird/140.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/140.0esr/system-requirements/)
+
+  system_requirements: |
+    ## Windows
+    - Windows 10 or later
+
+    ### Windows Recommended Hardware
+    - 1GHz or faster Intel/AMD compatible processor
+    - 1GB RAM / 2GB of RAM for the 64-bit version
+    - 500 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## Mac
+    - macOS 10.15 or later
+
+    ### Mac Recommended Hardware
+    - Macintosh computer with an Intel x86 or Apple Silicon processor
+    - 512 MB RAM
+    - 200 MB hard drive space
+    - additional hard drive space for mail storage
+
+    ---
+
+    ## GNU/Linux
+    ### Software Requirements
+
+    *Please note that GNU/Linux distributors may provide packages for your distribution which have
+    different requirements.*
+
+    - Thunderbird will not run at all without the following libraries or packages:
+        - glibc 2.17 or higher
+        - GTK+ 3.14 or higher
+        - libglib 2.42 or higher
+        - libstdc++ 4.8.1 or higher
+        - X.Org 1.0 or higher (1.7 or higher is recommended)
+
+    - For optimal functionality, we recommend the following libraries or packages:
+        - DBus 1.0 or higher
+        - NetworkManager 0.7 or higher
+        - PulseAudio
+
+notes:
+  # New
+  - note: Implemented enterprise policy to allow granular in-app notification control
+    tag: new
+    bugs: [1950887]
+  - note: New mail alert now includes message disposition buttons
+    tag: new
+    bugs: [410338]
+  - note: Added 'Mark as Read' and 'Delete' actions to mail notifications
+    tag: new
+    bugs: [1953662]
+  - note: "Added 'Mark as Spam' and 'Mark as Starred' actions to mail notifications"
+    tag: new
+    bugs: [1953661]
+  - note: Support dark reader for the message pane
+    tag: new
+    bugs: [1715361]
+  - note: Messages are automatically adapted to dark mode with a quick toggle in the header
+    tag: new
+    bugs: [1942206]
+  - note: Message filters are now available in the Folder Pane context menu
+    tag: new
+    bugs: [1845206]
+  - note: Added horizontal threadpane scrolling `mail.threadpane.table.horizontal_scroll`
+    tag: new
+    bugs: [381821]
+  - note: Implemented customizable row count for Cards View in 'Appearance' settings
+    tag: new
+    bugs: [1865057]
+  - note: Implemented ability to manually sort folders in the folder pane
+    tag: new
+    bugs: [1846550]
+  - note: New "Appearance" Settings UI to globally control message threading/sorting order
+    tag: new
+    bugs: [1829737, 1943724]
+  - note: Added checkbox to select/unselect all calendars in the calendar setup wizard
+    tag: new
+    bugs: [1733959]
+  - note: Account Hub enabled by default for second email setup
+    tag: new
+    bugs: [1968292]
+  - note: 'Add-ons: Added support for specifying a cookieStoreId when creating a space'
+    tag: new
+    bugs: [1913580]
+  - note: Added Thunderbird-specific loading symbol
+    tag: new
+    bugs: [1905839]
+
+  # Changed
+  - note: Removed obsolete preference `extensions.overlayloader.loglevel`
+    tag: changed
+    bugs: [1901705]
+  - note: CardDAV address books and calendars now use the same OAuth2 code as mail
+    tag: changed
+    bugs: [1927998]
+  - note: Display junk state and allow toggling it from top of message context menu
+    tag: changed
+    bugs: [1923391]
+  - note: Subscribe/Unsubscribe buttons were removed from the IMAP subscribe dialog
+    tag: changed
+    bugs: [1710319]
+  - note: Ignore unsupported subkeys/signatures when importing compliant OpenPGP keys
+    tag: changed
+    bugs: [1884337]
+  - note: Some generic appearance settings were moved from General to Appearance section
+    tag: changed
+    bugs: [1944986]
+  - note: 'Add-ons: browser.messages.listAttachments() now returns attachment headers'
+    tag: changed
+    bugs: [1937649]
+  - note: Set `calendar.alarms.showmissed` preference to false by default
+    tag: changed
+    bugs: [1934069]
+  - note: Exporting a calendar to .ics did not include the calendar name
+    tag: changed
+    bugs: [1901384]
+
+  # Fixed
+  - note: Chrome URLs were opened in an external browser
+    tag: fixed
+    bugs: [1909585]
+  - note: Race condition in folder compaction could cause unexpected behavior
+    tag: fixed
+    bugs: [1931863]
+  - note: Crash could occur when shutting down during MAPI send
+    tag: fixed
+    bugs: [1944274]
+  - note: Message preview truncation in notifications improved
+    tag: fixed
+    bugs: [1953692]
+  - note: Thunderbird could crash when setting message compose headers
+    tag: fixed
+    bugs: [1803006]
+  - note: Links in the OAuth authentication window did not open when clicked
+    tag: fixed
+    bugs: [1956988]
+  - note: Mail window could stop functioning during and after folder compaction
+    tag: fixed
+    bugs: [1952311]
+  - note: Error message for compacting a corrupted local folder was not useful
+    tag: fixed
+    bugs: [1941770]
+  - note: Repair folder did not fix mbox files produced on MacOS before Thunderbird 1.0
+    tag: fixed
+    bugs: [1942540]
+  - note: Wrong day of week displayed for some emails
+    tag: fixed
+    bugs: [1796042]
+  - note: Edit menu entries missing when group header selected in "Grouped by sort" view
+    tag: fixed
+    bugs: [1924977]
+  - note: IMAP folder "Undelete" performed "Delete" when mixed messages were selected
+    tag: fixed
+    bugs: [393523]
+  - note: View Message Source no longer worked for multiple selected messages
+    tag: fixed
+    bugs: [1962791]
+  - note: Creating a new mail account from the menu bar in a message window failed
+    tag: fixed
+    bugs: [1964067]
+  - note: Feed body was not rendered when "Message Body As" formatting option selected
+    tag: fixed
+    bugs: [1906705, 1906830]
+  - note: Thunderbird could show incorrect 'From' and 'To' fields for mailing list emails
+    tag: fixed
+    bugs: [1900211]
+  - note: "`mail.compose.other.header` wrongly added fields to message preview pane headers"
+    tag: fixed
+    bugs: [1802793]
+  - note: Deleting or detaching attachments in a saved .eml file appeared to work but failed
+    tag: fixed
+    bugs: [1940528]
+  - note: In RSS feeds, the space bar did not scroll the message like it did in emails
+    tag: fixed
+    bugs: [1830755]
+  - note: Unchecking "Show all headers" in Message Header Settings closed dialog
+    tag: fixed
+    bugs: [1881788]
+  - note: Some webpage links could be forced to open in Thunderbird
+    tag: fixed
+    bugs: [700979]
+  - note: Right-click of message in cross-folder virtual folder wrongly selected it
+    tag: fixed
+    bugs: [1903910]
+  - note: Messages deleted from a cross-folder search view could not be undeleted
+    tag: fixed
+    bugs: [1902597]
+  - note: Cards view "replies" button remained styled without new messages in thread
+    tag: fixed
+    bugs: [1920747]
+  - note: Subscribe window "Show items that contain" should not have been shown for IMAP
+    tag: fixed
+    bugs: [1630286]
+  - note: POP3 inbox could show new mail with no subject, no sender, and date 1970-01-01
+    tag: fixed
+    bugs: [1911477]
+  - note: Folders at level 3+ were not auto-discovered when IMAP subscriptions were ignored
+    tag: fixed
+    bugs: [1902236]
+  - note: New subfolder did not inherit parent view, sort order, sort type, or columns
+    tag: fixed
+    bugs: [1933529]
+  - note: With "Fetch headers only" enabled, messages could not be sorted by size
+    tag: fixed
+    bugs: [1939852]
+  - note: Selecting starred messages did not update immediately
+    tag: fixed
+    bugs: [1942348]
+  - note: Marking a unified folder as favorite did not show it in favorite folders
+    tag: fixed
+    bugs: [537342]
+  - note: Threaded search view was not updated correctly when sorted by date received
+    tag: fixed
+    bugs: [1257826]
+  - note: Menu items to manage folders were not disabled in offline mode
+    tag: fixed
+    bugs: [1881087]
+  - note: Ctrl or Shift selecting multiple messages reset when dragging across a message
+    tag: fixed
+    bugs: [1941171]
+  - note: Folder was hidden from Favorite when subfolder was removed
+    tag: fixed
+    bugs: [1857315]
+  - note: Folder tree message counts displayed incorrectly under certain conditions
+    tag: fixed
+    bugs: [1957878]
+  - note: The UI could falsely report a message as encrypted when a null cipher was used
+    tag: fixed
+    bugs: [1943620]
+  - note: Message security panel strings were used in the wrong places
+    tag: fixed
+    bugs: [1941457]
+  - note: Importing an OpenPGP public key with whitespace failed
+    tag: fixed
+    bugs: [1941700]
+  - note: Unable to open attached signed OpenPGP .eml message
+    tag: fixed
+    bugs: [1943021]
+  - note: OpenPGP key was not updated when accepted key was reimported with new identities
+    tag: fixed
+    bugs: [1948831]
+  - note: Dual signed (PGP and S/MIME) emails were not displayed
+    tag: fixed
+    bugs: [1878664]
+  - note: '"Secret Key ID" field did not sanitize input, causing draft encryption to fail'
+    tag: fixed
+    bugs: [1670174]
+  - note: Quick Filter did not display loading symbol when search was in progress
+    tag: fixed
+    bugs: [1874419]
+  - note: Search messages dialog list could not be sorted by clicking the header icon
+    tag: fixed
+    bugs: [1942751]
+  - note: Repaired folders were not reindexed for search after repair
+    tag: fixed
+    bugs: [1348662]
+  - note: Shutdown could hang due to unterminated search execution
+    tag: fixed
+    bugs: [1934491]
+  - note: Changing a saved draft's send identity did not prompt to save the modified message
+    tag: fixed
+    bugs: [1850192]
+  - note: "Thunderbird did not warn when replying to a 'noreply' address containing a '+'"
+    tag: fixed
+    bugs: [1904005]
+  - note: Invite attachments without a name were forwarded as 'Attached Message Part'
+    tag: fixed
+    bugs: [1822978]
+  - note: Changing the UI font size did not apply to some dialogs
+    tag: fixed
+    bugs: [1916066]
+  - note: Deleted Gmail messages stayed visible until compact/expunge, despite settings
+    tag: fixed
+    bugs: [399475]
+  - note: Notification duration preference enabled when system notifications were enabled
+    tag: fixed
+    bugs: [1953322]
+  - note: Chat settings tab remained visible when `mail.chat.enabled` was false
+    tag: fixed
+    bugs: [1671747]
+  - note: macOS system notifications worked but email alerts could not be disabled separately
+    tag: fixed
+    bugs: [1964362]
+  - note: OAuth2 not shown in "Authentication method" menulist for existing Exchange account
+    tag: fixed
+    bugs: [1915208]
+  - note: "'Please fill out this field' in account setup always appeared in English"
+    tag: fixed
+    bugs: [1931693]
+  - note: No gap existed between Back and Forward buttons in the Feed Account Wizard dialog
+    tag: fixed
+    bugs: [1947643]
+  - note: Moving back in the calendar import dialog could break the Continue button
+    tag: fixed
+    bugs: [1967965]
+  - note: 'Add-ons: Links in content pages with a target attribute loaded a blank page'
+    tag: fixed
+    bugs: [1905616]
+  - note: 'Add-ons: Context menu entries were incorrectly aligned.'
+    tag: fixed
+    bugs: [1933970]
+  - note: "Add-ons: Optional permission prompts for WebExtensions displayed wrong permissions"
+    tag: fixed
+    bugs: [1879689]
+  - note: Double clicking a new contact icon added the contact to the address book twice
+    tag: fixed
+    bugs: [1938281]
+  - note: Unable to auto-discover Address Book on Radicale server
+    tag: fixed
+    bugs: [1925006]
+  - note: CardDAV synchronization to Zimbra server failed
+    tag: fixed
+    bugs: [1903549]
+  - note: Mark-Of-The-Web was not applied to attachments saved via drag and drop
+    tag: fixed
+    bugs: [1805986]
+  - note: System search toggle did not properly reflect and control integration state
+    tag: fixed
+    bugs: [553048]
+  - note: Some messages could not be scrolled due to hidden overflows in inline styles
+    tag: fixed
+    bugs: [1951248]
+  - note: Keyboard navigation was not possible when first header button was disabled
+    tag: fixed
+    bugs: [1953483]
+  - note: Thunderbird could crash when renaming a local folder while copying from IMAP
+    tag: fixed
+    bugs: [1581079]
+  - note: Some functionality was missing for newsgroup messages opened from a file or URI
+    tag: fixed
+    bugs: [11076]
+  - note: Message and folder lists could display incorrect line spacing after restart
+    tag: fixed
+    bugs: [1947554]
+  - note: Automatic compact did not attempt to compact all folders when error encountered
+    tag: fixed
+    bugs: [1903174]
+  - note: APOP authenication for POP3 did not prompt for corrected password
+    tag: fixed
+    bugs: [1928803]
+  - note: POP3 'fetch headers only' and 'get selected messages' could skip some messages
+    tag: fixed
+    bugs: [1937069]
+  - note: Thunderbird logged network errors in console when used in offline mode
+    tag: fixed
+    bugs: [1802300]
+  - note: Slow performance when moving bulk messages from IMAP to local
+    tag: fixed
+    bugs: [1945062]
+  - note: Crossposting news article was not possible if newsgroups on different servers
+    tag: fixed
+    bugs: [230899]
+  - note: Cancelling a post to a news server could fail and remove the article
+    tag: fixed
+    bugs: [250216]
+  - note: Thunderbird could crash in NNTP subscription dialog
+    tag: fixed
+    bugs: [1961659]
+  - note: Newsgroup searches with slashes were not supported with XPAT-enabled servers
+    tag: fixed
+    bugs: [530193]
+  - note: Offline newsgroup use lacked functionality needed for effective offline access
+    tag: fixed
+    bugs: [288120]
+  - note: Thunderbird could show a misleading error message on IMAP login failure
+    tag: fixed
+    bugs: [803994]
+  - note: Modal alerts shown for expired articles when downloading news for offline use
+    tag: fixed
+    bugs: [805095]
+  - note: Status bar message did not include newsgroup name along with the account name
+    tag: fixed
+    bugs: [946643]
+  - note: Nickserv messages appeared during successful authentication
+    tag: fixed
+    bugs: [1951485]
+  - note: Thunderbird Flatpak install did not use a branded symbolic icon
+    tag: fixed
+    bugs: [1914381]
+  - note: Unable to view full certificate chain from the "View Signature" button
+    tag: fixed
+    bugs: [1716998]
+  - note: Organizer email address for CalDAV calendar events could be incorrect
+    tag: fixed
+    bugs: [1587736]
+  - note: Changing `calendar.week.start` preference did not update calendar views
+    tag: fixed
+    bugs: [1918010]
+  - note: Clicking a `mid:` link in Calendar opened two copies of the message
+    tag: fixed
+    bugs: [1955840]
+  - note: Thunderbird calendar failed to show attendee as busy when added to an event
+    tag: fixed
+    bugs: [1931475]
+  - note: Some calendar requests were blocked due to opaque response blocking
+    tag: fixed
+    bugs: [1920710]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1941139, 1952481, 1955860, 1935652, 1949828]
