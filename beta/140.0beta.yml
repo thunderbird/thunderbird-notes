@@ -1,7 +1,7 @@
 release:
   release_date: '2025-06-09'
   text: |
-    **These notes apply to Thunderbird version 140 beta 2 released June 11, 2025.**
+    **These notes apply to Thunderbird version 140 beta 3 released June 16, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/138.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -106,3 +107,38 @@ notes:
     tag: fixed
     bugs: [1971146]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Feed subscriptions were broken
+    tag: fixed
+    bugs: [1969932]
+    group: 3
+  - note: Messages with multiple authors or no author were not indexed for global search
+    tag: fixed
+    bugs: [1831475]
+    group: 3
+  - note: Messages from authors without email address were not indexed for global search
+    tag: fixed
+    bugs: [1223951]
+    group: 3
+  - note: Creating a link from selected text did not work with advanced properties selected
+    tag: fixed
+    bugs: [1969767]
+    group: 3
+  - note: Setting different archiving options for multiple identities did not work
+    tag: fixed
+    bugs: [1968381]
+    group: 3
+  - note: Reconnecting to an NNTP server was potentially not possible
+    tag: fixed
+    bugs: [1929948]
+    group: 3
+  - note: Clicking a 'mid:' link in event created from message did not work
+    tag: fixed
+    bugs: [1970916]
+    group: 3
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1968444, 1971058]
+    group: 3
