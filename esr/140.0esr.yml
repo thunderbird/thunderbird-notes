@@ -170,6 +170,9 @@ notes:
   - note: Creating a new mail account from the menu bar in a message window failed
     tag: fixed
     bugs: [1964067]
+  - note: Feed subscriptions were broken
+    tag: fixed
+    bugs: [1969932]
   - note: Feed body was not rendered when "Message Body As" formatting option selected
     tag: fixed
     bugs: [1906705, 1906830]
@@ -266,6 +269,12 @@ notes:
   - note: Repaired folders were not reindexed for search after repair
     tag: fixed
     bugs: [1348662]
+  - note: Messages with multiple authors or no author were not indexed for global search
+    tag: fixed
+    bugs: [1831475]
+  - note: Messages from authors without email address were not indexed for global search
+    tag: fixed
+    bugs: [1223951]
   - note: Shutdown could hang due to unterminated search execution
     tag: fixed
     bugs: [1934491]
@@ -278,6 +287,9 @@ notes:
   - note: Invite attachments without a name were forwarded as 'Attached Message Part'
     tag: fixed
     bugs: [1822978]
+  - note: Creating a link from selected text did not work with advanced properties selected
+    tag: fixed
+    bugs: [1969767]
   - note: Changing the UI font size did not apply to some dialogs
     tag: fixed
     bugs: [1916066]
@@ -293,6 +305,9 @@ notes:
   - note: macOS system notifications worked but email alerts could not be disabled separately
     tag: fixed
     bugs: [1964362]
+  - note: Setting different archiving options for multiple identities did not work
+    tag: fixed
+    bugs: [1968381]
   - note: OAuth2 not shown in "Authentication method" menulist for existing Exchange account
     tag: fixed
     bugs: [1915208]
@@ -383,6 +398,9 @@ notes:
   - note: Status bar message did not include newsgroup name along with the account name
     tag: fixed
     bugs: [946643]
+  - note: Reconnecting to an NNTP server was potentially not possible
+    tag: fixed
+    bugs: [1929948]
   - note: Nickserv messages appeared during successful authentication
     tag: fixed
     bugs: [1951485]
@@ -401,6 +419,9 @@ notes:
   - note: Clicking a `mid:` link in Calendar opened two copies of the message
     tag: fixed
     bugs: [1955840]
+  - note: Clicking a 'mid:' link in event created from message did not work
+    tag: fixed
+    bugs: [1970916]
   - note: Thunderbird calendar failed to show attendee as busy when added to an event
     tag: fixed
     bugs: [1931475]
@@ -409,4 +430,4 @@ notes:
     bugs: [1920710]
   - note: Visual and UX improvements
     tag: fixed
-    bugs: [1941139, 1952481, 1955860, 1935652, 1949828]
+    bugs: [1935652, 1941139, 1949828, 1952481, 1955860, 1968444]
