@@ -7,6 +7,8 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
   releases:
     - version: '11.0b1'
@@ -15,6 +17,8 @@ release:
       release_date: '2025-05-13'
     - version: '11.0b3'
       release_date: '2025-06-10'
+    - version: '11.0b4'
+      release_date: '2025-06-24'
 
 notes:
   ## Beta 1
@@ -133,3 +137,15 @@ notes:
     short_note: Application could crash when fetching emails
     tag: fixed
     group: 3
+
+  ## Beta 4
+  # Fixed
+  - note: Don't cover download complete message with navigation bar
+    short_note: Don't cover download complete message with navigation bar
+    tag: fixed
+    group: 4
+
+  - note: Avoid a crash related to the drawer when device orientation changes
+    short_note: Avoid a crash related to the drawer when device orientation changes
+    tag: fixed
+    group: 4

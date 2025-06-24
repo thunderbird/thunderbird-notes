@@ -1,0 +1,19 @@
+release:
+  release_date: '2025-06-24'
+  text: |
+    **These notes apply to Thunderbird for Android version 10.1 released June 24th, 2025.**
+
+  releases:
+    - version: '10.1'
+      release_date: '2025-06-24'
+
+notes:
+  ## 10.1 release
+  # Fixed
+  - note: Attach all images when sharing from gallery, not just the last
+    short_note: Attach all images when sharing from gallery, not just the last
+    tag: fixed
+
+  - note: Show the full changelog when it contains special characters
+    short_note: Show the full changelog when it contains special characters
+    tag: fixed
