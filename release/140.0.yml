@@ -7,7 +7,7 @@ release:
     - Mac: macOS 10.15 or later
     - Linux: GTK+ 3.14 or higher
 
-  import_system_requirements: 140.0beta
+  import_system_requirements: '140.0esr'
 
 notes:
   # New
