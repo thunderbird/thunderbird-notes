@@ -19,6 +19,12 @@ notes:
   - note: Enable support for Microsoft Exchange via Exchange Web Services
     tag: new
     bugs: [1970399]
+  - note: "Added 'Archive' action to mail notifications"
+    tag: new
+    bugs: [1953661]
+  - note: Composer now shows a warning if user's configured OpenPGP key expires soon
+    tag: new
+    bugs: [1840861]
 
   # Fixed
   - note: Thunderbird could crash when parsing message state
@@ -33,10 +39,7 @@ notes:
   - note: Message archive folder creation could silently stop during async folder creation
     tag: fixed
     bugs: [1971248]
-  - note: "Added 'Archive' action to mail notifications"
-    tag: fixed
-    bugs: [1953661]
-  - note: Status bar showed previously detached attachment when hovering over new attachment
+  - note: Status bar showed previously detached attachment when hovering over a new one
     tag: fixed
     bugs: [1971603]
   - note: URLs for hovered links in status bar could be immediately overwritten
@@ -54,9 +57,6 @@ notes:
   - note: Folders sorted incorrectly when manually ordering them
     tag: fixed
     bugs: [1972709]
-  - note: Composer now shows a warning if user's configured OpenPGP key expires soon
-    tag: fixed
-    bugs: [1840861]
   - note: Could not send signed/encrypted messages in some setups due to regression
     tag: fixed
     bugs: [1961106]
@@ -72,7 +72,7 @@ notes:
   - note: Thunderbird could crash on startup for POP3
     tag: fixed
     bugs: [1972546]
-  - note: "'news:' URIs without specific server shown with incorrect format in status bar"
+  - note: "'news:' URIs without specific server had incorrect format displayed in status bar"
     tag: fixed
     bugs: [617287]
   - note: Enterprise policy use was not indicated in about:preferences with a link to about:policies
