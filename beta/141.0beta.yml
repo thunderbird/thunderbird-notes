@@ -1,0 +1,83 @@
+release:
+  release_date: '2025-06-27'
+  text: |
+    **These notes apply to Thunderbird version 141 beta 1 released June 27, 2025.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/141.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Enable support for Microsoft Exchange via Exchange Web Services
+    tag: new
+    bugs: [1970399]
+
+  # Fixed
+  - note: Thunderbird could crash when parsing message state
+    tag: fixed
+    bugs: [1954381]
+  - note: The English string for the Angry emoji was incorrectly named as the Yell emoji
+    tag: fixed
+    bugs: [1951142]
+  - note: Incorrect roaming data directory caused regression on Windows and macOS
+    tag: fixed
+    bugs: [1971216]
+  - note: Message archive folder creation could silently stop during async folder creation
+    tag: fixed
+    bugs: [1971248]
+  - note: "Added 'Archive' action to mail notifications"
+    tag: fixed
+    bugs: [1953661]
+  - note: Status bar showed previously detached attachment when hovering over new attachment
+    tag: fixed
+    bugs: [1971603]
+  - note: URLs for hovered links in status bar could be immediately overwritten
+    tag: fixed
+    bugs: [1947026]
+  - note: "'Search Messages...' dialog could not be opened outside the email tab"
+    tag: fixed
+    bugs: [1970721]
+  - note: Creating an event or task from mail failed if the mail was opened in a tab
+    tag: fixed
+    bugs: [1971580]
+  - note: NNTP message pane did not show network error page when network was lost
+    tag: fixed
+    bugs: [1971542]
+  - note: Folders sorted incorrectly when manually ordering them
+    tag: fixed
+    bugs: [1972709]
+  - note: Composer now shows a warning if user's configured OpenPGP key expires soon
+    tag: fixed
+    bugs: [1840861]
+  - note: Could not send signed/encrypted messages in some setups due to regression
+    tag: fixed
+    bugs: [1961106]
+  - note: Spellcheck no longer highlighted misspelled words in the compose window
+    tag: fixed
+    bugs: [1971121, 1974125]
+  - note: "'Any Number' was unavailable in address book search with 'Match all of the following'"
+    tag: fixed
+    bugs: [1969851]
+  - note: Contact was not found in Advanced Address Book Search if phone number had a period
+    tag: fixed
+    bugs: [1962868]
+  - note: Thunderbird could crash on startup for POP3
+    tag: fixed
+    bugs: [1972546]
+  - note: "'news:' URIs without specific server shown with incorrect format in status bar"
+    tag: fixed
+    bugs: [617287]
+  - note: Enterprise policy use was not indicated in about:preferences with a link to about:policies
+    tag: fixed
+    bugs: [1968505]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1966342, 1967908, 1968659, 1969202, 1969935, 1971655]
