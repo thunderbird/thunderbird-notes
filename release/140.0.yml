@@ -57,6 +57,9 @@ notes:
   - note: '"Secret Key ID" field did not sanitize input, causing draft encryption to fail'
     tag: fixed
     bugs: [1670174]
+  - note: Could not send signed/encrypted messages in some setups due to regression
+    tag: fixed
+    bugs: [1961106]
   - note: Repaired folders were not reindexed for search after repair
     tag: fixed
     bugs: [1348662]
@@ -69,6 +72,9 @@ notes:
   - note: Creating a link from selected text did not work with advanced properties selected
     tag: fixed
     bugs: [1969767]
+  - note: Spellcheck no longer highlighted misspelled words in the compose window
+    tag: fixed
+    bugs: [1971121, 1974125]
   - note: macOS system notifications worked but email alerts could not be disabled separately
     tag: fixed
     bugs: [1964362]
