@@ -260,6 +260,9 @@ notes:
   - note: '"Secret Key ID" field did not sanitize input, causing draft encryption to fail'
     tag: fixed
     bugs: [1670174]
+  - note: Could not send signed/encrypted messages in some setups due to regression
+    tag: fixed
+    bugs: [1961106]
   - note: Quick Filter did not display loading symbol when search was in progress
     tag: fixed
     bugs: [1874419]
@@ -290,6 +293,9 @@ notes:
   - note: Creating a link from selected text did not work with advanced properties selected
     tag: fixed
     bugs: [1969767]
+  - note: Spellcheck no longer highlighted misspelled words in the compose window
+    tag: fixed
+    bugs: [1971121, 1974125]
   - note: Changing the UI font size did not apply to some dialogs
     tag: fixed
     bugs: [1916066]
@@ -431,6 +437,5 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1935652, 1941139, 1949828, 1952481, 1955860, 1968444]
-
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140)'
     tag: fixed
