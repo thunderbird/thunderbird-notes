@@ -16,9 +16,6 @@ release:
 
 notes:
   # New
-  - note: Enable support for Microsoft Exchange via Exchange Web Services
-    tag: new
-    bugs: [1970399]
   - note: "Added 'Archive' action to mail notifications"
     tag: new
     bugs: [1953661]
