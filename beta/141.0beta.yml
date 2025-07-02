@@ -1,7 +1,7 @@
 release:
   release_date: '2025-06-27'
   text: |
-    **These notes apply to Thunderbird version 141 beta 1 released June 27, 2025.**
+    **These notes apply to Thunderbird version 141 beta 2 released July 2, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/141.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -78,3 +79,10 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1966342, 1967908, 1968659, 1969202, 1969935, 1971655]
+
+  # Beta 2
+  # Fixed
+  - note: Folder compaction could fail to complete due to folder write errors
+    tag: fixed
+    bugs: [1959858]
+    group: 2
