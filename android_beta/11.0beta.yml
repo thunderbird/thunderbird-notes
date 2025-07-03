@@ -166,6 +166,6 @@ notes:
     group: 5
 
   - note: Fastmail OAuth expired quickly, causing frequent login prompts
-    short_note:
+    short_note: Fastmail OAuth expired quickly, causing frequent login prompts
     tag: fixed
     group: 5
