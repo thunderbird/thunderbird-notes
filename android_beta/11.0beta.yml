@@ -169,3 +169,8 @@ notes:
     short_note: Fastmail OAuth expired quickly, causing frequent login prompts
     tag: fixed
     group: 5
+
+  - note: Some providers blocked SMTP connections when HELO hostname was 127.0.0.1
+    short_note: Some providers blocked SMTP connections when HELO hostname was 127.0.0.1
+    tag: fixed
+    group: 5
