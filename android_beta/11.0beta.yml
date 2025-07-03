@@ -9,6 +9,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
   releases:
     - version: '11.0b1'
@@ -19,6 +20,8 @@ release:
       release_date: '2025-06-10'
     - version: '11.0b4'
       release_date: '2025-06-24'
+    - version: '11.0b5'
+      release_date: '2025-07-03'
 
 notes:
   ## Beta 1
@@ -149,3 +152,20 @@ notes:
     short_note: Avoid a crash related to the drawer when device orientation changes
     tag: fixed
     group: 4
+
+  ## Beta 5
+  # Fixed
+  - note: TalkBack did not clearly announce contact picture tap action
+    short_note: TalkBack did not clearly announce contact picture tap action
+    tag: fixed
+    group: 5
+
+  - note: IMAP push could fail after losing and regaining network connection
+    short_note: IMAP push could fail after losing and regaining network connection
+    tag: fixed
+    group: 5
+
+  - note: Fastmail OAuth expired quickly, causing frequent login prompts
+    short_note:
+    tag: fixed
+    group: 5
