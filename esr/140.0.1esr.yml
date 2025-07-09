@@ -1,0 +1,43 @@
+release:
+  release_date: '2024-07-10'
+  text: |
+    **For help and a quick start on Thunderbird 140, see
+    [Thunderbird 140 Eclipse FAQ](https://support.mozilla.org/en-US/kb/new-thunderbird-desktop)**
+
+    **For more on all the new features in Thunderbird 140, see
+    [What’s New in Thunderbird 140](https://www.thunderbird.net/thunderbird/140.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/140.0esr/system-requirements/)
+
+  import_system_requirements: '140.0esr'
+
+notes:
+
+notes:
+  # New
+  - note: Autoconfig no longer handled 'No such host' errors correctly
+    tag: fixed
+    bugs: [1951827]
+  - note: Inserting a link into an HTML mail did not work as expected
+    tag: fixed
+    bugs: [1975621]
+  - note: Thunderbird could crash on startup for POP3
+    tag: fixed
+    bugs: [1972546]
+  - note: Status bar showed previously detached attachment when hovering over a new one
+    tag: fixed
+    bugs: [1971603]
+  - note: NNTP message pane did not show network error page when network was lost
+    tag: fixed
+    bugs: [1971542]
+  - note: URLs for hovered links in status bar could be immediately overwritten
+    tag: fixed
+    bugs: [1947026]
+  - note: What's New page for 140esr was not displayed
+    tag: fixed
+    bugs: [1976080]
+
+  # Unresolved
+  - note: Passwords are not remembered in 32-bit MAPI use without a compose window
+    tag: unresolved
+    bugs: [1970126]
