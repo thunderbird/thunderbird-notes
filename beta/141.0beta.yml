@@ -1,7 +1,7 @@
 release:
-  release_date: '2025-06-27'
+  release_date: '2025-07-10'
   text: |
-    **These notes apply to Thunderbird version 141 beta 2 released July 2, 2025.**
+    **These notes apply to Thunderbird version 141 beta 3 released July 10, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/141.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -86,3 +87,22 @@ notes:
     tag: fixed
     bugs: [1959858]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Delete button could remove attachment instead of message
+    tag: fixed
+    bugs: [1973294]
+    group: 3
+  - note: New folders were not added alphabetically if folders manually reordered beforehand
+    tag: fixed
+    bugs: [1973085]
+    group: 3
+  - note: Inserting a link into an HTML mail did not work as expected
+    tag: fixed
+    bugs: [1975621]
+    group: 3
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1966298, 1976047]
+    group: 3
