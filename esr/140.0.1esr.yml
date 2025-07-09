@@ -16,30 +16,28 @@ release:
   import_system_requirements: '140.0esr'
 
 notes:
-
-notes:
-  # New
-  - note: Autoconfig no longer handled 'No such host' errors correctly
-    tag: fixed
-    bugs: [1951827]
-  - note: Inserting a link into an HTML mail did not work as expected
-    tag: fixed
-    bugs: [1975621]
-  - note: Thunderbird could crash on startup for POP3
-    tag: fixed
-    bugs: [1972546]
-  - note: Status bar showed previously detached attachment when hovering over a new one
-    tag: fixed
-    bugs: [1971603]
-  - note: NNTP message pane did not show network error page when network was lost
-    tag: fixed
-    bugs: [1971542]
-  - note: URLs for hovered links in status bar could be immediately overwritten
-    tag: fixed
-    bugs: [1947026]
+  # Fixed
   - note: What's New page for 140esr was not displayed
     tag: fixed
     bugs: [1976080]
+  - note: Status bar showed previously detached attachment when hovering over a new one
+    tag: fixed
+    bugs: [1971603]
+  - note: URLs for hovered links in status bar could be immediately overwritten
+    tag: fixed
+    bugs: [1947026]
+  - note: NNTP message pane did not show network error page when network was lost
+    tag: fixed
+    bugs: [1971542]
+  - note: Inserting a link into an HTML mail did not work as expected
+    tag: fixed
+    bugs: [1975621]
+  - note: Autoconfig no longer handled 'No such host' errors correctly
+    tag: fixed
+    bugs: [1951827]
+  - note: Thunderbird could crash on startup for POP3
+    tag: fixed
+    bugs: [1972546]
 
   # Unresolved
   - note: Passwords are not remembered in 32-bit MAPI use without a compose window
