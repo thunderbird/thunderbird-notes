@@ -1,0 +1,93 @@
+release:
+  release_date: '2025-07-14'
+  text: >
+    **These notes apply to Thunderbird for Android version 11.0 released July 14th, 2025.**
+
+  releases:
+    - version: '11.0'
+      release_date: '2025-07-14'
+
+notes:
+  # New
+  - note: Improved drawer navigation with a folder hierarchy
+    short_note: Improved drawer navigation
+    tag: new
+
+  - note: Improve dark mode emails with algorithmic darkening
+    short_note: Improve dark mode emails
+    tag: new
+
+  - note: Welcome screen logo layout improved
+    short_note: Welcome screen layout improved
+    tag: new
+
+  - note: Improved compatibility with some ISPs by using ehlo.thunderbird.net as the EHLO identifier
+    short_note: Improved compatibility with some ISPs
+    tag: new
+
+  # Changed
+  - note: Selection now shown on active items by adjusting color priority
+    short_note: Selection now shown by adjusting color priority
+    tag: changed
+
+  - note: Folder settings now use switches instead of checkboxes
+    short_note: Folder settings now use switches instead of checkboxes
+    tag: changed
+
+  - note: Adjust theming colors to improve contrast (message list improvements still outstanding)
+    tag: changed
+
+  - note: Messages are now marked read by default when archiving
+    short_note: Messages now marked read by default when archiving
+    tag: changed
+
+  - note: Font size config preference is removed in favor of OS and density settings
+    short_note: Font size config preference removed in favor of OS and density settings
+    tag: changed
+
+  # Fixed
+  - note: Account setup issues with outlook.com and hotmail.com resolved
+    tag: fixed
+
+  - note: Keyboard navigation bugs resolved
+    tag: fixed
+
+  - note: Star and attachment icon colors corrected
+    tag: fixed
+
+  - note: Paste of recipient lists into compose field now correctly parsed
+    tag: fixed
+
+  - note: Back button now returns to Drafts folder when editing a draft
+    tag: fixed
+
+  - note: Unified inbox appears when two or more accounts are configured
+    tag: fixed
+
+  - note: Dark and light mode switching issues resolved
+    tag: fixed
+
+  - note: Scroll indicator removed following review feedback
+    tag: fixed
+
+  - note: System navigation bar did not correctly blend with message content
+    tag: fixed
+
+  - note: '"New Mail Notifications" setting did not persist'
+    tag: fixed
+
+  - note: Navigation drawer "Show Unified inbox" setting did not work
+    tag: fixed
+
+  - note: Avoid crashes when selecting folders, fetching emails, adjusting accounts, or changing device orientation
+    short_note: Avoid crashes in various scenarios
+    tag: fixed
+
+  - note: Sharing multiple selected images from gallery only selected last image
+    tag: fixed
+
+  - note: TalkBack did not clearly announce contact picture tap action
+    tag: fixed
+
+  - note: Improved IMAP push stability when switching network connections
+    tag: fixed
