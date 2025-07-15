@@ -1,0 +1,70 @@
+release:
+  release_date: '2025-07-14'
+  text: >
+    **These notes apply to Thunderbird for Android version 12.0 betas,
+    first released July 14th, 2025**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '12.0b1'
+      release_date: '2025-07-14'
+
+notes:
+  ## Beta 1
+  # New
+  - note: Improve support for SMTPUTF8 and other UTF-8 email standards (RFC 6531, 6855)
+    tag: new
+    group: 1
+
+  - note: Support Android's IME autofill for password managers when adding new account
+    short_note: Support Android IME autofill for password managers
+    tag: new
+    group: 1
+
+  - note: Add support for avatars in account settings
+    short_note: Add support for avatars in account settings
+    tag: new
+    group: 1
+
+  # Fixed
+  - note: Long words and links in email messages did not wrap properly
+    short_note: Long words and links in email messages did not wrap properly
+    tag: fixed
+    group: 1
+
+  - note: Swipe right to archive failed if the archive folder did not exist
+    short_note: Swipe right to archive failed if archive folder did not exist
+    tag: fixed
+    group: 1
+
+  - note: Edit Text dialogs in Account Settings did not automatically request focus
+    tag: fixed
+    group: 1
+
+  - note: Account Settings did not display account name
+    tag: fixed
+    group: 1
+
+  - note: In Unified Inbox, tapping a non-main account email redirected to the main inbox
+    short_note: In Unified Inbox, tapping non-main account email redirected to main inbox
+    tag: fixed
+    group: 1
+
+  - note: In dark system mode with light message theme, navigation bar was not clearly visible
+    tag: fixed
+    group: 1
+
+  - note: Threaded View toggle did not automatically update the Threaded View display
+    tag: fixed
+    group: 1
+
+  - note: Gmail prefixes were shown in the folder structure
+    tag: fixed
+    group: 1
+
+  - note: Crash could occur when adding Gmail account after removing primary Gmail account
+    short_note: Crash could occur when adding Gmail account after removing primary Gmail account
+    tag: fixed
+    group: 1
