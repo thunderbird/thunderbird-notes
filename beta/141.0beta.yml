@@ -1,7 +1,7 @@
 release:
   release_date: '2025-07-10'
   text: |
-    **These notes apply to Thunderbird version 141 beta 3 released July 10, 2025.**
+    **These notes apply to Thunderbird version 141 beta 4 released July 15, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/141.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -104,5 +105,12 @@ notes:
     group: 3
   - note: Visual and UX improvements
     tag: fixed
-    bugs: [1966298, 1976047]
+    bugs: [1976047]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1966298]
+    group: 4
