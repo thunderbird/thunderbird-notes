@@ -14,7 +14,7 @@ release:
 notes:
   ## Beta 1
   # New
-  - note: Add support for RFCs 5530, 6531, and 6855
+  - note: Improve support for SMTPUTF8 and other UTF-8 email standards (RFC 6531, 6855)
     tag: new
     group: 1
 
