@@ -1,0 +1,85 @@
+release:
+  release_date: '2025-07-22'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/140.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '140.0esr'
+
+notes:
+  # New
+  - note: "Added 'Archive' action to mail notifications"
+    tag: new
+    bugs: [1953661]
+  - note: Composer now shows a warning if user's configured OpenPGP key expires soon
+    tag: new
+    bugs: [1840861]
+
+  # Fixed
+  - note: Thunderbird could crash when parsing message state
+    tag: fixed
+    bugs: [1954381]
+  - note: The English string for the Angry emoji was incorrectly named as the Yell emoji
+    tag: fixed
+    bugs: [1951142]
+  - note: Incorrect roaming data directory caused regression on Windows and macOS
+    tag: fixed
+    bugs: [1971216]
+  - note: Message archive folder creation could silently stop during async folder creation
+    tag: fixed
+    bugs: [1971248]
+  - note: Folder compaction could fail to complete due to folder write errors
+    tag: fixed
+    bugs: [1959858]
+  - note: Status bar showed previously detached attachment when hovering over a new one
+    tag: fixed
+    bugs: [1971603]
+  - note: URLs for hovered links in status bar could be immediately overwritten
+    tag: fixed
+    bugs: [1947026]
+  - note: "'Search Messages...' dialog could not be opened outside the email tab"
+    tag: fixed
+    bugs: [1970721]
+  - note: Creating an event or task from mail failed if the mail was opened in a tab
+    tag: fixed
+    bugs: [1971580]
+  - note: NNTP message pane did not show network error page when network was lost
+    tag: fixed
+    bugs: [1971542]
+  - note: Delete button could remove attachment instead of message
+    tag: fixed
+    bugs: [1973294]
+  - note: Folders sorted incorrectly when manually ordering them
+    tag: fixed
+    bugs: [1972709]
+  - note: New folders were not added alphabetically if folders manually reordered beforehand
+    tag: fixed
+    bugs: [1973085]
+  - note: "'Any Number' was unavailable in address book search with 'Match all of the following'"
+    tag: fixed
+    bugs: [1969851]
+  - note: Contact was not found in Advanced Address Book Search if phone number had a period
+    tag: fixed
+    bugs: [1962868]
+  - note: Thunderbird could crash on startup for POP3
+    tag: fixed
+    bugs: [1972546]
+  - note: "'news:' URIs without specific server had incorrect format displayed in status bar"
+    tag: fixed
+    bugs: [617287]
+  - note: Enterprise policy use was not indicated in about:preferences with a link to about:policies
+    tag: fixed
+    bugs: [1968505]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1966298, 1966342, 1967908, 1968659, 1969202, 1969935, 1971655, 1976047]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird141)'
+    tag: fixed
+
+  # Unresolved
+  - note: Passwords are not remembered in 32-bit MAPI use without a compose window
+    tag: unresolved
+    bugs: [1970126]
