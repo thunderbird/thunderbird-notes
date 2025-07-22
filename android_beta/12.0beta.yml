@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '12.0b1'
       release_date: '2025-07-14'
+    - version: '12.0b2'
+      release_date: '2025-07-22'
 
 notes:
   ## Beta 1
@@ -68,3 +71,15 @@ notes:
     short_note: Crash could occur when adding Gmail account after removing primary Gmail account
     tag: fixed
     group: 1
+
+  ## Beta 2
+  # Fixed
+  - note: Application crashed on startup if left or right swipe gesture was set to "None"
+    short_note: Application crashed on startup if left or right swipe gesture was set to "None"
+    tag: fixed
+    group: 2
+
+  - note: Back button did not close application after returning to inbox from another folder
+    short_note: Back button did not close application after returning to inbox from another folder
+    tag: fixed
+    group: 2
