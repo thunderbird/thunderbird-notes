@@ -74,7 +74,7 @@ notes:
 
   ## Beta 2
   # Fixed
-  - note: Application crashed on startup if left or right swipe gesture was set to "None"
-    short_note: Application crashed on startup if left or right swipe gesture was set to "None"
+  - note: "Application crashed on startup if left or right swipe gesture was set to 'None'"
+    short_note: "Application crashed on startup if left or right swipe gesture was set to 'None'"
     tag: fixed
     group: 2
