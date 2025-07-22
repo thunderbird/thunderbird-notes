@@ -78,8 +78,3 @@ notes:
     short_note: Application crashed on startup if left or right swipe gesture was set to "None"
     tag: fixed
     group: 2
-
-  - note: Back button did not close application after returning to inbox from another folder
-    short_note: Back button did not close application after returning to inbox from another folder
-    tag: fixed
-    group: 2
