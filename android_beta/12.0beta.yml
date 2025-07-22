@@ -7,11 +7,14 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
   releases:
     - version: '12.0b1'
       release_date: '2025-07-14'
     - version: '12.0b2'
+      release_date: '2025-07-22'
+    - version: '12.0b3'
       release_date: '2025-07-22'
 
 notes:
@@ -78,3 +81,10 @@ notes:
     short_note: "Application crashed on startup if left or right swipe gesture was set to 'None'"
     tag: fixed
     group: 2
+
+  ## Beta 3
+  # Fixed
+  - note: "Application crashed on startup if left or right swipe gesture was set to 'None'"
+    short_note: "Application crashed on startup if left or right swipe gesture was set to 'None'"
+    tag: fixed
+    group: 3
