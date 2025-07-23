@@ -78,8 +78,3 @@ notes:
     bugs: [1966298, 1966342, 1967908, 1968659, 1969202, 1969935, 1971655, 1976047]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird141)'
     tag: fixed
-
-  # Unresolved
-  - note: Passwords are not remembered in 32-bit MAPI use without a compose window
-    tag: unresolved
-    bugs: [1970126]
