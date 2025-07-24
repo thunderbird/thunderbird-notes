@@ -19,13 +19,13 @@ notes:
   - note: Visual signatures can be added to PDF attachments opened in Thunderbird
     tag: new
     bugs: [1970796]
-  - note: "Add 'Copy Message Link' and 'Copy News Link' to header pane 'More actions'"
+  - note: "'Copy Message Link' and 'Copy News Link' added to header pane 'More actions'"
     tag: new
     bugs: [1968470]
-  - note: Allow folder copy within mail server accounts and local folders
+  - note: Folder copy enabled within mail server accounts and local folders
     tag: new
     bugs: [1842514]
-  - note: "Add 'Reset Folder Order' option to folder pane to reset custom folder sorting"
+  - note: "'Reset Folder Order' option added to folder pane to reset custom folder sorting"
     tag: new
     bugs: [1972710]
 
@@ -41,7 +41,7 @@ notes:
   - note: Notification sounds did not respect operating system's do-not-disturb mode
     tag: fixed
     bugs: [1876310]
-  - note: Non-English localized versions created English special folders on first start
+  - note: Non-English localized Thunderbird created English special folders on first start
     tag: fixed
     bugs: [1976687]
   - note: Sending from unified or local folder failed if no default account was set
