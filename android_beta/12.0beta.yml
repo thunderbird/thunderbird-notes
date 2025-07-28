@@ -8,6 +8,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
   releases:
     - version: '12.0b1'
@@ -16,6 +17,8 @@ release:
       release_date: '2025-07-22'
     - version: '12.0b3'
       release_date: '2025-07-22'
+    - version: '12.0b4'
+      release_date: '2025-07-28'
 
 notes:
   ## Beta 1
@@ -88,3 +91,25 @@ notes:
     short_note: "Application crashed on startup if left or right swipe gesture was set to 'None'"
     tag: fixed
     group: 3
+
+  ## Beta 4
+  # Fixed
+  - note: Testing drawer UI improvements in this beta, feedback on bugs is welcome
+    short_note: Testing drawer UI improvements
+    tag: new
+    group: 4
+
+  - note: Testing new account settings page in this beta, feedback on bugs is welcome
+    short_note: Testing new account settings page
+    tag: new
+    group: 4
+
+  - note: Crash could occur when clicking on a message thread
+    short_note: Crash could occur when clicking on a message thread
+    tag: fixed
+    group: 4
+
+  - note: Unicode folder names were malformed when using server supporting UTF-8
+    short_note: Unicode folder names were malformed when using server supporting UTF-8
+    tag: fixed
+    group: 4
