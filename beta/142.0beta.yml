@@ -1,7 +1,7 @@
 release:
   release_date: '2025-07-28'
   text: |
-    **These notes apply to Thunderbird version 142 beta 1 released July 28, 2025.**
+    **These notes apply to Thunderbird version 142 beta 2 released July 30, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/142.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -98,3 +99,9 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1792482, 1977051, 1977319, 1853912, 1896280]
+
+  # Beta 2
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 2
