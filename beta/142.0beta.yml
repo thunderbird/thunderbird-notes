@@ -1,7 +1,7 @@
 release:
   release_date: '2025-07-28'
   text: |
-    **These notes apply to Thunderbird version 142 beta 2 released July 30, 2025.**
+    **These notes apply to Thunderbird version 142 beta 3 released August 6, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/142.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -105,3 +106,22 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Users were unable to use Fastmail calendars due to missing OAuth settings
+    tag: fixed
+    bugs: [1978192]
+    group: 3
+  - note: On Linux, the close caption button was inactive when mouse was in screen corner
+    tag: fixed
+    bugs: [1979551]
+    group: 3
+  - note: After updating to version 142, all newsgroup folders were sorted alphabetically
+    tag: fixed
+    bugs: [1980800]
+    group: 3
+  - note: Sending a newsgroup post appeared successful when it had actually failed
+    tag: fixed
+    bugs: [1979618]
+    group: 3
