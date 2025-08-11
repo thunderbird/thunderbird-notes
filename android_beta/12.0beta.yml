@@ -10,6 +10,7 @@ release:
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
+    - 'Fixed in beta 6'
 
   releases:
     - version: '12.0b1'
@@ -22,6 +23,8 @@ release:
       release_date: '2025-07-28'
     - version: '12.0b5'
       release_date: '2025-08-04'
+    - version: '12.0b6'
+      release_date: '2025-08-11'
 
 notes:
   ## Beta 1
@@ -123,3 +126,21 @@ notes:
     short_note: Crash occurred when attempting to access account general settings
     tag: fixed
     group: 5
+
+  ## Beta 6
+  # New
+  - note: Enable edge-to-edge support on beta
+    short_note: Enable edge-to-edge support on beta
+    tag: new
+    group: 6
+
+  # Fixed
+  - note: Selected/read/unread message states were hard to distinguish visually
+    short_note: Selected/read/unread message states were hard to distinguish visually
+    tag: fixed
+    group: 6
+
+  - note: Crash occurred when attempting to access account general settings
+    short_note: Crash occurred when attempting to access account general settings
+    tag: fixed
+    group: 6
