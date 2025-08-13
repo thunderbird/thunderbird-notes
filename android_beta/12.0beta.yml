@@ -11,6 +11,7 @@ release:
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
     - 'Fixed in beta 6'
+    - 'Fixed in beta 7'
 
   releases:
     - version: '12.0b1'
@@ -25,6 +26,8 @@ release:
       release_date: '2025-08-04'
     - version: '12.0b6'
       release_date: '2025-08-11'
+    - version: '12.0b7'
+      release_date: '2025-08-18'
 
 notes:
   ## Beta 1
@@ -144,3 +147,10 @@ notes:
     short_note: Crash occurred when attempting to access account general settings
     tag: fixed
     group: 6
+
+  ## Beta 7
+  # Fixed
+  - note: Edge-to-edge support regressed various screens when using 3-button navigation
+    short_note: Edge-to-edge support regressed various screens when using 3-button navigation
+    tag: fixed
+    group: 7
