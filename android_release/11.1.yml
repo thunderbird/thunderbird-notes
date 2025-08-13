@@ -1,0 +1,14 @@
+release:
+  release_date: '2025-08-18'
+  text: >
+    **These notes apply to Thunderbird for Android version 11.1 released August 18th, 2025.**
+
+  releases:
+    - version: '11.1'
+      release_date: '2025-08-18'
+
+notes:
+  # Fixed
+  - note: Selected/read/unread message states were hard to distinguish visually
+    short_note: Selected/read/unread message states were hard to distinguish visually
+    tag: fixed
