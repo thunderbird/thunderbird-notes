@@ -1,0 +1,109 @@
+release:
+  release_date: '2025-08-19'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/140.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '140.0esr'
+
+notes:
+  # New
+  - note: Visual signatures can be added to PDF attachments opened in Thunderbird
+    tag: new
+    bugs: [1970796]
+  - note: "'Copy Message Link' and 'Copy News Link' added to header pane 'More actions'"
+    tag: new
+    bugs: [1968470]
+  - note: Folder copy enabled within mail server accounts and local folders
+    tag: new
+    bugs: [1842514]
+  - note: "'Reset Folder Order' option added to folder pane to reset custom folder sorting"
+    tag: new
+    bugs: [1972710]
+
+  # Changed
+  - note: "'Copy Message Location' removed from mail context menu"
+    tag: changed
+    bugs: [1968470]
+
+  # Fixed
+  - note: Users with attachments open in tabs saw an error on Thunderbird restart
+    tag: fixed
+    bugs: [1970615]
+  - note: Notification sounds did not respect operating system's do-not-disturb mode
+    tag: fixed
+    bugs: [1876310]
+  - note: Non-English localized Thunderbird created English special folders on first start
+    tag: fixed
+    bugs: [1976687]
+  - note: Users were unable to use Fastmail calendars due to missing OAuth settings
+    tag: fixed
+    bugs: [1978192]
+  - note: Sending from unified or local folder failed if no default account was set
+    tag: fixed
+    bugs: [1956258]
+  - note: "Right-clicking 'List-ID' -> 'Unsubscribe' created double encoded draft subject"
+    tag: fixed
+    bugs: [1975510]
+  - note: On Linux, the close caption button was inactive when mouse was in screen corner
+    tag: fixed
+    bugs: [1979551]
+  - note: Toggling dark message mode did not restore focus and scroll position
+    tag: fixed
+    bugs: [1962931]
+  - note: Message list scrolled back when returning to mail tab after opening a message
+    tag: fixed
+    bugs: [1968967]
+  - note: "Deleting a single message in folder using 'Group by Sort' failed after CTRL+A"
+    tag: fixed
+    bugs: [1977321]
+  - note: New newsgroups were not added in alphabetical order by default
+    tag: fixed
+    bugs: [251707]
+  - note: After updating to version 142, all newsgroup folders were sorted alphabetically
+    tag: fixed
+    bugs: [1980800]
+  - note: "With Thunderbird closed, clicking a 'mailto:' link to send signed message failed"
+    tag: fixed
+    bugs: [1972857]
+  - note: Replying could fail with `mailnews.reply_quoting_selection.multi_word` set false
+    tag: fixed
+    bugs: [1977461]
+  - note: "Multiple saves while using 'Options' -> 'Send a Copy' resulted in multiple copies"
+    tag: fixed
+    bugs: [279366]
+  - note: Thunderbird did not display contact photos in WebP format from CardDAV servers
+    tag: fixed
+    bugs: [1947052]
+  - note: "Installations from Microsoft Store did not open when clicking 'mailto:' links"
+    tag: fixed
+    bugs: [1876691]
+  - note: Clicking the backspace icon in the quick filter field cleared the input field
+    tag: fixed
+    bugs: [1975115]
+  - note: Initial launch had long load times and UI lag while messages downloaded
+    tag: fixed
+    bugs: [1973165]
+  - note: "'Mark' -> 'All Read' affected newsgroup messages that had not been fetched yet"
+    tag: fixed
+    bugs: [1755659]
+  - note: Thunderbird could not reconnect to newsgroups after connection loss until restarted
+    tag: fixed
+    bugs: [1901338]
+  - note: Sending a newsgroup post appeared successful when it had actually failed
+    tag: fixed
+    bugs: [1979618]
+  - note: Archived RSS feed messages were sent to the archive folder of default identity
+    tag: fixed
+    bugs: [1966810]
+  - note: Opening Website header link in RSS feed incorrectly re-encoded URL parameters
+    tag: fixed
+    bugs: [1971035]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1792482, 1977051, 1977319, 1853912, 1896280]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird142)'
+    tag: fixed
