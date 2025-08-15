@@ -58,6 +58,9 @@ notes:
   - note: New folders were not added alphabetically if folders manually reordered beforehand
     tag: fixed
     bugs: [1973085]
+  - note: Account setup error handling was broken for Account hub
+    tag: fixed
+    bugs: [1971303]
   - note: "'Any Number' was unavailable in address book search with 'Match all of the following'"
     tag: fixed
     bugs: [1969851]

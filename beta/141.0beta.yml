@@ -88,6 +88,10 @@ notes:
     tag: fixed
     bugs: [1959858]
     group: 2
+  - note: Account setup error handling was broken for Account hub
+    tag: fixed
+    bugs: [1971303]
+    group: 2
 
   # Beta 3
   # Fixed
