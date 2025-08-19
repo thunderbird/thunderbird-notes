@@ -23,5 +23,8 @@ notes:
   - note: Account setup error handling was broken for Account hub
     tag: fixed
     bugs: [1971303]
+  - note: Menu bar was hidden after updating from 128esr to 140esr
+    tag: fixed
+    bugs: [1979002]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.2)'
     tag: fixed
