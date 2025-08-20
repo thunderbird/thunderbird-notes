@@ -19,3 +19,53 @@ notes:
   - note: Enable support for Microsoft Exchange via Exchange Web Services
     tag: new
     bugs: [1970399]
+
+  # Fixed
+  - note: Web pages with bad certificates displayed as blank
+    tag: fixed
+    bugs: [1980371]
+  - note: Changing to new drafts folder and then back did not correctly restore the folder
+    tag: fixed
+    bugs: [1979410]
+  - note: Option did not exist to create new address book under File -> New
+    tag: fixed
+    bugs: [1976190]
+  - note: Some folders showed new mail count prior to receiving mail
+    tag: fixed
+    bugs: [1811038]
+  - note: Menu bar was hidden after updating from 128esr to 140esr
+    tag: fixed
+    bugs: [1979002]
+  - note: Menu Bar -> View contained duplicate accelerator keys
+    tag: fixed
+    bugs: [1981317]
+  - note: Warning was not logged if `mail.openpgp.alias_rules_file` file did not exist
+    tag: fixed
+    bugs: [1976055]
+  - note: Cmd+Shift+F no longer invoked "Search Messages" on macOS
+    tag: fixed
+    bugs: [1980687]
+  - note: Drag-drop of unselected contact inserted wrong or no email address
+    tag: fixed
+    bugs: [1979567]
+  - note: Thunderbird could crash on startup
+    tag: fixed
+    bugs: [1980814]
+  - note: Adding an account could fail and cause UI hang
+    tag: fixed
+    bugs: [1982284]
+  - note: Thunderbird could crash when importing mail
+    tag: fixed
+    bugs: [1970046]
+  - note: Delete or detach attachments did not work for some IMAP servers
+    tag: fixed
+    bugs: [1980776]
+  - note: Saving a new draft retained superceded version
+    tag: fixed
+    bugs: [1974867]
+  - note: Language field in settings was empty after restart in Troubleshoot Mode
+    tag: fixed
+    bugs: [1973658]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1925654, 1968626, 1970917, 1977265, 1980260, 1982542]
