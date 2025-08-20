@@ -15,11 +15,6 @@ release:
     - ' '
 
 notes:
-  # New
-  - note: Enable support for Microsoft Exchange via Exchange Web Services
-    tag: new
-    bugs: [1970399]
-
   # Fixed
   - note: Web pages with bad certificates displayed as blank
     tag: fixed
