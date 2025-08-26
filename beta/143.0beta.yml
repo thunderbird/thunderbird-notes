@@ -1,7 +1,7 @@
 release:
   release_date: '2025-08-20'
   text: |
-    **These notes apply to Thunderbird version 143 beta 1 released August 20, 2025.**
+    **These notes apply to Thunderbird version 143 beta 2 released August 27, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/143.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # Fixed
@@ -64,3 +65,9 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1925654, 1968626, 1970917, 1977265, 1980260, 1982542]
+
+  # Beta 2
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 2
