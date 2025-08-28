@@ -20,6 +20,9 @@ notes:
   - note: Web pages with bad certificates displayed as blank
     tag: fixed
     bugs: [1980371]
+  - note: Users could no longer send using smtp-relay.gmail.com
+    tag: fixed
+    bugs: [1982007]
   - note: Changing to new drafts folder and then back did not correctly restore the folder
     tag: fixed
     bugs: [1979410]
