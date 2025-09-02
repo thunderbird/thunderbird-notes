@@ -1,0 +1,52 @@
+release:
+  release_date: '2025-09-02'
+  text: >
+    **These notes apply to Thunderbird for Android version 13.0 betas,
+    first released September 2nd, 2025**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '13.0b1'
+      release_date: '2025-09-02'
+
+notes:
+  ## Beta 1
+  # New
+  - note: Added new design elements to Message List UI
+    short_note: Added new design elements to Message List UI
+    tag: new
+    group: 1
+
+  # Changed
+  - note: Sync logging duration is now limited to 24 hours
+    short_note: Sync logging duration is now limited to 24 hours
+    tag: changed
+    group: 1
+
+  # Fixed
+  - note: Client certificate was not displayed in SMTP settings
+    short_note: Client certificate was not displayed in SMTP settings
+    tag: fixed
+    group: 1
+
+  - note: Outlook headers included unnecessary newlines when replying to a message
+    short_note: Outlook headers included unnecessary newlines when replying
+    tag: fixed
+    group: 1
+
+  - note: '"Enable debug logging" did not provide verbose logging'
+    short_note: '"Enable debug logging" did not provide verbose logging'
+    tag: fixed
+    group: 1
+
+  - note: Scrolling in a short email could trigger left/right swipe
+    short_note: Scrolling in a short email could trigger left/right swipe
+    tag: fixed
+    group: 1
+
+  - note: Scrolling only worked in center of Welcome and New Account screens (landscape)
+    short_note: Scrolling only worked in center of Welcome and New Account screens (landscape)
+    tag: fixed
+    group: 1
