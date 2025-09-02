@@ -1,0 +1,75 @@
+release:
+  release_date: '2025-09-02'
+  text: >
+    **These notes apply to Thunderbird for Android version 12.0 released September 2nd, 2025.**
+
+  releases:
+    - version: '12.0'
+      release_date: '2025-09-02'
+
+notes:
+  # New
+  - note: Improve support for SMTPUTF8 and other UTF-8 email standards (RFC 6531, 6855)
+    tag: new
+
+  - note: Support Android's IME autofill for password managers when adding new account
+    short_note: Support Android IME autofill for password managers
+    tag: new
+
+  - note: Add support for avatars in account settings
+    short_note: Add support for avatars in account settings
+    tag: new
+
+  - note: Enable edge-to-edge support
+    short_note: Enable edge-to-edge support
+    tag: new
+
+  - note: New account settings page
+    tag: new
+
+  # Fixed
+  - note: Long words and links in email messages did not wrap properly
+    short_note: Long words and links in email messages did not wrap properly
+    tag: fixed
+
+  - note: Swipe right to archive failed if the archive folder did not exist
+    short_note: Swipe right to archive failed if archive folder did not exist
+    tag: fixed
+
+  - note: Edit Text dialogs in Account Settings did not automatically request focus
+    tag: fixed
+
+  - note: Account Settings did not display account name
+    tag: fixed
+
+  - note: In Unified Inbox, tapping a non-main account email redirected to the main inbox
+    tag: fixed
+
+  - note: In dark system mode with light message theme, navigation bar was not clearly visible
+    tag: fixed
+
+  - note: Threaded View toggle did not automatically update the Threaded View display
+    tag: fixed
+
+  - note: Gmail prefixes were shown in the folder structure
+    short_note: Gmail prefixes were shown in the folder structure
+    tag: fixed
+
+  - note: Crash could occur when adding Gmail account after removing primary Gmail account
+    tag: fixed
+
+  - note: "Application crashed on startup if left or right swipe gesture was set to 'None'"
+    tag: fixed
+
+  - note: Crash could occur when clicking on a message thread
+    tag: fixed
+
+  - note: Unicode folder names were malformed when using server supporting UTF-8
+    short_note: Unicode folder names were malformed when using server supporting UTF-8
+    tag: fixed
+
+  - note: Crash occurred when attempting to access account general settings
+    tag: fixed
+
+  - note: Users had to manually configure Outlook IMAP and SMTP
+    tag: fixed
