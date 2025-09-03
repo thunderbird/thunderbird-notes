@@ -24,9 +24,6 @@ notes:
     short_note: Enable edge-to-edge support
     tag: new
 
-  - note: New account settings page
-    tag: new
-
   # Fixed
   - note: Long words and links in email messages did not wrap properly
     short_note: Long words and links in email messages did not wrap properly
