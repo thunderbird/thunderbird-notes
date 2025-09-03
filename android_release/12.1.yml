@@ -1,0 +1,27 @@
+release:
+  release_date: '2025-09-03'
+  text: >
+    **These notes apply to Thunderbird for Android version 12.1 released September 3rd, 2025.**
+
+  releases:
+    - version: '12.1'
+      release_date: '2025-09-03'
+
+notes:
+  # New
+  - note: Improved drawer navigation with a folder hierarchy
+    short_note: Improved drawer navigation
+    tag: new
+    k9mail_only: true
+
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    short_note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    thunderbird_only: true
+
+  # Fixed
+  - note: K-9 mail could crash when opening
+    short_note: K-9 mail could crash when opening
+    tag: fixed
+    k9mail_only: true
