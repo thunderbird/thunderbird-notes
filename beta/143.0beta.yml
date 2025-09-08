@@ -1,7 +1,7 @@
 release:
   release_date: '2025-08-20'
   text: |
-    **These notes apply to Thunderbird version 143 beta 3 released September 3, 2025.**
+    **These notes apply to Thunderbird version 143 beta 4 released September 8, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/143.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # Fixed
@@ -81,3 +82,12 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Arrow key selection in global search bar skipped every other result
+    tag: fixed
+    bugs: [1983370]
+  - note: Windows new message notification click did not bring Thunderbird foreground
+    tag: fixed
+    bugs: [1935298]
