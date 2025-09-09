@@ -89,7 +89,7 @@ notes:
     tag: fixed
     bugs: [1983370]
     group: 4
-  - note: Windows new message notification click did not bring Thunderbird foreground
+  - note: Windows new message notification click did not bring Thunderbird to foreground
     tag: fixed
     bugs: [1935298]
     group: 4
