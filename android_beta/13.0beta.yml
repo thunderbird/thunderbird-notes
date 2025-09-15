@@ -10,6 +10,8 @@ release:
   releases:
     - version: '13.0b1'
       release_date: '2025-09-02'
+    - version: '13.0b2'
+      release_date: '2025-09-15'
 
 notes:
   ## Beta 1
@@ -50,3 +52,9 @@ notes:
     short_note: Scrolling only worked in center of Welcome and New Account screens (landscape)
     tag: fixed
     group: 1
+
+  ## Beta 1
+  - note: On IMAP servers with folder prefixes, some folder operations stopped working
+    short_note: On IMAP servers with folder prefixes, some folder operations stopped working
+    tag: fixed
+    group: 2
