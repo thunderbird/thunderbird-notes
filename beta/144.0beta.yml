@@ -48,9 +48,6 @@ notes:
   - note: "Shift-click 'Compose Message To' on 'mailto' link did not open in plain text"
     tag: fixed
     bugs: [1903100]
-  - note: Thunderbird could crash in various scenarios
-    tag: fixed
-    bugs: [1684764, 1984288, 1986642, 1986644, 1987759, 1987880]
   - note: "'Copy Message to' action in a newsgroup filter did not work"
     tag: fixed
     bugs: [694780]
@@ -78,6 +75,9 @@ notes:
   - note: Calendar discovery with certificate error displayed multiple exceptions
     tag: fixed
     bugs: [1985183]
+  - note: Thunderbird could crash in various scenarios
+    tag: fixed
+    bugs: [1684764, 1984288, 1986642, 1986644, 1987759, 1987880]
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1667865, 1941471, 1942381, 1957486, 1976900, 1978204, 1984608, 1978946, 
