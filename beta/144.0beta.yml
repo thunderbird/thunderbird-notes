@@ -16,11 +16,10 @@ release:
 
 notes:
   # New
-  # New
   - note: Enable support for Microsoft Exchange via Exchange Web Services
     tag: new
     bugs: [1970399]
-  # Changed
+
   # Fixed
   - note: Copying text from some error alerts was not possible
     tag: fixed
@@ -31,16 +30,10 @@ notes:
   - note: Newly created folder was missing under "Recent" when moving a message
     tag: fixed
     bugs: [1367034]
-  - note: Visual and UX improvements
-    tag: fixed
-    bugs: [1667865, 1941471, 1942381, 1957486, 1976900, 1978204, 1984608, 1978946, 
-          1979295, 1979367, 1979371, 1984294, 1984894, 1985033, 1985056, 1985165, 
-          1985814, 1988374, 1942381, 1986289, 1986628]
   - note: Sorting by threads only brought threads with unread top messages to the top
     tag: fixed
     bugs: [617855]
-  - note: News message was marked read after NNTP error prevented retrieval from 
-      server
+  - note: News message marked read after NNTP error prevented retrieval from server
     tag: fixed
     bugs: [541744]
   - note: "Inbox 'Location' column was not translated in French locale installation"
@@ -61,23 +54,19 @@ notes:
   - note: "'Copy Message to' action in a newsgroup filter did not work"
     tag: fixed
     bugs: [694780]
-  - note: Thunderbird could not import a profile located at the top level of a zip 
-      file
+  - note: Thunderbird could not import profile located at the top level of zip file
     tag: fixed
     bugs: [1985421]
   - note: Thunderbird did not clearly fail when importing profile from a bad source
     tag: fixed
     bugs: [1984550]
-  - note: No way to distinguish between Thunderbird Release and ESR in Windows 
-      registry
+  - note: No way to distinguish between Thunderbird Release/ESR in Windows registry
     tag: fixed
     bugs: [1895080]
-  - note: Confirmation for deleting/detaching multiple attachments only mentioned the
-      first
+  - note: Multi-attachment delete/detach confirmation only cited first attachment
     tag: fixed
     bugs: [1985712]
-  - note: Thunderbird could hang when auto-checking multiple accounts for new 
-      messages
+  - note: Thunderbird hung when auto-checking multiple accounts for new messages
     tag: fixed
     bugs: [1911950]
   - note: Sending emails via servers with self-signed certificate did not work
@@ -86,7 +75,11 @@ notes:
   - note: Could not copy an event in multiweek or month view by drag-and-drop
     tag: fixed
     bugs: [411069]
-  - note: Calendar discovery with certificate error displayed multiple exception 
-      dialogs
+  - note: Calendar discovery with certificate error displayed multiple exceptions
     tag: fixed
     bugs: [1985183]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1667865, 1941471, 1942381, 1957486, 1976900, 1978204, 1984608, 1978946, 
+          1979295, 1979367, 1979371, 1984294, 1984894, 1985033, 1985056, 1985165, 
+          1985814, 1988374, 1942381, 1986289, 1986628]
