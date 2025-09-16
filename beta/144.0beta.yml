@@ -19,3 +19,65 @@ notes:
   - note: Enable support for Microsoft Exchange via Exchange Web Services
     tag: new
     bugs: [1970399]
+
+  # Fixed
+  - note: Newly created folder was missing under "Recent" when moving a message
+    tag: fixed
+    bugs: [1367034]
+  - note: Copying text from some error alerts was not possible
+    tag: fixed
+    bugs: [1976565]
+  - note: No way to distinguish between Thunderbird Release and ESR in Windows registry
+    tag: fixed
+    bugs: [1895080]
+  - note: Sorting by threads only brought threads with unread top messages to the top
+    tag: fixed
+    bugs: [617855]
+  - note: News message was marked read after NNTP error prevented retrieval from server
+    tag: fixed
+    bugs: [541744]
+  - note: "'Copy Message to' action in a newsgroup filter did not work"
+    tag: fixed
+    bugs: [694780]
+  - note: Could not copy an event in multiweek or month view by drag-and-drop
+    tag: fixed
+    bugs: [411069]
+  - note: Not all headers were signed when creating digitally signed OpenPGP email
+    tag: fixed
+    bugs: [1959096]
+  - note: Changing identity in compose window caused modified draft not to be saved
+    tag: fixed
+    bugs: [1986558]
+  - note: "Inbox 'Location' column was not translated in French locale installation"
+    tag: fixed
+    bugs: [1979295]
+  - note: Confirmation for deleting/detaching multiple attachments only mentioned the first
+    tag: fixed
+    bugs: [1985712]
+  - note: Thunderbird could not import a profile located at the top level of a zip file
+    tag: fixed
+    bugs: [1985421]
+  - note: Calendar discovery with certificate error displayed multiple exception dialogs
+    tag: fixed
+    bugs: [1985183]
+  - note: Thunderbird did not clearly fail when importing profile from a bad source
+    tag: fixed
+    bugs: [1984550]
+  - note: Fastmail CalDAV app password access failed due to forced OAuth regression
+    tag: fixed
+    bugs: [1984376]
+  - note: Sending emails via servers with self-signed certificate did not work
+    tag: fixed
+    bugs: [1977400]
+  - note: "Shift-click 'Compose Message To' on 'mailto' link did not open in plain text"
+    tag: fixed
+    bugs: [1903100]
+  - note: Thunderbird could crash in various scenarios
+    tag: fixed
+    bugs: [1684764, 1984288, 1986642, 1986644, 1987759, 1987880]
+  - note: Thunderbird could hang when auto-checking multiple accounts for new messages
+    tag: fixed
+    bugs: [1911950]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1667865, 1941471, 1942381, 1957486, 1976900, 1978204, 1984608, 1978946, 1979295, 1979367, 1979371, 1984294, 1984894, 1985033, 1985056, 1985165, 1985814, 1988374, 1942381, 1986289, 1986628]
