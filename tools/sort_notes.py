@@ -91,7 +91,14 @@ def component_str(product, component):
 
 def get_components(bug_nums):
     url = BUG_URL.format(bug_nums=",".join([str(b) for b in bug_nums]))
-    res = requests.get(url)
+    headers = {"User-Agent": "MozillaBugClient/1.0"}
+    api_key = os.environ.get("API_KEY")
+    if not api_key:
+        print("API_KEY environment variable not set."
+              "Attempting to use bugzilla.mozilla.org Rest API without API key.")
+        res = requests.get(url, headers=headers)
+    else:
+        res = requests.get(url, params={"api_key": api_key}, headers=headers)
     data = res.json()
     return dict([(b["id"], component_str(b["product"], b["component"])) for b in data["bugs"]])
 
