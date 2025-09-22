@@ -12,6 +12,8 @@ release:
       release_date: '2025-09-02'
     - version: '13.0b2'
       release_date: '2025-09-15'
+    - version: '13.0b3'
+      release_date: '2025-09-22'
 
 notes:
   ## Beta 1
@@ -53,8 +55,19 @@ notes:
     tag: fixed
     group: 1
 
-  ## Beta 1
+  ## Beta 2
   - note: On IMAP servers with folder prefixes, some folder operations stopped working
     short_note: On IMAP servers with folder prefixes, some folder operations stopped working
     tag: fixed
     group: 2
+
+  ## Beta 3
+  - note: Updating to 13.0b2 offline with IMAP prefix caused migration failure and data loss
+    short_note: Updating to 13.0b2 offline with IMAP prefix caused migration failure and data loss
+    tag: fixed
+    group: 3
+
+  - note: App crashed on startup when no folders were available after data loss
+    short_note: App crashed on startup when no folders were available after data loss
+    tag: fixed
+    group: 3
