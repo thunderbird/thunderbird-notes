@@ -90,24 +90,32 @@ notes:
   - note: Delete key failed to prevent deleting attachments in OpenPGP messages
     tag: fixed
     bugs: [1985610]
+    group: 2
   - note: Sender avatar displayed incorrectly for `'Name' via address` sender format
     tag: fixed
     bugs: [1981322]
+    group: 2
   - note: Testing a configured personal S/MIME certificate for a sub-identity did not work
     tag: fixed
     bugs: [1988948]
+    group: 2
   - note: Testing an S/MIME certificate did not work for an old invalid certificate
     tag: fixed
     bugs: [1988950]
+    group: 2
   - note: Image preview in Insert Image dialog failed with CSP error for web resources
     tag: fixed
     bugs: [1989392]
+    group: 2
   - note: Reply All button was missing when using a Microsoft Exchange account
     tag: fixed
     bugs: [1978968]
+    group: 2
   - note: Button label showed "null" when subscribing to network calendars
     tag: fixed
     bugs: [1988767]
+    group: 2
   - note: Task reminders could fail for tasks without end dates or with shifted due dates
     tag: fixed
     bugs: [1972904]
+    group: 2
