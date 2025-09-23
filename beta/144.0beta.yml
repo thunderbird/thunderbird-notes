@@ -1,7 +1,7 @@
 release:
   release_date: '2025-09-17'
   text: |
-    **These notes apply to Thunderbird version 144 beta 1 released September 17, 2025.**
+    **These notes apply to Thunderbird version 144 beta 2 released September 24, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/144.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -83,3 +84,30 @@ notes:
     bugs: [1667865, 1941471, 1942381, 1957486, 1976900, 1978204, 1984608, 1978946, 
           1979295, 1979367, 1979371, 1984294, 1984894, 1985033, 1985056, 1985165, 
           1985814, 1988374, 1942381, 1986289, 1986628]
+
+  # Beta 2
+  # Fixed
+  - note: Delete key failed to prevent deleting attachments in OpenPGP messages
+    tag: fixed
+    bugs: [1985610]
+  - note: Sender avatar displayed incorrectly for `'Name' via address` sender format
+    tag: fixed
+    bugs: [1981322]
+  - note: Testing a configured personal S/MIME certificate for a sub-identity did not work
+    tag: fixed
+    bugs: [1988948]
+  - note: Testing an S/MIME certificate did not work for an old invalid certificate
+    tag: fixed
+    bugs: [1988950]
+  - note: Image preview in Insert Image dialog failed with CSP error for web resources
+    tag: fixed
+    bugs: [1989392]
+  - note: Reply All button was missing when using a Microsoft Exchange account
+    tag: fixed
+    bugs: [1978968]
+  - note: Button label showed "null" when subscribing to network calendars
+    tag: fixed
+    bugs: [1988767]
+  - note: Task reminders could fail for tasks without end dates or with shifted due dates
+    tag: fixed
+    bugs: [1972904]
