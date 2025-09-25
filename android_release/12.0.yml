@@ -16,10 +16,6 @@ notes:
     short_note: Support Android IME autofill for password managers
     tag: new
 
-  - note: Add support for avatars in account settings
-    short_note: Add support for avatars in account settings
-    tag: new
-
   - note: Enable edge-to-edge support
     short_note: Enable edge-to-edge support
     tag: new
