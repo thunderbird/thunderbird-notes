@@ -14,6 +14,8 @@ release:
       release_date: '2025-09-15'
     - version: '13.0b3'
       release_date: '2025-09-22'
+    - version: '13.0b4'
+      release_date: '2025-09-29'
 
 notes:
   ## Beta 1
@@ -71,3 +73,9 @@ notes:
     short_note: App crashed on startup when no folders were available after data loss
     tag: fixed
     group: 3
+
+  ## Beta 4
+  - note: 'Sync could cause "IllegalStateException: No outbox_state entry for message id" error'
+    short_note: 'Sync could cause "IllegalStateException: No outbox_state entry for message id" error'
+    tag: fixed
+    group: 4
