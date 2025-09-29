@@ -1,0 +1,46 @@
+release:
+  release_date: '2025-09-30'
+  text: |
+    **For help and a quick start on Thunderbird 140, see
+    [Thunderbird 140 Eclipse FAQ](https://support.mozilla.org/en-US/kb/new-thunderbird-desktop)**
+
+    **For more on all the new features in Thunderbird 140, see
+    [What’s New in Thunderbird 140](https://www.thunderbird.net/thunderbird/140.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/140.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Fixed
+  - note: Certificate viewer tab would not load when opened from exception dialog
+    tag: fixed
+    bugs: [1976800]
+  - note: Layout inside a pane could cause performance degradation in other panes
+    tag: fixed
+    bugs: [1971648]
+  - note: Thunderbird could crash in various scenarios
+    tag: fixed
+    bugs: [1684764, 1984288]
+  - note: Adding an account could fail and cause UI hang
+    tag: fixed
+    bugs: [1982284]
+  - note: Address book items with mixed case email addresses were not recognized
+    tag: fixed
+    bugs: [1981174]
+  - note: No way to distinguish between Thunderbird Release/ESR in Windows registry
+    tag: fixed
+    bugs: [1895080]
+  - note: Initial launch had long load times and UI lag while messages downloaded
+    tag: fixed
+    bugs: [1973165]
+  - note: Sending emails via servers with self-signed certificate did not work
+    tag: fixed
+    bugs: [1977400]
+  - note: Opening Website header link in RSS feed incorrectly re-encoded URL parameters
+    tag: fixed
+    bugs: [1971035]
