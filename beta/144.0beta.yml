@@ -1,7 +1,7 @@
 release:
   release_date: '2025-09-17'
   text: |
-    **These notes apply to Thunderbird version 144 beta 2 released September 24, 2025.**
+    **These notes apply to Thunderbird version 144 beta 3 released October 1, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/144.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -119,3 +120,14 @@ notes:
     tag: fixed
     bugs: [1972904]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Subject text of encrypted messages was lost
+    tag: fixed
+    bugs: [1990166]
+    group: 3
+  - note: Users could not read mail signed with OpenPGP v6 and PQC keys
+    tag: fixed
+    bugs: [1986845]
+    group: 3
