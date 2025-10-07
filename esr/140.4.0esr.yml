@@ -1,0 +1,44 @@
+release:
+  release_date: '2025-10-14'
+  text: |
+    **For help and a quick start on Thunderbird 140, see
+    [Thunderbird 140 Eclipse FAQ](https://support.mozilla.org/en-US/kb/new-thunderbird-desktop)**
+
+    **For more on all the new features in Thunderbird 140, see
+    [What’s New in Thunderbird 140](https://www.thunderbird.net/thunderbird/140.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/140.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Changed
+  - note: Account Hub disabled by default for second email account
+    tag: changed
+    bugs: [1992027]
+
+  # Fixed
+  - note: Users could not read mail signed with OpenPGP v6 and PQC keys
+    tag: fixed
+    bugs: [1986845]
+  - note: Image preview in Insert Image dialog failed with CSP error for web resources
+    tag: fixed
+    bugs: [1989392]
+  - note: Emptying trash on exit did not work with some providers
+    tag: fixed
+    bugs: [1975147]
+  - note: Thunderbird could crash when applying filters
+    tag: fixed
+    bugs: [1987880]
+  - note: Users were unable to override expired mail server certificate
+    tag: fixed
+    bugs: [1979323]
+  - note: Opening Website header link in RSS feed incorrectly re-encoded URL parameters
+    tag: fixed
+    bugs: [1971035]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.4)'
+    tag: fixed
