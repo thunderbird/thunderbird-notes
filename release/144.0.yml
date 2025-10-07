@@ -58,10 +58,7 @@ notes:
     bugs: [1989392]
   - note: Thunderbird could crash in various scenarios
     tag: fixed
-    bugs: [1684764, 1984288, 1986642, 1986644, 1987759, 1987880]
-  - note: Thunderbird could crash in folder logic
-    tag: fixed
-    bugs: [1991185]
+    bugs: [1684764, 1984288, 1986642, 1986644, 1987759, 1987880, 1991185]
   - note: "'Copy Message to' action in a newsgroup filter did not work"
     tag: fixed
     bugs: [694780]
