@@ -1,0 +1,104 @@
+release:
+  release_date: '2025-10-14'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/140.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '140.0esr'
+
+notes:
+  # Fixed
+  - note: Copying text from some error alerts was not possible
+    tag: fixed
+    bugs: [1976565]
+  - note: Fastmail CalDAV app password access failed due to forced OAuth regression
+    tag: fixed
+    bugs: [1984376]
+  - note: Delete key failed to prevent deleting attachments in OpenPGP messages
+    tag: fixed
+    bugs: [1985610]
+  - note: Newly created folder was missing under "Recent" when moving a message
+    tag: fixed
+    bugs: [1367034]
+  - note: Sender avatar displayed incorrectly for `'Name' via address` sender format
+    tag: fixed
+    bugs: [1981322]
+  - note: Sorting by threads only brought threads with unread top messages to the top
+    tag: fixed
+    bugs: [617855]
+  - note: News message marked read after NNTP error prevented retrieval from server
+    tag: fixed
+    bugs: [541744]
+  - note: "Inbox 'Location' column was not translated in French locale installation"
+    tag: fixed
+    bugs: [1979295]
+  - note: Not all headers were signed when creating digitally signed OpenPGP email
+    tag: fixed
+    bugs: [1959096]
+  - note: Users could not read mail signed with OpenPGP v6 and PQC keys
+    tag: fixed
+    bugs: [1986845]
+  - note: Testing a configured personal S/MIME certificate for a sub-identity did not work
+    tag: fixed
+    bugs: [1988948]
+  - note: Testing an S/MIME certificate did not work for an old invalid certificate
+    tag: fixed
+    bugs: [1988950]
+  - note: Changing identity in compose window caused modified draft not to be saved
+    tag: fixed
+    bugs: [1986558]
+  - note: "Shift-click 'Compose Message To' on 'mailto' link did not open in plain text"
+    tag: fixed
+    bugs: [1903100]
+  - note: Image preview in Insert Image dialog failed with CSP error for web resources
+    tag: fixed
+    bugs: [1989392]
+  - note: Thunderbird could crash in various scenarios
+    tag: fixed
+    bugs: [1684764, 1984288, 1986642, 1986644, 1987759, 1987880]
+  - note: Thunderbird could crash in folder logic
+    tag: fixed
+    bugs: [1991185]
+  - note: "'Copy Message to' action in a newsgroup filter did not work"
+    tag: fixed
+    bugs: [694780]
+  - note: Thunderbird could not import profile located at the top level of zip file
+    tag: fixed
+    bugs: [1985421]
+  - note: Thunderbird did not clearly fail when importing profile from a bad source
+    tag: fixed
+    bugs: [1984550]
+  - note: No way to distinguish between Thunderbird Release/ESR in Windows registry
+    tag: fixed
+    bugs: [1895080]
+  - note: Multi-attachment delete/detach confirmation only cited first attachment
+    tag: fixed
+    bugs: [1985712]
+  - note: Thunderbird hung when auto-checking multiple accounts for new messages
+    tag: fixed
+    bugs: [1911950]
+  - note: Reply All button was missing when using a Microsoft Exchange account
+    tag: fixed
+    bugs: [1978968]
+  - note: Sending emails via servers with self-signed certificate did not work
+    tag: fixed
+    bugs: [1977400]
+  - note: Task reminders could fail for tasks without end dates or with shifted due dates
+    tag: fixed
+    bugs: [1972904]
+  - note: Could not copy an event in multiweek or month view by drag-and-drop
+    tag: fixed
+    bugs: [411069]
+  - note: Calendar discovery with certificate error displayed multiple exceptions
+    tag: fixed
+    bugs: [1985183]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1667865, 1941471, 1942381, 1957486, 1976900, 1978204, 1984608, 1978946, 1979295,
+      1979367, 1979371, 1984294, 1984894, 1985033, 1985056, 1985165, 1985814, 1988374,
+      1942381, 1986289, 1986628]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird144)'
+    tag: fixed
