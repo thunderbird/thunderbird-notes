@@ -1,0 +1,21 @@
+release:
+  release_date: '2025-10-15'
+  text: |
+    **These notes apply to Thunderbird version 145 beta 1 released October 15, 2025.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/144.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Enable support for Microsoft Exchange via Exchange Web Services
+    tag: new
+    bugs: [1970399]
