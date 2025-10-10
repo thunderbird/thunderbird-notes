@@ -10,6 +10,11 @@ release:
   import_system_requirements: '140.0esr'
 
 notes:
+  # Changed
+  - note: Flatpak runtime has been updated to Freedesktop SDK 24.08
+    tag: changed
+    bugs: [1952100]
+
   # Fixed
   - note: Copying text from some error alerts was not possible
     tag: fixed
