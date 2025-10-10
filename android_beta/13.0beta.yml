@@ -16,6 +16,8 @@ release:
       release_date: '2025-09-22'
     - version: '13.0b4'
       release_date: '2025-09-29'
+    - version: '13.0b5'
+      release_date: '2025-10-13'
 
 notes:
   ## Beta 1
@@ -79,3 +81,14 @@ notes:
     short_note: 'Sync could cause "IllegalStateException: No outbox_state entry for message id" error'
     tag: fixed
     group: 4
+
+  ## Beta 5
+  - note: Reverted word-wrapping change that broke HTML and table rendering
+    short_note: Reverted word-wrapping change that broke HTML and table rendering
+    tag: fixed
+    group: 5
+
+  - note: Application crashed when opening placeholder folder
+    short_note: Application crashed when opening placeholder folder
+    tag: fixed
+    group: 5
