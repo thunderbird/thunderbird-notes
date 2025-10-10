@@ -17,9 +17,12 @@ release:
 
 notes:
   # Changed
-  - note: Account Hub disabled by default for second email account
+  - note: Account Hub is now disabled by default for second email account
     tag: changed
     bugs: [1992027]
+  - note: Flatpak runtime has been updated to Freedesktop SDK 24.08
+    tag: changed
+    bugs: [1952100]
 
   # Fixed
   - note: Users could not read mail signed with OpenPGP v6 and PQC keys
