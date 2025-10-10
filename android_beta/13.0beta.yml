@@ -83,10 +83,11 @@ notes:
     group: 4
 
   ## Beta 5
-  - note: Tables, columns, and HTML did not always render properly
-    short_note: Tables, columns, and HTML did not always render properly
+  - note: Reverted word-wrapping change that broke HTML and table rendering
+    short_note: Reverted word-wrapping change that broke HTML and table rendering
     tag: fixed
     group: 5
+
   - note: Application crashed when opening placeholder folder
     short_note: Application crashed when opening placeholder folder
     tag: fixed
