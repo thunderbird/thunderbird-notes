@@ -1,7 +1,7 @@
 release:
-  release_date: '2025-10-15'
+  release_date: '2025-10-16'
   text: |
-    **These notes apply to Thunderbird version 145 beta 1 released October 15, 2025.**
+    **These notes apply to Thunderbird version 145 beta 1 released October 16, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/144.0beta/system-requirements/)
 
@@ -16,6 +16,100 @@ release:
 
 notes:
   # New
+  - note: Enable support for DNS over HTTPS
+    tag: new
+    bugs: [1988718]
+  - note: Account Hub email manual config option added
+    tag: new
+    bugs: [1993070]
+  - note: Account Hub address book creation enabled by default for beta
+    tag: new
+    bugs: [1990658]
   - note: Enable support for Microsoft Exchange via Exchange Web Services
     tag: new
     bugs: [1970399]
+
+  # Changed
+  - note: Skype has been retired and therefore dropped from Address book IM selection
+    tag: changed
+    bugs: [1960650]
+  - note: Removed pref `default_supports_diskspace.{HOST}`
+    tag: changed
+    bugs: [1991002]
+  - note: Removed pref `default_offline_support_level.{HOST}`
+    tag: changed
+    bugs: [1991002]
+  - note: Use of the string "Junk" has been replaced with "Spam"
+    tag: changed
+    bugs: [1823084]
+  - note: Stop shipping 32-bit Linux x86 binaries
+    tag: changed
+    bugs: [1989558, 1990232]
+
+  # Fixed
+  - note: "'Save All' attachments with same names overwrote existing files without warning"
+    tag: fixed
+    bugs: [1993409]
+  - note: Message headers were re-downloaded at every startup
+    tag: fixed
+    bugs: [1912195]
+  - note: Could not drag and drop ICS file to Today Pane
+    tag: fixed
+    bugs: [1992935]
+  - note: "'Show remote content' did not display remote content for EML message"
+    tag: fixed
+    bugs: [1851875]
+  - note: Emoji sequences were not properly handled in subject lines
+    tag: fixed
+    bugs: [1900708]
+  - note: Unified toolbar Spam button did not switch to "Not Spam" when spam message selected
+    tag: fixed
+    bugs: [1831713]
+  - note: Upgrading Thunderbird hid the Menu bar
+    tag: fixed
+    bugs: [1989026]
+  - note: When configuring external GnuPG, user was not promted to import public key
+    tag: fixed
+    bugs: [1924357]
+  - note: Add-on account creation did not work with Account Hub
+    tag: fixed
+    bugs: [1973399]
+  - note: Owl install did not show link to website in Account Hub
+    tag: fixed
+    bugs: [1973543]
+  - note: Username field did not appear in Account Hub when exchange authentication failed
+    tag: fixed
+    bugs: [1973582]
+  - note: Disabled inputs could be toggled in Account Hub address book
+    tag: fixed
+    bugs: [1975209]
+  - note: Manual account setup in Account Hub defaulted Connection Security to None
+    tag: fixed
+    bugs: [1975533]
+  - note: Close button from Account Hub was not narrated
+    tag: fixed
+    bugs: [1975683]
+  - note: Account Hub email creation error notifications were not narrated
+    tag: fixed
+    bugs: [1975685]
+  - note: Users could not disable spinning overlay in Account Hub for email
+    tag: fixed
+    bugs: [1977955]
+  - note: Deleted account data remained in "Export to mobile device" menu
+    tag: fixed
+    bugs: [1985775]
+  - note: "'Sent' and 'Spam' folders were not always created when setting up new IMAP accounts"
+    tag: fixed
+    bugs: [1987733]
+  - note: Spam was not checked with `mail.server.default.check_all_folders_for_new` on
+    tag: fixed
+    bugs: [1986092]
+  - note: Upgrade from 128.x->140.x broke authentication for @att.net using Yahoo backend
+    tag: fixed
+    bugs: [1978361]
+  - note: Task reminders could fail for tasks without end dates or with shifted due dates
+    tag: fixed
+    bugs: [1972904]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [382977, 1984546, 1985227, 1990657, 1990726, 1991679, 1991755, 1991690]
