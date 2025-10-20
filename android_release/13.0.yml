@@ -1,0 +1,46 @@
+release:
+  release_date: '2025-10-20'
+  text: >
+    **These notes apply to Thunderbird for Android version 13.0 released October 20th, 2025.**
+
+  releases:
+    - version: '13.0'
+      release_date: '2025-10-20'
+
+notes:
+  # Changed
+  - note: Sync logging duration is now limited to 24 hours
+    short_note: Sync logging limited to 24 hours
+    tag: changed
+
+  # Fixed
+  - note: Client certificate was not displayed in SMTP settings
+    short_note: Client certificate not displayed in SMTP settings
+    tag: fixed
+
+  - note: Outlook headers included unnecessary newlines when replying to a message
+    tag: fixed
+
+  - note: '"Enable debug logging" did not provide verbose logging'
+    short_note: '"Enable debug logging" did not provide verbose logging'
+    tag: fixed
+
+  - note: Scrolling in a short email could trigger left/right swipe
+    short_note: Scrolling short email could trigger left/right swipe
+    tag: fixed
+
+  - note: Landscape scrolling only worked in center of Welcome and New Account screens
+    short_note: Landscape scrolling only worked in center of some screens
+    tag: fixed
+
+  - note: On IMAP servers with folder prefixes, some folder operations stopped working
+    short_note: IMAP folder operations broken with prefixes
+    tag: fixed
+
+  - note: Reverted word-wrapping change that broke HTML and table rendering
+    short_note: HTML/table rendering display broken
+    tag: fixed
+
+  - note: Application crashed when opening placeholder folder
+    short_note: Application crashed opening placeholder folder
+    tag: fixed
