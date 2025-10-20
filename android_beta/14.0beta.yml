@@ -1,0 +1,67 @@
+release:
+  release_date: '2025-10-20'
+  text: >
+    **These notes apply to Thunderbird for Android version 14.0 betas,
+    first released October 20th, 2025**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '14.0b1'
+      release_date: '2025-10-20'
+
+notes:
+  ## Beta 1
+  # Fixed
+  - note: "'Auto-fit messages' display setting did not persist"
+    short_note: "'Auto-fit messages' setting did not persist"
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9942
+    issues: [9936]
+    tag: fixed
+    group: 1
+  - note: Edge-to-edge regressed moving/copying message with 3-button navigation
+    short_note: Edge-to-edge move/copy regressed with 3-button nav
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9927
+    issues: [9850]
+    tag: fixed
+    group: 1
+  - note: Unified Account was displayed when there was only one account
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9864
+    issues: [9463]
+    tag: fixed
+    group: 1
+  - note: Swiping message left or right with slight downward motion aborted prematurely
+    short_note: Swiping message left/right could abort prematurely
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9842
+    issues: [9548]
+    tag: fixed
+    group: 1
+  - note: Crash occurred when setting archive folder via swipe after it was set to None
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9832
+    issues: [9809]
+    tag: fixed
+    group: 1
+  - note: Outlook SMTP failed to authenticate for enterprise or educational accounts
+    short_note: Outlook SMTP failed authentication for some accounts
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9823
+    issues: [9160]
+    tag: fixed
+    group: 1
+  - note: Gmail folder prefixes appeared after refreshing folder list
+    short_note: Gmail folder prefixes appeared after refreshing folder list
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9743
+    issues: [9742]
+    tag: fixed
+    group: 1
+  - note: "During account setup, 'Your Name' field was mislabeled as 'Display Name'"
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9695
+    issues: [9694]
+    tag: fixed
+    group: 1
+  - note: Quiet time preferences were ignored
+    short_note: Quiet time preferences were ignored
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9640
+    issues: [9629]
+    tag: fixed
+    group: 1
