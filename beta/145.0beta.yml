@@ -1,7 +1,7 @@
 release:
   release_date: '2025-10-16'
   text: |
-    **These notes apply to Thunderbird version 145 beta 1 released October 16, 2025.**
+    **These notes apply to Thunderbird version 145 beta 2 released October 22, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/144.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -113,3 +114,32 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [382977, 1984546, 1985227, 1990657, 1990726, 1991679, 1991755, 1991690]
+
+  # Beta 2
+  # New
+  - note: Add manual configuration to EWS account creation
+    tag: new
+    bugs: [1993071]
+    group: 2
+
+  # Fixed
+  - note: Message compose window could incorrectly disappear from Task Bar on Windows
+    tag: fixed
+    bugs: [1994411]
+    group: 2
+  - note: Some third-party hosted accounts could not be created in Account Hub
+    tag: fixed
+    bugs: [1975860]
+    group: 2
+  - note: EWS users were unable to empty trash
+    tag: fixed
+    bugs: [1993002]
+    group: 2
+  - note: Thunderbird failed to download EWS message with multiple reply-to addresses
+    tag: fixed
+    bugs: [1993555]
+    group: 2
+  - note: Marking EWS folder as read appeared to work but was ignored server-side
+    tag: fixed
+    bugs: [1990186]
+    group: 2
