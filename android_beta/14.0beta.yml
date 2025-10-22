@@ -10,6 +10,8 @@ release:
   releases:
     - version: '14.0b1'
       release_date: '2025-10-20'
+    - version: '14.0b2'
+      release_date: '2025-10-22'
 
 notes:
   ## Beta 1
@@ -65,3 +67,12 @@ notes:
     issues: [9629]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # Fixed
+  - note: Messages could not be fetched in 14.0b1
+    short_note: Messages could not be fetched in 14.0b1
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9985
+    issues: [9983]
+    tag: fixed
+    group: 2
