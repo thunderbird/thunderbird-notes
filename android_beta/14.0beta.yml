@@ -12,6 +12,8 @@ release:
       release_date: '2025-10-20'
     - version: '14.0b2'
       release_date: '2025-10-22'
+    - version: '14.0b3'
+      release_date: '2025-10-27'
 
 notes:
   ## Beta 1
@@ -76,3 +78,12 @@ notes:
     issues: [9983]
     tag: fixed
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Thunderbird could crash when deleting an account and returning to the message list
+    short_note: Thunderbird could crash after deleting an account
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/9998
+    issues: [9997]
+    tag: fixed
+    group: 3
