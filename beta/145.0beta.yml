@@ -1,7 +1,7 @@
 release:
   release_date: '2025-10-16'
   text: |
-    **These notes apply to Thunderbird version 145 beta 2 released October 22, 2025.**
+    **These notes apply to Thunderbird version 145 beta 3 released October 29, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/144.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -143,3 +144,22 @@ notes:
     tag: fixed
     bugs: [1990186]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Servers lacking localization showed special folder names in server’s language
+    tag: fixed
+    bugs: [1993842]
+    group: 3
+  - note: Thunderbird could crash during exchange address account setup
+    tag: fixed
+    bugs: [1987786]
+    group: 3
+  - note: System messages could break message sync for EWS
+    tag: fixed
+    bugs: [1983413]
+    group: 3
+  - note: EWS messages with missing sender email address failed to sync
+    tag: fixed
+    bugs: [1994719]
+    group: 3
