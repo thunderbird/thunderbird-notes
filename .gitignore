@@ -6,3 +6,4 @@ ver_notes_old.yml
 .DS_Store
 .idea/
 _template/
+.venv

@@ -32,6 +32,23 @@ class ReleaseNotes(object):
         # version numbers are shared.
         self.notes = self.load_dirs(notes_dirs)
 
+    def get_system_requirements(self, version, notelist):
+        """Get system requirements from notelist."""
+        if version not in notelist:
+            raise KeyError(
+                f"Cannot import system_requirements from '{version}': version not found. "
+                f"Available versions: {sorted(notelist.keys())}"
+            )
+
+        sysreq = notelist[version]["release"].get("system_requirements")
+        if not sysreq:
+            raise ValueError(
+                f"Cannot import system_requirements from '{version}': "
+                f"that version doesn't have system_requirements defined. "
+            )
+
+        return sysreq
+
     def organize(self, notelist):
         """Organize the data from the .yml format into the variables that the template context expects."""
         organized_notelist = {}
@@ -47,9 +64,7 @@ class ReleaseNotes(object):
             if not n["release"].get("system_requirements"):
                 import_version = n["release"].get("import_system_requirements")
                 if import_version:
-                    n["release"]["system_requirements"] = notelist[import_version]["release"]["system_requirements"]
-                else:
-                    n["release"]["system_requirements"] = ""
+                    n["release"]["system_requirements"] = self.get_system_requirements(import_version, notelist)
             # Push unresolved tags to separate "Known Issues" list.
             for note in n["notes"]:
                 if "bugs" in note:
@@ -65,7 +80,7 @@ class ReleaseNotes(object):
         """Load release notes from a list of paths."""
         notes = {}
         for path in paths:
-            notefiles = os.listdir(path)
+            notefiles = sorted(os.listdir(path))
             for notefile in notefiles:
                 if notefile.endswith(".yml"):
                     with open(os.path.join(path, notefile), "r") as f:
