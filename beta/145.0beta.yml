@@ -1,7 +1,7 @@
 release:
   release_date: '2025-10-16'
   text: |
-    **These notes apply to Thunderbird version 145 beta 3 released October 29, 2025.**
+    **These notes apply to Thunderbird version 145 beta 4 released November 3, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/144.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -163,3 +164,26 @@ notes:
     tag: fixed
     bugs: [1994719]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Account Hub allowed keyboard shortcuts to be executed in background screen
+    tag: fixed
+    bugs: [1982203]
+    group: 4
+  - note: Receiving an EWS CalendarItem caused errors and blocked later message downloads
+    tag: fixed
+    bugs: [1963856]
+    group: 4
+  - note: Dark theme did not render correctly since 145.0b2
+    tag: fixed
+    bugs: [1996021]
+    group: 4
+  - note: Thunderbird could crash during EWS folder operations
+    tag: fixed
+    bugs: [1996646]
+    group: 4
+  - note: Moving or copying a folder to EWS did not include subfolders and their messages
+    tag: fixed
+    bugs: [1986564]
+    group: 4
