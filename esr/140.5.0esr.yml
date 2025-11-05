@@ -1,0 +1,30 @@
+release:
+  release_date: '2025-11-11'
+  text: |
+    **For help and a quick start on Thunderbird 140, see
+    [Thunderbird 140 Eclipse FAQ](https://support.mozilla.org/en-US/kb/new-thunderbird-desktop)**
+
+    **For more on all the new features in Thunderbird 140, see
+    [What’s New in Thunderbird 140](https://www.thunderbird.net/thunderbird/140.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/140.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Fixed
+  - note: Could not drag and drop ICS file to Today Pane
+    tag: fixed
+    bugs: [1992935]
+  - note: "With Thunderbird closed, clicking a 'mailto:' link to send signed message failed"
+    tag: fixed
+    bugs: [1972857]
+  - note: Upgrade from 128.x->140.x broke authentication for @att.net using Yahoo backend
+    tag: fixed
+    bugs: [1978361]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.5)'
+    tag: fixed
