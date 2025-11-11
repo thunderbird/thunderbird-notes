@@ -25,6 +25,9 @@ notes:
     bugs: [1970399]
 
   # Changed
+  - note: Special folders are consistently named based on their folder type flag
+    tag: changed
+    bugs: [1993842]
   - note: Skype has been retired and therefore dropped from Address book IM selection
     tag: changed
     bugs: [1960650]
@@ -57,9 +60,6 @@ notes:
   - note: Emoji sequences were not properly handled in subject lines
     tag: fixed
     bugs: [1900708]
-  - note: Servers lacking localization showed special folder names in server’s language
-    tag: fixed
-    bugs: [1993842]
   - note: Unified toolbar Spam button did not switch to "Not Spam" when spam message selected
     tag: fixed
     bugs: [1831713]
