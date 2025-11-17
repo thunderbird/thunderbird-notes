@@ -119,3 +119,8 @@ notes:
     bugs: [382977, 1984546, 1985227, 1990657, 1990726, 1991679, 1991755, 1991690]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird145)'
     tag: fixed
+
+  # Unresolved
+  - note: Crash on DNS lookup during account setup (Mac). Use manual config to avoid.
+    tag: unresolved
+    bugs: [1987786]
