@@ -1,0 +1,78 @@
+release:
+  release_date: '2025-11-17'
+  text: >
+    **These notes apply to Thunderbird for Android version 15.0 betas,
+    first released November 17th, 2025**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '15.0b1'
+      release_date: '2025-11-17'
+
+notes:
+  ## Beta 1
+  # New
+  - note: Add avatar to message list content
+    short_note: Add avatar to message list content
+    pull_requests: [9895]
+    issues: [9822]
+    tag: new
+    group: 1
+  - note: Enable in-app notifications for beta
+    short_note: Enable in-app notifications for beta
+    pull_requests: [10064]
+    issues: [10063]
+    tag: new
+    group: 1
+  - note: In-app error notification improvements
+    short_note: In-app error notification improvements
+    pull_requests: [9880, 9900, 10015, 10025]
+    issues: [9862, 9888, 9989]
+    tag: new
+    group: 1
+
+  # Changed
+  - note: Default sync interval has been changed from 60 minutes to 15 minutes
+    short_note: Default sync interval changed to 15 minutes
+    pull_requests: [10002]
+    issues: [10001]
+    tag: changed
+    group: 1
+  - note: Introduce warning in Message Compose screen when no sent folder is detected
+    short_note: Warn user in compose when no sent folder detected
+    pull_requests: [9912]
+    issues: [6276]
+    tag: changed
+    group: 1
+  - note: Add confirmation dialog for sending a message without a sent folder
+    short_note: Confirm when sending message without sent folder
+    pull_requests: [9912]
+    issues: [6276]
+    tag: changed
+    group: 1
+  - note: Use application icon in push notification messages
+    pull_requests: [9579]
+    issues: [8932]
+    tag: changed
+    group: 1
+
+  # Fixed
+  - note: "'Colorize contact pictures' default changed unexpectedly from true to false"
+    short_note: "'Colorize contact pictures' default changed unexpectedly from true to false"
+    pull_requests: [10035]
+    issues: [9978]
+    tag: fixed
+    group: 1
+  - note: Displaying IMAP password in plain text did not prompt for authentication
+    short_note: Displaying IMAP password in did not prompt for authentication
+    pull_requests: [10031]
+    issues: [10013]
+    tag: fixed
+    group: 1
+  - note: Sync debug logger did not write any logs
+    pull_requests: [9967]
+    issues: [9966]
+    tag: fixed
+    group: 1
