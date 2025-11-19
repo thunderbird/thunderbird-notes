@@ -1,7 +1,7 @@
 release:
-  release_date: '2025-11-14'
+  release_date: '2025-11-19'
   text: |
-    **These notes apply to Thunderbird version 146 beta 2 released November 14, 2025.**
+    **These notes apply to Thunderbird version 146 beta 3 released November 19, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -108,3 +109,9 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 2
+
+  # Beta 3
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 3
