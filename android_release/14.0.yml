@@ -9,6 +9,11 @@ release:
 
 notes:
   # Fixed
+  - note: Drop-down drawer is now enabled
+    short_note: Drop-down drawer is now enabled
+    pull_request: https://github.com/thunderbird/thunderbird-android/pull/10072
+    issues: [10068]
+    tag: new
   - note: "'Auto-fit messages' display setting did not persist"
     short_note: "'Auto-fit messages' setting did not persist"
     pull_request: https://github.com/thunderbird/thunderbird-android/pull/9942
