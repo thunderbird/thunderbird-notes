@@ -1,10 +1,13 @@
----
+name: Android Notes
 
 on:
   pull_request:
     paths:
       - 'android_beta/*.yml'
       - 'android_release/*.yml'
+
+permissions:
+  contents: read
 
 jobs:
   render_notes:
