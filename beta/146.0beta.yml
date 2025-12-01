@@ -111,7 +111,8 @@ notes:
     group: 2
 
   # Beta 3
-  # Changed
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
+  # Fixed
+  - note: Extending the expiration date of OpenPGP key set incorrect date
+    tag: fixed
+    bugs: [2001888]
     group: 3
