@@ -30,7 +30,11 @@ def gen_notes(this_release):
     if out_yaml.exists():
         raise FileExistsError(out_yaml)
 
-    print("Generating notes for Thunderbird {this_release}".format(this_release=this_release))
+    print(
+        "Generating notes for Thunderbird {this_release}".format(
+            this_release=this_release
+        )
+    )
 
     release_date, human_date = guess_release_date()
     ver_major = this_release.split(".")[0]
@@ -43,21 +47,21 @@ def gen_notes(this_release):
         ver_major=ver_major, human_date=human_date
     )
     new_yaml["release"]["import_system_requirements"] = (
-        old_yaml["release"]["import_system_requirements"]
+        notes_template.REQUIREMENTS_IMPORT["140"]
     )
 
     new_yaml["notes"] = []
     for tag_name in ["new", "changed", "fixed"]:
-        for note in old_yaml['notes']:
-            if note['tag'] == tag_name:
-                if 'group' in note:
-                    del note['group']
+        for note in old_yaml["notes"]:
+            if note["tag"] == tag_name:
+                if "group" in note:
+                    del note["group"]
                 new_yaml["notes"].append(note)
 
     sec_note = notes_template.TMPL_SEC_NOTE.format(
         thunderbird_version=f"thunderbird{ver_major}"
     )
-    note = {'note': sec_note, 'tag': 'fixed'}
+    note = {"note": sec_note, "tag": "fixed"}
     new_yaml["notes"].append(note)
 
     with open(out_yaml, "w") as fp:
