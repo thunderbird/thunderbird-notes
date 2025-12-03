@@ -1,0 +1,100 @@
+release:
+  release_date: '2025-12-09'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/146.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # New
+  - note: Enabled configuration of preferred OpenPGP keyserver via the UI
+    tag: new
+    bugs: [1665723]
+
+  # Changed
+  - note: Existing logins are migrated to make use of more modern AES cryptography
+    tag: changed
+    bugs: [1985684]
+
+  # Fixed
+  - note: Memory was not cleaned up after opening New Window from folder pane context menu
+    tag: fixed
+    bugs: [1994088]
+  - note: Thunderbird could crash in server subscription logic
+    tag: fixed
+    bugs: [1835523]
+  - note: Importing a vCard only displayed VCF files in the file picker
+    tag: fixed
+    bugs: [1995926]
+  - note: Could not distinguish folders with same name in 'Recent Destinations' and 'Favorites'
+    tag: fixed
+    bugs: [1829728]
+  - note: Could not compose new message if the folder pane was empty
+    tag: fixed
+    bugs: [1991417]
+  - note: "'Delete' was missing from context menu when multiple IMAP folders were selected"
+    tag: fixed
+    bugs: [1999101]
+  - note: "'Delete' button in unified toolbar could delete attachments instead of message"
+    tag: fixed
+    bugs: [1995417]
+  - note: "'Recent destinations' submenu was not sorted by time of modification"
+    tag: fixed
+    bugs: [1829748]
+  - note: Account column could display incorrect account name
+    tag: fixed
+    bugs: [707165]
+  - note: "'Tag' submenu of mail context menu could be populated incorrectly"
+    tag: fixed
+    bugs: [1997914]
+  - note: Extending the expiration date of OpenPGP key set incorrect date
+    tag: fixed
+    bugs: [2001888]
+  - note: Could not sign/encrypt (PGP) when using -compose and Thunderbird was not running
+    tag: fixed
+    bugs: [1993943]
+  - note: Account Hub email success messages were not always accurate about config source
+    tag: fixed
+    bugs: [1992106]
+  - note: Account Hub advanced config setup did not include default outgoing config
+    tag: fixed
+    bugs: [1973526]
+  - note: Account Hub local address book creation could continue with blank name
+    tag: fixed
+    bugs: [1991902]
+  - note: Detailed security exception dialog was not shown when adding certificate exception
+    tag: fixed
+    bugs: [1988837]
+  - note: The default account could be reset after restart if uninitialized
+    tag: fixed
+    bugs: [1991298]
+  - note: Opening a vCard (.vcf) from file manager or CLI did not work in some cases
+    tag: fixed
+    bugs: [1921406]
+  - note: Dragging attachments on macOS to folder or desktop no longer worked
+    tag: fixed
+    bugs: [1989600]
+  - note: EWS folder properties "Select this folder for offline use" did not work
+    tag: fixed
+    bugs: [1989498]
+  - note: Thunderbird could crash when mail folder was renamed or moved
+    tag: fixed
+    bugs: [1996650]
+  - note: Account Hub could fail when manually creating EWS account
+    tag: fixed
+    bugs: [1998478]
+  - note: "'Offline' folder flag for EWS folders was reset on restart"
+    tag: fixed
+    bugs: [1995078]
+  - note: "'Open with' of Microsoft Office attachment did not mark file with MOTW label"
+    tag: fixed
+    bugs: [1993854]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1416232, 1901089, 1973072, 1977204, 1997518, 1990434, 1990824, 1992593, 1994194]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird146)'
+    tag: fixed
