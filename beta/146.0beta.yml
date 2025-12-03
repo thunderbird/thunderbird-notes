@@ -21,9 +21,6 @@ notes:
   - note: Enabled configuration of preferred OpenPGP keyserver via the UI
     tag: new
     bugs: [1665723]
-  - note: Added support for NTLM authentication for EWS
-    tag: new
-    bugs: [1995024]
 
   # Changed
   - note: Existing logins are migrated to make use of more modern AES cryptography
