@@ -1,5 +1,5 @@
 release:
-  release_date: '2025-12-08'
+  release_date: '2025-12-10'
   text: >
     **These notes apply to Thunderbird for Android version 16.0 betas,
     first released December 8th, 2025**
@@ -10,6 +10,8 @@ release:
   releases:
     - version: '16.0b1'
       release_date: '2025-12-08'
+    - version: '16.0b2'
+      release_date: '2025-12-10'
 
 notes:
   ## Beta 1
@@ -46,3 +48,17 @@ notes:
     issues: [9482, 10169, 10185]
     tag: fixed
     group: 1
+
+  ## Beta 2
+  - note: Application crashed at startup
+    short_note: Application crashed at startup
+    pull_requests: [10239]
+    issues: [10230]
+    tag: fixed
+    group: 2
+  - note: Fix various edge-to-edge issues throughout the app
+    short_note: Fix various edge-to-edge issues throughout the app
+    pull_requests: [10240]
+    issues: [10235, 10236]
+    tag: fixed
+    group: 2
