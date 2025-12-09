@@ -15,13 +15,13 @@ notes:
   ## Beta 1
   # New
   - note: Added support for Account Icons (disabled by default)
-    short_note: Add avatar to message list content
+    short_note: Added support for Account Icons (disabled by default)
     pull_requests: [10135]
     issues: [9369]
     tag: new
     group: 1
   - note: Added support for Account Monograms
-    short_note: Add avatar to message list content
+    short_note: Added support for Account Monograms
     pull_requests: [10104]
     issues: [9031]
     tag: new
