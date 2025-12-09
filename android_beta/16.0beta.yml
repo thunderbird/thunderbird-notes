@@ -1,0 +1,48 @@
+release:
+  release_date: '2025-12-08'
+  text: >
+    **These notes apply to Thunderbird for Android version 16.0 betas,
+    first released December 8th, 2025**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '16.0b1'
+      release_date: '2025-12-08'
+
+notes:
+  ## Beta 1
+  # New
+  - note: Enable Memory Tagging Extension on MTE-capable devices to improve memory safety
+    short_note: Enable Memory Tagging Extension on MTE-capable devices to improve memory safety
+    pull_requests: [10164, 10110]
+    issues: [10056, 10055]
+    tag: new
+    group: 1
+  - note: Add setting to control default folder expansion behavior
+    short_note: Add setting to control default folder expansion behavior
+    pull_requests: [10077]
+    issues: [10036, 10145]
+    tag: new
+    group: 1
+  - note: Add the ability to switch between text/plain and text/html display
+    short_note: Add the ability to switch between text/plain and text/html display
+    pull_requests: [10037]
+    issues: [906, 1397]
+    tag: new
+    group: 1
+
+  # Fixed
+  - note: Switching folders required an excessive number of clicks
+    short_note: Switching folders required an excessive number of clicks
+    pull_requests: [10195]
+    issues: [10161]
+    tag: fixed
+    group: 1
+  - note: Fix various edge-to-edge issues throughout the app
+    short_note: Fix various edge-to-edge issues throughout the app
+    pull_requests: [10181]
+    issues: [9482, 10169, 10185]
+    tag: fixed
+    group: 1
