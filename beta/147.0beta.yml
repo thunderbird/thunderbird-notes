@@ -21,11 +21,6 @@ notes:
     tag: new
     bugs: [382977]
 
-  # Changed
-  - note: Yahoo and AOL Oauth2 configurations are updated to use PKCE
-    tag: changed
-    bugs: [1999291]
-
   # Fixed
   - note: Selected status and priority not displayed in search widgets
     tag: fixed
