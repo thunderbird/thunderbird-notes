@@ -25,7 +25,7 @@ notes:
   - note: Selected status and priority not displayed in search widgets
     tag: fixed
     bugs: [2001222]
-  - note: Compacting multiple folders failed and did nothing
+  - note: Compacting multiple folders failed and did not compact
     tag: fixed
     bugs: [1984945]
   - note: Spam folder could incorrectly be renamed
@@ -52,7 +52,7 @@ notes:
   - note: '"Open and Show" for OpenPGP-signed message (.eml) did not work'
     tag: fixed
     bugs: [1953098]
-  - note: '"Search Messages" search may not finish due to unparsable local folders'
+  - note: '"Search Messages" search did not finish due to unparsable local folders'
     tag: fixed
     bugs: [1976655]
   - note: Compose command line flag no longer worked correctly
@@ -76,7 +76,7 @@ notes:
   - note: Startup could be slow with large number of folders not using subscriptions
     tag: fixed
     bugs: [1992248]
-  - note: EWS message sending that required a password errored instead of prompting
+  - note: EWS message send that required a password errored instead of prompting
     tag: fixed
     bugs: [1976128]
   - note: EWS HTTP 500 backoff errors were not handled gracefully
