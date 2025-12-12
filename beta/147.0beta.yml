@@ -1,7 +1,7 @@
 release:
-  release_date: '2025-12-11'
+  release_date: '2025-12-12'
   text: |
-    **These notes apply to Thunderbird version 147 beta 1 released December 11, 2025.**
+    **These notes apply to Thunderbird version 147 beta 2 released December 12, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -13,88 +13,115 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
-  # Beta 1
+  # Beta 2
   # New
   - note: Add "Show Full Path" folder pane option for compact view modes
     tag: new
     bugs: [382977]
+    group: 2
 
   # Fixed
   - note: Selected status and priority not displayed in search widgets
     tag: fixed
     bugs: [2001222]
+    group: 2
   - note: Compacting multiple folders failed and did not compact
     tag: fixed
     bugs: [1984945]
+    group: 2
   - note: Spam folder could incorrectly be renamed
     tag: fixed
     bugs: [1999556]
+    group: 2
   - note: Resetting manual folder sorting did not work for sub folders
     tag: fixed
     bugs: [1979880]
+    group: 2
   - note: 'Gmail "All Mail" folder was displayed as "Archives" in the folder pane'
     tag: fixed
     bugs: [1999677]
+    group: 2
   - note: Local folder names created by the user could be renamed
     tag: fixed
     bugs: [1998456]
+    group: 2
   - note: Unified archive subfolders could show wrong names and no messages
     tag: fixed
     bugs: [1826762]
+    group: 2
   - note: Folders with deep hierarchy and long folder names could fail to display
     tag: fixed
     bugs: [1990571]
+    group: 2
   - note: Moving saved search/virtual folder under IMAP could fail
     tag: fixed
     bugs: [533766]
+    group: 2
   - note: '"Open and Show" for OpenPGP-signed message (.eml) did not work'
     tag: fixed
     bugs: [1953098]
+    group: 2
   - note: '"Search Messages" search did not finish due to unparsable local folders'
     tag: fixed
     bugs: [1976655]
+    group: 2
   - note: Compose command line flag no longer worked correctly
     tag: fixed
     bugs: [2004551]
+    group: 2
   - note: 'Search for "Attachment" in Settings menu did not find "Files and Attachments"'
     tag: fixed
     bugs: [1742234]
+    group: 2
   - note: Account Hub did not show error message on failure when creating OAuth2 EWS account
     tag: fixed
     bugs: [1998477]
+    group: 2
   - note: Thunderbird could crash during exchange address account setup
     tag: fixed
     bugs: [1987786]
+    group: 2
   - note: Moving virtual folder within maildir based IMAP or local folder could fail
     tag: fixed
     bugs: [1835556]
+    group: 2
   - note: Thunderbird could crash when marking all messages as read
     tag: fixed
     bugs: [2004053]
+    group: 2
   - note: Startup could be slow with large number of folders not using subscriptions
     tag: fixed
     bugs: [1992248]
+    group: 2
   - note: EWS message send that required a password errored instead of prompting
     tag: fixed
     bugs: [1976128]
+    group: 2
   - note: EWS HTTP 500 backoff errors were not handled gracefully
     tag: fixed
     bugs: [1995521]
+    group: 2
   - note: SMTP sending could hang when when multiple messages queued for sending
     tag: fixed
     bugs: [1988329]
+    group: 2
   - note: Thunderbird could crash when emptying EWS trash
     tag: fixed
     bugs: [2002213]
+    group: 2
   - note: Broken feed icon could prevent updating of feeds
     tag: fixed
     bugs: [1979019]
+    group: 2
   - note: Calendar did not alert user for connection issues
     tag: fixed
     bugs: [1998342]
+    group: 2
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1832899, 1898889, 1939939, 1945489, 1987253, 1997050, 1997465, 1997487, 1998473,
       1998747, 2001543, 2001605, 2001863, 2003145]
+    group: 2
