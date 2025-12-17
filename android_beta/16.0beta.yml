@@ -12,6 +12,8 @@ release:
       release_date: '2025-12-08'
     - version: '16.0b2'
       release_date: '2025-12-10'
+    - version: '16.0b3'
+      release_date: '2025-12-17'
 
 notes:
   ## Beta 1
@@ -62,3 +64,17 @@ notes:
     issues: [10235, 10236]
     tag: fixed
     group: 2
+
+  ## Beta 3
+  - note: Application crashed on Pixel 10 Pro when returning to message list
+    short_note: Application crashed on Pixel 10 Pro when returning to message list
+    pull_requests: [10284]
+    issues: [10258]
+    tag: fixed
+    group: 3
+  - note: Account avatar monograms reverted to initial account name and could not be renamed
+    short_note: Account avatar monograms reverted to initial account name and could not be renamed
+    pull_requests: [10282]
+    issues: [10253]
+    tag: fixed
+    group: 3
