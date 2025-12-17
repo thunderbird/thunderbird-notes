@@ -42,6 +42,9 @@ notes:
   - note: "'Delete' button in unified toolbar could delete attachments instead of message"
     tag: fixed
     bugs: [1995417]
+  - note: Servers lacking localization showed special folder names in server’s language
+    tag: fixed
+    bugs: [1993842]
   - note: "'Recent destinations' submenu was not sorted by time of modification"
     tag: fixed
     bugs: [1829748]

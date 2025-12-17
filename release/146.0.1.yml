@@ -1,0 +1,16 @@
+release:
+  release_date: '2025-12-17'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/146.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Fixed
+  - note: Reverted fix that localized consistent special folder names in server’s language
+    tag: fixed
+    bugs: [1993842]
