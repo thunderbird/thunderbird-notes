@@ -1,7 +1,7 @@
 release:
   release_date: '2025-12-12'
   text: |
-    **These notes apply to Thunderbird version 147 beta 2 released December 12, 2025.**
+    **These notes apply to Thunderbird version 147 beta 3 released December 18, 2025.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # Beta 2
@@ -125,3 +126,9 @@ notes:
     bugs: [1832899, 1898889, 1939939, 1945489, 1987253, 1997050, 1997465, 1997487, 1998473,
       1998747, 2001543, 2001605, 2001863, 2003145]
     group: 2
+
+  # Beta 3
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 3
