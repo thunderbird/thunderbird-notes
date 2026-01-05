@@ -14,11 +14,6 @@ notes:
     pull_requests: [10002]
     issues: [10001]
     tag: changed
-  - note: Introduce warning in Message Compose screen when no sent folder is detected
-    short_note: Warn user in compose when no sent folder detected
-    pull_requests: [9912]
-    issues: [6276]
-    tag: changed
   - note: Use application icon in push notification messages
     pull_requests: [9579]
     issues: [8932]
