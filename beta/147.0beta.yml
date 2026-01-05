@@ -1,7 +1,7 @@
 release:
   release_date: '2025-12-12'
   text: |
-    **These notes apply to Thunderbird version 147 beta 3 released December 18, 2025.**
+    **These notes apply to Thunderbird version 147 beta 4 released January 5, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # Beta 2
@@ -132,3 +133,13 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 3
+
+  # Beta 4
+  - note: Japanese locale users could not create message filters
+    tag: fixed
+    bugs: [2006322]
+    group: 4
+  - note: Creation of tasks with Start or Due date was not possible
+    tag: fixed
+    bugs: [2005957]
+    group: 4
