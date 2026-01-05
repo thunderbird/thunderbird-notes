@@ -1,0 +1,41 @@
+release:
+  release_date: '2026-01-05'
+  text: >
+    **These notes apply to Thunderbird for Android version 15.0 released January 5th, 2026.**
+
+  releases:
+    - version: '15.0'
+      release_date: '2026-01-05'
+
+notes:
+  # Changed
+  - note: Default sync interval has been changed from 60 minutes to 15 minutes
+    short_note: Default sync interval changed to 15 minutes
+    pull_requests: [10002]
+    issues: [10001]
+    tag: changed
+  - note: Introduce warning in Message Compose screen when no sent folder is detected
+    short_note: Warn user in compose when no sent folder detected
+    pull_requests: [9912]
+    issues: [6276]
+    tag: changed
+  - note: Use application icon in push notification messages
+    pull_requests: [9579]
+    issues: [8932]
+    tag: changed
+
+  # Fixed
+  - note: "'Colorize contact pictures' default changed unexpectedly from true to false"
+    short_note: "'Colorize contact pictures' default changed unexpectedly from true to false"
+    pull_requests: [10035]
+    issues: [9978]
+    tag: fixed
+  - note: Displaying IMAP password in plain text did not prompt for authentication
+    short_note: Displaying IMAP password in did not prompt for authentication
+    pull_requests: [10031]
+    issues: [10013]
+    tag: fixed
+  - note: Sync debug logger did not write any logs
+    pull_requests: [9967]
+    issues: [9966]
+    tag: fixed
