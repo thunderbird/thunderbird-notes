@@ -146,7 +146,7 @@ notes:
     group: 4
 
   # Beta 5
-  - note: Localize specific remote special folder names and add `mail.useLocalizedFolderNames'
+  - note: Localize specific remote special folder names; add `mail.useLocalizedFolderNames'
     tag: changed
     bugs: [2006549]
     group: 5
