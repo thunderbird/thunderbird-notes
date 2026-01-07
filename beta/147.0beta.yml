@@ -146,7 +146,11 @@ notes:
     group: 4
 
   # Beta 5
-  - note: Localize specific remote special folder names; add `mail.useLocalizedFolderNames'
+  - note: Add `mail.useLocalizedFolderNames' to toggle special folder name localization
+    tag: new
+    bugs: [2006549]
+    group: 5
+  - note: Restrict localization of special folder names to specific names
     tag: changed
     bugs: [2006549]
     group: 5
