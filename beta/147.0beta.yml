@@ -148,5 +148,5 @@ notes:
   # Beta 5
   - note: Localize specific special folder names and add `mail.useLocalizedFolderNames' pref
     tag: changed
-    bugs: []
+    bugs: [2006549]
     group: 5
