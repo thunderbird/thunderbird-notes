@@ -1,7 +1,7 @@
 release:
   release_date: '2025-12-12'
   text: |
-    **These notes apply to Thunderbird version 147 beta 4 released January 5, 2026.**
+    **These notes apply to Thunderbird version 147 beta 5 released January 8, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # Beta 2
@@ -143,3 +144,9 @@ notes:
     tag: fixed
     bugs: [2005957]
     group: 4
+
+  # Beta 5
+  - note: Localize specific special folder names and add `mail.useLocalizedFolderNames' pref
+    tag: changed
+    bugs: []
+    group: 5
