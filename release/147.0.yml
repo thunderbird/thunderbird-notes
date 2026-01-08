@@ -19,12 +19,12 @@ notes:
     bugs: [2006549]
 
   # Changed
-  - note: Special folder are now localized based on a restricted set of names
+  - note: Special folders are now localized based on a restricted set of names
     tag: changed
     bugs: [2006549]
 
   # Fixed
-  - note: Selected status and priority not displayed in search widgets
+  - note: Selected status and priority was not displayed in search widgets
     tag: fixed
     bugs: [2001222]
   - note: Compacting multiple folders failed and did not compact
