@@ -1,0 +1,94 @@
+release:
+  release_date: '2026-01-13'
+  text: |
+    **These notes apply to Thunderbird version 148 beta 1 released January 13, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Accessiblity is improved in various tree views
+    tag: new
+    bugs: [2001258]
+  - note: "'Favorites' added as destination for 'Move To' and 'File' buttons"
+    tag: new
+    bugs: [2009042]
+  - note: NTLM is exposed as an available authentication method for EWS accounts
+    tag: new
+    bugs: [1998428]
+
+  # Changed
+  - note: Read folders are now removed from Unread Folders view
+    tag: changed
+    bugs: [341266]
+  - note: Yahoo, AT&T, AOL accounts are switched to PKCE, a more secure auth protocol
+    tag: changed
+    bugs: [1999291, 2005044]
+
+  # Fixed
+  - note: Periodic new mail checks silently stopped after sleep or network outages
+    tag: fixed
+    bugs: [2000946]
+  - note: Donation banner stole focus when Thunderbird was running in the background
+    tag: fixed
+    bugs: [2003825]
+  - note: Status bar messages displayed unlocalizedd folder names or IMAP mailbox names
+    tag: fixed
+    bugs: [2006550]
+  - note: New Folder dialog allowed invalid folder creation without a selected parent folder
+    tag: fixed
+    bugs: [1793315]
+  - note: New/unread messages in collapsed thread were not obvious enough
+    tag: fixed
+    bugs: [242300]
+  - note: Invalidly signed unencrypted emails were indicated as worse than unsigned ones
+    tag: fixed
+    bugs: [1836262]
+  - note: Untagged messages were not working correctly with quick filter
+    tag: fixed
+    bugs: [2008278]
+  - note: Calendar/address book sections were shown in Account Hub when there were none
+    tag: fixed
+    bugs: [1993081]
+  - note: Shortcuts could be executed on background mail window while in Account Hub
+    tag: fixed
+    bugs: [2003838]
+  - note: Adding a Gmail account prompted for OAuth during auto config
+    tag: fixed
+    bugs: [1986916]
+  - note: New password-based Exchange accounts failed to save passwords in login manager
+    tag: fixed
+    bugs: [2005779]
+  - note: "'Move Message to' filter action was not logged"
+    tag: fixed
+    bugs: [2001009]
+  - note: Unknown OAuth providers were not allowed during EWS manual config in AccountHub
+    tag: fixed
+    bugs: [2003842]
+  - note: Saved search in unified folder resulted in server error
+    tag: fixed
+    bugs: [1877646]
+  - note: EWS password prompt looped endlessly if the password was empty
+    tag: fixed
+    bugs: [2005470]
+  - note: Account Hub manual configuration flow for Exchange accounts was incorrect
+    tag: fixed
+    bugs: [2008752]
+  - note: CalDAV calendars that invited calendar alias did not give all response options
+    tag: fixed
+    bugs: [1987654]
+  - note: iCal imports misread unknown timezones as GMT, creating events at wrong times
+    tag: fixed
+    bugs: [729685]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1938799, 1953072, 1987157, 2005718, 2005852, 2008742, 2009111]
