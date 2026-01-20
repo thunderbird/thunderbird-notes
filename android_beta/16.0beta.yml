@@ -14,6 +14,8 @@ release:
       release_date: '2025-12-10'
     - version: '16.0b3'
       release_date: '2025-12-17'
+    - version: '16.0b4'
+      release_date: '2026-01-20'
 
 notes:
   ## Beta 1
@@ -78,3 +80,11 @@ notes:
     issues: [10253]
     tag: fixed
     group: 3
+
+  ## Beta 4
+  - note: OAuth SMTP authentication failed with some Microsoft servers
+    short-note: OAuth SMTP authentication failed with some Microsoft servers
+    pull_requests: [10368]
+    issues: [10312]
+    tag: fixed
+    group: 4
