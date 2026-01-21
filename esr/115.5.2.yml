@@ -83,7 +83,6 @@ notes:
     bugs: [1857881]
   - note: If started offline, Thunderbird did not download some IMAP messages after going back online
     tag: fixed
-    group: 6
     bugs: [1854586]
   - note: IMAP folder discovery was slowed by status bar message updates
     tag: fixed

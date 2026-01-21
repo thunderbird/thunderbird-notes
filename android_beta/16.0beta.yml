@@ -83,7 +83,7 @@ notes:
 
   ## Beta 4
   - note: OAuth SMTP authentication failed with some Microsoft servers
-    short-note: OAuth SMTP authentication failed with some Microsoft servers
+    short_note: OAuth SMTP authentication failed with some Microsoft servers
     pull_requests: [10368]
     issues: [10312]
     tag: fixed
