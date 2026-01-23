@@ -1,0 +1,18 @@
+release:
+  release_date: '2026-01-27'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/147.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Fixed
+  - note: Thunderbird crashed during search, even when not actively searching
+    tag: fixed
+    bugs: [2007164]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird147.0.1)'
+    tag: fixed
