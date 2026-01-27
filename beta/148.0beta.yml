@@ -103,6 +103,6 @@ notes:
 
   # Beta 3
   # New
-  - note: Add `mail.openpgp.load_untested_gpgme_version` pref to load untested GPGME version
+  - note: Add `mail.openpgp.load_untested_gpgme_version` to load untested GPGME version
     tag: new
     group: 3
