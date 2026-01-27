@@ -106,3 +106,8 @@ notes:
   - note: Add `mail.openpgp.load_untested_gpgme_version` to load untested GPGME version
     tag: new
     group: 3
+
+  # Fixed
+  - note: CalDAV calendar with multiple addresses could crash on multi-attendee invites
+    tag: fixed
+    group: 3
