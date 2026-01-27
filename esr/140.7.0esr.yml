@@ -20,5 +20,5 @@ notes:
   - note: Thunderbird could crash
     tag: fixed
     bugs: [1986642]
-  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.6)'
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.7)'
     tag: fixed
