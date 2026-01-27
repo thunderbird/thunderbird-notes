@@ -1,7 +1,7 @@
 release:
   release_date: '2026-01-14'
   text: |
-    **These notes apply to Thunderbird version 148 beta 2 released January 21, 2026.**
+    **These notes apply to Thunderbird version 148 beta 3 released January 28, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -99,3 +100,9 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 2
+
+  # Beta 3
+  # New
+  - note: Add `mail.openpgp.load_untested_gpgme_version` pref to load untested GPGME version
+    tag: new
+    group: 3
