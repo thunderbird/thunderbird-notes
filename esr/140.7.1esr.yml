@@ -16,10 +16,6 @@ release:
   import_system_requirements: 140.0esr
 
 notes:
-  # Changed
-  - note: There are no non-security changes requiring release notes in this release
-    tag: changed
-
   # Fixed
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.7.1)'
     tag: fixed
