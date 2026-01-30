@@ -1,0 +1,54 @@
+release:
+  release_date: '2026-02-02'
+  text: >
+    **These notes apply to Thunderbird for Android version 16.0 released February 2nd, 2026.**
+
+  releases:
+    - version: '16.0'
+      release_date: '2026-02-02'
+
+notes:
+  # New
+  - note: Default folder expansion behavior can be controlled by setting
+    short_note: Default folder expansion behavior can be controlled by setting
+    pull_requests: [10077]
+    issues: [10036, 10145]
+    tag: new
+  - note: Preferred content type can be switched between text/plain and text/html
+    short_note: Preferred content type can be switched between text/plain and text/html
+    pull_requests: [10037]
+    issues: [906, 1397]
+    tag: new
+
+  # Fixed
+  - note: Switching folders required an excessive number of clicks
+    short_note: Switching folders required too many clicks
+    pull_requests: [10195]
+    issues: [10161]
+    tag: fixed
+  - note: Fix various edge-to-edge issues
+    short_note: Fix edge-to-edge issues
+    pull_requests: [10181, 10240]
+    issues: [9482, 10169, 10185, 10235, 10236]
+    tag: fixed
+  - note: Application crashed at startup
+    short_note: Application crashed at startup
+    pull_requests: [10239]
+    issues: [10230]
+    tag: fixed
+  - note: Application crashed on Pixel 10 Pro when returning to message list
+    short_note: Application crashed on Pixel 10 Pro when returning to message list
+    pull_requests: [10284]
+    issues: [10258]
+    tag: fixed
+  - note: OAuth SMTP authentication failed with some Microsoft servers
+    short_note: OAuth SMTP authentication failed with some Microsoft servers
+    pull_requests: [10368]
+    issues: [10312]
+    tag: fixed
+
+  # Unresolved
+  - note: Deleted/read messages in unified inbox may not update until manual refresh
+    short_note: Deleted/read messages in unified inbox may not update until refresh
+    issues: [10243]
+    tag: unresolved
