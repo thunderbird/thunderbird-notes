@@ -1,11 +1,11 @@
 release:
-  release_date: '2026-02-05'
+  release_date: '2026-02-02'
   text: >
-    **These notes apply to Thunderbird for Android version 16.0 released February 5th, 2026.**
+    **These notes apply to Thunderbird for Android version 16.0 released February 2nd, 2026.**
 
   releases:
     - version: '16.0'
-      release_date: '2026-02-05'
+      release_date: '2026-02-02'
 
 notes:
   # New
