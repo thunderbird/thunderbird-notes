@@ -21,7 +21,7 @@ notes:
     tag: new
     group: 1
   - note: Foldable device support with auto split-screen
-    short_note: Foldable device support with auto split-screen
+    short_note: Foldable device support
     pull_requests: [10358]
     issues: [9760]
     tag: new
@@ -76,7 +76,6 @@ notes:
     tag: fixed
     group: 1
   - note: Copied link text incorrectly included CSS
-    short_note: Copied link text incorrectly included CSS
     pull_requests: [10343]
     issues: [10115]
     tag: fixed
