@@ -1,0 +1,98 @@
+release:
+  release_date: '2026-02-02'
+  text: >
+    **These notes apply to Thunderbird for Android version 17.0 betas,
+    first released February 2nd, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '17.0b1'
+      release_date: '2026-02-02'
+
+notes:
+  ## Beta 1
+  # New
+  - note: Account avatar customization
+    short_note: Account avatar customization
+    pull_requests: [10333]
+    issues: [10335]
+    tag: new
+    group: 1
+  - note: Foldable device support with split-screen
+    short_note: Foldable device support
+    pull_requests: [10358]
+    issues: [9760]
+    tag: new
+    group: 1
+  - note: Email messages can be printed
+    short_note: Email messages can be printed
+    pull_requests: [10207]
+    issues: [10216]
+    tag: new
+    group: 1
+  - note: Unified folder account indicator identifies message ownership
+    short_note: Unified folder account indicator
+    pull_requests: [10205]
+    issues: [10083]
+    tag: new
+    group: 1
+  - note: Display account avatar in message notifications
+    short_note: Display account avatar in message notifications
+    pull_requests: [9652]
+    issues: [7089]
+    tag: new
+    group: 1
+  - note: Improved email rendering enabled enabled for beta
+    short_note: Improved email rendering enabled for beta
+    pull_requests: [10278]
+    issues: [10277]
+    tag: new
+    group: 1
+
+  # Changed
+  # Fixed
+  - note: Deleted/read messages in unified inbox may not update until manual refresh
+    short_note: Deleted/read messages in unified inbox may not update until refresh
+    pull_requests: [10470]
+    issues: [10243]
+    tag: fixed
+    group: 1
+  - note: Edge-to-edge regressions affected account setup screens
+    pull_requests: [10236, 10389]
+    issues: [10214, 10235, 10257]
+    tag: fixed
+    group: 1
+  - note: Tap behavior was unreliable in recipient fields
+    short_note: Tap behavior was unreliable in recipient fields
+    pull_requests: [10370]
+    issues: [10367]
+    tag: fixed
+    group: 1
+  - note: "Incorrect icon was displayed for 'Find folder'"
+    pull_requests: [10369]
+    issues: [10271]
+    tag: fixed
+    group: 1
+  - note: Device orientiation change duplicated recipient field text
+    short_note: Device orientiation change duplicated recipient field text
+    pull_requests: [10353]
+    issues: [10288]
+    tag: fixed
+    group: 1
+  - note: Copied link text incorrectly included CSS
+    pull_requests: [10343]
+    issues: [10115]
+    tag: fixed
+    group: 1
+  - note: Unselecting 'Colorize contact pictures' setting did not persist
+    pull_requests: [10259]
+    issues: [9630]
+    tag: fixed
+    group: 1
+  - note: Some general settings were not preserved after export and import
+    pull_requests: [10171]
+    issues: [10149]
+    tag: fixed
+    group: 1
