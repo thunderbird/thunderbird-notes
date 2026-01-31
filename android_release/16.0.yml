@@ -32,7 +32,7 @@ notes:
     issues: [10161]
     tag: fixed
   - note: Fix various edge-to-edge issues
-    short_note: Fix various edge-to-edge issues
+    short_note: Fix edge-to-edge issues
     pull_requests: [10181, 10240]
     issues: [9482, 10169, 10185, 10235, 10236]
     tag: fixed
