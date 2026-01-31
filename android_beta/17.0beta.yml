@@ -45,7 +45,7 @@ notes:
     tag: new
     group: 1
   - note: Improved email rendering enabled in beta
-    short_note: Improved email rendering enabled in beta
+    short_note: Improved email rendering in beta
     pull_requests: [10278]
     issues: [10277]
     tag: new
@@ -69,8 +69,8 @@ notes:
     issues: [10271]
     tag: fixed
     group: 1
-  - note: Device orientiation change duplicated text in recipient fields
-    short_note: Device orientiation change duplicated text in recipient fields
+  - note: Device orientiation change duplicated recipient field text
+    short_note: Device orientiation change duplicated recipient field text
     pull_requests: [10353]
     issues: [10288]
     tag: fixed
