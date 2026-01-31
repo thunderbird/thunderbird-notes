@@ -9,18 +9,18 @@ release:
 
 notes:
   # New
-  - note: Enable Memory Tagging Extension on MTE-capable devices to improve memory safety
-    short_note: Enable Memory Tagging Extension on MTE-capable devices
+  - note: Memory Tagging Extension enabled on MTE-capable devices to improve memory safety
+    short_note: Memory Tagging Extension enabled on MTE-capable devices
     pull_requests: [10164, 10110]
     issues: [10056, 10055]
     tag: new
-  - note: Add setting to control default folder expansion behavior
-    short_note: Add setting to control default folder expansion
+  - note: Default folder expansion behavior can be controlled by setting
+    short_note: Default folder expansion behavior can be controlled by setting
     pull_requests: [10077]
     issues: [10036, 10145]
     tag: new
-  - note: Add the ability to switch between text/plain and text/html display
-    short_note: Enable switching between text/plain and text/html
+  - note: Switching between text/plain and text/html display enabled
+    short_note: Switching between text/plain and text/html display enabled
     pull_requests: [10037]
     issues: [906, 1397]
     tag: new
@@ -31,7 +31,7 @@ notes:
     pull_requests: [10195]
     issues: [10161]
     tag: fixed
-  - note: Fix various edge-to-edge issues throughout the app
+  - note: Fix various edge-to-edge issues
     short_note: Fix various edge-to-edge issues
     pull_requests: [10181, 10240]
     issues: [9482, 10169, 10185, 10235, 10236]
@@ -47,7 +47,7 @@ notes:
     issues: [10258]
     tag: fixed
   - note: Account avatar monograms reverted to initial account name and could not be renamed
-    short_note: Account avatar monograms reverted and could not be renamed
+    short_note: Account avatar monograms reverted to initial account name and could not be renamed
     pull_requests: [10282]
     issues: [10253]
     tag: fixed
