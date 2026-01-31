@@ -54,7 +54,6 @@ notes:
   # Changed
   # Fixed
   - note: Edge-to-edge regression affected account setup screens
-    short_note: Edge-to-edge regression affected account setup screens
     pull_requests: [10389]
     issues: [10257]
     tag: fixed
@@ -66,7 +65,6 @@ notes:
     tag: fixed
     group: 1
   - note: "Incorrect icon was displayed for 'Find folder'"
-    short_note: "Incorrect icon was displayed for 'Find folder'"
     pull_requests: [10369]
     issues: [10271]
     tag: fixed
@@ -90,7 +88,6 @@ notes:
     tag: fixed
     group: 1
   - note: Edge-to-edge regression in account setup permission screen
-    short_note: Edge-to-edge regression in account setup permission screen
     pull_requests: [10236]
     issues: [10214, 10235]
     tag: fixed
