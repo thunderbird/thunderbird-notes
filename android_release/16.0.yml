@@ -19,8 +19,8 @@ notes:
     pull_requests: [10077]
     issues: [10036, 10145]
     tag: new
-  - note: Switching between text/plain and text/html display enabled
-    short_note: Switching between text/plain and text/html display enabled
+  - note: Preferred content type can be switched between text/plain and text/html
+    short_note: Preferred content type can be switched between text/plain and text/html
     pull_requests: [10037]
     issues: [906, 1397]
     tag: new
