@@ -1,7 +1,7 @@
 release:
   release_date: '2026-01-14'
   text: |
-    **These notes apply to Thunderbird version 148 beta 3 released January 28, 2026.**
+    **These notes apply to Thunderbird version 148 beta 4 released February 4, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -111,3 +112,9 @@ notes:
   - note: CalDAV calendar with multiple addresses could crash on multi-attendee invites
     tag: fixed
     group: 3
+
+  # Beta 4
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 4
