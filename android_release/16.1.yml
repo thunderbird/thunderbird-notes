@@ -1,0 +1,21 @@
+release:
+  release_date: '2026-02-09'
+  text: >
+    **These notes apply to Thunderbird for Android version 16.1 released February 9th, 2026.**
+
+  releases:
+    - version: '16.1'
+      release_date: '2026-02-09'
+
+notes:
+  # Fixed
+  - note: Messages containing complex CSS could be unreadable
+    short_note: Messages containing complex CSS could be unreadable
+    pull_requests: [10502]
+    issues: [10497]
+    tag: fixed
+  - note: Deleted/read messages in unified inbox may not update until manual refresh
+    short_note: Deleted/read messages in unified inbox may not update until refresh
+    pull_requests: [10503]
+    issues: [10243]
+    tag: fixed
