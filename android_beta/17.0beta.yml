@@ -108,3 +108,11 @@ notes:
     issues: [10243]
     tag: fixed
     group: 2
+
+  ## Beta 3
+  # Fixed
+  - note: Messages containing complex CSS could be unreadable
+    short_note: Messages containing complex CSS could be unreadable
+    pull_requests: [10504]
+    issues: [10497]
+    tag: fixed
