@@ -1,7 +1,7 @@
 release:
   release_date: '2026-01-14'
   text: |
-    **These notes apply to Thunderbird version 148 beta 4 released February 4, 2026.**
+    **These notes apply to Thunderbird version 148 beta 5 released February 11, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # New
@@ -106,11 +107,13 @@ notes:
   # New
   - note: Add `mail.openpgp.load_untested_gpgme_version` to load untested GPGME version
     tag: new
+    bugs: [1967121]
     group: 3
 
   # Fixed
   - note: CalDAV calendar with multiple addresses could crash on multi-attendee invites
     tag: fixed
+    bugs: [2010032]
     group: 3
 
   # Beta 4
@@ -118,3 +121,10 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 4
+
+  # Beta 5
+  # Fixed
+  - note: Google calendars had broken RSVP logic and wrong organizer on new events
+    tag: fixed
+    bugs: [2010372]
+    group: 5
