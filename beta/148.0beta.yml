@@ -1,7 +1,7 @@
 release:
   release_date: '2026-01-14'
   text: |
-    **These notes apply to Thunderbird version 148 beta 5 released February 11, 2026.**
+    **These notes apply to Thunderbird version 148 beta 6 released February 17, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
+    - 'Fixed in beta 6'
 
 notes:
   # New
@@ -128,3 +129,9 @@ notes:
     tag: fixed
     bugs: [2010372]
     group: 5
+
+  # Beta 6
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 6
