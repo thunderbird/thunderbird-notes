@@ -7,12 +7,15 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
   releases:
     - version: '17.0b1'
       release_date: '2026-02-04'
     - version: '17.0b2'
       release_date: '2026-02-04'
+    - version: '17.0b3'
+      release_date: '2026-02-17'
 
 notes:
   ## Beta 1
@@ -111,8 +114,9 @@ notes:
 
   ## Beta 3
   # Fixed
-  - note: Messages containing complex CSS could be unreadable
-    short_note: Messages containing complex CSS could be unreadable
-    pull_requests: [10504]
-    issues: [10497]
+  - note: Application could crash when rendering message list
+    short_note: Application could crash when rendering message list
+    pull_requests: [10526]
+    issues: [10445]
     tag: fixed
+    group: 3
