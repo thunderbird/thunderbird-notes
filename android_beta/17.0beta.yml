@@ -120,3 +120,9 @@ notes:
     issues: [10445]
     tag: fixed
     group: 3
+  - note: Avatar image updates did not propagate immediately
+    short_note: Avatar image updates did not propagate immediately
+    pull_requests: [10522]
+    issues: [10477]
+    tag: fixed
+    group: 3
