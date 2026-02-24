@@ -8,6 +8,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
   releases:
     - version: '17.0b1'
@@ -16,6 +17,8 @@ release:
       release_date: '2026-02-04'
     - version: '17.0b3'
       release_date: '2026-02-17'
+    - version: '17.0b4'
+      release_date: '2026-02-24'
 
 notes:
   ## Beta 1
@@ -126,3 +129,12 @@ notes:
     issues: [10477]
     tag: fixed
     group: 3
+
+  ## Beta 4
+  # Fixed
+  - note: Application navigation and account switching could crash
+    short_note: Application navigation and account switching could crash
+    pull_requests: [10583]
+    issues: [10582]
+    tag: fixed
+    group: 4
