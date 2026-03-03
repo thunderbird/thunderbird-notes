@@ -103,6 +103,8 @@ notes:
   - note: Link colors were difficult to read in dark themes
     tag: fixed
     bugs: [2018015]
+    group: 2
   - note: 'Folder tree "new messages" star no longer displayed'
     tag: fixed
     bugs: [2019525]
+    group: 2
