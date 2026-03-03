@@ -1,7 +1,7 @@
 release:
   release_date: '2026-02-25'
   text: |
-    **These notes apply to Thunderbird version 149 beta 1 released February 25, 2026.**
+    **These notes apply to Thunderbird version 149 beta 2 released March 4, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -96,3 +97,12 @@ notes:
     tag: fixed
     bugs: [493499, 1814450, 1962871, 1965006, 2007171, 2009292, 2009930, 2010207, 2010970,
       2012358, 2013486, 2013723, 2013725, 2013751, 2017203, 2017270, 2017583]
+
+  # Beta 2
+  # Fixed
+  - note: Link colors were difficult to read in dark themes
+    tag: fixed
+    bugs: [2018015]
+  - note: 'Folder tree "new messages" star no longer displayed'
+    tag: fixed
+    bugs: [2019525]
