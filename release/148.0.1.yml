@@ -1,0 +1,16 @@
+release:
+  release_date: '2026-03-10'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/148.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Fixed
+  - note: LDAP with password stopped working in 148.0
+    tag: fixed
+    bugs: [2007097]
