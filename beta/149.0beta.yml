@@ -1,7 +1,7 @@
 release:
   release_date: '2026-02-25'
   text: |
-    **These notes apply to Thunderbird version 149 beta 2 released March 4, 2026.**
+    **These notes apply to Thunderbird version 149 beta 3 released March 11, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -108,3 +109,10 @@ notes:
     tag: fixed
     bugs: [2019525]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Could not add message filter rule for new custom header in 149 beta
+    tag: fixed
+    bugs: [2019676]
+    group: 3
