@@ -1,0 +1,68 @@
+release:
+  release_date: '2026-03-16'
+  text: >
+    **These notes apply to Thunderbird for Android version 17.0 released March 16th, 2026.**
+
+  releases:
+    - version: '17.0'
+      release_date: '2026-03-16'
+
+notes:
+  # New
+  - note: Account avatar customization
+    short_note: Account avatar customization
+    pull_requests: [10333]
+    issues: [10335]
+    tag: new
+  - note: Foldable device support with split-screen
+    short_note: Foldable device support
+    pull_requests: [10358]
+    issues: [9760]
+    tag: new
+  - note: Email messages can be printed
+    short_note: Email messages can be printed
+    pull_requests: [10207]
+    issues: [10216]
+    tag: new
+  - note: Unified folder account indicator identifies message ownership
+    short_note: Unified folder account indicator
+    pull_requests: [10205]
+    issues: [10083]
+    tag: new
+  - note: Display account avatar in message notifications
+    short_note: Display account avatar in message notifications
+    pull_requests: [9652]
+    issues: [7089]
+    tag: new
+
+  # Fixed
+  - note: Edge-to-edge regressions affected account setup screens
+    pull_requests: [10236, 10389]
+    issues: [10214, 10235, 10257]
+    tag: fixed
+  - note: Tap behavior was unreliable in recipient fields
+    short_note: Tap behavior was unreliable in recipient fields
+    pull_requests: [10370]
+    issues: [10367]
+    tag: fixed
+  - note: "Incorrect icon was displayed for 'Find folder'"
+    pull_requests: [10369]
+    issues: [10271]
+    tag: fixed
+  - note: Device orientiation change duplicated recipient field text
+    short_note: Device orientiation change duplicated recipient field text
+    pull_requests: [10353]
+    issues: [10288]
+    tag: fixed
+  - note: Copied link text incorrectly included CSS
+    pull_requests: [10343]
+    issues: [10115]
+    tag: fixed
+  - note: Unselecting 'Colorize contact pictures' setting did not persist
+    pull_requests: [10259]
+    issues: [9630]
+    tag: fixed
+  - note: Some general settings were not preserved after export and import
+    pull_requests: [10171]
+    issues: [10149]
+    tag: fixed
