@@ -120,7 +120,7 @@ notes:
 
   # Beta 4
   # Fixed
-  - note: FileLink notification was empty in 149 beta.
+  - note: FileLink notification was empty in 149 beta
     tag: fixed
     bugs: [2020288]
     group: 4
