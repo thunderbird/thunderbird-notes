@@ -1,0 +1,84 @@
+release:
+  release_date: '2026-03-16'
+  text: >
+    **These notes apply to Thunderbird for Android version 18.0 betas,
+    first released March 16th, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '18.0b1'
+      release_date: '2026-03-16'
+
+notes:
+  # Beta 1
+  # New
+  - note: Add support for PNG avatars
+    short_note: PNG avatars
+    pull_requests: [10506]
+    issues: [10501]
+    tag: new
+    group: 1
+  - note: Add setting to display ISO date and time in message list
+    short_note: Setting to display ISO date/time in message list
+    pull_requests: [10574]
+    issues: [10566]
+    tag: new
+    group: 1
+  - note: Used fixed-width font for composing when user chooses fixed-width for viewing
+    short_note: Fixed-width font for composing
+    pull_requests: [10624]
+    issues: [907]
+    tag: new
+    group: 1
+
+  # Changed
+  - note: Attachment summary moved from message bottom to header for visibility
+    short_note: Attachment summary moved to header for visibility
+    pull_requests: [10577]
+    issues: [10530, 10576]
+    tag: changed
+    group: 1
+
+  # Fixed
+  - note: EHLO parsing exception appeared in logcat when sending email
+    pull_requests: [10656]
+    issues: [9059]
+    tag: fixed
+    group: 1
+  - note: '"Delete (from notification)" setting did not retain state'
+    short_note: '"Delete (from notification)" setting did not retain state'
+    pull_requests: [10639]
+    issues: [10494]
+    tag: fixed
+    group: 1
+  - note: Find folder search hint text was cut off on smaller screens
+    short_note: Find folder search hint text was cut off
+    pull_requests: [10571]
+    issues: [10272]
+    tag: fixed
+    group: 1
+  - note: User was not notified if they were offline when sending message
+    short_note: User not notified if offline when sending message
+    pull_requests: [10568]
+    issues: [10134]
+    tag: fixed
+    group: 1
+  - note: Warned "Sent folder not found" when uploading sent messages was disabled
+    short_note: Warned "Sent folder not found" when uploading sent messages was disabled
+    pull_requests: [10524]
+    issues: [10420]
+    tag: fixed
+    group: 1
+  - note: Loading bar appeared detached from header, leaving visible gap
+    pull_requests: [10521]
+    issues: [10488]
+    tag: fixed
+    group: 1
+  - note: CC/BCC fields were not expanded by default for Reply All
+    short_note: CC/BCC fields were not expanded by default for Reply All
+    pull_requests: [10496]
+    issues: [10440]
+    tag: fixed
+    group: 1
