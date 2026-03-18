@@ -13,6 +13,7 @@ Rules per directory:
 import argparse
 import glob
 import os
+import re
 import sys
 from dataclasses import dataclass
 from typing import Any, Iterable
@@ -24,6 +25,7 @@ import yaml
 class NotesRules:
     known_keys: frozenset[str]
     forbidden_keys: frozenset[str] = frozenset()
+    validate_group: bool = False
 
 
 RULES_BY_DIR: dict[str, NotesRules] = {
@@ -41,6 +43,7 @@ RULES_BY_DIR: dict[str, NotesRules] = {
             }
         ),
         forbidden_keys=frozenset(),
+        validate_group=True,
     ),
     "android_release": NotesRules(
         known_keys=frozenset(
@@ -84,6 +87,73 @@ def _load_yaml(path: str) -> Any:
         return yaml.safe_load(f)
 
 
+def _validate_android_beta_groups(
+    path: str, data: dict, raw_text: str, notes: list
+) -> list[str]:
+    """Check that release versions, release.groups, and '# Beta N' comments are
+    consistent for each beta N, and that notes under '# Beta N' use group: N."""
+    errors = []
+    release = data.get("release") or {}
+
+    # Collect beta numbers (the N in bN) from release version strings ('18.0b2' -> 2)
+    version_betas = {
+        int(m.group(1))
+        for r in (release.get("releases") or [])
+        if isinstance(r, dict)
+        for m in [re.search(r"b(\d+)$", str(r.get("version", "")))]
+        if m
+    }
+    # Collect beta numbers from the groups list ('Fixed in beta 2' -> 2)
+    # Beta 1 is omitted as its group entry is a blank space.
+    group_betas = {
+        int(m.group(1))
+        for g in (release.get("groups") or [])
+        if (m := re.search(r"beta\s+(\d+)", str(g)))
+    }
+
+    # Find '# Beta N' comments and record which beta section each note list item falls under.
+    # note_beta maps note index -> beta number for notes that are under a Beta section.
+    note_beta: dict[int, int] = {}
+    in_notes = current_beta = None
+    note_idx = 0
+    for line in raw_text.splitlines():
+        if line.startswith("notes:"):
+            in_notes = True
+        elif in_notes:
+            if re.match(r"^\S", line) and not line.startswith("#"):
+                break  # reached the next top-level key
+            if m := re.match(r"\s*#+\s*Beta\s+(\d+)", line):
+                current_beta = int(m.group(1))
+            elif re.match(r"\s+-\s", line):  # start of a new note list item
+                if current_beta is not None:
+                    note_beta[note_idx] = current_beta
+                note_idx += 1
+
+    comment_betas = set(note_beta.values())
+
+    # For each beta N seen across any of the three sources, check all required
+    # sources contain it. Beta 1 skips the groups check since its entry is a space.
+    for n in sorted(version_betas | group_betas | comment_betas):
+        sources = [("release version", version_betas), ("'# Beta N' comment", comment_betas)]
+        if n > 1:
+            sources.append(("release.groups entry", group_betas))
+        missing = [src for src, betas in sources if n not in betas]
+        if missing:
+            errors.append(f"{path}: beta {n} missing from: {', '.join(missing)}")
+
+    # Verify each note's group value matches the beta section it appears under.
+    for idx, beta in note_beta.items():
+        if idx < len(notes) and isinstance(notes[idx], dict):
+            group_val = notes[idx].get("group")
+            if group_val != beta:
+                errors.append(
+                    f"{path}: notes[{idx}] is under '# Beta {beta}' "
+                    f"but has group: {group_val!r}"
+                )
+
+    return errors
+
+
 def _validate_notes_file(path: str, rules: NotesRules) -> list[str]:
     errors: list[str] = []
 
@@ -104,6 +174,7 @@ def _validate_notes_file(path: str, rules: NotesRules) -> list[str]:
             f"{path}: expected top-level 'notes' to be a list, got {type(notes).__name__}"
         ]
 
+    # per-note key validation
     for idx, note_entry in enumerate(notes):
         if not isinstance(note_entry, dict):
             errors.append(
@@ -125,6 +196,12 @@ def _validate_notes_file(path: str, rules: NotesRules) -> list[str]:
             errors.append(
                 f"{path}: notes[{idx}] has forbidden keys {sorted(forbidden_present)}"
             )
+
+    # android_beta group validation
+    if rules.validate_group:
+        with open(path, encoding="utf-8") as f:
+            raw_text = f.read()
+        errors.extend(_validate_android_beta_groups(path, data, raw_text, notes))
 
     return errors
 

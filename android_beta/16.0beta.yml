@@ -6,6 +6,9 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
   releases:
     - version: '16.0b1'
