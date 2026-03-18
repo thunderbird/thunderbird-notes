@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '18.0b1'
       release_date: '2026-03-16'
+    - version: '18.0b2'
+      release_date: '2026-03-18'
 
 notes:
   # Beta 1
@@ -80,5 +83,13 @@ notes:
     short_note: CC/BCC fields were not expanded by default for Reply All
     pull_requests: [10496]
     issues: [10440]
+    tag: fixed
+    group: 1
+
+  # Beta 2
+  - note: Crash occurred when attaching attachment
+    short_note: Crash occurred when attaching attachment
+    pull_requests: [10712]
+    issues: [10710]
     tag: fixed
     group: 1
