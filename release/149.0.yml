@@ -1,0 +1,101 @@
+release:
+  release_date: '2026-03-24'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/149.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # New
+  - note: Enable exporting selected address book cards
+    tag: new
+    bugs: [20304]
+  - note: Starred EWS messages now persist across devices
+    tag: new
+    bugs: [1995405]
+
+  # Changed
+  - note: Address books are now created in Account Hub
+    tag: changed
+    bugs: [1991626]
+
+  # Fixed
+  - note: Shift-click for 'Edit' button in drafts header view did not work
+    tag: fixed
+    bugs: [1392056]
+  - note: '"Replace All" in Compose did not update plain text until dialog closed'
+    tag: fixed
+    bugs: [2011581]
+  - note: '"Repair text encoding" could duplicate recipient and attachments'
+    tag: fixed
+    bugs: [2009143]
+  - note: Link colors were difficult to read in dark themes
+    tag: fixed
+    bugs: [2018015]
+  - note: Pressing Delete on Trash folder could remove it without confirmation
+    tag: fixed
+    bugs: [1912998]
+  - note: Renaming of a 'unified folder' created a duplicate
+    tag: fixed
+    bugs: [532643]
+  - note: 'Folder tree "new messages" star no longer displayed'
+    tag: fixed
+    bugs: [2019525]
+  - note: Reason for revoked certificate was not shown
+    tag: fixed
+    bugs: [1666599]
+  - note: '"Open and show" for OpenPGP signed message could fail if headers after content-type'
+    tag: fixed
+    bugs: [2016119]
+  - note: Encrypted Gmail CSE emails with outer opaque S/MIME were not readable
+    tag: fixed
+    bugs: [2002546]
+  - note: '"Generate and save a CSR file as... " no longer worked for S/MIME'
+    tag: fixed
+    bugs: [2003468]
+  - note: Cancelled attachment reminder in compose did not return focus to message body
+    tag: fixed
+    bugs: [2007818]
+  - note: Thunderbird could crash while importing mail thread
+    tag: fixed
+    bugs: [1999428]
+  - note: Unlabeled column visibility toggle button was not announced by screen readers
+    tag: fixed
+    bugs: [2014058]
+  - note: Could not save message to external file from EWS account
+    tag: fixed
+    bugs: [2006844]
+  - note: '"After Sending" filters were not working correctly'
+    tag: fixed
+    bugs: [2008314]
+  - note: Thunderbird did not report refused POP3 connection
+    tag: fixed
+    bugs: [2011088]
+  - note: EWS messages could fail to sync in some scenarios
+    tag: fixed
+    bugs: [2013038]
+  - note: Remove message body retention policy was not functional
+    tag: fixed
+    bugs: [499301]
+  - note: Publish Calendar only showed empty OK/Cancel popup and did not publish
+    tag: fixed
+    bugs: [2021754]
+  - note: Dismissed Gmail calendar reminder did nothing and item stayed visible
+    tag: fixed
+    bugs: [1921611]
+  - note: Could not export local calendar as HTML
+    tag: fixed
+    bugs: [2009741]
+  - note: Cancelled filter edit dialog closed the message filter dialog
+    tag: fixed
+    bugs: [1741049]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [493499, 1814450, 1962871, 1965006, 2007171, 2009292, 2009930, 2010207, 2010970,
+      2012358, 2013486, 2013723, 2013725, 2013751, 2017203, 2017270, 2017583]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird149)'
+    tag: fixed
