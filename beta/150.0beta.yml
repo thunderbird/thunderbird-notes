@@ -1,0 +1,87 @@
+release:
+  release_date: '2026-03-25'
+  text: |
+    **These notes apply to Thunderbird version 150 beta 1 released March 25, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: "'Recent Destinations' in General Settings now supports alphabetical sorting"
+    tag: new
+    bugs: [2000453]
+  - note: Added support for generating Unobtrusive Signatures (OpenPGP)
+    tag: new
+    bugs: [1958983]
+  - note: Message body search enabled for OpenPGP and S/MIME encrypted messages
+    tag: new
+    bugs: [1562737]
+  - note: Account hub is opened on the first run of Thunderbird
+    tag: new
+    bugs: [1968073]
+  - note: Address book cards can be copied to the clipboard as vCard
+    tag: new
+    bugs: [2018035]
+  - note: Custom Accent Color can be chosen in Appearance Settings
+    tag: new
+    bugs: [2021632]
+  - note: Enable new calendar event view dialog with `calendar.dialogs.new.enabled`
+    tag: new
+    bugs: [2013901]
+  - note: Calendar month/multiweek views are now scrollable with touch screen
+    tag: new
+    bugs: [1969263]
+  - note: PDF pages can be reorganized directly in the PDF viewer
+    tag: new
+    bugs: [2018919]
+
+  # Fixed
+  - note: Unknown command-line arguments passed to Thunderbird did not print warning
+    tag: fixed
+    bugs: [2022038]
+  - note: Saved email filenames were not not always cross-platform safe
+    tag: fixed
+    bugs: [2018026]
+  - note: Compose progress dialog used unlocalised folder name
+    tag: fixed
+    bugs: [2020063]
+  - note: Clicking on a folder in the folder pane did not always open folder
+    tag: fixed
+    bugs: [1933913]
+  - note: Accounts could be listed twice after adding new account
+    tag: fixed
+    bugs: [2016974]
+  - note: Account Hub manual configuration was missing OAuth2 option
+    tag: fixed
+    bugs: [2018729]
+  - note: Microsoft Store installs did not open when clicking 'news://' link or .eml file
+    tag: fixed
+    bugs: [2018545]
+  - note: Folder states were not exposed to screen readers in saved search properties
+    tag: fixed
+    bugs: [2003150]
+  - note: Mailbox name was not announced and message count was incorrect for screen readers
+    tag: fixed
+    bugs: [2017003]
+  - note: POP3 could stop downloading mail until restart
+    tag: fixed
+    bugs: [2020627]
+  - note: Exchange servers/clients caused memory leaks by holding mutual references
+    tag: fixed
+    bugs: [2022247]
+  - note: "'Move to New Window' option for the calendar was disabled"
+    tag: fixed
+    bugs: [2023613]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1910472, 1945321, 1976645, 2013725, 2013955, 2017516, 2018063, 2019941, 2020338,
+      2020389, 2020623, 2021255, 2021353, 2021848, 2022132]
