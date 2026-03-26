@@ -1,0 +1,15 @@
+release:
+  release_date: '2026-03-26'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/149.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
