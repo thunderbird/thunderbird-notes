@@ -7,12 +7,15 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
   releases:
     - version: '18.0b1'
       release_date: '2026-03-16'
     - version: '18.0b2'
       release_date: '2026-03-18'
+    - version: '18.0b3'
+      release_date: '2026-03-31'
 
 notes:
   # Beta 1
@@ -93,3 +96,11 @@ notes:
     issues: [10710]
     tag: fixed
     group: 2
+
+  # Beta 3
+  - note: Crash occurred when retrieving images from large messages
+    short_note: Crash occurred when retrieving images
+    pull_requests: [10761]
+    issues: [10721]
+    tag: fixed
+    group: 3
