@@ -98,7 +98,7 @@ notes:
     group: 2
 
   # Beta 3
-  - note: Crash occurred when retrieving images
+  - note: Crash occurred when retrieving images from large messages
     short_note: Crash occurred when retrieving images
     pull_requests: [10761]
     issues: [10721]
