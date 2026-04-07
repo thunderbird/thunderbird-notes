@@ -1,0 +1,15 @@
+release:
+  release_date: '2026-04-07'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/149.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # Fixed
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird149.0.2)'
+    tag: fixed
