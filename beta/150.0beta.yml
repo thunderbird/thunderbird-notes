@@ -1,7 +1,7 @@
 release:
   release_date: '2026-03-25'
   text: |
-    **These notes apply to Thunderbird version 150 beta 1 released March 25, 2026.**
+    **These notes apply to Thunderbird version 150 beta 4 released Apr 10, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -96,10 +97,6 @@ notes:
 
   # Beta 3
   # Fixed
-  - note: Visual and UX improvements
-    tag: fixed
-    bugs: [2026420] 
-    group: 3
   - note: Thunderbird could crash when creating a folder
     tag: fixed
     bugs: [2025803]
@@ -108,3 +105,23 @@ notes:
     tag: fixed
     bugs: [2013756]
     group: 3
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [2026420]
+    group: 3
+
+  # Beta 4
+  # Changed
+  - note: Flatpak beta app ID changed from org.mozilla.Thunderbird to org.mozilla.thunderbird
+    tag: changed
+    bugs: [2015223]
+    group: 4
+  # Fixed
+  - note: Could not scroll to message bottom or view all attachments in some cases
+    tag: fixed
+    bugs: [2016069]
+    group: 4
+  - note: Calendar view had date and time axes swapped
+    tag: fixed
+    bugs: [2027673]
+    group: 4
