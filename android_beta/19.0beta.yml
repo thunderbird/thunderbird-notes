@@ -1,0 +1,42 @@
+release:
+  release_date: '2026-04-14'
+  text: >
+    **These notes apply to Thunderbird for Android version 19.0 betas,
+    first released April 14th, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '19.0b1'
+      release_date: '2026-04-14'
+
+notes:
+  # Beta 1
+  # New
+  - note: Message notification actions can be configured
+    short_note: Message notification actions can be configured
+    pull_requests: [10301]
+    issues: [3530]
+    tag: new
+    group: 1
+  - note: Message font size scales with device preferences
+    short_note: Message font size scales with device preferences
+    pull_requests: [10751]
+    issues: [10692]
+    tag: new
+    group: 1
+
+  # Fixed
+  - note: Thunderbird crashed on Android 8 when fetching images
+    short_note: Thunderbird crashed on Android 8 when fetching images
+    pull_requests: [10759]
+    issues: [10721]
+    tag: fixed
+    group: 1
+  - note: Accidental swipe in message viewer marked unread email as read
+    short_note: Accidental swipe in message viewer marked unread email as read
+    pull_requests: [10748]
+    issues: [10747]
+    tag: fixed
+    group: 1
