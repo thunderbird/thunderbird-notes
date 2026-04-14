@@ -1,0 +1,77 @@
+release:
+  release_date: '2026-04-14'
+  text: >
+    **These notes apply to Thunderbird for Android version 18.0 released April 14th, 2026.**
+
+  releases:
+    - version: '18.0'
+      release_date: '2026-04-14'
+
+notes:
+  # New
+  - note: Add support for PNG avatars
+    short_note: PNG avatars
+    pull_requests: [10506]
+    issues: [10501]
+    tag: new
+  - note: Add setting to display ISO date and time in message list
+    short_note: Setting to display ISO date/time in message list
+    pull_requests: [10574]
+    issues: [10566]
+    tag: new
+  - note: Used fixed-width font for composing when user chooses fixed-width for viewing
+    short_note: Fixed-width font for composing
+    pull_requests: [10624]
+    issues: [907]
+    tag: new
+
+  # Changed
+  - note: Attachment summary moved from message bottom to header for visibility
+    short_note: Attachment summary moved to header
+    pull_requests: [10577]
+    issues: [10530, 10576]
+    tag: changed
+
+  # Fixed
+  - note: EHLO parsing exception appeared in logcat when sending email
+    pull_requests: [10656]
+    issues: [9059]
+    tag: fixed
+  - note: '"Delete (from notification)" setting did not retain state'
+    short_note: '"Delete (from notification)" setting did not retain state'
+    pull_requests: [10639]
+    issues: [10494]
+    tag: fixed
+  - note: Find folder search hint text was cut off on smaller screens
+    short_note: Find folder search hint text was cut off
+    pull_requests: [10571]
+    issues: [10272]
+    tag: fixed
+  - note: User was not notified if they were offline when sending message
+    short_note: User not notified if offline when sending message
+    pull_requests: [10568]
+    issues: [10134]
+    tag: fixed
+  - note: '"Sent folder not found" warning occurred when uploading sent messages was disabled'
+    pull_requests: [10524]
+    issues: [10420]
+    tag: fixed
+  - note: Loading bar appeared detached from header, leaving visible gap
+    pull_requests: [10521]
+    issues: [10488]
+    tag: fixed
+  - note: CC/BCC fields were not expanded by default for Reply All
+    short_note: CC/BCC fields were not expanded by default for Reply All
+    pull_requests: [10496]
+    issues: [10440]
+    tag: fixed
+  - note: Crash occurred when retrieving images from large messages
+    short_note: Crash occurred when retrieving images
+    pull_requests: [10761]
+    issues: [10721]
+    tag: fixed
+  - note: Deleted messages could remain visible in message list
+    short_note: Deleted messages could remain visible in message list
+    pull_requests: [10772]
+    issues: [10243]
+    tag: fixed
