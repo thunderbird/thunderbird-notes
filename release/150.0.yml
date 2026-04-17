@@ -1,22 +1,13 @@
 release:
-  release_date: '2026-03-25'
+  release_date: '2026-04-21'
   text: |
-    **These notes apply to Thunderbird version 150 beta 5 released Apr 15, 2026.**
-
-    **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/150.0/system-requirements/)
 
     - Windows: Windows 10 or later
     - Mac: macOS 10.15 or later
     - Linux: GTK+ 3.14 or higher
 
-  import_system_requirements: 140.0beta
-
-  groups:
-    - ' '
-    - 'Fixed in beta 2'
-    - 'Fixed in beta 3'
-    - 'Fixed in beta 4'
-    - 'Fixed in beta 5'
+  import_system_requirements: 140.0esr
 
 notes:
   # New
@@ -38,9 +29,6 @@ notes:
   - note: Custom Accent Color can be chosen in Appearance Settings
     tag: new
     bugs: [2021632]
-  - note: Enable new calendar event view dialog with `calendar.dialogs.new.enabled`
-    tag: new
-    bugs: [2013901]
   - note: Calendar month/multiweek views are now scrollable with touch screen
     tag: new
     bugs: [1969263]
@@ -48,10 +36,20 @@ notes:
     tag: new
     bugs: [2018919]
 
+  # Changed
+  - note: Flatpak beta app ID changed from org.mozilla.Thunderbird to org.mozilla.thunderbird
+    tag: changed
+    bugs: [2015223]
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+
   # Fixed
   - note: Unknown command-line arguments passed to Thunderbird did not print warning
     tag: fixed
     bugs: [2022038]
+  - note: Thunderbird could crash when creating a folder
+    tag: fixed
+    bugs: [2025803]
   - note: Saved email filenames were not not always cross-platform safe
     tag: fixed
     bugs: [2018026]
@@ -61,6 +59,9 @@ notes:
   - note: Clicking on a folder in the folder pane did not always open folder
     tag: fixed
     bugs: [1933913]
+  - note: Could not scroll to message bottom or view all attachments in some cases
+    tag: fixed
+    bugs: [2016069]
   - note: Accounts could be listed twice after adding new account
     tag: fixed
     bugs: [2016974]
@@ -82,53 +83,18 @@ notes:
   - note: Exchange servers/clients caused memory leaks by holding mutual references
     tag: fixed
     bugs: [2022247]
-  - note: "'Move to New Window' option for the calendar was disabled"
-    tag: fixed
-    bugs: [2023613]
-  - note: Visual and UX improvements
-    tag: fixed
-    bugs: [1910472, 1945321, 1976645, 2013725, 2013955, 2017516, 2018063, 2019941, 2020338,
-      2020623, 2021255, 2021353, 2021848, 2022132]
-
-  # Beta 2
-  # Changed
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
-    group: 2
-
-  # Beta 3
-  # Fixed
-  - note: Thunderbird could crash when creating a folder
-    tag: fixed
-    bugs: [2025803]
-    group: 3
   - note: Authentication could fail for some exchange accounts
     tag: fixed
     bugs: [2013756]
-    group: 3
-  - note: Visual and UX improvements
+  - note: "'Move to New Window' option for the calendar was disabled"
     tag: fixed
-    bugs: [2026420]
-    group: 3
-
-  # Beta 4
-  # Changed
-  - note: Flatpak beta app ID changed from org.mozilla.Thunderbird to org.mozilla.thunderbird
-    tag: changed
-    bugs: [2015223]
-    group: 4
-  # Fixed
-  - note: Could not scroll to message bottom or view all attachments in some cases
-    tag: fixed
-    bugs: [2016069]
-    group: 4
+    bugs: [2023613]
   - note: Calendar view had date and time axes swapped
     tag: fixed
     bugs: [2027673]
-    group: 4
-
-  # Beta 4
-  - note: Could not scroll to bottom of message body and attachments in some cases
+  - note: Visual and UX improvements
     tag: fixed
-    bugs: [2027079]
-    group: 5
+    bugs: [1910472, 1945321, 1976645, 2013725, 2017516, 2018063, 2019941, 2020338,
+      2020623, 2021255, 2021353, 2021848, 2022132]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird150)'
+    tag: fixed
