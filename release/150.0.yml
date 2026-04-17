@@ -40,8 +40,6 @@ notes:
   - note: Flatpak beta app ID changed from org.mozilla.Thunderbird to org.mozilla.thunderbird
     tag: changed
     bugs: [2015223]
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
 
   # Fixed
   - note: Unknown command-line arguments passed to Thunderbird did not print warning
