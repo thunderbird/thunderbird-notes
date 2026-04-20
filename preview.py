@@ -81,7 +81,13 @@ def download_template():
 def stub_templates():
     """Stubs some template includes out that we don't really need"""
     files = ('includes/donation-includes.html',
-             'includes/lang_switcher.html')
+             'includes/lang_switcher.html',
+             'includes/canonical-url.html',
+             'includes/javascript-metadata.html',
+             'includes/announcement.html',
+             'includes/donation-blocked-notice.html',
+             'includes/base/moz-footer-block.html',
+             'includes/base/tab-navigation-bar.html')
 
     for file in files:
         # Ensure we have the folder
@@ -171,7 +177,10 @@ class Handler(FileSystemEventHandler):
         self.jinja_env.globals.update(donate_url=donate_url)
         self.jinja_env.globals.update(is_system_requirements_dict=is_system_requirements_dict)
         self.jinja_env.globals.update(NOW=datetime.datetime.now())
-        self.jinja_env.globals.update(settings={'FRU_FORM_IDS': {'support': 'support'}})
+        self.jinja_env.globals.update(settings={'FRU_FORM_IDS': {'support': 'support'}, 'CANONICAL_URL': THUNDERBIRD_URL})
+        self.jinja_env.globals.update(LANG='en-US')
+        self.jinja_env.globals.update(DIR='ltr')
+        self.jinja_env.globals.update(canonical_path='')
         self.jinja_env.globals.update(override_nav_donate_form_id="")
         self.jinja_env.globals.update(get_latest_build=get_latest_build)
         self.jinja_env.globals.update(get_channels=get_channels)
