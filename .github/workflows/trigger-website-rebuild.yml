@@ -11,7 +11,7 @@ jobs:
       - uses: actions/create-github-app-token@f8d387b68d61c58ab83c6c016672934102569859 # v3
         id: app-token
         with:
-          app-id: ${{ secrets.WEBSITE_BUILD_APP_ID }}
+          client-id: ${{ secrets.WEBSITE_BUILD_APP_ID }}
           private-key: ${{ secrets.WEBSITE_BUILD_KEY }}
           owner: thunderbird
           repositories: thunderbird-website
