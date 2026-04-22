@@ -53,7 +53,7 @@ notes:
   - note: Some IMAP emails showed current time instead of correct received date
     tag: fixed
     bugs: [1905210]
-  - note: Search result count was missing when using 'Find in Message' or Ctrl+F
+  - note: "Search result count was missing when using 'Find in Message' or Ctrl+F"
     tag: fixed
     bugs: [2027513]
   - note: Reply with selected text lost formatting for HTML messages containing <pre>
@@ -95,7 +95,7 @@ notes:
   - note: Task context menu (right-click) had several disabled menu items
     tag: fixed
     bugs: [2028400]
-  - note: 'Current Tasks' view showed past and finished tasks instead of only unfinished
+  - note: "'Current Tasks' view showed past and finished tasks instead of only unfinished"
     tag: fixed
     bugs: [2029480]
   - note: Visual and UX improvements
