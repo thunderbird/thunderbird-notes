@@ -1,0 +1,104 @@
+release:
+  release_date: '2026-04-22'
+  text: |
+    **These notes apply to Thunderbird version 151 beta 1 released Apr 22, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Enable Thundermail OAuth sign-in with account auto-configuration
+    tag: new
+    bugs: [2020826]
+  - note: Enable users to override OAuth provider details for EWS accounts
+    tag: new
+    bugs: [1995859]
+  - note: Tasks can be sorted by created or modified date
+    tag: new
+    bugs: [2028925]
+
+  # Changed
+  - note: Reinstated default application check when Thunderbird starts
+    tag: changed
+    bugs: [2030856]
+  - note: OpenPGP public key no longer attached by default in signed-only messages
+    tag: changed
+    bugs: [2020139]
+
+  # Fixed
+  - note: Thunderbird could crash when processing message headers
+    tag: fixed
+    bugs: [2025791]
+  - note: Thunderbird could crash on startup
+    tag: fixed
+    bugs: [2025803]
+  - note: Calendar view tabs were not properly keyboard accessible
+    tag: fixed
+    bugs: [2024125]
+  - note: Thunderbird could crash when processing new incoming messages
+    tag: fixed
+    bugs: [2001729]
+  - note: On macOS, dragging attachments out of Thunderbird created multiple copies
+    tag: fixed
+    bugs: [2024963]
+  - note: Some IMAP emails showed current time instead of correct received date
+    tag: fixed
+    bugs: [1905210]
+  - note: Search result count was missing when using 'Find in Message' or Ctrl+F
+    tag: fixed
+    bugs: [2027513]
+  - note: Reply with selected text lost formatting for HTML messages containing <pre>
+    tag: fixed
+    bugs: [2029007]
+  - note: Multipart/related attachments were not preserved when editing or forwarding
+    tag: fixed
+    bugs: [2029333]
+  - note: Forwarded malformed MIME email had empty body and extra attachment
+    tag: fixed
+    bugs: [1813044]
+  - note: OWL add-on description was not visible in Account Hub for non-en-US locales
+    tag: fixed
+    bugs: [2011846]
+  - note: Account Hub prompted for password after OAuth login, causing Outlook setup failure
+    tag: fixed
+    bugs: [1999082]
+  - note: Auto-discovered Account Hub values were not preserved for manual editing
+    tag: fixed
+    bugs: [2027629]
+  - note: Account Hub links for encryption and signature opened the wrong account
+    tag: fixed
+    bugs: [1993663]
+  - note: Virtual folders did not update correctly for filtered POP3 messages
+    tag: fixed
+    bugs: [775472]
+  - note: Thunderbird could crash in spam filtering
+    tag: fixed
+    bugs: [2030604]
+  - note: Using thunderbird -compose with double quotes made last email address invalid
+    tag: fixed
+    bugs: [1980843]
+  - note: With auto-mark-read disabled, large mail still marked as read during load delay
+    tag: fixed
+    bugs: [1975865]
+  - note: It was not possible to create date-only all-day tasks
+    tag: fixed
+    bugs: [357502]
+  - note: Task context menu (right-click) had several disabled menu items
+    tag: fixed
+    bugs: [2028400]
+  - note: 'Current Tasks' view showed past and finished tasks instead of only unfinished
+    tag: fixed
+    bugs: [2029480]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1967725, 1990434, 1991926, 2009620, 2020331, 2020869, 2021633, 2025621, 2027674,
+      2028124, 2028437, 2028830, 2029036]
