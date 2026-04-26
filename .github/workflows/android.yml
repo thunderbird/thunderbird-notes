@@ -19,6 +19,7 @@ jobs:
         with:
           fetch-depth: 0
           path: notes
+          persist-credentials: false
 
       - name: Checkout render-notes.py
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -31,6 +32,7 @@ jobs:
             scripts/ci/templates/changelog_long.txt
           sparse-checkout-cone-mode: false
           path: render
+          persist-credentials: false
 
       - name: Python requirements
         run: |
