@@ -1,6 +1,24 @@
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
 version: 2
 updates:
+  # Dependabot does not support GitHub composite actions by default (.github/actions)
+  # so we need to add the folder by hand to the directories entry.
   - package-ecosystem: "github-actions"
-    directory: "/"
+    directories:
+      - "/"
+      - "/.github/actions/*"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+
+  - package-ecosystem: "pip"
+    directories:
+      - "/"
+      - "/tools"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
