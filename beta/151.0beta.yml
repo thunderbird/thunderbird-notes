@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -102,3 +103,9 @@ notes:
     tag: fixed
     bugs: [1967725, 1990434, 1991926, 2009620, 2020331, 2020869, 2021633, 2025621, 2027674,
       2028124, 2028437, 2028830, 2029036]
+
+  # Beta 2
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 2
