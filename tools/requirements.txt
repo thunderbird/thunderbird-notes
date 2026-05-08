@@ -1,5 +1,5 @@
 # These requirements apply only to the tools directory. Python 3 is required.
-ruamel.yaml>=0.18.6
+ruamel.yaml>=0.19.1
 packaging>=23.2
 requests>=2.33.1
 markupsafe>=2.1.5
