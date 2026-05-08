@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '19.0b1'
       release_date: '2026-04-14'
+    - version: '19.0b2'
+      release_date: '2026-05-11'
 
 notes:
   # Beta 1
@@ -40,3 +43,12 @@ notes:
     issues: [10747]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # New
+  - note: Integrate an easily discoverable way to configure and use Thundermail
+    short_note: Integrate an easily discoverable way to configure and use Thundermail
+    pull_requests: [10996, 10985, 10959, 10995]
+    issues: [10866, 10958, 10994]
+    tag: new
+    group: 2
