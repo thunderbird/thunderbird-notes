@@ -1,7 +1,7 @@
 release:
   release_date: '2026-05-06'
   text: |
-    **These notes apply to Thunderbird version 151 beta 3 released May 06, 2026.**
+    **These notes apply to Thunderbird version 151 beta 4 released May 13, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -116,3 +117,10 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Canceling a newsgroup posting was not possible
+    tag: fixed
+    bugs: [2034484]
+    group: 4
