@@ -54,7 +54,7 @@ notes:
   - note: "Search result count was missing when using 'Find in Message' or Ctrl+F"
     tag: fixed
     bugs: [2027513]
-  - note: Reply with selected text lost formatting for HTML messages containing <pre>
+  - note: "Reply with selected text lost formatting for HTML messages containing <pre>"
     tag: fixed
     bugs: [2029007]
   - note: Multipart/related attachments were not preserved when editing or forwarding
