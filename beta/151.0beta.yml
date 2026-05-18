@@ -59,6 +59,9 @@ notes:
   - note: "Search result count was missing when using 'Find in Message' or Ctrl+F"
     tag: fixed
     bugs: [2027513]
+  - note: Search results showed older irrelevant emails before newer exact matches
+    tag: fixed
+    bugs: [2027396]
   - note: "Reply with selected text lost formatting for HTML messages containing &lt;/pre&gt;"
     tag: fixed
     bugs: [2029007]
