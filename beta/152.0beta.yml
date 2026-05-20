@@ -16,6 +16,9 @@ release:
 
 notes:
   # New
+  - note: SecurityDevices enabled in enterprise policies
+    tag: new
+    bugs: [1580753]
   - note: One-click account setup for Thundermail accounts
     tag: new
     bugs: [2033654]
@@ -30,7 +33,7 @@ notes:
   - note: Hostname of mail server is also checked when detecting address books and calendars
     tag: changed
     bugs: [1988154]
-  - note: Update about:rights to replace local with hosted url
+  - note: Updated about:rights to replace local with hosted url
     tag: changed
     bugs: [2030386]
   - note: "'Hide completed tasks' now also hides cancelled tasks"
@@ -59,7 +62,7 @@ notes:
   - note: Single messages still appeared collapsible after thread members were deleted
     tag: fixed
     bugs: [1913385]
-  - note: Updated threads stayed misordered until folder refresh or resort
+  - note: Updated threads remained misordered until folder refresh or resort
     tag: fixed
     bugs: [1649402]
   - note: "Non-threaded subject sorting separated 'RE:' replies from original messages"
@@ -83,9 +86,6 @@ notes:
   - note: Compose window closed early and send progress dialog hung after NNTP failure
     tag: fixed
     bugs: [2034749]
-  - note: SecurityDevices enabled in enterprise policies
-    tag: fixed
-    bugs: [1580753]
   - note: Pasting contact photos stopped working when photo button had focus
     tag: fixed
     bugs: [2037335]
