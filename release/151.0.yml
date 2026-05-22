@@ -107,6 +107,6 @@ notes:
     tag: fixed
 
   # Unresolved
-  - note: Forwarding/Redirecting Exchange message fails with NS_ERROR_OUT_OF_MEMORY
+  - note: Forwarding/Redirecting Exchange message fails (see bug for work-around)
     tag: unresolved
     bugs: [2036765]
