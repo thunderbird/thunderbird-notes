@@ -137,3 +137,4 @@ notes:
   - note: Forwarding/Redirecting Exchange messages failed with NS_ERROR_OUT_OF_MEMORY
     tag: fixed
     bugs: [2036765]
+    group: 2
