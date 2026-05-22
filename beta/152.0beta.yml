@@ -1,7 +1,7 @@
 release:
   release_date: '2026-05-21'
   text: |
-    **These notes apply to Thunderbird version 152 beta 1 released May 21, 2026.**
+    **These notes apply to Thunderbird version 152 beta 2 released May 26, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -130,3 +131,9 @@ notes:
     tag: fixed
     bugs: [518629, 635869, 1768565, 1981702, 2014792, 2023919, 2030855, 2033746, 2034370,
       2034414, 2035242, 2038114, 2038292, 2014779]
+
+  # Beta 2
+  # Fixed
+  - note: Forwarding/Redirecting Exchange messages failed with NS_ERROR_OUT_OF_MEMORY
+    tag: fixed
+    bugs: [2036765]
