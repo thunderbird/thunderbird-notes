@@ -105,3 +105,8 @@ notes:
       2028124, 2028437, 2028830, 2029036]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird151)'
     tag: fixed
+
+  # Unresolved
+  - note: Forwarding/Redirecting Exchange message fails with NS_ERROR_OUT_OF_MEMORY
+    tag: unresolved
+    bugs: [2036765]
