@@ -1,7 +1,7 @@
 release:
   release_date: '2026-05-21'
   text: |
-    **These notes apply to Thunderbird version 152 beta 2 released May 26, 2026.**
+    **These notes apply to Thunderbird version 152 beta 2 released May 27, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -137,4 +137,12 @@ notes:
   - note: Forwarding/Redirecting Exchange messages failed with NS_ERROR_OUT_OF_MEMORY
     tag: fixed
     bugs: [2036765]
+    group: 2
+  - note: Filter dialog lacked focus ring and had poorly distinguishable buttons
+    tag: fixed
+    bugs: [2041886]
+    group: 2
+  - note: Transparent popups on macOS made calendar event editing difficult
+    tag: fixed
+    bugs: [2041954]
     group: 2
