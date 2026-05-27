@@ -31,7 +31,7 @@ notes:
   - note: Read folders are now removed from Unread Folders view
     tag: changed
     bugs: [341266]
-  - note: Yahoo, AT&T, AOL accounts are switched to PKCE, a more secure auth protocol
+  - note: Yahoo, AT&T, AOL accounts migrated to OAuth 2.0 with PKCE for improved security
     tag: changed
     bugs: [1999291, 2005044]
 
