@@ -1,7 +1,7 @@
 release:
   release_date: '2026-05-21'
   text: |
-    **These notes apply to Thunderbird version 152 beta 2 released May 27, 2026.**
+    **These notes apply to Thunderbird version 152 beta 3 released June 3, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -146,3 +147,14 @@ notes:
     tag: fixed
     bugs: [2041954]
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Compose window stayed open after sending when `mailnews.sendInBackground` set
+    tag: fixed
+    bugs: [2041822]
+    group: 3
+  - note: Microsoft OAuth2 failed when HTTPS localhost redirect was not intercepted
+    tag: fixed
+    bugs: [2036505]
+    group: 3
