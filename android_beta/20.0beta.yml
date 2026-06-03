@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'New in beta 2'
 
   releases:
     - version: '20.0b1'
       release_date: '2026-05-26'
+    - version: '20.0b2'
+      release_date: ''
 
 notes:
   # Beta 1
@@ -72,3 +75,13 @@ notes:
     issues: [10480]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # New
+  - note: Enable easily discoverable way to configure and use Thundermail
+    short_note: Enable easily discoverable way to configure and use Thundermail
+    pull_requests: [11088]
+    issues: [11086]
+    tag: new
+    group: 2
+
