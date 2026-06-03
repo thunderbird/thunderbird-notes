@@ -1,0 +1,16 @@
+release:
+  release_date: '2026-06-03'
+  text: >
+    **These notes apply to Thunderbird for Android version 19.1 released June 3rd, 2026.**
+
+  releases:
+    - version: '19.1'
+      release_date: '2026-06-03'
+
+notes:
+  # New
+  - note: Enable easily discoverable way to configure and use Thundermail
+    short_note: Enable easily discoverable way to configure and use Thundermail
+    pull_requests: [11089]
+    issues: [11086]
+    tag: new
