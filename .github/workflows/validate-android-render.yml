@@ -1,4 +1,4 @@
-name: Android Notes
+name: Validate Android Notes Rendering
 
 on:
   push:
