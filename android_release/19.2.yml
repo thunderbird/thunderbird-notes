@@ -1,0 +1,16 @@
+release:
+  release_date: '2026-06-04'
+  text: >
+    **These notes apply to Thunderbird for Android version 19.2 released June 4th, 2026.**
+
+  releases:
+    - version: '19.2'
+      release_date: '2026-06-04'
+
+notes:
+  # Fixed
+  - note: K-9 Mail crashed when scanning Thundermail QR code
+    short_note: K-9 Mail crashed when scanning Thundermail QR code
+    pull_requests: [11101]
+    issues: [11097]
+    tag: fixed
