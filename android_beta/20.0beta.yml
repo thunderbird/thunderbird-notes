@@ -6,13 +6,13 @@ release:
 
   groups:
     - ' '
-    - 'New in beta 2'
+    - 'Fixed in beta 2'
 
   releases:
     - version: '20.0b1'
       release_date: '2026-05-26'
     - version: '20.0b2'
-      release_date: ''
+      release_date: '2026-06-04'
 
 notes:
   # Beta 1
@@ -85,3 +85,10 @@ notes:
     tag: new
     group: 2
 
+  # Fixed
+  - note: K-9 Mail crashed when scanning Thundermail QR code
+    short_note: K-9 Mail crashed when scanning Thundermail QR code
+    pull_requests: [11100]
+    issues: [11097]
+    tag: fixed
+    group: 2
