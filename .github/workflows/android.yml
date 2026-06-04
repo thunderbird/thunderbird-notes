@@ -1,6 +1,12 @@
 name: Android Notes
 
 on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'android_beta/*.yml'
+      - 'android_release/*.yml'
   pull_request:
     paths:
       - 'android_beta/*.yml'
@@ -43,8 +49,17 @@ jobs:
         working-directory: notes
         env:
           BASE_REF: ${{ github.event.pull_request.base.ref }}
+          BEFORE_SHA: ${{ github.event.before }}
         run: |
-          BETA_FILES=$(git diff --name-only origin/$BASE_REF $GITHUB_SHA | grep ^android_beta || true )
+          # On pull_request, diff against the base branch
+          # On push, diff against the branch's previous tip commit
+          if [ -n "$BASE_REF" ]; then
+            DIFF_BASE="origin/$BASE_REF"
+          else
+            DIFF_BASE="$BEFORE_SHA"
+          fi
+
+          BETA_FILES=$(git diff --name-only "$DIFF_BASE" "$GITHUB_SHA" | grep ^android_beta || true )
 
           for file in $BETA_FILES
           do
@@ -64,7 +79,7 @@ jobs:
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
           done
 
-          RELEASE_FILES=$(git diff --name-only origin/$BASE_REF $GITHUB_SHA | grep ^android_release || true )
+          RELEASE_FILES=$(git diff --name-only "$DIFF_BASE" "$GITHUB_SHA" | grep ^android_release || true )
 
           for file in $RELEASE_FILES
           do
