@@ -1,7 +1,7 @@
 release:
   release_date: '2026-05-21'
   text: |
-    **These notes apply to Thunderbird version 152 beta 3 released June 3, 2026.**
+    **These notes apply to Thunderbird version 152 beta 4 released June 10, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -158,3 +159,9 @@ notes:
     tag: fixed
     bugs: [2036505]
     group: 3
+
+  # Beta 4
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 4
