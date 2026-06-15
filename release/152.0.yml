@@ -140,3 +140,5 @@ notes:
     tag: fixed
     bugs: [518629, 635869, 1768565, 1981702, 2014792, 2023919, 2030855, 2033746, 2034370,
       2034414, 2035242, 2038114, 2038292, 2014779]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird152)'
+    tag: fixed
