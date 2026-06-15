@@ -1,0 +1,142 @@
+release:
+  release_date: '2026-06-16'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/152.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0esr
+
+notes:
+  # New
+  - note: SecurityDevices enabled in enterprise policies
+    tag: new
+    bugs: [1580753]
+  - note: One-click account setup for Thundermail accounts
+    tag: new
+    bugs: [2033654]
+
+  # Changed
+  - note: "Use 'Add' instead of 'New' for account, calendar, address book creation buttons"
+    tag: changed
+    bugs: [1993849]
+  - note: GMail OAuth updated to use PKCE
+    tag: changed
+    bugs: [2033048]
+  - note: Hostname of mail server is also checked when detecting address books and calendars
+    tag: changed
+    bugs: [1988154]
+  - note: Updated about:rights to replace local with hosted url
+    tag: changed
+    bugs: [2030386]
+  - note: "'Hide completed tasks' now also hides cancelled tasks"
+    tag: changed
+    bugs: [382363]
+
+  # Fixed
+  - note: New mail alerts appeared on wrong monitor in three-monitor setup
+    tag: fixed
+    bugs: [2034322]
+  - note: Spam messages triggered new mail notifications before being moved to Spam folder
+    tag: fixed
+    bugs: [1953623]
+  - note: Filtered IMAP or NNTP subscriptions were lost after closing Subscribe dialog
+    tag: fixed
+    bugs: [2034737]
+  - note: "'Download Headers' dialog for newsgroups failed to open"
+    tag: fixed
+    bugs: [2034443]
+  - note: Messages nested deeper than 255 levels disappeared from threading view
+    tag: fixed
+    bugs: [1772455]
+  - note: Performing Delete followed by Undo on thread parent message could corrupt view
+    tag: fixed
+    bugs: [671497]
+  - note: Single messages still appeared collapsible after thread members were deleted
+    tag: fixed
+    bugs: [1913385]
+  - note: Updated threads remained misordered until folder refresh or resort
+    tag: fixed
+    bugs: [1649402]
+  - note: "Non-threaded subject sorting separated 'RE:' replies from original messages"
+    tag: fixed
+    bugs: [2037733]
+  - note: BCC recipients were included in signed email headers
+    tag: fixed
+    bugs: [2037358]
+  - note: Performance issue when decrypting encrypted messages
+    tag: fixed
+    bugs: [2001803]
+  - note: Filter search on Body missed draft messages containing German umlauts
+    tag: fixed
+    bugs: [521649]
+  - note: Thunderbird could crash during local message search
+    tag: fixed
+    bugs: [2039883]
+  - note: "Blocked file warning showed without 'Unblock File' button in compose window"
+    tag: fixed
+    bugs: [2031995]
+  - note: Forwarding/Redirecting Exchange messages failed with NS_ERROR_OUT_OF_MEMORY
+    tag: fixed
+    bugs: [2036765]
+  - note: Compose window closed early and send progress dialog hung after NNTP failure
+    tag: fixed
+    bugs: [2034749]
+  - note: Compose window stayed open after sending when `mailnews.sendInBackground` set
+    tag: fixed
+    bugs: [2041822]
+  - note: Microsoft OAuth2 failed when HTTPS localhost redirect was not intercepted
+    tag: fixed
+    bugs: [2036505]
+  - note: Pasting contact photos stopped working when photo button had focus
+    tag: fixed
+    bugs: [2037335]
+  - note: Filter dialog lacked focus ring and had poorly distinguishable buttons
+    tag: fixed
+    bugs: [2041886]
+  - note: Subfolder kept stale accessibility unread count after unread messages were deleted
+    tag: fixed
+    bugs: [2004961]
+  - note: "'Edit as New Message' and inline 'Forward' not possible with PGP-signed messages"
+    tag: fixed
+    bugs: [1843860]
+  - note: Various MIME improvements
+    tag: fixed
+    bugs: [184869, 230377, 333880, 471402, 580842, 734823, 782736, 1362539, 1628441, 1861800,
+      1890876, 2008713]
+  - note: EWS messages could go missing from folder view
+    tag: fixed
+    bugs: [2030960]
+  - note: IMAP "Show only subscribed folders" could not be changed without restart
+    tag: fixed
+    bugs: [38943]
+  - note: Unable to delete more than 1000 messages at a time on Microsoft 365
+    tag: fixed
+    bugs: [2033853]
+  - note: EWS folders in Trash were moved to Trash again instead of being hard deleted
+    tag: fixed
+    bugs: [2037595]
+  - note: IMAP notifications repeated for emails read on another device after sleep wake
+    tag: fixed
+    bugs: [2036354]
+  - note: POP3 deadlocked when server went silent without closing socket
+    tag: fixed
+    bugs: [2020627]
+  - note: Calendar acceptance no longer distinguished between single occurrence and series
+    tag: fixed
+    bugs: [2033756]
+  - note: Transparent popups on macOS made calendar event editing difficult
+    tag: fixed
+    bugs: [2041954]
+  - note: Duplicate attendees were added to invitations instead of being filtered out
+    tag: fixed
+    bugs: [1008681]
+  - note: Task percentage complete was not preserved separately from status in tooltips
+    tag: fixed
+    bugs: [383501]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [518629, 635869, 1768565, 1981702, 2014792, 2023919, 2030855, 2033746, 2034370,
+      2034414, 2035242, 2038114, 2038292, 2014779]
