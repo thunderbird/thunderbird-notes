@@ -25,7 +25,7 @@ notes:
   - note: GMail OAuth updated to use PKCE
     tag: changed
     bugs: [2033048]
-  - note: Hostname of mail server is also checked when detecting address books and calendars
+  - note: Mail server hostname is also checked when detecting address books and calendars
     tag: changed
     bugs: [1988154]
   - note: Updated about:rights to replace local with hosted url
