@@ -33,7 +33,7 @@ notes:
     bugs: [2044463]
 
   # Changed
-  - note: Removed dedicated Odnoklassniki chat setup and directed users to XMPP configuration
+  - note: Removed Odnoklassniki chat setup and directed users to XMPP configuration
     tag: changed
     bugs: [2044769]
 
@@ -119,7 +119,7 @@ notes:
   - note: Thunderbird could fail to shut down cleanly during active OAuth requests
     tag: fixed
     bugs: [2042257]
-  - note: Account Hub kept OAuth selected after hostname changed to one without OAuth support
+  - note: Account Hub kept OAuth selected after changing to hostname without OAuth support
     tag: fixed
     bugs: [2044386]
   - note: Account Hub showed a false error when returning from EWS manual configuration
@@ -152,7 +152,7 @@ notes:
   - note: EWS folders failed to show new mail notifications until the folder was selected
     tag: fixed
     bugs: [2043149]
-  - note: Corrupted NNTP account data caused excessive memory use and OOM crashes on startup
+  - note: Corrupted NNTP account data caused excessive memory use and startup crash
     tag: fixed
     bugs: [2046366]
   - note: Multiple selected IMAP folders could not be moved or deleted together
