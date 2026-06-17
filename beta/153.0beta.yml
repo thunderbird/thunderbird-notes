@@ -179,3 +179,8 @@ notes:
       2041292, 2041627, 2041886, 2041889, 2041954, 2041994, 2042138, 2042202, 2042358,
       2042806, 2043482, 2044047, 2044545, 2044989, 2045024, 2045025, 2045135, 2045224,
       2046727, 2047354]
+
+  # Unresolved
+  - note: Account Hub OAuth setup for Yahoo could hang after sign-in and never complete
+    tag: unresolved
+    bugs: [2048209]
