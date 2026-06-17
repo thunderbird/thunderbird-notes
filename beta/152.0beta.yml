@@ -33,7 +33,7 @@ notes:
   - note: GMail OAuth updated to use PKCE
     tag: changed
     bugs: [2033048]
-  - note: Hostname of mail server is also checked when detecting address books and calendars
+  - note: Mail server hostname also checked when detecting address books and calendars
     tag: changed
     bugs: [1988154]
   - note: Updated about:rights to replace local with hosted url
@@ -74,9 +74,6 @@ notes:
   - note: BCC recipients were included in signed email headers
     tag: fixed
     bugs: [2037358]
-  - note: Performance issue when decrypting encrypted messages
-    tag: fixed
-    bugs: [2001803]
   - note: Filter search on Body missed draft messages containing German umlauts
     tag: fixed
     bugs: [521649]
