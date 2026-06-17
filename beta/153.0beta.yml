@@ -1,0 +1,181 @@
+release:
+  release_date: '2026-06-17'
+  text: |
+    **These notes apply to Thunderbird version 153 beta 1 released June 17, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 140.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Unified folders now display account color indicator with account name tooltip
+    tag: new
+    bugs: [1882368]
+  - note: Added Proton Mail key server and WKD key discovery for Proton domains
+    tag: new
+    bugs: [1998102]
+  - note: OAuth login for mail accounts now opens in default web browser
+    tag: new
+    bugs: [2024728]
+  - note: Thundermail services can now be used without installing an add-on
+    tag: new
+    bugs: [2024728]
+  - note: OAuth responses now verify issuer fields and reject missing required issuers
+    tag: new
+    bugs: [2044463]
+
+  # Changed
+  - note: Removed dedicated Odnoklassniki chat setup and directed users to XMPP configuration
+    tag: changed
+    bugs: [2044769]
+
+  # Fixed
+  - note: Ctrl+S did not save PDF attachments opened in Thunderbird tabs
+    tag: fixed
+    bugs: [1914849]
+  - note: TLS errors incorrectly reported all unknown failures as untrusted certificates
+    tag: fixed
+    bugs: [2042575]
+  - note: Thunderbird could crash during shutdown
+    tag: fixed
+    bugs: [2047449]
+  - note: Old IMAP profile migration deleted INBOX and other mailbox files
+    tag: fixed
+    bugs: [2043867]
+  - note: Space bar did not scroll in PDF attachments opened from emails
+    tag: fixed
+    bugs: [2038141]
+  - note: "'Search Messages' shortcut (Ctrl+Shift+F) failed in standalone message window"
+    tag: fixed
+    bugs: [2041456]
+  - note: Folder location widget used non-localised name
+    tag: fixed
+    bugs: [2043529]
+  - note: "Empty confirmation dialog when more messages opened in tabs than `mailnews.open_tab_warning`"
+    tag: fixed
+    bugs: [2045486]
+  - note: Removing tags from IMAP messages could fail and tags reappeared after refresh
+    tag: fixed
+    bugs: [355205]
+  - note: Global search failed to display inaccessible messages found in local folders
+    tag: fixed
+    bugs: [1914180]
+  - note: Numeric subfolders were sorted alphabetically instead of naturally
+    tag: fixed
+    bugs: [2034429]
+  - note: Virtual folder folder-picker showed unlabeled IM account as selectable folder
+    tag: fixed
+    bugs: [2046506]
+  - note: Apple Mail OpenPGP emails failed to decrypt due to hidden recipient key ID
+    tag: fixed
+    bugs: [1752799]
+  - note: OpenPGP import of public key with experimental packets failed with unclear error
+    tag: fixed
+    bugs: [1997493]
+  - note: Performance issue when decrypting encrypted messages
+    tag: fixed
+    bugs: [2001803]
+  - note: Opening messages with OpenPGP keys was slow and blocked the UI for large keyrings
+    tag: fixed
+    bugs: [2011199]
+  - note: OpenPGP key refresh failed when fingerprint lookup returned multiple results
+    tag: fixed
+    bugs: [2047358]
+  - note: Invalid S/MIME encryption certificate caused misleading send errors
+    tag: fixed
+    bugs: [2017206]
+  - note: Esc cleared quick filter pin after changing folder
+    tag: fixed
+    bugs: [1974689]
+  - note: Dragging email address between compose windows failed to add recipients
+    tag: fixed
+    bugs: [1762167, 2046949]
+  - note: Thunderbird could crash when using Find and Replace All
+    tag: fixed
+    bugs: [2011814]
+  - note: Compose window remained open when delayed sending was enabled
+    tag: fixed
+    bugs: [2041822]
+  - note: Account hub showed connection security instead of actual authentication method
+    tag: fixed
+    bugs: [1985707]
+  - note: Account Hub GSSAPI autoconfiguration incorrectly prompted for a password
+    tag: fixed
+    bugs: [2035474]
+  - note: New identity dialog lacked reply-matching and end-to-end encryption settings
+    tag: fixed
+    bugs: [2037262]
+  - note: Account Hub manual EWS setup lacked OAuth authentication option
+    tag: fixed
+    bugs: [2038289]
+  - note: Thunderbird could fail to shut down cleanly during active OAuth requests
+    tag: fixed
+    bugs: [2042257]
+  - note: Account Hub kept OAuth selected after hostname changed to one without OAuth support
+    tag: fixed
+    bugs: [2044386]
+  - note: Account Hub showed a false error when returning from EWS manual configuration
+    tag: fixed
+    bugs: [2046090]
+  - note: Account Hub autodetect wrongly prompted for a password when auth was unavailable
+    tag: fixed
+    bugs: [2046793]
+  - note: Redirected CardDAV URLs resolved relative URLs against the wrong host
+    tag: fixed
+    bugs: [2042109]
+  - note: Auto-compaction could corrupt database and cause crashes during syncs
+    tag: fixed
+    bugs: [554482]
+  - note: NNTP server with invalid TLS certificate could not be added to certificate exceptions
+    tag: fixed
+    bugs: [1192098]
+  - note: Sent message in EWS account showed message as unread in the sent items folder
+    tag: fixed
+    bugs: [2004763]
+  - note: EWS NTLM authentication triggered login failures despite successful syncs
+    tag: fixed
+    bugs: [2035812]
+  - note: Saving inline Exchange images used incorrect filenames and file types
+    tag: fixed
+    bugs: [2040117]
+  - note: Cancelled message send could not be retried and hung with SMTP timeout errors
+    tag: fixed
+    bugs: [2040638]
+  - note: EWS folders failed to show new mail notifications until the folder was selected
+    tag: fixed
+    bugs: [2043149]
+  - note: Corrupted NNTP account data caused excessive memory use and OOM crashes on startup
+    tag: fixed
+    bugs: [2046366]
+  - note: Multiple selected IMAP folders could not be moved or deleted together
+    tag: fixed
+    bugs: [589008]
+  - note: Non-Latin IMAP keywords were lowercased and encoded incorrectly as MUTF-7
+    tag: fixed
+    bugs: [650623]
+  - note: Message tags were lost when moving folder from local folder to IMAP folder
+    tag: fixed
+    bugs: [760856]
+  - note: Removing a chat account threw an exception and failed to clear the UI
+    tag: fixed
+    bugs: [2046647]
+  - note: Calendar invites were incorrectly marked processed after calendar sync completed
+    tag: fixed
+    bugs: [1760272]
+  - note: ICS event comments were not displayed in Thunderbird event details
+    tag: fixed
+    bugs: [1902644]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1810361, 1941975, 1990132, 1991900, 2000899, 2014492, 2036996, 2038356, 2040378,
+      2041292, 2041627, 2041886, 2041889, 2041954, 2041994, 2042138, 2042202, 2042358,
+      2042806, 2043482, 2044047, 2044545, 2044989, 2045024, 2045025, 2045135, 2045224,
+      2046727, 2047354]
