@@ -52,7 +52,6 @@ notes:
     issues: [10756]
     tag: fixed
   - note: New mail notifications showed avatars when contact pictures were disabled
-    short_note: New mail notifications showed avatars when contact pictures were disabled
     pull_requests: [10786]
     issues: [10750]
     tag: fixed
