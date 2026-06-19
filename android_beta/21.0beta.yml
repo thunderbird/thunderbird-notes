@@ -20,14 +20,14 @@ notes:
     issues: [6027]
     tag: changed
     group: 1
-  - note: Modernized UI for 'Fetching mail' account settings screen
-    short_note: Modernized UI for 'Fetching mail' account settings screen
+  - note: Modernized 'Fetching mail' account settings screen
+    short_note: Modernized 'Fetching mail' account settings screen
     pull_requests: [11044]
     issues: [11040]
     tag: changed
     group: 1
-  - note: Modernize 'Composition defaults' screen
-    short_note: Modernize 'Composition defaults' screen
+  - note: Modernized 'Composition defaults' screen
+    short_note: Modernized 'Composition defaults' screen
     pull_requests: [11012]
     issues: [10724]
     tag: fixed
@@ -53,13 +53,13 @@ notes:
     tag: fixed
     group: 1
   - note: Server search results could disappear after loading
-    short_note: Server search results could disappear after loading
+    short_note: Server search results could disappear
     pull_requests: [11032]
     issues: [9142]
     tag: fixed
     group: 1
   - note: Links failed when trailing punctuation was incorrectly included in URLs
-    short_note: Links failed when trailing punctuation was incorrectly included in URLs
+    short_note: Links failed when trailing punctuation incorrectly included in URLs
     pull_requests: [11118]
     issues: [11060]
     tag: fixed
