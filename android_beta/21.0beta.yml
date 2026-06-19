@@ -65,19 +65,16 @@ notes:
     tag: fixed
     group: 1
   - note: Android widget text scaled too large when system font size was increased
-    short_note: Android widget text scaled too large when system font size was increased
     pull_requests: [11081]
     issues: [7790]
     tag: fixed
     group: 1
   - note: Cancelling Thundermail OAuth incorrectly redirected users to the redirect screen
-    short_note: Cancelling Thundermail OAuth incorrectly redirected users to the redirect screen
     pull_requests: [11045]
     issues: [11043]
     tag: fixed
     group: 1
   - note: Custom swipe actions were not restored from exported settings backups
-    short_note: Custom swipe actions were not restored from exported settings backups
     pull_requests: [10893]
     issues: [10621]
     tag: fixed
