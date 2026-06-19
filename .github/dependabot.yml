@@ -13,6 +13,10 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 7
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
 
   - package-ecosystem: "pip"
     directories:
@@ -22,3 +26,7 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 7
+    groups:
+      pip-deps:
+        patterns:
+          - "*"
