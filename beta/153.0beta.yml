@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 1 released June 17, 2026.**
+    **These notes apply to Thunderbird version 153 beta 2 released June 22, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -184,3 +185,22 @@ notes:
   - note: Account Hub OAuth setup for Yahoo could hang after sign-in and never complete
     tag: unresolved
     bugs: [2048209]
+
+  # Beta 2
+  # New
+  - note: Enable the "Sign in with Thundermail" button in Account Hub
+    tag: new
+    bugs: [2048038]
+    group: 2
+
+  # Changed
+  - note: Update Thundermail system add-on to 1.9.0 and additional fixes
+    tag: changed
+    bugs: [2048069]
+    group: 2
+
+  # Fixed
+  - note: Interrupted external OAuth2 setup required restarting Thunderbird
+    tag: fixed
+    bugs: [2035829]
+    group: 2
