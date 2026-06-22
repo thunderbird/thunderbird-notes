@@ -1,0 +1,65 @@
+release:
+  release_date: '2026-06-22'
+  text: >
+    **These notes apply to Thunderbird for Android version 20.0 released June 22nd, 2026.**
+
+  releases:
+    - version: '20.0'
+      release_date: '2026-06-22'
+
+notes:
+  # New
+  - note: Enable easily discoverable way to configure and use Thundermail
+    short_note: Enable easily discoverable way to configure and use Thundermail
+    pull_requests: [11088]
+    issues: [11086]
+    tag: new
+
+  # Changed
+  - note: Only show message notification configuration actions above the cutoff
+    short_note: Only show message notification config actions above the cutoff
+    pull_requests: [10920]
+    issues: [10301]
+    tag: changed
+
+  # Fixed
+  - note: Account drawer stayed open after account switch despite auto-select Inbox setting
+    short_note: Account drawer stayed open after account switch despite auto-select Inbox setting
+    pull_requests: [10580]
+    issues: [10120]
+    tag: fixed
+  - note: Imported settings could incorrectly show 'XX' avatar monogram
+    short_note: Imported settings could incorrectly show 'XX' avatar monogram
+    pull_requests: [10959]
+    issues: [10958]
+    tag: fixed
+  - note: Printed emails omitted message headers and used minimal margins
+    short_note: Printed emails omitted message headers and used minimal margins
+    pull_requests: [10932]
+    issues: [10567]
+    tag: fixed
+  - note: Compose button did not work in tablet split-screen message view
+    short_note: Compose button did not work in tablet split-screen message view
+    pull_requests: [10862]
+    issues: [10753]
+    tag: fixed
+  - note: Accented subfolder names sorted to bottom instead of locale order
+    pull_requests: [10848]
+    issues: [10718]
+    tag: fixed
+  - note: Disabled font size setting appeared in General Settings search
+    pull_requests: [10809]
+    issues: [10756]
+    tag: fixed
+  - note: New mail notifications showed avatars when contact pictures were disabled
+    pull_requests: [10786]
+    issues: [10750]
+    tag: fixed
+  - note: Mail opening still used fade-in after animations were disabled
+    pull_requests: [10796]
+    issues: [1903]
+    tag: fixed
+  - note: Sidebar account-switching animations were too fast
+    pull_requests: [10658]
+    issues: [10480]
+    tag: fixed
