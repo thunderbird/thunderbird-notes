@@ -69,7 +69,7 @@ notes:
     issues: [7790]
     tag: fixed
     group: 1
-  - note: Cancelling Thundermail OAuth incorrectly redirected users to the redirect screen
+  - note: Cancelling the Thundermail OAuth process incorrectly redirects users to the "Redirecting to Thundermail" screen
     pull_requests: [11045]
     issues: [11043]
     tag: fixed
