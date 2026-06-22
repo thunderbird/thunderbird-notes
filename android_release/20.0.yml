@@ -28,8 +28,8 @@ notes:
     pull_requests: [10580]
     issues: [10120]
     tag: fixed
-  - note: "Imported settings could incorrectly show 'XX' avatar monogram"
-    short_note: "Imported settings could incorrectly show 'XX' avatar monogram"
+  - note: Imported settings could incorrectly show 'XX' avatar monogram
+    short_note: Imported settings could incorrectly show 'XX' avatar monogram
     pull_requests: [10959]
     issues: [10958]
     tag: fixed
