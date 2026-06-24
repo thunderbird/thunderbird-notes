@@ -211,3 +211,4 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [2047420, 2049014]
+    group: 3
