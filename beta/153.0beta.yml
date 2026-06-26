@@ -242,3 +242,7 @@ notes:
     tag: fixed
     bugs: [2049194]
     group: 4
+  - note: Reply All button was missing for some EWS messages with multiple recipients
+    tag: fixed
+    bugs: [2048249]
+    group: 4
