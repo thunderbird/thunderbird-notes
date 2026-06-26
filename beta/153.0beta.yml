@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 3 released June 24, 2026.**
+    **These notes apply to Thunderbird version 153 beta 4 released June 29, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -212,3 +213,32 @@ notes:
     tag: fixed
     bugs: [2047420, 2049014]
     group: 3
+
+  # Beta 4
+  # New
+  - note: Added configurable logging to Thundermail with version-prefixed console output
+    tag: new
+    bugs: [2049850]
+    group: 4
+
+  # Fixed
+  - note: Primary Password policy was detected but not enforced for saved account passwords
+    tag: fixed
+    bugs: [1755068]
+    group: 4
+  - note: Copying one recurring event occurrence failed to set the date when pasted
+    tag: fixed
+    bugs: [2035327]
+    group: 4
+  - note: Folder pane could not be horizontally resized in additional 3-pane tabs
+    tag: fixed
+    bugs: [2048826]
+    group: 4
+  - note: Forwarding some Apple Mail messages incorrectly attached inline text as a file
+    tag: fixed
+    bugs: [2049079]
+    group: 4
+  - note: "Message Filters 'Run Now' button could stay disabled after filter runs or mail checks"
+    tag: fixed
+    bugs: [2049194]
+    group: 4
