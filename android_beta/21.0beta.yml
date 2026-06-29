@@ -1,15 +1,18 @@
 release:
-  release_date: '2026-06-22'
+  release_date: '2026-06-29'
   text: >
     **These notes apply to Thunderbird for Android version 21.0 betas,
     first released June 22nd, 2026**
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '21.0b1'
       release_date: '2026-06-22'
+    - version: '21.0b2'
+      release_date: '2026-06-29'
 
 notes:
   # Beta 1
@@ -79,3 +82,18 @@ notes:
     issues: [10621]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # Fixed
+  - note: Manage Folders opened the wrong account instead of the selected account
+    short_note: Manage Folders opened the wrong account instead of the selected account
+    pull_requests: [11221]
+    issues: [11128]
+    tag: fixed
+    group: 2
+  - note: Application crashed when attempting to change account color
+    short_note: Application crashed when attempting to change account color
+    pull_requests: [11220]
+    issues: [11200]
+    tag: fixed
+    group: 2
