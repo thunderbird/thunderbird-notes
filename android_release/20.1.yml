@@ -1,0 +1,21 @@
+release:
+  release_date: '2026-07-06'
+  text: >
+    **These notes apply to Thunderbird for Android version 20.1 released July 6th, 2026.**
+
+  releases:
+    - version: '20.1'
+      release_date: '2026-07-06'
+
+notes:
+  # Fixed
+  - note: Application could crash when rendering long messages
+    short_note: Application could crash when rendering long messages
+    pull_requests: [11219]
+    issues: [11218]
+    tag: fixed
+  - note: Application could crash due to memory exhaustion
+    short_note: Application could crash due to memory exhaustion
+    pull_requests: [11217]
+    issues: [11216]
+    tag: fixed
