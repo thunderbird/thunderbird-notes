@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 4 released June 29, 2026.**
+    **These notes apply to Thunderbird version 153 beta 5 released July 1, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # New
@@ -246,3 +247,14 @@ notes:
     tag: fixed
     bugs: [2048249]
     group: 4
+
+  # Beta 5
+  # Fixed
+  - note: Yahoo OAuth setup hung after browser sign-in and failed to add account
+    tag: fixed
+    bugs: [2048209]
+    group: 5
+  - note: Thunderbird could crash when copying an empty list of messages
+    tag: fixed
+    bugs: [1855401]
+    group: 5
