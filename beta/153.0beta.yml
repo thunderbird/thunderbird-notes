@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 5 released July 1, 2026.**
+    **These notes apply to Thunderbird version 153 beta 6 released July 6, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -17,6 +17,7 @@ release:
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
+    - 'Fixed in beta 6'
 
 notes:
   # New
@@ -258,3 +259,10 @@ notes:
     tag: fixed
     bugs: [1855401]
     group: 5
+
+  # Beta 6
+  # Fixed
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [2049929, 2050748]
+    group: 6
