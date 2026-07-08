@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 6 released July 6, 2026.**
+    **These notes apply to Thunderbird version 153 beta 7 released July 8, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -18,6 +18,7 @@ release:
     - 'Fixed in beta 4'
     - 'Fixed in beta 5'
     - 'Fixed in beta 6'
+    - 'Fixed in beta 7'
 
 notes:
   # New
@@ -266,3 +267,14 @@ notes:
     tag: fixed
     bugs: [2049929, 2050748]
     group: 6
+
+  # Beta 7
+  # Fixed
+  - note: EWS users could not permanently delete individual Trash messages
+    tag: fixed
+    bugs: [2049203]
+    group: 7
+  - note: Thundermail system add-on sessions expired instead of automatically refreshing
+    tag: fixed
+    bugs: [2052537]
+    group: 7
