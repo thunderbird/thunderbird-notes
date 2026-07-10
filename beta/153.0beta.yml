@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 7 released July 8, 2026.**
+    **These notes apply to Thunderbird version 153 beta 8 released July 13, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -19,6 +19,7 @@ release:
     - 'Fixed in beta 5'
     - 'Fixed in beta 6'
     - 'Fixed in beta 7'
+    - 'Fixed in beta 8'
 
 notes:
   # New
@@ -273,3 +274,19 @@ notes:
     tag: fixed
     bugs: [2052537]
     group: 7
+
+  # Beta 8
+  # Changed
+  - note: Thundermail built-in add-on updated to V2.0.3
+    tag: changed
+    bugs: [2053254]
+    group: 8
+  # Fixed
+  - note: QR exports with SMTP passwords generated invalid data for Thunderbird for Android
+    tag: fixed
+    bugs: [2051143]
+    group: 8
+  - note: Thunderbird could crash when completing folder copy/move
+    tag: fixed
+    bugs: [2051428]
+    group: 8
