@@ -193,9 +193,6 @@ notes:
   - note: Removed Odnoklassniki chat setup and directed users to XMPP configuration
     tag: changed
     bugs: [2044769]
-  - note: Flatpak runtime has been updated to Freedesktop SDK 24.08
-    tag: changed
-    bugs: [1952100]
   - note: Use of the string "Junk" has been replaced with "Spam"
     tag: changed
     bugs: [1823084]
@@ -249,7 +246,7 @@ notes:
   - note: Web pages with bad certificates displayed as blank
     tag: fixed
     bugs: [1980371]
-  - note: Memory was not cleaned up after opening New Window from folder pane context menu
+  - note: Memory leak after opening New Window from folder pane context menu
     tag: fixed
     bugs: [1994088]
   - note: Importing a vCard only displayed VCF files in the file picker
@@ -567,7 +564,7 @@ notes:
   - note: "'Any Number' was unavailable in address book search with 'Match all of the following'"
     tag: fixed
     bugs: [1969851]
-  - note: Contact was not found in Advanced Address Book Search if phone number had a period
+  - note: Contact not found in Advanced Address Book Search if phone number had a period
     tag: fixed
     bugs: [1962868]
   - note: Thunderbird did not display contact photos in WebP format from CardDAV servers
@@ -638,7 +635,7 @@ notes:
   - note: Thunderbird hung when auto-checking multiple accounts for new messages
     tag: fixed
     bugs: [1911950]
-  - note: Spam was not checked with `mail.server.default.check_all_folders_for_new` on
+  - note: Spam not checked with `mail.server.default.check_all_folders_for_new` on
     tag: fixed
     bugs: [1986092]
   - note: Startup could be slow with large number of folders not using subscriptions
@@ -689,7 +686,7 @@ notes:
   - note: Removing a chat account threw an exception and failed to clear the UI
     tag: fixed
     bugs: [2046647]
-  - note: Enterprise policy use was not indicated in about:preferences with a link to about:policies
+  - note: Enterprise policy use not indicated in about:preferences with link to about:policies
     tag: fixed
     bugs: [1968505]
   - note: Language field in settings was empty after restart in Troubleshoot Mode
