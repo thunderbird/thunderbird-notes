@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 8 released July 13, 2026.**
+    **These notes apply to Thunderbird version 153 beta 9 released July 15, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -20,6 +20,7 @@ release:
     - 'Fixed in beta 6'
     - 'Fixed in beta 7'
     - 'Fixed in beta 8'
+    - 'Fixed in beta 9'
 
 notes:
   # New
@@ -287,3 +288,30 @@ notes:
     tag: fixed
     bugs: [2051428]
     group: 8
+
+  # Beta 9
+  # Fixed
+  - note: Compose with PDF attachments opened PDFs instead of creating a new email
+    tag: fixed
+    bugs: [1877420]
+    group: 9
+  - note: New mail alerts appeared incorrectly sized or positioned on some multi-monitor setups
+    tag: fixed
+    bugs: [2048162]
+    group: 9
+  - note: Attachments opened via -compose on Windows could use incorrect filenames
+    tag: fixed
+    bugs: [2051476]
+    group: 9
+  - note: Ctrl+Enter opened attachment instead of sending the message
+    tag: fixed
+    bugs: [2052168]
+    group: 9
+  - note: Virtual folders failed to preserve the online search setting
+    tag: fixed
+    bugs: [2053894]
+    group: 9
+  - note: View Source context menus became transparent and difficult to read
+    tag: fixed
+    bugs: [2054170]
+    group: 9
