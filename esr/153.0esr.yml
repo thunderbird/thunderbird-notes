@@ -483,6 +483,9 @@ notes:
   - note: Thunderbird could crash when using Find and Replace All
     tag: fixed
     bugs: [2011814]
+  - note: Compose with PDF attachments opened PDFs instead of creating a new email
+    tag: fixed
+    bugs: [1877420]
   - note: "Multiple saves while using 'Options' -> 'Send a Copy' resulted in multiple copies"
     tag: fixed
     bugs: [279366]
@@ -599,8 +602,8 @@ notes:
     bugs: [1843860]
   - note: Various MIME improvements
     tag: fixed
-    bugs: [184869, 230377, 333880, 471402, 580842, 734823, 782736, 1362539, 1628441,
-      1861800, 1890876]
+    bugs: [184869, 230377, 333880, 471402, 580842, 734823, 782736, 1362539, 1628441, 1861800,
+      1890876]
   - note: Forwarding some Apple Mail messages incorrectly attached inline text as a file
     tag: fixed
     bugs: [2049079]
