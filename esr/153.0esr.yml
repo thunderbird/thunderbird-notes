@@ -134,9 +134,6 @@ notes:
   - note: Enable Thundermail OAuth sign-in with account auto-configuration
     tag: new
     bugs: [2020826]
-  - note: One-click account setup for Thundermail accounts
-    tag: new
-    bugs: [2033654]
   - note: Address book cards can be copied to the clipboard as vCard
     tag: new
     bugs: [2018035]
