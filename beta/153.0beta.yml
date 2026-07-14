@@ -26,9 +26,6 @@ notes:
   - note: Unified folders now display account color indicator with account name tooltip
     tag: new
     bugs: [1882368]
-  - note: Added Proton Mail key server and WKD key discovery for Proton domains
-    tag: new
-    bugs: [1998102]
   - note: OAuth login for mail accounts now opens in default web browser
     tag: new
     bugs: [2024728]

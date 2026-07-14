@@ -86,9 +86,6 @@ notes:
   - note: "'Favorites' added as destination for 'Move To' and 'File' buttons"
     tag: new
     bugs: [2009042]
-  - note: Added Proton Mail key server and WKD key discovery for Proton domains
-    tag: new
-    bugs: [1998102]
   - note: Composer now shows a warning if user's configured OpenPGP key expires soon
     tag: new
     bugs: [1840861]
