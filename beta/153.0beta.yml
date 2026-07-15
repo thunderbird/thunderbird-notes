@@ -1,7 +1,7 @@
 release:
   release_date: '2026-06-17'
   text: |
-    **These notes apply to Thunderbird version 153 beta 9 released July 15, 2026.**
+    **These notes apply to Thunderbird version 153 beta 10 released July 15, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
 
@@ -21,6 +21,7 @@ release:
     - 'Fixed in beta 7'
     - 'Fixed in beta 8'
     - 'Fixed in beta 9'
+    - 'Fixed in beta 10'
 
 notes:
   # New
@@ -315,3 +316,10 @@ notes:
     tag: fixed
     bugs: [2054170]
     group: 9
+
+  # Beta 10
+  # Fixed
+  - note: Sending Message dialog got stuck on "Filter complete." after successful send
+    tag: fixed
+    bugs: [2050589]
+    group: 10
