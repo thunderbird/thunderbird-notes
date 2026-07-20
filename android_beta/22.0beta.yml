@@ -21,7 +21,7 @@ notes:
     tag: new
     group: 1
   - note: Thundermail interim screen when adding an account
-    short_note: Thundermail interim screen when adding an account
+    short_note: Thundermail interim screen when adding account
     pull_requests: [11138]
     issues: [11102]
     tag: new
@@ -29,15 +29,15 @@ notes:
 
   # Changed
   - note: Selected sort option now shows an indicator in the sort menu
-    short_note: Selected sort option now shows an indicator in the sort menu
+    short_note: Selected sort option now shows indicator in sort menu
     pull_requests: [11190]
     issues: [11184]
     tag: changed
     group: 1
 
   # Fixed
-  - note: Messages could scroll horizontally even when content fit the screen
-    short_note: Messages could scroll horizontally even when content fit screen
+  - note: Messages could scroll horizontally when content fit the screen
+    short_note: Messages could scroll horizontally when content fit screen
     pull_requests: [11225]
     issues: [11038]
     tag: fixed
@@ -48,14 +48,14 @@ notes:
     issues: [8223]
     tag: fixed
     group: 1
-  - note: Notification actions were difficult to scroll and reorder on small screens
-    short_note: Notification actions were difficult to scroll and reorder on small screens
+  - note: Notification actions were difficult to scroll and reorder on small screen
+    short_note: Notification actions difficult to scroll/reorder on small screen
     pull_requests: [11212]
     issues: [11191]
     tag: fixed
     group: 1
   - note: Show Headers collapsed multi-line email headers into a single line
-    short_note: Show Headers collapsed multi-line email headers into a single line
+    short_note: Show Headers collapsed multi-line email headers into single line
     pull_requests: [11003]
     issues: [9452]
     tag: fixed
@@ -67,19 +67,16 @@ notes:
     tag: fixed
     group: 1
   - note: Select Image icon was hard to see in dark theme
-    short_note: Select Image icon was hard to see in dark theme
     pull_requests: [11227]
     issues: [11202]
     tag: fixed
     group: 1
   - note: Printed message headers always used US date format instead of local format
-    short_note: Printed message headers always used US date format instead of local format
     pull_requests: [11129]
     issues: [11109]
     tag: fixed
     group: 1
   - note: Splash screen truncated the Thunderbird name on small displays
-    short_note: Splash screen truncated the Thunderbird name on small displays
     pull_requests: [11203]
     issues: [11172]
     tag: fixed
