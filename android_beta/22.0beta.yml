@@ -61,7 +61,6 @@ notes:
     tag: fixed
     group: 1
   - note: Notification previews displayed HTML entities and markup instead of clean text
-    short_note: Notification previews displayed HTML entities and markup instead of clean text
     pull_requests: [10919]
     issues: [8471, 10256]
     tag: fixed
