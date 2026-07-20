@@ -1,0 +1,82 @@
+release:
+  release_date: '2026-07-20'
+  text: >
+    **These notes apply to Thunderbird for Android version 22.0 betas,
+    first released July 20th, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '22.0b1'
+      release_date: '2026-07-20'
+
+notes:
+  # Beta 1
+  # New
+  - note: Incognito Keyboard privacy setting disables Google keyboard from learning words
+    short_note: Incognito Keyboard privacy setting
+    pull_requests: [10975]
+    issues: [3855]
+    tag: new
+    group: 1
+  - note: Thundermail interim screen when adding an account
+    short_note: Thundermail interim screen when adding account
+    pull_requests: [11138]
+    issues: [11102]
+    tag: new
+    group: 1
+
+  # Changed
+  - note: Selected sort option now shows an indicator in the sort menu
+    short_note: Selected sort option now shows indicator in sort menu
+    pull_requests: [11190]
+    issues: [11184]
+    tag: changed
+    group: 1
+
+  # Fixed
+  - note: Messages could scroll horizontally when content fit the screen
+    short_note: Messages could scroll horizontally when content fit screen
+    pull_requests: [11225]
+    issues: [11038]
+    tag: fixed
+    group: 1
+  - note: Thread deletion confirmation incorrectly said only one message would be deleted
+    short_note: Thread deletion confirmation incorrectly said only one message would be deleted
+    pull_requests: [11193]
+    issues: [8223]
+    tag: fixed
+    group: 1
+  - note: Notification actions were difficult to scroll and reorder on small screen
+    short_note: Notification actions difficult to scroll/reorder on small screen
+    pull_requests: [11212]
+    issues: [11191]
+    tag: fixed
+    group: 1
+  - note: Show Headers collapsed multi-line email headers into a single line
+    short_note: Show Headers collapsed multi-line email headers into single line
+    pull_requests: [11003]
+    issues: [9452]
+    tag: fixed
+    group: 1
+  - note: Notification previews displayed HTML entities and markup instead of clean text
+    pull_requests: [10919]
+    issues: [8471, 10256]
+    tag: fixed
+    group: 1
+  - note: Select Image icon was hard to see in dark theme
+    pull_requests: [11227]
+    issues: [11202]
+    tag: fixed
+    group: 1
+  - note: Printed message headers always used US date format instead of local format
+    pull_requests: [11129]
+    issues: [11109]
+    tag: fixed
+    group: 1
+  - note: Splash screen truncated the Thunderbird name on small displays
+    pull_requests: [11203]
+    issues: [11172]
+    tag: fixed
+    group: 1
