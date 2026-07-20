@@ -46,8 +46,8 @@ notes:
     pull_requests: [11032]
     issues: [9142]
     tag: fixed
-  - note: Manage Folders opened the wrong account instead of the selected account
-    short_note: Manage Folders opened the wrong account instead of the selected account
+  - note: Manage Folders opened the wrong account instead of selected account
+    short_note: Manage Folders opened the wrong account instead of selected account
     pull_requests: [11221]
     issues: [11128]
     tag: fixed
