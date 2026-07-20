@@ -1,0 +1,69 @@
+release:
+  release_date: '2026-07-20'
+  text: >
+    **These notes apply to Thunderbird for Android version 21.0 released July 20th, 2026.**
+
+  releases:
+    - version: '21.0'
+      release_date: '2026-07-20'
+
+notes:
+  # Changed
+  - note: Animation setting now allows On, Off, and System Default options
+    short_note: Animation setting now allows On, Off, and System Default options
+    pull_requests: [10800]
+    issues: [6027]
+    tag: changed
+  - note: Modernized 'Fetching mail' account settings screen
+    short_note: Modernized 'Fetching mail' account settings screen
+    pull_requests: [11044]
+    issues: [11040]
+    tag: changed
+  - note: Modernized 'Composition defaults' screen
+    short_note: Modernized 'Composition defaults' screen
+    pull_requests: [11012]
+    issues: [10724]
+    tag: changed
+
+  # Fixed
+  - note: Application could crash due to memory exhaustion
+    short_note: Application could crash due to memory exhaustion
+    pull_requests: [11154]
+    issues: [11153]
+    tag: fixed
+  - note: Application could crash when rendering long messages
+    short_note: Application could crash when rendering long messages
+    pull_requests: [11149]
+    issues: [11148]
+    tag: fixed
+  - note: Inline images were shown as attachments instead of displaying in message
+    short_note: Inline images were shown as attachments instead of displaying in message
+    pull_requests: [11082]
+    issues: [10889]
+    tag: fixed
+  - note: Server search results could disappear after loading
+    short_note: Server search results could disappear
+    pull_requests: [11032]
+    issues: [9142]
+    tag: fixed
+  - note: Manage Folders opened the wrong account instead of the selected account
+    short_note: Manage Folders opened the wrong account instead of the selected account
+    pull_requests: [11221]
+    issues: [11128]
+    tag: fixed
+  - note: Android widget text scaled too large when system font size was increased
+    pull_requests: [11081]
+    issues: [7790]
+    tag: fixed
+  - note: Cancelling the Thundermail OAuth process incorrectly redirects users to the "Redirecting to Thundermail" screen
+    pull_requests: [11045]
+    issues: [11043]
+    tag: fixed
+  - note: Custom swipe actions were not restored from exported settings backups
+    pull_requests: [10893]
+    issues: [10621]
+    tag: fixed
+  - note: Links failed when trailing punctuation was incorrectly included in URLs
+    pull_requests: [11118]
+    issues: [11060]
+    tag: fixed
