@@ -25,7 +25,7 @@ notes:
   - note: Global search results can open in list view by default with new setting
     tag: new
     bugs: [580252]
-  - note: "Copy To" folder context menu added for message/rfc822 attachments
+  - note: '"Copy To" folder context menu added for message/rfc822 attachments'
     tag: new
     bugs: [204612]
   - note: Optional system tray mode that hides Thunderbird when the last window closes
