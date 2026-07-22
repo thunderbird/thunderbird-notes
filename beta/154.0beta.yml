@@ -81,7 +81,7 @@ notes:
   - note: Thunderbird could crash when inserting a message header into database cache
     tag: fixed
     bugs: [1661960]
-  - note: IMAP repeatedly notified for messages already read on another device after reconnecting
+  - note: IMAP repeatedly notified for messages already read on another device
     tag: fixed
     bugs: [2055434]
   - note: Dragging EWS search folders to Trash caused Thunderbird to crash
@@ -99,7 +99,7 @@ notes:
   - note: Thunderbird could crash while running online mail search
     tag: fixed
     bugs: [2051442]
-  - note: Exchange accounts could show repeated false login failure prompts during authentication
+  - note: Exchange accounts could show repeated false login failures during authentication
     tag: fixed
     bugs: [2050347]
   - note: 'Expired newsgroup articles showed an insecure "click here" purge link'
