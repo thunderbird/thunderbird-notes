@@ -1,0 +1,140 @@
+release:
+  release_date: '2026-07-22'
+  text: |
+    **These notes apply to Thunderbird version 154 beta 1 released July 22, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/146.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Preview functionality for attachments on macOS
+    tag: new
+    bugs: [474719]
+  - note: Allow CMS message with AuthEnvelopedData to be decrypted properly in Thunderbird
+    tag: new
+    bugs: [1835697]
+  - note: Global search results can open in list view by default with new setting
+    tag: new
+    bugs: [580252]
+  - note: Add "Copy To" folder context menu for message/rfc822 attachments
+    tag: new
+    bugs: [204612]
+  - note: Optional system tray mode that hides Thunderbird when the last window closes
+    tag: new
+    bugs: [2044250]
+  - note: Added support for dragging message/rfc822 type MIME attachments to folder tree
+    tag: new
+    bugs: [11013]
+  - note: Microsoft Graph enabled for Microsoft 365
+    tag: new
+    bugs: [2049383]
+
+  # Fixed
+  - note: Remote content warnings appeared despite sender block exceptions being applied
+    tag: fixed
+    bugs: [1999348]
+  - note: Collapsed saved-search folders did not deselect their subfolders
+    tag: fixed
+    bugs: [1243658]
+  - note: Some signed emails could enter an endless rendering loop in the message pane
+    tag: fixed
+    bugs: [1946168]
+  - note: Server-designated special folder flags could be removed until restart
+    tag: fixed
+    bugs: [2047462]
+  - note: Messages could render excessive trailing blank lines
+    tag: fixed
+    bugs: [2000815]
+  - note: 'Copying a message subject included the "Subject:" label in copied text'
+    tag: fixed
+    bugs: [1891713]
+  - note: Moving IMAP folders to Local Folders could delete messages after copy failures
+    tag: fixed
+    bugs: [2047704]
+  - note: 7-bit clean unobtrusive signature payloads were unnecessarily base64 encoded
+    tag: fixed
+    bugs: [2049451]
+  - note: OpenPGP sending failed when an older accepted key had no valid encryption subkey
+    tag: fixed
+    bugs: [2028179]
+  - note: Account setup tried local-part usernames before full email addresses
+    tag: fixed
+    bugs: [647046]
+  - note: Read-only CardDAV address books were incorrectly treated as writable
+    tag: fixed
+    bugs: [2051567]
+  - note: Blank 1970-dated messages could appear from incomplete message file copies
+    tag: fixed
+    bugs: [209501]
+  - note: Opening drafts or templates with invalid quoted-printable data could crash Thunderbird
+    tag: fixed
+    bugs: [1876127]
+  - note: Thunderbird could crash when inserting a message header into database cache
+    tag: fixed
+    bugs: [1661960]
+  - note: IMAP repeatedly notified for messages already read on another device after reconnecting
+    tag: fixed
+    bugs: [2055434]
+  - note: Dragging EWS search folders to Trash caused Thunderbird to crash
+    tag: fixed
+    bugs: [2054847]
+  - note: Folder compaction displayed incorrect disk space recovery estimates
+    tag: fixed
+    bugs: [2054592]
+  - note: Custom OAuth settings for EWS account overwrote original account's settings
+    tag: fixed
+    bugs: [2054186]
+  - note: Thunderbird could crash when going offline with an active IMAP IDLE connection
+    tag: fixed
+    bugs: [1852017]
+  - note: Thunderbird could crash while running online mail search
+    tag: fixed
+    bugs: [2051442]
+  - note: Exchange accounts could show repeated false login failure prompts during authentication
+    tag: fixed
+    bugs: [2050347]
+  - note: Expired newsgroup articles showed an insecure “click here” purge link
+    tag: fixed
+    bugs: [1372411]
+  - note: IMAP attachments appeared empty after messages were moved by filters
+    tag: fixed
+    bugs: [770888]
+  - note: Default special-folder names could reference nonexistent server folders
+    tag: fixed
+    bugs: [2039958]
+  - note: Thunderbird macOS fell back to Software WebRender after GPU process launch failures
+    tag: fixed
+    bugs: [2053898]
+  - note: New RSS subscriptions used updated dates instead of published dates
+    tag: fixed
+    bugs: [2047970]
+  - note: Thunderbird could crash while discovering IMAP folders
+    tag: fixed
+    bugs: [1907729]
+  - note: Calendar sort order was not preserved across Thunderbird restarts
+    tag: fixed
+    bugs: [1675937]
+  - note: '"All calendars are disabled" banner reappeared after enabling a calendar'
+    tag: fixed
+    bugs: [2047887]
+  - note: Dismissed CalDAV reminders could permanently stop future event notifications
+    tag: fixed
+    bugs: [2051453]
+  - note: Read-only CardDAV calendars were incorrectly treated as writable
+    tag: fixed
+    bugs: [2051561]
+  - note: CalDAV sync failed when server responses used UTF-16 encoding
+    tag: fixed
+    bugs: [1837222]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1877326, 2042137, 2048607, 2049537, 2052984, 2054012, 2054872]
