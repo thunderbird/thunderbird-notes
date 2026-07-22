@@ -19,19 +19,19 @@ notes:
   - note: Preview functionality for attachments on macOS
     tag: new
     bugs: [474719]
-  - note: Allow CMS message with AuthEnvelopedData to be decrypted properly in Thunderbird
+  - note: CMS message with AuthEnvelopedData can be decrypted properly in Thunderbird
     tag: new
     bugs: [1835697]
   - note: Global search results can open in list view by default with new setting
     tag: new
     bugs: [580252]
-  - note: Add "Copy To" folder context menu for message/rfc822 attachments
+  - note: "Copy To" folder context menu added for message/rfc822 attachments
     tag: new
     bugs: [204612]
   - note: Optional system tray mode that hides Thunderbird when the last window closes
     tag: new
     bugs: [2044250]
-  - note: Added support for dragging message/rfc822 type MIME attachments to folder tree
+  - note: Support for dragging message/rfc822 type MIME attachments to folder tree
     tag: new
     bugs: [11013]
   - note: Microsoft Graph enabled for Microsoft 365
@@ -90,7 +90,7 @@ notes:
   - note: Folder compaction displayed incorrect disk space recovery estimates
     tag: fixed
     bugs: [2054592]
-  - note: Custom OAuth settings for EWS account overwrote original account's settings
+  - note: "Custom OAuth settings for EWS account overwrote original account's settings"
     tag: fixed
     bugs: [2054186]
   - note: Thunderbird could crash when going offline with an active IMAP IDLE connection
@@ -102,7 +102,7 @@ notes:
   - note: Exchange accounts could show repeated false login failure prompts during authentication
     tag: fixed
     bugs: [2050347]
-  - note: Expired newsgroup articles showed an insecure “click here” purge link
+  - note: 'Expired newsgroup articles showed an insecure "click here" purge link'
     tag: fixed
     bugs: [1372411]
   - note: IMAP attachments appeared empty after messages were moved by filters
