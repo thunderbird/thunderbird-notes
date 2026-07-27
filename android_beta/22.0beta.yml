@@ -1,15 +1,18 @@
 release:
-  release_date: '2026-07-20'
+  release_date: '2026-07-27'
   text: >
     **These notes apply to Thunderbird for Android version 22.0 betas,
     first released July 20th, 2026**
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '22.0b1'
       release_date: '2026-07-20'
+    - version: '22.0b2'
+      release_date: '2026-07-27'
 
 notes:
   # Beta 1
@@ -80,3 +83,12 @@ notes:
     issues: [11172]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # Fixed
+  - note: Could not empty the Trash folder using the Empty Trash action
+    short_note: Could not empty the Trash folder using the Empty Trash action
+    pull_requests: [11310]
+    issues: [11255, 11256]
+    tag: fixed
+    group: 2
