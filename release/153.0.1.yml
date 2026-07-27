@@ -1,0 +1,19 @@
+release:
+  release_date: '2026-07-28'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/153.0/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 153.0esr
+
+notes:
+  # Fixed
+  - note: New Message and New Event buttons were unreadable in right-to-left locales
+    tag: fixed
+    bugs: [2055406]
+  - note: OpenPGP sending failed when an accepted key lacked a valid encryption subkey
+    tag: fixed
+    bugs: [2028179]
