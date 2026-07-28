@@ -1,7 +1,7 @@
 release:
-  release_date: '2026-07-22'
+  release_date: '2026-07-29'
   text: |
-    **These notes apply to Thunderbird version 154 beta 1 released July 22, 2026.**
+    **These notes apply to Thunderbird version 154 beta 2 released July 29, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -138,3 +139,10 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1877326, 2042137, 2048607, 2049537, 2052984, 2054012, 2054872]
+
+  # Beta 2
+  # Fixed
+  - note: New Message and New Event buttons were unreadable in right-to-left locales
+    tag: fixed
+    bugs: [2055406]
+    group: 2
