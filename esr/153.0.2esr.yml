@@ -1,0 +1,27 @@
+release:
+  release_date: '2026-08-04'
+  text: |
+    **For help and a quick start on Thunderbird 153, see
+    [Thunderbird 153 Meadow FAQ](https://support.mozilla.org/en-US/kb/new-thunderbird-desktop)**
+
+    **For more on all the new features in Thunderbird 153, see
+    [What’s New in Thunderbird 153](https://updates.thunderbird.net/thunderbird/153.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/153.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '153.0esr'
+
+notes:
+  # Changed
+  - note: Restored previous Yahoo sign-in flow to improve login reliability
+    tag: changed
+    bugs: [2058239]
+
+  # Fixed
+  - note: Edit Calendar dialog opened without a window title
+    tag: fixed
+    bugs: [2050953]
