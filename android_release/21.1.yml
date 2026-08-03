@@ -1,0 +1,16 @@
+release:
+  release_date: '2026-08-03'
+  text: >
+    **These notes apply to Thunderbird for Android version 21.1 released August 3th, 2026.**
+
+  releases:
+    - version: '21.1'
+      release_date: '2026-08-03'
+
+notes:
+  # Fixed
+  - note: Could not empty the Trash folder using the Empty Trash action
+    short_note: Could not empty the Trash folder using the Empty Trash action
+    pull_requests: [11311]
+    issues: [11255, 11256]
+    tag: fixed
