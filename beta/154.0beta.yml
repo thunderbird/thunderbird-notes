@@ -1,7 +1,7 @@
 release:
   release_date: '2026-07-29'
   text: |
-    **These notes apply to Thunderbird version 154 beta 2 released July 29, 2026.**
+    **These notes apply to Thunderbird version 154 beta 3 released August 5, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -146,3 +147,9 @@ notes:
     tag: fixed
     bugs: [2055406]
     group: 2
+
+  # Beta 3
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 3
