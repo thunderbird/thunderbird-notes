@@ -25,3 +25,6 @@ notes:
   - note: Edit Calendar dialog opened without a window title
     tag: fixed
     bugs: [2050953]
+  - note: Thunderbird could crash when going offline with active IMAP connection
+    tag: fixed
+    bugs: [1852017]
