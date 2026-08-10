@@ -1,0 +1,22 @@
+release:
+  release_date: '2026-08-10'
+  text: >
+    **These notes apply to Thunderbird for Android version 23.0 betas,
+    first released August 10th, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '23.0b1'
+      release_date: '2026-08-10'
+
+notes:
+  # Beta 1
+  # Fixed
+  - note: Signature field only accepted single-line text in Composition defaults
+    short_note: Signature field only accepted single-line text in Composition defaults
+    pull_requests: [11350]
+    issues: [11343]
+    tag: fixed
+    group: 1
