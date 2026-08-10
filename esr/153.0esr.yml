@@ -199,6 +199,9 @@ notes:
   - note: "'Hide completed tasks' now also hides cancelled tasks"
     tag: changed
     bugs: [382363]
+  - note: Stop shipping 32-bit Linux x86 binaries
+    tag: changed
+    bugs: [1989558, 1990232]
 
   # Fixed
   - note: Thunderbird could crash when parsing message state
