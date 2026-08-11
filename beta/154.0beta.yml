@@ -1,7 +1,7 @@
 release:
   release_date: '2026-07-29'
   text: |
-    **These notes apply to Thunderbird version 154 beta 3 released August 5, 2026.**
+    **These notes apply to Thunderbird version 154 beta 4 released August 12, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
 
@@ -15,6 +15,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -153,3 +154,13 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Thunderbird could crash when saving a sent Exchange message
+    tag: fixed
+    bugs: [2061208]
+    group: 4
+  - note: DisablePasswordReveal policy failed to prevent revealing saved passwords
+    tag: fixed
+    bugs: [2058522]
