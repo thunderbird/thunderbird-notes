@@ -48,9 +48,6 @@ notes:
   - note: Collapsed saved-search folders did not deselect their subfolders
     tag: fixed
     bugs: [1243658]
-  - note: Some signed emails could enter an endless rendering loop in the message pane
-    tag: fixed
-    bugs: [1946168]
   - note: Server-designated special folder flags could be removed until restart
     tag: fixed
     bugs: [2047462]
