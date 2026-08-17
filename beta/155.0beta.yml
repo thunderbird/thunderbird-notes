@@ -1,0 +1,123 @@
+release:
+  release_date: '2026-08-17'
+  text: |
+    **These notes apply to Thunderbird version 155 beta 1 released August 17, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: S/MIME popup shows signature, digest, encryption algorithms and key sizes
+    tag: new
+    bugs: [229724]
+  - note: "Default address book for manually added contacts configurable with `mail.addr_book.add_item_default_uri`"
+    tag: new
+    bugs: [1735630]
+  - note: Enterprise policy can disable QR export
+    tag: new
+    bugs: [1991259]
+  - note: OAuth add-ons can override built-in settings for selected domains and hostnames
+    tag: new
+    bugs: [2055286]
+  - note: Manual account config streamlined with Exchange, Graph, and custom OAuth support
+    tag: new
+    bugs: [2055078]
+  - note: Custom OAuth support for IMAP and SMTP servers
+    tag: new
+    bugs: [2053191]
+  - note: PKCE and external browser fields added to custom OAuth settings
+    tag: new
+    bugs: [2056958]
+  - note: Enterprise policy for disabling experimental features
+    tag: new
+    bugs: [2062407]
+
+  # Fixed
+  - note: Unread count dock badge disappeared on macOS restart when no mail window opened
+    tag: fixed
+    bugs: [2045506]
+  - note: IMAP tags did not sync automatically across clients
+    tag: fixed
+    bugs: [1865651]
+  - note: Embedded SVG images appeared broken when Display Attachments Inline was disabled
+    tag: fixed
+    bugs: [1936022]
+  - note: Holding arrow keys failed to smoothly navigate the folder pane
+    tag: fixed
+    bugs: [1883816]
+  - note: Mark and Tag menu bar items were disabled in search results
+    tag: fixed
+    bugs: [2056286]
+  - note: Quick Filter ignored address book display names shown in message lists and headers
+    tag: fixed
+    bugs: [460737]
+  - note: Attachment filters could disappear or return no results in global search
+    tag: fixed
+    bugs: [1616753]
+  - note: Body search failed for quoted-printable messages ending on a soft line break
+    tag: fixed
+    bugs: [2054385]
+  - note: Failed encrypted send did not preserve draft
+    tag: fixed
+    bugs: [2054196]
+  - note: Failed account setup left an incoming server that blocked account recreation
+    tag: fixed
+    bugs: [1121151]
+  - note: Removing an account did not remove its OAuth token from the password manager
+    tag: fixed
+    bugs: [1498052]
+  - note: Account Hub prompted for calendar credentials immediately after successful login
+    tag: fixed
+    bugs: [2043990]
+  - note: Filters could copy empty messages to Local Folders during startup mail download
+    tag: fixed
+    bugs: [1781792]
+  - note: Closing message filters wrongly warned completed newsgroup filters were running
+    tag: fixed
+    bugs: [2056063]
+  - note: Autoscroll icon was missing directional arrows in scrollable messages
+    tag: fixed
+    bugs: [2059914]
+  - note: Apple Mail text attachments may not appear in MIME messages
+    tag: fixed
+    bugs: [2044587]
+  - note: Forwarded messages could display incorrect encoding
+    tag: fixed
+    bugs: [2059963]
+  - note: Thunderbird could crash due to improper database memory handling
+    tag: fixed
+    bugs: [2052101]
+  - note: Thunderbird could crash on shutdown while waiting for OAuth2 password entry
+    tag: fixed
+    bugs: [1524247]
+  - note: Thunderbird could crash while loading mail folders
+    tag: fixed
+    bugs: [1949640]
+  - note: Custom OAuth could not be disabled
+    tag: fixed
+    bugs: [2057040]
+  - note: Legacy IMAP tag changes were not sent to the server and reverted after refresh
+    tag: fixed
+    bugs: [2057187]
+  - note: Deleting an Exchange account retained the outgoing server settings
+    tag: fixed
+    bugs: [2058940]
+  - note: CalDAV calendars with offline support could stop fully synchronizing events
+    tag: fixed
+    bugs: [1713625]
+  - note: Offline cached ICS calendar changes were silently lost after reconnecting
+    tag: fixed
+    bugs: [2052714]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [844475, 1958478, 2045949, 2047100, 2052807, 2055406, 2057195, 2059675, 2060002,
+      2060181]
