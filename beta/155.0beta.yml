@@ -1,7 +1,7 @@
 release:
   release_date: '2026-08-19'
   text: |
-    **These notes apply to Thunderbird version 155 beta 4 released August 26, 2026.**
+    **These notes apply to Thunderbird version 155 beta 5 released August 26, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
 
@@ -16,6 +16,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # New
@@ -151,3 +152,9 @@ notes:
     tag: fixed
     bugs: [2064554]
     group: 4
+
+  # Beta 5
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 5
