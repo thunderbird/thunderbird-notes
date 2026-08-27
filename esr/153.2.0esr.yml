@@ -1,0 +1,30 @@
+release:
+  release_date: '2026-09-01'
+  text: |
+    **For help and a quick start on Thunderbird 153, see
+    [Thunderbird 153 Meadow FAQ](https://support.mozilla.org/en-US/kb/new-thunderbird-desktop)**
+
+    **For more on all the new features in Thunderbird 153, see
+    [What’s New in Thunderbird 153](https://updates.thunderbird.net/thunderbird/153.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/153.0esr/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: '153.0esr'
+
+notes:
+  # Fixed
+  - note: Deleting an Exchange account retained the outgoing server settings
+    tag: fixed
+    bugs: [2058940]
+  - note: Thunderbird upgrade disabled Settings menu for versions before macOS 13
+    tag: fixed
+    bugs: [2060804]
+  - note: Windows jump list menu no longer functioned correctly
+    tag: fixed
+    bugs: [2064554]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird153.2)'
+    tag: fixed
