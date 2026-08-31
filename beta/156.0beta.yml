@@ -75,13 +75,13 @@ notes:
   - note: OpenPGP signing failed with external GnuPG when the primary key could not sign
     tag: fixed
     bugs: [2026356]
-  - note: Remote content could load in encrypted S/MIME and OpenPGP message opened from file
+  - note: Remote content could load in encrypted messages opened from files
     tag: fixed
     bugs: [2052070]
   - note: Sent message with expired S/MIME certificate wrongly showed untrusted CA warning
     tag: fixed
     bugs: [1879263]
-  - note: PDF attachments from compose windows could wrongly be detected as HTML documents
+  - note: PDF attachments from compose windows could wrongly be detected as HTML
     tag: fixed
     bugs: [1698140]
   - note: 'Saving unconfirmed recipients could create invalid address pills with `>>`'
