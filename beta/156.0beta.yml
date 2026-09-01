@@ -1,7 +1,7 @@
 release:
-  release_date: '2026-08-31'
+  release_date: '2026-09-02'
   text: |
-    **These notes apply to Thunderbird version 156 beta 1 released August 31, 2026.**
+    **These notes apply to Thunderbird version 156 beta 2 released September 2, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -114,3 +115,10 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1776193, 2007529, 2059950, 2060192, 2061119, 2061484, 2062537, 2063661, 2064611]
+
+  # Beta 2
+  # Fixed
+  - note: Opening a PDF attachment in a tab displayed empty tab
+    tag: fixed
+    bugs: [2067655]
+    group: 2
