@@ -1,22 +1,13 @@
 release:
-  release_date: '2026-08-19'
+  release_date: '2026-09-01'
   text: |
-    **These notes apply to Thunderbird version 155 beta 5 released August 26, 2026.**
-
-    **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
+    **System Requirements:** [Details](/en-US/thunderbird/155.0/system-requirements/)
 
     - Windows: Windows 10 or later
     - Mac: macOS 10.15 or later
     - Linux: GTK+ 3.14 or higher
 
-  import_system_requirements: 153.0beta
-
-  groups:
-    - ' '
-    - 'Fixed in beta 2'
-    - 'Fixed in beta 3'
-    - 'Fixed in beta 4'
-    - 'Fixed in beta 5'
+  import_system_requirements: 153.0esr
 
 notes:
   # New
@@ -121,40 +112,18 @@ notes:
   - note: Offline cached ICS calendar changes were silently lost after reconnecting
     tag: fixed
     bugs: [2052714]
+  - note: Thunderbird upgrade disabled composition toolbar
+    tag: fixed
+    bugs: [1989214]
+  - note: Thunderbird upgrade disabled Settings menu for versions before macOS 13
+    tag: fixed
+    bugs: [2060804]
+  - note: Windows jump list menu no longer functioned correctly
+    tag: fixed
+    bugs: [2064554]
   - note: Visual and UX improvements
     tag: fixed
     bugs: [844475, 1958478, 2045949, 2047100, 2052807, 2055406, 2057195, 2059675, 2060002,
       2060181]
-
-  # Beta 2
-  # Changed
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
-    group: 2
-
-  # Beta 3
-  # Changed
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
-    group: 3
-
-  # Beta 4
-  # Fixed
-  - note: Thunderbird upgrade disabled composition toolbar
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird155)'
     tag: fixed
-    bugs: [1989214]
-    group: 4
-  - note: Thunderbird upgrade disabled Settings menu for versions before macOS 13
-    tag: fixed
-    bugs: [2060804]
-    group: 4
-  - note: Windows jump list menu no longer functioned correctly
-    tag: fixed
-    bugs: [2064554]
-    group: 4
-
-  # Beta 5
-  # Changed
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
-    group: 5
