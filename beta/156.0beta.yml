@@ -1,7 +1,7 @@
 release:
-  release_date: '2026-09-02'
+  release_date: '2026-08-31'
   text: |
-    **These notes apply to Thunderbird version 156 beta 2 released September 2, 2026.**
+    **These notes apply to Thunderbird version 156 beta 3 released September 8, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
 
@@ -14,6 +14,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -122,3 +123,24 @@ notes:
     tag: fixed
     bugs: [2067655]
     group: 2
+
+  # Beta 3
+  # Changed
+  - note: Thundermail built-in add-on updated to v2.0.11
+    tag: changed
+    bugs: [2064203]
+    group: 3
+
+  # Fixed
+  - note: Empty filter search values matched every message
+    tag: fixed
+    bugs: [2068847]
+    group: 3
+  - note: Users could not set up custom OAuth for Exchange accounts
+    tag: fixed
+    bugs: [2069098]
+    group: 3
+  - note: Manual Get Messages failed after startup until toggling offline mode
+    tag: fixed
+    bugs: [2057431]
+    group: 3
