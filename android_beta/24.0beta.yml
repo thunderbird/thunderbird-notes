@@ -15,78 +15,74 @@ notes:
   # Beta 1
   # New
   - note: Signatures can be formatted as HTML for individual identities
-    short_note: Signatures can be formatted as HTML for individual identities
+    short_note: Signatures support HTML
     pull_requests: [10876]
     issues: [11405]
     tag: new
     group: 1
-  - note: Reply prompts users to choose Reply or Reply All when both are available
-    short_note: Reply prompts users to choose Reply or Reply All when both are available
+  - note: Reply prompts users to choose Reply or Reply All when both are applicable
+    short_note: Reply prompts with Reply or Reply All
     pull_requests: [11401]
     issues: [7055]
     tag: fixed
     group: 1
 
   # Changed
-  - note: Long account names are now resized to fit within two lines in the account drawer
-    short_note: Long account names are now resized to fit within two lines in the account drawer
+  - note: Long account names are resized to fit within two lines in the account drawer
+    short_note: Long account names are resized to fit within two lines
     pull_requests: [11431]
     issues: [10229]
     tag: changed
     group: 1
 
   # Fixed
-  - note: QR code scanner failed to open when no accounts were configured
-    short_note: QR code scanner failed to open when no accounts were configured
-    pull_requests: [11460]
-    issues: [11276]
-    tag: fixed
-    group: 1
-  - note: Selected compose text was invisible in the light theme due to white highlighting
-    short_note: Selected compose text was invisible in the light theme due to white highlighting
+  - note: Selected compose text was invisible in light theme due to white highlighting
+    short_note: Selected compose text was invisible in light theme
     pull_requests: [11301]
     issues: [10974]
     tag: fixed
     group: 1
   - note: Status bar icons became unreadable when selecting messages in light theme
-    short_note: Status bar icons became unreadable when selecting messages in light theme
+    short_note: Status bar icons became unreadable when selecting messages
     pull_requests: [11410]
     issues: [11305]
     tag: fixed
     group: 1
   - note: Recipient expander would not collapse after editing message subject or body
-    short_note: Recipient expander would not collapse after editing message subject or body
+    short_note: Recipient expander would not collapse after editing subject or body
     pull_requests: [11458]
     issues: [11375]
     tag: fixed
     group: 1
-  - note: Editing queued mail as new used the default identity instead of the original one
-    short_note: Editing queued mail as new used the default identity instead of the original one
-    pull_requests: [11432]
-    issues: [11348]
-    tag: fixed
-    group: 1
-  - note: With a hardware keyboard the focus could not leave To, Cc or Bcc
-    short_note: With a hardware keyboard the focus could not leave To, Cc or Bcc
-    pull_requests: [11413, 11416]
-    issues: [8231]
-    tag: fixed
-    group: 1
   - note: Thunderbird could crash when adding an attachment to a message using the camera
-    short_note: Thunderbird could crash when adding an attachment to a message using the camera
+    short_note: Thunderbird could crash when adding attachment to message using camera
     pull_requests: [11309]
     issues: [11296]
     tag: fixed
     group: 1
+  - note: Save All incorrectly saved each attachment using the content of the last file
+    short_note: Save All saved each attachment using content of last file
+    pull_requests: [10967]
+    issues: [10965]
+    tag: fixed
+    group: 1
+  - note: Editing queued mail as new used the default identity instead of the original one
+    pull_requests: [11432]
+    issues: [11348]
+    tag: fixed
+    group: 1
+  - note: QR code scanner failed to open when no accounts were configured
+    pull_requests: [11460]
+    issues: [11276]
+    tag: fixed
+    group: 1
   - note: Unsupported QR codes did not display feedback after scanning
-    short_note: Unsupported QR codes did not display feedback after scanning
     pull_requests: [11248]
     issues: [8520]
     tag: fixed
     group: 1
-  - note: Save All incorrectly saved each attachment using the content of the last file
-    short_note: Save All incorrectly saved each attachment using the content of the last file
-    pull_requests: [10967]
-    issues: [10965]
+  - note: With a hardware keyboard the focus could not leave To, Cc or Bcc
+    pull_requests: [11413, 11416]
+    issues: [8231]
     tag: fixed
     group: 1
