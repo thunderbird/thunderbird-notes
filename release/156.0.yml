@@ -37,7 +37,7 @@ notes:
     bugs: [2066092]
 
   # Changed
-  - note: Preference '`mail.offer_experimental_features` renamed to `mail.experimental_features_settings.enabled`'
+  - note: Preference `mail.offer_experimental_features` renamed to `mail.experimental_features_settings.enabled`
     tag: changed
     bugs: [2066216]
   - note: Thundermail built-in add-on updated to v2.0.11
