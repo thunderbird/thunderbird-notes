@@ -93,9 +93,6 @@ notes:
   - note: Users could not set up custom OAuth for Exchange accounts
     tag: fixed
     bugs: [2069098]
-  - note: Empty filter search values matched every message
-    tag: fixed
-    bugs: [2068847]
   - note: Pressing Enter on Windows system tray icon did not restore Thunderbird window
     tag: fixed
     bugs: [2064593]
