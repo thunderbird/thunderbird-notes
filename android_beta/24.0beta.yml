@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '24.0b1'
       release_date: '2026-09-08'
+    - version: '24.0b2'
+      release_date: '2026-09-14'
 
 notes:
   # Beta 1
@@ -86,3 +89,18 @@ notes:
     issues: [8231]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # Fixed
+  - note: Attachment filenames with non-ASCII characters were incorrectly decoded and saved
+    short_note: Attachment filenames with non-ASCII characters were incorrectly decoded and saved
+    pull_requests: [11539]
+    issues: [11508]
+    tag: fixed
+    group: 2
+  - note: HTML signature text could disappear after rotating the screen
+    short_note: HTML signature text could disappear after rotating the screen
+    pull_requests: [11541]
+    issues: [11528]
+    tag: fixed
+    group: 2
