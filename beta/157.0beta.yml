@@ -1,0 +1,106 @@
+release:
+  release_date: '2026-09-14'
+  text: |
+    **These notes apply to Thunderbird version 157 beta 1 released September 14, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
+
+    - Windows: Windows 10 or later
+    - Mac: macOS 10.15 or later
+    - Linux: GTK+ 3.14 or higher
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Enterprise policy `DisableChat` disables Thunderbird Chat functionality
+    tag: new
+    bugs: [2068701]
+  - note: Enterprise policy `DisableFileLink` disables Thunderbird FileLink functionality
+    tag: new
+    bugs: [2068705]
+
+  # Changed
+  - note: Preference `mailnews.headers.minNumHeaders` has been removed
+    tag: changed
+    bugs: [2048450]
+  - note: Allow viewing remote content in OpenPGP messages encrypted with integrity protection
+    tag: changed
+    bugs: [1994709]
+  - note: RNP command-line utilities are no longer included with Thunderbird
+    tag: changed
+    bugs: [2068130]
+  - note: IMAP/POP manual config port field is now optional
+    tag: changed
+    bugs: [2060646]
+
+  # Fixed
+  - note: Ctrl+Shift+K could fail to open the Quick Filter UI
+    tag: fixed
+    bugs: [2062942]
+  - note: Status bar could remain active and cause 100% CPU usage after activity ended
+    tag: fixed
+    bugs: [1993760]
+  - note: OpenPGP discovery failed to find replacement keys after a key was revoked
+    tag: fixed
+    bugs: [2053895]
+  - note: Valid RSA OpenPGP keys could be rejected, preventing encryption
+    tag: fixed
+    bugs: [2068089]
+  - note: Sent messages could silently fail to save to the IMAP Sent folder
+    tag: fixed
+    bugs: [2053691]
+  - note: Sending message did not fail gracefully with malformed references header
+    tag: fixed
+    bugs: [2069136]
+  - note: Thunderbird could hang when waiting for IMAP server greeting during account setup
+    tag: fixed
+    bugs: [2028760]
+  - note: Custom OAuth Endpoint Host incorrectly required a full URL instead of a domain
+    tag: fixed
+    bugs: [2069625]
+  - note: Message filters could falsely match when evaluating search term failures
+    tag: fixed
+    bugs: [2070153]
+  - note: CardDAV address books could fail to sync when no password prompt was needed
+    tag: fixed
+    bugs: [2063886]
+  - note: Yahoo emails appeared blank with MIME handlers disabled via `mailnews.display.disallow_mime_handlers`
+    tag: fixed
+    bugs: [2067847]
+  - note: Pending moves within the same IMAP account could make messages disappear
+    tag: fixed
+    bugs: [624082]
+  - note: Inline images could disappear after editing and resaving drafts
+    tag: fixed
+    bugs: [2048872]
+  - note: SMTP OAuth2 failed when large access token exceeded command line length limit
+    tag: fixed
+    bugs: [2051122]
+  - note: Gmail OAuth2 authentication could intermittently fail on Windows
+    tag: fixed
+    bugs: [2063816]
+  - note: Exchange NTLM authentication failed when updated passwords were not saved
+    tag: fixed
+    bugs: [2067736]
+  - note: SMTP AUTH LOGIN could fail after username challenges and close the connection
+    tag: fixed
+    bugs: [2068867]
+  - note: `AppUpdatePin` policy did not prevent Thunderbird from updating beyond pinned version
+    tag: fixed
+    bugs: [1910603]
+  - note: Recurring events could appear after their configured end date
+    tag: fixed
+    bugs: [1917314]
+  - note: CalDAV task body could remain outdated after syncing changes from another client
+    tag: fixed
+    bugs: [1939379]
+  - note: CalDAV invitations could fail when accepted before the calendar synced
+    tag: fixed
+    bugs: [1717401]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1961222, 1991329, 2020761, 2066883, 2069277]
