@@ -89,7 +89,7 @@ notes:
   - note: SMTP AUTH LOGIN could fail after username challenges and close the connection
     tag: fixed
     bugs: [2068867]
-  - note: `AppUpdatePin` policy did not prevent Thunderbird from updating beyond pinned version
+  - note: '`AppUpdatePin` policy did not prevent Thunderbird from updating beyond pinned version'
     tag: fixed
     bugs: [1910603]
   - note: Recurring events could appear after their configured end date
