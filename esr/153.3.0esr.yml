@@ -32,5 +32,8 @@ notes:
   - note: Manual Get Messages failed after startup until toggling offline mode
     tag: fixed
     bugs: [2057431]
+  - note: Thunderbird could crash on shutdown while waiting for OAuth2 password entry
+    tag: fixed
+    bugs: [1524247]
   - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird153.3)'
     tag: fixed
