@@ -1,7 +1,7 @@
 release:
   release_date: '2026-09-14'
   text: |
-    **These notes apply to Thunderbird version 157 beta 1 released September 14, 2026.**
+    **These notes apply to Thunderbird version 157 beta 2 released September 16, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/154.0beta/system-requirements/)
 
@@ -13,6 +13,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -104,3 +105,10 @@ notes:
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1961222, 1991329, 2020761, 2066883, 2069277]
+
+  # Beta 2
+  # Changed
+  - note: Thundermail built-in add-on updated to v2.0.13
+    tag: changed
+    bugs: [2071403]
+    group: 2
