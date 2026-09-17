@@ -16,7 +16,7 @@ release:
   system_requirements: |
     ## Windows
     - Windows 10 or later
-    - 32-bit and 64-bit
+    - 32-bit or 64-bit
 
     ### Windows Recommended Hardware
     - 1GHz or faster Intel/AMD compatible processor
