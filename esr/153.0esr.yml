@@ -16,6 +16,7 @@ release:
   system_requirements: |
     ## Windows
     - Windows 10 or later
+    - 32-bit and 64-bit
 
     ### Windows Recommended Hardware
     - 1GHz or faster Intel/AMD compatible processor
@@ -37,8 +38,9 @@ release:
     ---
 
     ## GNU/Linux
-    ### Software Requirements
+    - 64-bit only
 
+    ### Software Requirements
     *Please note that GNU/Linux distributors may provide packages for your distribution which have
     different requirements.*
 
