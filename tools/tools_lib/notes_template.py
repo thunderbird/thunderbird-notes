@@ -34,9 +34,9 @@ TMPL_153_TEXT = """**For help and a quick start on Thunderbird 153, see
 
 **System Requirements:** [Details](/en-US/thunderbird/153.0esr/system-requirements/)
 
-- Windows: Windows 10 or later (32-bit or 64-bit)
+- Windows: Windows 10 or later
 - Mac: macOS 10.15 or later
-- Linux: GTK+ 3.14 or higher (64-bit only)
+- Linux: GTK+ 3.14 or higher (64-bit)
 """
 
 TMPL_140_TEXT = """**For help and a quick start on Thunderbird 140, see
