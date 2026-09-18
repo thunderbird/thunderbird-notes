@@ -33,10 +33,6 @@ TMPL_153_TEXT = """**For help and a quick start on Thunderbird 153, see
 [What’s New in Thunderbird 153](https://updates.thunderbird.net/thunderbird/153.0/whatsnew/).**
 
 **System Requirements:** [Details](/en-US/thunderbird/153.0esr/system-requirements/)
-
-- Windows: Windows 10 or later
-- Mac: macOS 10.15 or later
-- Linux: GTK+ 3.14 or higher (64-bit)
 """
 
 TMPL_140_TEXT = """**For help and a quick start on Thunderbird 140, see
@@ -94,17 +90,9 @@ maintain and improve.</p>
 TMPL_BETA_TEXT = """**These notes apply to Thunderbird version {ver_major} beta 1 released {human_date}.**
 
 **System Requirements:** [Details](/en-US/thunderbird/{ver_major}.0beta/system-requirements/)
-
-- Windows: Windows 10 or later
-- Mac: macOS 10.15 or later
-- Linux: GTK+ 3.14 or higher
 """
 
 TMPL_RELEASE_TEXT = """**System Requirements:** [Details](/en-US/thunderbird/{ver_major}.0/system-requirements/)
-
-- Windows: Windows 10 or later
-- Mac: macOS 10.15 or later
-- Linux: GTK+ 3.14 or higher
 """
 
 TMPL_RELEASES_TEXT = {

@@ -3,10 +3,6 @@ release:
   text: |
     **System Requirements:** [Details](/en-US/thunderbird/154.0/system-requirements/)
 
-    - Windows: Windows 10 or later
-    - Mac: macOS 10.15 or later
-    - Linux: GTK+ 3.14 or higher
-
   import_system_requirements: 153.0esr
 
 notes:
