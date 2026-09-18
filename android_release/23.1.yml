@@ -1,0 +1,16 @@
+release:
+  release_date: '2026-09-21'
+  text: >
+    **These notes apply to Thunderbird for Android version 23.1 released September 21th, 2026.**
+
+  releases:
+    - version: '23.1'
+      release_date: '2026-09-21'
+
+notes:
+  # Fixed
+  - note: Attachment filenames with non-ASCII characters were incorrectly decoded and saved
+    short_note: Attachment filenames with non-ASCII characters were incorrectly decoded and saved
+    pull_requests: [11540]
+    issues: [11508]
+    tag: fixed
