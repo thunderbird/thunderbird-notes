@@ -1,0 +1,12 @@
+release:
+  release_date: '2026-09-21'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/156.0/system-requirements/)
+
+  import_system_requirements: 153.0esr
+
+notes:
+  # Fixed
+  - note: Thunderbird could crash when saving a message
+    tag: fixed
+    bugs: [2068022]
