@@ -1,7 +1,7 @@
 release:
   release_date: '2026-09-14'
   text: |
-    **These notes apply to Thunderbird version 157 beta 3 released September 21, 2026.**
+    **These notes apply to Thunderbird version 157 beta 4 released September 23, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/157.0beta/system-requirements/)
 
@@ -11,6 +11,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -116,3 +117,14 @@ notes:
     tag: changed
     bugs: [2071989]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Account Hub account creation could fail with malformed URI
+    tag: fixed
+    bugs: [2069949]
+    group: 4
+  - note: Message list could show the wrong sender for messages
+    tag: fixed
+    bugs: [2069089]
+    group: 4
