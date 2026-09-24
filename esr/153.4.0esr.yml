@@ -24,9 +24,6 @@ notes:
   - note: Ctrl+Shift+K could fail to open the Quick Filter UI
     tag: fixed
     bugs: [2062942]
-  - note: Message list could show the wrong sender for messages
-    tag: fixed
-    bugs: [2069089]
   - note: Nested S/MIME signed parts could fail to render
     tag: fixed
     bugs: [2062971]
