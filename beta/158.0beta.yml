@@ -1,0 +1,98 @@
+release:
+  release_date: '2026-09-28'
+  text: |
+    **These notes apply to Thunderbird version 158 beta 1 released September 28, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/158.0beta/system-requirements/)
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # Changed
+  - note: Quick filter responsiveness has been improved
+    tag: changed
+    bugs: [2074333]
+  - note: ExtensionSettings policy now installs add-ons from update_url when install_url not set
+    tag: changed
+    bugs: [2068266]
+
+  # Fixed
+  - note: Copy Link Location only copied detached attachment filenames instead of full paths
+    tag: fixed
+    bugs: [2065097]
+  - note: Thunderbird could crash while performing a Body search
+    tag: fixed
+    bugs: [2073247]
+  - note: Troubleshooting falsely reported crash reports were not configured when available
+    tag: fixed
+    bugs: [2070966]
+  - note: Switching to Unified Folders could leave All Folders enabled and not change view
+    tag: fixed
+    bugs: [2041038]
+  - note: 'Archived Inbox folders ignored localized names and appeared as "INBOX"'
+    tag: fixed
+    bugs: [2062951]
+  - note: OpenPGP key management had unlocking, handle leak, and protection state issues
+    tag: fixed
+    bugs: [2070681]
+  - note: OpenPGP backup password text could not be copied and context menu was transparent
+    tag: fixed
+    bugs: [2071716]
+  - note: Quick Filter failed to match accented names when searching without accents
+    tag: fixed
+    bugs: [1839085]
+  - note: Holding Ctrl+Enter could unintentionally confirm the send prompt and send duplicates
+    tag: fixed
+    bugs: [620853]
+  - note: Plain-text inline forwards omitted signatures placed below the quote
+    tag: fixed
+    bugs: [2063939]
+  - note: Remote content exceptions without a scheme only applied to HTTP, not HTTPS
+    tag: fixed
+    bugs: [2071641]
+  - note: Remote content exceptions incorrectly allowed wildcard hostnames like *.example.com
+    tag: fixed
+    bugs: [2071666]
+  - note: Saved CalDAV/CardDAV credentials could be forgotten after restarting Thunderbird
+    tag: fixed
+    bugs: [1991785]
+  - note: CardDAV setup failed without prompting for a password
+    tag: fixed
+    bugs: [2059469]
+  - note: CardDAV address book sync failed to fetch newly added contacts
+    tag: fixed
+    bugs: [2064336]
+  - note: CardDAV updates could corrupt vCard REV timestamps
+    tag: fixed
+    bugs: [2072471]
+  - note: CardDAV discovery could fail on valid multi-status responses with mixed status codes
+    tag: fixed
+    bugs: [1973205]
+  - note: SMTP Kerberos authentication failed on Linux with STARTTLS
+    tag: fixed
+    bugs: [1921163]
+  - note: POP accounts repeatedly showed connection errors when Thunderbird started offline
+    tag: fixed
+    bugs: [2071585]
+  - note: Matrix SSO with Save Token disabled reopened the login flow indefinitely
+    tag: fixed
+    bugs: [2042821]
+  - note: RSS filtering could lose tags and stall processing of later feed items
+    tag: fixed
+    bugs: [2064660]
+  - note: CalDAV password prompts did not identify the username or calendar
+    tag: fixed
+    bugs: [1994131]
+  - note: Calendar event edits could fail with localization error in the event dialog
+    tag: fixed
+    bugs: [2071295]
+  - note: Updated calendar credentials were not saved from the authentication prompt
+    tag: fixed
+    bugs: [2007933]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1872515, 2063445, 2063446, 2063448, 2063449, 2067836, 2068174, 2068175, 2068722,
+      2068723, 2068726, 2069581, 2069906, 2070843, 2071882]
