@@ -1,7 +1,7 @@
 release:
   release_date: '2026-09-28'
   text: |
-    **These notes apply to Thunderbird version 158 beta 1 released September 28, 2026.**
+    **These notes apply to Thunderbird version 158 beta 2 released September 30, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/158.0beta/system-requirements/)
 
@@ -9,6 +9,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # Changed
@@ -96,3 +97,10 @@ notes:
     tag: fixed
     bugs: [1872515, 2063445, 2063446, 2063448, 2063449, 2067836, 2068174, 2068175, 2068722,
       2068723, 2068726, 2069581, 2069906, 2070843, 2071882]
+
+  # Beta 2
+  # Fixed
+  - note: EWS/Graph messages could crash Thunderbird when handling relative URL fragments
+    tag: fixed
+    bugs: [2075061]
+    group: 2
