@@ -1,0 +1,12 @@
+release:
+  release_date: '2026-10-01'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/157.0.1/system-requirements/)
+
+  import_system_requirements: 153.0esr
+
+notes:
+  # Fixed
+  - note: EWS/Graph messages could crash Thunderbird when handling relative URL fragments
+    tag: fixed
+    bugs: [2075061]
