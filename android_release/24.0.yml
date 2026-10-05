@@ -1,0 +1,77 @@
+release:
+  release_date: '2026-10-05'
+  text: >
+    **These notes apply to Thunderbird for Android version 24.0 released October 5th, 2026.**
+
+  releases:
+    - version: '24.0'
+      release_date: '2026-10-05'
+
+notes:
+  # New
+  - note: Signatures can be formatted as HTML for individual identities
+    short_note: Signatures support HTML
+    pull_requests: [10876]
+    issues: [11405]
+    tag: new
+  - note: Reply prompts users to choose Reply or Reply All when both are applicable
+    short_note: Reply offers Reply or Reply All
+    pull_requests: [11401]
+    issues: [7055]
+    tag: new
+
+  # Changed
+  - note: Long account names are resized to fit within two lines in the account drawer
+    short_note: Long account names fit in two lines
+    pull_requests: [11431]
+    issues: [10229]
+    tag: changed
+
+  # Fixed
+  - note: Selected compose text was invisible in light theme due to white highlighting
+    short_note: Compose selection invisible in light theme
+    pull_requests: [11301]
+    issues: [10974]
+    tag: fixed
+  - note: Status bar icons became unreadable when selecting messages in light theme
+    short_note: Status icons unreadable when selecting messages
+    pull_requests: [11410]
+    issues: [11305]
+    tag: fixed
+  - note: Recipient expander would not collapse after editing message subject or body
+    short_note: Recipient expander failed to collapse after edit
+    pull_requests: [11458]
+    issues: [11375]
+    tag: fixed
+  - note: Thunderbird could crash when adding an attachment to a message using the camera
+    short_note: Camera attachments could crash the app
+    pull_requests: [11309]
+    issues: [11296]
+    tag: fixed
+  - note: Save All incorrectly saved each attachment using the content of the last file
+    short_note: Save All saved each attachment with same file content
+    pull_requests: [10967]
+    issues: [10965]
+    tag: fixed
+  - note: HTML signature text could disappear after rotating the screen
+    short_note: HTML signatures could disappear after rotation
+    pull_requests: [11541]
+    issues: [11528]
+    tag: fixed
+  - note: Editing as new used the default identity instead of the original one for queued mail
+    short_note: Edit as new used wrong identity for queued mail
+    pull_requests: [11432]
+    issues: [11348]
+    tag: fixed
+  - note: QR code scanner failed to open when no accounts were configured
+    pull_requests: [11460]
+    issues: [11276]
+    tag: fixed
+  - note: Unsupported QR codes did not display feedback after scanning
+    pull_requests: [11248]
+    issues: [8520]
+    tag: fixed
+  - note: With a hardware keyboard the focus could not leave To, Cc or Bcc
+    pull_requests: [11413, 11416]
+    issues: [8231]
+    tag: fixed
