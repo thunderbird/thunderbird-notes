@@ -1,0 +1,78 @@
+release:
+  release_date: '2026-10-05'
+  text: >
+    **These notes apply to Thunderbird for Android version 25.0 betas,
+    first released October 5th, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '25.0b1'
+      release_date: '2026-10-05'
+
+notes:
+  # Beta 1
+  # New
+  - note: New funding appeal helps keep Thunderbird alive!
+    short_note: New funding appeal helps keep Thunderbird alive!
+    pull_requests: [11583, 11589, 11629, 11641]
+    issues: [11526, 11547, 11580, 11588, 11615, 11620]
+    thunderbird_only: true
+    tag: new
+    group: 1
+  - note: Feature flags can be updated remotely without requiring an app update
+    short_note: Feature flags can be updated without app updates
+    pull_requests: [11645]
+    issues: [11456]
+    tag: new
+    group: 1
+
+  # Fixed
+  - note: Deleted email notifications could reappear or remain in the notification shade
+    short_note: Deleted email notifications could reappear
+    pull_requests: [11587]
+    issues: [10936]
+    tag: fixed
+    group: 1
+  - note: HTML signature text could disappear after rotating the screen
+    short_note: HTML signature text disappeared after rotation
+    pull_requests: [11538, 11564]
+    issues: [11528, 11555]
+    tag: fixed
+    group: 1
+  - note: Some HTML drafts hid attachments while editing and could permanently lose them on save
+    short_note: HTML drafts could hide or lose attachments
+    pull_requests: [11558]
+    issues: [954]
+    tag: fixed
+    group: 1
+  - note: Add to contacts crashed the app when no Contacts app was installed
+    short_note: Add to contacts crashed without a Contacts app
+    pull_requests: [11569]
+    issues: [11548]
+    tag: fixed
+    group: 1
+  - note: Sending large PGP-encrypted attachments showed no progress during encryption
+    short_note: Large PGP attachments showed no encryption progress
+    pull_requests: [11436]
+    issues: [5763]
+    tag: fixed
+    group: 1
+  - note: Account drawer behaved inconsistently when reselecting an account or tapping its icon
+    short_note: Account drawer could behave inconsistently
+    pull_requests: [11491]
+    issues: [11461]
+    tag: fixed
+    group: 1
+  - note: Account drawer controls blocked accounts and folders on small displays
+    short_note: Acccount drawer controls blocked content on small displays
+    pull_requests: [11488]
+    issues: [11476]
+    tag: fixed
+    group: 1
+  - note: Sort menu indicator (bullet point) was duplicated each time the menu was opened
+    pull_requests: [11594]
+    issues: [11274]
+    tag: fixed
+    group: 1
