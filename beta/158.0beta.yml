@@ -1,7 +1,7 @@
 release:
-  release_date: '2026-10-05'
+  release_date: '2026-10-07'
   text: |
-    **These notes apply to Thunderbird version 158 beta 3 released October 5, 2026.**
+    **These notes apply to Thunderbird version 158 beta 4 released October 7, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/158.0beta/system-requirements/)
 
@@ -11,6 +11,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # Changed
@@ -111,3 +112,9 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Right-clicking inline images zoomed them instead of opening the context menu
+    tag: fixed
+    group: 4
