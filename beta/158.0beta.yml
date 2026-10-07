@@ -1,7 +1,7 @@
 release:
   release_date: '2026-10-07'
   text: |
-    **These notes apply to Thunderbird version 158 beta 4 released October 7, 2026.**
+    **These notes apply to Thunderbird version 158 beta 5 released October 7, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/158.0beta/system-requirements/)
 
@@ -12,6 +12,7 @@ release:
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
     - 'Fixed in beta 4'
+    - 'Fixed in beta 5'
 
 notes:
   # Changed
@@ -118,3 +119,9 @@ notes:
   - note: Right-clicking inline images zoomed them instead of opening the context menu
     tag: fixed
     group: 4
+
+  # Beta 5
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 5
