@@ -90,9 +90,9 @@ notes:
   - note: Updated calendar credentials were not saved from the authentication prompt
     tag: fixed
     bugs: [2007933]
-  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird158)'
-    tag: fixed
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1872515, 2063445, 2063446, 2063448, 2063449, 2067836, 2068174, 2068175, 2068722,
       2068723, 2068726, 2069581, 2069906, 2070843, 2071882]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird158)'
+    tag: fixed
