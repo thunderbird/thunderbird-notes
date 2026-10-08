@@ -1,18 +1,9 @@
 release:
-  release_date: '2026-10-07'
+  release_date: '2026-10-13'
   text: |
-    **These notes apply to Thunderbird version 158 beta 5 released October 7, 2026.**
+    **System Requirements:** [Details](/en-US/thunderbird/158.0/system-requirements/)
 
-    **System Requirements:** [Details](/en-US/thunderbird/158.0beta/system-requirements/)
-
-  import_system_requirements: 153.0beta
-
-  groups:
-    - ' '
-    - 'Fixed in beta 2'
-    - 'Fixed in beta 3'
-    - 'Fixed in beta 4'
-    - 'Fixed in beta 5'
+  import_system_requirements: 153.0esr
 
 notes:
   # Changed
@@ -33,6 +24,9 @@ notes:
   - note: Troubleshooting falsely reported crash reports were not configured when available
     tag: fixed
     bugs: [2070966]
+  - note: Right-clicking inline images zoomed them instead of opening the context menu
+    tag: fixed
+    bugs: [2075393]
   - note: Switching to Unified Folders could leave All Folders enabled and not change view
     tag: fixed
     bugs: [2041038]
@@ -96,33 +90,9 @@ notes:
   - note: Updated calendar credentials were not saved from the authentication prompt
     tag: fixed
     bugs: [2007933]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird158)'
+    tag: fixed
   - note: Visual and UX improvements
     tag: fixed
     bugs: [1872515, 2063445, 2063446, 2063448, 2063449, 2067836, 2068174, 2068175, 2068722,
       2068723, 2068726, 2069581, 2069906, 2070843, 2071882]
-
-  # Beta 2
-  # Fixed
-  - note: EWS/Graph messages could crash Thunderbird when handling relative URL fragments
-    tag: fixed
-    bugs: [2075061]
-    group: 2
-
-  # Beta 3
-  # Changed
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
-    group: 3
-
-  # Beta 4
-  # Fixed
-  - note: Right-clicking inline images zoomed them instead of opening the context menu
-    tag: fixed
-    bugs: [2075393]
-    group: 4
-
-  # Beta 5
-  # Changed
-  - note: There are no Thunderbird changes requiring release notes in this release
-    tag: changed
-    group: 5
