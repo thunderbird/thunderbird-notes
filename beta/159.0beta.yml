@@ -1,0 +1,121 @@
+release:
+  release_date: '2026-10-12'
+  text: |
+    **These notes apply to Thunderbird version 159 beta 1 released October 12, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/159.0beta/system-requirements/)
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Linux tray icons indicate unread mail and show its count in the tooltip
+    tag: new
+    bugs: [1946946]
+  - note: Graph calendars are auto-detected on new account creation
+    tag: new
+    bugs: [2052324]
+
+  # Fixed
+  - note: Non-ASCII IMAP tags could exceed server length limits and be rejected
+    tag: fixed
+    bugs: [2073409]
+  - note: Zoom Text Only option did not work in the View menu
+    tag: fixed
+    bugs: [2075594]
+  - note: Multiple messages were printed even after canceling the print dialog
+    tag: fixed
+    bugs: [2076335]
+  - note: Save All and Detach All failed for attachments with invalid filename paths
+    tag: fixed
+    bugs: [2076435]
+  - note: First Wrap Long Lines toggle did nothing in View Source
+    tag: fixed
+    bugs: [2076654]
+  - note: POP3 NTLM authentication failed because the password was sent incorrectly
+    tag: fixed
+    bugs: [2076742]
+  - note: Search Messages menu option was enabled but did not work for saved search folders
+    tag: fixed
+    bugs: [1923075]
+  - note: Quick Find shortcut (/) only worked after Ctrl+F was used once
+    tag: fixed
+    bugs: [2067593]
+  - note: Unicode email addresses could hide different Reply-To destinations
+    tag: fixed
+    bugs: [2076034]
+  - note: Newsgroups with UTF-8 names could display duplicate or incorrect messages
+    tag: fixed
+    bugs: [2068200]
+  - note: View > Folders did nothing in Calendar and Tasks tabs
+    tag: fixed
+    bugs: [2078239]
+  - note: Global search results did not display recipients in the To field
+    tag: fixed
+    bugs: [2075316]
+  - note: Forwarding malformed MIME messages could omit attachments
+    tag: fixed
+    bugs: [548507]
+  - note: Retry and Save Locally failed after a sent-folder copy error
+    tag: fixed
+    bugs: [2068501]
+  - note: Closing an unmodified compose window prompted to save when using Body Text
+    tag: fixed
+    bugs: [2075909]
+  - note: MP4 attachments could be truncated when forwarding messages
+    tag: fixed
+    bugs: [2077839]
+  - note: Inline images disappeared when editing local or POP messages as new
+    tag: fixed
+    bugs: [2078784]
+  - note: EWS/Graph accounts could fail when outgoing server settings were incomplete
+    tag: fixed
+    bugs: [2067724]
+  - note: Account Hub Edit Configuration did nothing for Exchange and Graph accounts
+    tag: fixed
+    bugs: [2075408]
+  - note: First message filter condition could not be removed even when others existed
+    tag: fixed
+    bugs: [2070351]
+  - note: CardDAV address book sync stopped when the server rejected an invalid sync token
+    tag: fixed
+    bugs: [1912673]
+  - note: CardDAV passwords were not saved, causing repeated login prompts after restart
+    tag: fixed
+    bugs: [2030007]
+  - note: Malformed message database files could cause excessive CPU usage
+    tag: fixed
+    bugs: [2077833]
+  - note: IMAP namespace root folders were inaccessible due to duplicated folder names
+    tag: fixed
+    bugs: [2005701]
+  - note: Excessive Microsoft Graph requests caused throttling and delayed message display
+    tag: fixed
+    bugs: [2075389]
+  - note: SMTP addresses with line breaks could inject unintended commands
+    tag: fixed
+    bugs: [2075922]
+  - note: POP3 sessions remained active after canceling the password prompt
+    tag: fixed
+    bugs: [2076749]
+  - note: Remote content could load in news articles with missing message headers
+    tag: fixed
+    bugs: [2079222]
+  - note: RSS feeds could inject arbitrary Message-ID and References headers
+    tag: fixed
+    bugs: [2077741]
+  - note: Large ICS calendar files could exhaust memory and freeze Thunderbird
+    tag: fixed
+    bugs: [2058953]
+  - note: CalDAV calendars could stop syncing after a network error until restart
+    tag: fixed
+    bugs: [2076473]
+  - note: Yearly recurring events with multiple times per day only appeared at the first time
+    tag: fixed
+    bugs: [2074745]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [2075076, 2078240, 2079609, 2079622]
