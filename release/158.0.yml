@@ -21,6 +21,9 @@ notes:
   - note: Thunderbird could crash while performing a Body search
     tag: fixed
     bugs: [2073247]
+  - note: Attach File dialog failed to open when the previously used folder was unavailable
+    tag: fixed
+    bugs: [2077590]
   - note: Troubleshooting falsely reported crash reports were not configured when available
     tag: fixed
     bugs: [2070966]
