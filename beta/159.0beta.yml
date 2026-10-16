@@ -1,7 +1,7 @@
 release:
-  release_date: '2026-10-14'
+  release_date: '2026-10-19'
   text: |
-    **These notes apply to Thunderbird version 159 beta 2 released October 14, 2026.**
+    **These notes apply to Thunderbird version 159 beta 3 released October 19, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/159.0beta/system-requirements/)
 
@@ -10,6 +10,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -126,3 +127,10 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 2
+
+  # Beta 3
+  # Fixed
+  - note: Dialogs had transparent backgrounds with third party themes
+    tag: fixed
+    bugs: [2077969]
+    group: 3
