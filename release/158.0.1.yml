@@ -1,0 +1,14 @@
+release:
+  release_date: '2026-10-20'
+  text: |
+    **System Requirements:** [Details](/en-US/thunderbird/158.0.1/system-requirements/)
+
+  import_system_requirements: 153.0esr
+
+notes:
+  # Fixed
+  - note: Dialogs had transparent backgrounds with third party themes
+    tag: fixed
+    bugs: [2077969]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird158.0.1)'
+    tag: fixed
