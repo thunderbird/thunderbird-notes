@@ -6,10 +6,13 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '25.0b1'
       release_date: '2026-10-05'
+    - version: '25.0b2'
+      release_date: '2026-10-19'
 
 notes:
   # Beta 1
@@ -76,3 +79,20 @@ notes:
     issues: [11274]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # Changed
+  - note: Remote Feature Flags temporarily disabled to investigate startup freeze on splash screen
+    short_note: Remote Feature Flags temporarily disabled to investigate startup freeze on splash screen
+    pull_requests: [11760]
+    issues: [11759]
+    tag: changed
+    group: 2
+
+  # Fixed
+  - note: Message composer could crash when rotating the screen or editing a message as new
+    short_note: Message composer could crash when rotating screen or editing message as new
+    pull_requests: [11758]
+    issues: [11302]
+    tag: fixed
+    group: 2
