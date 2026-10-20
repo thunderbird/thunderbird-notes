@@ -142,3 +142,7 @@ notes:
     tag: fixed
     bugs: [2071123]
     group: 4
+  - note: Account Hub failed to discover CalDAV calendars for OAuth2 accounts
+    tag: fixed
+    bugs: [2082770]
+    group: 4
