@@ -1,7 +1,7 @@
 release:
   release_date: '2026-10-19'
   text: |
-    **These notes apply to Thunderbird version 159 beta 3 released October 19, 2026.**
+    **These notes apply to Thunderbird version 159 beta 4 released October 21, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/159.0beta/system-requirements/)
 
@@ -11,6 +11,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
 notes:
   # New
@@ -134,3 +135,10 @@ notes:
     tag: fixed
     bugs: [2077969]
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Thunderbird could hang on startup when restoring IMAP message and PDF tabs
+    tag: fixed
+    bugs: [2071123]
+    group: 4
