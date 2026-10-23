@@ -1,0 +1,126 @@
+release:
+  release_date: '2026-10-26'
+  text: |
+    **These notes apply to Thunderbird version 160 beta 1 released October 26, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/160.0beta/system-requirements/)
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Ctrl+A selects all filters in the Message Filters dialog
+    tag: new
+    bugs: [1739461]
+
+  # Changed
+  - note: OAuth sign-in windows now explain when blocked cookies may prevent sign-in
+    tag: changed
+    bugs: [1174797]
+  - note: Office 365 account setup no longer automatically offers EWS configuration
+    tag: changed
+    bugs: [2078908]
+
+  # Fixed
+  - note: The macOS Dock badge could omit unread counts with multiple accounts
+    tag: fixed
+    bugs: [2052415]
+  - note: Opening a window could cause Thunderbird to crash
+    tag: fixed
+    bugs: [2083354]
+  - note: POP3 and news messages with LF line endings could be parsed incorrectly
+    tag: fixed
+    bugs: [2080091]
+  - note: The option to create a mailing list was missing from File > New
+    tag: fixed
+    bugs: [1976138]
+  - note: Restoring toolbar defaults unexpectedly closed the customization dialog
+    tag: fixed
+    bugs: [2071834]
+  - note: Thunderbird did not warn before repairing folders with offline message storage
+    tag: fixed
+    bugs: [1099275]
+  - note: Dragging multiple selected folders moved only one folder
+    tag: fixed
+    bugs: [2076665]
+  - note: Renaming or moving folders could remove them from saved searches
+    tag: fixed
+    bugs: [705080]
+  - note: Replies to saved messages could be blocked despite a valid Reply-To address
+    tag: fixed
+    bugs: [1805878]
+  - note: The spelling dictionary menu was empty in the Subject field
+    tag: fixed
+    bugs: [2080277]
+  - note: Edit as New Message did not work for some news messages
+    tag: fixed
+    bugs: [2080645]
+  - note: Address book setup returned to mail setup when no mail account existed
+    tag: fixed
+    bugs: [2063887]
+  - note: Exchange autodiscovery failed when redirected to another email address
+    tag: fixed
+    bugs: [2080111]
+  - note: Empty message filter conditions could cause incorrect matches
+    tag: fixed
+    bugs: [1896015]
+  - note: Address book filter conditions failed to match messages with missing addresses
+    tag: fixed
+    bugs: [391717]
+  - note: Address book website fields incorrectly prefixed non-HTTP links with HTTPS
+    tag: fixed
+    bugs: [2077454]
+  - note: Some CardDAV contacts with multiline street addresses appeared empty
+    tag: fixed
+    bugs: [2080544]
+  - note: CardDAV contacts were saved in a format unsupported by some servers
+    tag: fixed
+    bugs: [2080552]
+  - note: Photos saved in vCard 3.0 contacts could fail to appear in other clients
+    tag: fixed
+    bugs: [2080554]
+  - note: Processing some sender addresses could freeze new mail notifications
+    tag: fixed
+    bugs: [2081723]
+  - note: IMAP retention settings could delete newer messages instead of older ones
+    tag: fixed
+    bugs: [765775]
+  - note: Message database updates could cause Thunderbird to crash
+    tag: fixed
+    bugs: [2080084]
+  - note: IMAP namespace root folders could be missing or have incorrect permissions
+    tag: fixed
+    bugs: [2078247]
+  - note: Graph account setup failed for tenants without a SharePoint license
+    tag: fixed
+    bugs: [2079290]
+  - note: Various News Reader improvements
+    bugs: [2079787, 2080093, 2080426, 2081935, 2083452]
+  - note: Various Feed Reader improvements
+    tag: fixed
+    bugs: [2077777, 2077874, 2077903, 2077916, 2077934, 2077964, 2079403]
+  - note: Delete Event remained enabled for read-only calendars in the Today Pane
+    tag: fixed
+    bugs: [1379931]
+  - note: Attendance options were missing for some recurring event series
+    tag: fixed
+    bugs: [1775061]
+  - note: The task list stopped updating after toolbar customization
+    tag: fixed
+    bugs: [2071924]
+  - note: CalDAV reminders could not be dismissed or snoozed
+    tag: fixed
+    bugs: [1831059]
+  - note: Some webcal calendar subscriptions were incorrectly blocked
+    tag: fixed
+    bugs: [1965151]
+  - note: Invalid ICS calendar files could be overwritten when events were changed
+    tag: fixed
+    bugs: [2081103]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1137147, 1542978, 2065356, 2068724, 2070054, 2070052, 2076478, 2076486, 2077553,
+      2077930, 2081014, 2083102]
