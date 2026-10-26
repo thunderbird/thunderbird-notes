@@ -98,6 +98,7 @@ notes:
     tag: fixed
     bugs: [2079290]
   - note: Various News Reader improvements
+    tag: fixed
     bugs: [2079787, 2080093, 2080426, 2081935, 2083452]
   - note: Various Feed Reader improvements
     tag: fixed
