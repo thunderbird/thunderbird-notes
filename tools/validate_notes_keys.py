@@ -8,6 +8,9 @@ Rules per directory:
 - beta, esr, release:
     allowed note keys are {note, tag, bugs, group} and `group` must not appear
     in esr or release.
+- all directories:
+    every note must have a `tag` whose value is one of {new, changed, fixed,
+    unresolved}.
 """
 
 import argparse
@@ -19,6 +22,8 @@ from dataclasses import dataclass
 from typing import Any, Iterable
 
 import yaml
+
+VALID_TAGS: frozenset[str] = frozenset({"new", "changed", "fixed", "unresolved"})
 
 
 @dataclass(frozen=True)
@@ -195,6 +200,17 @@ def _validate_notes_file(path: str, rules: NotesRules) -> list[str]:
         if forbidden_present:
             errors.append(
                 f"{path}: notes[{idx}] has forbidden keys {sorted(forbidden_present)}"
+            )
+
+        if "tag" not in note_entry:
+            errors.append(
+                f"{path}: notes[{idx}] is missing required key 'tag'; "
+                f"expected one of {sorted(VALID_TAGS)}"
+            )
+        elif note_entry["tag"] not in VALID_TAGS:
+            errors.append(
+                f"{path}: notes[{idx}] has invalid tag {note_entry['tag']!r}; "
+                f"expected one of {sorted(VALID_TAGS)}"
             )
 
     # android_beta group validation
