@@ -1,7 +1,7 @@
 release:
   release_date: '2026-10-26'
   text: |
-    **These notes apply to Thunderbird version 160 beta 1 released October 26, 2026.**
+    **These notes apply to Thunderbird version 160 beta 2 released October 28, 2026.**
 
     **System Requirements:** [Details](/en-US/thunderbird/160.0beta/system-requirements/)
 
@@ -9,6 +9,7 @@ release:
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
 notes:
   # New
@@ -125,3 +126,9 @@ notes:
     tag: fixed
     bugs: [1137147, 1542978, 2065356, 2068724, 2070054, 2070052, 2076478, 2076486, 2077553,
       2077930, 2081014, 2083102]
+
+  # Beta 2
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 2
