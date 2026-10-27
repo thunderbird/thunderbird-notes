@@ -13,9 +13,6 @@ release:
 
 notes:
   # Fixed
-  - note: Thunderbird could hang on startup when restoring IMAP message and PDF tabs
-    tag: fixed
-    bugs: [2071123]
   - note: Sent messages could fail to save without displaying a warning
     tag: fixed
     bugs: [2053691]
