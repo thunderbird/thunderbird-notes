@@ -15,9 +15,6 @@ release:
 
 notes:
   # New
-  - note: Linux tray icons indicate unread mail and show its count in the tooltip
-    tag: new
-    bugs: [1946946]
   - note: Graph calendars are auto-detected on new account creation
     tag: new
     bugs: [2052324]
