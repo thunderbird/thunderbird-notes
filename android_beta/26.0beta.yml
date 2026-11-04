@@ -1,0 +1,56 @@
+release:
+  release_date: '2026-11-04'
+  text: >
+    **These notes apply to Thunderbird for Android version 26.0 betas,
+    first released November 4th, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '26.0b1'
+      release_date: '2026-11-04'
+
+notes:
+  # Beta 1
+  # New
+  - note: Remote feature flags can be viewed and managed in General Settings
+    short_note: Remote feature flags can be viewed and managed in General Settings
+    pull_requests: [11693]
+    issues: [11457]
+    tag: new
+    group: 1
+
+  # Changed
+  - note: Modernized 'Sending Mail' settings screen
+    short_note: Modernized 'Sending Mail' settings screen
+    pull_requests: [11584]
+    issues: [11041]
+    tag: changed
+    group: 1
+  - note: Manage Folders settings moved from account drawer to Account settings under Folders
+    short_note: Manage Folders settings moved from account drawer to Account settings under Folders
+    pull_requests: [11699]
+    issues: [11679]
+    tag: changed
+    group: 1
+  - note: Folder display, sync, and notification settings are split into separate menus
+    short_note: Folder display, sync, and notification settings are split into separate menus
+    pull_requests: [11755]
+    issues: [11763]
+    tag: changed
+    group: 1
+
+  # Fixed
+  - note: Donation appeal dialog could display multiple times
+    short_note: Donation appeal dialog could display multiple times
+    pull_requests: [11847]
+    issues: [11677]
+    tag: fixed
+    group: 1
+  - note: Account profile avatars were not imported from K-9 Mail
+    short_note: Account profile avatars were not imported from K-9 Mail
+    pull_requests: [11551]
+    issues: [10864]
+    tag: fixed
+    group: 1
