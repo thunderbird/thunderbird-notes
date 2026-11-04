@@ -42,12 +42,6 @@ notes:
     group: 1
 
   # Fixed
-  - note: Compromised eMudhra certificates could be trusted (CVE-2026-11943)
-    short_note: Compromised eMudhra certificates could be trusted (CVE-2026-11943)
-    pull_requests: [11831]
-    issues: [11789]
-    tag: fixed
-    group: 1
   - note: Donation appeal dialog could display multiple times
     short_note: Donation appeal dialog could display multiple times
     pull_requests: [11847]
