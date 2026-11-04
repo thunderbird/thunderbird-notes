@@ -6,11 +6,6 @@ release:
   import_system_requirements: 153.0esr
 
 notes:
-  # New
-  - note: Graph calendars are auto-detected on new account creation
-    tag: new
-    bugs: [2052324]
-
   # Fixed
   - note: Non-ASCII IMAP tags could exceed server length limits and be rejected
     tag: fixed
