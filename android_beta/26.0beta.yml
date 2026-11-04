@@ -18,7 +18,7 @@ notes:
     short_note: Remote feature flags can be viewed and managed in General Settings
     pull_requests: [11693]
     issues: [11457]
-    tag: fixed
+    tag: new
     group: 1
 
   # Changed
