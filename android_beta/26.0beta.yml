@@ -1,15 +1,18 @@
 release:
-  release_date: '2026-11-04'
+  release_date: '2026-11-05'
   text: >
     **These notes apply to Thunderbird for Android version 26.0 betas,
     first released November 4th, 2026**
 
   groups:
     - ' '
+    - 'Fixed in beta 2'
 
   releases:
     - version: '26.0b1'
       release_date: '2026-11-04'
+    - version: '26.0b2'
+      release_date: '2026-11-05'
 
 notes:
   # Beta 1
@@ -54,3 +57,12 @@ notes:
     issues: [10864]
     tag: fixed
     group: 1
+
+  # Beta 2
+  # Fixed
+  - note: Thunderbird for Android could crash when opening the message view
+    short_note: Thunderbird for Android could crash when opening the message view
+    pull_requests: [11871]
+    issues: [11869]
+    tag: fixed
+    group: 2
