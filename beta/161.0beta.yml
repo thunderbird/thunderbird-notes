@@ -1,0 +1,81 @@
+release:
+  release_date: '2026-11-09'
+  text: |
+    **These notes apply to Thunderbird version 161 beta 1 released November 9, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/160.0beta/system-requirements/)
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Unread count badges are available on supported Linux taskbars
+    tag: new
+    bugs: [1551864]
+
+  # Changed
+  - note: OTR chat encryption is disabled by default for profiles that never used it
+    tag: changed
+    bugs: [1909445]
+
+  # Fixed
+  - note: 'The Subscribe dialog continued to show "Please wait" after loading'
+    tag: fixed
+    bugs: [2085557]
+  - note: The Quick Filter keyboard shortcut could stop working
+    tag: fixed
+    bugs: [1847432]
+  - note: Compose commands failed when feed articles were displayed as web pages
+    tag: fixed
+    bugs: [2085467]
+  - note: Shift+Space scrolled messages down when focus was in the message list
+    tag: fixed
+    bugs: [2084510]
+  - note: Selecting a message in a thread summary did not scroll it into view
+    tag: fixed
+    bugs: [2085651]
+  - note: Changing saved search matching options could insert an invalid search field
+    tag: fixed
+    bugs: [550726]
+  - note: Ctrl+Enter could require two presses to send a message
+    tag: fixed
+    bugs: [2083823]
+  - note: Tab from the Subject field required an extra press to reach the message body
+    tag: fixed
+    bugs: [2084616]
+  - note: Ctrl+V could unexpectedly send a message
+    tag: fixed
+    bugs: [2086761]
+  - note: Forwarding IMAP messages failed in some folders with spaces in their names
+    tag: fixed
+    bugs: [2088260]
+  - note: Birthdays without a year were not saved in Google address books
+    tag: fixed
+    bugs: [1820356]
+  - note: New Contact and New List were missing from the address book context menu
+    tag: fixed
+    bugs: [1771788]
+  - note: Editing vCard 3.0 contacts could lose the preferred phone number
+    tag: fixed
+    bugs: [1779864]
+  - note: Some CardDAV birthdays without a year incorrectly displayed the year 1604
+    tag: fixed
+    bugs: [1893804]
+  - note: Adding a second Exchange account could show messages from first account
+    tag: fixed
+    bugs: [2073250]
+  - note: Concurrent offline Exchange downloads could display the wrong message body
+    tag: fixed
+    bugs: [2083044]
+  - note: Sending messages could incorrectly report an error applying filters
+    tag: fixed
+    bugs: [2083369]
+  - note: SMTP CRAM-MD5 authentication could fail with some server challenges
+    tag: fixed
+    bugs: [2086828]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [2082356, 2083706, 2084554]
