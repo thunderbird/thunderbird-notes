@@ -1,0 +1,32 @@
+release:
+  release_date: '2026-11-10'
+  text: |
+    **For help and a quick start on Thunderbird 153, see
+    [Thunderbird 153 Meadow FAQ](https://support.mozilla.org/en-US/kb/new-thunderbird-desktop)**
+
+    **For more on all the new features in Thunderbird 153, see
+    [What’s New in Thunderbird 153](https://updates.thunderbird.net/thunderbird/153.0/whatsnew/).**
+
+    **System Requirements:** [Details](/en-US/thunderbird/153.0esr/system-requirements/)
+
+  import_system_requirements: '153.0esr'
+
+notes:
+  # Fixed
+  - note: Opening a window could cause Thunderbird to crash
+    tag: fixed
+    bugs: [2083354]
+  - note: MP4 attachments could be truncated when forwarding messages
+    tag: fixed
+    bugs: [2077839]
+  - note: Exchange autodiscovery failed when redirected to another email address
+    tag: fixed
+    bugs: [2080111]
+  - note: Legacy IMAP tag changes were not sent to the server and reverted after refresh
+    tag: fixed
+    bugs: [2057187]
+  - note: SMTP Kerberos authentication failed on Linux with STARTTLS
+    tag: fixed
+    bugs: [1921163]
+  - note: '[Security fixes](https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird153.7)'
+    tag: fixed
