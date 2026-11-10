@@ -1,5 +1,5 @@
 release:
-  release_date: '2026-11-05'
+  release_date: '2026-11-10'
   text: >
     **These notes apply to Thunderbird for Android version 26.0 betas,
     first released November 4th, 2026**
@@ -7,12 +7,16 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
   releases:
     - version: '26.0b1'
       release_date: '2026-11-04'
     - version: '26.0b2'
       release_date: '2026-11-05'
+    - version: '26.0b3'
+      release_date: '2026-11-10'
+
 
 notes:
   # Beta 1
@@ -66,3 +70,10 @@ notes:
     issues: [11869]
     tag: fixed
     group: 2
+
+  # Beta 3
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    short_note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 3
