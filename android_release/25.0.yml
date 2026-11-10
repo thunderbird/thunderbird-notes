@@ -1,0 +1,62 @@
+release:
+  release_date: '2026-11-10'
+  text: >
+    **These notes apply to Thunderbird for Android version 25.0 released November 10th, 2026.**
+
+  releases:
+    - version: '25.0'
+      release_date: '2026-11-10'
+
+notes:
+  # New
+  - note: New funding appeal helps keep Thunderbird alive!
+    short_note: New funding appeal helps keep Thunderbird alive!
+    pull_requests: [11583, 11589, 11629, 11641, 11875]
+    issues: [11526, 11547, 11580, 11588, 11615, 11620, 11677]
+    thunderbird_only: true
+    tag: new
+
+  # Fixed
+  - note: Message composer could crash when rotating the screen or editing a message as new
+    short_note: Message composer could crash when rotating screen or editing message as new
+    pull_requests: [11758]
+    issues: [11302]
+    tag: fixed
+  - note: HTML signature text could disappear after rotating the screen
+    short_note: HTML signature text disappeared after rotation
+    pull_requests: [11538, 11564]
+    issues: [11528, 11555]
+    tag: fixed
+  - note: Deleted email notifications could reappear or remain in the notification shade
+    short_note: Deleted email notifications could reappear
+    pull_requests: [11587]
+    issues: [10936]
+    tag: fixed
+  - note: Some HTML drafts hid attachments while editing and could permanently lose them on save
+    short_note: HTML drafts could hide or lose attachments
+    pull_requests: [11558]
+    issues: [954]
+    tag: fixed
+  - note: Add to contacts crashed the app when no Contacts app was installed
+    short_note: Add to contacts crashed without a Contacts app
+    pull_requests: [11569]
+    issues: [11548]
+    tag: fixed
+  - note: Sending large PGP-encrypted attachments showed no progress during encryption
+    short_note: Large PGP attachments showed no encryption progress
+    pull_requests: [11436]
+    issues: [5763]
+    tag: fixed
+  - note: Account drawer behaved inconsistently when reselecting an account or tapping its icon
+    short_note: Account drawer could behave inconsistently
+    pull_requests: [11491]
+    issues: [11461]
+    tag: fixed
+  - note: Account drawer controls blocked accounts and folders on small displays
+    pull_requests: [11488]
+    issues: [11476]
+    tag: fixed
+  - note: Sort menu indicator (bullet point) was duplicated each time the menu was opened
+    pull_requests: [11594]
+    issues: [11274]
+    tag: fixed
