@@ -1,5 +1,5 @@
 release:
-  release_date: '2026-11-09'
+  release_date: '2026-11-16'
   text: |
     **These notes apply to Thunderbird version 161 beta 2 released November 12, 2026.**
 
@@ -10,6 +10,7 @@ release:
   groups:
     - ' '
     - 'Fixed in beta 2'
+    - 'Fixed in beta 3'
 
 notes:
   # New
@@ -86,3 +87,9 @@ notes:
   - note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 2
+
+  # Beta 3
+  # Changed
+  - note: There are no Thunderbird changes requiring release notes in this release
+    tag: changed
+    group: 3
