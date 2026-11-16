@@ -8,6 +8,7 @@ release:
     - ' '
     - 'Fixed in beta 2'
     - 'Fixed in beta 3'
+    - 'Fixed in beta 4'
 
   releases:
     - version: '26.0b1'
@@ -16,6 +17,8 @@ release:
       release_date: '2026-11-05'
     - version: '26.0b3'
       release_date: '2026-11-10'
+    - version: '26.0b4'
+      release_date: '2026-11-16'
 
 
 notes:
@@ -77,3 +80,12 @@ notes:
     short_note: There are no Thunderbird changes requiring release notes in this release
     tag: changed
     group: 3
+
+  # Beta 4
+  # Fixed
+  - note: Thunderbird for Android crashed when the unread widget updated related account data
+    short_note: Thunderbird for Android crashed when the unread widget updated related account data
+    pull_requests: [11906]
+    issues: [11900]
+    tag: fixed
+    group: 4
