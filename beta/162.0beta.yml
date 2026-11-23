@@ -1,0 +1,108 @@
+release:
+  release_date: '2026-11-23'
+  text: |
+    **These notes apply to Thunderbird version 162 beta 1 released November 23, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/162.0beta/system-requirements/)
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: Microsoft Graph accounts support delegated shared mailboxes
+    tag: new
+    bugs: [2067186]
+
+  # Changed
+  - note: System add-ons can receive updates without a full Thunderbird update
+    tag: changed
+    bugs: [2059590]
+  - note: Exported EML files use the message date as their modification time
+    tag: changed
+    bugs: [939519]
+
+  # Fixed
+  - note: Opening calendar event details from an invitation could fail
+    tag: fixed
+    bugs: [2073142]
+  - note: Messages listing many newsgroups could freeze Thunderbird when opened
+    tag: fixed
+    bugs: [2082268]
+  - note: Message header buttons could shift position between messages
+    tag: fixed
+    bugs: [2088793]
+  - note: Searching selected text on web pages could fail
+    tag: fixed
+    bugs: [2083639]
+  - note: The draft encryption setting was incorrectly labeled as subject encryption
+    tag: fixed
+    bugs: [2092974]
+  - note: OpenPGP security details could not be scrolled on Windows
+    tag: fixed
+    bugs: [1998016]
+  - note: OpenPGP messages could display decrypted content from another account
+    tag: fixed
+    bugs: [2087009]
+  - note: Automatically saving a draft could move keyboard focus unexpectedly
+    tag: fixed
+    bugs: [2082190]
+  - note: Attachment indicators could disappear after viewing encrypted drafts
+    tag: fixed
+    bugs: [2012307]
+  - note: CardDAV account setup could incorrectly report an incompatible server
+    tag: fixed
+    bugs: [2088411]
+  - note: Run Filters on Message failed for messages in global search results
+    tag: fixed
+    bugs: [1903685]
+  - note: Notification actions unexpectedly restored Thunderbird from the system tray
+    tag: fixed
+    bugs: [2092299]
+  - note: Restoring many message tabs could freeze Thunderbird during startup
+    tag: fixed
+    bugs: [2078622]
+  - note: Some EML files could not be imported into IMAP folders
+    tag: fixed
+    bugs: [500479]
+  - note: SMTP OAuth2 login failures offered a password prompt that did not work
+    tag: fixed
+    bugs: [1935379]
+  - note: Deleting folders in shared IMAP namespaces could fail
+    tag: fixed
+    bugs: [1964001]
+  - note: Repairing an Exchange folder could leave it empty and unable to sync
+    tag: fixed
+    bugs: [2083049]
+  - note: Microsoft Graph accounts did not retain the selected trash folder
+    tag: fixed
+    bugs: [2084064]
+  - note: Undo could malfunction after IMAP messages were moved back while offline
+    tag: fixed
+    bugs: [2085116]
+  - note: IMAP Trash folder with non-ASCII name caused permanent deletion without warning
+    tag: fixed
+    bugs: [2085365]
+  - note: Saving drafts in Microsoft Graph accounts could fail
+    tag: fixed
+    bugs: [2092297]
+  - note: Extension news queries could hang when using the default NNTP port
+    tag: fixed
+    bugs: [2091761]
+  - note: XMPP typing indicators could remain visible after a message was sent
+    tag: fixed
+    bugs: [2086338]
+  - note: Account setup warning links were inaccessible using the keyboard
+    tag: fixed
+    bugs: [2090716]
+  - note: Message subjects in thread summaries were inaccessible using the keyboard
+    tag: fixed
+    bugs: [2092401]
+  - note: Calendar reminders could reappear after being dismissed or snoozed
+    tag: fixed
+    bugs: [1820115]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1802096, 2051076, 2085185, 2089665, 2089753, 2089754, 2094719]
