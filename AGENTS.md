@@ -12,9 +12,22 @@ They do not apply to `android_beta/`, `android_release/`, `archive/`,
 `mozilla_archive/`, or tooling in this repo. See `README.md` for the full YAML
 format.
 
+## Where notes come from
+
+- `beta/`: Draft notes from scratch using the process below.
+- `release/` and `esr/`: Do not draft new notes. Carry the notes forward from
+  the `beta/` files where the change first shipped, whether it reached the
+  target branch by a merge or an uplift. Reuse the beta wording, tag, and bug
+  numbers as they are.
+  - Drop entries for features that are not enabled on the target channel
+    (see rule 3 below). Remove the `(Beta only) ` prefix only if the feature
+    is now enabled on the target channel; otherwise drop the entry.
+  - If a bug has no note in any beta file, flag it rather than writing one.
+
 ## Selecting notes
 
-When asked to draft notes for Bugzilla bug numbers or links:
+When asked to draft notes for Bugzilla bug numbers or links (`beta/` only; see
+above for `release/` and `esr/`):
 
 1. Look up the bugs on bugzilla.mozilla.org, reading the description, relevant
    comments, and landed patches to identify the actual user-facing change.
