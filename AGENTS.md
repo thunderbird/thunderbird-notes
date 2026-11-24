@@ -1,16 +1,19 @@
-# Thunderbird Desktop Release Notes
+# Thunderbird Release Notes
 
 ## Scope
 
-These instructions apply **only** to Thunderbird Desktop release notes in:
+These instructions apply **only** to release notes in:
 
-- `beta/`
-- `release/`
-- `esr/`
+- Thunderbird Desktop: `beta/`, `release/`, `esr/`
+- Thunderbird for Android: `android_beta/`, `android_release/`
 
-They do not apply to `android_beta/`, `android_release/`, `archive/`,
-`mozilla_archive/`, or tooling in this repo. See `README.md` for the full YAML
-format.
+They do not apply to `archive/`, `mozilla_archive/`, or tooling in this repo.
+See `README.md` for the full YAML format.
+
+Sections up to and including "Other tasks" describe Desktop notes. The
+"Classifying notes" and "Writing rules" sections also apply to Android. See
+"Thunderbird for Android" at the end for Android-specific rules, which take
+precedence for `android_beta/` and `android_release/`.
 
 ## Where notes come from
 
@@ -39,8 +42,9 @@ Never add a note for a bug whose `cf_status_thunderbird_<N-1>` flag is
 so its note belongs there.
 
 Restrict the search to the Thunderbird products: `Calendar`, `Chat Core`,
-`MailNews Core`, and `Thunderbird`. Firefox uses the same milestone names. Do not filter on resolution: bugs left open after a partial
-landing can still qualify. Example for 162:
+`MailNews Core`, and `Thunderbird`. Firefox uses the same milestone names.
+Do not filter on resolution: bugs left open after a partial landing can still
+qualify. Example for 162:
 
 `https://bugzilla.mozilla.org/rest/bug?product=Thunderbird&product=MailNews%20Core&product=Calendar&product=Chat%20Core&f1=OP&j1=OR&f2=target_milestone&o2=equals&v2=162%20Branch&f3=cf_status_thunderbird_162&o3=anywords&v3=fixed%20verified&f4=CP&f5=cf_status_thunderbird_161&o5=nowords&v5=fixed%20verified&include_fields=id,product,component,summary,type,keywords,resolution,target_milestone,cf_status_thunderbird_161,cf_status_thunderbird_162&limit=0`
 
@@ -137,3 +141,95 @@ When editing a notes file directly, follow the existing layout: `# New`,
 When given lists or release-note files, also support comparing included bug
 numbers, identifying missing bugs, removing specified bugs, and returning
 comma-separated bug lists when requested.
+
+## Thunderbird for Android
+
+### Where notes come from
+
+- `android_beta/`: Draft notes from scratch using the process below.
+- `android_release/`: Do not draft new notes. Carry the notes forward from the
+  matching `android_beta/` file, reusing the wording, tag, pull requests, and
+  issues as they are. Release files do not use the `group` field.
+  - Drop entries for features that are not enabled on the release channel.
+    Use the `(Beta only) ` prefix the same way as Desktop: remove it only if
+    the feature is now enabled on release; otherwise drop the entry.
+  - If a pull request has no note in the beta file, flag it rather than
+    writing one.
+- There is no ESR for Android.
+
+### Finding pull requests for a beta
+
+Changes are tracked with milestones on
+https://github.com/thunderbird/thunderbird-android/milestones. There are
+always three open milestones named `Thunderbird <N>`:
+
+- Largest number: Daily (`main` branch)
+- Middle number: Beta (beta branch)
+- Smallest number: Release (release branch)
+
+For example, with "Thunderbird 25", "Thunderbird 26", and "Thunderbird 27",
+25 is Release, 26 is Beta, and 27 is Daily.
+
+To find changes for beta `<N>`, use the closed pull requests in the
+`Thunderbird <N>` milestone. Do not add a note for a change that was also
+fixed in the `Thunderbird <N-1>` milestone; it already shipped in the
+previous version.
+
+Make as few GitHub requests as possible, using the public REST API rather than
+scraping HTML:
+
+- Milestone titles differ from milestone numbers. Resolve them with
+  `https://api.github.com/repos/thunderbird/thunderbird-android/milestones?state=open`.
+- List the milestone's closed items in one request, e.g.
+  `https://api.github.com/repos/thunderbird/thunderbird-android/issues?milestone=<milestone-number>&state=closed&per_page=100`.
+  This returns both pull requests (items with a `pull_request` key) and
+  issues. Follow pagination if there are more than 100.
+- Fetch individual pull requests or issues only when the user-facing change is
+  still unclear, and do not re-fetch items already retrieved in the session.
+
+### Selecting notes
+
+- Consult both the pull request and the issue it fixes (e.g. "Fixes #11654" in
+  the PR description) to determine the user-facing change. Describe what the
+  merged pull request actually does.
+- Recommend notes for meaningful user-facing features, behavior changes, and
+  fixes. Exclude internal refactoring, build, CI, dependency, and test-only
+  changes unless they also change user-facing behavior.
+- Exclude changes confined to features that are not enabled on the target
+  channel. In `android_beta/`, prefix notes for features enabled in Beta but
+  not Release with `(Beta only) `.
+- Do not group fixes under "Visual and UX improvements"; there are usually too
+  few Android fixes to need it.
+- Clearly identify anything you cannot verify; never invent details.
+
+### Writing rules
+
+- Follow the shared "Writing rules" above.
+- `note` and `short_note` must each be 80 characters or fewer.
+- `short_note` is usually identical to `note`. Shorten it only when needed to
+  meet the total limit.
+- The `short_note` values for a release can total no more than 500
+  characters, checked separately for each app (K-9 Mail and Thunderbird).
+  Verify with `python3 tools/android_notes_length.py <version>`, which also
+  counts list markers and the Thunderbird header line.
+- Set `thunderbird_only: true` or `k9mail_only: true` if a change applies to
+  only one app. Omit both when it applies to both.
+
+### Output format
+
+```yaml
+  - note: <release-note>
+    short_note: <short-release-note>
+    pull_requests: [<pr-number>]
+    issues: [<issue-number>]
+    thunderbird_only: true
+    tag: new | changed | fixed
+    group: <beta-number>
+```
+
+- `thunderbird_only` / `k9mail_only` are optional. `group` is only used in
+  `android_beta/` and is the beta number the change first shipped in.
+- Sort entries new, changed, fixed within each group, following the existing
+  `# Beta <n>`, `# New`, `# Changed`, and `# Fixed` comment headers.
+- Combine related pull requests and issues when one note accurately covers
+  them.
