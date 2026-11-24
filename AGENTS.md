@@ -212,6 +212,9 @@ scraping HTML:
   characters, checked separately for each app (K-9 Mail and Thunderbird).
   Verify with `python3 tools/android_notes_length.py <version>`, which also
   counts list markers and the Thunderbird header line.
+- If shortening is not enough to meet the limit, omit `short_note` from the
+  least significant notes (typically minor fixes) until it fits. Those notes
+  still appear in the full release notes.
 - Set `thunderbird_only: true` or `k9mail_only: true` if a change applies to
   only one app. Omit both when it applies to both.
 
@@ -227,8 +230,9 @@ scraping HTML:
     group: <beta-number>
 ```
 
-- `thunderbird_only` / `k9mail_only` are optional. `group` is only used in
-  `android_beta/` and is the beta number the change first shipped in.
+- `short_note` (see above), `thunderbird_only`, and `k9mail_only` are
+  optional. `group` is only used in `android_beta/` and is the beta number the
+  change first shipped in.
 - Sort entries new, changed, fixed within each group, following the existing
   `# Beta <n>`, `# New`, `# Changed`, and `# Fixed` comment headers.
 - Combine related pull requests and issues when one note accurately covers
