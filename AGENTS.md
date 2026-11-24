@@ -189,6 +189,13 @@ scraping HTML:
 
 ### Selecting notes
 
+- Pull request labels override the selection rules below:
+  - Always include a pull request labeled `report: include`, even if it would
+    otherwise be excluded (e.g. internal, build, or test-only work).
+  - Always exclude a pull request labeled `report: exclude`, even if it looks
+    user-facing.
+  - Labels are returned in the `labels` field of the milestone listing, so no
+    extra requests are needed to check them.
 - Consult both the pull request and the issue it fixes (e.g. "Fixes #11654" in
   the PR description) to determine the user-facing change. Describe what the
   merged pull request actually does.
