@@ -1,0 +1,83 @@
+release:
+  release_date: '2026-11-30'
+  text: >
+    **These notes apply to Thunderbird for Android version 27.0 betas,
+    first released November 30th, 2026**
+
+  groups:
+    - ' '
+
+  releases:
+    - version: '27.0b1'
+      release_date: '2026-11-30'
+
+notes:
+  # Beta 1
+  # New
+  - note: Drawer shows unified Drafts, Sent, Archive, Spam, Trash, and Outbox folders
+    short_note: Drawer shows unified Drafts, Sent, Archive, Spam, Trash, and Outbox folders
+    pull_requests: [11744]
+    issues: [9370, 9773]
+    tag: new
+    group: 1
+  - note: Account setup recommends IMAP when POP3 is selected
+    short_note: Account setup recommends IMAP over POP3
+    pull_requests: [11821]
+    issues: [7551]
+    tag: new
+    group: 1
+
+  # Changed
+  - note: Push is enabled by default for the Inbox of newly added accounts
+    short_note: Push is on by default for the Inbox of new accounts
+    pull_requests: [11914]
+    issues: [11913]
+    tag: changed
+    group: 1
+  - note: Modernized Export Settings screen
+    short_note: Modernized Export Settings screen
+    pull_requests: [11824]
+    issues: [11732]
+    tag: changed
+    group: 1
+
+  # Fixed
+  - note: Debug logs could include account credentials when sensitive logging was off
+    short_note: Debug logs could include account credentials
+    pull_requests: [11918]
+    issues: [11919]
+    tag: fixed
+    group: 1
+  - note: Permissions screen was skipped after adding an account during onboarding
+    short_note: Permissions screen was skipped during onboarding
+    pull_requests: [11925]
+    issues: [11924]
+    tag: fixed
+    group: 1
+  - note: Reply options sheet stayed open after replying to a message
+    short_note: Reply options sheet stayed open after replying
+    pull_requests: [11834]
+    issues: [11797]
+    tag: fixed
+    group: 1
+  - note: Saving some duplicate attachments added the number after the file extension
+    short_note: Duplicate saved attachments were numbered after the extension
+    pull_requests: [11829]
+    issues: [9141]
+    tag: fixed
+    group: 1
+  - note: Old avatar images were not deleted when changed or when an account was removed
+    pull_requests: [11944]
+    issues: [11939]
+    tag: fixed
+    group: 1
+  - note: Account avatars showed only part of emoji made of multiple characters
+    pull_requests: [11713]
+    issues: [9669]
+    tag: fixed
+    group: 1
+  - note: Sync icon in the navigation drawer spun in the wrong direction
+    pull_requests: [11820]
+    issues: [11819]
+    tag: fixed
+    group: 1
