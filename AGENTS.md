@@ -24,6 +24,26 @@ format.
     is now enabled on the target channel; otherwise drop the entry.
   - If a bug has no note in any beta file, flag it rather than writing one.
 
+## Finding bugs for a beta
+
+When no bug list is given, a bug belongs to beta version `<N>` if either:
+
+- its Target Milestone is `<N> Branch`, or
+- its `cf_status_thunderbird_<N>` tracking flag is `fixed` (or `verified`),
+
+and its `cf_status_thunderbird_<N-1>` flag is not `fixed` or `verified`.
+
+Never add a note for a bug whose `cf_status_thunderbird_<N-1>` flag is
+`fixed` or `verified`, even if its Target Milestone is `<N> Branch` or its
+`<N>` flag is `fixed`. It was uplifted to and shipped in the previous version,
+so its note belongs there.
+
+Restrict the search to the Thunderbird products: `Calendar`, `Chat Core`,
+`MailNews Core`, and `Thunderbird`. Firefox uses the same milestone names. Do not filter on resolution: bugs left open after a partial
+landing can still qualify. Example for 162:
+
+`https://bugzilla.mozilla.org/rest/bug?product=Thunderbird&product=MailNews%20Core&product=Calendar&product=Chat%20Core&f1=OP&j1=OR&f2=target_milestone&o2=equals&v2=162%20Branch&f3=cf_status_thunderbird_162&o3=anywords&v3=fixed%20verified&f4=CP&f5=cf_status_thunderbird_161&o5=nowords&v5=fixed%20verified&include_fields=id,product,component,summary,type,keywords,resolution,target_milestone,cf_status_thunderbird_161,cf_status_thunderbird_162&limit=0`
+
 ## Selecting notes
 
 When asked to draft notes for Bugzilla bug numbers or links (`beta/` only; see
