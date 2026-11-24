@@ -235,5 +235,7 @@ scraping HTML:
   change first shipped in.
 - Sort entries new, changed, fixed within each group, following the existing
   `# Beta <n>`, `# New`, `# Changed`, and `# Fixed` comment headers.
+- Within each section, sort entries by importance to users, most significant
+  first. When dropping `short_note` values, start from the end of each section.
 - Combine related pull requests and issues when one note accurately covers
   them.
